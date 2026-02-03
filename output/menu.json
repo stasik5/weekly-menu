@@ -1,41 +1,7 @@
 {
   "Wednesday": {
     "breakfast": {
-      "name": "Dim sum dumplings",
-      "cuisine": "asian",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Rice crackers",
-      "cuisine": "asian",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Chicken soup with vegetables",
-      "cuisine": "slavic",
-      "targetCalories": 2100
-    }
-  },
-  "Thursday": {
-    "breakfast": {
-      "name": "Kasha with butter and milk",
-      "cuisine": "slavic",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Banana with peanut butter",
-      "cuisine": "slavic",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Vietnamese pho",
-      "cuisine": "asian",
-      "targetCalories": 2100
-    }
-  },
-  "Friday": {
-    "breakfast": {
-      "name": "Congee with egg and scallions",
+      "name": "Miso soup with tofu",
       "cuisine": "asian",
       "targetCalories": 1400
     },
@@ -45,8 +11,42 @@
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Pelmeni with sour cream",
+      "name": "Japanese ramen",
+      "cuisine": "asian",
+      "targetCalories": 2100
+    }
+  },
+  "Thursday": {
+    "breakfast": {
+      "name": "Rice porridge with pickles",
+      "cuisine": "asian",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Nuts and dried fruits",
       "cuisine": "slavic",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Cabbage rolls with meat",
+      "cuisine": "slavic",
+      "targetCalories": 2100
+    }
+  },
+  "Friday": {
+    "breakfast": {
+      "name": "Oatmeal with honey and nuts",
+      "cuisine": "slavic",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Pickled vegetables",
+      "cuisine": "slavic",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Thai green curry",
+      "cuisine": "asian",
       "targetCalories": 2100
     }
   },
@@ -57,12 +57,12 @@
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Ryebread with butter",
+      "name": "Banana with peanut butter",
       "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Sichuan mapo tofu",
+      "name": "Pad Thai with shrimp",
       "cuisine": "asian",
       "targetCalories": 2100
     }
