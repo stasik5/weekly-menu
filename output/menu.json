@@ -6,42 +6,25 @@
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Rice crackers",
+      "name": "Green tea cookies",
       "cuisine": "asian",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Korean bibimbap",
-      "cuisine": "asian",
+      "name": "Beef stroganoff with rice",
+      "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
   "Thursday": {
     "breakfast": {
-      "name": "Scrambled eggs with vegetables",
+      "name": "Buckwheat porridge with milk and berries",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Nuts and dried fruits",
-      "cuisine": "slavic",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Japanese ramen",
+      "name": "Edamame with sea salt",
       "cuisine": "asian",
-      "targetCalories": 2100
-    }
-  },
-  "Friday": {
-    "breakfast": {
-      "name": "Fried rice with vegetables",
-      "cuisine": "asian",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Apple slices with cheese",
-      "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
@@ -50,14 +33,31 @@
       "targetCalories": 2100
     }
   },
-  "Saturday": {
+  "Friday": {
     "breakfast": {
-      "name": "Blini with cheese filling",
+      "name": "Oatmeal with honey and nuts",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Pickled vegetables",
+      "name": "Pickled ginger and daikon",
+      "cuisine": "asian",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Borscht with sour cream",
+      "cuisine": "slavic",
+      "targetCalories": 2100
+    }
+  },
+  "Saturday": {
+    "breakfast": {
+      "name": "Fried rice with vegetables",
+      "cuisine": "asian",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Yogurt with honey",
       "cuisine": "slavic",
       "targetCalories": 500
     },

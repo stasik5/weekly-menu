@@ -38,11 +38,11 @@
       }
     },
     "snack": {
-      "name": "Rice crackers",
+      "name": "Green tea cookies",
       "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
-        "title": "Rice crackers",
+        "title": "Green tea cookies",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -66,11 +66,11 @@
       }
     },
     "dinner": {
-      "name": "Korean bibimbap",
-      "cuisine": "asian",
+      "name": "Beef stroganoff with rice",
+      "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Korean bibimbap",
+        "title": "Beef stroganoff with rice",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -96,11 +96,11 @@
   },
   "Thursday": {
     "breakfast": {
-      "name": "Scrambled eggs with vegetables",
+      "name": "Buckwheat porridge with milk and berries",
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Scrambled eggs with vegetables",
+        "title": "Buckwheat porridge with milk and berries",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -124,95 +124,11 @@
       }
     },
     "snack": {
-      "name": "Nuts and dried fruits",
-      "cuisine": "slavic",
+      "name": "Edamame with sea salt",
+      "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
-        "ingredients": [
-          "1 cup mixed nuts (almonds, walnuts, cashews, pecans)",
-          "1 cup mixed dried fruits (raisins, cranberries, apricots, dates)",
-          "Optional: dark chocolate chips or chunks",
-          "Optional: pumpkin seeds or sunflower seeds",
-          "Optional: cinnamon or cardamom for seasoning"
-        ],
-        "instructions": [
-          "Choose raw or roasted nuts according to preference",
-          "If nuts are raw, toast them in a dry pan for 3-5 minutes until fragrant",
-          "Let nuts cool completely",
-          "Chop large dried fruits (apricots, dates) into bite-sized pieces",
-          "Combine nuts and dried fruits in a bowl",
-          "Optional: add dark chocolate chips for extra indulgence",
-          "Optional: add pumpkin or sunflower seeds for variety",
-          "Optional: sprinkle with cinnamon or cardamom",
-          "Store in airtight container for up to 2 weeks",
-          "Portion into snack-sized bags for easy grabbing"
-        ],
-        "nutrition": {
-          "calories": 450,
-          "protein": 10,
-          "carbs": 35,
-          "fat": 30,
-          "fiber": 6
-        },
-        "source": "Trail mix snack",
-        "prepTime": "5 min",
-        "cookTime": "5 min (toasting)",
-        "servings": 4
-      }
-    },
-    "dinner": {
-      "name": "Japanese ramen",
-      "cuisine": "asian",
-      "targetCalories": 2100,
-      "recipe": {
-        "ingredients": [
-          "2 packages ramen noodles (or fresh ramen)",
-          "6 cups chicken or pork broth",
-          "2 tbsp soy sauce",
-          "1 tbsp miso paste or 1 tsp salt",
-          "2 soft-boiled eggs",
-          "4 oz (115g) pork belly or chashu, sliced (optional)",
-          "2 cups mushrooms (shiitake or enoki)",
-          "2 green onions, sliced",
-          "1 cup bean sprouts",
-          "1 nori sheet, cut into strips",
-          "2 tbsp sesame oil",
-          "Optional: chili oil, corn, bamboo shoots"
-        ],
-        "instructions": [
-          "Prepare soft-boiled eggs: boil eggs 6.5 minutes, cool in ice water, peel",
-          "In a large pot, bring broth to a simmer",
-          "Add soy sauce, miso paste (or salt), and 1 tbsp sesame oil",
-          "Cook ramen noodles according to package, drain and set aside",
-          "In the broth, add mushrooms and cook 2-3 minutes",
-          "Divide noodles among serving bowls",
-          "Ladle hot broth over noodles",
-          "Top with sliced pork (if using), halved soft-boiled eggs",
-          "Add bean sprouts, green onions, nori strips",
-          "Drizzle with remaining sesame oil and chili oil if desired",
-          "Serve immediately while hot"
-        ],
-        "nutrition": {
-          "calories": 520,
-          "protein": 26,
-          "carbs": 58,
-          "fat": 20,
-          "fiber": 4
-        },
-        "source": "Japanese ramen recipe",
-        "prepTime": "15 min",
-        "cookTime": "25 min",
-        "servings": 2
-      }
-    }
-  },
-  "Friday": {
-    "breakfast": {
-      "name": "Fried rice with vegetables",
-      "cuisine": "asian",
-      "targetCalories": 1400,
-      "recipe": {
-        "title": "Fried rice with vegetables",
+        "title": "Edamame with sea salt",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -226,48 +142,13 @@
           "Serve hot"
         ],
         "nutrition": {
-          "calories": 1400,
-          "protein": 53,
-          "carbs": 105,
-          "fat": 86
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
         },
         "source": "fallback_template",
         "url": null
-      }
-    },
-    "snack": {
-      "name": "Apple slices with cheese",
-      "cuisine": "slavic",
-      "targetCalories": 500,
-      "recipe": {
-        "ingredients": [
-          "2 apples (any variety - Granny Smith, Honeycrisp, Fuji)",
-          "4 oz (120g) cheese (cheddar, gouda, brie, or your favorite)",
-          "Optional: honey for drizzling",
-          "Optional: walnuts or pecans",
-          "Optional: cinnamon"
-        ],
-        "instructions": [
-          "Wash apples thoroughly",
-          "Core apples and slice into wedges or rounds",
-          "Slice cheese into thin pieces or small cubes",
-          "Arrange apple slices on a serving plate or board",
-          "Place cheese alongside or on top of apple slices",
-          "Optional: drizzle with honey",
-          "Optional: sprinkle with chopped nuts and cinnamon",
-          "Serve immediately for best freshness"
-        ],
-        "nutrition": {
-          "calories": 220,
-          "protein": 8,
-          "carbs": 28,
-          "fat": 9,
-          "fiber": 4
-        },
-        "source": "Classic fruit and cheese snack",
-        "prepTime": "5 min",
-        "cookTime": "0 min",
-        "servings": 2
       }
     },
     "dinner": {
@@ -275,7 +156,138 @@
       "cuisine": "asian",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Vietnamese pho",
+        "ingredients": [
+          "1.5kg beef brisket",
+          "1kg meaty beef bones",
+          "1kg marrow bones (leg, knuckle)",
+          "2 large onions, halved",
+          "150g ginger, sliced",
+          "10 star anise",
+          "4 cinnamon quills",
+          "4 cardamom pods",
+          "3 cloves",
+          "1.5 tbsp coriander seeds",
+          "3.5 litres water",
+          "2 tbsp white sugar",
+          "1 tbsp salt",
+          "3 tbsp fish sauce",
+          "50g dried rice sticks per bowl",
+          "30g beef tenderloin per bowl, very thinly sliced",
+          "Toppings:",
+          "Bean sprouts",
+          "Thai basil",
+          "Coriander/cilantro",
+          "Lime wedges",
+          "Red chilli, finely sliced",
+          "Hoisin sauce",
+          "Sriracha"
+        ],
+        "instructions": [
+          "Char onion and ginger over high heat until blackened on cut sides",
+          "Toast spices (star anise, cinnamon, cardamom, cloves, coriander) in dry pan for 3 minutes",
+          "Rinse bones and brisket, cover with water, boil for 5 minutes, then drain and rinse",
+          "Bring 3.5 litres water to boil, add bones, brisket, charred onion and ginger, and toasted spices",
+          "Simmer covered for 3 hours",
+          "Remove brisket (it should be fall-apart tender), cool, then refrigerate for later use",
+          "Simmer remaining broth uncovered for 40 more minutes",
+          "Strain broth into another pot, discard bones and spices",
+          "Add fish sauce, adjust with sugar and salt if needed",
+          "Cook rice noodles according to package instructions",
+          "Place noodles in bowls, top with raw beef slices and brisket slices",
+          "Ladle hot broth over beef (it will cook to medium rare)",
+          "Serve with toppings on the side"
+        ],
+        "nutrition": {
+          "calories": 550,
+          "protein": 32,
+          "carbs": 58,
+          "fat": 18,
+          "fiber": 2
+        },
+        "source": "RecipeTin Eats - Authentic Vietnamese Pho",
+        "prepTime": "20 min",
+        "cookTime": "3.5 hours",
+        "servings": 6
+      }
+    }
+  },
+  "Friday": {
+    "breakfast": {
+      "name": "Oatmeal with honey and nuts",
+      "cuisine": "slavic",
+      "targetCalories": 1400,
+      "recipe": {
+        "ingredients": [
+          "1 cup rolled oats",
+          "2 cups milk (dairy, almond, or oat milk)",
+          "1 cup water",
+          "1/4 tsp salt",
+          "2 tbsp honey or maple syrup",
+          "1/2 cup mixed nuts (walnuts, almonds, pecans), chopped",
+          "1/2 tsp cinnamon (optional)",
+          "1 tsp vanilla extract (optional)",
+          "Fresh berries or sliced banana for topping (optional)",
+          "Butter or extra honey for drizzling (optional)"
+        ],
+        "instructions": [
+          "Combine oats, milk, water, and salt in a medium saucepan",
+          "Bring to a boil over medium heat, stirring occasionally",
+          "Reduce heat to low and simmer 5-7 minutes until oats are soft and creamy",
+          "Remove from heat, stir in vanilla if using",
+          "Stir in honey and cinnamon",
+          "Divide oatmeal into serving bowls",
+          "Top generously with chopped nuts",
+          "Add fresh berries or sliced banana if desired",
+          "Drizzle with extra honey or butter if you like",
+          "Serve warm"
+        ],
+        "nutrition": {
+          "calories": 380,
+          "protein": 12,
+          "carbs": 52,
+          "fat": 14,
+          "fiber": 6
+        },
+        "source": "Classic oatmeal breakfast",
+        "prepTime": "2 min",
+        "cookTime": "10 min",
+        "servings": 2
+      }
+    },
+    "snack": {
+      "name": "Pickled ginger and daikon",
+      "cuisine": "asian",
+      "targetCalories": 500,
+      "recipe": {
+        "title": "Pickled ginger and daikon",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "dinner": {
+      "name": "Borscht with sour cream",
+      "cuisine": "slavic",
+      "targetCalories": 2100,
+      "recipe": {
+        "title": "Borscht with sour cream",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -301,11 +313,59 @@
   },
   "Saturday": {
     "breakfast": {
-      "name": "Blini with cheese filling",
-      "cuisine": "slavic",
+      "name": "Fried rice with vegetables",
+      "cuisine": "asian",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Blini with cheese filling",
+        "ingredients": [
+          "3 cups cooked rice, preferably day-old and cold",
+          "2 tbsp vegetable oil",
+          "2 eggs, beaten",
+          "1/2 cup peas (fresh or frozen)",
+          "1/2 cup corn kernels",
+          "1/2 cup carrots, diced small",
+          "1/2 cup green onions, sliced",
+          "2 cloves garlic, minced",
+          "2 tbsp soy sauce",
+          "1 tbsp oyster sauce",
+          "1/2 tsp white pepper",
+          "1 tsp sesame oil",
+          "Optional: protein of choice (chicken, shrimp, tofu)",
+          "Optional: cilantro for garnish"
+        ],
+        "instructions": [
+          "Heat wok or large pan over high heat with 1 tbsp oil",
+          "Add beaten eggs, scramble quickly until just set, remove from pan and set aside",
+          "Add remaining oil to pan over high heat",
+          "Add garlic, stir-fry for 15 seconds until fragrant",
+          "Add carrots, peas, and corn, stir-fry for 2-3 minutes",
+          "Add cold rice, breaking up any clumps with spatula",
+          "Stir-fry for 3-4 minutes, pressing rice against pan to get crispy edges",
+          "Return eggs to pan, add soy sauce and oyster sauce",
+          "Toss everything together for 1-2 minutes until well combined",
+          "Remove from heat, add white pepper and sesame oil",
+          "Garnish with green onions and cilantro if desired",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 350,
+          "protein": 10,
+          "carbs": 52,
+          "fat": 12,
+          "fiber": 3
+        },
+        "source": "Asian-style vegetable fried rice",
+        "prepTime": "10 min",
+        "cookTime": "10 min",
+        "servings": 4
+      }
+    },
+    "snack": {
+      "name": "Yogurt with honey",
+      "cuisine": "slavic",
+      "targetCalories": 500,
+      "recipe": {
+        "title": "Yogurt with honey",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -319,54 +379,13 @@
           "Serve hot"
         ],
         "nutrition": {
-          "calories": 1400,
-          "protein": 53,
-          "carbs": 105,
-          "fat": 86
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
         },
         "source": "fallback_template",
         "url": null
-      }
-    },
-    "snack": {
-      "name": "Pickled vegetables",
-      "cuisine": "slavic",
-      "targetCalories": 500,
-      "recipe": {
-        "ingredients": [
-          "2 cups mixed vegetables (carrots, daikon, cucumber, cauliflower)",
-          "1 cup rice vinegar",
-          "1/2 cup water",
-          "2 tbsp sugar",
-          "1 tbsp salt",
-          "2 cloves garlic, sliced",
-          "1 inch ginger, sliced (optional)",
-          "1-2 dried red chilies (optional)",
-          "Fresh dill or cilantro (optional)"
-        ],
-        "instructions": [
-          "Cut vegetables into sticks or bite-sized pieces",
-          "In a saucepan, combine vinegar, water, sugar and salt",
-          "Bring to a simmer, stirring until sugar dissolves",
-          "Let the pickling liquid cool completely",
-          "Place vegetables, garlic, ginger, and chilies in clean glass jars",
-          "Pour cooled liquid over vegetables to cover completely",
-          "Add fresh herbs if desired",
-          "Seal jars and refrigerate for at least 24 hours",
-          "Vegetables will keep for 2-3 weeks refrigerated",
-          "Serve cold as a snack or side dish"
-        ],
-        "nutrition": {
-          "calories": 35,
-          "protein": 1,
-          "carbs": 7,
-          "fat": 0,
-          "fiber": 2
-        },
-        "source": "Quick pickled vegetables",
-        "prepTime": "15 min",
-        "cookTime": "5 min + 24h pickling",
-        "servings": 8
       }
     },
     "dinner": {
@@ -374,27 +393,37 @@
       "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Pasta carbonara",
-        "cuisine": "unknown",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "350g spaghetti",
+          "200g guanciale (cured pork cheek)",
+          "4 eggs",
+          "100g Pecorino Romano cheese, grated",
+          "Freshly ground black pepper to taste"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "Bring a pot of salted water to boil",
+          "Cut guanciale into small cubes or slices",
+          "Cook guanciale in a skillet over medium heat for 2-3 minutes until crispy, remove from heat and set aside",
+          "In a bowl, whisk together eggs, grated Pecorino Romano, and plenty of black pepper until creamy",
+          "Cook spaghetti al dente according to package instructions",
+          "Drain spaghetti, reserving some pasta water",
+          "Place spaghetti in the skillet with the guanciale over high heat to coat with rendered fat",
+          "TURN OFF THE HEAT completely",
+          "Pour egg and cheese mixture over hot pasta and stir quickly - the residual heat will create a creamy sauce",
+          "If too thick, add a splash of pasta water to loosen",
+          "Serve immediately, topped with extra guanciale, grated Pecorino Romano, and black pepper"
         ],
         "nutrition": {
-          "calories": 2100,
-          "protein": 131,
-          "carbs": 215,
-          "fat": 79
+          "calories": 841,
+          "protein": 30,
+          "carbs": 67,
+          "fat": 50,
+          "fiber": 3
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "Recipes from Italy - Authentic Roman Carbonara",
+        "prepTime": "20 min",
+        "cookTime": "15 min",
+        "servings": 4
       }
     }
   }
