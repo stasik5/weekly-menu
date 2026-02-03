@@ -1,12 +1,29 @@
 {
   "Wednesday": {
     "breakfast": {
-      "name": "Miso soup with tofu",
-      "cuisine": "asian",
+      "name": "Buckwheat porridge with milk and berries",
+      "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Apple slices with cheese",
+      "name": "Cottage cheese with herbs",
+      "cuisine": "slavic",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Beef stroganoff with rice",
+      "cuisine": "slavic",
+      "targetCalories": 2100
+    }
+  },
+  "Thursday": {
+    "breakfast": {
+      "name": "Oatmeal with honey and nuts",
+      "cuisine": "slavic",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Ryebread with butter",
       "cuisine": "slavic",
       "targetCalories": 500
     },
@@ -16,49 +33,32 @@
       "targetCalories": 2100
     }
   },
-  "Thursday": {
-    "breakfast": {
-      "name": "Rice porridge with pickles",
-      "cuisine": "asian",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Nuts and dried fruits",
-      "cuisine": "slavic",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Cabbage rolls with meat",
-      "cuisine": "slavic",
-      "targetCalories": 2100
-    }
-  },
   "Friday": {
     "breakfast": {
-      "name": "Oatmeal with honey and nuts",
-      "cuisine": "slavic",
+      "name": "Congee with egg and scallions",
+      "cuisine": "asian",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Pickled vegetables",
-      "cuisine": "slavic",
+      "name": "Seaweed snacks",
+      "cuisine": "asian",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Thai green curry",
-      "cuisine": "asian",
+      "name": "Pelmeni with sour cream",
+      "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
   "Saturday": {
     "breakfast": {
-      "name": "Fried eggs with bread",
+      "name": "Blini with cheese filling",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Banana with peanut butter",
-      "cuisine": "slavic",
+      "name": "Green tea cookies",
+      "cuisine": "asian",
       "targetCalories": 500
     },
     "dinner": {
