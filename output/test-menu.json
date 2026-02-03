@@ -1,41 +1,41 @@
 {
   "Monday": {
     "breakfast": {
-      "name": "Oatmeal with honey and nuts",
+      "name": "Buckwheat porridge with milk and berries",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Rice crackers",
-      "cuisine": "asian",
+      "name": "Banana with peanut butter",
+      "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Korean bibimbap",
+      "name": "Japanese ramen",
       "cuisine": "asian",
       "targetCalories": 2100
     }
   },
   "Tuesday": {
     "breakfast": {
-      "name": "Steamed buns with pork",
+      "name": "Miso soup with tofu",
       "cuisine": "asian",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Pickled ginger and daikon",
-      "cuisine": "asian",
+      "name": "Pickled vegetables",
+      "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Pad Thai with shrimp",
-      "cuisine": "asian",
+      "name": "Borscht with sour cream",
+      "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
   "Wednesday": {
     "breakfast": {
-      "name": "Scrambled eggs with vegetables",
+      "name": "Syrniki (cottage cheese pancakes)",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
@@ -45,12 +45,29 @@
       "targetCalories": 500
     },
     "dinner": {
+      "name": "Sichuan mapo tofu",
+      "cuisine": "asian",
+      "targetCalories": 2100
+    }
+  },
+  "Thursday": {
+    "breakfast": {
+      "name": "Congee with egg and scallions",
+      "cuisine": "asian",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Nuts and dried fruits",
+      "cuisine": "slavic",
+      "targetCalories": 500
+    },
+    "dinner": {
       "name": "Chicken soup with vegetables",
       "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
-  "Thursday": {
+  "Friday": {
     "breakfast": {
       "name": "Kasha with butter and milk",
       "cuisine": "slavic",
@@ -62,15 +79,15 @@
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Pelmeni with sour cream",
+      "name": "Beef stroganoff with rice",
       "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
-  "Friday": {
+  "Saturday": {
     "breakfast": {
-      "name": "Syrniki (cottage cheese pancakes)",
-      "cuisine": "slavic",
+      "name": "Steamed buns with pork",
+      "cuisine": "asian",
       "targetCalories": 1400
     },
     "snack": {
@@ -79,41 +96,24 @@
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Pasta carbonara",
-      "cuisine": "slavic",
-      "targetCalories": 2100
-    }
-  },
-  "Saturday": {
-    "breakfast": {
-      "name": "Buckwheat porridge with milk and berries",
-      "cuisine": "slavic",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Fried tofu cubes",
-      "cuisine": "asian",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Thai green curry",
+      "name": "Vietnamese pho",
       "cuisine": "asian",
       "targetCalories": 2100
     }
   },
   "Sunday": {
     "breakfast": {
-      "name": "Fried eggs with bread",
-      "cuisine": "slavic",
+      "name": "Rice noodles with egg",
+      "cuisine": "asian",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Nuts and dried fruits",
+      "name": "Yogurt with honey",
       "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Beef stroganoff with rice",
+      "name": "Cabbage rolls with meat",
       "cuisine": "slavic",
       "targetCalories": 2100
     }
