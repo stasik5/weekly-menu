@@ -1,7 +1,24 @@
 {
   "Wednesday": {
     "breakfast": {
-      "name": "Rice porridge with pickles",
+      "name": "Fried eggs with bread",
+      "cuisine": "slavic",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Banana with peanut butter",
+      "cuisine": "slavic",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Chicken soup with vegetables",
+      "cuisine": "slavic",
+      "targetCalories": 2100
+    }
+  },
+  "Thursday": {
+    "breakfast": {
+      "name": "Dim sum dumplings",
       "cuisine": "asian",
       "targetCalories": 1400
     },
@@ -11,32 +28,15 @@
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Sichuan mapo tofu",
-      "cuisine": "asian",
-      "targetCalories": 2100
-    }
-  },
-  "Thursday": {
-    "breakfast": {
-      "name": "Buckwheat porridge with milk and berries",
-      "cuisine": "slavic",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Apple slices with cheese",
-      "cuisine": "slavic",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Thai green curry",
+      "name": "Japanese ramen",
       "cuisine": "asian",
       "targetCalories": 2100
     }
   },
   "Friday": {
     "breakfast": {
-      "name": "Blini with cheese filling",
-      "cuisine": "slavic",
+      "name": "Rice porridge with pickles",
+      "cuisine": "asian",
       "targetCalories": 1400
     },
     "snack": {
@@ -45,24 +45,24 @@
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Shashlik (grilled meat) with salad",
+      "name": "Pelmeni with sour cream",
       "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
   "Saturday": {
     "breakfast": {
-      "name": "Kasha with butter and milk",
+      "name": "Oatmeal with honey and nuts",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Fried tofu cubes",
+      "name": "Pickled ginger and daikon",
       "cuisine": "asian",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Borscht with sour cream",
+      "name": "Shashlik (grilled meat) with salad",
       "cuisine": "slavic",
       "targetCalories": 2100
     }

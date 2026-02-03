@@ -1,6 +1,75 @@
 {
-  "Rice porridge with pickles": {
-    "title": "Rice porridge with pickles",
+  "Fried eggs with bread": {
+    "title": "Fried eggs with bread",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 1400,
+      "protein": 53,
+      "carbs": 105,
+      "fat": 86
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Banana with peanut butter": {
+    "title": "Banana with peanut butter",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 500,
+      "protein": 19,
+      "carbs": 38,
+      "fat": 31
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Chicken soup with vegetables": {
+    "title": "Chicken soup with vegetables",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 2100,
+      "protein": 131,
+      "carbs": 215,
+      "fat": 79
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Dim sum dumplings": {
+    "title": "Dim sum dumplings",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -45,8 +114,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Sichuan mapo tofu": {
-    "title": "Sichuan mapo tofu",
+  "Japanese ramen": {
+    "title": "Japanese ramen",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -68,77 +137,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Buckwheat porridge with milk and berries": {
-    "title": "Buckwheat porridge with milk and berries",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 1400,
-      "protein": 53,
-      "carbs": 105,
-      "fat": 86
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Apple slices with cheese": {
-    "title": "Apple slices with cheese",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 500,
-      "protein": 19,
-      "carbs": 38,
-      "fat": 31
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Thai green curry": {
-    "title": "Thai green curry",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 2100,
-      "protein": 131,
-      "carbs": 215,
-      "fat": 79
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Blini with cheese filling": {
-    "title": "Blini with cheese filling",
+  "Rice porridge with pickles": {
+    "title": "Rice porridge with pickles",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -183,8 +183,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Shashlik (grilled meat) with salad": {
-    "title": "Shashlik (grilled meat) with salad",
+  "Pelmeni with sour cream": {
+    "title": "Pelmeni with sour cream",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -206,8 +206,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Kasha with butter and milk": {
-    "title": "Kasha with butter and milk",
+  "Oatmeal with honey and nuts": {
+    "title": "Oatmeal with honey and nuts",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -229,8 +229,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Fried tofu cubes": {
-    "title": "Fried tofu cubes",
+  "Pickled ginger and daikon": {
+    "title": "Pickled ginger and daikon",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -252,8 +252,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Borscht with sour cream": {
-    "title": "Borscht with sour cream",
+  "Shashlik (grilled meat) with salad": {
+    "title": "Shashlik (grilled meat) with salad",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
