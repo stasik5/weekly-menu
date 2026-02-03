@@ -1016,5 +1016,97 @@
     "prepTime": "5 min",
     "cookTime": "0 min",
     "servings": 2
+  },
+  "Dim sum dumplings": {
+    "ingredients": [
+      "For dough:",
+      "2 cups all-purpose flour",
+      "1/2 cup boiling water",
+      "2 tbsp cold water",
+      "For filling:",
+      "1/2 lb (225g) ground pork",
+      "1/4 lb (115g) shrimp, minced",
+      "1/2 cup bamboo shoots, minced",
+      "2 green onions, finely chopped",
+      "1 tbsp soy sauce",
+      "1 tbsp oyster sauce",
+      "1 tsp sesame oil",
+      "1 tsp fresh ginger, grated",
+      "1 clove garlic, minced",
+      "Salt and white pepper to taste",
+      "For steaming:",
+      "Napa cabbage leaves or parchment paper",
+      "Water for steamer",
+      "Optional: dipping sauce (soy sauce, vinegar, chili oil)"
+    ],
+    "instructions": [
+      "Make dough: place flour in a bowl, gradually add boiling water while stirring",
+      "Add cold water, knead until smooth dough forms",
+      "Cover and rest for 30 minutes",
+      "Make filling: combine pork, shrimp, bamboo shoots, green onions, soy sauce, oyster sauce, sesame oil, ginger, garlic, salt and pepper",
+      "Mix well, set aside",
+      "Divide dough into small balls, roll into thin circles",
+      "Place 1 tbsp filling in center of each wrapper",
+      "Pleat edges to seal (traditional technique)",
+      "Line steamer with cabbage leaves or parchment",
+      "Place dumplings in steamer, leaving space between",
+      "Steam for 8-10 minutes until cooked through",
+      "Serve hot with dipping sauce"
+    ],
+    "nutrition": {
+      "calories": 280,
+      "protein": 16,
+      "carbs": 28,
+      "fat": 12,
+      "fiber": 1
+    },
+    "source": "Traditional Cantonese dim sum",
+    "prepTime": "45 min",
+    "cookTime": "10 min",
+    "servings": "24 dumplings"
+  },
+  "Syrniki (cottage cheese pancakes)": {
+    "ingredients": [
+      "1.5 cups cottage cheese or farmer's cheese (tvorog)",
+      "1/4 cup all-purpose flour",
+      "1 egg",
+      "2-3 tbsp sugar (adjust to taste)",
+      "1/4 tsp salt",
+      "1 tsp vanilla extract (optional)",
+      "1/2 cup flour for coating",
+      "3-4 tbsp butter or oil for frying",
+      "Optional: raisins or dried cranberries",
+      "Optional: sour cream for serving",
+      "Optional: honey or jam for serving",
+      "Optional: fresh berries"
+    ],
+    "instructions": [
+      "Place cottage cheese in a bowl, mash with a fork",
+      "Add egg, sugar, salt, and vanilla, mix well",
+      "Add 1/4 cup flour, mix until combined",
+      "Optional: add raisins or dried cranberries",
+      "The dough should be slightly sticky but manageable",
+      "Place 1/2 cup flour in a shallow plate for coating",
+      "Take about 2 tbsp of dough, form into a small patty",
+      "Dredge both sides in flour, shake off excess",
+      "Repeat with remaining dough",
+      "Heat butter or oil in a non-stick pan over medium heat",
+      "Fry syrniki in batches for 3-4 minutes per side until golden brown",
+      "Don't crowd the pan - cook 3-4 at a time",
+      "Transfer to paper towels to drain excess oil",
+      "Serve warm with sour cream, honey, or fresh berries",
+      "Can be served for breakfast or dessert"
+    ],
+    "nutrition": {
+      "calories": 320,
+      "protein": 14,
+      "carbs": 32,
+      "fat": 16,
+      "fiber": 0
+    },
+    "source": "Traditional Slavic cottage cheese pancakes",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "servings": 4
   }
 }

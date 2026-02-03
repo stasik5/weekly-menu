@@ -1,137 +1,171 @@
 {
   "Wednesday": {
     "breakfast": {
-      "name": "Dim sum dumplings",
+      "name": "Rice porridge with pickles",
       "cuisine": "asian",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Dim sum dumplings",
-        "cuisine": "unknown",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "1 cup jasmine rice",
+          "8 cups chicken or vegetable broth",
+          "2 cups water",
+          "1 inch ginger, sliced thin",
+          "Pickled vegetables (pickled carrots, daikon, or cabbage)",
+          "2-3 scallions/green onions, chopped",
+          "3-4 cloves garlic, minced",
+          "2 tbsp soy sauce",
+          "1 tsp sesame oil",
+          "Salt and white pepper to taste",
+          "Optional: fried shallots, chili oil, cilantro"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "Rinse rice until water runs clear",
+          "In a large pot, bring broth, water, and ginger to a boil",
+          "Add rice, reduce heat to low",
+          "Simmer uncovered for 1-1.5 hours, stirring occasionally",
+          "Cook until rice breaks down and porridge reaches desired consistency",
+          "Add more water if needed for thinner consistency",
+          "Season with soy sauce, sesame oil, salt and white pepper",
+          "Prepare pickled vegetables on the side",
+          "Serve hot porridge garnished with chopped scallions",
+          "Serve pickled vegetables on the side",
+          "Optional: add fried shallots, chili oil, or cilantro as toppings"
         ],
         "nutrition": {
-          "calories": 1400,
-          "protein": 53,
-          "carbs": 105,
-          "fat": 86
+          "calories": 320,
+          "protein": 10,
+          "carbs": 55,
+          "fat": 6,
+          "fiber": 2
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "Chinese rice porridge (congee)",
+        "prepTime": "5 min",
+        "cookTime": "90 min",
+        "servings": 4
       }
     },
     "snack": {
-      "name": "Nuts and dried fruits",
+      "name": "Banana with peanut butter",
       "cuisine": "slavic",
       "targetCalories": 500,
       "recipe": {
         "ingredients": [
-          "1 cup mixed nuts (almonds, walnuts, cashews, pecans)",
-          "1 cup mixed dried fruits (raisins, cranberries, apricots, dates)",
-          "Optional: dark chocolate chips or chunks",
-          "Optional: pumpkin seeds or sunflower seeds",
-          "Optional: cinnamon or cardamom for seasoning"
+          "2 ripe bananas",
+          "4 tbsp natural peanut butter (creamy or chunky)",
+          "Optional: honey for drizzling",
+          "Optional: cinnamon for sprinkling",
+          "Optional: chia seeds or granola for topping"
         ],
         "instructions": [
-          "Choose raw or roasted nuts according to preference",
-          "If nuts are raw, toast them in a dry pan for 3-5 minutes until fragrant",
-          "Let nuts cool completely",
-          "Chop large dried fruits (apricots, dates) into bite-sized pieces",
-          "Combine nuts and dried fruits in a bowl",
-          "Optional: add dark chocolate chips for extra indulgence",
-          "Optional: add pumpkin or sunflower seeds for variety",
-          "Optional: sprinkle with cinnamon or cardamom",
-          "Store in airtight container for up to 2 weeks",
-          "Portion into snack-sized bags for easy grabbing"
+          "Choose ripe but firm bananas (some brown spots are good)",
+          "Peel bananas and slice into rounds or leave whole for dipping",
+          "Place peanut butter in a small bowl for dipping or spread on banana slices",
+          "Optional: drizzle with honey for extra sweetness",
+          "Optional: sprinkle with cinnamon",
+          "Optional: top with chia seeds or granola for crunch",
+          "Serve immediately for best texture"
         ],
         "nutrition": {
-          "calories": 450,
+          "calories": 320,
           "protein": 10,
-          "carbs": 35,
-          "fat": 30,
+          "carbs": 42,
+          "fat": 14,
           "fiber": 6
         },
-        "source": "Trail mix snack",
-        "prepTime": "5 min",
-        "cookTime": "5 min (toasting)",
-        "servings": 4
+        "source": "Classic snack combination",
+        "prepTime": "3 min",
+        "cookTime": "0 min",
+        "servings": 2
       }
     },
     "dinner": {
-      "name": "Vietnamese pho",
-      "cuisine": "asian",
+      "name": "Pasta carbonara",
+      "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
         "ingredients": [
-          "1.5kg beef brisket",
-          "1kg meaty beef bones",
-          "1kg marrow bones (leg, knuckle)",
-          "2 large onions, halved",
-          "150g ginger, sliced",
-          "10 star anise",
-          "4 cinnamon quills",
-          "4 cardamom pods",
-          "3 cloves",
-          "1.5 tbsp coriander seeds",
-          "3.5 litres water",
-          "2 tbsp white sugar",
-          "1 tbsp salt",
-          "3 tbsp fish sauce",
-          "50g dried rice sticks per bowl",
-          "30g beef tenderloin per bowl, very thinly sliced",
-          "Toppings:",
-          "Bean sprouts",
-          "Thai basil",
-          "Coriander/cilantro",
-          "Lime wedges",
-          "Red chilli, finely sliced",
-          "Hoisin sauce",
-          "Sriracha"
+          "350g spaghetti",
+          "200g guanciale (cured pork cheek)",
+          "4 eggs",
+          "100g Pecorino Romano cheese, grated",
+          "Freshly ground black pepper to taste"
         ],
         "instructions": [
-          "Char onion and ginger over high heat until blackened on cut sides",
-          "Toast spices (star anise, cinnamon, cardamom, cloves, coriander) in dry pan for 3 minutes",
-          "Rinse bones and brisket, cover with water, boil for 5 minutes, then drain and rinse",
-          "Bring 3.5 litres water to boil, add bones, brisket, charred onion and ginger, and toasted spices",
-          "Simmer covered for 3 hours",
-          "Remove brisket (it should be fall-apart tender), cool, then refrigerate for later use",
-          "Simmer remaining broth uncovered for 40 more minutes",
-          "Strain broth into another pot, discard bones and spices",
-          "Add fish sauce, adjust with sugar and salt if needed",
-          "Cook rice noodles according to package instructions",
-          "Place noodles in bowls, top with raw beef slices and brisket slices",
-          "Ladle hot broth over beef (it will cook to medium rare)",
-          "Serve with toppings on the side"
+          "Bring a pot of salted water to boil",
+          "Cut guanciale into small cubes or slices",
+          "Cook guanciale in a skillet over medium heat for 2-3 minutes until crispy, remove from heat and set aside",
+          "In a bowl, whisk together eggs, grated Pecorino Romano, and plenty of black pepper until creamy",
+          "Cook spaghetti al dente according to package instructions",
+          "Drain spaghetti, reserving some pasta water",
+          "Place spaghetti in the skillet with the guanciale over high heat to coat with rendered fat",
+          "TURN OFF THE HEAT completely",
+          "Pour egg and cheese mixture over hot pasta and stir quickly - the residual heat will create a creamy sauce",
+          "If too thick, add a splash of pasta water to loosen",
+          "Serve immediately, topped with extra guanciale, grated Pecorino Romano, and black pepper"
         ],
         "nutrition": {
-          "calories": 550,
-          "protein": 32,
-          "carbs": 58,
-          "fat": 18,
-          "fiber": 2
+          "calories": 841,
+          "protein": 30,
+          "carbs": 67,
+          "fat": 50,
+          "fiber": 3
         },
-        "source": "RecipeTin Eats - Authentic Vietnamese Pho",
+        "source": "Recipes from Italy - Authentic Roman Carbonara",
         "prepTime": "20 min",
-        "cookTime": "3.5 hours",
-        "servings": 6
+        "cookTime": "15 min",
+        "servings": 4
       }
     }
   },
   "Thursday": {
     "breakfast": {
-      "name": "Syrniki (cottage cheese pancakes)",
+      "name": "Oatmeal with honey and nuts",
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Syrniki (cottage cheese pancakes)",
+        "ingredients": [
+          "1 cup rolled oats",
+          "2 cups milk (dairy, almond, or oat milk)",
+          "1 cup water",
+          "1/4 tsp salt",
+          "2 tbsp honey or maple syrup",
+          "1/2 cup mixed nuts (walnuts, almonds, pecans), chopped",
+          "1/2 tsp cinnamon (optional)",
+          "1 tsp vanilla extract (optional)",
+          "Fresh berries or sliced banana for topping (optional)",
+          "Butter or extra honey for drizzling (optional)"
+        ],
+        "instructions": [
+          "Combine oats, milk, water, and salt in a medium saucepan",
+          "Bring to a boil over medium heat, stirring occasionally",
+          "Reduce heat to low and simmer 5-7 minutes until oats are soft and creamy",
+          "Remove from heat, stir in vanilla if using",
+          "Stir in honey and cinnamon",
+          "Divide oatmeal into serving bowls",
+          "Top generously with chopped nuts",
+          "Add fresh berries or sliced banana if desired",
+          "Drizzle with extra honey or butter if you like",
+          "Serve warm"
+        ],
+        "nutrition": {
+          "calories": 380,
+          "protein": 12,
+          "carbs": 52,
+          "fat": 14,
+          "fiber": 6
+        },
+        "source": "Classic oatmeal breakfast",
+        "prepTime": "2 min",
+        "cookTime": "10 min",
+        "servings": 2
+      }
+    },
+    "snack": {
+      "name": "Fried tofu cubes",
+      "cuisine": "asian",
+      "targetCalories": 500,
+      "recipe": {
+        "title": "Fried tofu cubes",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -145,54 +179,139 @@
           "Serve hot"
         ],
         "nutrition": {
-          "calories": 1400,
-          "protein": 53,
-          "carbs": 105,
-          "fat": 86
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
         },
         "source": "fallback_template",
         "url": null
       }
     },
-    "snack": {
-      "name": "Edamame with sea salt",
-      "cuisine": "asian",
-      "targetCalories": 500,
+    "dinner": {
+      "name": "Borscht with sour cream",
+      "cuisine": "slavic",
+      "targetCalories": 2100,
       "recipe": {
         "ingredients": [
-          "1 lb (450g) frozen edamame in pods",
-          "1 tbsp coarse sea salt or flake salt",
-          "1/2 cup ice water",
-          "Water for boiling",
-          "Optional: 1 tsp soy sauce",
-          "Optional: chili flakes",
-          "Optional: sesame seeds",
-          "Optional: garlic powder"
+          "2 medium beets, peeled and grated",
+          "1 medium potato, peeled and cubed",
+          "1 carrot, grated",
+          "1 onion, diced",
+          "2 cloves garlic, minced",
+          "1 tbsp butter or oil",
+          "6 cups beef or vegetable broth",
+          "1 cup cabbage, shredded",
+          "2 tbsp tomato paste or 1 cup tomato juice",
+          "2 tbsp vinegar (optional, for brightness)",
+          "1 tbsp sugar",
+          "Salt and pepper to taste",
+          "Fresh dill for garnish",
+          "Sour cream for serving",
+          "Optional: 1/2 cup cooked beef or sausage"
         ],
         "instructions": [
-          "Bring a large pot of water to a boil",
-          "Add salt to the water",
-          "Add frozen edamame, boil for 4-5 minutes",
-          "Edamame should be tender but still slightly firm",
-          "Drain well in a colander",
-          "Immediately toss with coarse sea salt while still hot",
-          "Optional: add soy sauce, chili flakes, sesame seeds, or garlic powder",
-          "Transfer to a serving bowl",
-          "Serve warm or at room temperature",
-          "To eat: squeeze the beans from the pods, discard pods",
-          "Do not eat the pods"
+          "Heat butter or oil in a large pot over medium heat",
+          "Sauté onion until softened, 5 minutes",
+          "Add carrot, cook 3 more minutes",
+          "Add garlic, cook 30 seconds",
+          "Add tomato paste, cook 1 minute",
+          "Add broth, beets, potato, and sugar",
+          "Bring to a boil, reduce heat, simmer 20 minutes",
+          "Add cabbage and vinegar, cook 10 more minutes until vegetables are tender",
+          "Optional: add cooked beef or sausage",
+          "Season with salt and pepper to taste",
+          "Ladle into bowls",
+          "Top with a generous dollop of sour cream",
+          "Garnish with fresh dill",
+          "Serve hot with crusty bread"
         ],
         "nutrition": {
           "calories": 180,
-          "protein": 18,
-          "carbs": 14,
-          "fat": 8,
-          "fiber": 8
+          "protein": 6,
+          "carbs": 25,
+          "fat": 7,
+          "fiber": 4
         },
-        "source": "Japanese steamed soybeans snack",
-        "prepTime": "2 min",
-        "cookTime": "5 min",
+        "source": "Ukrainian/Russian beet soup",
+        "prepTime": "15 min",
+        "cookTime": "35 min",
+        "servings": 4
+      }
+    }
+  },
+  "Friday": {
+    "breakfast": {
+      "name": "Scrambled eggs with vegetables",
+      "cuisine": "slavic",
+      "targetCalories": 1400,
+      "recipe": {
+        "ingredients": [
+          "6 large eggs",
+          "2 tbsp milk or cream",
+          "2 tbsp butter",
+          "1/2 bell pepper, diced",
+          "1/2 cup mushrooms, sliced",
+          "1/4 cup onion, finely chopped",
+          "1/4 cup spinach, chopped",
+          "1/4 cup cheese, shredded (cheddar, feta, or your choice)",
+          "Salt and pepper to taste",
+          "Optional: fresh herbs (chives, parsley, dill)"
+        ],
+        "instructions": [
+          "Crack eggs into a bowl, add milk or cream, whisk until well combined",
+          "Season with salt and pepper",
+          "Heat butter in a non-stick pan over medium heat",
+          "Add onion and bell pepper, sauté for 2-3 minutes until softened",
+          "Add mushrooms, cook 2 more minutes",
+          "Add spinach, cook until just wilted (30 seconds)",
+          "Pour egg mixture over vegetables",
+          "Gently push eggs across pan with a spatula, letting uncooked egg flow underneath",
+          "Continue cooking, stirring gently, until eggs are set but still creamy (about 2-3 minutes)",
+          "Remove from heat while slightly undercooked (they'll continue cooking)",
+          "Fold in shredded cheese",
+          "Garnish with fresh herbs if desired",
+          "Serve immediately while hot"
+        ],
+        "nutrition": {
+          "calories": 280,
+          "protein": 18,
+          "carbs": 6,
+          "fat": 22,
+          "fiber": 1
+        },
+        "source": "Classic vegetable scrambled eggs",
+        "prepTime": "5 min",
+        "cookTime": "8 min",
         "servings": 3
+      }
+    },
+    "snack": {
+      "name": "Seaweed snacks",
+      "cuisine": "asian",
+      "targetCalories": 500,
+      "recipe": {
+        "title": "Seaweed snacks",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
+        },
+        "source": "fallback_template",
+        "url": null
       }
     },
     "dinner": {
@@ -247,264 +366,89 @@
       }
     }
   },
-  "Friday": {
-    "breakfast": {
-      "name": "Oatmeal with honey and nuts",
-      "cuisine": "slavic",
-      "targetCalories": 1400,
-      "recipe": {
-        "ingredients": [
-          "1 cup rolled oats",
-          "2 cups milk (dairy, almond, or oat milk)",
-          "1 cup water",
-          "1/4 tsp salt",
-          "2 tbsp honey or maple syrup",
-          "1/2 cup mixed nuts (walnuts, almonds, pecans), chopped",
-          "1/2 tsp cinnamon (optional)",
-          "1 tsp vanilla extract (optional)",
-          "Fresh berries or sliced banana for topping (optional)",
-          "Butter or extra honey for drizzling (optional)"
-        ],
-        "instructions": [
-          "Combine oats, milk, water, and salt in a medium saucepan",
-          "Bring to a boil over medium heat, stirring occasionally",
-          "Reduce heat to low and simmer 5-7 minutes until oats are soft and creamy",
-          "Remove from heat, stir in vanilla if using",
-          "Stir in honey and cinnamon",
-          "Divide oatmeal into serving bowls",
-          "Top generously with chopped nuts",
-          "Add fresh berries or sliced banana if desired",
-          "Drizzle with extra honey or butter if you like",
-          "Serve warm"
-        ],
-        "nutrition": {
-          "calories": 380,
-          "protein": 12,
-          "carbs": 52,
-          "fat": 14,
-          "fiber": 6
-        },
-        "source": "Classic oatmeal breakfast",
-        "prepTime": "2 min",
-        "cookTime": "10 min",
-        "servings": 2
-      }
-    },
-    "snack": {
-      "name": "Green tea cookies",
-      "cuisine": "asian",
-      "targetCalories": 500,
-      "recipe": {
-        "ingredients": [
-          "1 cup all-purpose flour",
-          "1/2 cup unsalted butter, softened",
-          "1/4 cup granulated sugar",
-          "1 egg yolk",
-          "1 tsp vanilla extract",
-          "1 tbsp matcha green tea powder",
-          "1/4 tsp salt",
-          "Optional: 1-2 tbsp white sesame seeds for topping",
-          "Optional: additional sugar for sprinkling"
-        ],
-        "instructions": [
-          "Preheat oven to 350°F (175°C) and line a baking sheet with parchment paper",
-          "In a large bowl, beat softened butter and sugar until light and fluffy",
-          "Add egg yolk and vanilla extract, mix well",
-          "Sift together flour, matcha powder, and salt",
-          "Gradually add dry ingredients to wet ingredients, mixing until just combined",
-          "Form dough into a log, wrap in plastic, and refrigerate for 30 minutes",
-          "Slice dough into 1/4 inch rounds",
-          "Optional: roll edges in sesame seeds or sprinkle with sugar",
-          "Place cookies on baking sheet, 2 inches apart",
-          "Bake for 10-12 minutes until edges are lightly golden",
-          "Cool on baking sheet for 5 minutes, then transfer to wire rack",
-          "Store in airtight container for up to 1 week"
-        ],
-        "nutrition": {
-          "calories": 95,
-          "protein": 1,
-          "carbs": 11,
-          "fat": 5,
-          "fiber": 0
-        },
-        "source": "Japanese matcha cookies",
-        "prepTime": "15 min",
-        "cookTime": "12 min",
-        "servings": "20 cookies"
-      }
-    },
-    "dinner": {
-      "name": "Pad Thai with shrimp",
-      "cuisine": "asian",
-      "targetCalories": 2100,
-      "recipe": {
-        "ingredients": [
-          "8 oz (225g) rice noodles (pad thai noodles)",
-          "1/2 lb (225g) shrimp, peeled and deveined",
-          "2 large eggs",
-          "3 tbsp vegetable oil",
-          "3 tbsp fish sauce",
-          "2 tbsp tamarind paste or 2 tbsp lime juice + 1 tbsp brown sugar",
-          "1 tbsp palm sugar or brown sugar",
-          "2 cloves garlic, minced",
-          "1 cup bean sprouts",
-          "3-4 green onions, sliced",
-          "1/4 cup crushed peanuts",
-          "2 tbsp dried shrimp (optional)",
-          "Lime wedges for serving"
-        ],
-        "instructions": [
-          "Soak rice noodles in warm water for 30 minutes until soft, drain",
-          "Mix fish sauce, tamarind paste, and sugar in a small bowl, set aside",
-          "Heat wok or large pan over high heat, add 1 tbsp oil",
-          "Stir-fry garlic and dried shrimp (if using) for 30 seconds",
-          "Add shrimp, cook 2-3 minutes until pink, remove from pan and set aside",
-          "Add remaining oil to pan, scramble eggs and set aside",
-          "Return to high heat, add drained noodles",
-          "Pour sauce over noodles, toss to coat evenly",
-          "Cook 2-3 minutes, tossing frequently",
-          "Add shrimp and eggs back to wok, toss together",
-          "Add bean sprouts and green onions, toss 30 seconds",
-          "Remove from heat",
-          "Serve topped with crushed peanuts and lime wedges",
-          "Optional: add chili flakes for heat"
-        ],
-        "nutrition": {
-          "calories": 480,
-          "protein": 28,
-          "carbs": 58,
-          "fat": 16,
-          "fiber": 4
-        },
-        "source": "Authentic Pad Thai recipe",
-        "prepTime": "20 min",
-        "cookTime": "15 min",
-        "servings": 2
-      }
-    }
-  },
   "Saturday": {
     "breakfast": {
-      "name": "Fried eggs with bread",
-      "cuisine": "slavic",
+      "name": "Steamed buns with pork",
+      "cuisine": "asian",
       "targetCalories": 1400,
       "recipe": {
+        "title": "Steamed buns with pork",
+        "cuisine": "unknown",
         "ingredients": [
-          "4 large eggs",
-          "4 slices crusty bread (rye, sourdough or whole grain)",
-          "2-3 tbsp butter or oil",
-          "Salt and pepper to taste",
-          "Optional: fresh herbs (chives, parsley)",
-          "Optional: garlic cloves for rubbing bread"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Heat butter or oil in a non-stick pan over medium heat",
-          "Crack eggs into pan, being careful not to break yolks",
-          "Season with salt and pepper",
-          "Cook until whites are set but yolks are still runny, 3-4 minutes",
-          "For over-easy, carefully flip and cook 30 more seconds",
-          "Toast bread until golden and crispy",
-          "Optional: rub warm bread with cut garlic clove",
-          "Place eggs on toast, garnish with fresh herbs if desired",
-          "Serve immediately while eggs are hot"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 320,
-          "protein": 18,
-          "carbs": 25,
-          "fat": 18,
-          "fiber": 2
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
         },
-        "source": "Classic breakfast preparation",
-        "prepTime": "2 min",
-        "cookTime": "5 min",
-        "servings": 2
+        "source": "fallback_template",
+        "url": null
       }
     },
     "snack": {
-      "name": "Apple slices with cheese",
-      "cuisine": "slavic",
+      "name": "Mango slices",
+      "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
+        "title": "Mango slices",
+        "cuisine": "unknown",
         "ingredients": [
-          "2 apples (any variety - Granny Smith, Honeycrisp, Fuji)",
-          "4 oz (120g) cheese (cheddar, gouda, brie, or your favorite)",
-          "Optional: honey for drizzling",
-          "Optional: walnuts or pecans",
-          "Optional: cinnamon"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Wash apples thoroughly",
-          "Core apples and slice into wedges or rounds",
-          "Slice cheese into thin pieces or small cubes",
-          "Arrange apple slices on a serving plate or board",
-          "Place cheese alongside or on top of apple slices",
-          "Optional: drizzle with honey",
-          "Optional: sprinkle with chopped nuts and cinnamon",
-          "Serve immediately for best freshness"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 220,
-          "protein": 8,
-          "carbs": 28,
-          "fat": 9,
-          "fiber": 4
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
         },
-        "source": "Classic fruit and cheese snack",
-        "prepTime": "5 min",
-        "cookTime": "0 min",
-        "servings": 2
+        "source": "fallback_template",
+        "url": null
       }
     },
     "dinner": {
-      "name": "Borscht with sour cream",
+      "name": "Pelmeni with sour cream",
       "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
+        "title": "Pelmeni with sour cream",
+        "cuisine": "unknown",
         "ingredients": [
-          "2 medium beets, peeled and grated",
-          "1 medium potato, peeled and cubed",
-          "1 carrot, grated",
-          "1 onion, diced",
-          "2 cloves garlic, minced",
-          "1 tbsp butter or oil",
-          "6 cups beef or vegetable broth",
-          "1 cup cabbage, shredded",
-          "2 tbsp tomato paste or 1 cup tomato juice",
-          "2 tbsp vinegar (optional, for brightness)",
-          "1 tbsp sugar",
-          "Salt and pepper to taste",
-          "Fresh dill for garnish",
-          "Sour cream for serving",
-          "Optional: 1/2 cup cooked beef or sausage"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Heat butter or oil in a large pot over medium heat",
-          "Sauté onion until softened, 5 minutes",
-          "Add carrot, cook 3 more minutes",
-          "Add garlic, cook 30 seconds",
-          "Add tomato paste, cook 1 minute",
-          "Add broth, beets, potato, and sugar",
-          "Bring to a boil, reduce heat, simmer 20 minutes",
-          "Add cabbage and vinegar, cook 10 more minutes until vegetables are tender",
-          "Optional: add cooked beef or sausage",
-          "Season with salt and pepper to taste",
-          "Ladle into bowls",
-          "Top with a generous dollop of sour cream",
-          "Garnish with fresh dill",
-          "Serve hot with crusty bread"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 180,
-          "protein": 6,
-          "carbs": 25,
-          "fat": 7,
-          "fiber": 4
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
         },
-        "source": "Ukrainian/Russian beet soup",
-        "prepTime": "15 min",
-        "cookTime": "35 min",
-        "servings": 4
+        "source": "fallback_template",
+        "url": null
       }
     }
   }
