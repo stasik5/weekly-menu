@@ -1,7 +1,7 @@
 {
   "Wednesday": {
     "breakfast": {
-      "name": "Fried eggs with bread",
+      "name": "Kasha with butter and milk",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
@@ -11,59 +11,59 @@
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Chicken teriyaki with rice",
+      "name": "Vietnamese pho",
       "cuisine": "asian",
       "targetCalories": 2100
     }
   },
   "Thursday": {
     "breakfast": {
-      "name": "Syrniki (cottage cheese pancakes)",
+      "name": "Buckwheat porridge with milk and berries",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Cottage cheese with herbs",
-      "cuisine": "slavic",
+      "name": "Green tea cookies",
+      "cuisine": "asian",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Pelmeni with sour cream",
-      "cuisine": "slavic",
+      "name": "Chicken teriyaki with rice",
+      "cuisine": "asian",
       "targetCalories": 2100
     }
   },
   "Friday": {
     "breakfast": {
-      "name": "Blini with cheese filling",
-      "cuisine": "slavic",
+      "name": "Rice porridge with pickles",
+      "cuisine": "asian",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Pickled vegetables",
+      "name": "Banana with peanut butter",
       "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Pad Thai with shrimp",
-      "cuisine": "asian",
+      "name": "Beef stroganoff with rice",
+      "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
   "Saturday": {
     "breakfast": {
-      "name": "Fried rice with vegetables",
+      "name": "Dim sum dumplings",
       "cuisine": "asian",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Edamame with sea salt",
-      "cuisine": "asian",
+      "name": "Apple slices with cheese",
+      "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Vietnamese pho",
-      "cuisine": "asian",
+      "name": "Borscht with sour cream",
+      "cuisine": "slavic",
       "targetCalories": 2100
     }
   }

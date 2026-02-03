@@ -1448,5 +1448,92 @@
     "prepTime": "5 min",
     "cookTime": "20 min",
     "servings": 2
+  },
+  "Chicken teriyaki with rice": {
+    "ingredients": [
+      "1 lb (450g) chicken thighs or breast, cut into bite-sized pieces",
+      "2 cups jasmine rice",
+      "For teriyaki sauce:",
+      "1/4 cup soy sauce",
+      "2 tbsp mirin (Japanese sweet rice wine)",
+      "2 tbsp sake or dry sherry",
+      "2 tbsp sugar",
+      "1 tbsp honey",
+      "1 tsp sesame oil",
+      "1 clove garlic, minced",
+      "1 tsp fresh ginger, grated",
+      "2 tbsp vegetable oil",
+      "1 tbsp cornstarch mixed with 1 tbsp water",
+      "Sesame seeds for garnish",
+      "Green onions, sliced for garnish",
+      "Optional: steamed broccoli or vegetables"
+    ],
+    "instructions": [
+      "Cook rice according to package instructions",
+      "Make teriyaki sauce: combine soy sauce, mirin, sake, sugar, honey, sesame oil, garlic, and ginger in a bowl",
+      "Heat vegetable oil in a large wok or skillet over medium-high heat",
+      "Add chicken pieces, cook 5-6 minutes until browned",
+      "Add teriyaki sauce to the pan",
+      "Bring to a simmer, cook 3-4 minutes",
+      "Stir in cornstarch mixture to thicken sauce",
+      "Continue cooking 1-2 minutes until sauce coats chicken",
+      "Remove from heat",
+      "Serve chicken and sauce over steamed rice",
+      "Garnish with sesame seeds and green onions",
+      "Optional: serve with steamed broccoli or other vegetables"
+    ],
+    "nutrition": {
+      "calories": 520,
+      "protein": 32,
+      "carbs": 58,
+      "fat": 16,
+      "fiber": 1
+    },
+    "source": "Japanese-style chicken teriyaki",
+    "prepTime": "15 min",
+    "cookTime": "20 min",
+    "servings": 4
+  },
+  "Cottage cheese with herbs": {
+    "ingredients": [
+      "1.5 cups cottage cheese or farmer's cheese (tvorog)",
+      "2 tbsp sour cream or Greek yogurt",
+      "1-2 tbsp fresh dill, chopped",
+      "1-2 tbsp fresh parsley, chopped",
+      "1-2 tbsp fresh chives, chopped",
+      "1 tbsp fresh dill",
+      "1/2 tsp salt",
+      "1/4 tsp black pepper",
+      "1 tbsp olive oil or sunflower oil",
+      "1 small clove garlic, minced (optional)",
+      "Optional: 1/2 tsp paprika",
+      "Optional: cucumber or tomato on the side"
+    ],
+    "instructions": [
+      "Place cottage cheese in a mixing bowl",
+      "Add sour cream or yogurt and mix well until smooth",
+      "Finely chop fresh herbs: dill, parsley, and chives",
+      "Add herbs to the cheese mixture",
+      "Add salt and black pepper to taste",
+      "Optional: add minced garlic for extra flavor",
+      "Drizzle with olive oil or sunflower oil",
+      "Optional: sprinkle with paprika",
+      "Mix thoroughly until well combined",
+      "Taste and adjust seasoning as needed",
+      "Serve as a spread on bread, or on its own",
+      "Optional: serve with cucumber or tomato slices on the side",
+      "Can be made ahead and refrigerated for 2-3 days"
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein": 16,
+      "carbs": 6,
+      "fat": 11,
+      "fiber": 0
+    },
+    "source": "Slavic herb-seasoned cottage cheese",
+    "prepTime": "10 min",
+    "cookTime": "0 min",
+    "servings": 3
   }
 }
