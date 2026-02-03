@@ -1,51 +1,51 @@
 {
   "Wednesday": {
     "breakfast": {
-      "name": "Kasha with butter and milk",
-      "cuisine": "slavic",
+      "name": "Dim sum dumplings",
+      "cuisine": "asian",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Seaweed snacks",
+      "name": "Rice crackers",
       "cuisine": "asian",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Korean bibimbap",
-      "cuisine": "asian",
+      "name": "Chicken soup with vegetables",
+      "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
   "Thursday": {
     "breakfast": {
-      "name": "Buckwheat porridge with milk and berries",
+      "name": "Kasha with butter and milk",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Mango slices",
-      "cuisine": "asian",
+      "name": "Banana with peanut butter",
+      "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Borscht with sour cream",
-      "cuisine": "slavic",
+      "name": "Vietnamese pho",
+      "cuisine": "asian",
       "targetCalories": 2100
     }
   },
   "Friday": {
     "breakfast": {
-      "name": "Blini with cheese filling",
-      "cuisine": "slavic",
+      "name": "Congee with egg and scallions",
+      "cuisine": "asian",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Pickled ginger and daikon",
-      "cuisine": "asian",
+      "name": "Apple slices with cheese",
+      "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Cabbage rolls with meat",
+      "name": "Pelmeni with sour cream",
       "cuisine": "slavic",
       "targetCalories": 2100
     }
@@ -57,13 +57,13 @@
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Green tea cookies",
-      "cuisine": "asian",
+      "name": "Ryebread with butter",
+      "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Chicken soup with vegetables",
-      "cuisine": "slavic",
+      "name": "Sichuan mapo tofu",
+      "cuisine": "asian",
       "targetCalories": 2100
     }
   }
