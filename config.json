@@ -1,0 +1,32 @@
+{
+  "nutrition": "medium",
+  "cuisine": {
+    "slavicRatio": 0.6,
+    "asianRatio": 0.4
+  },
+  "people": [
+    {
+      "name": "Stanislav",
+      "age": 31,
+      "weight": 85,
+      "gender": "male",
+      "preference": "slavic"
+    },
+    {
+      "name": "Wife",
+      "age": 26,
+      "weight": 63,
+      "gender": "female",
+      "preference": "asian"
+    }
+  ],
+  "output": {
+    "baseDir": "./output",
+    "weeklyDir": "./output/weekly",
+    "archiveDir": "./output/archive"
+  },
+  "github": {
+    "repo": "stasik5/weekly-menu",
+    "branch": "main"
+  }
+}
