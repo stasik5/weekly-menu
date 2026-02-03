@@ -173,18 +173,30 @@ async function publishToGitHub(htmlPath, weekLabel) {
     console.log('GitHub Auto-Publisher');
     console.log('='.repeat(50));
 
-    // Change to project root directory
-    const projectDir = path.dirname(path.dirname(htmlPath));
-    const projectRoot = path.join(projectDir, '..');
+    // Resolve to absolute path
+    const absPath = path.resolve(htmlPath);
+
+    // Find the project root (where package.json or git should be)
+    let projectRoot = absPath;
+    while (projectRoot !== path.dirname(projectRoot)) {
+      const packageJson = path.join(projectRoot, 'package.json');
+      const gitDir = path.join(projectRoot, '.git');
+      if (fs.existsSync(packageJson) || fs.existsSync(gitDir)) {
+        break;
+      }
+      projectRoot = path.dirname(projectRoot);
+    }
+
+    console.log(`Project root: ${projectRoot}`);
 
     if (process.cwd() !== projectRoot) {
       process.chdir(projectRoot);
-      console.log(`Working directory: ${projectRoot}`);
+      console.log(`Changed to: ${projectRoot}`);
     }
 
     // Step 1: Copy to docs/
     const docsPath = path.join(projectRoot, 'docs', 'index.html');
-    result.copied = copyToDocs(htmlPath, docsPath);
+    result.copied = copyToDocs(absPath, docsPath);
 
     if (!result.copied) {
       throw new Error('Failed to copy to docs/');
