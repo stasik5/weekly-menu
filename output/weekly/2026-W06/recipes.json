@@ -1,11 +1,11 @@
 {
   "Wednesday": {
     "breakfast": {
-      "name": "Steamed buns with pork",
-      "cuisine": "asian",
+      "name": "Kasha with butter and milk",
+      "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Steamed buns with pork",
+        "title": "Kasha with butter and milk",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -57,11 +57,11 @@
       }
     },
     "dinner": {
-      "name": "Pasta carbonara",
-      "cuisine": "slavic",
+      "name": "Korean bibimbap",
+      "cuisine": "asian",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Pasta carbonara",
+        "title": "Korean bibimbap",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -87,11 +87,11 @@
   },
   "Thursday": {
     "breakfast": {
-      "name": "Blini with cheese filling",
+      "name": "Buckwheat porridge with milk and berries",
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Blini with cheese filling",
+        "title": "Buckwheat porridge with milk and berries",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -115,11 +115,11 @@
       }
     },
     "snack": {
-      "name": "Fried tofu cubes",
+      "name": "Mango slices",
       "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
-        "title": "Fried tofu cubes",
+        "title": "Mango slices",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -173,11 +173,11 @@
   },
   "Friday": {
     "breakfast": {
-      "name": "Oatmeal with honey and nuts",
+      "name": "Blini with cheese filling",
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Oatmeal with honey and nuts",
+        "title": "Blini with cheese filling",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -201,11 +201,11 @@
       }
     },
     "snack": {
-      "name": "Cottage cheese with herbs",
-      "cuisine": "slavic",
+      "name": "Pickled ginger and daikon",
+      "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
-        "title": "Cottage cheese with herbs",
+        "title": "Pickled ginger and daikon",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -229,11 +229,11 @@
       }
     },
     "dinner": {
-      "name": "Shashlik (grilled meat) with salad",
+      "name": "Cabbage rolls with meat",
       "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Shashlik (grilled meat) with salad",
+        "title": "Cabbage rolls with meat",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -259,11 +259,11 @@
   },
   "Saturday": {
     "breakfast": {
-      "name": "Scrambled eggs with vegetables",
+      "name": "Fried eggs with bread",
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Scrambled eggs with vegetables",
+        "title": "Fried eggs with bread",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -287,11 +287,11 @@
       }
     },
     "snack": {
-      "name": "Mango slices",
+      "name": "Green tea cookies",
       "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
-        "title": "Mango slices",
+        "title": "Green tea cookies",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -315,11 +315,11 @@
       }
     },
     "dinner": {
-      "name": "Korean bibimbap",
-      "cuisine": "asian",
+      "name": "Chicken soup with vegetables",
+      "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Korean bibimbap",
+        "title": "Chicken soup with vegetables",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
