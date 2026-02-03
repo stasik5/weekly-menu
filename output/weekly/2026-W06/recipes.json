@@ -1,81 +1,84 @@
 {
   "Wednesday": {
     "breakfast": {
-      "name": "Rice porridge with pickles",
-      "cuisine": "asian",
+      "name": "Fried eggs with bread",
+      "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
         "ingredients": [
-          "1 cup jasmine rice",
-          "8 cups chicken or vegetable broth",
-          "2 cups water",
-          "1 inch ginger, sliced thin",
-          "Pickled vegetables (pickled carrots, daikon, or cabbage)",
-          "2-3 scallions/green onions, chopped",
-          "3-4 cloves garlic, minced",
-          "2 tbsp soy sauce",
-          "1 tsp sesame oil",
-          "Salt and white pepper to taste",
-          "Optional: fried shallots, chili oil, cilantro"
+          "4 large eggs",
+          "4 slices crusty bread (rye, sourdough or whole grain)",
+          "2-3 tbsp butter or oil",
+          "Salt and pepper to taste",
+          "Optional: fresh herbs (chives, parsley)",
+          "Optional: garlic cloves for rubbing bread"
         ],
         "instructions": [
-          "Rinse rice until water runs clear",
-          "In a large pot, bring broth, water, and ginger to a boil",
-          "Add rice, reduce heat to low",
-          "Simmer uncovered for 1-1.5 hours, stirring occasionally",
-          "Cook until rice breaks down and porridge reaches desired consistency",
-          "Add more water if needed for thinner consistency",
-          "Season with soy sauce, sesame oil, salt and white pepper",
-          "Prepare pickled vegetables on the side",
-          "Serve hot porridge garnished with chopped scallions",
-          "Serve pickled vegetables on the side",
-          "Optional: add fried shallots, chili oil, or cilantro as toppings"
+          "Heat butter or oil in a non-stick pan over medium heat",
+          "Crack eggs into pan, being careful not to break yolks",
+          "Season with salt and pepper",
+          "Cook until whites are set but yolks are still runny, 3-4 minutes",
+          "For over-easy, carefully flip and cook 30 more seconds",
+          "Toast bread until golden and crispy",
+          "Optional: rub warm bread with cut garlic clove",
+          "Place eggs on toast, garnish with fresh herbs if desired",
+          "Serve immediately while eggs are hot"
         ],
         "nutrition": {
           "calories": 320,
-          "protein": 10,
-          "carbs": 55,
-          "fat": 6,
+          "protein": 18,
+          "carbs": 25,
+          "fat": 18,
           "fiber": 2
         },
-        "source": "Chinese rice porridge (congee)",
-        "prepTime": "5 min",
-        "cookTime": "90 min",
-        "servings": 4
+        "source": "Classic breakfast preparation",
+        "prepTime": "2 min",
+        "cookTime": "5 min",
+        "servings": 2
       }
     },
     "snack": {
-      "name": "Banana with peanut butter",
-      "cuisine": "slavic",
+      "name": "Pickled ginger and daikon",
+      "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
         "ingredients": [
-          "2 ripe bananas",
-          "4 tbsp natural peanut butter (creamy or chunky)",
-          "Optional: honey for drizzling",
-          "Optional: cinnamon for sprinkling",
-          "Optional: chia seeds or granola for topping"
+          "2 cups daikon radish, cut into matchsticks",
+          "1 cup fresh young ginger, peeled and sliced paper-thin",
+          "1 cup rice vinegar",
+          "1/2 cup water",
+          "2 tbsp sugar",
+          "1 tsp salt",
+          "Optional: 1/4 cup mirin (sweet rice wine)",
+          "Optional: 1 dried red chili",
+          "Optional: yuzu peel or lemon zest"
         ],
         "instructions": [
-          "Choose ripe but firm bananas (some brown spots are good)",
-          "Peel bananas and slice into rounds or leave whole for dipping",
-          "Place peanut butter in a small bowl for dipping or spread on banana slices",
-          "Optional: drizzle with honey for extra sweetness",
-          "Optional: sprinkle with cinnamon",
-          "Optional: top with chia seeds or granola for crunch",
-          "Serve immediately for best texture"
+          "Cut daikon into thin matchsticks, about 2 inches long",
+          "Peel ginger and slice as thinly as possible (use a mandoline if available)",
+          "Place daikon and ginger in a clean glass jar",
+          "In a saucepan, combine rice vinegar, water, sugar, and salt",
+          "Optional: add mirin for sweetness",
+          "Bring to a simmer, stirring until sugar and salt dissolve",
+          "Let the brine cool completely",
+          "Pour cooled brine over daikon and ginger",
+          "Optional: add dried chili and yuzu peel",
+          "Make sure vegetables are completely submerged",
+          "Seal jar and refrigerate",
+          "Ready to eat after 24 hours, best after 2-3 days",
+          "Will keep refrigerated for 2-3 weeks"
         ],
         "nutrition": {
-          "calories": 320,
-          "protein": 10,
-          "carbs": 42,
-          "fat": 14,
-          "fiber": 6
+          "calories": 40,
+          "protein": 1,
+          "carbs": 9,
+          "fat": 0,
+          "fiber": 1
         },
-        "source": "Classic snack combination",
-        "prepTime": "3 min",
-        "cookTime": "0 min",
-        "servings": 2
+        "source": "Japanese pickled ginger and radish (takuan)",
+        "prepTime": "15 min",
+        "cookTime": "5 min + 24h pickling",
+        "servings": 8
       }
     },
     "dinner": {
@@ -119,53 +122,54 @@
   },
   "Thursday": {
     "breakfast": {
-      "name": "Oatmeal with honey and nuts",
+      "name": "Buckwheat porridge with milk and berries",
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
         "ingredients": [
-          "1 cup rolled oats",
-          "2 cups milk (dairy, almond, or oat milk)",
-          "1 cup water",
-          "1/4 tsp salt",
-          "2 tbsp honey or maple syrup",
-          "1/2 cup mixed nuts (walnuts, almonds, pecans), chopped",
-          "1/2 tsp cinnamon (optional)",
-          "1 tsp vanilla extract (optional)",
-          "Fresh berries or sliced banana for topping (optional)",
-          "Butter or extra honey for drizzling (optional)"
+          "1 cup buckwheat groats (grechka)",
+          "2.5 cups water",
+          "1 cup milk (dairy, almond, or oat milk)",
+          "1 tbsp butter",
+          "1-2 tbsp honey or maple syrup",
+          "1/2 tsp salt",
+          "1 cup fresh or frozen berries (strawberries, blueberries, raspberries)",
+          "Optional: cinnamon or vanilla extract",
+          "Optional: nuts or seeds for topping"
         ],
         "instructions": [
-          "Combine oats, milk, water, and salt in a medium saucepan",
-          "Bring to a boil over medium heat, stirring occasionally",
-          "Reduce heat to low and simmer 5-7 minutes until oats are soft and creamy",
-          "Remove from heat, stir in vanilla if using",
-          "Stir in honey and cinnamon",
-          "Divide oatmeal into serving bowls",
-          "Top generously with chopped nuts",
-          "Add fresh berries or sliced banana if desired",
-          "Drizzle with extra honey or butter if you like",
+          "Rinse buckwheat groats thoroughly until water runs clear",
+          "In a medium pot, bring water and salt to a boil",
+          "Add buckwheat, reduce heat to low, cover",
+          "Simmer for 15-20 minutes until water is absorbed",
+          "Remove from heat, let stand covered for 5 minutes",
+          "Fluff with a fork",
+          "Stir in butter and milk until creamy",
+          "Add honey or maple syrup to taste",
+          "Optional: add cinnamon or vanilla",
+          "Top with fresh or frozen berries",
+          "Optional: add nuts or seeds",
           "Serve warm"
         ],
         "nutrition": {
-          "calories": 380,
-          "protein": 12,
-          "carbs": 52,
-          "fat": 14,
+          "calories": 320,
+          "protein": 10,
+          "carbs": 58,
+          "fat": 6,
           "fiber": 6
         },
-        "source": "Classic oatmeal breakfast",
-        "prepTime": "2 min",
-        "cookTime": "10 min",
+        "source": "Traditional Slavic buckwheat porridge",
+        "prepTime": "5 min",
+        "cookTime": "20 min",
         "servings": 2
       }
     },
     "snack": {
-      "name": "Fried tofu cubes",
-      "cuisine": "asian",
+      "name": "Ryebread with butter",
+      "cuisine": "slavic",
       "targetCalories": 500,
       "recipe": {
-        "title": "Fried tofu cubes",
+        "title": "Ryebread with butter",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -189,190 +193,41 @@
       }
     },
     "dinner": {
-      "name": "Borscht with sour cream",
-      "cuisine": "slavic",
+      "name": "Sichuan mapo tofu",
+      "cuisine": "asian",
       "targetCalories": 2100,
       "recipe": {
+        "title": "Sichuan mapo tofu",
+        "cuisine": "unknown",
         "ingredients": [
-          "2 medium beets, peeled and grated",
-          "1 medium potato, peeled and cubed",
-          "1 carrot, grated",
-          "1 onion, diced",
-          "2 cloves garlic, minced",
-          "1 tbsp butter or oil",
-          "6 cups beef or vegetable broth",
-          "1 cup cabbage, shredded",
-          "2 tbsp tomato paste or 1 cup tomato juice",
-          "2 tbsp vinegar (optional, for brightness)",
-          "1 tbsp sugar",
-          "Salt and pepper to taste",
-          "Fresh dill for garnish",
-          "Sour cream for serving",
-          "Optional: 1/2 cup cooked beef or sausage"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Heat butter or oil in a large pot over medium heat",
-          "Sauté onion until softened, 5 minutes",
-          "Add carrot, cook 3 more minutes",
-          "Add garlic, cook 30 seconds",
-          "Add tomato paste, cook 1 minute",
-          "Add broth, beets, potato, and sugar",
-          "Bring to a boil, reduce heat, simmer 20 minutes",
-          "Add cabbage and vinegar, cook 10 more minutes until vegetables are tender",
-          "Optional: add cooked beef or sausage",
-          "Season with salt and pepper to taste",
-          "Ladle into bowls",
-          "Top with a generous dollop of sour cream",
-          "Garnish with fresh dill",
-          "Serve hot with crusty bread"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 180,
-          "protein": 6,
-          "carbs": 25,
-          "fat": 7,
-          "fiber": 4
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
         },
-        "source": "Ukrainian/Russian beet soup",
-        "prepTime": "15 min",
-        "cookTime": "35 min",
-        "servings": 4
+        "source": "fallback_template",
+        "url": null
       }
     }
   },
   "Friday": {
     "breakfast": {
-      "name": "Scrambled eggs with vegetables",
+      "name": "Kasha with butter and milk",
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "ingredients": [
-          "6 large eggs",
-          "2 tbsp milk or cream",
-          "2 tbsp butter",
-          "1/2 bell pepper, diced",
-          "1/2 cup mushrooms, sliced",
-          "1/4 cup onion, finely chopped",
-          "1/4 cup spinach, chopped",
-          "1/4 cup cheese, shredded (cheddar, feta, or your choice)",
-          "Salt and pepper to taste",
-          "Optional: fresh herbs (chives, parsley, dill)"
-        ],
-        "instructions": [
-          "Crack eggs into a bowl, add milk or cream, whisk until well combined",
-          "Season with salt and pepper",
-          "Heat butter in a non-stick pan over medium heat",
-          "Add onion and bell pepper, sauté for 2-3 minutes until softened",
-          "Add mushrooms, cook 2 more minutes",
-          "Add spinach, cook until just wilted (30 seconds)",
-          "Pour egg mixture over vegetables",
-          "Gently push eggs across pan with a spatula, letting uncooked egg flow underneath",
-          "Continue cooking, stirring gently, until eggs are set but still creamy (about 2-3 minutes)",
-          "Remove from heat while slightly undercooked (they'll continue cooking)",
-          "Fold in shredded cheese",
-          "Garnish with fresh herbs if desired",
-          "Serve immediately while hot"
-        ],
-        "nutrition": {
-          "calories": 280,
-          "protein": 18,
-          "carbs": 6,
-          "fat": 22,
-          "fiber": 1
-        },
-        "source": "Classic vegetable scrambled eggs",
-        "prepTime": "5 min",
-        "cookTime": "8 min",
-        "servings": 3
-      }
-    },
-    "snack": {
-      "name": "Seaweed snacks",
-      "cuisine": "asian",
-      "targetCalories": 500,
-      "recipe": {
-        "title": "Seaweed snacks",
-        "cuisine": "unknown",
-        "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
-        ],
-        "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
-        ],
-        "nutrition": {
-          "calories": 500,
-          "protein": 19,
-          "carbs": 38,
-          "fat": 31
-        },
-        "source": "fallback_template",
-        "url": null
-      }
-    },
-    "dinner": {
-      "name": "Cabbage rolls with meat",
-      "cuisine": "slavic",
-      "targetCalories": 2100,
-      "recipe": {
-        "ingredients": [
-          "2 small heads green cabbage",
-          "1/2 cup rice, uncooked",
-          "1 lb (450g) ground beef (5% fat)",
-          "1 lb (450g) ground pork (5% fat)",
-          "1 large onion, chopped",
-          "2 tbsp olive oil",
-          "2 carrots, grated",
-          "1/4 cup fresh parsley, chopped",
-          "2 tsp salt",
-          "1/2 tsp black pepper",
-          "2-3 bay leaves",
-          "For sauce:",
-          "1 cup chicken stock",
-          "1 cup sour cream or crème fraîche",
-          "2 cups crushed tomatoes or passata",
-          "Salt and pepper to taste"
-        ],
-        "instructions": [
-          "Freeze cabbage heads for 2-3 days, then thaw overnight in fridge",
-          "Cook rice in boiling water for 5 minutes (al dente), drain",
-          "Sauté onion in olive oil until tender, 7-10 minutes",
-          "Mix beef, pork, parsley, onions, carrots, rice, salt and pepper",
-          "Mix sauce ingredients in a bowl, set aside",
-          "Remove cabbage leaves from heads, cut thick ribs",
-          "Place 2 tbsp filling at wide end of leaf, fold sides in and roll up",
-          "Preheat oven to 350°F (180°C)",
-          "Pour some sauce on bottom of casserole dish",
-          "Layer cabbage rolls, adding bay leaves and sauce halfway",
-          "Pour remaining sauce over rolls, cover",
-          "Bake for 1.5-2 hours until tender",
-          "Serve with extra sour cream if desired"
-        ],
-        "nutrition": {
-          "calories": 380,
-          "protein": 24,
-          "carbs": 25,
-          "fat": 20,
-          "fiber": 4
-        },
-        "source": "Vikalinka Authentic Recipe",
-        "prepTime": "45 min",
-        "cookTime": "2 hours",
-        "servings": "10 to 12"
-      }
-    }
-  },
-  "Saturday": {
-    "breakfast": {
-      "name": "Steamed buns with pork",
-      "cuisine": "asian",
-      "targetCalories": 1400,
-      "recipe": {
-        "title": "Steamed buns with pork",
+        "title": "Kasha with butter and milk",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -396,59 +251,226 @@
       }
     },
     "snack": {
-      "name": "Mango slices",
-      "cuisine": "asian",
+      "name": "Banana with peanut butter",
+      "cuisine": "slavic",
       "targetCalories": 500,
       "recipe": {
-        "title": "Mango slices",
-        "cuisine": "unknown",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "2 ripe bananas",
+          "4 tbsp natural peanut butter (creamy or chunky)",
+          "Optional: honey for drizzling",
+          "Optional: cinnamon for sprinkling",
+          "Optional: chia seeds or granola for topping"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "Choose ripe but firm bananas (some brown spots are good)",
+          "Peel bananas and slice into rounds or leave whole for dipping",
+          "Place peanut butter in a small bowl for dipping or spread on banana slices",
+          "Optional: drizzle with honey for extra sweetness",
+          "Optional: sprinkle with cinnamon",
+          "Optional: top with chia seeds or granola for crunch",
+          "Serve immediately for best texture"
         ],
         "nutrition": {
-          "calories": 500,
-          "protein": 19,
-          "carbs": 38,
-          "fat": 31
+          "calories": 320,
+          "protein": 10,
+          "carbs": 42,
+          "fat": 14,
+          "fiber": 6
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "Classic snack combination",
+        "prepTime": "3 min",
+        "cookTime": "0 min",
+        "servings": 2
       }
     },
     "dinner": {
-      "name": "Pelmeni with sour cream",
-      "cuisine": "slavic",
+      "name": "Thai green curry",
+      "cuisine": "asian",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Pelmeni with sour cream",
-        "cuisine": "unknown",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "2-3 tbsp Thai green curry paste",
+          "1 lb (450g) chicken breast or thighs, sliced",
+          "1 can (13.5 oz) coconut milk",
+          "1 cup chicken broth",
+          "1 cup bamboo shoots, drained",
+          "1 cup Thai eggplant or regular eggplant, cubed",
+          "1 red bell pepper, sliced",
+          "1 cup Thai basil leaves",
+          "2 tbsp fish sauce",
+          "1 tbsp palm sugar or brown sugar",
+          "1 tbsp lime juice",
+          "2 tbsp vegetable oil",
+          "Optional: kaffir lime leaves, chilies"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
+          "Heat oil in a wok or large pan over medium-high heat",
+          "Add green curry paste, stir-fry for 1-2 minutes until fragrant",
+          "Add chicken pieces, stir-fry until browned on outside",
+          "Pour in 1/2 can coconut milk, stir to combine",
+          "Add fish sauce and sugar, cook 3-4 minutes",
+          "Add remaining coconut milk and chicken broth, bring to simmer",
+          "Add eggplant and bamboo shoots, cook 5 minutes",
+          "Add bell pepper, cook 3-4 more minutes until vegetables are tender",
+          "Remove from heat, stir in Thai basil and lime juice",
+          "Adjust seasoning with fish sauce or lime juice as needed",
+          "Serve hot over jasmine rice"
+        ],
+        "nutrition": {
+          "calories": 420,
+          "protein": 32,
+          "carbs": 18,
+          "fat": 26,
+          "fiber": 4
+        },
+        "source": "Thai green curry recipe",
+        "prepTime": "15 min",
+        "cookTime": "25 min",
+        "servings": 4
+      }
+    }
+  },
+  "Saturday": {
+    "breakfast": {
+      "name": "Fried rice with vegetables",
+      "cuisine": "asian",
+      "targetCalories": 1400,
+      "recipe": {
+        "ingredients": [
+          "3 cups cooked rice, preferably day-old and cold",
+          "2 tbsp vegetable oil",
+          "2 eggs, beaten",
+          "1/2 cup peas (fresh or frozen)",
+          "1/2 cup corn kernels",
+          "1/2 cup carrots, diced small",
+          "1/2 cup green onions, sliced",
+          "2 cloves garlic, minced",
+          "2 tbsp soy sauce",
+          "1 tbsp oyster sauce",
+          "1/2 tsp white pepper",
+          "1 tsp sesame oil",
+          "Optional: protein of choice (chicken, shrimp, tofu)",
+          "Optional: cilantro for garnish"
+        ],
+        "instructions": [
+          "Heat wok or large pan over high heat with 1 tbsp oil",
+          "Add beaten eggs, scramble quickly until just set, remove from pan and set aside",
+          "Add remaining oil to pan over high heat",
+          "Add garlic, stir-fry for 15 seconds until fragrant",
+          "Add carrots, peas, and corn, stir-fry for 2-3 minutes",
+          "Add cold rice, breaking up any clumps with spatula",
+          "Stir-fry for 3-4 minutes, pressing rice against pan to get crispy edges",
+          "Return eggs to pan, add soy sauce and oyster sauce",
+          "Toss everything together for 1-2 minutes until well combined",
+          "Remove from heat, add white pepper and sesame oil",
+          "Garnish with green onions and cilantro if desired",
           "Serve hot"
         ],
         "nutrition": {
-          "calories": 2100,
-          "protein": 131,
-          "carbs": 215,
-          "fat": 79
+          "calories": 350,
+          "protein": 10,
+          "carbs": 52,
+          "fat": 12,
+          "fiber": 3
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "Asian-style vegetable fried rice",
+        "prepTime": "10 min",
+        "cookTime": "10 min",
+        "servings": 4
+      }
+    },
+    "snack": {
+      "name": "Nuts and dried fruits",
+      "cuisine": "slavic",
+      "targetCalories": 500,
+      "recipe": {
+        "ingredients": [
+          "1 cup mixed nuts (almonds, walnuts, cashews, pecans)",
+          "1 cup mixed dried fruits (raisins, cranberries, apricots, dates)",
+          "Optional: dark chocolate chips or chunks",
+          "Optional: pumpkin seeds or sunflower seeds",
+          "Optional: cinnamon or cardamom for seasoning"
+        ],
+        "instructions": [
+          "Choose raw or roasted nuts according to preference",
+          "If nuts are raw, toast them in a dry pan for 3-5 minutes until fragrant",
+          "Let nuts cool completely",
+          "Chop large dried fruits (apricots, dates) into bite-sized pieces",
+          "Combine nuts and dried fruits in a bowl",
+          "Optional: add dark chocolate chips for extra indulgence",
+          "Optional: add pumpkin or sunflower seeds for variety",
+          "Optional: sprinkle with cinnamon or cardamom",
+          "Store in airtight container for up to 2 weeks",
+          "Portion into snack-sized bags for easy grabbing"
+        ],
+        "nutrition": {
+          "calories": 450,
+          "protein": 10,
+          "carbs": 35,
+          "fat": 30,
+          "fiber": 6
+        },
+        "source": "Trail mix snack",
+        "prepTime": "5 min",
+        "cookTime": "5 min (toasting)",
+        "servings": 4
+      }
+    },
+    "dinner": {
+      "name": "Korean bibimbap",
+      "cuisine": "asian",
+      "targetCalories": 2100,
+      "recipe": {
+        "ingredients": [
+          "100g beef mince (or other cuts)",
+          "1 tbsp soy sauce",
+          "1 tbsp sesame oil",
+          "1 tsp brown sugar",
+          "1/4 tsp minced garlic",
+          "250g spinach",
+          "350g bean sprouts",
+          "100g shiitake mushroom",
+          "120g carrots (1 small)",
+          "1/2 tsp fine sea salt",
+          "3 cups steamed rice",
+          "3 eggs",
+          "Cooking oil for frying",
+          "Toasted seasoned seaweed, shredded",
+          "Bibimbap sauce:",
+          "2 tbsp gochujang (Korean chili paste)",
+          "1 tbsp sesame oil",
+          "1 tbsp sugar",
+          "1 tbsp water",
+          "1 tbsp toasted sesame seeds",
+          "1 tsp vinegar",
+          "1 tsp minced garlic"
+        ],
+        "instructions": [
+          "Mix beef mince with soy sauce, sesame oil, brown sugar and garlic. Marinate for 30 minutes",
+          "Mix all bibimbap sauce ingredients in a bowl, set aside",
+          "Cook spinach: blanch in boiling water for 30 seconds, drain, squeeze out excess water, season with a little sesame oil and salt",
+          "Cook bean sprouts: boil in water for 5 minutes, drain, season with sesame oil and salt",
+          "Julienne carrots, stir-fry with oil and 1/4 tsp salt for 2-3 minutes",
+          "Slice shiitake mushrooms, stir-fry with oil and 1/4 tsp salt for 2-3 minutes",
+          "Fry eggs sunny-side up or to your preference",
+          "Cook marinated beef in wok over medium-high heat for 3-5 minutes until browned",
+          "Place steamed rice in bowls, arrange beef, vegetables, and egg on top",
+          "Garnish with seasoned seaweed",
+          "Serve with bibimbap sauce on the side",
+          "Mix everything together before eating"
+        ],
+        "nutrition": {
+          "calories": 570,
+          "protein": 24,
+          "carbs": 71,
+          "fat": 23,
+          "fiber": 7
+        },
+        "source": "My Korean Kitchen - Authentic Korean Recipe",
+        "prepTime": "30 min",
+        "cookTime": "15 min",
+        "servings": 3
       }
     }
   }
