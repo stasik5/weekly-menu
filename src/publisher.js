@@ -173,15 +173,17 @@ async function publishToGitHub(htmlPath, weekLabel) {
     console.log('GitHub Auto-Publisher');
     console.log('='.repeat(50));
 
-    // Change to project directory if needed
+    // Change to project root directory
     const projectDir = path.dirname(path.dirname(htmlPath));
-    if (process.cwd() !== projectDir) {
-      process.chdir(projectDir);
-      console.log(`Working directory: ${projectDir}`);
+    const projectRoot = path.join(projectDir, '..');
+
+    if (process.cwd() !== projectRoot) {
+      process.chdir(projectRoot);
+      console.log(`Working directory: ${projectRoot}`);
     }
 
     // Step 1: Copy to docs/
-    const docsPath = path.join(projectDir, 'docs', 'index.html');
+    const docsPath = path.join(projectRoot, 'docs', 'index.html');
     result.copied = copyToDocs(htmlPath, docsPath);
 
     if (!result.copied) {
