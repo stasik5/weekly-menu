@@ -6,6 +6,32 @@ const fs = require('fs');
 const path = require('path');
 
 /**
+ * Extract recipes from weekly plan for embedding in HTML
+ * @param {Object} plan - Weekly meal plan
+ * @returns {Object} Recipe data keyed by day-mealType
+ */
+function extractRecipes(plan) {
+  const recipes = {};
+  for (const [day, meals] of Object.entries(plan)) {
+    for (const [mealType, meal] of Object.entries(meals)) {
+      if (meal.recipe) {
+        const key = `${day}-${mealType}`;
+        recipes[key] = {
+          title: meal.name,
+          cuisine: meal.cuisine || 'Unknown',
+          ingredients: meal.recipe.ingredients || [],
+          instructions: meal.recipe.instructions || [],
+          nutrition: meal.recipe.nutrition || {},
+          source: meal.recipe.source || 'Unknown',
+          url: meal.recipe.url || null
+        };
+      }
+    }
+  }
+  return recipes;
+}
+
+/**
  * Generate HTML for the weekly menu page
  * @param {Object} weeklyPlan - Weekly meal plan with recipes
  * @param {Object} groceryList - Organized grocery list
@@ -16,6 +42,7 @@ const path = require('path');
 function generateHTML(weeklyPlan, groceryList, nutritionSummary, weekLabel) {
   const days = Object.keys(weeklyPlan);
   const mealTypes = ['breakfast', 'snack', 'dinner'];
+  const recipesData = extractRecipes(weeklyPlan);
 
   const html = `<!DOCTYPE html>
 <html lang="en">
@@ -289,6 +316,188 @@ function generateHTML(weeklyPlan, groceryList, nutritionSummary, weekLabel) {
       text-decoration: underline;
     }
 
+    /* Make meals clickable */
+    .meal {
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      position: relative;
+    }
+
+    .meal:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+      background: rgba(59, 130, 246, 0.1);
+    }
+
+    .meal::after {
+      content: '📖';
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      font-size: 0.8em;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    .meal:hover::after {
+      opacity: 1;
+    }
+
+    /* Modal Popup */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(5px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-content {
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 16px;
+      padding: 30px;
+      max-width: 600px;
+      width: 90%;
+      max-height: 85vh;
+      overflow-y: auto;
+      position: relative;
+      transform: scale(0.9) translateY(20px);
+      transition: transform 0.3s ease;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-overlay.active .modal-content {
+      transform: scale(1) translateY(0);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: rgba(239, 68, 68, 0.2);
+      border: 2px solid #ef4444;
+      color: #ef4444;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    .modal-close:hover {
+      background: #ef4444;
+      color: #ffffff;
+      transform: rotate(90deg);
+    }
+
+    .modal-title {
+      font-size: 1.8em;
+      color: #f1f5f9;
+      margin-bottom: 5px;
+      margin-right: 40px;
+    }
+
+    .modal-cuisine {
+      color: #60a5fa;
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+    }
+
+    .modal-section {
+      margin-bottom: 25px;
+    }
+
+    .modal-section h4 {
+      color: #60a5fa;
+      font-size: 1.1em;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .modal-section ul,
+    .modal-section ol {
+      padding-left: 20px;
+    }
+
+    .modal-section li {
+      margin-bottom: 8px;
+      color: #cbd5e1;
+      line-height: 1.7;
+    }
+
+    .modal-nutrition {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 12px;
+      background: rgba(30, 41, 59, 0.8);
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid rgba(59, 130, 246, 0.2);
+    }
+
+    .modal-nutrition-item {
+      text-align: center;
+    }
+
+    .modal-nutrition-item .value {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #f1f5f9;
+    }
+
+    .modal-nutrition-item .label {
+      font-size: 0.85em;
+      color: #94a3b8;
+      text-transform: uppercase;
+    }
+
+    .modal-source {
+      text-align: center;
+      margin-top: 20px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(59, 130, 246, 0.2);
+    }
+
+    .modal-source a {
+      color: #60a5fa;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 8px 16px;
+      background: rgba(59, 130, 246, 0.2);
+      border-radius: 20px;
+      transition: background 0.2s ease;
+    }
+
+    .modal-source a:hover {
+      background: rgba(59, 130, 246, 0.4);
+    }
+
     @media (max-width: 768px) {
       .meal-grid {
         grid-template-columns: 1fr;
@@ -296,6 +505,22 @@ function generateHTML(weeklyPlan, groceryList, nutritionSummary, weekLabel) {
 
       .grocery-items {
         grid-template-columns: 1fr;
+      }
+
+      .modal-content {
+        padding: 20px;
+        width: 95%;
+        max-height: 90vh;
+      }
+
+      .modal-title {
+        font-size: 1.4em;
+      }
+
+      .modal-close {
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
       }
     }
   </style>
@@ -352,7 +577,7 @@ function generateHTML(weeklyPlan, groceryList, nutritionSummary, weekLabel) {
 
     <!-- Meal Grid -->
     <section class="section">
-      <h2>Weekly Meals</h2>
+      <h2>Weekly Meals (Click any meal to see the recipe 📖)</h2>
       <div class="meal-grid">
         ${days.map(day => `
           <div class="day-card">
@@ -362,7 +587,7 @@ function generateHTML(weeklyPlan, groceryList, nutritionSummary, weekLabel) {
                 const meal = weeklyPlan[day][mealType];
                 const nutrition = meal.recipe?.nutrition || {};
                 return `
-                  <div class="meal">
+                  <div class="meal" data-day="${day}" data-meal="${mealType}" onclick="openModal('${day}', '${mealType}')">
                     <div class="meal-type">${mealType}</div>
                     <div class="meal-name">${meal.name}</div>
                     <div class="meal-cuisine">${meal.cuisine || ''}</div>
@@ -397,7 +622,114 @@ function generateHTML(weeklyPlan, groceryList, nutritionSummary, weekLabel) {
         `;
       }).join('')}
     </section>
+
+    <!-- Recipe Modal -->
+    <div class="modal-overlay" id="recipeModal">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <div class="modal-cuisine" id="modalCuisine"></div>
+
+        <div class="modal-section">
+          <h4>📊 Nutrition</h4>
+          <div class="modal-nutrition">
+            <div class="modal-nutrition-item">
+              <div class="value" id="modalCalories"></div>
+              <div class="label">Calories</div>
+            </div>
+            <div class="modal-nutrition-item">
+              <div class="value" id="modalProtein"></div>
+              <div class="label">Protein (g)</div>
+            </div>
+            <div class="modal-nutrition-item">
+              <div class="value" id="modalCarbs"></div>
+              <div class="label">Carbs (g)</div>
+            </div>
+            <div class="modal-nutrition-item">
+              <div class="value" id="modalFat"></div>
+              <div class="label">Fat (g)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4>🥗 Ingredients</h4>
+          <ul id="modalIngredients"></ul>
+        </div>
+
+        <div class="modal-section">
+          <h4>👨‍🍳 Instructions</h4>
+          <ol id="modalInstructions"></ol>
+        </div>
+
+        <div class="modal-source" id="modalSource"></div>
+      </div>
+    </div>
   </div>
+
+  <script>
+    // Recipe data - embedded in the page
+    const recipesData = ${JSON.stringify(recipesData)};
+
+    /**
+     * Open modal with recipe details
+     */
+    function openModal(day, mealType) {
+      const key = \`\${day}-\${mealType}\`;
+      const recipe = recipesData[key];
+
+      if (!recipe) return;
+
+      document.getElementById('modalTitle').textContent = recipe.title;
+      document.getElementById('modalCuisine').textContent = recipe.cuisine;
+      document.getElementById('modalCalories').textContent = recipe.nutrition.calories || '-';
+      document.getElementById('modalProtein').textContent = recipe.nutrition.protein || '-';
+      document.getElementById('modalCarbs').textContent = recipe.nutrition.carbs || '-';
+      document.getElementById('modalFat').textContent = recipe.nutrition.fat || '-';
+
+      const ingredientsList = document.getElementById('modalIngredients');
+      ingredientsList.innerHTML = (recipe.ingredients || [])
+        .map(ing => \`<li>\${ing}</li>\`)
+        .join('');
+
+      const instructionsList = document.getElementById('modalInstructions');
+      instructionsList.innerHTML = (recipe.instructions || [])
+        .map((inst, i) => \`<li>\${inst}</li>\`)
+        .join('');
+
+      const sourceEl = document.getElementById('modalSource');
+      if (recipe.url) {
+        sourceEl.innerHTML = \`<a href="\${recipe.url}" target="_blank" rel="noopener noreferrer">🔗 View Full Recipe Source</a>\`;
+      } else {
+        sourceEl.innerHTML = \`<small>Source: \${recipe.source}</small>\`;
+      }
+
+      document.getElementById('recipeModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    /**
+     * Close modal
+     */
+    function closeModal() {
+      document.getElementById('recipeModal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // Close on overlay click
+    document.getElementById('recipeModal').addEventListener('click', (e) => {
+      if (e.target.id === 'recipeModal') {
+        closeModal();
+      }
+    });
+
+    // Close on ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+  </script>
 </body>
 </html>`;
 

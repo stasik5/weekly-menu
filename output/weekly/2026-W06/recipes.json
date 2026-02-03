@@ -1,26 +1,22 @@
 {
   "Wednesday": {
     "breakfast": {
-      "name": "Fried eggs with bread",
-      "cuisine": "slavic",
+      "name": "Steamed buns with pork",
+      "cuisine": "asian",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Russian Grenki - Fried Eggs with Bread",
-        "cuisine": "slavic",
+        "title": "Steamed buns with pork",
+        "cuisine": "unknown",
         "ingredients": [
-          "Slices of bread (baguette or white bread)",
-          "4-6 eggs",
-          "1/2 cup milk",
-          "2 tablespoons sugar",
-          "Butter for frying",
-          "Salt to taste"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Beat eggs with milk and sugar until sugar dissolves",
-          "Soak each bread slice in the milk-egg mixture",
-          "Melt butter in a skillet over medium heat",
-          "Fry bread slices on both sides until golden brown",
-          "Season with salt and serve hot"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
           "calories": 1400,
@@ -28,223 +24,8 @@
           "carbs": 105,
           "fat": 86
         },
-        "source": "web_search",
-        "url": "https://littlesunnykitchen.com/grenki/"
-      }
-    },
-    "snack": {
-      "name": "Banana with peanut butter",
-      "cuisine": "slavic",
-      "targetCalories": 500,
-      "recipe": {
-        "title": "Banana with Peanut Butter Snack",
-        "cuisine": "slavic",
-        "ingredients": [
-          "2-3 ripe bananas",
-          "4-6 tablespoons peanut butter",
-          "Optional: honey for drizzling",
-          "Optional: cinnamon"
-        ],
-        "instructions": [
-          "Slice bananas into rounds or keep whole",
-          "Spread peanut butter generously on banana slices",
-          "Drizzle with honey if desired",
-          "Sprinkle with cinnamon for extra flavor",
-          "Serve immediately"
-        ],
-        "nutrition": {
-          "calories": 500,
-          "protein": 19,
-          "carbs": 38,
-          "fat": 31
-        },
-        "source": "web_search",
+        "source": "fallback_template",
         "url": null
-      }
-    },
-    "dinner": {
-      "name": "Chicken soup with vegetables",
-      "cuisine": "slavic",
-      "targetCalories": 2100,
-      "recipe": {
-        "title": "Russian Chicken Soup with Vegetables",
-        "cuisine": "slavic",
-        "ingredients": [
-          "1 whole chicken or chicken drumsticks (1-1.5 kg)",
-          "2-3 large onions, finely chopped",
-          "3-4 carrots, grated or diced",
-          "2-3 stalks celery, diced",
-          "3-4 potatoes, cubed",
-          "2 tablespoons butter",
-          "1 tablespoon vegetable oil",
-          "Fresh dill, chopped",
-          "Salt and pepper to taste",
-          "Water or chicken broth"
-        ],
-        "instructions": [
-          "Rinse chicken and place in a large pot with water",
-          "Bring to boil, cook for 10 minutes, removing impurities",
-          "In a skillet, sauté onions with oil and butter until soft",
-          "Add grated carrots to onions, cook until tender",
-          "Add sautéed vegetables to the soup pot",
-          "Add diced potatoes and cook until tender",
-          "Season with salt, pepper, and fresh dill",
-          "Simmer for 20-30 minutes, serve hot"
-        ],
-        "nutrition": {
-          "calories": 2100,
-          "protein": 131,
-          "carbs": 215,
-          "fat": 79
-        },
-        "source": "web_search",
-        "url": "https://valentinascorner.com/simple-russian-soup/"
-      }
-    }
-  },
-  "Thursday": {
-    "breakfast": {
-      "name": "Dim sum dumplings",
-      "cuisine": "asian",
-      "targetCalories": 1400,
-      "recipe": {
-        "title": "Dim Sum Asian Dumplings",
-        "cuisine": "asian",
-        "ingredients": [
-          "500g ground pork",
-          "1 tablespoon red curry paste",
-          "2 teaspoons garam masala",
-          "1/2 cup fresh cilantro, chopped",
-          "Dumpling wrappers (round)",
-          "1 tablespoon soy sauce",
-          "1 teaspoon sesame oil",
-          "Optional: spicy peanut sauce for serving"
-        ],
-        "instructions": [
-          "Mix ground pork with red curry, garam masala, and cilantro",
-          "Season with soy sauce and sesame oil",
-          "Place a spoonful of filling in center of each wrapper",
-          "Fold and pleat edges to seal dumplings",
-          "Prepare steamer with boiling water",
-          "Steam dumplings for 8-10 minutes until cooked through",
-          "Serve with spicy peanut sauce"
-        ],
-        "nutrition": {
-          "calories": 1400,
-          "protein": 53,
-          "carbs": 105,
-          "fat": 86
-        },
-        "source": "web_search",
-        "url": "https://www.allrecipes.com/recipe/204129/dim-sum-asian-dumplings/"
-      }
-    },
-    "snack": {
-      "name": "Ryebread with butter",
-      "cuisine": "slavic",
-      "targetCalories": 500,
-      "recipe": {
-        "title": "Ryebread with Butter",
-        "cuisine": "slavic",
-        "ingredients": [
-          "Slices of rye bread (Borodinsky or dark rye)",
-          "Butter, softened",
-          "Optional: garlic cloves for garlic butter",
-          "Optional: salt and herbs"
-        ],
-        "instructions": [
-          "Slice rye bread into thick pieces",
-          "Butter can be softened and spread directly",
-          "For garlic butter: mix softened butter with minced garlic",
-          "Spread butter generously on bread slices",
-          "Can be served as is or lightly toasted",
-          "Serve as a simple snack or side dish"
-        ],
-        "nutrition": {
-          "calories": 500,
-          "protein": 19,
-          "carbs": 38,
-          "fat": 31
-        },
-        "source": "web_search",
-        "url": null
-      }
-    },
-    "dinner": {
-      "name": "Japanese ramen",
-      "cuisine": "asian",
-      "targetCalories": 2100,
-      "recipe": {
-        "title": "Miso Ramen",
-        "cuisine": "asian",
-        "ingredients": [
-          "4 cups chicken or vegetable broth",
-          "2 tablespoons miso paste",
-          "1 tablespoon soy sauce",
-          "1 teaspoon sesame oil",
-          "Ramen noodles (fresh or dried)",
-          "Chashu pork slices or soft-boiled eggs",
-          "Green onions, chopped",
-          "Nori sheets (seaweed)",
-          "Optional: butter slices for miso butter ramen"
-        ],
-        "instructions": [
-          "Bring broth to a simmer in a pot",
-          "Stir in miso paste until dissolved",
-          "Add soy sauce and sesame oil",
-          "Cook ramen noodles separately according to package",
-          "Divide noodles into serving bowls",
-          "Ladle hot broth over noodles",
-          "Top with chashu pork, eggs, green onions, and nori",
-          "Serve immediately while hot"
-        ],
-        "nutrition": {
-          "calories": 2100,
-          "protein": 131,
-          "carbs": 215,
-          "fat": 79
-        },
-        "source": "web_search",
-        "url": "https://www.justonecookbook.com/homemade-chashu-miso-ramen/"
-      }
-    }
-  },
-  "Friday": {
-    "breakfast": {
-      "name": "Rice porridge with pickles",
-      "cuisine": "asian",
-      "targetCalories": 1400,
-      "recipe": {
-        "title": "Congee (Chinese Rice Porridge)",
-        "cuisine": "asian",
-        "ingredients": [
-          "1 cup jasmine rice",
-          "8 cups chicken or vegetable stock",
-          "2-inch piece of ginger, sliced",
-          "1 teaspoon salt",
-          "Pickled vegetables for topping",
-          "Sliced scallion greens",
-          "Toasted sesame oil for drizzling",
-          "Optional: minced pork or tofu"
-        ],
-        "instructions": [
-          "Rinse rice until water runs clear",
-          "Combine rice, stock, ginger, and salt in large pot",
-          "Bring to boil, then reduce to low simmer",
-          "Cook for 1-1.5 hours, stirring occasionally",
-          "Rice should break down into creamy porridge",
-          "Remove ginger slices",
-          "Ladle into bowls and add desired toppings",
-          "Drizzle with sesame oil and serve hot"
-        ],
-        "nutrition": {
-          "calories": 1400,
-          "protein": 53,
-          "carbs": 105,
-          "fat": 86
-        },
-        "source": "web_search",
-        "url": "https://www.thekitchn.com/how-to-make-congee-226778"
       }
     },
     "snack": {
@@ -252,22 +33,18 @@
       "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
-        "title": "Roasted Seaweed Snacks",
-        "cuisine": "asian",
+        "title": "Seaweed snacks",
+        "cuisine": "unknown",
         "ingredients": [
-          "Nori seaweed sheets",
-          "Sesame oil",
-          "Sea salt",
-          "Optional: chili powder or garlic powder"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Preheat oven to 300°F (150°C)",
-          "Cut nori sheets into smaller squares",
-          "Brush lightly with sesame oil",
-          "Sprinkle with sea salt",
-          "Bake for 5-8 minutes until crispy",
-          "Let cool completely before serving",
-          "Store in airtight container to maintain crispiness"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
           "calories": 500,
@@ -275,36 +52,27 @@
           "carbs": 38,
           "fat": 31
         },
-        "source": "web_search",
+        "source": "fallback_template",
         "url": null
       }
     },
     "dinner": {
-      "name": "Pelmeni with sour cream",
+      "name": "Pasta carbonara",
       "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Russian Pelmeni (Meat Dumplings)",
-        "cuisine": "slavic",
+        "title": "Pasta carbonara",
+        "cuisine": "unknown",
         "ingredients": [
-          "For dough: 2 cups flour, 1/2 tsp salt",
-          "For dough: 1 egg, 1/4 cup water, 1 tablespoon sour cream",
-          "For filling: 500g ground pork and beef mix",
-          "For filling: 1 onion, finely minced",
-          "For filling: 1/2 teaspoon salt, pepper to taste",
-          "For boiling: 4 cups bone broth or water",
-          "Sour cream for serving",
-          "Butter for drizzling"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Mix flour and salt in large bowl",
-          "Whisk together egg, water, and sour cream",
-          "Combine wet and dry ingredients to form dough",
-          "Mix ground meat with onion, salt, and pepper",
-          "Roll dough thin and cut circles",
-          "Place filling in center, fold into half-moon shape",
-          "Boil pelmeni in broth for 5-7 minutes until they float",
-          "Serve with sour cream and melted butter"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
           "calories": 2100,
@@ -312,37 +80,29 @@
           "carbs": 215,
           "fat": 79
         },
-        "source": "web_search",
-        "url": "https://momsdish.com/recipe/76/pelmeni"
+        "source": "fallback_template",
+        "url": null
       }
     }
   },
-  "Saturday": {
+  "Thursday": {
     "breakfast": {
-      "name": "Oatmeal with honey and nuts",
+      "name": "Blini with cheese filling",
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Oatmeal with Honey and Nuts",
-        "cuisine": "slavic",
+        "title": "Blini with cheese filling",
+        "cuisine": "unknown",
         "ingredients": [
-          "1 cup rolled oats",
-          "2 cups milk or water",
-          "2-3 tablespoons honey",
-          "1/4 cup toasted nuts (walnuts, pecans, or almonds)",
-          "1/2 teaspoon cinnamon",
-          "1/4 teaspoon nutmeg",
-          "Pinch of salt",
-          "Optional: fresh fruits for topping"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Bring milk or water to a boil",
-          "Add oats, reduce heat to low",
-          "Simmer for 5-10 minutes, stirring occasionally",
-          "Remove from heat, stir in cinnamon and nutmeg",
-          "Top with toasted nuts and honey",
-          "Add fresh fruits if desired",
-          "Serve warm"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
           "calories": 1400,
@@ -350,35 +110,27 @@
           "carbs": 105,
           "fat": 86
         },
-        "source": "web_search",
+        "source": "fallback_template",
         "url": null
       }
     },
     "snack": {
-      "name": "Pickled ginger and daikon",
+      "name": "Fried tofu cubes",
       "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
-        "title": "Pickled Ginger and Daikon",
-        "cuisine": "asian",
+        "title": "Fried tofu cubes",
+        "cuisine": "unknown",
         "ingredients": [
-          "400g daikon radish, julienned or sliced thin",
-          "50g fresh ginger, sliced thin",
-          "1 cup rice vinegar",
-          "1/2 cup water",
-          "2 tablespoons sugar",
-          "1 teaspoon salt",
-          "Optional: 1/4 teaspoon turmeric for color"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Julienne or thinly slice daikon and ginger",
-          "Place vegetables in clean glass jar",
-          "In a bowl, mix vinegar, water, sugar, and salt",
-          "Stir until sugar and salt dissolve",
-          "Pour pickling liquid over vegetables",
-          "Press vegetables down so they're submerged",
-          "Cover and refrigerate for at least 24 hours",
-          "Will keep for 1-2 weeks refrigerated"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
           "calories": 500,
@@ -386,37 +138,27 @@
           "carbs": 38,
           "fat": 31
         },
-        "source": "web_search",
-        "url": "https://mayihavethatrecipe.com/pickled-daikon/"
+        "source": "fallback_template",
+        "url": null
       }
     },
     "dinner": {
-      "name": "Shashlik (grilled meat) with salad",
+      "name": "Borscht with sour cream",
       "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Russian Shashlik (Grilled Meat Kebabs)",
-        "cuisine": "slavic",
+        "title": "Borscht with sour cream",
+        "cuisine": "unknown",
         "ingredients": [
-          "1.5 kg pork shoulder or beef (cut into 2-inch cubes)",
-          "2-3 large onions, quartered",
-          "4-5 cloves garlic, minced",
-          "Marinade: 1 cup kefir or vinegar",
-          "Marinade: 2 tablespoons vegetable oil",
-          "Marinade: 1 tablespoon salt",
-          "Marinade: 1 teaspoon black pepper",
-          "For salad: tomatoes, cucumbers, lettuce, dill",
-          "Lemon juice and olive oil for salad dressing"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Cut meat into 2-inch cubes",
-          "Mix kefir or vinegar with oil, garlic, salt, and pepper",
-          "Marinate meat for 4-6 hours or overnight",
-          "Thread meat and onion quarters onto skewers",
-          "Preheat grill to medium-high heat",
-          "Grill shashlik for 10-15 minutes per side",
-          "Meanwhile, prepare fresh salad with vegetables and dill",
-          "Serve hot with fresh salad and bread"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
           "calories": 2100,
@@ -424,8 +166,180 @@
           "carbs": 215,
           "fat": 79
         },
-        "source": "web_search",
-        "url": "https://petersfoodadventures.com/shashlik/"
+        "source": "fallback_template",
+        "url": null
+      }
+    }
+  },
+  "Friday": {
+    "breakfast": {
+      "name": "Oatmeal with honey and nuts",
+      "cuisine": "slavic",
+      "targetCalories": 1400,
+      "recipe": {
+        "title": "Oatmeal with honey and nuts",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "snack": {
+      "name": "Cottage cheese with herbs",
+      "cuisine": "slavic",
+      "targetCalories": 500,
+      "recipe": {
+        "title": "Cottage cheese with herbs",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "dinner": {
+      "name": "Shashlik (grilled meat) with salad",
+      "cuisine": "slavic",
+      "targetCalories": 2100,
+      "recipe": {
+        "title": "Shashlik (grilled meat) with salad",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    }
+  },
+  "Saturday": {
+    "breakfast": {
+      "name": "Scrambled eggs with vegetables",
+      "cuisine": "slavic",
+      "targetCalories": 1400,
+      "recipe": {
+        "title": "Scrambled eggs with vegetables",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "snack": {
+      "name": "Mango slices",
+      "cuisine": "asian",
+      "targetCalories": 500,
+      "recipe": {
+        "title": "Mango slices",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "dinner": {
+      "name": "Korean bibimbap",
+      "cuisine": "asian",
+      "targetCalories": 2100,
+      "recipe": {
+        "title": "Korean bibimbap",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
+        },
+        "source": "fallback_template",
+        "url": null
       }
     }
   }
