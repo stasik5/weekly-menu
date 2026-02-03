@@ -1,24 +1,24 @@
 {
   "Wednesday": {
     "breakfast": {
-      "name": "Fried eggs with bread",
-      "cuisine": "slavic",
+      "name": "Dim sum dumplings",
+      "cuisine": "asian",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Green tea cookies",
-      "cuisine": "asian",
+      "name": "Nuts and dried fruits",
+      "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Beef stroganoff with rice",
-      "cuisine": "slavic",
+      "name": "Vietnamese pho",
+      "cuisine": "asian",
       "targetCalories": 2100
     }
   },
   "Thursday": {
     "breakfast": {
-      "name": "Buckwheat porridge with milk and berries",
+      "name": "Syrniki (cottage cheese pancakes)",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
@@ -28,8 +28,8 @@
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Vietnamese pho",
-      "cuisine": "asian",
+      "name": "Cabbage rolls with meat",
+      "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
@@ -40,29 +40,29 @@
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Pickled ginger and daikon",
+      "name": "Green tea cookies",
       "cuisine": "asian",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Borscht with sour cream",
-      "cuisine": "slavic",
+      "name": "Pad Thai with shrimp",
+      "cuisine": "asian",
       "targetCalories": 2100
     }
   },
   "Saturday": {
     "breakfast": {
-      "name": "Fried rice with vegetables",
-      "cuisine": "asian",
+      "name": "Fried eggs with bread",
+      "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Yogurt with honey",
+      "name": "Apple slices with cheese",
       "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Pasta carbonara",
+      "name": "Borscht with sour cream",
       "cuisine": "slavic",
       "targetCalories": 2100
     }

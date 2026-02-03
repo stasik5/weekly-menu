@@ -738,5 +738,283 @@
     "prepTime": "20 min",
     "cookTime": "15 min",
     "servings": 4
+  },
+  "Green tea cookies": {
+    "ingredients": [
+      "1 cup all-purpose flour",
+      "1/2 cup unsalted butter, softened",
+      "1/4 cup granulated sugar",
+      "1 egg yolk",
+      "1 tsp vanilla extract",
+      "1 tbsp matcha green tea powder",
+      "1/4 tsp salt",
+      "Optional: 1-2 tbsp white sesame seeds for topping",
+      "Optional: additional sugar for sprinkling"
+    ],
+    "instructions": [
+      "Preheat oven to 350°F (175°C) and line a baking sheet with parchment paper",
+      "In a large bowl, beat softened butter and sugar until light and fluffy",
+      "Add egg yolk and vanilla extract, mix well",
+      "Sift together flour, matcha powder, and salt",
+      "Gradually add dry ingredients to wet ingredients, mixing until just combined",
+      "Form dough into a log, wrap in plastic, and refrigerate for 30 minutes",
+      "Slice dough into 1/4 inch rounds",
+      "Optional: roll edges in sesame seeds or sprinkle with sugar",
+      "Place cookies on baking sheet, 2 inches apart",
+      "Bake for 10-12 minutes until edges are lightly golden",
+      "Cool on baking sheet for 5 minutes, then transfer to wire rack",
+      "Store in airtight container for up to 1 week"
+    ],
+    "nutrition": {
+      "calories": 95,
+      "protein": 1,
+      "carbs": 11,
+      "fat": 5,
+      "fiber": 0
+    },
+    "source": "Japanese matcha cookies",
+    "prepTime": "15 min",
+    "cookTime": "12 min",
+    "servings": "20 cookies"
+  },
+  "Beef stroganoff with rice": {
+    "ingredients": [
+      "1 lb (450g) beef sirloin or tenderloin, cut into strips",
+      "8 oz (225g) mushrooms, sliced",
+      "1 medium onion, finely chopped",
+      "2-3 cloves garlic, minced",
+      "2 tbsp butter",
+      "2 tbsp vegetable oil",
+      "1 tbsp all-purpose flour",
+      "1 cup beef broth",
+      "1 tbsp Dijon mustard",
+      "1 tbsp tomato paste",
+      "1 cup sour cream",
+      "1 tbsp Worcestershire sauce",
+      "Salt and pepper to taste",
+      "2 cups cooked rice",
+      "Fresh parsley for garnish",
+      "Optional: 1/2 cup white wine"
+    ],
+    "instructions": [
+      "Season beef strips with salt and pepper",
+      "Heat 1 tbsp oil in a large skillet over high heat, brown beef in batches, set aside",
+      "Add butter and remaining oil to the same pan",
+      "Sauté onion for 3-4 minutes until softened",
+      "Add mushrooms, cook 5-7 minutes until browned",
+      "Add garlic, cook 30 seconds until fragrant",
+      "Sprinkle flour over vegetables, stir for 1 minute",
+      "Optional: add white wine and let it reduce for 1 minute",
+      "Add beef broth, tomato paste, and Worcestershire sauce",
+      "Simmer for 5 minutes until sauce thickens",
+      "Reduce heat to low, stir in sour cream and Dijon mustard",
+      "Add beef back to pan, heat through (do not boil after adding sour cream)",
+      "Season with salt and pepper to taste",
+      "Serve over cooked rice, garnish with fresh parsley"
+    ],
+    "nutrition": {
+      "calories": 520,
+      "protein": 32,
+      "carbs": 38,
+      "fat": 28,
+      "fiber": 2
+    },
+    "source": "Classic beef stroganoff",
+    "prepTime": "15 min",
+    "cookTime": "25 min",
+    "servings": 4
+  },
+  "Buckwheat porridge with milk and berries": {
+    "ingredients": [
+      "1 cup buckwheat groats (grechka)",
+      "2.5 cups water",
+      "1 cup milk (dairy, almond, or oat milk)",
+      "1 tbsp butter",
+      "1-2 tbsp honey or maple syrup",
+      "1/2 tsp salt",
+      "1 cup fresh or frozen berries (strawberries, blueberries, raspberries)",
+      "Optional: cinnamon or vanilla extract",
+      "Optional: nuts or seeds for topping"
+    ],
+    "instructions": [
+      "Rinse buckwheat groats thoroughly until water runs clear",
+      "In a medium pot, bring water and salt to a boil",
+      "Add buckwheat, reduce heat to low, cover",
+      "Simmer for 15-20 minutes until water is absorbed",
+      "Remove from heat, let stand covered for 5 minutes",
+      "Fluff with a fork",
+      "Stir in butter and milk until creamy",
+      "Add honey or maple syrup to taste",
+      "Optional: add cinnamon or vanilla",
+      "Top with fresh or frozen berries",
+      "Optional: add nuts or seeds",
+      "Serve warm"
+    ],
+    "nutrition": {
+      "calories": 320,
+      "protein": 10,
+      "carbs": 58,
+      "fat": 6,
+      "fiber": 6
+    },
+    "source": "Traditional Slavic buckwheat porridge",
+    "prepTime": "5 min",
+    "cookTime": "20 min",
+    "servings": 2
+  },
+  "Edamame with sea salt": {
+    "ingredients": [
+      "1 lb (450g) frozen edamame in pods",
+      "1 tbsp coarse sea salt or flake salt",
+      "1/2 cup ice water",
+      "Water for boiling",
+      "Optional: 1 tsp soy sauce",
+      "Optional: chili flakes",
+      "Optional: sesame seeds",
+      "Optional: garlic powder"
+    ],
+    "instructions": [
+      "Bring a large pot of water to a boil",
+      "Add salt to the water",
+      "Add frozen edamame, boil for 4-5 minutes",
+      "Edamame should be tender but still slightly firm",
+      "Drain well in a colander",
+      "Immediately toss with coarse sea salt while still hot",
+      "Optional: add soy sauce, chili flakes, sesame seeds, or garlic powder",
+      "Transfer to a serving bowl",
+      "Serve warm or at room temperature",
+      "To eat: squeeze the beans from the pods, discard pods",
+      "Do not eat the pods"
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein": 18,
+      "carbs": 14,
+      "fat": 8,
+      "fiber": 8
+    },
+    "source": "Japanese steamed soybeans snack",
+    "prepTime": "2 min",
+    "cookTime": "5 min",
+    "servings": 3
+  },
+  "Pickled ginger and daikon": {
+    "ingredients": [
+      "2 cups daikon radish, cut into matchsticks",
+      "1 cup fresh young ginger, peeled and sliced paper-thin",
+      "1 cup rice vinegar",
+      "1/2 cup water",
+      "2 tbsp sugar",
+      "1 tsp salt",
+      "Optional: 1/4 cup mirin (sweet rice wine)",
+      "Optional: 1 dried red chili",
+      "Optional: yuzu peel or lemon zest"
+    ],
+    "instructions": [
+      "Cut daikon into thin matchsticks, about 2 inches long",
+      "Peel ginger and slice as thinly as possible (use a mandoline if available)",
+      "Place daikon and ginger in a clean glass jar",
+      "In a saucepan, combine rice vinegar, water, sugar, and salt",
+      "Optional: add mirin for sweetness",
+      "Bring to a simmer, stirring until sugar and salt dissolve",
+      "Let the brine cool completely",
+      "Pour cooled brine over daikon and ginger",
+      "Optional: add dried chili and yuzu peel",
+      "Make sure vegetables are completely submerged",
+      "Seal jar and refrigerate",
+      "Ready to eat after 24 hours, best after 2-3 days",
+      "Will keep refrigerated for 2-3 weeks"
+    ],
+    "nutrition": {
+      "calories": 40,
+      "protein": 1,
+      "carbs": 9,
+      "fat": 0,
+      "fiber": 1
+    },
+    "source": "Japanese pickled ginger and radish (takuan)",
+    "prepTime": "15 min",
+    "cookTime": "5 min + 24h pickling",
+    "servings": 8
+  },
+  "Borscht with sour cream": {
+    "ingredients": [
+      "2 medium beets, peeled and grated",
+      "1 medium potato, peeled and cubed",
+      "1 carrot, grated",
+      "1 onion, diced",
+      "2 cloves garlic, minced",
+      "1 tbsp butter or oil",
+      "6 cups beef or vegetable broth",
+      "1 cup cabbage, shredded",
+      "2 tbsp tomato paste or 1 cup tomato juice",
+      "2 tbsp vinegar (optional, for brightness)",
+      "1 tbsp sugar",
+      "Salt and pepper to taste",
+      "Fresh dill for garnish",
+      "Sour cream for serving",
+      "Optional: 1/2 cup cooked beef or sausage"
+    ],
+    "instructions": [
+      "Heat butter or oil in a large pot over medium heat",
+      "Sauté onion until softened, 5 minutes",
+      "Add carrot, cook 3 more minutes",
+      "Add garlic, cook 30 seconds",
+      "Add tomato paste, cook 1 minute",
+      "Add broth, beets, potato, and sugar",
+      "Bring to a boil, reduce heat, simmer 20 minutes",
+      "Add cabbage and vinegar, cook 10 more minutes until vegetables are tender",
+      "Optional: add cooked beef or sausage",
+      "Season with salt and pepper to taste",
+      "Ladle into bowls",
+      "Top with a generous dollop of sour cream",
+      "Garnish with fresh dill",
+      "Serve hot with crusty bread"
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein": 6,
+      "carbs": 25,
+      "fat": 7,
+      "fiber": 4
+    },
+    "source": "Ukrainian/Russian beet soup",
+    "prepTime": "15 min",
+    "cookTime": "35 min",
+    "servings": 4
+  },
+  "Yogurt with honey": {
+    "ingredients": [
+      "2 cups Greek yogurt or plain yogurt",
+      "2-3 tbsp honey",
+      "1/2 cup fresh berries (strawberries, blueberries, raspberries)",
+      "1/4 cup granola (optional)",
+      "2 tbsp nuts (walnuts, almonds, pecans), chopped (optional)",
+      "1/2 tsp vanilla extract (optional)",
+      "1/4 tsp cinnamon (optional)",
+      "Fresh mint for garnish (optional)"
+    ],
+    "instructions": [
+      "Spoon yogurt into serving bowls",
+      "Drizzle honey generously over the yogurt",
+      "Add vanilla extract and cinnamon if using, stir gently",
+      "Top with fresh berries",
+      "Optional: add granola for crunch",
+      "Optional: sprinkle with chopped nuts",
+      "Optional: garnish with fresh mint",
+      "Serve immediately",
+      "For meal prep: layer ingredients in jars, refrigerate for up to 3 days"
+    ],
+    "nutrition": {
+      "calories": 240,
+      "protein": 16,
+      "carbs": 28,
+      "fat": 8,
+      "fiber": 2
+    },
+    "source": "Classic yogurt parfait",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "servings": 2
   }
 }
