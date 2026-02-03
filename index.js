@@ -45,13 +45,23 @@ async function runAgentRecipeResearch(weeklyPlan, menuJsonPath, recipesJsonPath)
     console.log(`✓ Saved menu to: ${menuJsonPath}`);
 
     // Check if we're running in OpenClaw environment with web_search
-    // If yes, we can run the agent directly with web_search access
+    // If yes, we can run the recipe research directly without spawning a child process
     if (typeof web_search === 'function') {
       console.log('✓ web_search available in this environment');
-      console.log('Running agent script with web_search access...\n');
+      console.log('Running recipe research with web_search access...\n');
 
+      // Import the agent module and run it directly
       const agentModule = require('./agent-research-recipes.js');
-      const recipesData = await agentModule.main();
+      const recipesData = await agentModule.researchAllRecipes(weeklyPlan);
+
+      // Save the results
+      const recipesDir = path.dirname(recipesJsonPath);
+      if (!fs.existsSync(recipesDir)) {
+        fs.mkdirSync(recipesDir, { recursive: true });
+      }
+      fs.writeFileSync(recipesJsonPath, JSON.stringify(recipesData, null, 2), 'utf8');
+      console.log(`✓ Saved ${Object.keys(recipesData).length} recipes to: ${recipesJsonPath}\n`);
+
       return recipesData;
     }
 
