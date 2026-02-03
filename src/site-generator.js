@@ -33,9 +33,10 @@ function generateHTML(weeklyPlan, groceryList, nutritionSummary, weekLabel) {
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
       line-height: 1.6;
-      color: #333;
-      background: #f5f7fa;
+      color: #e8eaf0;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
       padding: 20px;
+      min-height: 100vh;
     }
 
     .container {
@@ -46,35 +47,38 @@ function generateHTML(weeklyPlan, groceryList, nutritionSummary, weekLabel) {
     header {
       text-align: center;
       margin-bottom: 40px;
-      background: white;
+      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
       padding: 30px;
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
     }
 
     h1 {
-      color: #2c3e50;
+      color: #ffffff;
       margin-bottom: 10px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }
 
     .week-label {
-      color: #7f8c8d;
+      color: #cbd5e1;
       font-size: 1.1em;
     }
 
     .section {
-      background: white;
+      background: rgba(30, 41, 59, 0.8);
+      backdrop-filter: blur(10px);
       padding: 30px;
       margin-bottom: 30px;
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      border: 1px solid rgba(59, 130, 246, 0.2);
     }
 
     .section h2 {
-      color: #2c3e50;
+      color: #60a5fa;
       margin-bottom: 20px;
       padding-bottom: 10px;
-      border-bottom: 2px solid #3498db;
+      border-bottom: 2px solid #3b82f6;
     }
 
     /* Nutrition Summary */
@@ -86,35 +90,37 @@ function generateHTML(weeklyPlan, groceryList, nutritionSummary, weekLabel) {
     }
 
     .nutrition-card {
-      background: #f8f9fa;
+      background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
       padding: 15px;
       border-radius: 8px;
       text-align: center;
+      box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
     }
 
     .nutrition-card h3 {
       font-size: 0.9em;
-      color: #7f8c8d;
+      color: #bfdbfe;
       margin-bottom: 8px;
     }
 
     .nutrition-card .value {
       font-size: 1.8em;
       font-weight: bold;
-      color: #2c3e50;
+      color: #ffffff;
     }
 
     .nutrition-card .unit {
       font-size: 0.9em;
-      color: #95a5a6;
+      color: #93c5fd;
     }
 
     .nutrition-flags {
-      background: #fff3cd;
-      border-left: 4px solid #ffc107;
+      background: rgba(234, 179, 8, 0.2);
+      border-left: 4px solid #eab308;
       padding: 15px;
       margin-top: 20px;
       border-radius: 4px;
+      color: #fef08a;
     }
 
     .nutrition-flags:empty {
@@ -122,12 +128,13 @@ function generateHTML(weeklyPlan, groceryList, nutritionSummary, weekLabel) {
     }
 
     .valid-badge {
-      background: #d4edda;
-      color: #155724;
+      background: linear-gradient(135deg, #065f46 0%, #10b981 100%);
+      color: #ffffff;
       padding: 8px 16px;
       border-radius: 20px;
       display: inline-block;
       margin-top: 10px;
+      box-shadow: 0 2px 10px rgba(16, 185, 129, 0.3);
     }
 
     /* Meal Grid */
@@ -138,17 +145,19 @@ function generateHTML(weeklyPlan, groceryList, nutritionSummary, weekLabel) {
     }
 
     .day-card {
-      background: #f8f9fa;
+      background: rgba(30, 41, 59, 0.6);
       border-radius: 8px;
       overflow: hidden;
+      border: 1px solid rgba(59, 130, 246, 0.2);
     }
 
     .day-header {
-      background: #3498db;
+      background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
       color: white;
       padding: 15px;
       text-align: center;
       font-weight: bold;
+      box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
     }
 
     .meals {
@@ -158,7 +167,7 @@ function generateHTML(weeklyPlan, groceryList, nutritionSummary, weekLabel) {
     .meal {
       margin-bottom: 15px;
       padding-bottom: 15px;
-      border-bottom: 1px solid #e9ecef;
+      border-bottom: 1px solid rgba(59, 130, 246, 0.2);
     }
 
     .meal:last-child {
@@ -170,24 +179,24 @@ function generateHTML(weeklyPlan, groceryList, nutritionSummary, weekLabel) {
     .meal-type {
       font-size: 0.85em;
       text-transform: uppercase;
-      color: #7f8c8d;
+      color: #60a5fa;
       margin-bottom: 5px;
     }
 
     .meal-name {
       font-weight: 600;
-      color: #2c3e50;
+      color: #f1f5f9;
       margin-bottom: 5px;
     }
 
     .meal-cuisine {
       font-size: 0.85em;
-      color: #95a5a6;
+      color: #94a3b8;
     }
 
     .meal-calories {
       font-size: 0.85em;
-      color: #27ae60;
+      color: #4ade80;
     }
 
     /* Grocery List */
@@ -196,10 +205,10 @@ function generateHTML(weeklyPlan, groceryList, nutritionSummary, weekLabel) {
     }
 
     .grocery-category h3 {
-      color: #2c3e50;
+      color: #60a5fa;
       margin-bottom: 15px;
       padding-bottom: 8px;
-      border-bottom: 1px solid #e9ecef;
+      border-bottom: 1px solid rgba(59, 130, 246, 0.3);
     }
 
     .grocery-items {
@@ -212,8 +221,9 @@ function generateHTML(weeklyPlan, groceryList, nutritionSummary, weekLabel) {
       display: flex;
       align-items: baseline;
       padding: 8px 12px;
-      background: #f8f9fa;
+      background: rgba(15, 23, 42, 0.6);
       border-radius: 4px;
+      border: 1px solid rgba(59, 130, 246, 0.2);
     }
 
     .grocery-item input[type="checkbox"] {
@@ -223,17 +233,18 @@ function generateHTML(weeklyPlan, groceryList, nutritionSummary, weekLabel) {
 
     .grocery-item-name {
       flex: 1;
+      color: #e8eaf0;
     }
 
     .grocery-item-qty {
-      color: #7f8c8d;
+      color: #94a3b8;
       font-size: 0.9em;
     }
 
     /* Recipe Details */
     .recipe-detail {
-      background: #fff;
-      border: 1px solid #e9ecef;
+      background: rgba(30, 41, 59, 0.8);
+      border: 1px solid rgba(59, 130, 246, 0.3);
       border-radius: 8px;
       padding: 20px;
       margin-top: 20px;
@@ -246,7 +257,7 @@ function generateHTML(weeklyPlan, groceryList, nutritionSummary, weekLabel) {
 
     .recipe-title {
       font-size: 1.3em;
-      color: #2c3e50;
+      color: #f1f5f9;
       margin-bottom: 15px;
     }
 
@@ -255,7 +266,7 @@ function generateHTML(weeklyPlan, groceryList, nutritionSummary, weekLabel) {
     }
 
     .recipe-section h4 {
-      color: #34495e;
+      color: #60a5fa;
       margin-bottom: 10px;
     }
 
@@ -266,10 +277,11 @@ function generateHTML(weeklyPlan, groceryList, nutritionSummary, weekLabel) {
 
     .recipe-section li {
       margin-bottom: 5px;
+      color: #cbd5e1;
     }
 
     .recipe-link {
-      color: #3498db;
+      color: #60a5fa;
       text-decoration: none;
     }
 
