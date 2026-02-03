@@ -1331,5 +1331,122 @@
     "prepTime": "45 min",
     "cookTime": "10 min",
     "servings": 4
+  },
+  "Ryebread with butter": {
+    "ingredients": [
+      "4 slices traditional Russian or Eastern European rye bread",
+      "3-4 tbsp butter (salted or unsalted to taste)",
+      "Optional: coarse salt",
+      "Optional: fresh dill for garnish",
+      "Optional: garlic cloves for rubbing",
+      "Optional: radish slices or cucumber"
+    ],
+    "instructions": [
+      "Slice rye bread into thick or thin slices according to preference",
+      "Bring butter to room temperature for easy spreading",
+      "Generously spread butter over each slice",
+      "Optional: sprinkle with coarse salt",
+      "Optional: rub warm bread with a cut garlic clove for extra flavor",
+      "Optional: garnish with fresh dill",
+      "Optional: serve with radish slices or cucumber on the side",
+      "Can be served as a simple breakfast, snack, or side dish",
+      "Best served at room temperature or lightly toasted"
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein": 5,
+      "carbs": 25,
+      "fat": 12,
+      "fiber": 3
+    },
+    "source": "Simple Slavic bread and butter",
+    "prepTime": "2 min",
+    "cookTime": "0 min",
+    "servings": 4
+  },
+  "Sichuan mapo tofu": {
+    "ingredients": [
+      "1 block (14 oz) firm or extra firm tofu, cubed",
+      "3 tbsp vegetable oil",
+      "2-3 tbsp Sichuan chili bean paste (doubanjiang)",
+      "1 lb (450g) ground pork",
+      "2-3 tbsp fermented black beans (douchi), rinsed",
+      "2 tbsp soy sauce",
+      "1 tsp sugar",
+      "1 cup chicken stock",
+      "1 tbsp cornstarch mixed with 2 tbsp water",
+      "2-3 dried red chilies",
+      "1 tsp Sichuan peppercorns, toasted and ground",
+      "2 cloves garlic, minced",
+      "1 tbsp fresh ginger, minced",
+      "2 green onions, sliced",
+      "Optional: 1 tsp five-spice powder"
+    ],
+    "instructions": [
+      "Cut tofu into 1-inch cubes",
+      "Bring water to boil, add tofu and blanch for 2 minutes to remove moisture",
+      "Drain and set aside",
+      "Heat oil in wok or large pan over medium heat",
+      "Add ground pork, cook until browned, break up any clumps",
+      "Add chili bean paste, fermented black beans, garlic, and ginger",
+      "Stir-fry for 1-2 minutes until fragrant",
+      "Add soy sauce, sugar, and chicken stock",
+      "Bring to a simmer",
+      "Add tofu cubes, gently stir to combine",
+      "Simmer for 5 minutes, letting tofu absorb flavors",
+      "Stir in cornstarch mixture to thicken sauce",
+      "Add dried red chilies and ground Sichuan peppercorns",
+      "Cook 1-2 more minutes",
+      "Garnish with sliced green onions",
+      "Serve hot over steamed rice"
+    ],
+    "nutrition": {
+      "calories": 380,
+      "protein": 28,
+      "carbs": 12,
+      "fat": 26,
+      "fiber": 2
+    },
+    "source": "Authentic Sichuan spicy tofu",
+    "prepTime": "15 min",
+    "cookTime": "20 min",
+    "servings": 4
+  },
+  "Kasha with butter and milk": {
+    "ingredients": [
+      "1 cup buckwheat groats (grechka)",
+      "2 cups water or chicken broth",
+      "1/2 cup milk (dairy, almond, or oat milk)",
+      "2-3 tbsp butter",
+      "1/2 tsp salt",
+      "Optional: 1 tsp sugar or honey",
+      "Optional: pinch of black pepper",
+      "Optional: fried onions for topping"
+    ],
+    "instructions": [
+      "Rinse buckwheat groats thoroughly until water runs clear",
+      "In a dry skillet over medium heat, toast groats for 3-4 minutes, stirring constantly",
+      "Bring water or broth to a boil in a medium pot",
+      "Add toasted buckwheat and salt, reduce heat to low",
+      "Cover and simmer for 15-20 minutes until water is absorbed",
+      "Remove from heat, let stand covered for 5 minutes",
+      "Fluff with a fork",
+      "Stir in butter and milk until creamy",
+      "Optional: add sugar or honey to taste",
+      "Optional: add black pepper",
+      "Optional: top with fried onions for extra flavor",
+      "Serve warm as a side dish or simple breakfast"
+    ],
+    "nutrition": {
+      "calories": 340,
+      "protein": 10,
+      "carbs": 45,
+      "fat": 14,
+      "fiber": 6
+    },
+    "source": "Simple Slavic buckwheat porridge",
+    "prepTime": "5 min",
+    "cookTime": "20 min",
+    "servings": 2
   }
 }

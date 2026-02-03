@@ -6,46 +6,46 @@
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Pickled ginger and daikon",
-      "cuisine": "asian",
+      "name": "Yogurt with honey",
+      "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Pasta carbonara",
-      "cuisine": "slavic",
+      "name": "Chicken teriyaki with rice",
+      "cuisine": "asian",
       "targetCalories": 2100
     }
   },
   "Thursday": {
     "breakfast": {
-      "name": "Buckwheat porridge with milk and berries",
+      "name": "Syrniki (cottage cheese pancakes)",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Ryebread with butter",
+      "name": "Cottage cheese with herbs",
       "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Sichuan mapo tofu",
-      "cuisine": "asian",
+      "name": "Pelmeni with sour cream",
+      "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
   "Friday": {
     "breakfast": {
-      "name": "Kasha with butter and milk",
+      "name": "Blini with cheese filling",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Banana with peanut butter",
+      "name": "Pickled vegetables",
       "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Thai green curry",
+      "name": "Pad Thai with shrimp",
       "cuisine": "asian",
       "targetCalories": 2100
     }
@@ -57,12 +57,12 @@
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Nuts and dried fruits",
-      "cuisine": "slavic",
+      "name": "Edamame with sea salt",
+      "cuisine": "asian",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Korean bibimbap",
+      "name": "Vietnamese pho",
       "cuisine": "asian",
       "targetCalories": 2100
     }
