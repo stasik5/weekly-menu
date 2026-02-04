@@ -1,11 +1,10 @@
 /**
  * Site Generator - Generates HTML pages for weekly menu
- * WITH VIRTUAL PANTRY DISPLAY (NO NUTRITION TRACKING)
+ * NOW WITH VIRTUAL PANTRY DISPLAY
  */
 
 const fs = require('fs');
 const path = require('path');
-const pantryManager = require('./pantry-manager');
 
 /**
  * Extract recipes from weekly plan for embedding in HTML
@@ -45,21 +44,6 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
   const days = Object.keys(weeklyPlan);
   const mealTypes = ['breakfast', 'snack', 'dinner'];
   const recipesData = extractRecipes(weeklyPlan);
-
-  // Generate pantry display HTML if pantry data is available
-  const pantrySection = pantry ? `
-    <!-- Virtual Pantry -->
-    <section class="section">
-      <h2>📦 Virtual Pantry</h2>
-      <p style="color: #94a3b8; margin-bottom: 15px;">
-        Weekly ingredient tracking based on menu (not real inventory)
-      </p>
-      <button id="toggle-daily" onclick="toggleDaily()">[Show Daily Breakdown]</button>
-      <div class="pantry-items">
-        ${pantryManager.formatPantryDisplay(pantry, false)}
-      </div>
-    </section>
-  ` : '';
 
   const html = `<!DOCTYPE html>
 <html lang="en">
@@ -125,6 +109,62 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
       border-bottom: 2px solid #3b82f6;
     }
 
+    /* Nutrition Summary */
+    .nutrition-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .nutrition-card {
+      background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+    }
+
+    .nutrition-card h3 {
+      font-size: 0.9em;
+      color: #bfdbfe;
+      margin-bottom: 8px;
+    }
+
+    .nutrition-card .value {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .nutrition-card .unit {
+      font-size: 0.9em;
+      color: #93c5fd;
+    }
+
+    .nutrition-flags {
+      background: rgba(234, 179, 8, 0.2);
+      border-left: 4px solid #eab308;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 4px;
+      color: #fef08a;
+    }
+
+    .nutrition-flags:empty {
+      display: none;
+    }
+
+    .valid-badge {
+      background: linear-gradient(135deg, #065f46 0%, #10b981 100%);
+      color: #ffffff;
+      padding: 8px 16px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-top: 10px;
+      box-shadow: 0 2px 10px rgba(16, 185, 129, 0.3);
+    }
+
     /* Meal Grid */
     .meal-grid {
       display: grid;
@@ -156,35 +196,12 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
       margin-bottom: 15px;
       padding-bottom: 15px;
       border-bottom: 1px solid rgba(59, 130, 246, 0.2);
-      cursor: pointer;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      position: relative;
     }
 
     .meal:last-child {
       border-bottom: none;
       margin-bottom: 0;
       padding-bottom: 0;
-    }
-
-    .meal:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
-      background: rgba(59, 130, 246, 0.1);
-    }
-
-    .meal::after {
-      content: '📖';
-      position: absolute;
-      top: 5px;
-      right: 5px;
-      font-size: 0.8em;
-      opacity: 0;
-      transition: opacity 0.2s ease;
-    }
-
-    .meal:hover::after {
-      opacity: 1;
     }
 
     .meal-type {
@@ -263,7 +280,6 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
       font-size: 0.9em;
       transition: all 0.2s ease;
       box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
-      margin-bottom: 15px;
     }
 
     .pantry-section button:hover {
@@ -276,6 +292,7 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 12px;
+      margin-top: 15px;
     }
 
     .pantry-item {
@@ -329,11 +346,85 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
       border-left: 3px solid #3b82f6;
       font-size: 0.85em;
       color: #94a3b8;
-      grid-column: 1 / -1;
     }
 
     .daily-breakdown.hidden {
       display: none;
+    }
+
+    /* Recipe Details */
+    .recipe-detail {
+      background: rgba(30, 41, 59, 0.8);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 20px;
+      display: none;
+    }
+
+    .recipe-detail.active {
+      display: block;
+    }
+
+    .recipe-title {
+      font-size: 1.3em;
+      color: #f1f5f9;
+      margin-bottom: 15px;
+    }
+
+    .recipe-section {
+      margin-bottom: 20px;
+    }
+
+    .recipe-section h4 {
+      color: #60a5fa;
+      margin-bottom: 10px;
+    }
+
+    .recipe-section ul,
+    .recipe-section ol {
+      padding-left: 20px;
+    }
+
+    .recipe-section li {
+      margin-bottom: 5px;
+      color: #cbd5e1;
+    }
+
+    .recipe-link {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    .recipe-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Make meals clickable */
+    .meal {
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      position: relative;
+    }
+
+    .meal:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+      background: rgba(59, 130, 246, 0.1);
+    }
+
+    .meal::after {
+      content: '📖';
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      font-size: 0.8em;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    .meal:hover::after {
+      opacity: 1;
     }
 
     /* Modal Popup */
@@ -442,6 +533,32 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
       line-height: 1.7;
     }
 
+    .modal-nutrition {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 12px;
+      background: rgba(30, 41, 59, 0.8);
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid rgba(59, 130, 246, 0.2);
+    }
+
+    .modal-nutrition-item {
+      text-align: center;
+    }
+
+    .modal-nutrition-item .value {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #f1f5f9;
+    }
+
+    .modal-nutrition-item .label {
+      font-size: 0.85em;
+      color: #94a3b8;
+      text-transform: uppercase;
+    }
+
     .modal-source {
       text-align: center;
       margin-top: 20px;
@@ -499,6 +616,49 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
       <div class="week-label">${weekLabel}</div>
     </header>
 
+    <!-- Nutrition Summary -->
+    <section class="section">
+      <h2>Nutrition Summary (${nutritionSummary.level} level)</h2>
+
+      <div class="nutrition-grid">
+        <div class="nutrition-card">
+          <h3>Daily Calories</h3>
+          <div class="value">${nutritionSummary.actual.daily.calories}</div>
+          <div class="unit">/ ${nutritionSummary.targets.daily.calories} kcal</div>
+        </div>
+        <div class="nutrition-card">
+          <h3>Weekly Calories</h3>
+          <div class="value">${nutritionSummary.actual.weekly.calories}</div>
+          <div class="unit">kcal total</div>
+        </div>
+        <div class="nutrition-card">
+          <h3>Protein (daily)</h3>
+          <div class="value">${nutritionSummary.actual.daily.protein}</div>
+          <div class="unit">/ ${nutritionSummary.targets.daily.protein}g</div>
+        </div>
+        <div class="nutrition-card">
+          <h3>Carbs (daily)</h3>
+          <div class="value">${nutritionSummary.actual.daily.carbs}</div>
+          <div class="unit">/ ${nutritionSummary.targets.daily.carbs}g</div>
+        </div>
+        <div class="nutrition-card">
+          <h3>Fat (daily)</h3>
+          <div class="value">${nutritionSummary.actual.daily.fat}</div>
+          <div class="unit">/ ${nutritionSummary.targets.daily.fat}g</div>
+        </div>
+      </div>
+
+      ${nutritionSummary.isValid
+        ? '<div class="valid-badge">✅ All nutrition values within range</div>'
+        : '<div class="nutrition-flags">' +
+          nutritionSummary.validation.daily.flags
+            .concat(nutritionSummary.validation.weekly.flags)
+            .map(f => `<div>⚠️ ${f.nutrient}: ${f.actual} vs target ${f.target} (${f.deviation}% deviation)</div>`)
+            .join('') +
+          '</div>'
+      }
+    </section>
+
     <!-- Meal Grid -->
     <section class="section">
       <h2>Weekly Meals (Click any meal to see the recipe 📖)</h2>
@@ -509,11 +669,13 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
             <div class="meals">
               ${mealTypes.map(mealType => {
                 const meal = weeklyPlan[day][mealType];
+                const nutrition = meal.recipe?.nutrition || {};
                 return `
                   <div class="meal" data-day="${day}" data-meal="${mealType}" onclick="openModal('${day}', '${mealType}')">
                     <div class="meal-type">${mealType}</div>
                     <div class="meal-name">${meal.name}</div>
                     <div class="meal-cuisine">${meal.cuisine || ''}</div>
+                    <div class="meal-calories">~${nutrition.calories || meal.targetCalories} kcal</div>
                   </div>
                 `;
               }).join('')}
@@ -545,14 +707,34 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
       }).join('')}
     </section>
 
-    ${pantrySection}
-
     <!-- Recipe Modal -->
     <div class="modal-overlay" id="recipeModal">
       <div class="modal-content">
         <button class="modal-close" onclick="closeModal()">&times;</button>
         <h2 class="modal-title" id="modalTitle"></h2>
         <div class="modal-cuisine" id="modalCuisine"></div>
+
+        <div class="modal-section">
+          <h4>📊 Nutrition</h4>
+          <div class="modal-nutrition">
+            <div class="modal-nutrition-item">
+              <div class="value" id="modalCalories"></div>
+              <div class="label">Calories</div>
+            </div>
+            <div class="modal-nutrition-item">
+              <div class="value" id="modalProtein"></div>
+              <div class="label">Protein (g)</div>
+            </div>
+            <div class="modal-nutrition-item">
+              <div class="value" id="modalCarbs"></div>
+              <div class="label">Carbs (g)</div>
+            </div>
+            <div class="modal-nutrition-item">
+              <div class="value" id="modalFat"></div>
+              <div class="label">Fat (g)</div>
+            </div>
+          </div>
+        </div>
 
         <div class="modal-section">
           <h4>🥗 Ingredients</h4>
@@ -584,6 +766,10 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
 
       document.getElementById('modalTitle').textContent = recipe.title;
       document.getElementById('modalCuisine').textContent = recipe.cuisine;
+      document.getElementById('modalCalories').textContent = recipe.nutrition.calories || '-';
+      document.getElementById('modalProtein').textContent = recipe.nutrition.protein || '-';
+      document.getElementById('modalCarbs').textContent = recipe.nutrition.carbs || '-';
+      document.getElementById('modalFat').textContent = recipe.nutrition.fat || '-';
 
       const ingredientsList = document.getElementById('modalIngredients');
       ingredientsList.innerHTML = (recipe.ingredients || [])
@@ -612,19 +798,6 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
     function closeModal() {
       document.getElementById('recipeModal').classList.remove('active');
       document.body.style.overflow = '';
-    }
-
-    /**
-     * Toggle daily breakdown in pantry
-     */
-    function toggleDaily() {
-      const breakdowns = document.querySelectorAll('.daily-breakdown');
-      const button = document.querySelector('#toggle-daily');
-
-      breakdowns.forEach(el => el.classList.toggle('hidden'));
-      button.textContent = breakdowns[0] && breakdowns[0].classList.contains('hidden')
-        ? '[Show Daily Breakdown]'
-        : '[Hide Daily Breakdown]';
     }
 
     // Close on overlay click

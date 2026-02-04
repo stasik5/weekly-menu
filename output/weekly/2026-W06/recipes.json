@@ -1,268 +1,173 @@
 {
   "Wednesday": {
     "breakfast": {
-      "name": "Buckwheat porridge with milk and berries",
+      "name": "Kasha with butter and milk",
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
+        "title": "Kasha with butter and milk",
+        "cuisine": "unknown",
         "ingredients": [
-          "1 cup buckwheat groats (grechka)",
-          "2.5 cups water",
-          "1 cup milk (dairy, almond, or oat milk)",
-          "1 tbsp butter",
-          "1-2 tbsp honey or maple syrup",
-          "1/2 tsp salt",
-          "1 cup fresh or frozen berries (strawberries, blueberries, raspberries)",
-          "Optional: cinnamon or vanilla extract",
-          "Optional: nuts or seeds for topping"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Rinse buckwheat groats thoroughly until water runs clear",
-          "In a medium pot, bring water and salt to a boil",
-          "Add buckwheat, reduce heat to low, cover",
-          "Simmer for 15-20 minutes until water is absorbed",
-          "Remove from heat, let stand covered for 5 minutes",
-          "Fluff with a fork",
-          "Stir in butter and milk until creamy",
-          "Add honey or maple syrup to taste",
-          "Optional: add cinnamon or vanilla",
-          "Top with fresh or frozen berries",
-          "Optional: add nuts or seeds",
-          "Serve warm"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 320,
-          "protein": 10,
-          "carbs": 58,
-          "fat": 6,
-          "fiber": 6
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
         },
-        "source": "Traditional Slavic buckwheat porridge",
-        "prepTime": "5 min",
-        "cookTime": "20 min",
-        "servings": 2
+        "source": "fallback_template",
+        "url": null
       }
     },
     "snack": {
-      "name": "Cottage cheese with herbs",
-      "cuisine": "slavic",
+      "name": "Mango slices",
+      "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
+        "title": "Mango slices",
+        "cuisine": "unknown",
         "ingredients": [
-          "1 cup cottage cheese or farmer's cheese (tvorog)",
-          "1 tbsp sour cream or Greek yogurt",
-          "1 tbsp fresh dill, chopped",
-          "1 tbsp fresh parsley, chopped",
-          "1 tbsp fresh chives, chopped",
-          "1/4 tsp salt",
-          "1/8 tsp black pepper",
-          "1/2 tbsp olive oil or sunflower oil",
-          "Optional: 1/2 small clove garlic, minced",
-          "Optional: 1/4 tsp paprika",
-          "Optional: cucumber or tomato on the side"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Place cottage cheese in a mixing bowl",
-          "Add sour cream or yogurt and mix well until smooth",
-          "Finely chop fresh herbs: dill, parsley, and chives",
-          "Add herbs to the cheese mixture",
-          "Add salt and black pepper to taste",
-          "Optional: add minced garlic for extra flavor",
-          "Drizzle with olive oil or sunflower oil",
-          "Optional: sprinkle with paprika",
-          "Mix thoroughly until well combined",
-          "Taste and adjust seasoning as needed",
-          "Serve as a spread on bread, or on its own",
-          "Optional: serve with cucumber or tomato slices on the side",
-          "Can be made ahead and refrigerated for 2-3 days"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 180,
-          "protein": 16,
-          "carbs": 6,
-          "fat": 11,
-          "fiber": 0
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
         },
-        "source": "Slavic herb-seasoned cottage cheese",
-        "prepTime": "10 min",
-        "cookTime": "0 min",
-        "servings": 2
+        "source": "fallback_template",
+        "url": null
       }
     },
     "dinner": {
-      "name": "Pad Thai with shrimp",
-      "cuisine": "asian",
+      "name": "Beef stroganoff with rice",
+      "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
+        "title": "Beef stroganoff with rice",
+        "cuisine": "unknown",
         "ingredients": [
-          "4 oz (112g) rice noodles (pad thai noodles)",
-          "1/4 lb (112g) shrimp, peeled and deveined",
-          "1 large egg",
-          "1.5 tbsp vegetable oil",
-          "1.5 tbsp fish sauce",
-          "1 tbsp tamarind paste or 1 tbsp lime juice + 1/2 tbsp brown sugar",
-          "1/2 tbsp palm sugar or brown sugar",
-          "1 clove garlic, minced",
-          "1/2 cup bean sprouts",
-          "2 green onions, sliced",
-          "2 tbsp crushed peanuts",
-          "1 tbsp dried shrimp (optional)",
-          "Lime wedges for serving"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Soak rice noodles in warm water for 30 minutes until soft, drain",
-          "Mix fish sauce, tamarind paste, and sugar in a small bowl, set aside",
-          "Heat wok or large pan over high heat, add 1/2 tbsp oil",
-          "Stir-fry garlic and dried shrimp (if using) for 30 seconds",
-          "Add shrimp, cook 2-3 minutes until pink, remove from pan and set aside",
-          "Add remaining oil to pan, scramble eggs and set aside",
-          "Return to high heat, add drained noodles",
-          "Pour sauce over noodles, toss to coat evenly",
-          "Cook 2-3 minutes, tossing frequently",
-          "Add shrimp and eggs back to wok, toss together",
-          "Add bean sprouts and green onions, toss 30 seconds",
-          "Remove from heat",
-          "Serve topped with crushed peanuts and lime wedges",
-          "Optional: add chili flakes for heat"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 480,
-          "protein": 28,
-          "carbs": 58,
-          "fat": 16,
-          "fiber": 4
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
         },
-        "source": "Authentic Pad Thai recipe",
-        "prepTime": "20 min",
-        "cookTime": "15 min",
-        "servings": 2
+        "source": "fallback_template",
+        "url": null
       }
     }
   },
   "Thursday": {
     "breakfast": {
-      "name": "Scrambled eggs with vegetables",
+      "name": "Syrniki (cottage cheese pancakes)",
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
+        "title": "Syrniki (cottage cheese pancakes)",
+        "cuisine": "unknown",
         "ingredients": [
-          "4 large eggs",
-          "1 tbsp milk or cream",
-          "1 tbsp butter",
-          "1/4 bell pepper, diced",
-          "1/4 cup mushrooms, sliced",
-          "1/8 cup onion, finely chopped",
-          "1/8 cup spinach, chopped",
-          "1/8 cup cheese, shredded (cheddar, feta, or your choice)",
-          "Optional: fresh herbs (chives, parsley, dill)"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Crack eggs into a bowl, add milk or cream, whisk until well combined",
-          "Heat butter in a non-stick pan over medium heat",
-          "Add onion and bell pepper, sauté for 2-3 minutes until softened",
-          "Add mushrooms, cook 2 more minutes",
-          "Add spinach, cook until just wilted (30 seconds)",
-          "Pour egg mixture over vegetables",
-          "Gently push eggs across pan with a spatula, letting uncooked egg flow underneath",
-          "Continue cooking, stirring gently, until eggs are set but still creamy (about 2-3 minutes)",
-          "Remove from heat while slightly undercooked (they'll continue cooking)",
-          "Fold in shredded cheese",
-          "Garnish with fresh herbs if desired",
-          "Serve immediately while hot"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 280,
-          "protein": 18,
-          "carbs": 6,
-          "fat": 22,
-          "fiber": 1
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
         },
-        "source": "Classic vegetable scrambled eggs",
-        "prepTime": "5 min",
-        "cookTime": "8 min",
-        "servings": 2
+        "source": "fallback_template",
+        "url": null
       }
     },
     "snack": {
-      "name": "Ryebread with butter",
+      "name": "Banana with peanut butter",
       "cuisine": "slavic",
       "targetCalories": 500,
       "recipe": {
+        "title": "Banana with peanut butter",
+        "cuisine": "unknown",
         "ingredients": [
-          "4 slices traditional Russian or Eastern European rye bread",
-          "3-4 tbsp butter (salted or unsalted to taste)",
-          "Optional: coarse salt",
-          "Optional: fresh dill for garnish",
-          "Optional: garlic cloves for rubbing",
-          "Optional: radish slices or cucumber"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Slice rye bread into thick or thin slices according to preference",
-          "Bring butter to room temperature for easy spreading",
-          "Generously spread butter over each slice",
-          "Optional: sprinkle with coarse salt",
-          "Optional: rub warm bread with a cut garlic clove for extra flavor",
-          "Optional: garnish with fresh dill",
-          "Optional: serve with radish slices or cucumber on the side",
-          "Can be served as a simple breakfast, snack, or side dish",
-          "Best served at room temperature or lightly toasted"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 220,
-          "protein": 5,
-          "carbs": 25,
-          "fat": 12,
-          "fiber": 3
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
         },
-        "source": "Simple Slavic bread and butter",
-        "prepTime": "2 min",
-        "cookTime": "0 min",
-        "servings": 2
+        "source": "fallback_template",
+        "url": null
       }
     },
     "dinner": {
-      "name": "Japanese ramen",
-      "cuisine": "asian",
+      "name": "Chicken soup with vegetables",
+      "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
+        "title": "Chicken soup with vegetables",
+        "cuisine": "unknown",
         "ingredients": [
-          "1 package ramen noodles (or fresh ramen)",
-          "3 cups chicken or pork broth",
-          "1 tbsp soy sauce",
-          "1/2 tbsp miso paste or 1/2 tsp salt",
-          "1 soft-boiled egg",
-          "2 oz (57g) pork belly or chashu, sliced (optional)",
-          "1 cup mushrooms (shiitake or enoki)",
-          "1 green onion, sliced",
-          "1/2 cup bean sprouts",
-          "1/2 nori sheet, cut into strips",
-          "1 tbsp sesame oil",
-          "Optional: chili oil, corn, bamboo shoots"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Prepare soft-boiled eggs: boil eggs 6.5 minutes, cool in ice water, peel",
-          "In a large pot, bring broth to a simmer",
-          "Add soy sauce, miso paste (or salt), and 1/2 tbsp sesame oil",
-          "Cook ramen noodles according to package, drain and set aside",
-          "In the broth, add mushrooms and cook 2-3 minutes",
-          "Divide noodles among serving bowls",
-          "Ladle hot broth over noodles",
-          "Top with sliced pork (if using), halved soft-boiled eggs",
-          "Add bean sprouts, green onions, nori strips",
-          "Drizzle with remaining sesame oil and chili oil if desired",
-          "Serve immediately while hot"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 520,
-          "protein": 26,
-          "carbs": 58,
-          "fat": 20,
-          "fiber": 4
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
         },
-        "source": "Japanese ramen recipe",
-        "prepTime": "15 min",
-        "cookTime": "25 min",
-        "servings": 2
+        "source": "fallback_template",
+        "url": null
       }
     }
   },
@@ -272,219 +177,141 @@
       "cuisine": "asian",
       "targetCalories": 1400,
       "recipe": {
+        "title": "Miso soup with tofu",
+        "cuisine": "unknown",
         "ingredients": [
-          "2 cups vegetable broth",
-          "1.5-2 tbsp white or yellow miso paste",
-          "1/2 block (7 oz) firm tofu, cubed",
-          "1 cup greens (spinach, chard, or bok choy), chopped",
-          "1 green onion, sliced (white and green parts)",
-          "1 sheet nori seaweed, cut into strips",
-          "1/2 tbsp soy sauce (optional)",
-          "Sesame oil for drizzling (optional)"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "In a medium pot, bring vegetable broth to a simmer",
-          "In a small bowl, whisk miso paste with a few tablespoons of hot broth until smooth",
-          "Add tofu cubes and greens to the simmering broth, cook 2-3 minutes",
-          "Add green onions and nori strips, cook 1 more minute",
-          "Remove pot from heat (important - don't boil miso after adding)",
-          "Stir in the miso paste mixture until well combined",
-          "Taste and adjust with soy sauce if needed",
-          "Serve hot, drizzled with sesame oil if desired"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 180,
-          "protein": 14,
-          "carbs": 16,
-          "fat": 8,
-          "fiber": 3
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
         },
-        "source": "Minimalist Baker",
-        "prepTime": "5 min",
-        "cookTime": "10 min",
-        "servings": 2
+        "source": "fallback_template",
+        "url": null
       }
     },
     "snack": {
-      "name": "Pickled vegetables",
-      "cuisine": "slavic",
+      "name": "Seaweed snacks",
+      "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
+        "title": "Seaweed snacks",
+        "cuisine": "unknown",
         "ingredients": [
-          "1 cup mixed vegetables (carrots, daikon, cucumber, cauliflower)",
-          "1/2 cup rice vinegar",
-          "1/4 cup water",
-          "1 tbsp sugar",
-          "1/2 tbsp salt",
-          "1 clove garlic, sliced",
-          "1/2 inch ginger, sliced (optional)",
-          "1 dried red chili (optional)",
-          "Fresh dill or cilantro (optional)"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Cut vegetables into sticks or bite-sized pieces",
-          "In a saucepan, combine vinegar, water, sugar and salt",
-          "Bring to a simmer, stirring until sugar dissolves",
-          "Let the pickling liquid cool completely",
-          "Place vegetables, garlic, ginger, and chilies in clean glass jars",
-          "Pour cooled liquid over vegetables to cover completely",
-          "Add fresh herbs if desired",
-          "Seal jars and refrigerate for at least 24 hours",
-          "Vegetables will keep for 2-3 weeks refrigerated",
-          "Serve cold as a snack or side dish"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 35,
-          "protein": 1,
-          "carbs": 7,
-          "fat": 0,
-          "fiber": 2
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
         },
-        "source": "Quick pickled vegetables",
-        "prepTime": "15 min",
-        "cookTime": "5 min + 24h pickling",
-        "servings": 2
+        "source": "fallback_template",
+        "url": null
       }
     },
     "dinner": {
-      "name": "Sichuan mapo tofu",
+      "name": "Pad Thai with shrimp",
       "cuisine": "asian",
       "targetCalories": 2100,
       "recipe": {
+        "title": "Pad Thai with shrimp",
+        "cuisine": "unknown",
         "ingredients": [
-          "1/2 block (7 oz) firm or extra firm tofu, cubed",
-          "1.5 tbsp vegetable oil",
-          "1-2 tbsp Sichuan chili bean paste (doubanjiang)",
-          "1/4 lb (112g) ground pork",
-          "1-2 tbsp fermented black beans (douchi), rinsed",
-          "1 tbsp soy sauce",
-          "1/2 tsp sugar",
-          "1/2 cup chicken stock",
-          "1/2 tbsp cornstarch mixed with 1 tbsp water",
-          "1-2 dried red chilies",
-          "1/2 tsp Sichuan peppercorns, toasted and ground",
-          "1 clove garlic, minced",
-          "1/2 tbsp fresh ginger, minced",
-          "1 green onion, sliced",
-          "Optional: 1/2 tsp five-spice powder"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Cut tofu into 1-inch cubes",
-          "Bring water to boil, add tofu and blanch for 2 minutes to remove moisture",
-          "Drain and set aside",
-          "Heat oil in wok or large pan over medium heat",
-          "Add ground pork, cook until browned, break up any clumps",
-          "Add chili bean paste, fermented black beans, garlic, and ginger",
-          "Stir-fry for 1-2 minutes until fragrant",
-          "Add soy sauce, sugar, and chicken stock",
-          "Bring to a simmer",
-          "Add tofu cubes, gently stir to combine",
-          "Simmer for 5 minutes, letting tofu absorb flavors",
-          "Stir in cornstarch mixture to thicken sauce",
-          "Add dried red chilies and ground Sichuan peppercorns",
-          "Cook 1-2 more minutes",
-          "Garnish with sliced green onions",
-          "Serve hot over steamed rice"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 380,
-          "protein": 28,
-          "carbs": 12,
-          "fat": 26,
-          "fiber": 2
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
         },
-        "source": "Authentic Sichuan spicy tofu",
-        "prepTime": "15 min",
-        "cookTime": "20 min",
-        "servings": 2
+        "source": "fallback_template",
+        "url": null
       }
     }
   },
   "Saturday": {
     "breakfast": {
-      "name": "Syrniki (cottage cheese pancakes)",
+      "name": "Buckwheat porridge with milk and berries",
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
+        "title": "Buckwheat porridge with milk and berries",
+        "cuisine": "unknown",
         "ingredients": [
-          "3/4 cup cottage cheese or farmer's cheese (tvorog)",
-          "2 tbsp all-purpose flour",
-          "1/2 egg",
-          "1-1.5 tbsp sugar (adjust to taste)",
-          "1/8 tsp salt",
-          "1/2 tsp vanilla extract (optional)",
-          "1/4 cup flour for coating",
-          "2 tbsp butter or oil for frying",
-          "Optional: raisins or dried cranberries",
-          "Optional: sour cream for serving",
-          "Optional: honey or jam for serving",
-          "Optional: fresh berries"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Place cottage cheese in a bowl, mash with a fork",
-          "Add egg, sugar, salt, and vanilla, mix well",
-          "Add 2 tbsp flour, mix until combined",
-          "Optional: add raisins or dried cranberries",
-          "The dough should be slightly sticky but manageable",
-          "Place 1/4 cup flour in a shallow plate for coating",
-          "Take about 1 tbsp of dough, form into a small patty",
-          "Dredge both sides in flour, shake off excess",
-          "Repeat with remaining dough",
-          "Heat butter or oil in a non-stick pan over medium heat",
-          "Fry syrniki in batches for 3-4 minutes per side until golden brown",
-          "Don't crowd the pan - cook 2-3 at a time",
-          "Transfer to paper towels to drain excess oil",
-          "Serve warm with sour cream, honey, or fresh berries",
-          "Can be served for breakfast or dessert"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 320,
-          "protein": 14,
-          "carbs": 32,
-          "fat": 16,
-          "fiber": 0
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
         },
-        "source": "Traditional Slavic cottage cheese pancakes",
-        "prepTime": "15 min",
-        "cookTime": "15 min",
-        "servings": 2
+        "source": "fallback_template",
+        "url": null
       }
     },
     "snack": {
-      "name": "Nuts and dried fruits",
+      "name": "Ryebread with butter",
       "cuisine": "slavic",
       "targetCalories": 500,
       "recipe": {
+        "title": "Ryebread with butter",
+        "cuisine": "unknown",
         "ingredients": [
-          "1/2 cup mixed nuts (almonds, walnuts, cashews, pecans)",
-          "1/2 cup mixed dried fruits (raisins, cranberries, apricots, dates)",
-          "Optional: dark chocolate chips or chunks",
-          "Optional: pumpkin seeds or sunflower seeds",
-          "Optional: cinnamon or cardamom for seasoning"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Choose raw or roasted nuts according to preference",
-          "If nuts are raw, toast them in a dry pan for 3-5 minutes until fragrant",
-          "Let nuts cool completely",
-          "Chop large dried fruits (apricots, dates) into bite-sized pieces",
-          "Combine nuts and dried fruits in a bowl",
-          "Optional: add dark chocolate chips for extra indulgence",
-          "Optional: add pumpkin or sunflower seeds for variety",
-          "Optional: sprinkle with cinnamon or cardamom",
-          "Store in airtight container for up to 2 weeks",
-          "Portion into snack-sized bags for easy grabbing"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 450,
-          "protein": 10,
-          "carbs": 35,
-          "fat": 30,
-          "fiber": 6
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
         },
-        "source": "Trail mix snack",
-        "prepTime": "5 min",
-        "cookTime": "5 min (toasting)",
-        "servings": 2
+        "source": "fallback_template",
+        "url": null
       }
     },
     "dinner": {
@@ -492,49 +319,27 @@
       "cuisine": "asian",
       "targetCalories": 2100,
       "recipe": {
+        "title": "Chicken teriyaki with rice",
+        "cuisine": "unknown",
         "ingredients": [
-          "1/2 lb (225g) chicken thighs or breast, cut into bite-sized pieces",
-          "1 cup jasmine rice",
-          "For teriyaki sauce:",
-          "2 tbsp soy sauce",
-          "1 tbsp dry white wine (substituted for mirin)",
-          "1 tbsp dry white wine (substituted for sake)",
-          "1 tbsp sugar",
-          "1/2 tbsp honey",
-          "1/2 tsp sesame oil",
-          "1/2 clove garlic, minced",
-          "1/2 tsp fresh ginger, grated",
-          "1 tbsp vegetable oil",
-          "1/2 tbsp cornstarch mixed with 1/2 tbsp water",
-          "Sesame seeds for garnish",
-          "Green onions, sliced for garnish",
-          "Optional: steamed broccoli or vegetables"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Cook rice according to package instructions",
-          "Make teriyaki sauce: combine soy sauce, dry white wine, sugar, honey, sesame oil, garlic, and ginger in a bowl",
-          "Heat vegetable oil in a large wok or skillet over medium-high heat",
-          "Add chicken pieces, cook 5-6 minutes until browned",
-          "Add teriyaki sauce to the pan",
-          "Bring to a simmer, cook 3-4 minutes",
-          "Stir in cornstarch mixture to thicken sauce",
-          "Continue cooking 1-2 minutes until sauce coats chicken",
-          "Remove from heat",
-          "Serve chicken and sauce over steamed rice",
-          "Garnish with sesame seeds and green onions",
-          "Optional: serve with steamed broccoli or other vegetables"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 520,
-          "protein": 32,
-          "carbs": 58,
-          "fat": 16,
-          "fiber": 1
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
         },
-        "source": "Japanese-style chicken teriyaki",
-        "prepTime": "15 min",
-        "cookTime": "20 min",
-        "servings": 2
+        "source": "fallback_template",
+        "url": null
       }
     }
   }

@@ -62,62 +62,6 @@
       border-bottom: 2px solid #3b82f6;
     }
 
-    /* Nutrition Summary */
-    .nutrition-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      margin-bottom: 20px;
-    }
-
-    .nutrition-card {
-      background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
-      padding: 15px;
-      border-radius: 8px;
-      text-align: center;
-      box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
-    }
-
-    .nutrition-card h3 {
-      font-size: 0.9em;
-      color: #bfdbfe;
-      margin-bottom: 8px;
-    }
-
-    .nutrition-card .value {
-      font-size: 1.8em;
-      font-weight: bold;
-      color: #ffffff;
-    }
-
-    .nutrition-card .unit {
-      font-size: 0.9em;
-      color: #93c5fd;
-    }
-
-    .nutrition-flags {
-      background: rgba(234, 179, 8, 0.2);
-      border-left: 4px solid #eab308;
-      padding: 15px;
-      margin-top: 20px;
-      border-radius: 4px;
-      color: #fef08a;
-    }
-
-    .nutrition-flags:empty {
-      display: none;
-    }
-
-    .valid-badge {
-      background: linear-gradient(135deg, #065f46 0%, #10b981 100%);
-      color: #ffffff;
-      padding: 8px 16px;
-      border-radius: 20px;
-      display: inline-block;
-      margin-top: 10px;
-      box-shadow: 0 2px 10px rgba(16, 185, 129, 0.3);
-    }
-
     /* Meal Grid */
     .meal-grid {
       display: grid;
@@ -149,12 +93,35 @@
       margin-bottom: 15px;
       padding-bottom: 15px;
       border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      position: relative;
     }
 
     .meal:last-child {
       border-bottom: none;
       margin-bottom: 0;
       padding-bottom: 0;
+    }
+
+    .meal:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+      background: rgba(59, 130, 246, 0.1);
+    }
+
+    .meal::after {
+      content: '📖';
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      font-size: 0.8em;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    .meal:hover::after {
+      opacity: 1;
     }
 
     .meal-type {
@@ -222,79 +189,88 @@
       font-size: 0.9em;
     }
 
-    /* Recipe Details */
-    .recipe-detail {
-      background: rgba(30, 41, 59, 0.8);
-      border: 1px solid rgba(59, 130, 246, 0.3);
-      border-radius: 8px;
-      padding: 20px;
-      margin-top: 20px;
-      display: none;
-    }
-
-    .recipe-detail.active {
-      display: block;
-    }
-
-    .recipe-title {
-      font-size: 1.3em;
-      color: #f1f5f9;
+    /* Virtual Pantry */
+    .pantry-section button {
+      background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9em;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
       margin-bottom: 15px;
     }
 
-    .recipe-section {
-      margin-bottom: 20px;
-    }
-
-    .recipe-section h4 {
-      color: #60a5fa;
-      margin-bottom: 10px;
-    }
-
-    .recipe-section ul,
-    .recipe-section ol {
-      padding-left: 20px;
-    }
-
-    .recipe-section li {
-      margin-bottom: 5px;
-      color: #cbd5e1;
-    }
-
-    .recipe-link {
-      color: #60a5fa;
-      text-decoration: none;
-    }
-
-    .recipe-link:hover {
-      text-decoration: underline;
-    }
-
-    /* Make meals clickable */
-    .meal {
-      cursor: pointer;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      position: relative;
-    }
-
-    .meal:hover {
-      transform: translateY(-2px);
+    .pantry-section button:hover {
+      background: linear-gradient(135deg, #2563eb 0%, #60a5fa 100%);
+      transform: translateY(-1px);
       box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+    }
+
+    .pantry-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 12px;
+    }
+
+    .pantry-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 15px;
+      background: rgba(15, 23, 42, 0.6);
+      border-radius: 6px;
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      transition: all 0.2s ease;
+    }
+
+    .pantry-item:hover {
       background: rgba(59, 130, 246, 0.1);
+      border-color: rgba(59, 130, 246, 0.4);
     }
 
-    .meal::after {
-      content: '📖';
-      position: absolute;
-      top: 5px;
-      right: 5px;
-      font-size: 0.8em;
-      opacity: 0;
-      transition: opacity 0.2s ease;
+    .pantry-item .emoji {
+      font-size: 1.5em;
     }
 
-    .meal:hover::after {
-      opacity: 1;
+    .pantry-item .name {
+      flex: 1;
+      color: #e8eaf0;
+      font-weight: 500;
+    }
+
+    .pantry-item .amount {
+      font-weight: 600;
+      font-size: 0.95em;
+    }
+
+    .pantry-item .amount.low {
+      color: #ef4444;
+    }
+
+    .pantry-item .amount.medium {
+      color: #eab308;
+    }
+
+    .pantry-item .amount.high {
+      color: #4ade80;
+    }
+
+    .daily-breakdown {
+      margin-top: 8px;
+      padding: 8px 12px;
+      background: rgba(15, 23, 42, 0.8);
+      border-radius: 4px;
+      border-left: 3px solid #3b82f6;
+      font-size: 0.85em;
+      color: #94a3b8;
+      grid-column: 1 / -1;
+    }
+
+    .daily-breakdown.hidden {
+      display: none;
     }
 
     /* Modal Popup */
@@ -403,32 +379,6 @@
       line-height: 1.7;
     }
 
-    .modal-nutrition {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      gap: 12px;
-      background: rgba(30, 41, 59, 0.8);
-      padding: 15px;
-      border-radius: 8px;
-      border: 1px solid rgba(59, 130, 246, 0.2);
-    }
-
-    .modal-nutrition-item {
-      text-align: center;
-    }
-
-    .modal-nutrition-item .value {
-      font-size: 1.3em;
-      font-weight: bold;
-      color: #f1f5f9;
-    }
-
-    .modal-nutrition-item .label {
-      font-size: 0.85em;
-      color: #94a3b8;
-      text-transform: uppercase;
-    }
-
     .modal-source {
       text-align: center;
       margin-top: 20px;
@@ -486,41 +436,6 @@
       <div class="week-label">2026-W06</div>
     </header>
 
-    <!-- Nutrition Summary -->
-    <section class="section">
-      <h2>Nutrition Summary (medium level)</h2>
-
-      <div class="nutrition-grid">
-        <div class="nutrition-card">
-          <h3>Daily Calories</h3>
-          <div class="value">971</div>
-          <div class="unit">/ 4000 kcal</div>
-        </div>
-        <div class="nutrition-card">
-          <h3>Weekly Calories</h3>
-          <div class="value">3885</div>
-          <div class="unit">kcal total</div>
-        </div>
-        <div class="nutrition-card">
-          <h3>Protein (daily)</h3>
-          <div class="value">51</div>
-          <div class="unit">/ 203g</div>
-        </div>
-        <div class="nutrition-card">
-          <h3>Carbs (daily)</h3>
-          <div class="value">93</div>
-          <div class="unit">/ 358g</div>
-        </div>
-        <div class="nutrition-card">
-          <h3>Fat (daily)</h3>
-          <div class="value">46</div>
-          <div class="unit">/ 196g</div>
-        </div>
-      </div>
-
-      <div class="nutrition-flags"><div>⚠️ calories: 971 vs target 4000 (75.7% deviation)</div><div>⚠️ protein: 51 vs target 203 (74.9% deviation)</div><div>⚠️ carbs: 93 vs target 358 (74.0% deviation)</div><div>⚠️ fat: 46 vs target 196 (76.5% deviation)</div><div>⚠️ calories: 3885 vs target 28000 (86.1% deviation)</div><div>⚠️ protein: 202 vs target 1421 (85.8% deviation)</div><div>⚠️ carbs: 371 vs target 2506 (85.2% deviation)</div><div>⚠️ fat: 183 vs target 1372 (86.7% deviation)</div></div>
-    </section>
-
     <!-- Meal Grid -->
     <section class="section">
       <h2>Weekly Meals (Click any meal to see the recipe 📖)</h2>
@@ -532,23 +447,20 @@
               
                   <div class="meal" data-day="Wednesday" data-meal="breakfast" onclick="openModal('Wednesday', 'breakfast')">
                     <div class="meal-type">breakfast</div>
-                    <div class="meal-name">Buckwheat porridge with milk and berries</div>
+                    <div class="meal-name">Kasha with butter and milk</div>
                     <div class="meal-cuisine">slavic</div>
-                    <div class="meal-calories">~320 kcal</div>
                   </div>
                 
                   <div class="meal" data-day="Wednesday" data-meal="snack" onclick="openModal('Wednesday', 'snack')">
                     <div class="meal-type">snack</div>
-                    <div class="meal-name">Cottage cheese with herbs</div>
-                    <div class="meal-cuisine">slavic</div>
-                    <div class="meal-calories">~180 kcal</div>
+                    <div class="meal-name">Mango slices</div>
+                    <div class="meal-cuisine">asian</div>
                   </div>
                 
                   <div class="meal" data-day="Wednesday" data-meal="dinner" onclick="openModal('Wednesday', 'dinner')">
                     <div class="meal-type">dinner</div>
-                    <div class="meal-name">Pad Thai with shrimp</div>
-                    <div class="meal-cuisine">asian</div>
-                    <div class="meal-calories">~480 kcal</div>
+                    <div class="meal-name">Beef stroganoff with rice</div>
+                    <div class="meal-cuisine">slavic</div>
                   </div>
                 
             </div>
@@ -560,23 +472,20 @@
               
                   <div class="meal" data-day="Thursday" data-meal="breakfast" onclick="openModal('Thursday', 'breakfast')">
                     <div class="meal-type">breakfast</div>
-                    <div class="meal-name">Scrambled eggs with vegetables</div>
+                    <div class="meal-name">Syrniki (cottage cheese pancakes)</div>
                     <div class="meal-cuisine">slavic</div>
-                    <div class="meal-calories">~280 kcal</div>
                   </div>
                 
                   <div class="meal" data-day="Thursday" data-meal="snack" onclick="openModal('Thursday', 'snack')">
                     <div class="meal-type">snack</div>
-                    <div class="meal-name">Ryebread with butter</div>
+                    <div class="meal-name">Banana with peanut butter</div>
                     <div class="meal-cuisine">slavic</div>
-                    <div class="meal-calories">~220 kcal</div>
                   </div>
                 
                   <div class="meal" data-day="Thursday" data-meal="dinner" onclick="openModal('Thursday', 'dinner')">
                     <div class="meal-type">dinner</div>
-                    <div class="meal-name">Japanese ramen</div>
-                    <div class="meal-cuisine">asian</div>
-                    <div class="meal-calories">~520 kcal</div>
+                    <div class="meal-name">Chicken soup with vegetables</div>
+                    <div class="meal-cuisine">slavic</div>
                   </div>
                 
             </div>
@@ -590,21 +499,18 @@
                     <div class="meal-type">breakfast</div>
                     <div class="meal-name">Miso soup with tofu</div>
                     <div class="meal-cuisine">asian</div>
-                    <div class="meal-calories">~180 kcal</div>
                   </div>
                 
                   <div class="meal" data-day="Friday" data-meal="snack" onclick="openModal('Friday', 'snack')">
                     <div class="meal-type">snack</div>
-                    <div class="meal-name">Pickled vegetables</div>
-                    <div class="meal-cuisine">slavic</div>
-                    <div class="meal-calories">~35 kcal</div>
+                    <div class="meal-name">Seaweed snacks</div>
+                    <div class="meal-cuisine">asian</div>
                   </div>
                 
                   <div class="meal" data-day="Friday" data-meal="dinner" onclick="openModal('Friday', 'dinner')">
                     <div class="meal-type">dinner</div>
-                    <div class="meal-name">Sichuan mapo tofu</div>
+                    <div class="meal-name">Pad Thai with shrimp</div>
                     <div class="meal-cuisine">asian</div>
-                    <div class="meal-calories">~380 kcal</div>
                   </div>
                 
             </div>
@@ -616,23 +522,20 @@
               
                   <div class="meal" data-day="Saturday" data-meal="breakfast" onclick="openModal('Saturday', 'breakfast')">
                     <div class="meal-type">breakfast</div>
-                    <div class="meal-name">Syrniki (cottage cheese pancakes)</div>
+                    <div class="meal-name">Buckwheat porridge with milk and berries</div>
                     <div class="meal-cuisine">slavic</div>
-                    <div class="meal-calories">~320 kcal</div>
                   </div>
                 
                   <div class="meal" data-day="Saturday" data-meal="snack" onclick="openModal('Saturday', 'snack')">
                     <div class="meal-type">snack</div>
-                    <div class="meal-name">Nuts and dried fruits</div>
+                    <div class="meal-name">Ryebread with butter</div>
                     <div class="meal-cuisine">slavic</div>
-                    <div class="meal-calories">~450 kcal</div>
                   </div>
                 
                   <div class="meal" data-day="Saturday" data-meal="dinner" onclick="openModal('Saturday', 'dinner')">
                     <div class="meal-type">dinner</div>
                     <div class="meal-name">Chicken teriyaki with rice</div>
                     <div class="meal-cuisine">asian</div>
-                    <div class="meal-calories">~520 kcal</div>
                   </div>
                 
             </div>
@@ -646,719 +549,25 @@
       <h2>Grocery List</h2>
       
           <div class="grocery-category">
-            <h3>Produce</h3>
-            <div class="grocery-items">
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item--2-tbsp-fermented-black-beans">
-                  <label for="item--2-tbsp-fermented-black-beans" class="grocery-item-name">-2 tbsp fermented black beans</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item--2-tbsp-Sichuan-chili-bean">
-                  <label for="item--2-tbsp-Sichuan-chili-bean" class="grocery-item-name">-2 tbsp Sichuan chili bean</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-clove-garlic,-minced">
-                  <label for="item-/2-clove-garlic,-minced" class="grocery-item-name">/2 clove garlic, minced</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-cup-bean-sprouts">
-                  <label for="item-/2-cup-bean-sprouts" class="grocery-item-name">/2 cup bean sprouts</label>
-                  <span class="grocery-item-qty">(2 )</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-inch-ginger,-sliced-(optional">
-                  <label for="item-/2-inch-ginger,-sliced-(optional" class="grocery-item-name">/2 inch ginger, sliced (optional</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-tbsp-cornstarch-mixed-with">
-                  <label for="item-/2-tbsp-cornstarch-mixed-with" class="grocery-item-name">/2 tbsp cornstarch mixed with</label>
-                  <span class="grocery-item-qty">(2 )</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-tbsp-fresh-ginger,-minced">
-                  <label for="item-/2-tbsp-fresh-ginger,-minced" class="grocery-item-name">/2 tbsp fresh ginger, minced</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-tsp-fresh-ginger,-grated">
-                  <label for="item-/2-tsp-fresh-ginger,-grated" class="grocery-item-name">/2 tsp fresh ginger, grated</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-tsp-Sichuan-peppercorns,-toasted">
-                  <label for="item-/2-tsp-Sichuan-peppercorns,-toasted" class="grocery-item-name">/2 tsp Sichuan peppercorns, toasted</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/4-bell-pepper,-diced">
-                  <label for="item-/4-bell-pepper,-diced" class="grocery-item-name">/4 bell pepper, diced</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/4-cup-mushrooms,-sliced">
-                  <label for="item-/4-cup-mushrooms,-sliced" class="grocery-item-name">/4 cup mushrooms, sliced</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/8-cup-onion,-finely-chopped">
-                  <label for="item-/8-cup-onion,-finely-chopped" class="grocery-item-name">/8 cup onion, finely chopped</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/8-cup-spinach,-chopped">
-                  <label for="item-/8-cup-spinach,-chopped" class="grocery-item-name">/8 cup spinach, chopped</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/8-tsp-black-pepper">
-                  <label for="item-/8-tsp-black-pepper" class="grocery-item-name">/8 tsp black pepper</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Fresh-dill-or-cilantro-(optional">
-                  <label for="item-Fresh-dill-or-cilantro-(optional" class="grocery-item-name">Fresh dill or cilantro (optional</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-fresh-dill,-chopped">
-                  <label for="item-fresh-dill,-chopped" class="grocery-item-name">fresh dill, chopped</label>
-                  <span class="grocery-item-qty">(1 tbsp)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-fresh-parsley,-chopped">
-                  <label for="item-fresh-parsley,-chopped" class="grocery-item-name">fresh parsley, chopped</label>
-                  <span class="grocery-item-qty">(1 tbsp)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-garlic,-minced">
-                  <label for="item-garlic,-minced" class="grocery-item-name">garlic, minced</label>
-                  <span class="grocery-item-qty">(2 clove)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-garlic,-sliced">
-                  <label for="item-garlic,-sliced" class="grocery-item-name">garlic, sliced</label>
-                  <span class="grocery-item-qty">(1 clove)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-greens-(spinach,-chard,-or-bok">
-                  <label for="item-greens-(spinach,-chard,-or-bok" class="grocery-item-name">greens (spinach, chard, or bok</label>
-                  <span class="grocery-item-qty">(1 cup)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-ime-wedges-for-serving">
-                  <label for="item-ime-wedges-for-serving" class="grocery-item-name">ime wedges for serving</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-mixed-vegetables-(carrots,-daikon,-cucumber,">
-                  <label for="item-mixed-vegetables-(carrots,-daikon,-cucumber," class="grocery-item-name">mixed vegetables (carrots, daikon, cucumber,</label>
-                  <span class="grocery-item-qty">(1 cup)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-mushrooms-(shiitake-or-enoki">
-                  <label for="item-mushrooms-(shiitake-or-enoki" class="grocery-item-name">mushrooms (shiitake or enoki</label>
-                  <span class="grocery-item-qty">(1 cup)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Optional:-1/2-small-clove-garlic,">
-                  <label for="item-Optional:-1/2-small-clove-garlic," class="grocery-item-name">Optional: 1/2 small clove garlic,</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Optional:-chili-oil,-corn,-bamboo">
-                  <label for="item-Optional:-chili-oil,-corn,-bamboo" class="grocery-item-name">Optional: chili oil, corn, bamboo</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Optional:-cucumber-or-tomato-on">
-                  <label for="item-Optional:-cucumber-or-tomato-on" class="grocery-item-name">Optional: cucumber or tomato on</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Optional:-fresh-dill-for-garnish">
-                  <label for="item-Optional:-fresh-dill-for-garnish" class="grocery-item-name">Optional: fresh dill for garnish</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Optional:-fresh-herbs-(chives,-parsley,">
-                  <label for="item-Optional:-fresh-herbs-(chives,-parsley," class="grocery-item-name">Optional: fresh herbs (chives, parsley,</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Optional:-garlic-cloves-for-rubbing">
-                  <label for="item-Optional:-garlic-cloves-for-rubbing" class="grocery-item-name">Optional: garlic cloves for rubbing</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Optional:-radish-slices-or-cucumber">
-                  <label for="item-Optional:-radish-slices-or-cucumber" class="grocery-item-name">Optional: radish slices or cucumber</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Optional:-steamed-broccoli-or-vegetables">
-                  <label for="item-Optional:-steamed-broccoli-or-vegetables" class="grocery-item-name">Optional: steamed broccoli or vegetables</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-reen-onion,-sliced">
-                  <label for="item-reen-onion,-sliced" class="grocery-item-name">reen onion, sliced</label>
-                  <span class="grocery-item-qty">(2 g)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-reen-onion,-sliced-(white-and">
-                  <label for="item-reen-onion,-sliced-(white-and" class="grocery-item-name">reen onion, sliced (white and</label>
-                  <span class="grocery-item-qty">(1 g)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-reen-onions,-sliced">
-                  <label for="item-reen-onions,-sliced" class="grocery-item-name">reen onions, sliced</label>
-                  <span class="grocery-item-qty">(2 g)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-reen-onions,-sliced-for-garnish">
-                  <label for="item-reen-onions,-sliced-for-garnish" class="grocery-item-name">reen onions, sliced for garnish</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-tamarind-paste-or-1-tbsp">
-                  <label for="item-tamarind-paste-or-1-tbsp" class="grocery-item-name">tamarind paste or 1 tbsp</label>
-                  <span class="grocery-item-qty">(1 tbsp)</span>
-                </div>
-              
-            </div>
-          </div>
-        
-          <div class="grocery-category">
-            <h3>Meat</h3>
-            <div class="grocery-items">
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-.5-tbsp-fish-sauce">
-                  <label for="item-.5-tbsp-fish-sauce" class="grocery-item-name">.5 tbsp fish sauce</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-cup-chicken-stock">
-                  <label for="item-/2-cup-chicken-stock" class="grocery-item-name">/2 cup chicken stock</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-lb-(225g)-chicken-thighs">
-                  <label for="item-/2-lb-(225g)-chicken-thighs" class="grocery-item-name">/2 lb (225g) chicken thighs</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/4-lb-(112g)-ground-pork">
-                  <label for="item-/4-lb-(112g)-ground-pork" class="grocery-item-name">/4 lb (112g) ground pork</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/4-lb-(112g)-shrimp,-peeled">
-                  <label for="item-/4-lb-(112g)-shrimp,-peeled" class="grocery-item-name">/4 lb (112g) shrimp, peeled</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-57g)-pork-belly-or-chashu,">
-                  <label for="item-57g)-pork-belly-or-chashu," class="grocery-item-name">57g) pork belly or chashu,</label>
-                  <span class="grocery-item-qty">(2 oz)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-dried-shrimp-(optional">
-                  <label for="item-dried-shrimp-(optional" class="grocery-item-name">dried shrimp (optional</label>
-                  <span class="grocery-item-qty">(1 tbsp)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-s-chicken-or-pork-broth">
-                  <label for="item-s-chicken-or-pork-broth" class="grocery-item-name">s chicken or pork broth</label>
-                  <span class="grocery-item-qty">(3 cup)</span>
-                </div>
-              
-            </div>
-          </div>
-        
-          <div class="grocery-category">
-            <h3>Dairy</h3>
-            <div class="grocery-items">
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item--4-tbsp-butter-(salted-or">
-                  <label for="item--4-tbsp-butter-(salted-or" class="grocery-item-name">-4 tbsp butter (salted or</label>
-                  <span class="grocery-item-qty">(3)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-egg">
-                  <label for="item-/2-egg" class="grocery-item-name">/2 egg</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/4-cup-cottage-cheese-or">
-                  <label for="item-/4-cup-cottage-cheese-or" class="grocery-item-name">/4 cup cottage cheese or</label>
-                  <span class="grocery-item-qty">(3)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/8-cup-cheese,-shredded-(cheddar,">
-                  <label for="item-/8-cup-cheese,-shredded-(cheddar," class="grocery-item-name">/8 cup cheese, shredded (cheddar,</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-arge-egg">
-                  <label for="item-arge-egg" class="grocery-item-name">arge egg</label>
-                  <span class="grocery-item-qty">(1 l)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-arge-eggs">
-                  <label for="item-arge-eggs" class="grocery-item-name">arge eggs</label>
-                  <span class="grocery-item-qty">(4 l)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-butter">
-                  <label for="item-butter" class="grocery-item-name">butter</label>
-                  <span class="grocery-item-qty">(2 tbsp)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-butter-or-oil-for-frying">
-                  <label for="item-butter-or-oil-for-frying" class="grocery-item-name">butter or oil for frying</label>
-                  <span class="grocery-item-qty">(2 tbsp)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-cottage-cheese-or-farmer's-cheese">
-                  <label for="item-cottage-cheese-or-farmer's-cheese" class="grocery-item-name">cottage cheese or farmer's cheese</label>
-                  <span class="grocery-item-qty">(1 cup)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-milk-(dairy,-almond,-or-oat">
-                  <label for="item-milk-(dairy,-almond,-or-oat" class="grocery-item-name">milk (dairy, almond, or oat</label>
-                  <span class="grocery-item-qty">(1 cup)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-milk-or-cream">
-                  <label for="item-milk-or-cream" class="grocery-item-name">milk or cream</label>
-                  <span class="grocery-item-qty">(1 tbsp)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Optional:-sour-cream-for-serving">
-                  <label for="item-Optional:-sour-cream-for-serving" class="grocery-item-name">Optional: sour cream for serving</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-soft-boiled-egg">
-                  <label for="item-soft-boiled-egg" class="grocery-item-name">soft-boiled egg</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-sour-cream-or-Greek-yogurt">
-                  <label for="item-sour-cream-or-Greek-yogurt" class="grocery-item-name">sour cream or Greek yogurt</label>
-                  <span class="grocery-item-qty">(1 tbsp)</span>
-                </div>
-              
-            </div>
-          </div>
-        
-          <div class="grocery-category">
-            <h3>Pantry</h3>
-            <div class="grocery-items">
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item--1.5-tbsp-sugar-(adjust-to">
-                  <label for="item--1.5-tbsp-sugar-(adjust-to" class="grocery-item-name">-1.5 tbsp sugar (adjust to</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item--2-tbsp-honey-or-maple">
-                  <label for="item--2-tbsp-honey-or-maple" class="grocery-item-name">-2 tbsp honey or maple</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-.5-tbsp-vegetable-oil">
-                  <label for="item-.5-tbsp-vegetable-oil" class="grocery-item-name">.5 tbsp vegetable oil</label>
-                  <span class="grocery-item-qty">(2 )</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-.5-2-tbsp-white-or-yellow">
-                  <label for="item-.5-2-tbsp-white-or-yellow" class="grocery-item-name">.5-2 tbsp white or yellow</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-block-(7-oz)-firm">
-                  <label for="item-/2-block-(7-oz)-firm" class="grocery-item-name">/2 block (7 oz) firm</label>
-                  <span class="grocery-item-qty">(2 )</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-cup-mixed-nuts-(almonds,">
-                  <label for="item-/2-cup-mixed-nuts-(almonds," class="grocery-item-name">/2 cup mixed nuts (almonds,</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-cup-rice-vinegar">
-                  <label for="item-/2-cup-rice-vinegar" class="grocery-item-name">/2 cup rice vinegar</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-tbsp-honey">
-                  <label for="item-/2-tbsp-honey" class="grocery-item-name">/2 tbsp honey</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-tbsp-miso-paste-or">
-                  <label for="item-/2-tbsp-miso-paste-or" class="grocery-item-name">/2 tbsp miso paste or</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-tbsp-olive-oil-or">
-                  <label for="item-/2-tbsp-olive-oil-or" class="grocery-item-name">/2 tbsp olive oil or</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-tbsp-palm-sugar-or">
-                  <label for="item-/2-tbsp-palm-sugar-or" class="grocery-item-name">/2 tbsp palm sugar or</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-tbsp-salt">
-                  <label for="item-/2-tbsp-salt" class="grocery-item-name">/2 tbsp salt</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-tbsp-soy-sauce-(optional">
-                  <label for="item-/2-tbsp-soy-sauce-(optional" class="grocery-item-name">/2 tbsp soy sauce (optional</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-tsp-salt">
-                  <label for="item-/2-tsp-salt" class="grocery-item-name">/2 tsp salt</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-tsp-sesame-oil">
-                  <label for="item-/2-tsp-sesame-oil" class="grocery-item-name">/2 tsp sesame oil</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-tsp-sugar">
-                  <label for="item-/2-tsp-sugar" class="grocery-item-name">/2 tsp sugar</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/4-cup-flour-for-coating">
-                  <label for="item-/4-cup-flour-for-coating" class="grocery-item-name">/4 cup flour for coating</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/4-tsp-salt">
-                  <label for="item-/4-tsp-salt" class="grocery-item-name">/4 tsp salt</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/8-tsp-salt">
-                  <label for="item-/8-tsp-salt" class="grocery-item-name">/8 tsp salt</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-112g)-rice-noodles-(pad-thai">
-                  <label for="item-112g)-rice-noodles-(pad-thai" class="grocery-item-name">112g) rice noodles (pad thai</label>
-                  <span class="grocery-item-qty">(4 oz)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-all-purpose-flour">
-                  <label for="item-all-purpose-flour" class="grocery-item-name">all-purpose flour</label>
-                  <span class="grocery-item-qty">(2 tbsp)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-buckwheat-groats-(grechka">
-                  <label for="item-buckwheat-groats-(grechka" class="grocery-item-name">buckwheat groats (grechka</label>
-                  <span class="grocery-item-qty">(1 cup)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-crushed-peanuts">
-                  <label for="item-crushed-peanuts" class="grocery-item-name">crushed peanuts</label>
-                  <span class="grocery-item-qty">(2 tbsp)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-For-teriyaki-sauce:">
-                  <label for="item-For-teriyaki-sauce:" class="grocery-item-name">For teriyaki sauce:</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-jasmine-rice">
-                  <label for="item-jasmine-rice" class="grocery-item-name">jasmine rice</label>
-                  <span class="grocery-item-qty">(1 cup)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Optional:-1/2-tsp-five-spice-powder">
-                  <label for="item-Optional:-1/2-tsp-five-spice-powder" class="grocery-item-name">Optional: 1/2 tsp five-spice powder</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Optional:-coarse-salt">
-                  <label for="item-Optional:-coarse-salt" class="grocery-item-name">Optional: coarse salt</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Optional:-dark-chocolate-chips-or">
-                  <label for="item-Optional:-dark-chocolate-chips-or" class="grocery-item-name">Optional: dark chocolate chips or</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Optional:-honey-or-jam-for">
-                  <label for="item-Optional:-honey-or-jam-for" class="grocery-item-name">Optional: honey or jam for</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Optional:-nuts-or-seeds-for">
-                  <label for="item-Optional:-nuts-or-seeds-for" class="grocery-item-name">Optional: nuts or seeds for</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Optional:-pumpkin-seeds-or-sunflower">
-                  <label for="item-Optional:-pumpkin-seeds-or-sunflower" class="grocery-item-name">Optional: pumpkin seeds or sunflower</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-package-ramen-noodles-(or-fresh">
-                  <label for="item-package-ramen-noodles-(or-fresh" class="grocery-item-name">package ramen noodles (or fresh</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-s-traditional-Russian-or-Eastern">
-                  <label for="item-s-traditional-Russian-or-Eastern" class="grocery-item-name">s traditional Russian or Eastern</label>
-                  <span class="grocery-item-qty">(4 slice)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-s-vegetable-broth">
-                  <label for="item-s-vegetable-broth" class="grocery-item-name">s vegetable broth</label>
-                  <span class="grocery-item-qty">(2 cup)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-sesame-oil">
-                  <label for="item-sesame-oil" class="grocery-item-name">sesame oil</label>
-                  <span class="grocery-item-qty">(1 tbsp)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Sesame-oil-for-drizzling-(optional">
-                  <label for="item-Sesame-oil-for-drizzling-(optional" class="grocery-item-name">Sesame oil for drizzling (optional</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Sesame-seeds-for-garnish">
-                  <label for="item-Sesame-seeds-for-garnish" class="grocery-item-name">Sesame seeds for garnish</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-soy-sauce">
-                  <label for="item-soy-sauce" class="grocery-item-name">soy sauce</label>
-                  <span class="grocery-item-qty">(4 tbsp)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-sugar">
-                  <label for="item-sugar" class="grocery-item-name">sugar</label>
-                  <span class="grocery-item-qty">(2 tbsp)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-vegetable-oil">
-                  <label for="item-vegetable-oil" class="grocery-item-name">vegetable oil</label>
-                  <span class="grocery-item-qty">(1 tbsp)</span>
-                </div>
-              
-            </div>
-          </div>
-        
-          <div class="grocery-category">
             <h3>Other</h3>
             <div class="grocery-items">
               
                 <div class="grocery-item">
-                  <input type="checkbox" id="item--2-dried-red-chilies">
-                  <label for="item--2-dried-red-chilies" class="grocery-item-name">-2 dried red chilies</label>
-                  <span class="grocery-item-qty">(1)</span>
+                  <input type="checkbox" id="item-Cook-according-to-recipe-instructions">
+                  <label for="item-Cook-according-to-recipe-instructions" class="grocery-item-name">Cook according to recipe instructions</label>
+                  <span class="grocery-item-qty">(as needed + as needed + as needed + as needed + as needed + as needed + as needed + as needed + as needed + as needed + as needed + as needed)</span>
                 </div>
               
                 <div class="grocery-item">
-                  <input type="checkbox" id="item-.5-cups-water">
-                  <label for="item-.5-cups-water" class="grocery-item-name">.5 cups water</label>
-                  <span class="grocery-item-qty">(2)</span>
+                  <input type="checkbox" id="item-Main-ingredients-vary-by-recipe">
+                  <label for="item-Main-ingredients-vary-by-recipe" class="grocery-item-name">Main ingredients vary by recipe</label>
+                  <span class="grocery-item-qty">(as needed + as needed + as needed + as needed + as needed + as needed + as needed + as needed + as needed + as needed + as needed + as needed)</span>
                 </div>
               
                 <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-cup-mixed-dried-fruits">
-                  <label for="item-/2-cup-mixed-dried-fruits" class="grocery-item-name">/2 cup mixed dried fruits</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-nori-sheet,-cut-into">
-                  <label for="item-/2-nori-sheet,-cut-into" class="grocery-item-name">/2 nori sheet, cut into</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/2-tsp-vanilla-extract-(optional">
-                  <label for="item-/2-tsp-vanilla-extract-(optional" class="grocery-item-name">/2 tsp vanilla extract (optional</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-/4-cup-water">
-                  <label for="item-/4-cup-water" class="grocery-item-name">/4 cup water</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-dried-red-chili-(optional">
-                  <label for="item-dried-red-chili-(optional" class="grocery-item-name">dried red chili (optional</label>
-                  <span class="grocery-item-qty">(1)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-dry-white-wine-(substituted-for">
-                  <label for="item-dry-white-wine-(substituted-for" class="grocery-item-name">dry white wine (substituted for</label>
-                  <span class="grocery-item-qty">(2 tbsp)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-fresh-chives,-chopped">
-                  <label for="item-fresh-chives,-chopped" class="grocery-item-name">fresh chives, chopped</label>
-                  <span class="grocery-item-qty">(1 tbsp)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-fresh-or-frozen-berries-(strawberries,">
-                  <label for="item-fresh-or-frozen-berries-(strawberries," class="grocery-item-name">fresh or frozen berries (strawberries,</label>
-                  <span class="grocery-item-qty">(1 cup)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Optional:-1/4-tsp-paprika">
-                  <label for="item-Optional:-1/4-tsp-paprika" class="grocery-item-name">Optional: 1/4 tsp paprika</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Optional:-cinnamon-or-cardamom-for">
-                  <label for="item-Optional:-cinnamon-or-cardamom-for" class="grocery-item-name">Optional: cinnamon or cardamom for</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Optional:-cinnamon-or-vanilla-extract">
-                  <label for="item-Optional:-cinnamon-or-vanilla-extract" class="grocery-item-name">Optional: cinnamon or vanilla extract</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Optional:-fresh-berries">
-                  <label for="item-Optional:-fresh-berries" class="grocery-item-name">Optional: fresh berries</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-Optional:-raisins-or-dried-cranberries">
-                  <label for="item-Optional:-raisins-or-dried-cranberries" class="grocery-item-name">Optional: raisins or dried cranberries</label>
-                  <span class="grocery-item-qty">(as needed)</span>
-                </div>
-              
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-sheet-nori-seaweed,-cut-into">
-                  <label for="item-sheet-nori-seaweed,-cut-into" class="grocery-item-name">sheet nori seaweed, cut into</label>
-                  <span class="grocery-item-qty">(1)</span>
+                  <input type="checkbox" id="item-Seasonings-to-taste">
+                  <label for="item-Seasonings-to-taste" class="grocery-item-name">Seasonings to taste</label>
+                  <span class="grocery-item-qty">(as needed + as needed + as needed + as needed + as needed + as needed + as needed + as needed + as needed + as needed + as needed + as needed)</span>
                 </div>
               
             </div>
@@ -1366,34 +575,26 @@
         
     </section>
 
+    
+    <!-- Virtual Pantry -->
+    <section class="section">
+      <h2>📦 Virtual Pantry</h2>
+      <p style="color: #94a3b8; margin-bottom: 15px;">
+        Weekly ingredient tracking based on menu (not real inventory)
+      </p>
+      <button id="toggle-daily" onclick="toggleDaily()">[Show Daily Breakdown]</button>
+      <div class="pantry-items">
+        <p>No pantry items to display.</p>
+      </div>
+    </section>
+  
+
     <!-- Recipe Modal -->
     <div class="modal-overlay" id="recipeModal">
       <div class="modal-content">
         <button class="modal-close" onclick="closeModal()">&times;</button>
         <h2 class="modal-title" id="modalTitle"></h2>
         <div class="modal-cuisine" id="modalCuisine"></div>
-
-        <div class="modal-section">
-          <h4>📊 Nutrition</h4>
-          <div class="modal-nutrition">
-            <div class="modal-nutrition-item">
-              <div class="value" id="modalCalories"></div>
-              <div class="label">Calories</div>
-            </div>
-            <div class="modal-nutrition-item">
-              <div class="value" id="modalProtein"></div>
-              <div class="label">Protein (g)</div>
-            </div>
-            <div class="modal-nutrition-item">
-              <div class="value" id="modalCarbs"></div>
-              <div class="label">Carbs (g)</div>
-            </div>
-            <div class="modal-nutrition-item">
-              <div class="value" id="modalFat"></div>
-              <div class="label">Fat (g)</div>
-            </div>
-          </div>
-        </div>
 
         <div class="modal-section">
           <h4>🥗 Ingredients</h4>
@@ -1412,7 +613,7 @@
 
   <script>
     // Recipe data - embedded in the page
-    const recipesData = {"Wednesday-breakfast":{"title":"Buckwheat porridge with milk and berries","cuisine":"slavic","ingredients":["1 cup buckwheat groats (grechka)","2.5 cups water","1 cup milk (dairy, almond, or oat milk)","1 tbsp butter","1-2 tbsp honey or maple syrup","1/2 tsp salt","1 cup fresh or frozen berries (strawberries, blueberries, raspberries)","Optional: cinnamon or vanilla extract","Optional: nuts or seeds for topping"],"instructions":["Rinse buckwheat groats thoroughly until water runs clear","In a medium pot, bring water and salt to a boil","Add buckwheat, reduce heat to low, cover","Simmer for 15-20 minutes until water is absorbed","Remove from heat, let stand covered for 5 minutes","Fluff with a fork","Stir in butter and milk until creamy","Add honey or maple syrup to taste","Optional: add cinnamon or vanilla","Top with fresh or frozen berries","Optional: add nuts or seeds","Serve warm"],"nutrition":{"calories":320,"protein":10,"carbs":58,"fat":6,"fiber":6},"source":"Traditional Slavic buckwheat porridge","url":null},"Wednesday-snack":{"title":"Cottage cheese with herbs","cuisine":"slavic","ingredients":["1 cup cottage cheese or farmer's cheese (tvorog)","1 tbsp sour cream or Greek yogurt","1 tbsp fresh dill, chopped","1 tbsp fresh parsley, chopped","1 tbsp fresh chives, chopped","1/4 tsp salt","1/8 tsp black pepper","1/2 tbsp olive oil or sunflower oil","Optional: 1/2 small clove garlic, minced","Optional: 1/4 tsp paprika","Optional: cucumber or tomato on the side"],"instructions":["Place cottage cheese in a mixing bowl","Add sour cream or yogurt and mix well until smooth","Finely chop fresh herbs: dill, parsley, and chives","Add herbs to the cheese mixture","Add salt and black pepper to taste","Optional: add minced garlic for extra flavor","Drizzle with olive oil or sunflower oil","Optional: sprinkle with paprika","Mix thoroughly until well combined","Taste and adjust seasoning as needed","Serve as a spread on bread, or on its own","Optional: serve with cucumber or tomato slices on the side","Can be made ahead and refrigerated for 2-3 days"],"nutrition":{"calories":180,"protein":16,"carbs":6,"fat":11,"fiber":0},"source":"Slavic herb-seasoned cottage cheese","url":null},"Wednesday-dinner":{"title":"Pad Thai with shrimp","cuisine":"asian","ingredients":["4 oz (112g) rice noodles (pad thai noodles)","1/4 lb (112g) shrimp, peeled and deveined","1 large egg","1.5 tbsp vegetable oil","1.5 tbsp fish sauce","1 tbsp tamarind paste or 1 tbsp lime juice + 1/2 tbsp brown sugar","1/2 tbsp palm sugar or brown sugar","1 clove garlic, minced","1/2 cup bean sprouts","2 green onions, sliced","2 tbsp crushed peanuts","1 tbsp dried shrimp (optional)","Lime wedges for serving"],"instructions":["Soak rice noodles in warm water for 30 minutes until soft, drain","Mix fish sauce, tamarind paste, and sugar in a small bowl, set aside","Heat wok or large pan over high heat, add 1/2 tbsp oil","Stir-fry garlic and dried shrimp (if using) for 30 seconds","Add shrimp, cook 2-3 minutes until pink, remove from pan and set aside","Add remaining oil to pan, scramble eggs and set aside","Return to high heat, add drained noodles","Pour sauce over noodles, toss to coat evenly","Cook 2-3 minutes, tossing frequently","Add shrimp and eggs back to wok, toss together","Add bean sprouts and green onions, toss 30 seconds","Remove from heat","Serve topped with crushed peanuts and lime wedges","Optional: add chili flakes for heat"],"nutrition":{"calories":480,"protein":28,"carbs":58,"fat":16,"fiber":4},"source":"Authentic Pad Thai recipe","url":null},"Thursday-breakfast":{"title":"Scrambled eggs with vegetables","cuisine":"slavic","ingredients":["4 large eggs","1 tbsp milk or cream","1 tbsp butter","1/4 bell pepper, diced","1/4 cup mushrooms, sliced","1/8 cup onion, finely chopped","1/8 cup spinach, chopped","1/8 cup cheese, shredded (cheddar, feta, or your choice)","Optional: fresh herbs (chives, parsley, dill)"],"instructions":["Crack eggs into a bowl, add milk or cream, whisk until well combined","Heat butter in a non-stick pan over medium heat","Add onion and bell pepper, sauté for 2-3 minutes until softened","Add mushrooms, cook 2 more minutes","Add spinach, cook until just wilted (30 seconds)","Pour egg mixture over vegetables","Gently push eggs across pan with a spatula, letting uncooked egg flow underneath","Continue cooking, stirring gently, until eggs are set but still creamy (about 2-3 minutes)","Remove from heat while slightly undercooked (they'll continue cooking)","Fold in shredded cheese","Garnish with fresh herbs if desired","Serve immediately while hot"],"nutrition":{"calories":280,"protein":18,"carbs":6,"fat":22,"fiber":1},"source":"Classic vegetable scrambled eggs","url":null},"Thursday-snack":{"title":"Ryebread with butter","cuisine":"slavic","ingredients":["4 slices traditional Russian or Eastern European rye bread","3-4 tbsp butter (salted or unsalted to taste)","Optional: coarse salt","Optional: fresh dill for garnish","Optional: garlic cloves for rubbing","Optional: radish slices or cucumber"],"instructions":["Slice rye bread into thick or thin slices according to preference","Bring butter to room temperature for easy spreading","Generously spread butter over each slice","Optional: sprinkle with coarse salt","Optional: rub warm bread with a cut garlic clove for extra flavor","Optional: garnish with fresh dill","Optional: serve with radish slices or cucumber on the side","Can be served as a simple breakfast, snack, or side dish","Best served at room temperature or lightly toasted"],"nutrition":{"calories":220,"protein":5,"carbs":25,"fat":12,"fiber":3},"source":"Simple Slavic bread and butter","url":null},"Thursday-dinner":{"title":"Japanese ramen","cuisine":"asian","ingredients":["1 package ramen noodles (or fresh ramen)","3 cups chicken or pork broth","1 tbsp soy sauce","1/2 tbsp miso paste or 1/2 tsp salt","1 soft-boiled egg","2 oz (57g) pork belly or chashu, sliced (optional)","1 cup mushrooms (shiitake or enoki)","1 green onion, sliced","1/2 cup bean sprouts","1/2 nori sheet, cut into strips","1 tbsp sesame oil","Optional: chili oil, corn, bamboo shoots"],"instructions":["Prepare soft-boiled eggs: boil eggs 6.5 minutes, cool in ice water, peel","In a large pot, bring broth to a simmer","Add soy sauce, miso paste (or salt), and 1/2 tbsp sesame oil","Cook ramen noodles according to package, drain and set aside","In the broth, add mushrooms and cook 2-3 minutes","Divide noodles among serving bowls","Ladle hot broth over noodles","Top with sliced pork (if using), halved soft-boiled eggs","Add bean sprouts, green onions, nori strips","Drizzle with remaining sesame oil and chili oil if desired","Serve immediately while hot"],"nutrition":{"calories":520,"protein":26,"carbs":58,"fat":20,"fiber":4},"source":"Japanese ramen recipe","url":null},"Friday-breakfast":{"title":"Miso soup with tofu","cuisine":"asian","ingredients":["2 cups vegetable broth","1.5-2 tbsp white or yellow miso paste","1/2 block (7 oz) firm tofu, cubed","1 cup greens (spinach, chard, or bok choy), chopped","1 green onion, sliced (white and green parts)","1 sheet nori seaweed, cut into strips","1/2 tbsp soy sauce (optional)","Sesame oil for drizzling (optional)"],"instructions":["In a medium pot, bring vegetable broth to a simmer","In a small bowl, whisk miso paste with a few tablespoons of hot broth until smooth","Add tofu cubes and greens to the simmering broth, cook 2-3 minutes","Add green onions and nori strips, cook 1 more minute","Remove pot from heat (important - don't boil miso after adding)","Stir in the miso paste mixture until well combined","Taste and adjust with soy sauce if needed","Serve hot, drizzled with sesame oil if desired"],"nutrition":{"calories":180,"protein":14,"carbs":16,"fat":8,"fiber":3},"source":"Minimalist Baker","url":null},"Friday-snack":{"title":"Pickled vegetables","cuisine":"slavic","ingredients":["1 cup mixed vegetables (carrots, daikon, cucumber, cauliflower)","1/2 cup rice vinegar","1/4 cup water","1 tbsp sugar","1/2 tbsp salt","1 clove garlic, sliced","1/2 inch ginger, sliced (optional)","1 dried red chili (optional)","Fresh dill or cilantro (optional)"],"instructions":["Cut vegetables into sticks or bite-sized pieces","In a saucepan, combine vinegar, water, sugar and salt","Bring to a simmer, stirring until sugar dissolves","Let the pickling liquid cool completely","Place vegetables, garlic, ginger, and chilies in clean glass jars","Pour cooled liquid over vegetables to cover completely","Add fresh herbs if desired","Seal jars and refrigerate for at least 24 hours","Vegetables will keep for 2-3 weeks refrigerated","Serve cold as a snack or side dish"],"nutrition":{"calories":35,"protein":1,"carbs":7,"fat":0,"fiber":2},"source":"Quick pickled vegetables","url":null},"Friday-dinner":{"title":"Sichuan mapo tofu","cuisine":"asian","ingredients":["1/2 block (7 oz) firm or extra firm tofu, cubed","1.5 tbsp vegetable oil","1-2 tbsp Sichuan chili bean paste (doubanjiang)","1/4 lb (112g) ground pork","1-2 tbsp fermented black beans (douchi), rinsed","1 tbsp soy sauce","1/2 tsp sugar","1/2 cup chicken stock","1/2 tbsp cornstarch mixed with 1 tbsp water","1-2 dried red chilies","1/2 tsp Sichuan peppercorns, toasted and ground","1 clove garlic, minced","1/2 tbsp fresh ginger, minced","1 green onion, sliced","Optional: 1/2 tsp five-spice powder"],"instructions":["Cut tofu into 1-inch cubes","Bring water to boil, add tofu and blanch for 2 minutes to remove moisture","Drain and set aside","Heat oil in wok or large pan over medium heat","Add ground pork, cook until browned, break up any clumps","Add chili bean paste, fermented black beans, garlic, and ginger","Stir-fry for 1-2 minutes until fragrant","Add soy sauce, sugar, and chicken stock","Bring to a simmer","Add tofu cubes, gently stir to combine","Simmer for 5 minutes, letting tofu absorb flavors","Stir in cornstarch mixture to thicken sauce","Add dried red chilies and ground Sichuan peppercorns","Cook 1-2 more minutes","Garnish with sliced green onions","Serve hot over steamed rice"],"nutrition":{"calories":380,"protein":28,"carbs":12,"fat":26,"fiber":2},"source":"Authentic Sichuan spicy tofu","url":null},"Saturday-breakfast":{"title":"Syrniki (cottage cheese pancakes)","cuisine":"slavic","ingredients":["3/4 cup cottage cheese or farmer's cheese (tvorog)","2 tbsp all-purpose flour","1/2 egg","1-1.5 tbsp sugar (adjust to taste)","1/8 tsp salt","1/2 tsp vanilla extract (optional)","1/4 cup flour for coating","2 tbsp butter or oil for frying","Optional: raisins or dried cranberries","Optional: sour cream for serving","Optional: honey or jam for serving","Optional: fresh berries"],"instructions":["Place cottage cheese in a bowl, mash with a fork","Add egg, sugar, salt, and vanilla, mix well","Add 2 tbsp flour, mix until combined","Optional: add raisins or dried cranberries","The dough should be slightly sticky but manageable","Place 1/4 cup flour in a shallow plate for coating","Take about 1 tbsp of dough, form into a small patty","Dredge both sides in flour, shake off excess","Repeat with remaining dough","Heat butter or oil in a non-stick pan over medium heat","Fry syrniki in batches for 3-4 minutes per side until golden brown","Don't crowd the pan - cook 2-3 at a time","Transfer to paper towels to drain excess oil","Serve warm with sour cream, honey, or fresh berries","Can be served for breakfast or dessert"],"nutrition":{"calories":320,"protein":14,"carbs":32,"fat":16,"fiber":0},"source":"Traditional Slavic cottage cheese pancakes","url":null},"Saturday-snack":{"title":"Nuts and dried fruits","cuisine":"slavic","ingredients":["1/2 cup mixed nuts (almonds, walnuts, cashews, pecans)","1/2 cup mixed dried fruits (raisins, cranberries, apricots, dates)","Optional: dark chocolate chips or chunks","Optional: pumpkin seeds or sunflower seeds","Optional: cinnamon or cardamom for seasoning"],"instructions":["Choose raw or roasted nuts according to preference","If nuts are raw, toast them in a dry pan for 3-5 minutes until fragrant","Let nuts cool completely","Chop large dried fruits (apricots, dates) into bite-sized pieces","Combine nuts and dried fruits in a bowl","Optional: add dark chocolate chips for extra indulgence","Optional: add pumpkin or sunflower seeds for variety","Optional: sprinkle with cinnamon or cardamom","Store in airtight container for up to 2 weeks","Portion into snack-sized bags for easy grabbing"],"nutrition":{"calories":450,"protein":10,"carbs":35,"fat":30,"fiber":6},"source":"Trail mix snack","url":null},"Saturday-dinner":{"title":"Chicken teriyaki with rice","cuisine":"asian","ingredients":["1/2 lb (225g) chicken thighs or breast, cut into bite-sized pieces","1 cup jasmine rice","For teriyaki sauce:","2 tbsp soy sauce","1 tbsp dry white wine (substituted for mirin)","1 tbsp dry white wine (substituted for sake)","1 tbsp sugar","1/2 tbsp honey","1/2 tsp sesame oil","1/2 clove garlic, minced","1/2 tsp fresh ginger, grated","1 tbsp vegetable oil","1/2 tbsp cornstarch mixed with 1/2 tbsp water","Sesame seeds for garnish","Green onions, sliced for garnish","Optional: steamed broccoli or vegetables"],"instructions":["Cook rice according to package instructions","Make teriyaki sauce: combine soy sauce, dry white wine, sugar, honey, sesame oil, garlic, and ginger in a bowl","Heat vegetable oil in a large wok or skillet over medium-high heat","Add chicken pieces, cook 5-6 minutes until browned","Add teriyaki sauce to the pan","Bring to a simmer, cook 3-4 minutes","Stir in cornstarch mixture to thicken sauce","Continue cooking 1-2 minutes until sauce coats chicken","Remove from heat","Serve chicken and sauce over steamed rice","Garnish with sesame seeds and green onions","Optional: serve with steamed broccoli or other vegetables"],"nutrition":{"calories":520,"protein":32,"carbs":58,"fat":16,"fiber":1},"source":"Japanese-style chicken teriyaki","url":null}};
+    const recipesData = {"Wednesday-breakfast":{"title":"Kasha with butter and milk","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Wednesday-snack":{"title":"Mango slices","cuisine":"asian","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Wednesday-dinner":{"title":"Beef stroganoff with rice","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null},"Thursday-breakfast":{"title":"Syrniki (cottage cheese pancakes)","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Thursday-snack":{"title":"Banana with peanut butter","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Thursday-dinner":{"title":"Chicken soup with vegetables","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null},"Friday-breakfast":{"title":"Miso soup with tofu","cuisine":"asian","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Friday-snack":{"title":"Seaweed snacks","cuisine":"asian","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Friday-dinner":{"title":"Pad Thai with shrimp","cuisine":"asian","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null},"Saturday-breakfast":{"title":"Buckwheat porridge with milk and berries","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Saturday-snack":{"title":"Ryebread with butter","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Saturday-dinner":{"title":"Chicken teriyaki with rice","cuisine":"asian","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null}};
 
     /**
      * Open modal with recipe details
@@ -1425,10 +626,6 @@
 
       document.getElementById('modalTitle').textContent = recipe.title;
       document.getElementById('modalCuisine').textContent = recipe.cuisine;
-      document.getElementById('modalCalories').textContent = recipe.nutrition.calories || '-';
-      document.getElementById('modalProtein').textContent = recipe.nutrition.protein || '-';
-      document.getElementById('modalCarbs').textContent = recipe.nutrition.carbs || '-';
-      document.getElementById('modalFat').textContent = recipe.nutrition.fat || '-';
 
       const ingredientsList = document.getElementById('modalIngredients');
       ingredientsList.innerHTML = (recipe.ingredients || [])
@@ -1457,6 +654,19 @@
     function closeModal() {
       document.getElementById('recipeModal').classList.remove('active');
       document.body.style.overflow = '';
+    }
+
+    /**
+     * Toggle daily breakdown in pantry
+     */
+    function toggleDaily() {
+      const breakdowns = document.querySelectorAll('.daily-breakdown');
+      const button = document.querySelector('#toggle-daily');
+
+      breakdowns.forEach(el => el.classList.toggle('hidden'));
+      button.textContent = breakdowns[0] && breakdowns[0].classList.contains('hidden')
+        ? '[Show Daily Breakdown]'
+        : '[Hide Daily Breakdown]';
     }
 
     // Close on overlay click

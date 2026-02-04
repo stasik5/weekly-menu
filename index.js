@@ -1,7 +1,7 @@
 /**
  * Weekly Grocery Planner - Main Script
  * Orchestrates the meal planning, recipe research, and HTML generation
- * Now with real web_search and GitHub auto-publishing
+ * UPDATED PIPELINE: menu → recipes → chef review → grocery list → pantry → HTML
  */
 
 const fs = require('fs');
@@ -12,7 +12,8 @@ const menuGenerator = require('./src/menu-generator');
 const recipeResearcher = require('./src/recipe-researcher');
 const recipeFetcher = require('./src/recipe-fetcher');
 const groceryListBuilder = require('./src/grocery-list-builder');
-const nutrition = require('./src/nutrition');
+const chefReviewer = require('./src/chef-reviewer');
+const pantryManager = require('./src/pantry-manager');
 const siteGenerator = require('./src/site-generator');
 const publisher = require('./src/publisher');
 
@@ -45,7 +46,6 @@ async function runAgentRecipeResearch(weeklyPlan, menuJsonPath, recipesJsonPath)
     console.log(`✓ Saved menu to: ${menuJsonPath}`);
 
     // Check if we're running in OpenClaw environment with web_search
-    // If yes, we can run the recipe research directly without spawning a child process
     if (typeof web_search === 'function') {
       console.log('✓ web_search available in this environment');
       console.log('Running recipe research with web_search access...\n');
@@ -66,7 +66,6 @@ async function runAgentRecipeResearch(weeklyPlan, menuJsonPath, recipesJsonPath)
     }
 
     // Otherwise, try to run the agent via exec
-    // OpenClaw may intercept this and provide web_search to the subprocess
     const agentScript = path.join(__dirname, 'agent-research-recipes.js');
     const command = `node "${agentScript}"`;
 
@@ -113,14 +112,13 @@ async function generateWeeklyMenu(webSearch = null, publish = true, useAgent = t
     weekLabel: null,
     htmlPath: null,
     jsonPath: null,
-    nutritionSummary: null,
     publishResult: null,
     error: null
   };
 
   try {
     console.log('='.repeat(50));
-    console.log('Weekly Grocery Planner - Phase 3');
+    console.log('Weekly Grocery Planner - Updated Pipeline');
     console.log('='.repeat(50));
 
     // Step 1: Generate menu plan
@@ -132,11 +130,9 @@ async function generateWeeklyMenu(webSearch = null, publish = true, useAgent = t
     console.log('\n2. Researching recipes...');
     let planWithRecipes;
 
-    // Check if web_search is available globally (when running from OpenClaw agent)
     const hasGlobalWebSearch = typeof web_search === 'function';
 
     if (useAgent) {
-      // Use the new agent-based approach
       const outputDir = path.join(__dirname, 'output');
       const menuJsonPath = path.join(outputDir, 'menu.json');
       const recipesJsonPath = path.join(outputDir, 'recipes-data.json');
@@ -144,11 +140,9 @@ async function generateWeeklyMenu(webSearch = null, publish = true, useAgent = t
       const recipesData = await runAgentRecipeResearch(weeklyPlan, menuJsonPath, recipesJsonPath);
       planWithRecipes = recipeFetcher.attachRecipesToMeals(weeklyPlan, recipesData);
     } else if (hasGlobalWebSearch) {
-      // Legacy mode: direct web_search (when running from OpenClaw agent)
       console.log('Using direct web_search (legacy mode)...');
       planWithRecipes = await recipeResearcher.researchRecipes(weeklyPlan, web_search);
     } else if (webSearch && typeof webSearch === 'function') {
-      // Legacy mode: direct web_search via parameter
       console.log('Using direct web_search (legacy mode)...');
       planWithRecipes = await recipeResearcher.researchRecipes(weeklyPlan, webSearch);
     } else {
@@ -173,50 +167,62 @@ async function generateWeeklyMenu(webSearch = null, publish = true, useAgent = t
 
     console.log('✓ Recipes attached to meals');
 
-    // Step 3: Build grocery list
-    console.log('\n3. Building grocery list...');
+    // Step 3: Chef review (NEW)
+    console.log('\n3. Running chef review...');
+    const chefReview = chefReviewer.reviewMenu(planWithRecipes);
+    if (chefReview.modified) {
+      console.log('✓ Menu optimized based on chef suggestions');
+      planWithRecipes = chefReview.optimizedMenu;
+    } else {
+      console.log('✓ Menu approved by chef (no changes needed)');
+    }
+
+    // Step 4: Build grocery list with metric conversion (NEW)
+    console.log('\n4. Building grocery list...');
     const groceryList = groceryListBuilder.buildGroceryList(planWithRecipes);
-    const totalItems = Object.values(groceryList).reduce((sum, items) => sum + items.length, 0);
-    console.log(`✓ Grocery list built with ${totalItems} items`);
+    const metricGroceryList = groceryListBuilder.updateToMetricUnits(groceryList);
+    const totalItems = Object.values(metricGroceryList).reduce((sum, items) => sum + items.length, 0);
+    console.log(`✓ Grocery list built with ${totalItems} items (metric units)`);
 
-    // Step 4: Calculate nutrition
-    console.log('\n4. Calculating nutrition...');
-    const calculatedNutrition = nutrition.calculateNutrition(planWithRecipes);
-    const nutritionSummary = nutrition.generateNutritionSummary(calculatedNutrition, config.nutrition);
-    console.log(`✓ Daily avg: ${nutritionSummary.actual.daily.calories} kcal`);
-    console.log(`  Protein: ${nutritionSummary.actual.daily.protein}g, Carbs: ${nutritionSummary.actual.daily.carbs}g, Fat: ${nutritionSummary.actual.daily.fat}g`);
+    // Step 5: Generate virtual pantry (NEW)
+    console.log('\n5. Generating virtual pantry...');
+    const pantry = pantryManager.generatePantryFromGroceryList(metricGroceryList, planWithRecipes);
+    console.log(`✓ Virtual pantry created with ${Object.keys(pantry).length} items`);
 
-    // Step 5: Generate HTML
-    console.log('\n5. Generating HTML site...');
+    // Step 6: Generate HTML
+    console.log('\n6. Generating HTML site...');
     const weekLabel = siteGenerator.getWeekLabel();
-    const html = siteGenerator.generateHTML(planWithRecipes, groceryList, nutritionSummary, weekLabel);
+    const html = siteGenerator.generateHTML(planWithRecipes, metricGroceryList, pantry, weekLabel);
     console.log(`✓ HTML generated for ${weekLabel}`);
 
-    // Step 6: Save files
-    console.log('\n6. Saving files...');
+    // Step 7: Save files
+    console.log('\n7. Saving files...');
     const outputDir = path.join(__dirname, config.output.weeklyDir, weekLabel);
     const htmlPath = path.join(outputDir, 'index.html');
     const jsonPath = path.join(outputDir, 'recipes.json');
+    const pantryPath = path.join(outputDir, 'pantry.json');
 
     siteGenerator.saveHTML(html, htmlPath);
     siteGenerator.saveRecipesJSON(planWithRecipes, jsonPath);
+    pantryManager.savePantryJSON(pantry, pantryPath);
 
     console.log(`✓ HTML saved to: ${htmlPath}`);
     console.log(`✓ JSON saved to: ${jsonPath}`);
+    console.log(`✓ Pantry saved to: ${pantryPath}`);
 
-    // Step 7: Publish to GitHub
+    // Step 8: Publish to GitHub
     if (publish) {
-      console.log('\n7. Publishing to GitHub...');
+      console.log('\n8. Publishing to GitHub...');
       result.publishResult = await publisher.publishToGitHub(htmlPath, weekLabel);
     } else {
-      console.log('\n7. Skipped GitHub publishing (publish=false)');
+      console.log('\n8. Skipped GitHub publishing (publish=false)');
     }
 
     result.success = true;
     result.weekLabel = weekLabel;
     result.htmlPath = htmlPath;
     result.jsonPath = jsonPath;
-    result.nutritionSummary = nutritionSummary;
+    result.pantryPath = pantryPath;
 
     // Summary
     console.log('\n' + '='.repeat(50));
@@ -225,6 +231,7 @@ async function generateWeeklyMenu(webSearch = null, publish = true, useAgent = t
     console.log(`Week: ${weekLabel}`);
     console.log(`Nutrition level: ${config.nutrition}`);
     console.log(`Total grocery items: ${totalItems}`);
+    console.log(`Pantry items: ${Object.keys(pantry).length}`);
 
     if (result.publishResult) {
       console.log(`Published: ${result.publishResult.success ? '✓' : '✗'}`);

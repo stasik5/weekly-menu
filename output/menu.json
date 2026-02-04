@@ -1,35 +1,35 @@
 {
   "Wednesday": {
     "breakfast": {
-      "name": "Buckwheat porridge with milk and berries",
+      "name": "Kasha with butter and milk",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Cottage cheese with herbs",
-      "cuisine": "slavic",
+      "name": "Mango slices",
+      "cuisine": "asian",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Pad Thai with shrimp",
-      "cuisine": "asian",
+      "name": "Beef stroganoff with rice",
+      "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
   "Thursday": {
     "breakfast": {
-      "name": "Scrambled eggs with vegetables",
+      "name": "Syrniki (cottage cheese pancakes)",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Ryebread with butter",
+      "name": "Banana with peanut butter",
       "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Japanese ramen",
-      "cuisine": "asian",
+      "name": "Chicken soup with vegetables",
+      "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
@@ -40,24 +40,24 @@
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Pickled vegetables",
-      "cuisine": "slavic",
+      "name": "Seaweed snacks",
+      "cuisine": "asian",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Sichuan mapo tofu",
+      "name": "Pad Thai with shrimp",
       "cuisine": "asian",
       "targetCalories": 2100
     }
   },
   "Saturday": {
     "breakfast": {
-      "name": "Syrniki (cottage cheese pancakes)",
+      "name": "Buckwheat porridge with milk and berries",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Nuts and dried fruits",
+      "name": "Ryebread with butter",
       "cuisine": "slavic",
       "targetCalories": 500
     },
