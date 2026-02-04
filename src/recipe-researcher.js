@@ -1,7 +1,11 @@
 /**
- * Recipe Researcher - Finds and extracts recipe information
+ * Recipe Researcher - Finds and extracts recipe information with intelligent caching
  * Uses web_search to find real recipes and extract structured data
+ * NOW WITH SMART CACHING: Reuses existing recipes when possible
  */
+
+const fs = require('fs');
+const path = require('path');
 
 /**
  * Parse ingredients from recipe text
@@ -62,11 +66,11 @@ function parseInstructions(text) {
     const hasActionVerb = /^(mix|add|cook|bake|fry|boil|sauté|chop|stir|combine|whisk|blend|heat|place|pour|serve|season|sprinkle)/i.test(trimmed);
 
     if (isNumbered || hasActionVerb) {
-      // Clean up the instruction
+      // Clean up common web text artifacts
       const cleaned = trimmed
         .replace(/\*\*/g, '')
         .replace(/\*/g, '')
-        .replace(/^\d+\.\s*/, '')
+        .replace(/\d+\.\s*/, '') // Remove list numbers
         .replace(/^-/, '')
         .trim();
 
@@ -176,11 +180,11 @@ function buildSearchQuery(mealName, cuisine) {
 
 /**
  * Search for a recipe using web_search
- * This function should be called with access to the web_search tool
+ * This function should be called with access to web_search tool
  *
  * @param {Object} webSearch - The web_search tool from OpenClaw
- * @param {string} mealName - Name of the meal
- * @param {string} cuisine - Cuisine type
+ * @param {string} mealName - Name of the meal to search for
+ * @param {string} cuisine - Cuisine type (slavic/asian)
  * @returns {Promise<Array>} Search results
  */
 async function searchForRecipe(webSearch, mealName, cuisine) {
@@ -241,8 +245,8 @@ function parseRecipeFromSearch(mealName, mealType, calories, searchResults) {
 }
 
 /**
- * Research recipes for all meals using web_search
- * This is the main function that orchestrates the recipe research
+ * Research recipes for all meals using web_search with INTELLIGENT CACHING
+ * This is the main function that orchestrates recipe research with recipe reuse
  *
  * @param {Object} weeklyPlan - Weekly meal plan from menu-generator
  * @param {Object} webSearch - The web_search tool from OpenClaw
@@ -253,6 +257,38 @@ async function researchRecipes(weeklyPlan, webSearch) {
 
   const planWithRecipes = JSON.parse(JSON.stringify(weeklyPlan));
 
+  // Load existing recipe cache (if it exists)
+  const recipesDataPath = path.join(__dirname, '../output/recipes-data.json');
+  let existingRecipes = {};
+
+  if (fs.existsSync(recipesDataPath)) {
+    console.log('  Loading existing recipe cache...');
+    try {
+      const content = fs.readFileSync(recipesDataPath, 'utf8');
+      existingRecipes = JSON.parse(content);
+      console.log(`  ✓ Found ${Object.keys(existingRecipes).length} cached recipes`);
+    } catch (error) {
+      console.error('  ⚠️ Error reading cache, starting fresh:', error.message);
+      existingRecipes = {};
+    }
+  } else {
+    console.log('  No existing cache found (first run or cache cleared)');
+  }
+
+  // Collect all unique meal names from the weekly plan
+  const allMealNames = new Set();
+  for (const [day, meals] of Object.entries(planWithRecipes)) {
+    for (const [mealType, mealData] of Object.entries(meals)) {
+      allMealNames.add(mealData.name);
+    }
+  }
+
+  console.log(`  Need to find recipes for: ${allMealNames.size} unique meals`);
+
+  // For each meal, check if we have a cached recipe
+  let recipesFoundInCache = 0;
+  let recipesSearchedFor = 0;
+
   for (const [day, meals] of Object.entries(planWithRecipes)) {
     console.log(`${day}:`);
 
@@ -261,18 +297,43 @@ async function researchRecipes(weeklyPlan, webSearch) {
       const cuisine = mealData.cuisine || 'international';
       const calories = mealData.targetCalories;
 
-      // Search for the recipe
-      const searchResults = await searchForRecipe(webSearch, mealName, cuisine);
+      // Check if we have a cached recipe for this meal
+      let recipe = existingRecipes[mealName];
 
-      // Parse results into structured recipe data
-      const recipe = parseRecipeFromSearch(mealName, mealType, calories, searchResults);
+      if (recipe) {
+        console.log(`  ✓ "${mealName}" - reusing cached recipe (${recipe.source})`);
+        recipesFoundInCache++;
+        planWithRecipes[day][mealType].recipe = recipe;
+      } else {
+        console.log(`  🔍 "${mealName}" - not cached, searching web...`);
+        recipesSearchedFor++;
 
-      // Attach to the meal
-      planWithRecipes[day][mealType].recipe = recipe;
+        // Search for a recipe
+        const searchResults = await searchForRecipe(webSearch, mealName, cuisine);
+
+        // Parse results into structured recipe data
+        const recipe = parseRecipeFromSearch(mealName, mealType, calories, searchResults);
+
+        // Attach to meal
+        planWithRecipes[day][mealType].recipe = recipe;
+
+        // Also add to cache for future use
+        existingRecipes[mealName] = recipe;
+      }
     }
   }
 
-  console.log('\n✓ Recipe research complete\n');
+  console.log(`\n  ✓ Cache stats: ${recipesFoundInCache} reused, ${recipesSearchedFor} new searches`);
+  console.log('✓ Recipe research complete\n');
+
+  // Save updated cache back to file
+  const recipesDir = path.dirname(recipesDataPath);
+  if (!fs.existsSync(recipesDir)) {
+    fs.mkdirSync(recipesDir, { recursive: true });
+  }
+  fs.writeFileSync(recipesDataPath, JSON.stringify(existingRecipes, null, 2), 'utf8');
+  console.log(`✓ Saved ${Object.keys(existingRecipes).length} recipes to: ${recipesDataPath}`);
+
   return planWithRecipes;
 }
 
