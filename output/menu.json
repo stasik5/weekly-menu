@@ -6,20 +6,37 @@
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Apple slices with cheese",
+      "name": "Cottage cheese with herbs",
       "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Sichuan mapo tofu",
-      "cuisine": "asian",
+      "name": "Pelmeni with sour cream",
+      "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
   "Thursday": {
     "breakfast": {
-      "name": "Kasha with butter and milk",
+      "name": "Miso soup with tofu",
+      "cuisine": "asian",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Fried tofu cubes",
+      "cuisine": "asian",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Shashlik (grilled meat) with salad",
       "cuisine": "slavic",
+      "targetCalories": 2100
+    }
+  },
+  "Friday": {
+    "breakfast": {
+      "name": "Rice porridge with pickles",
+      "cuisine": "asian",
       "targetCalories": 1400
     },
     "snack": {
@@ -28,41 +45,24 @@
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Pad Thai with shrimp",
-      "cuisine": "asian",
-      "targetCalories": 2100
-    }
-  },
-  "Friday": {
-    "breakfast": {
-      "name": "Fried eggs with bread",
+      "name": "Pasta carbonara",
       "cuisine": "slavic",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Seaweed snacks",
-      "cuisine": "asian",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Thai green curry",
-      "cuisine": "asian",
       "targetCalories": 2100
     }
   },
   "Saturday": {
     "breakfast": {
-      "name": "Congee with egg and scallions",
+      "name": "Fried rice with vegetables",
       "cuisine": "asian",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Banana with peanut butter",
-      "cuisine": "slavic",
+      "name": "Pickled ginger and daikon",
+      "cuisine": "asian",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Chicken soup with vegetables",
+      "name": "Beef stroganoff with rice",
       "cuisine": "slavic",
       "targetCalories": 2100
     }
