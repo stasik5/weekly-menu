@@ -1,47 +1,13 @@
 {
   "Wednesday": {
     "breakfast": {
-      "name": "Buckwheat porridge with milk and berries",
+      "name": "Kasha with butter and milk",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Cottage cheese with herbs",
-      "cuisine": "slavic",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Pelmeni with sour cream",
-      "cuisine": "slavic",
-      "targetCalories": 2100
-    }
-  },
-  "Thursday": {
-    "breakfast": {
-      "name": "Miso soup with tofu",
+      "name": "Green tea cookies",
       "cuisine": "asian",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Fried tofu cubes",
-      "cuisine": "asian",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Shashlik (grilled meat) with salad",
-      "cuisine": "slavic",
-      "targetCalories": 2100
-    }
-  },
-  "Friday": {
-    "breakfast": {
-      "name": "Rice porridge with pickles",
-      "cuisine": "asian",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Nuts and dried fruits",
-      "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
@@ -50,19 +16,53 @@
       "targetCalories": 2100
     }
   },
-  "Saturday": {
+  "Thursday": {
     "breakfast": {
-      "name": "Fried rice with vegetables",
+      "name": "Congee with egg and scallions",
       "cuisine": "asian",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Pickled ginger and daikon",
+      "name": "Apple slices with cheese",
+      "cuisine": "slavic",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Borscht with sour cream",
+      "cuisine": "slavic",
+      "targetCalories": 2100
+    }
+  },
+  "Friday": {
+    "breakfast": {
+      "name": "Dim sum dumplings",
+      "cuisine": "asian",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Seaweed snacks",
       "cuisine": "asian",
       "targetCalories": 500
     },
     "dinner": {
       "name": "Beef stroganoff with rice",
+      "cuisine": "slavic",
+      "targetCalories": 2100
+    }
+  },
+  "Saturday": {
+    "breakfast": {
+      "name": "Rice porridge with pickles",
+      "cuisine": "asian",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Ryebread with butter",
+      "cuisine": "slavic",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Chicken soup with vegetables",
       "cuisine": "slavic",
       "targetCalories": 2100
     }

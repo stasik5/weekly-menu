@@ -1,11 +1,11 @@
 {
   "Wednesday": {
     "breakfast": {
-      "name": "Buckwheat porridge with milk and berries",
+      "name": "Kasha with butter and milk",
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Buckwheat porridge with milk and berries",
+        "title": "Kasha with butter and milk",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -29,183 +29,11 @@
       }
     },
     "snack": {
-      "name": "Cottage cheese with herbs",
-      "cuisine": "slavic",
-      "targetCalories": 500,
-      "recipe": {
-        "title": "Cottage cheese with herbs",
-        "cuisine": "unknown",
-        "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
-        ],
-        "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
-        ],
-        "nutrition": {
-          "calories": 500,
-          "protein": 19,
-          "carbs": 38,
-          "fat": 31
-        },
-        "source": "fallback_template",
-        "url": null
-      }
-    },
-    "dinner": {
-      "name": "Pelmeni with sour cream",
-      "cuisine": "slavic",
-      "targetCalories": 2100,
-      "recipe": {
-        "title": "Pelmeni with sour cream",
-        "cuisine": "unknown",
-        "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
-        ],
-        "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
-        ],
-        "nutrition": {
-          "calories": 2100,
-          "protein": 131,
-          "carbs": 215,
-          "fat": 79
-        },
-        "source": "fallback_template",
-        "url": null
-      }
-    }
-  },
-  "Thursday": {
-    "breakfast": {
-      "name": "Miso soup with tofu",
-      "cuisine": "asian",
-      "targetCalories": 1400,
-      "recipe": {
-        "title": "Miso soup with tofu",
-        "cuisine": "unknown",
-        "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
-        ],
-        "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
-        ],
-        "nutrition": {
-          "calories": 1400,
-          "protein": 53,
-          "carbs": 105,
-          "fat": 86
-        },
-        "source": "fallback_template",
-        "url": null
-      }
-    },
-    "snack": {
-      "name": "Fried tofu cubes",
+      "name": "Green tea cookies",
       "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
-        "title": "Fried tofu cubes",
-        "cuisine": "unknown",
-        "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
-        ],
-        "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
-        ],
-        "nutrition": {
-          "calories": 500,
-          "protein": 19,
-          "carbs": 38,
-          "fat": 31
-        },
-        "source": "fallback_template",
-        "url": null
-      }
-    },
-    "dinner": {
-      "name": "Shashlik (grilled meat) with salad",
-      "cuisine": "slavic",
-      "targetCalories": 2100,
-      "recipe": {
-        "title": "Shashlik (grilled meat) with salad",
-        "cuisine": "unknown",
-        "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
-        ],
-        "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
-        ],
-        "nutrition": {
-          "calories": 2100,
-          "protein": 131,
-          "carbs": 215,
-          "fat": 79
-        },
-        "source": "fallback_template",
-        "url": null
-      }
-    }
-  },
-  "Friday": {
-    "breakfast": {
-      "name": "Rice porridge with pickles",
-      "cuisine": "asian",
-      "targetCalories": 1400,
-      "recipe": {
-        "title": "Rice porridge with pickles",
-        "cuisine": "unknown",
-        "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
-        ],
-        "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
-        ],
-        "nutrition": {
-          "calories": 1400,
-          "protein": 53,
-          "carbs": 105,
-          "fat": 86
-        },
-        "source": "fallback_template",
-        "url": null
-      }
-    },
-    "snack": {
-      "name": "Nuts and dried fruits",
-      "cuisine": "slavic",
-      "targetCalories": 500,
-      "recipe": {
-        "title": "Nuts and dried fruits",
+        "title": "Green tea cookies",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -257,13 +85,13 @@
       }
     }
   },
-  "Saturday": {
+  "Thursday": {
     "breakfast": {
-      "name": "Fried rice with vegetables",
+      "name": "Congee with egg and scallions",
       "cuisine": "asian",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Fried rice with vegetables",
+        "title": "Congee with egg and scallions",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -287,11 +115,97 @@
       }
     },
     "snack": {
-      "name": "Pickled ginger and daikon",
+      "name": "Apple slices with cheese",
+      "cuisine": "slavic",
+      "targetCalories": 500,
+      "recipe": {
+        "title": "Apple slices with cheese",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "dinner": {
+      "name": "Borscht with sour cream",
+      "cuisine": "slavic",
+      "targetCalories": 2100,
+      "recipe": {
+        "title": "Borscht with sour cream",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    }
+  },
+  "Friday": {
+    "breakfast": {
+      "name": "Dim sum dumplings",
+      "cuisine": "asian",
+      "targetCalories": 1400,
+      "recipe": {
+        "title": "Dim sum dumplings",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "snack": {
+      "name": "Seaweed snacks",
       "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
-        "title": "Pickled ginger and daikon",
+        "title": "Seaweed snacks",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -320,6 +234,92 @@
       "targetCalories": 2100,
       "recipe": {
         "title": "Beef stroganoff with rice",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    }
+  },
+  "Saturday": {
+    "breakfast": {
+      "name": "Rice porridge with pickles",
+      "cuisine": "asian",
+      "targetCalories": 1400,
+      "recipe": {
+        "title": "Rice porridge with pickles",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "snack": {
+      "name": "Ryebread with butter",
+      "cuisine": "slavic",
+      "targetCalories": 500,
+      "recipe": {
+        "title": "Ryebread with butter",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "dinner": {
+      "name": "Chicken soup with vegetables",
+      "cuisine": "slavic",
+      "targetCalories": 2100,
+      "recipe": {
+        "title": "Chicken soup with vegetables",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
