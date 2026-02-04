@@ -1,11 +1,11 @@
 {
   "Wednesday": {
     "breakfast": {
-      "name": "Fried rice with vegetables",
-      "cuisine": "asian",
+      "name": "Buckwheat porridge with milk and berries",
+      "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Fried rice with vegetables",
+        "title": "Buckwheat porridge with milk and berries",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -29,11 +29,11 @@
       }
     },
     "snack": {
-      "name": "Yogurt with honey",
-      "cuisine": "slavic",
+      "name": "Green tea cookies",
+      "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
-        "title": "Yogurt with honey",
+        "title": "Green tea cookies",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -57,11 +57,11 @@
       }
     },
     "dinner": {
-      "name": "Vietnamese pho",
-      "cuisine": "asian",
+      "name": "Pelmeni with sour cream",
+      "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Vietnamese pho",
+        "title": "Pelmeni with sour cream",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -87,11 +87,11 @@
   },
   "Thursday": {
     "breakfast": {
-      "name": "Miso soup with tofu",
-      "cuisine": "asian",
+      "name": "Oatmeal with honey and nuts",
+      "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Miso soup with tofu",
+        "title": "Oatmeal with honey and nuts",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -115,11 +115,11 @@
       }
     },
     "snack": {
-      "name": "Ryebread with butter",
+      "name": "Cottage cheese with herbs",
       "cuisine": "slavic",
       "targetCalories": 500,
       "recipe": {
-        "title": "Ryebread with butter",
+        "title": "Cottage cheese with herbs",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -143,11 +143,11 @@
       }
     },
     "dinner": {
-      "name": "Cabbage rolls with meat",
+      "name": "Shashlik (grilled meat) with salad",
       "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Cabbage rolls with meat",
+        "title": "Shashlik (grilled meat) with salad",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -173,11 +173,11 @@
   },
   "Friday": {
     "breakfast": {
-      "name": "Buckwheat porridge with milk and berries",
-      "cuisine": "slavic",
+      "name": "Rice noodles with egg",
+      "cuisine": "asian",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Buckwheat porridge with milk and berries",
+        "title": "Rice noodles with egg",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -229,11 +229,11 @@
       }
     },
     "dinner": {
-      "name": "Borscht with sour cream",
-      "cuisine": "slavic",
+      "name": "Pad Thai with shrimp",
+      "cuisine": "asian",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Borscht with sour cream",
+        "title": "Pad Thai with shrimp",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -259,11 +259,11 @@
   },
   "Saturday": {
     "breakfast": {
-      "name": "Kasha with butter and milk",
-      "cuisine": "slavic",
+      "name": "Rice porridge with pickles",
+      "cuisine": "asian",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Kasha with butter and milk",
+        "title": "Rice porridge with pickles",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -287,11 +287,11 @@
       }
     },
     "snack": {
-      "name": "Edamame with sea salt",
-      "cuisine": "asian",
+      "name": "Ryebread with butter",
+      "cuisine": "slavic",
       "targetCalories": 500,
       "recipe": {
-        "title": "Edamame with sea salt",
+        "title": "Ryebread with butter",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -315,11 +315,11 @@
       }
     },
     "dinner": {
-      "name": "Korean bibimbap",
+      "name": "Sichuan mapo tofu",
       "cuisine": "asian",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Korean bibimbap",
+        "title": "Sichuan mapo tofu",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
