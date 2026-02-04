@@ -1,6 +1,75 @@
 {
-  "Kasha with butter and milk": {
-    "title": "Kasha with butter and milk",
+  "Rice noodles with egg": {
+    "title": "Rice noodles with egg",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 1400,
+      "protein": 53,
+      "carbs": 105,
+      "fat": 86
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Pickled vegetables": {
+    "title": "Pickled vegetables",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 500,
+      "protein": 19,
+      "carbs": 38,
+      "fat": 31
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Korean bibimbap": {
+    "title": "Korean bibimbap",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 2100,
+      "protein": 131,
+      "carbs": 215,
+      "fat": 79
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Buckwheat porridge with milk and berries": {
+    "title": "Buckwheat porridge with milk and berries",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -45,8 +114,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Pasta carbonara": {
-    "title": "Pasta carbonara",
+  "Shashlik (grilled meat) with salad": {
+    "title": "Shashlik (grilled meat) with salad",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -68,8 +137,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Congee with egg and scallions": {
-    "title": "Congee with egg and scallions",
+  "Kasha with butter and milk": {
+    "title": "Kasha with butter and milk",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -91,8 +160,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Apple slices with cheese": {
-    "title": "Apple slices with cheese",
+  "Pickled ginger and daikon": {
+    "title": "Pickled ginger and daikon",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -137,8 +206,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Dim sum dumplings": {
-    "title": "Dim sum dumplings",
+  "Blini with cheese filling": {
+    "title": "Blini with cheese filling",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -183,77 +252,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Beef stroganoff with rice": {
-    "title": "Beef stroganoff with rice",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 2100,
-      "protein": 131,
-      "carbs": 215,
-      "fat": 79
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Rice porridge with pickles": {
-    "title": "Rice porridge with pickles",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 1400,
-      "protein": 53,
-      "carbs": 105,
-      "fat": 86
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Ryebread with butter": {
-    "title": "Ryebread with butter",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 500,
-      "protein": 19,
-      "carbs": 38,
-      "fat": 31
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Chicken soup with vegetables": {
-    "title": "Chicken soup with vegetables",
+  "Pelmeni with sour cream": {
+    "title": "Pelmeni with sour cream",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",

@@ -1,7 +1,24 @@
 {
   "Wednesday": {
     "breakfast": {
-      "name": "Kasha with butter and milk",
+      "name": "Rice noodles with egg",
+      "cuisine": "asian",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Pickled vegetables",
+      "cuisine": "slavic",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Korean bibimbap",
+      "cuisine": "asian",
+      "targetCalories": 2100
+    }
+  },
+  "Thursday": {
+    "breakfast": {
+      "name": "Buckwheat porridge with milk and berries",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
@@ -11,20 +28,20 @@
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Pasta carbonara",
+      "name": "Shashlik (grilled meat) with salad",
       "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
-  "Thursday": {
+  "Friday": {
     "breakfast": {
-      "name": "Congee with egg and scallions",
-      "cuisine": "asian",
+      "name": "Kasha with butter and milk",
+      "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Apple slices with cheese",
-      "cuisine": "slavic",
+      "name": "Pickled ginger and daikon",
+      "cuisine": "asian",
       "targetCalories": 500
     },
     "dinner": {
@@ -33,10 +50,10 @@
       "targetCalories": 2100
     }
   },
-  "Friday": {
+  "Saturday": {
     "breakfast": {
-      "name": "Dim sum dumplings",
-      "cuisine": "asian",
+      "name": "Blini with cheese filling",
+      "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
@@ -45,24 +62,7 @@
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Beef stroganoff with rice",
-      "cuisine": "slavic",
-      "targetCalories": 2100
-    }
-  },
-  "Saturday": {
-    "breakfast": {
-      "name": "Rice porridge with pickles",
-      "cuisine": "asian",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Ryebread with butter",
-      "cuisine": "slavic",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Chicken soup with vegetables",
+      "name": "Pelmeni with sour cream",
       "cuisine": "slavic",
       "targetCalories": 2100
     }

@@ -12,84 +12,84 @@
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Kasha with butter and milk"
+        "meal": "Rice noodles with egg"
       },
       {
         "day": "Wednesday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Pickled vegetables"
+      },
+      {
+        "day": "Wednesday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Korean bibimbap"
+      },
+      {
+        "day": "Thursday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Buckwheat porridge with milk and berries"
+      },
+      {
+        "day": "Thursday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
         "meal": "Green tea cookies"
       },
       {
-        "day": "Wednesday",
+        "day": "Thursday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Pasta carbonara"
+        "meal": "Shashlik (grilled meat) with salad"
       },
       {
-        "day": "Thursday",
+        "day": "Friday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Congee with egg and scallions"
+        "meal": "Kasha with butter and milk"
       },
       {
-        "day": "Thursday",
+        "day": "Friday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Apple slices with cheese"
+        "meal": "Pickled ginger and daikon"
       },
       {
-        "day": "Thursday",
+        "day": "Friday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
         "meal": "Borscht with sour cream"
       },
       {
-        "day": "Friday",
+        "day": "Saturday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Dim sum dumplings"
+        "meal": "Blini with cheese filling"
       },
       {
-        "day": "Friday",
+        "day": "Saturday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
         "meal": "Seaweed snacks"
       },
       {
-        "day": "Friday",
-        "mealType": "dinner",
-        "amount": 0,
-        "unit": "",
-        "meal": "Beef stroganoff with rice"
-      },
-      {
-        "day": "Saturday",
-        "mealType": "breakfast",
-        "amount": 0,
-        "unit": "",
-        "meal": "Rice porridge with pickles"
-      },
-      {
-        "day": "Saturday",
-        "mealType": "snack",
-        "amount": 0,
-        "unit": "",
-        "meal": "Ryebread with butter"
-      },
-      {
         "day": "Saturday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Chicken soup with vegetables"
+        "meal": "Pelmeni with sour cream"
       }
     ]
   },
@@ -106,84 +106,84 @@
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Kasha with butter and milk"
+        "meal": "Rice noodles with egg"
       },
       {
         "day": "Wednesday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Pickled vegetables"
+      },
+      {
+        "day": "Wednesday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Korean bibimbap"
+      },
+      {
+        "day": "Thursday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Buckwheat porridge with milk and berries"
+      },
+      {
+        "day": "Thursday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
         "meal": "Green tea cookies"
       },
       {
-        "day": "Wednesday",
+        "day": "Thursday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Pasta carbonara"
+        "meal": "Shashlik (grilled meat) with salad"
       },
       {
-        "day": "Thursday",
+        "day": "Friday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Congee with egg and scallions"
+        "meal": "Kasha with butter and milk"
       },
       {
-        "day": "Thursday",
+        "day": "Friday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Apple slices with cheese"
+        "meal": "Pickled ginger and daikon"
       },
       {
-        "day": "Thursday",
+        "day": "Friday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
         "meal": "Borscht with sour cream"
       },
       {
-        "day": "Friday",
+        "day": "Saturday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Dim sum dumplings"
+        "meal": "Blini with cheese filling"
       },
       {
-        "day": "Friday",
+        "day": "Saturday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
         "meal": "Seaweed snacks"
       },
       {
-        "day": "Friday",
-        "mealType": "dinner",
-        "amount": 0,
-        "unit": "",
-        "meal": "Beef stroganoff with rice"
-      },
-      {
-        "day": "Saturday",
-        "mealType": "breakfast",
-        "amount": 0,
-        "unit": "",
-        "meal": "Rice porridge with pickles"
-      },
-      {
-        "day": "Saturday",
-        "mealType": "snack",
-        "amount": 0,
-        "unit": "",
-        "meal": "Ryebread with butter"
-      },
-      {
         "day": "Saturday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Chicken soup with vegetables"
+        "meal": "Pelmeni with sour cream"
       }
     ]
   },
@@ -200,84 +200,84 @@
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Kasha with butter and milk"
+        "meal": "Rice noodles with egg"
       },
       {
         "day": "Wednesday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Pickled vegetables"
+      },
+      {
+        "day": "Wednesday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Korean bibimbap"
+      },
+      {
+        "day": "Thursday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Buckwheat porridge with milk and berries"
+      },
+      {
+        "day": "Thursday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
         "meal": "Green tea cookies"
       },
       {
-        "day": "Wednesday",
+        "day": "Thursday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Pasta carbonara"
+        "meal": "Shashlik (grilled meat) with salad"
       },
       {
-        "day": "Thursday",
+        "day": "Friday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Congee with egg and scallions"
+        "meal": "Kasha with butter and milk"
       },
       {
-        "day": "Thursday",
+        "day": "Friday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Apple slices with cheese"
+        "meal": "Pickled ginger and daikon"
       },
       {
-        "day": "Thursday",
+        "day": "Friday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
         "meal": "Borscht with sour cream"
       },
       {
-        "day": "Friday",
+        "day": "Saturday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Dim sum dumplings"
+        "meal": "Blini with cheese filling"
       },
       {
-        "day": "Friday",
+        "day": "Saturday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
         "meal": "Seaweed snacks"
       },
       {
-        "day": "Friday",
-        "mealType": "dinner",
-        "amount": 0,
-        "unit": "",
-        "meal": "Beef stroganoff with rice"
-      },
-      {
-        "day": "Saturday",
-        "mealType": "breakfast",
-        "amount": 0,
-        "unit": "",
-        "meal": "Rice porridge with pickles"
-      },
-      {
-        "day": "Saturday",
-        "mealType": "snack",
-        "amount": 0,
-        "unit": "",
-        "meal": "Ryebread with butter"
-      },
-      {
         "day": "Saturday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Chicken soup with vegetables"
+        "meal": "Pelmeni with sour cream"
       }
     ]
   }
