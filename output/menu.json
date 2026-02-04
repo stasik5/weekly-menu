@@ -1,59 +1,25 @@
 {
   "Wednesday": {
     "breakfast": {
-      "name": "Kasha with butter and milk",
-      "cuisine": "slavic",
+      "name": "Fried rice with vegetables",
+      "cuisine": "asian",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Mango slices",
-      "cuisine": "asian",
+      "name": "Yogurt with honey",
+      "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Beef stroganoff with rice",
-      "cuisine": "slavic",
+      "name": "Vietnamese pho",
+      "cuisine": "asian",
       "targetCalories": 2100
     }
   },
   "Thursday": {
     "breakfast": {
-      "name": "Syrniki (cottage cheese pancakes)",
-      "cuisine": "slavic",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Banana with peanut butter",
-      "cuisine": "slavic",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Chicken soup with vegetables",
-      "cuisine": "slavic",
-      "targetCalories": 2100
-    }
-  },
-  "Friday": {
-    "breakfast": {
       "name": "Miso soup with tofu",
       "cuisine": "asian",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Seaweed snacks",
-      "cuisine": "asian",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Pad Thai with shrimp",
-      "cuisine": "asian",
-      "targetCalories": 2100
-    }
-  },
-  "Saturday": {
-    "breakfast": {
-      "name": "Buckwheat porridge with milk and berries",
-      "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
@@ -62,7 +28,41 @@
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Chicken teriyaki with rice",
+      "name": "Cabbage rolls with meat",
+      "cuisine": "slavic",
+      "targetCalories": 2100
+    }
+  },
+  "Friday": {
+    "breakfast": {
+      "name": "Buckwheat porridge with milk and berries",
+      "cuisine": "slavic",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Pickled vegetables",
+      "cuisine": "slavic",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Borscht with sour cream",
+      "cuisine": "slavic",
+      "targetCalories": 2100
+    }
+  },
+  "Saturday": {
+    "breakfast": {
+      "name": "Kasha with butter and milk",
+      "cuisine": "slavic",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Edamame with sea salt",
+      "cuisine": "asian",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Korean bibimbap",
       "cuisine": "asian",
       "targetCalories": 2100
     }

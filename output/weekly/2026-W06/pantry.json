@@ -12,84 +12,84 @@
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Kasha with butter and milk"
+        "meal": "Fried rice with vegetables"
       },
       {
         "day": "Wednesday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Mango slices"
+        "meal": "Yogurt with honey"
       },
       {
         "day": "Wednesday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Beef stroganoff with rice"
+        "meal": "Vietnamese pho"
       },
       {
         "day": "Thursday",
-        "mealType": "breakfast",
-        "amount": 0,
-        "unit": "",
-        "meal": "Syrniki (cottage cheese pancakes)"
-      },
-      {
-        "day": "Thursday",
-        "mealType": "snack",
-        "amount": 0,
-        "unit": "",
-        "meal": "Banana with peanut butter"
-      },
-      {
-        "day": "Thursday",
-        "mealType": "dinner",
-        "amount": 0,
-        "unit": "",
-        "meal": "Chicken soup with vegetables"
-      },
-      {
-        "day": "Friday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
         "meal": "Miso soup with tofu"
       },
       {
-        "day": "Friday",
-        "mealType": "snack",
-        "amount": 0,
-        "unit": "",
-        "meal": "Seaweed snacks"
-      },
-      {
-        "day": "Friday",
-        "mealType": "dinner",
-        "amount": 0,
-        "unit": "",
-        "meal": "Pad Thai with shrimp"
-      },
-      {
-        "day": "Saturday",
-        "mealType": "breakfast",
-        "amount": 0,
-        "unit": "",
-        "meal": "Buckwheat porridge with milk and berries"
-      },
-      {
-        "day": "Saturday",
+        "day": "Thursday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
         "meal": "Ryebread with butter"
       },
       {
+        "day": "Thursday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Cabbage rolls with meat"
+      },
+      {
+        "day": "Friday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Buckwheat porridge with milk and berries"
+      },
+      {
+        "day": "Friday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Pickled vegetables"
+      },
+      {
+        "day": "Friday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Borscht with sour cream"
+      },
+      {
+        "day": "Saturday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Kasha with butter and milk"
+      },
+      {
+        "day": "Saturday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Edamame with sea salt"
+      },
+      {
         "day": "Saturday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Chicken teriyaki with rice"
+        "meal": "Korean bibimbap"
       }
     ]
   },
@@ -106,84 +106,84 @@
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Kasha with butter and milk"
+        "meal": "Fried rice with vegetables"
       },
       {
         "day": "Wednesday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Mango slices"
+        "meal": "Yogurt with honey"
       },
       {
         "day": "Wednesday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Beef stroganoff with rice"
+        "meal": "Vietnamese pho"
       },
       {
         "day": "Thursday",
-        "mealType": "breakfast",
-        "amount": 0,
-        "unit": "",
-        "meal": "Syrniki (cottage cheese pancakes)"
-      },
-      {
-        "day": "Thursday",
-        "mealType": "snack",
-        "amount": 0,
-        "unit": "",
-        "meal": "Banana with peanut butter"
-      },
-      {
-        "day": "Thursday",
-        "mealType": "dinner",
-        "amount": 0,
-        "unit": "",
-        "meal": "Chicken soup with vegetables"
-      },
-      {
-        "day": "Friday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
         "meal": "Miso soup with tofu"
       },
       {
-        "day": "Friday",
-        "mealType": "snack",
-        "amount": 0,
-        "unit": "",
-        "meal": "Seaweed snacks"
-      },
-      {
-        "day": "Friday",
-        "mealType": "dinner",
-        "amount": 0,
-        "unit": "",
-        "meal": "Pad Thai with shrimp"
-      },
-      {
-        "day": "Saturday",
-        "mealType": "breakfast",
-        "amount": 0,
-        "unit": "",
-        "meal": "Buckwheat porridge with milk and berries"
-      },
-      {
-        "day": "Saturday",
+        "day": "Thursday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
         "meal": "Ryebread with butter"
       },
       {
+        "day": "Thursday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Cabbage rolls with meat"
+      },
+      {
+        "day": "Friday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Buckwheat porridge with milk and berries"
+      },
+      {
+        "day": "Friday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Pickled vegetables"
+      },
+      {
+        "day": "Friday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Borscht with sour cream"
+      },
+      {
+        "day": "Saturday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Kasha with butter and milk"
+      },
+      {
+        "day": "Saturday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Edamame with sea salt"
+      },
+      {
         "day": "Saturday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Chicken teriyaki with rice"
+        "meal": "Korean bibimbap"
       }
     ]
   },
@@ -200,84 +200,84 @@
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Kasha with butter and milk"
+        "meal": "Fried rice with vegetables"
       },
       {
         "day": "Wednesday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Mango slices"
+        "meal": "Yogurt with honey"
       },
       {
         "day": "Wednesday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Beef stroganoff with rice"
+        "meal": "Vietnamese pho"
       },
       {
         "day": "Thursday",
-        "mealType": "breakfast",
-        "amount": 0,
-        "unit": "",
-        "meal": "Syrniki (cottage cheese pancakes)"
-      },
-      {
-        "day": "Thursday",
-        "mealType": "snack",
-        "amount": 0,
-        "unit": "",
-        "meal": "Banana with peanut butter"
-      },
-      {
-        "day": "Thursday",
-        "mealType": "dinner",
-        "amount": 0,
-        "unit": "",
-        "meal": "Chicken soup with vegetables"
-      },
-      {
-        "day": "Friday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
         "meal": "Miso soup with tofu"
       },
       {
-        "day": "Friday",
-        "mealType": "snack",
-        "amount": 0,
-        "unit": "",
-        "meal": "Seaweed snacks"
-      },
-      {
-        "day": "Friday",
-        "mealType": "dinner",
-        "amount": 0,
-        "unit": "",
-        "meal": "Pad Thai with shrimp"
-      },
-      {
-        "day": "Saturday",
-        "mealType": "breakfast",
-        "amount": 0,
-        "unit": "",
-        "meal": "Buckwheat porridge with milk and berries"
-      },
-      {
-        "day": "Saturday",
+        "day": "Thursday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
         "meal": "Ryebread with butter"
       },
       {
+        "day": "Thursday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Cabbage rolls with meat"
+      },
+      {
+        "day": "Friday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Buckwheat porridge with milk and berries"
+      },
+      {
+        "day": "Friday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Pickled vegetables"
+      },
+      {
+        "day": "Friday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Borscht with sour cream"
+      },
+      {
+        "day": "Saturday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Kasha with butter and milk"
+      },
+      {
+        "day": "Saturday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Edamame with sea salt"
+      },
+      {
         "day": "Saturday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Chicken teriyaki with rice"
+        "meal": "Korean bibimbap"
       }
     ]
   }

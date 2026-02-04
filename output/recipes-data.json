@@ -1,6 +1,6 @@
 {
-  "Kasha with butter and milk": {
-    "title": "Kasha with butter and milk",
+  "Fried rice with vegetables": {
+    "title": "Fried rice with vegetables",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -22,8 +22,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Mango slices": {
-    "title": "Mango slices",
+  "Yogurt with honey": {
+    "title": "Yogurt with honey",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -45,77 +45,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Beef stroganoff with rice": {
-    "title": "Beef stroganoff with rice",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 2100,
-      "protein": 131,
-      "carbs": 215,
-      "fat": 79
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Syrniki (cottage cheese pancakes)": {
-    "title": "Syrniki (cottage cheese pancakes)",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 1400,
-      "protein": 53,
-      "carbs": 105,
-      "fat": 86
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Banana with peanut butter": {
-    "title": "Banana with peanut butter",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 500,
-      "protein": 19,
-      "carbs": 38,
-      "fat": 31
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Chicken soup with vegetables": {
-    "title": "Chicken soup with vegetables",
+  "Vietnamese pho": {
+    "title": "Vietnamese pho",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -160,8 +91,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Seaweed snacks": {
-    "title": "Seaweed snacks",
+  "Ryebread with butter": {
+    "title": "Ryebread with butter",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -183,8 +114,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Pad Thai with shrimp": {
-    "title": "Pad Thai with shrimp",
+  "Cabbage rolls with meat": {
+    "title": "Cabbage rolls with meat",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -229,8 +160,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Ryebread with butter": {
-    "title": "Ryebread with butter",
+  "Pickled vegetables": {
+    "title": "Pickled vegetables",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -252,8 +183,77 @@
     "source": "fallback_template",
     "url": null
   },
-  "Chicken teriyaki with rice": {
-    "title": "Chicken teriyaki with rice",
+  "Borscht with sour cream": {
+    "title": "Borscht with sour cream",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 2100,
+      "protein": 131,
+      "carbs": 215,
+      "fat": 79
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Kasha with butter and milk": {
+    "title": "Kasha with butter and milk",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 1400,
+      "protein": 53,
+      "carbs": 105,
+      "fat": 86
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Edamame with sea salt": {
+    "title": "Edamame with sea salt",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 500,
+      "protein": 19,
+      "carbs": 38,
+      "fat": 31
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Korean bibimbap": {
+    "title": "Korean bibimbap",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
