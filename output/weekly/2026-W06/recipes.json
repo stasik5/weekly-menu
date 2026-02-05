@@ -1,11 +1,11 @@
 {
   "Wednesday": {
     "breakfast": {
-      "name": "Rice noodles with egg",
+      "name": "Dim sum dumplings",
       "cuisine": "asian",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Rice noodles with egg",
+        "title": "Dim sum dumplings",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -29,11 +29,11 @@
       }
     },
     "snack": {
-      "name": "Rice crackers",
-      "cuisine": "asian",
+      "name": "Cottage cheese with herbs",
+      "cuisine": "slavic",
       "targetCalories": 500,
       "recipe": {
-        "title": "Rice crackers",
+        "title": "Cottage cheese with herbs",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -57,11 +57,11 @@
       }
     },
     "dinner": {
-      "name": "Beef stroganoff with rice",
+      "name": "Borscht with sour cream",
       "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Beef stroganoff with rice",
+        "title": "Borscht with sour cream",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -87,11 +87,11 @@
   },
   "Thursday": {
     "breakfast": {
-      "name": "Fried eggs with bread",
+      "name": "Buckwheat porridge with milk and berries",
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Fried eggs with bread",
+        "title": "Buckwheat porridge with milk and berries",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -115,11 +115,11 @@
       }
     },
     "snack": {
-      "name": "Mango slices",
+      "name": "Fried tofu cubes",
       "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
-        "title": "Mango slices",
+        "title": "Fried tofu cubes",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -143,11 +143,11 @@
       }
     },
     "dinner": {
-      "name": "Chicken soup with vegetables",
+      "name": "Shashlik (grilled meat) with salad",
       "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Chicken soup with vegetables",
+        "title": "Shashlik (grilled meat) with salad",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -173,11 +173,11 @@
   },
   "Friday": {
     "breakfast": {
-      "name": "Blini with cheese filling",
+      "name": "Scrambled eggs with vegetables",
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Blini with cheese filling",
+        "title": "Scrambled eggs with vegetables",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -201,11 +201,11 @@
       }
     },
     "snack": {
-      "name": "Seaweed snacks",
+      "name": "Green tea cookies",
       "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
-        "title": "Seaweed snacks",
+        "title": "Green tea cookies",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -229,11 +229,11 @@
       }
     },
     "dinner": {
-      "name": "Korean bibimbap",
+      "name": "Pad Thai with shrimp",
       "cuisine": "asian",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Korean bibimbap",
+        "title": "Pad Thai with shrimp",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -259,11 +259,11 @@
   },
   "Saturday": {
     "breakfast": {
-      "name": "Kasha with butter and milk",
-      "cuisine": "slavic",
+      "name": "Rice noodles with egg",
+      "cuisine": "asian",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Kasha with butter and milk",
+        "title": "Rice noodles with egg",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -315,11 +315,11 @@
       }
     },
     "dinner": {
-      "name": "Borscht with sour cream",
+      "name": "Cabbage rolls with meat",
       "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Borscht with sour cream",
+        "title": "Cabbage rolls with meat",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",

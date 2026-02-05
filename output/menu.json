@@ -1,59 +1,59 @@
 {
   "Wednesday": {
     "breakfast": {
-      "name": "Rice noodles with egg",
+      "name": "Dim sum dumplings",
       "cuisine": "asian",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Rice crackers",
-      "cuisine": "asian",
+      "name": "Cottage cheese with herbs",
+      "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Beef stroganoff with rice",
+      "name": "Borscht with sour cream",
       "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
   "Thursday": {
     "breakfast": {
-      "name": "Fried eggs with bread",
+      "name": "Buckwheat porridge with milk and berries",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Mango slices",
+      "name": "Fried tofu cubes",
       "cuisine": "asian",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Chicken soup with vegetables",
+      "name": "Shashlik (grilled meat) with salad",
       "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
   "Friday": {
     "breakfast": {
-      "name": "Blini with cheese filling",
+      "name": "Scrambled eggs with vegetables",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Seaweed snacks",
+      "name": "Green tea cookies",
       "cuisine": "asian",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Korean bibimbap",
+      "name": "Pad Thai with shrimp",
       "cuisine": "asian",
       "targetCalories": 2100
     }
   },
   "Saturday": {
     "breakfast": {
-      "name": "Kasha with butter and milk",
-      "cuisine": "slavic",
+      "name": "Rice noodles with egg",
+      "cuisine": "asian",
       "targetCalories": 1400
     },
     "snack": {
@@ -62,7 +62,7 @@
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Borscht with sour cream",
+      "name": "Cabbage rolls with meat",
       "cuisine": "slavic",
       "targetCalories": 2100
     }
