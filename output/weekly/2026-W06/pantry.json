@@ -19,7 +19,7 @@
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Fried tofu cubes"
+        "meal": "Seaweed snacks"
       },
       {
         "day": "Monday",
@@ -40,77 +40,77 @@
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Green tea cookies"
+        "meal": "Fried tofu cubes"
       },
       {
         "day": "Tuesday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Pasta carbonara"
+        "meal": "Fried eggs with bread"
       },
       {
         "day": "Wednesday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Syrniki (cottage cheese pancakes)"
+      },
+      {
+        "day": "Wednesday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Green tea cookies"
+      },
+      {
+        "day": "Wednesday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Thai green curry"
+      },
+      {
+        "day": "Thursday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
         "meal": "Congee with egg and scallions"
       },
       {
-        "day": "Wednesday",
-        "mealType": "snack",
-        "amount": 0,
-        "unit": "",
-        "meal": "Banana with peanut butter"
-      },
-      {
-        "day": "Wednesday",
-        "mealType": "dinner",
-        "amount": 0,
-        "unit": "",
-        "meal": "Shashlik (grilled meat) with salad"
-      },
-      {
-        "day": "Thursday",
-        "mealType": "breakfast",
-        "amount": 0,
-        "unit": "",
-        "meal": "Blini with cheese filling"
-      },
-      {
         "day": "Thursday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Cottage cheese with herbs"
+        "meal": "Mango slices"
       },
       {
         "day": "Thursday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Borscht with sour cream"
+        "meal": "Cabbage rolls with meat"
       },
       {
         "day": "Friday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Kasha with butter and milk"
+        "meal": "Fried eggs with bread"
       },
       {
         "day": "Friday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Seaweed snacks"
+        "meal": "Pickled vegetables"
       },
       {
         "day": "Friday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Japanese ramen"
+        "meal": "Pelmeni with sour cream"
       },
       {
         "day": "Saturday",
@@ -124,35 +124,35 @@
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Pickled ginger and daikon"
+        "meal": "Ryebread with butter"
       },
       {
         "day": "Saturday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Korean bibimbap"
+        "meal": "Japanese ramen"
       },
       {
         "day": "Sunday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Fried eggs with bread"
+        "meal": "Rice porridge with pickles"
       },
       {
         "day": "Sunday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Mango slices"
+        "meal": "Apple slices with cheese"
       },
       {
         "day": "Sunday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Pelmeni with sour cream"
+        "meal": "Shashlik (grilled meat) with salad"
       }
     ]
   },
@@ -176,7 +176,7 @@
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Fried tofu cubes"
+        "meal": "Seaweed snacks"
       },
       {
         "day": "Monday",
@@ -197,77 +197,77 @@
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Green tea cookies"
+        "meal": "Fried tofu cubes"
       },
       {
         "day": "Tuesday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Pasta carbonara"
+        "meal": "Fried eggs with bread"
       },
       {
         "day": "Wednesday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Syrniki (cottage cheese pancakes)"
+      },
+      {
+        "day": "Wednesday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Green tea cookies"
+      },
+      {
+        "day": "Wednesday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Thai green curry"
+      },
+      {
+        "day": "Thursday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
         "meal": "Congee with egg and scallions"
       },
       {
-        "day": "Wednesday",
-        "mealType": "snack",
-        "amount": 0,
-        "unit": "",
-        "meal": "Banana with peanut butter"
-      },
-      {
-        "day": "Wednesday",
-        "mealType": "dinner",
-        "amount": 0,
-        "unit": "",
-        "meal": "Shashlik (grilled meat) with salad"
-      },
-      {
-        "day": "Thursday",
-        "mealType": "breakfast",
-        "amount": 0,
-        "unit": "",
-        "meal": "Blini with cheese filling"
-      },
-      {
         "day": "Thursday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Cottage cheese with herbs"
+        "meal": "Mango slices"
       },
       {
         "day": "Thursday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Borscht with sour cream"
+        "meal": "Cabbage rolls with meat"
       },
       {
         "day": "Friday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Kasha with butter and milk"
+        "meal": "Fried eggs with bread"
       },
       {
         "day": "Friday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Seaweed snacks"
+        "meal": "Pickled vegetables"
       },
       {
         "day": "Friday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Japanese ramen"
+        "meal": "Pelmeni with sour cream"
       },
       {
         "day": "Saturday",
@@ -281,35 +281,35 @@
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Pickled ginger and daikon"
+        "meal": "Ryebread with butter"
       },
       {
         "day": "Saturday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Korean bibimbap"
+        "meal": "Japanese ramen"
       },
       {
         "day": "Sunday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Fried eggs with bread"
+        "meal": "Rice porridge with pickles"
       },
       {
         "day": "Sunday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Mango slices"
+        "meal": "Apple slices with cheese"
       },
       {
         "day": "Sunday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Pelmeni with sour cream"
+        "meal": "Shashlik (grilled meat) with salad"
       }
     ]
   },
@@ -333,7 +333,7 @@
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Fried tofu cubes"
+        "meal": "Seaweed snacks"
       },
       {
         "day": "Monday",
@@ -354,77 +354,77 @@
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Green tea cookies"
+        "meal": "Fried tofu cubes"
       },
       {
         "day": "Tuesday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Pasta carbonara"
+        "meal": "Fried eggs with bread"
       },
       {
         "day": "Wednesday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Syrniki (cottage cheese pancakes)"
+      },
+      {
+        "day": "Wednesday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Green tea cookies"
+      },
+      {
+        "day": "Wednesday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Thai green curry"
+      },
+      {
+        "day": "Thursday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
         "meal": "Congee with egg and scallions"
       },
       {
-        "day": "Wednesday",
-        "mealType": "snack",
-        "amount": 0,
-        "unit": "",
-        "meal": "Banana with peanut butter"
-      },
-      {
-        "day": "Wednesday",
-        "mealType": "dinner",
-        "amount": 0,
-        "unit": "",
-        "meal": "Shashlik (grilled meat) with salad"
-      },
-      {
-        "day": "Thursday",
-        "mealType": "breakfast",
-        "amount": 0,
-        "unit": "",
-        "meal": "Blini with cheese filling"
-      },
-      {
         "day": "Thursday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Cottage cheese with herbs"
+        "meal": "Mango slices"
       },
       {
         "day": "Thursday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Borscht with sour cream"
+        "meal": "Cabbage rolls with meat"
       },
       {
         "day": "Friday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Kasha with butter and milk"
+        "meal": "Fried eggs with bread"
       },
       {
         "day": "Friday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Seaweed snacks"
+        "meal": "Pickled vegetables"
       },
       {
         "day": "Friday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Japanese ramen"
+        "meal": "Pelmeni with sour cream"
       },
       {
         "day": "Saturday",
@@ -438,35 +438,35 @@
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Pickled ginger and daikon"
+        "meal": "Ryebread with butter"
       },
       {
         "day": "Saturday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Korean bibimbap"
+        "meal": "Japanese ramen"
       },
       {
         "day": "Sunday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Fried eggs with bread"
+        "meal": "Rice porridge with pickles"
       },
       {
         "day": "Sunday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Mango slices"
+        "meal": "Apple slices with cheese"
       },
       {
         "day": "Sunday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Pelmeni with sour cream"
+        "meal": "Shashlik (grilled meat) with salad"
       }
     ]
   }
