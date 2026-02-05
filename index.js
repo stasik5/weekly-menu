@@ -1,7 +1,7 @@
 /**
  * Weekly Grocery Planner - Main Script
  * Orchestrates the meal planning, recipe research, and HTML generation
- * UPDATED PIPELINE: menu → recipes → chef review → grocery list → pantry → HTML
+ * UPDATED PIPELINE: menu → recipes → translate → chef review → normalize → grocery list → pantry → HTML → publish
  */
 
 const fs = require('fs');
@@ -11,6 +11,8 @@ const path = require('path');
 const menuGenerator = require('./src/menu-generator');
 const recipeResearcher = require('./src/recipe-researcher');
 const recipeFetcher = require('./src/recipe-fetcher');
+const translator = require('./src/translator');
+const pantryNormalizer = require('./src/pantry-normalizer');
 const groceryListBuilder = require('./src/grocery-list-builder');
 const chefReviewer = require('./src/chef-reviewer');
 const pantryManager = require('./src/pantry-manager');
@@ -167,55 +169,65 @@ async function generateWeeklyMenu(webSearch = null, publish = true, useAgent = t
 
     console.log('✓ Recipes attached to meals');
 
-    // Step 3: Chef review (NEW)
-    console.log('\n3. Running chef review...');
-    const chefReview = chefReviewer.reviewMenu(planWithRecipes);
+    // Step 3: Translate to Russian (NEW)
+    console.log('\n3. Translating recipes to Russian...');
+    const translatedPlan = await translator.translateWeeklyPlan(planWithRecipes);
+    console.log('✓ Recipes translated to Russian');
+
+    // Step 4: Chef review
+    console.log('\n4. Running chef review...');
+    const chefReview = chefReviewer.reviewMenu(translatedPlan);
+    let finalPlan = translatedPlan;
     if (chefReview.modified) {
       console.log('✓ Menu optimized based on chef suggestions');
-      planWithRecipes = chefReview.optimizedMenu;
+      finalPlan = chefReview.optimizedMenu;
     } else {
       console.log('✓ Menu approved by chef (no changes needed)');
     }
 
-    // Step 4: Build grocery list with metric conversion (NEW)
-    console.log('\n4. Building grocery list...');
-    const groceryList = groceryListBuilder.buildGroceryList(planWithRecipes);
-    const metricGroceryList = groceryListBuilder.updateToMetricUnits(groceryList);
-    const totalItems = Object.values(metricGroceryList).reduce((sum, items) => sum + items.length, 0);
-    console.log(`✓ Grocery list built with ${totalItems} items (metric units)`);
+    // Step 5: Normalize ingredients (strip prep methods, merge duplicates) (NEW)
+    console.log('\n5. Normalizing ingredients...');
+    const normalizedPlan = pantryNormalizer.normalizeWeeklyPlan(finalPlan);
+    console.log('✓ Ingredients normalized (prep methods removed, duplicates merged)');
 
-    // Step 5: Generate virtual pantry (NEW)
-    console.log('\n5. Generating virtual pantry...');
-    const pantry = pantryManager.generatePantryFromGroceryList(metricGroceryList, planWithRecipes);
+    // Step 6: Build grocery list
+    console.log('\n6. Building grocery list...');
+    const groceryList = groceryListBuilder.buildGroceryList(normalizedPlan);
+    const totalItems = Object.values(groceryList).reduce((sum, items) => sum + items.length, 0);
+    console.log(`✓ Grocery list built with ${totalItems} items`);
+
+    // Step 7: Generate virtual pantry
+    console.log('\n7. Generating virtual pantry...');
+    const pantry = pantryManager.generatePantryFromGroceryList(groceryList, normalizedPlan);
     console.log(`✓ Virtual pantry created with ${Object.keys(pantry).length} items`);
 
-    // Step 6: Generate HTML
-    console.log('\n6. Generating HTML site...');
+    // Step 8: Generate HTML
+    console.log('\n8. Generating HTML site...');
     const weekLabel = siteGenerator.getWeekLabel();
-    const html = siteGenerator.generateHTML(planWithRecipes, metricGroceryList, pantry, weekLabel);
+    const html = siteGenerator.generateHTML(normalizedPlan, groceryList, pantry, weekLabel);
     console.log(`✓ HTML generated for ${weekLabel}`);
 
-    // Step 7: Save files
-    console.log('\n7. Saving files...');
+    // Step 9: Save files
+    console.log('\n9. Saving files...');
     const outputDir = path.join(__dirname, config.output.weeklyDir, weekLabel);
     const htmlPath = path.join(outputDir, 'index.html');
     const jsonPath = path.join(outputDir, 'recipes.json');
     const pantryPath = path.join(outputDir, 'pantry.json');
 
     siteGenerator.saveHTML(html, htmlPath);
-    siteGenerator.saveRecipesJSON(planWithRecipes, jsonPath);
+    siteGenerator.saveRecipesJSON(normalizedPlan, jsonPath);
     pantryManager.savePantryJSON(pantry, pantryPath);
 
     console.log(`✓ HTML saved to: ${htmlPath}`);
     console.log(`✓ JSON saved to: ${jsonPath}`);
     console.log(`✓ Pantry saved to: ${pantryPath}`);
 
-    // Step 8: Publish to GitHub
+    // Step 10: Publish to GitHub
     if (publish) {
-      console.log('\n8. Publishing to GitHub...');
+      console.log('\n10. Publishing to GitHub...');
       result.publishResult = await publisher.publishToGitHub(htmlPath, weekLabel);
     } else {
-      console.log('\n8. Skipped GitHub publishing (publish=false)');
+      console.log('\n10. Skipped GitHub publishing (publish=false)');
     }
 
     result.success = true;

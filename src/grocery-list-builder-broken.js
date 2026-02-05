@@ -1,6 +1,7 @@
 /**
  * Grocery List Builder - Aggregates and categorizes ingredients
  * Combines duplicate ingredients and categorizes by type
+ * NOW WITH METRIC UNIT CONVERSION
  */
 
 // Ingredient categories based on common food items
@@ -33,6 +34,13 @@ const CATEGORY_KEYWORDS = {
   other: []
 };
 
+// Liquids that should use ml/L instead of cups/tbsp
+const LIQUID_INGREDIENTS = [
+  'milk', 'cream', 'sour cream', 'yogurt', 'kefir', 'oil', 'olive oil',
+  'water', 'broth', 'stock', 'juice', 'wine', 'vinegar', 'sauce',
+  'soy sauce', 'coconut milk', 'syrup', 'honey', 'lemon juice', 'lime juice'
+];
+
 /**
  * Categorize an ingredient based on its name
  * @param {string} ingredient - Ingredient text with quantity
@@ -58,10 +66,11 @@ function categorizeIngredient(ingredient) {
  * @returns {string} Just the ingredient name
  */
 function extractIngredientName(fullIngredient) {
-  // Remove leading numbers and common measurement words
+  // Remove leading numbers, fractions, ranges, and common measurement words
+  // Handle both "200g" and "200 g" formats, avoid single-letter matches
   let name = fullIngredient
-    .replace(/^\d+[\s½⅓⅔¼¾⅕⅛⅐⅑⅒]?/, '') // Remove leading numbers
-    .replace(/^(cup|cups|tablespoon|tbsp|teaspoon|tsp|ounce|oz|pound|lb|gram|g|kg|ml|liter|l|piece|pieces|slice|slices|bunch|head|clove|cloves)\s*(of\s*)?/i, '') // Remove measurements
+    // Remove number + optional range + optional unit (with or without space)
+    .replace(/^[\d½⅓⅔¼¾⅕ⅈ]?\s*(?:cup|cups|tablespoon|tbsp|teaspoon|tsp|ounce|oz|pound|lb|grams?|kgs?|mls?|liters?)\s*/i, '') // Remove measurements (no single-letter matches)
     .replace(/^\s*\(|\)\s*$/g, '') // Remove surrounding parentheses
     .trim();
 
@@ -76,7 +85,9 @@ function extractIngredientName(fullIngredient) {
  * @returns {string} Quantity string
  */
 function extractQuantity(fullIngredient) {
-  const match = fullIngredient.match(/^[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\s*(?:cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|piece|pieces|slice|slices|bunch|head|clove|cloves)?)/i);
+  // Match: number (with fractions) + optional range + optional unit (with or without space)
+  // Units must be complete words to avoid matching parts of words
+  const match = fullIngredient.match(/^[\d½⅓⅔¼¾⅕ⅈ]?\s*(?:cup|cups|tablespoon|tbsp|teaspoon|tsp|ounce|oz|pound|lb|grams?|kgs?|milliliters?|mls?|liters?|pieces?|slices?)?/i);
   return match ? match[0].trim() : 'as needed';
 }
 
@@ -251,6 +262,162 @@ function formatGroceryListText(groceryList) {
   return text;
 }
 
+/**
+ * Check if ingredient is a liquid
+ * @param {string} ingredientName - Name of ingredient
+ * @returns {boolean} True if liquid
+ */
+function isLiquid(ingredientName) {
+  const lower = ingredientName.toLowerCase();
+  return LIQUID_INGREDIENTS.some(keyword => lower.includes(keyword));
+}
+
+/**
+ * Convert quantity to metric units
+ * @param {string} quantity - Quantity string with unit
+ * @param {string} ingredientName - Name of ingredient for liquid check
+ * @returns {string} Metric quantity with original in brackets
+ */
+function convertToMetric(quantity, ingredientName) {
+  // Match quantity and unit
+  const match = quantity.match(/^([\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?)\s*(cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|liter|piece|pieces|slice|slices|bunch|head|clove|cloves)?/i);
+
+  if (!match) {
+    return quantity; // No recognizable quantity/unit
+  }
+
+  const numStr = match[1];
+  const unit = match[2] ? match[2].toLowerCase() : '';
+  const isLiquidIngredient = isLiquid(ingredientName);
+
+  // Parse the numeric value
+  const fractions = {
+    '½': 0.5, '⅓': 0.333, '⅔': 0.667, '¼': 0.25, '¾': 0.75,
+    '⅕': 0.2, '⅛': 0.125, '⅐': 0.143, '⅑': 0.111, '⅒': 0.1
+  };
+
+  let value = 0;
+  const hasUnicodeFraction = /[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]/.test(numStr);
+
+  if (hasUnicodeFraction) {
+    let currentValue = 0;
+    let buffer = '';
+    for (let i = 0; i < numStr.length; i++) {
+      const char = numStr[i];
+      if (fractions[char]) {
+        if (buffer) {
+          currentValue += parseFloat(buffer);
+          buffer = '';
+        }
+        currentValue += fractions[char];
+      } else if (char >= '0' && char <= '9' || char === '.') {
+        buffer += char;
+      } else {
+        if (buffer) {
+          currentValue += parseFloat(buffer);
+          buffer = '';
+        }
+      }
+    }
+    if (buffer) {
+      currentValue += parseFloat(buffer);
+    }
+    value = currentValue;
+  } else {
+    value = parseFloat(numStr);
+  }
+
+  // Convert to metric if needed
+  let metricValue = value;
+  let metricUnit = unit;
+
+  if (unit === 'oz' || unit === 'ounce' || unit === 'ounces') {
+    // oz → g
+    metricValue = Math.round(value * 28.35);
+    metricUnit = 'g';
+  } else if (unit === 'lb' || unit === 'pound' || unit === 'pounds') {
+    // lbs → kg
+    metricValue = (value * 0.4536).toFixed(2);
+    if (metricValue.endsWith('.00')) {
+      metricValue = metricValue.slice(0, -3);
+    }
+    metricUnit = 'kg';
+  } else if (unit === 'cup' || unit === 'cups') {
+    if (isLiquidIngredient) {
+      // cups → ml for liquids
+      metricValue = Math.round(value * 240);
+      metricUnit = 'ml';
+    } else {
+      // cups → g for solids (approximate, varies by ingredient)
+      // For flour, ~120g per cup; for sugar, ~200g per cup; default to 150g
+      let gPerCup = 150;
+      const lower = ingredientName.toLowerCase();
+      if (lower.includes('flour')) {
+        gPerCup = 120;
+      } else if (lower.includes('sugar')) {
+        gPerCup = 200;
+      } else if (lower.includes('cheese') || lower.includes('butter')) {
+        gPerCup = 227;
+      }
+      metricValue = Math.round(value * gPerCup);
+      metricUnit = 'g';
+    }
+  } else if (unit === 'tbsp' || unit === 'tablespoon' || unit === 'tablespoons') {
+    if (isLiquidIngredient) {
+      // tbsp → ml for liquids
+      metricValue = Math.round(value * 15);
+      metricUnit = 'ml';
+    } else {
+      // tbsp → g for solids
+      metricValue = Math.round(value * 15); // Approximate
+      metricUnit = 'g';
+    }
+  } else if (unit === 'tsp' || unit === 'teaspoon' || unit === 'teaspoons') {
+    if (isLiquidIngredient) {
+      // tsp → ml for liquids
+      metricValue = Math.round(value * 5);
+      metricUnit = 'ml';
+    } else {
+      // tsp → g for solids
+      metricValue = Math.round(value * 5); // Approximate
+      metricUnit = 'g';
+    }
+  }
+
+  // If unit is already metric (g, kg, ml, l), keep it
+  if (['g', 'kg', 'ml', 'l', 'liter', 'liters'].includes(unit)) {
+    return quantity;
+  }
+
+  // Format result: metric with original in brackets
+  // e.g., "120g (1/2 cup)" or "500ml (2 cups)"
+  const originalDisplay = unit ? `${value} ${unit}` : quantity;
+  const metricDisplay = `${metricValue} ${metricUnit}`;
+
+  return `${metricDisplay} (${originalDisplay})`;
+}
+
+/**
+ * Update grocery list quantities to metric units
+ * @param {Object} groceryList - Organized grocery list
+ * @returns {Object} Updated grocery list with metric quantities
+ */
+function updateToMetricUnits(groceryList) {
+  console.log('\n📏 Converting to metric units...\n');
+
+  const updatedList = JSON.parse(JSON.stringify(groceryList));
+
+  for (const [category, items] of Object.entries(updatedList)) {
+    for (const item of items) {
+      item.quantity = convertToMetric(item.quantity, item.name);
+    }
+  }
+
+  console.log('✓ All quantities converted to metric\n');
+
+  return updatedList;
+}
+
 module.exports = {
   categorizeIngredient,
   extractIngredientName,
@@ -258,5 +425,9 @@ module.exports = {
   combineQuantities,
   buildGroceryList,
   formatGroceryListText,
-  CATEGORY_KEYWORDS
+  isLiquid,
+  convertToMetric,
+  updateToMetricUnits,
+  CATEGORY_KEYWORDS,
+  LIQUID_INGREDIENTS
 };
