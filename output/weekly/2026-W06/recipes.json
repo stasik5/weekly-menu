@@ -5,27 +5,39 @@
       "cuisine": "asian",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Rice porridge with pickles",
-        "cuisine": "unknown",
+        "title": "Chinese Rice Congee with Pickles",
+        "cuisine": "asian",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "200g short-grain white rice",
+          "2 liters water or chicken broth",
+          "1 thumb-sized piece of ginger, sliced",
+          "2 cloves garlic, smashed",
+          "1 tablespoon vegetable oil",
+          "1 teaspoon salt",
+          "2 green onions, chopped",
+          "1/2 cup Chinese pickled vegetables (pickled radish, cabbage, or mustard greens)",
+          "Soy sauce for serving",
+          "Sesame oil for drizzling",
+          "White pepper to taste"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "Rinse the rice thoroughly until water runs clear",
+          "In a large pot, heat oil over medium heat and sauté ginger and garlic for 1 minute",
+          "Add rice and stir to coat with oil",
+          "Pour in water or broth, bring to boil",
+          "Reduce heat to low, cover and simmer for 1-1.5 hours, stirring occasionally",
+          "The congee is done when rice grains are completely broken down and porridge is creamy",
+          "Season with salt",
+          "Serve hot topped with pickled vegetables, green onions, soy sauce, sesame oil, and white pepper"
         ],
         "nutrition": {
           "calories": 1400,
-          "protein": 53,
-          "carbs": 105,
-          "fat": 86
+          "protein": 45,
+          "carbs": 280,
+          "fat": 18
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "web_search",
+        "url": "https://omnivorescookbook.com/how-to-make-congee/"
       }
     },
     "snack": {
@@ -33,27 +45,42 @@
       "cuisine": "slavic",
       "targetCalories": 500,
       "recipe": {
-        "title": "Pickled vegetables",
-        "cuisine": "unknown",
+        "title": "Quick Pickled Vegetables",
+        "cuisine": "slavic",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "200g carrots, sliced into rounds",
+          "200g cucumbers, sliced into rounds",
+          "150g bell peppers, sliced",
+          "100g red onion, sliced",
+          "1 clove garlic, sliced",
+          "1 teaspoon black peppercorns",
+          "1 teaspoon mustard seeds",
+          "Pickling liquid:",
+          "300ml white vinegar",
+          "200ml water",
+          "2 tablespoons sugar",
+          "1 tablespoon salt"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "Pack all vegetables into a clean glass jar along with garlic, peppercorns, and mustard seeds",
+          "In a saucepan, combine vinegar, water, sugar, and salt",
+          "Bring to boil, stir until sugar and salt dissolve",
+          "Remove from heat and let cool slightly",
+          "Pour hot pickling liquid over vegetables",
+          "Ensure vegetables are fully submerged",
+          "Let cool to room temperature",
+          "Cover and refrigerate",
+          "Ready to eat after 1 hour, best after 24 hours",
+          "Store in refrigerator up to 2 weeks"
         ],
         "nutrition": {
           "calories": 500,
-          "protein": 19,
-          "carbs": 38,
-          "fat": 31
+          "protein": 5,
+          "carbs": 100,
+          "fat": 2
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "web_search",
+        "url": "https://myquietkitchen.com/quick-pickled-vegetables/"
       }
     },
     "dinner": {
@@ -61,27 +88,46 @@
       "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Cabbage rolls with meat",
-        "cuisine": "unknown",
+        "title": "Russian Cabbage Rolls (Golubtsi)",
+        "cuisine": "slavic",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "1 large head of cabbage",
+          "500g ground beef",
+          "200g uncooked white rice",
+          "1 large onion, diced",
+          "2 carrots, grated",
+          "2 eggs, beaten",
+          "3 tablespoons vegetable oil",
+          "Salt and pepper to taste",
+          "500ml tomato sauce or passata",
+          "200ml sour cream",
+          "2 bay leaves",
+          "1 bunch fresh dill, chopped",
+          "1/2 teaspoon smoked paprika",
+          "1 teaspoon cumin",
+          "2 cloves garlic, minced",
+          "500ml beef broth"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "Bring a large pot of water to boil, carefully remove cabbage leaves from head, blanch 2-3 minutes until pliable",
+          "Cook rice in separate pot until par-cooked (not fully done), drain and cool",
+          "Sauté onion and carrots in oil until softened, let cool",
+          "Mix ground beef, cooled rice, sautéed vegetables, eggs, salt, pepper, and paprika",
+          "Place 2-3 tablespoons of filling in each cabbage leaf, roll up tightly",
+          "Place shredded cabbage pieces at bottom of large pot",
+          "Arrange cabbage rolls seam-side down in pot",
+          "Mix tomato sauce, beef broth, sour cream, bay leaves, and dill, pour over rolls",
+          "Bring to boil, reduce heat to low, simmer covered for 1 hour",
+          "Serve hot with extra sour cream"
         ],
         "nutrition": {
           "calories": 2100,
-          "protein": 131,
-          "carbs": 215,
-          "fat": 79
+          "protein": 95,
+          "carbs": 210,
+          "fat": 95
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "web_search",
+        "url": "https://vikalinka.com/cabbage-rolls-golubtsi/"
       }
     }
   },
@@ -91,27 +137,37 @@
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Kasha with butter and milk",
-        "cuisine": "unknown",
+        "title": "Russian Buckwheat Kasha with Butter and Milk",
+        "cuisine": "slavic",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "200g roasted buckwheat groats",
+          "400ml water",
+          "1/2 teaspoon salt",
+          "40g butter",
+          "400ml whole milk",
+          "1-2 tablespoons honey or sugar",
+          "Optional: cinnamon"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "Rinse buckwheat thoroughly",
+          "Bring water and salt to boil in a saucepan",
+          "Add buckwheat, reduce heat to low, cover",
+          "Simmer 15-20 minutes until water is absorbed",
+          "Remove from heat, let stand 5 minutes",
+          "Add butter to hot kasha, stir to melt",
+          "Add milk (hot or cold, as preferred)",
+          "Sweeten with honey or sugar",
+          "Sprinkle with cinnamon if desired",
+          "Serve warm"
         ],
         "nutrition": {
           "calories": 1400,
-          "protein": 53,
-          "carbs": 105,
-          "fat": 86
+          "protein": 38,
+          "carbs": 245,
+          "fat": 38
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "web_search",
+        "url": "https://natashaskitchen.com/how-to-cook-buckwheat-kasha/"
       }
     },
     "snack": {
@@ -119,27 +175,31 @@
       "cuisine": "slavic",
       "targetCalories": 500,
       "recipe": {
-        "title": "Yogurt with honey",
-        "cuisine": "unknown",
+        "title": "Greek Yogurt with Honey",
+        "cuisine": "slavic",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "300g Greek yogurt",
+          "2-3 tablespoons honey",
+          "50g walnuts, chopped",
+          "Optional: 1/2 teaspoon cinnamon",
+          "Optional: fresh berries"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "Place Greek yogurt in a serving bowl",
+          "Drizzle generously with honey",
+          "Top with chopped walnuts",
+          "Sprinkle with cinnamon if desired",
+          "Add fresh berries if liked",
+          "Serve immediately"
         ],
         "nutrition": {
           "calories": 500,
-          "protein": 19,
-          "carbs": 38,
-          "fat": 31
+          "protein": 28,
+          "carbs": 45,
+          "fat": 22
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "web_search",
+        "url": "https://www.mygreekdish.com/recipe/greek-yogurt-with-honey-walnuts-recipe-yiaourti-meli/"
       }
     },
     "dinner": {
@@ -147,27 +207,44 @@
       "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Pelmeni with sour cream",
-        "cuisine": "unknown",
+        "title": "Russian Pelmeni (Meat Dumplings)",
+        "cuisine": "slavic",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "Dough:",
+          "200g all-purpose flour",
+          "1 egg",
+          "1/2 teaspoon salt",
+          "60ml warm water",
+          "Filling:",
+          "400g ground pork and beef mixture",
+          "1 small onion, finely minced",
+          "2 cloves garlic, minced",
+          "Salt and pepper to taste",
+          "To serve:",
+          "200ml sour cream",
+          "Fresh dill, chopped",
+          "Butter (optional)"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "Make dough: mix flour and salt, add egg and water, knead until smooth",
+          "Make filling: mix ground meat, onion, garlic, salt, and pepper",
+          "Roll dough thin, cut into circles with glass or cutter",
+          "Place small spoon of filling in center of each circle",
+          "Fold in half and seal edges, bring corners together to form dumpling shape",
+          "Bring large pot of salted water to boil",
+          "Drop pelmeni in boiling water (don't overcrowd)",
+          "Cook 5-7 minutes until they float to surface",
+          "Remove with slotted spoon",
+          "Serve hot with sour cream, fresh dill, and melted butter"
         ],
         "nutrition": {
           "calories": 2100,
-          "protein": 131,
-          "carbs": 215,
-          "fat": 79
+          "protein": 105,
+          "carbs": 210,
+          "fat": 85
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "web_search",
+        "url": "https://momsdish.com/recipe/76/pelmeni"
       }
     }
   },
@@ -177,27 +254,37 @@
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Oatmeal with honey and nuts",
-        "cuisine": "unknown",
+        "title": "Honey Nut Oatmeal",
+        "cuisine": "slavic",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "100g rolled oats",
+          "400ml milk or water",
+          "1/2 teaspoon salt",
+          "50g mixed nuts (almonds, walnuts, pecans), chopped",
+          "2 tablespoons honey",
+          "1/2 teaspoon cinnamon",
+          "Optional: fresh berries",
+          "Optional: 1 teaspoon butter"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
+          "Bring milk or water and salt to boil in saucepan",
+          "Add oats, reduce heat to medium-low",
+          "Simmer 5-10 minutes until oats are soft and creamy",
+          "Remove from heat",
+          "Stir in honey and cinnamon",
+          "Top with chopped nuts",
+          "Add butter if desired",
+          "Garnish with fresh berries",
           "Serve hot"
         ],
         "nutrition": {
           "calories": 1400,
-          "protein": 53,
-          "carbs": 105,
-          "fat": 86
+          "protein": 35,
+          "carbs": 220,
+          "fat": 45
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "web_search",
+        "url": "https://quisinequeenb.com/honey-nut-oatmeal/"
       }
     },
     "snack": {
@@ -205,27 +292,32 @@
       "cuisine": "slavic",
       "targetCalories": 500,
       "recipe": {
-        "title": "Ryebread with butter",
-        "cuisine": "unknown",
+        "title": "Rye Bread with Butter",
+        "cuisine": "slavic",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "300g rye bread, sliced",
+          "100g unsalted butter, softened",
+          "Optional: 1 teaspoon caraway seeds",
+          "Optional: 1 clove garlic, rubbed on bread",
+          "Salt to taste",
+          "Optional: honey for sweet version"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "Slice rye bread into pieces",
+          "If using garlic, cut clove in half and rub onto bread slices",
+          "Spread generous amount of butter on each slice",
+          "Sprinkle with caraway seeds if desired",
+          "Add pinch of salt",
+          "Can be served plain or lightly toasted"
         ],
         "nutrition": {
           "calories": 500,
-          "protein": 19,
-          "carbs": 38,
-          "fat": 31
+          "protein": 10,
+          "carbs": 60,
+          "fat": 25
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "web_search",
+        "url": "https://alexandracooks.com/2023/04/15/simple-no-knead-rye-bread/"
       }
     },
     "dinner": {
@@ -233,27 +325,47 @@
       "cuisine": "asian",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Pad Thai with shrimp",
-        "cuisine": "unknown",
+        "title": "Shrimp Pad Thai",
+        "cuisine": "asian",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "300g rice noodles (flat, 1/4 inch wide)",
+          "300g shrimp, peeled and deveined",
+          "2 eggs",
+          "3 cloves garlic, minced",
+          "100g bean sprouts",
+          "50g roasted peanuts, crushed",
+          "3 green onions, chopped",
+          "2 tablespoons vegetable oil",
+          "2 tablespoons fish sauce",
+          "2 tablespoons tamarind paste or concentrate",
+          "2 tablespoons brown sugar",
+          "2 tablespoons lime juice",
+          "1 teaspoon chili flakes (adjust to taste)",
+          "Lime wedges for serving",
+          "Fresh cilantro for garnish"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "Soak rice noodles in warm water for 30 minutes, drain",
+          "Make sauce: mix fish sauce, tamarind paste, brown sugar, lime juice, and chili flakes",
+          "Heat oil in wok or large skillet over high heat",
+          "Add shrimp, stir-fry 2-3 minutes until pink, remove from pan",
+          "Add garlic, stir-fry 30 seconds",
+          "Push garlic aside, scramble eggs",
+          "Add noodles to pan, toss to combine",
+          "Add 1/3 cup of sauce, toss continuously",
+          "Add more sauce as needed until noodles are coated and tender",
+          "Add bean sprouts and most of green onions, toss briefly",
+          "Return shrimp to pan, toss to combine",
+          "Serve topped with crushed peanuts, remaining green onions, cilantro, and lime wedges"
         ],
         "nutrition": {
           "calories": 2100,
-          "protein": 131,
-          "carbs": 215,
-          "fat": 79
+          "protein": 85,
+          "carbs": 270,
+          "fat": 65
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "web_search",
+        "url": "https://www.foodandwine.com/recipes/quick-shrimp-pad-thai"
       }
     }
   },
@@ -263,27 +375,39 @@
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Buckwheat porridge with milk and berries",
-        "cuisine": "unknown",
+        "title": "Russian Buckwheat Porridge (Kasha) with Milk",
+        "cuisine": "slavic",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "200g roasted buckwheat groats",
+          "500ml water",
+          "1/2 teaspoon salt",
+          "400ml whole milk",
+          "2 tablespoons butter",
+          "1-2 tablespoons honey or sugar to taste",
+          "150g fresh berries (strawberries, blueberries, raspberries)",
+          "Optional: 30g nuts (almonds, walnuts)",
+          "Optional: 1/2 teaspoon cinnamon"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "Rinse buckwheat groats thoroughly",
+          "Bring water and salt to boil in a saucepan",
+          "Add buckwheat, reduce heat to low, cover",
+          "Simmer 15-20 minutes until water is absorbed and buckwheat is soft",
+          "Remove from heat, let stand covered for 5 minutes",
+          "Add butter to hot buckwheat, stir to melt",
+          "Add warm or cold milk",
+          "Stir in honey or sugar",
+          "Top with fresh berries and nuts",
+          "Sprinkle with cinnamon if desired, serve warm"
         ],
         "nutrition": {
           "calories": 1400,
-          "protein": 53,
-          "carbs": 105,
-          "fat": 86
+          "protein": 40,
+          "carbs": 250,
+          "fat": 35
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "web_search",
+        "url": "https://petersfoodadventures.com/buckwheat-kasha-with-milk/"
       }
     },
     "snack": {
@@ -291,27 +415,34 @@
       "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
-        "title": "Edamame with sea salt",
-        "cuisine": "unknown",
+        "title": "Edamame with Sea Salt",
+        "cuisine": "asian",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "300g edamame pods (frozen)",
+          "1 tablespoon coarse sea salt",
+          "1 tablespoon sesame seeds (optional)",
+          "1 teaspoon sesame oil (optional)",
+          "Water for boiling"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "Bring pot of water to boil",
+          "Add edamame pods, boil 5-6 minutes according to package instructions",
+          "Drain well",
+          "Rinse with cold water to stop cooking",
+          "Pat dry",
+          "Transfer to serving bowl",
+          "Sprinkle generously with coarse sea salt",
+          "Add sesame seeds and drizzle with sesame oil if desired",
+          "Serve warm or cold (eat directly from pods)"
         ],
         "nutrition": {
           "calories": 500,
-          "protein": 19,
-          "carbs": 38,
-          "fat": 31
+          "protein": 35,
+          "carbs": 45,
+          "fat": 15
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "web_search",
+        "url": "https://simplegreensmoothies.com/how-to-make-edamame/"
       }
     },
     "dinner": {
@@ -319,27 +450,45 @@
       "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Borscht with sour cream",
-        "cuisine": "unknown",
+        "title": "Ukrainian Borscht with Sour Cream",
+        "cuisine": "slavic",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "3 medium beets, peeled and grated",
+          "2 medium potatoes, diced",
+          "2 medium carrots, grated",
+          "1 large onion, diced",
+          "1 small head of cabbage, shredded",
+          "400g beef or pork, cubed (optional)",
+          "1.5 liters beef broth or water",
+          "3 tablespoons tomato paste",
+          "2 tablespoons vinegar",
+          "2 tablespoons vegetable oil",
+          "3 cloves garlic, minced",
+          "Fresh dill, chopped",
+          "Salt and pepper to taste",
+          "Sour cream for serving"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "If using meat, brown in oil in large pot",
+          "Add broth, bring to boil, simmer 30 minutes",
+          "In separate pan, sauté onion and carrots in oil until soft",
+          "Add tomato paste, cook 2 minutes",
+          "Add grated beets and vinegar to sauté pan, cook 10 minutes",
+          "Add beets mixture to pot",
+          "Add potatoes, simmer 15 minutes",
+          "Add cabbage, simmer 10 minutes more",
+          "Add garlic, dill, salt and pepper",
+          "Cook 5 more minutes",
+          "Serve hot with a dollop of sour cream and extra dill"
         ],
         "nutrition": {
           "calories": 2100,
-          "protein": 131,
-          "carbs": 215,
-          "fat": 79
+          "protein": 70,
+          "carbs": 240,
+          "fat": 95
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "web_search",
+        "url": "https://ifoodreal.com/ukrainian-borscht/"
       }
     }
   },
@@ -349,27 +498,43 @@
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Scrambled eggs with vegetables",
-        "cuisine": "unknown",
+        "title": "Veggie Egg Scramble",
+        "cuisine": "slavic",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "6 eggs",
+          "2 tablespoons milk or cream",
+          "1 tablespoon butter",
+          "1/2 onion, diced",
+          "1/2 bell pepper, diced",
+          "100g mushrooms, sliced",
+          "1/2 cup spinach, chopped",
+          "Salt and pepper to taste",
+          "Optional: 1/4 cup grated cheese",
+          "Fresh herbs for garnish (chives, parsley)"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "Whisk eggs with milk, salt, and pepper in a bowl",
+          "Heat butter in large non-stick skillet over medium heat",
+          "Add onion and bell pepper, sauté 2-3 minutes",
+          "Add mushrooms, sauté 3-4 minutes until softened",
+          "Add spinach, cook 1 minute until wilted",
+          "Reduce heat to low",
+          "Pour egg mixture over vegetables",
+          "Gently stir with spatula, pushing eggs from edges to center",
+          "Cook until eggs are set but still slightly creamy",
+          "Remove from heat immediately",
+          "Top with grated cheese if desired",
+          "Garnish with fresh herbs",
+          "Serve hot with toast"
         ],
         "nutrition": {
           "calories": 1400,
-          "protein": 53,
-          "carbs": 105,
-          "fat": 86
+          "protein": 75,
+          "carbs": 55,
+          "fat": 95
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "web_search",
+        "url": "https://www.everydayeileen.com/healthy-veggie-egg-scramble/"
       }
     },
     "snack": {
@@ -377,27 +542,39 @@
       "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
-        "title": "Fried tofu cubes",
-        "cuisine": "unknown",
+        "title": "Crispy Fried Tofu Cubes",
+        "cuisine": "asian",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "400g firm tofu",
+          "2 tablespoons cornstarch",
+          "1 teaspoon paprika",
+          "1/2 teaspoon garlic powder",
+          "1/2 teaspoon salt",
+          "1/4 teaspoon black pepper",
+          "3 tablespoons vegetable oil for frying",
+          "Optional: 1 tablespoon soy sauce for seasoning"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "Press tofu between paper towels for 15 minutes to remove excess moisture",
+          "Cut tofu into 1-inch cubes",
+          "In a bowl, mix cornstarch, paprika, garlic powder, salt, and pepper",
+          "Toss tofu cubes in cornstarch mixture to coat evenly",
+          "Heat oil in large skillet or wok over medium-high heat",
+          "Add tofu cubes in single layer (don't overcrowd)",
+          "Fry 3-4 minutes per side until golden and crispy",
+          "Remove and drain on paper towels",
+          "Repeat with remaining tofu",
+          "Optional: drizzle with soy sauce while still hot",
+          "Serve immediately"
         ],
         "nutrition": {
           "calories": 500,
-          "protein": 19,
-          "carbs": 38,
-          "fat": 31
+          "protein": 45,
+          "carbs": 20,
+          "fat": 30
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "web_search",
+        "url": "https://theplantbasedschool.com/fried-tofu/"
       }
     },
     "dinner": {
@@ -405,27 +582,49 @@
       "cuisine": "asian",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Sichuan mapo tofu",
-        "cuisine": "unknown",
+        "title": "Authentic Sichuan Mapo Tofu",
+        "cuisine": "asian",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "400g silken tofu, cubed",
+          "200g ground pork",
+          "3 cloves garlic, minced",
+          "2 tablespoons ginger, minced",
+          "3 green onions, chopped",
+          "3 tablespoons Sichuan chili bean paste (doubanjiang)",
+          "2 tablespoons fermented black beans",
+          "1 tablespoon chili flakes",
+          "1 tablespoon soy sauce",
+          "1 teaspoon sugar",
+          "500ml chicken or vegetable broth",
+          "1 tablespoon cornstarch mixed with 2 tablespoons water",
+          "2 tablespoons vegetable oil",
+          "Fresh cilantro for garnish",
+          "Cooked rice for serving"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "Carefully cut tofu into 1-inch cubes",
+          "Gently blanch tofu in simmering water for 2 minutes, drain carefully",
+          "Heat oil in wok over high heat",
+          "Add ground pork, stir-fry until browned",
+          "Add garlic and ginger, stir-fry 30 seconds",
+          "Add Sichuan chili bean paste, fermented black beans, and chili flakes",
+          "Stir-fry 1 minute until fragrant",
+          "Add broth, bring to boil",
+          "Add tofu cubes, gently fold in (don't stir vigorously)",
+          "Simmer 3-4 minutes",
+          "Add soy sauce and sugar",
+          "Stir in cornstarch slurry, cook until sauce thickens",
+          "Garnish with green onions and cilantro",
+          "Serve hot over steamed rice"
         ],
         "nutrition": {
           "calories": 2100,
-          "protein": 131,
-          "carbs": 215,
-          "fat": 79
+          "protein": 85,
+          "carbs": 180,
+          "fat": 130
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "web_search",
+        "url": "https://thewoksoflife.com/ma-po-tofu-real-deal/"
       }
     }
   },
@@ -435,27 +634,39 @@
       "cuisine": "asian",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Congee with egg and scallions",
-        "cuisine": "unknown",
+        "title": "Egg Drop Congee",
+        "cuisine": "asian",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "200g short-grain white rice",
+          "2 liters water or chicken broth",
+          "4 eggs, beaten",
+          "3 tablespoons soy sauce",
+          "1 tablespoon sesame oil",
+          "1 thumb-sized piece of ginger, julienned",
+          "4-5 green onions (scallions), chopped",
+          "1/2 teaspoon white pepper",
+          "Salt to taste"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "Rinse rice thoroughly",
+          "Bring water or broth to boil in large pot",
+          "Add rice, reduce heat to low",
+          "Simmer covered for 1 hour, stirring occasionally",
+          "Add ginger, cook 15 more minutes",
+          "Season with soy sauce, sesame oil, salt, and white pepper",
+          "Stir beaten eggs slowly into the hot congee in a thin stream",
+          "Stir gently for 30 seconds to create egg ribbons",
+          "Remove from heat immediately",
+          "Serve hot topped with green onions"
         ],
         "nutrition": {
           "calories": 1400,
-          "protein": 53,
-          "carbs": 105,
-          "fat": 86
+          "protein": 55,
+          "carbs": 260,
+          "fat": 25
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "web_search",
+        "url": "https://thewoksoflife.com/20-minute-congee-recipe/"
       }
     },
     "snack": {
@@ -463,27 +674,31 @@
       "cuisine": "slavic",
       "targetCalories": 500,
       "recipe": {
-        "title": "Apple slices with cheese",
-        "cuisine": "unknown",
+        "title": "Apple Slices with Cheese",
+        "cuisine": "slavic",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "300g apples (Granny Smith or any tart variety)",
+          "100g sharp cheddar cheese, sliced",
+          "Optional: 4 whole grain crackers",
+          "Optional: 1/2 teaspoon cinnamon",
+          "Optional: 1 teaspoon honey"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "Wash and slice apples into wedges",
+          "Slice cheese into pieces similar size to apple slices",
+          "Arrange apple and cheese slices on a plate",
+          "Optional: sprinkle with cinnamon",
+          "Optional: drizzle with honey",
+          "Serve immediately with crackers if desired"
         ],
         "nutrition": {
           "calories": 500,
-          "protein": 19,
-          "carbs": 38,
-          "fat": 31
+          "protein": 18,
+          "carbs": 60,
+          "fat": 25
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "web_search",
+        "url": "https://www.food.com/recipe/apple-and-cheese-snack-105454"
       }
     },
     "dinner": {
@@ -491,27 +706,43 @@
       "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Chicken soup with vegetables",
-        "cuisine": "unknown",
+        "title": "Chicken Vegetable Soup",
+        "cuisine": "slavic",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "500g chicken breast or thighs, cubed",
+          "3 medium potatoes, diced",
+          "2 large carrots, diced",
+          "2 stalks celery, diced",
+          "1 large onion, diced",
+          "2 tablespoons vegetable oil",
+          "1.5 liters chicken broth",
+          "1 bay leaf",
+          "1 teaspoon dried thyme",
+          "Salt and pepper to taste",
+          "Fresh parsley or dill for garnish"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
+          "Heat oil in large pot over medium heat",
+          "Add chicken pieces, brown on all sides",
+          "Remove chicken from pot",
+          "Add onions, carrots, and celery to pot",
+          "Sauté 5-7 minutes until softened",
+          "Return chicken to pot",
+          "Add chicken broth, potatoes, bay leaf, and thyme",
+          "Bring to boil, reduce heat to low",
+          "Simmer 20-25 minutes until vegetables and chicken are cooked",
+          "Season with salt and pepper",
+          "Remove bay leaf, garnish with fresh parsley or dill",
           "Serve hot"
         ],
         "nutrition": {
           "calories": 2100,
-          "protein": 131,
-          "carbs": 215,
-          "fat": 79
+          "protein": 130,
+          "carbs": 180,
+          "fat": 75
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "web_search",
+        "url": "https://thecozycook.com/chicken-vegetable-soup/"
       }
     }
   },
@@ -521,27 +752,37 @@
       "cuisine": "asian",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Miso soup with tofu",
-        "cuisine": "unknown",
+        "title": "Miso Soup with Tofu and Wakame",
+        "cuisine": "asian",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "1 liter dashi (Japanese stock) or vegetable broth",
+          "3-4 tablespoons white miso paste",
+          "200g silken tofu, cubed",
+          "10g dried wakame seaweed",
+          "2 green onions, finely chopped",
+          "Optional: 1/2 teaspoon sesame oil"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "Bring dashi or vegetable broth to a gentle simmer",
+          "Soak wakame seaweed in water for 5 minutes, drain",
+          "Cut tofu into small cubes",
+          "Add wakame to the broth, simmer 1 minute",
+          "Add tofu cubes, simmer gently for 2 minutes",
+          "Remove pot from heat",
+          "Place miso paste in a small ladle, add some broth to dissolve",
+          "Stir dissolved miso back into the pot (do not boil miso or it loses nutrients)",
+          "Gently stir to combine",
+          "Serve immediately topped with green onions",
+          "Optional: drizzle with sesame oil"
         ],
         "nutrition": {
           "calories": 1400,
-          "protein": 53,
-          "carbs": 105,
-          "fat": 86
+          "protein": 45,
+          "carbs": 180,
+          "fat": 40
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "web_search",
+        "url": "https://www.justonecookbook.com/homemade-miso-soup/"
       }
     },
     "snack": {
@@ -549,27 +790,36 @@
       "cuisine": "slavic",
       "targetCalories": 500,
       "recipe": {
-        "title": "Cottage cheese with herbs",
-        "cuisine": "unknown",
+        "title": "Savory Cottage Cheese with Fresh Herbs",
+        "cuisine": "slavic",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "300g cottage cheese",
+          "2 tablespoons fresh dill, chopped",
+          "2 tablespoons fresh chives, chopped",
+          "1 tablespoon fresh parsley, chopped",
+          "1 tablespoon sour cream or Greek yogurt",
+          "1/2 teaspoon salt",
+          "1/4 teaspoon black pepper",
+          "Optional: 1 tablespoon olive oil",
+          "Optional: 1 clove garlic, minced"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "Place cottage cheese in a bowl",
+          "Add chopped fresh herbs",
+          "Add sour cream or Greek yogurt",
+          "Season with salt and pepper",
+          "Add olive oil and garlic if using",
+          "Mix well to combine",
+          "Serve with bread, crackers, or vegetables"
         ],
         "nutrition": {
           "calories": 500,
-          "protein": 19,
-          "carbs": 38,
-          "fat": 31
+          "protein": 50,
+          "carbs": 25,
+          "fat": 22
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "web_search",
+        "url": "https://food52.com/story/24244-cottage-cheese-snacks-ideas"
       }
     },
     "dinner": {
@@ -577,27 +827,56 @@
       "cuisine": "asian",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Vietnamese pho",
-        "cuisine": "unknown",
+        "title": "Vietnamese Pho Soup",
+        "cuisine": "asian",
         "ingredients": [
-          "Main ingredients vary by recipe",
-          "Seasonings to taste",
-          "Cook according to recipe instructions"
+          "Broth:",
+          "500g beef brisket or oxtail",
+          "2 onions, halved and charred",
+          "2 inches ginger, charred",
+          "3 star anise",
+          "1 cinnamon stick",
+          "3-4 cloves",
+          "1 cardamom pod",
+          "1 tablespoon coriander seeds",
+          "2 tablespoons fish sauce",
+          "1 tablespoon sugar",
+          "2.5 liters water",
+          "Noodles and toppings:",
+          "300g rice noodles (pho)",
+          "200g beef sirloin, paper-thin sliced",
+          "200g bean sprouts",
+          "2 green onions, sliced",
+          "Fresh basil",
+          "Fresh cilantro",
+          "Lime wedges",
+          "Thai chilies",
+          "Hoisin sauce (optional)",
+          "Sriracha (optional)"
         ],
         "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
+          "Char onion and ginger over open flame or under broiler until blackened",
+          "Place beef in large pot with water, bring to boil",
+          "Skim off foam as it rises",
+          "Add charred onion, ginger, and all spices",
+          "Simmer uncovered 3-4 hours",
+          "Add fish sauce and sugar, simmer 30 more minutes",
+          "Strain broth through fine mesh",
+          "Season broth with fish sauce to taste",
+          "Cook rice noodles according to package instructions",
+          "Arrange noodles in bowls",
+          "Top with thin beef slices (broth will cook it)",
+          "Ladle hot broth over noodles and beef",
+          "Serve with bean sprouts, herbs, lime, chilies, hoisin, and sriracha on the side"
         ],
         "nutrition": {
           "calories": 2100,
-          "protein": 131,
-          "carbs": 215,
-          "fat": 79
+          "protein": 120,
+          "carbs": 230,
+          "fat": 70
         },
-        "source": "fallback_template",
-        "url": null
+        "source": "web_search",
+        "url": "https://www.recipetineats.com/vietnamese-pho-recipe/"
       }
     }
   }
