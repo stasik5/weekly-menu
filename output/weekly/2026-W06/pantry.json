@@ -1,79 +1,472 @@
 {
-  "week": "2026-W06",
-  "pantry": {
-    "inStock": [
+  "cook according to recipe instruction": {
+    "emoji": "📦",
+    "name": "Cook according to recipe instructions",
+    "normalizedName": "cook according to recipe instruction",
+    "total": 0,
+    "unit": "",
+    "remaining": 0,
+    "dailyUsage": [
       {
-        "category": "Spices & Herbs",
-        "items": [
-          { "name": "Salt", "quantity": "200g", "notes": "Always keep stocked" },
-          { "name": "Black Pepper", "quantity": "50g", "notes": "Whole or ground" },
-          { "name": "Cumin", "quantity": "30g", "notes": "Ground" },
-          { "name": "Paprika", "quantity": "30g", "notes": "Sweet or smoked" },
-          { "name": "Coriander", "quantity": "30g", "notes": "Ground" },
-          { "name": "Cayenne Pepper", "quantity": "15g", "notes": "Optional for heat" },
-          { "name": "Cinnamon", "quantity": "30g", "notes": "Ground" },
-          { "name": "Italian Herbs", "quantity": "40g", "notes": "Dried mix" },
-          { "name": "Turmeric", "quantity": "20g", "notes": "Ground" },
-          { "name": "Red Pepper Flakes", "quantity": "15g", "notes": "Optional" },
-          { "name": "Garam Masala", "quantity": "40g", "notes": "Indian spice blend" },
-          { "name": "Bay Leaves", "quantity": "10 leaves", "notes": "Dried" }
-        ]
+        "day": "Monday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Oatmeal with honey and nuts"
       },
       {
-        "category": "Oils & Fats",
-        "items": [
-          { "name": "Vegetable Oil", "quantity": "500ml", "notes": "Canola, sunflower, or neutral oil" },
-          { "name": "Olive Oil", "quantity": "500ml", "notes": "Extra virgin preferred" },
-          { "name": "Sesame Oil", "quantity": "100ml", "notes": "Toasted, for Asian dishes" },
-          { "name": "Coconut Oil", "quantity": "200g", "notes": "For granola" },
-          { "name": "Butter", "quantity": "500g", "notes": "Keep refrigerated" }
-        ]
+        "day": "Monday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Fried tofu cubes"
       },
       {
-        "category": "Pantry Staples",
-        "items": [
-          { "name": "Rice (Jasmine)", "quantity": "1kg", "notes": "For congee and sides" },
-          { "name": "Brown Rice", "quantity": "500g", "notes": "Preferably cooked and day-old for fried rice" },
-          { "name": "Basmati Rice", "quantity": "500g", "notes": "For butter chicken" },
-          { "name": "Egg Noodles", "quantity": "500g", "notes": "Dried" },
-          { "name": "Rice Noodles", "quantity": "400g", "notes": "For pad thai" },
-          { "name": "Lasagna Noodles", "quantity": "500g", "notes": "Dried" },
-          { "name": "Flour (All-purpose)", "quantity": "2kg", "notes": "For doughs and thickeners" },
-          { "name": "Sugar (White)", "quantity": "500g", "notes": "Regular granulated" },
-          { "name": "Brown Sugar", "quantity": "200g", "notes": "For Asian sauces" },
-          { "name": "Honey", "quantity": "300g", "notes": "For granola and sauces" },
-          { "name": "Rolled Oats", "quantity": "500g", "notes": "For granola" },
-          { "name": "Cornstarch", "quantity": "100g", "notes": "For thickening sauces" },
-          { "name": "Vanilla Extract", "quantity": "50ml", "notes": "Pure" }
-        ]
+        "day": "Monday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Fried eggs with bread"
       },
       {
-        "category": "Sauces & Condiments",
-        "items": [
-          { "name": "Soy Sauce", "quantity": "500ml", "notes": "Low-sodium preferred" },
-          { "name": "Fish Sauce", "quantity": "200ml", "notes": "For Asian dishes" },
-          { "name": "Oyster Sauce", "quantity": "200ml", "notes": "For pad thai" },
-          { "name": "Rice Vinegar", "quantity": "200ml", "notes": "Asian cooking" },
-          { "name": "Tomato Sauce", "quantity": "2 cans (800g each)", "notes": "For lasagna and pasta" },
-          { "name": "Tomato Paste", "quantity": "2 tubes (100g each)", "notes": "For soups and stroganoff" },
-          { "name": "Dijon Mustard", "quantity": "200g", "notes": "For stroganoff" },
-          { "name": "Tamarind Paste", "quantity": "100g", "notes": "For pad thai" },
-          { "name": "Tomato Puree", "quantity": "1 can (400g)", "notes": "For butter chicken" },
-          { "name": "Diced Tomatoes", "quantity": "2 cans (400g each)", "notes": "Canned for soups" }
-        ]
+        "day": "Tuesday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Scrambled eggs with vegetables"
       },
       {
-        "category": "Other",
-        "items": [
-          { "name": "Eggs", "quantity": "24", "notes": "Large" },
-          { "name": "Garlic", "quantity": "5 heads", "notes": "Fresh" },
-          { "name": "Onions", "quantity": "1kg", "notes": "Yellow or white" },
-          { "name": "Ginger (Fresh)", "quantity": "150g", "notes": "Root" },
-          { "name": "Green Onions", "quantity": "2 bunches", "notes": "Fresh" },
-          { "name": "Fresh Cilantro", "quantity": "2 bunches", "notes": "Optional" },
-          { "name": "Fresh Dill", "quantity": "2 bunches", "notes": "For Slavic dishes" },
-          { "name": "Fresh Parsley", "quantity": "1 bunch", "notes": "Optional" }
-        ]
+        "day": "Tuesday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Green tea cookies"
+      },
+      {
+        "day": "Tuesday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Pasta carbonara"
+      },
+      {
+        "day": "Wednesday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Congee with egg and scallions"
+      },
+      {
+        "day": "Wednesday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Banana with peanut butter"
+      },
+      {
+        "day": "Wednesday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Shashlik (grilled meat) with salad"
+      },
+      {
+        "day": "Thursday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Blini with cheese filling"
+      },
+      {
+        "day": "Thursday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Cottage cheese with herbs"
+      },
+      {
+        "day": "Thursday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Borscht with sour cream"
+      },
+      {
+        "day": "Friday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Kasha with butter and milk"
+      },
+      {
+        "day": "Friday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Seaweed snacks"
+      },
+      {
+        "day": "Friday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Japanese ramen"
+      },
+      {
+        "day": "Saturday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Buckwheat porridge with milk and berries"
+      },
+      {
+        "day": "Saturday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Pickled ginger and daikon"
+      },
+      {
+        "day": "Saturday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Korean bibimbap"
+      },
+      {
+        "day": "Sunday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Fried eggs with bread"
+      },
+      {
+        "day": "Sunday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Mango slices"
+      },
+      {
+        "day": "Sunday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Pelmeni with sour cream"
+      }
+    ]
+  },
+  "main ingredients vary by recipe": {
+    "emoji": "📦",
+    "name": "Main ingredients vary by recipe",
+    "normalizedName": "main ingredients vary by recipe",
+    "total": 0,
+    "unit": "",
+    "remaining": 0,
+    "dailyUsage": [
+      {
+        "day": "Monday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Oatmeal with honey and nuts"
+      },
+      {
+        "day": "Monday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Fried tofu cubes"
+      },
+      {
+        "day": "Monday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Fried eggs with bread"
+      },
+      {
+        "day": "Tuesday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Scrambled eggs with vegetables"
+      },
+      {
+        "day": "Tuesday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Green tea cookies"
+      },
+      {
+        "day": "Tuesday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Pasta carbonara"
+      },
+      {
+        "day": "Wednesday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Congee with egg and scallions"
+      },
+      {
+        "day": "Wednesday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Banana with peanut butter"
+      },
+      {
+        "day": "Wednesday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Shashlik (grilled meat) with salad"
+      },
+      {
+        "day": "Thursday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Blini with cheese filling"
+      },
+      {
+        "day": "Thursday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Cottage cheese with herbs"
+      },
+      {
+        "day": "Thursday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Borscht with sour cream"
+      },
+      {
+        "day": "Friday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Kasha with butter and milk"
+      },
+      {
+        "day": "Friday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Seaweed snacks"
+      },
+      {
+        "day": "Friday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Japanese ramen"
+      },
+      {
+        "day": "Saturday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Buckwheat porridge with milk and berries"
+      },
+      {
+        "day": "Saturday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Pickled ginger and daikon"
+      },
+      {
+        "day": "Saturday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Korean bibimbap"
+      },
+      {
+        "day": "Sunday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Fried eggs with bread"
+      },
+      {
+        "day": "Sunday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Mango slices"
+      },
+      {
+        "day": "Sunday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Pelmeni with sour cream"
+      }
+    ]
+  },
+  "seasonings to taste": {
+    "emoji": "📦",
+    "name": "Seasonings to taste",
+    "normalizedName": "seasonings to taste",
+    "total": 0,
+    "unit": "",
+    "remaining": 0,
+    "dailyUsage": [
+      {
+        "day": "Monday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Oatmeal with honey and nuts"
+      },
+      {
+        "day": "Monday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Fried tofu cubes"
+      },
+      {
+        "day": "Monday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Fried eggs with bread"
+      },
+      {
+        "day": "Tuesday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Scrambled eggs with vegetables"
+      },
+      {
+        "day": "Tuesday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Green tea cookies"
+      },
+      {
+        "day": "Tuesday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Pasta carbonara"
+      },
+      {
+        "day": "Wednesday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Congee with egg and scallions"
+      },
+      {
+        "day": "Wednesday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Banana with peanut butter"
+      },
+      {
+        "day": "Wednesday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Shashlik (grilled meat) with salad"
+      },
+      {
+        "day": "Thursday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Blini with cheese filling"
+      },
+      {
+        "day": "Thursday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Cottage cheese with herbs"
+      },
+      {
+        "day": "Thursday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Borscht with sour cream"
+      },
+      {
+        "day": "Friday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Kasha with butter and milk"
+      },
+      {
+        "day": "Friday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Seaweed snacks"
+      },
+      {
+        "day": "Friday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Japanese ramen"
+      },
+      {
+        "day": "Saturday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Buckwheat porridge with milk and berries"
+      },
+      {
+        "day": "Saturday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Pickled ginger and daikon"
+      },
+      {
+        "day": "Saturday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Korean bibimbap"
+      },
+      {
+        "day": "Sunday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Fried eggs with bread"
+      },
+      {
+        "day": "Sunday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Mango slices"
+      },
+      {
+        "day": "Sunday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Pelmeni with sour cream"
       }
     ]
   }

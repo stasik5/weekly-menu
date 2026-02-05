@@ -1,499 +1,604 @@
 {
-  "week": "2026-W06",
-  "recipes": [
-    {
-      "id": "syrniki",
-      "name": "Syrniki (Russian Cheese Pancakes)",
+  "Monday": {
+    "breakfast": {
+      "name": "Oatmeal with honey and nuts",
       "cuisine": "slavic",
-      "category": "breakfast",
-      "prepTime": 20,
-      "cookTime": 15,
-      "servings": 4,
-      "calories": 450,
-      "ingredients": [
-        { "name": "farmer's cheese (tvorog)", "amount": 500, "unit": "g" },
-        { "name": "eggs", "amount": 2, "unit": "" },
-        { "name": "flour", "amount": 45, "unit": "g" },
-        { "name": "sugar", "amount": 25, "unit": "g" },
-        { "name": "salt", "amount": 1.25, "unit": "g" },
-        { "name": "vegetable oil", "amount": 60, "unit": "ml" },
-        { "name": "sour cream", "amount": 200, "unit": "g" },
-        { "name": "berries or jam", "amount": 100, "unit": "g" }
-      ],
-      "instructions": "Mix cheese, eggs, flour, sugar, and salt until well combined. Form into patties about 2cm thick. Dust with flour on both sides. Heat oil in a skillet over medium-low heat. Fry patties 2-3 minutes per side until golden brown. Drain on paper towels. Serve warm with sour cream and fresh berries or jam."
+      "targetCalories": 1400,
+      "recipe": {
+        "title": "Oatmeal with honey and nuts",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
+        },
+        "source": "fallback_template",
+        "url": null
+      }
     },
-    {
-      "id": "chicken-fried-rice",
-      "name": "Chicken Fried Rice",
+    "snack": {
+      "name": "Fried tofu cubes",
       "cuisine": "asian",
-      "category": "lunch",
-      "prepTime": 15,
-      "cookTime": 15,
-      "servings": 4,
-      "calories": 550,
-      "ingredients": [
-        { "name": "brown rice", "amount": 300, "unit": "g" },
-        { "name": "chicken breast", "amount": 300, "unit": "g" },
-        { "name": "eggs", "amount": 3, "unit": "" },
-        { "name": "frozen peas and carrots", "amount": 150, "unit": "g" },
-        { "name": "green onions", "amount": 3, "unit": "stalks" },
-        { "name": "garlic", "amount": 3, "unit": "cloves" },
-        { "name": "soy sauce", "amount": 60, "unit": "ml" },
-        { "name": "sesame oil", "amount": 15, "unit": "ml" },
-        { "name": "vegetable oil", "amount": 30, "unit": "ml" },
-        { "name": "salt", "amount": 3, "unit": "g" },
-        { "name": "pepper", "amount": 1, "unit": "g" }
-      ],
-      "instructions": "Use day-old cold rice for best results. Dice chicken into small 1cm cubes. Heat wok or large skillet over medium-high heat with 1 tbsp vegetable oil and 1/2 tsp sesame oil. Season chicken with salt and pepper, sear until cooked through (5-6 min), set aside. Add remaining oil, stir-fry vegetables and garlic for 1 min. Push vegetables to edges, crack eggs in center and scramble. Return chicken to wok with rice. Add soy sauce and remaining sesame oil. Toss everything together until well coated and heated through. Serve with Sriracha if desired."
+      "targetCalories": 500,
+      "recipe": {
+        "title": "Fried tofu cubes",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
+        },
+        "source": "fallback_template",
+        "url": null
+      }
     },
-    {
-      "id": "beef-stroganoff",
-      "name": "Beef Stroganoff",
+    "dinner": {
+      "name": "Fried eggs with bread",
       "cuisine": "slavic",
-      "category": "dinner",
-      "prepTime": 20,
-      "cookTime": 25,
-      "servings": 4,
-      "calories": 650,
-      "ingredients": [
-        { "name": "beef sirloin or rib eye", "amount": 500, "unit": "g" },
-        { "name": "mushrooms", "amount": 250, "unit": "g" },
-        { "name": "beef broth", "amount": 480, "unit": "ml" },
-        { "name": "sour cream", "amount": 240, "unit": "g" },
-        { "name": "flour", "amount": 16, "unit": "g" },
-        { "name": "onion", "amount": 1, "unit": "large" },
-        { "name": "butter", "amount": 42, "unit": "g" },
-        { "name": "Dijon mustard", "amount": 15, "unit": "ml" },
-        { "name": "egg noodles", "amount": 300, "unit": "g" },
-        { "name": "salt", "amount": 4, "unit": "g" },
-        { "name": "pepper", "amount": 2, "unit": "g" }
-      ],
-      "instructions": "Slice beef into 2cm strips against the grain. Season with salt and pepper. Heat butter in a large skillet over high heat. Sear beef strips quickly (30 seconds per side) - they should still be raw inside. Remove beef and set aside. Reduce heat to medium, add sliced mushrooms and diced onion. Cook until softened, about 5 minutes. Sprinkle flour over vegetables, stir to coat. Add beef broth, bring to simmer. Return beef to pan with any accumulated juices. Simmer 3-4 minutes. Remove from heat, stir in sour cream and Dijon mustard. Serve immediately over cooked egg noodles. Do not boil after adding sour cream or it may separate."
-    },
-    {
-      "id": "congee",
-      "name": "Congee (Rice Porridge)",
-      "cuisine": "asian",
-      "category": "breakfast",
-      "prepTime": 5,
-      "cookTime": 90,
-      "servings": 4,
-      "calories": 350,
-      "ingredients": [
-        { "name": "jasmine rice", "amount": 200, "unit": "g" },
-        { "name": "water or chicken broth", "amount": 2.4, "unit": "liters" },
-        { "name": "ginger", "amount": 25, "unit": "g" },
-        { "name": "green onions", "amount": 2, "unit": "stalks" },
-        { "name": "soy sauce", "amount": 30, "unit": "ml" },
-        { "name": "sesame oil", "amount": 5, "unit": "ml" },
-        { "name": "eggs", "amount": 2, "unit": "" },
-        { "name": "fresh cilantro", "amount": 10, "unit": "g" }
-      ],
-      "instructions": "Rinse rice thoroughly until water runs clear. Combine rice and water/broth in a large pot. Add sliced ginger. Bring to a boil over high heat. Reduce heat to low, cover, and simmer for 1-1.5 hours, stirring occasionally to prevent sticking. Rice should break down completely into a creamy porridge. Meanwhile, soft-boil eggs for 6-7 minutes. When congee reaches desired consistency, remove ginger. Serve hot in bowls topped with halved eggs, sliced green onions, cilantro, a drizzle of soy sauce and sesame oil."
-    },
-    {
-      "id": "borscht",
-      "name": "Borscht",
-      "cuisine": "slavic",
-      "category": "lunch",
-      "prepTime": 30,
-      "cookTime": 45,
-      "servings": 6,
-      "calories": 400,
-      "ingredients": [
-        { "name": "beets", "amount": 600, "unit": "g" },
-        { "name": "cabbage", "amount": 300, "unit": "g" },
-        { "name": "beef broth", "amount": 1.5, "unit": "liters" },
-        { "name": "onion", "amount": 1, "unit": "medium" },
-        { "name": "carrots", "amount": 200, "unit": "g" },
-        { "name": "potatoes", "amount": 300, "unit": "g" },
-        { "name": "garlic", "amount": 3, "unit": "cloves" },
-        { "name": "tomato paste", "amount": 30, "unit": "g" },
-        { "name": "vinegar", "amount": 15, "unit": "ml" },
-        { "name": "sour cream", "amount": 200, "unit": "g" },
-        { "name": "fresh dill", "amount": 10, "unit": "g" },
-        { "name": "salt", "amount": 6, "unit": "g" },
-        { "name": "pepper", "amount": 2, "unit": "g" },
-        { "name": "vegetable oil", "amount": 30, "unit": "ml" }
-      ],
-      "instructions": "Peel and grate beets and carrots. Dice onion. Peel and cube potatoes. Shred cabbage. Heat oil in a large pot, sauté onion until translucent. Add grated beets, carrots, and tomato paste, cook 5 min. Add beef broth and potatoes, bring to boil, reduce heat, simmer 15 min. Add shredded cabbage, cook 10 more min. Add minced garlic, vinegar, salt and pepper. Simmer 5 min. Serve hot with a generous dollop of sour cream and fresh dill."
-    },
-    {
-      "id": "pad-thai",
-      "name": "Pad Thai",
-      "cuisine": "asian",
-      "category": "dinner",
-      "prepTime": 20,
-      "cookTime": 15,
-      "servings": 4,
-      "calories": 600,
-      "ingredients": [
-        { "name": "rice noodles", "amount": 300, "unit": "g" },
-        { "name": "chicken breast", "amount": 300, "unit": "g" },
-        { "name": "eggs", "amount": 2, "unit": "" },
-        { "name": "bean sprouts", "amount": 150, "unit": "g" },
-        { "name": "green onions", "amount": 4, "unit": "stalks" },
-        { "name": "peanuts", "amount": 50, "unit": "g" },
-        { "name": "fish sauce", "amount": 45, "unit": "ml" },
-        { "name": "oyster sauce", "amount": 30, "unit": "ml" },
-        { "name": "tamarind paste", "amount": 30, "unit": "g" },
-        { "name": "brown sugar", "amount": 25, "unit": "g" },
-        { "name": "garlic", "amount": 4, "unit": "cloves" },
-        { "name": "lime", "amount": 2, "unit": "" },
-        { "name": "vegetable oil", "amount": 45, "unit": "ml" }
-      ],
-      "instructions": "Soak rice noodles in warm water for 30 min until soft, then drain. Mix fish sauce, oyster sauce, tamarind paste, brown sugar, and 2 tbsp water for Pad Thai sauce. Cut chicken into small strips. Heat wok over high heat with 2 tbsp oil. Stir-fry chicken until cooked through, set aside. Add more oil, sauté minced garlic. Push garlic aside, scramble eggs. Add noodles and Pad Thai sauce, toss until noodles are coated and softened. Add bean sprouts and sliced green onions, toss 1 min. Serve topped with crushed peanuts and lime wedges."
-    },
-    {
-      "id": "shakshuka",
-      "name": "Shakshuka",
-      "cuisine": "slavic",
-      "category": "breakfast",
-      "prepTime": 10,
-      "cookTime": 20,
-      "servings": 4,
-      "calories": 400,
-      "ingredients": [
-        { "name": "eggs", "amount": 4, "unit": "" },
-        { "name": "tomatoes", "amount": 4, "unit": "medium" },
-        { "name": "bell pepper", "amount": 1, "unit": "large" },
-        { "name": "onion", "amount": 1, "unit": "large" },
-        { "name": "garlic", "amount": 4, "unit": "cloves" },
-        { "name": "tomato sauce", "amount": 120, "unit": "ml" },
-        { "name": "cumin", "amount": 2, "unit": "g" },
-        { "name": "paprika", "amount": 2, "unit": "g" },
-        { "name": "coriander", "amount": 2, "unit": "g" },
-        { "name": "cayenne pepper", "amount": 0.5, "unit": "g" },
-        { "name": "olive oil", "amount": 30, "unit": "ml" },
-        { "name": "fresh parsley", "amount": 10, "unit": "g" },
-        { "name": "salt", "amount": 4, "unit": "g" },
-        { "name": "pepper", "amount": 1, "unit": "g" }
-      ],
-      "instructions": "Dice onion and bell pepper. Mince garlic and chop parsley. Heat olive oil in a large skillet over medium heat. Sauté onion and bell pepper until softened, about 5 min. Add garlic, cumin, paprika, coriander, and cayenne, cook 1 min until fragrant. Add diced tomatoes and tomato sauce, season with salt and pepper. Simmer 10 min until sauce thickens. Make 4 wells in the sauce, crack an egg into each well. Cover and cook 5-7 min until eggs are set to your liking. Garnish with fresh parsley and serve with crusty bread."
-    },
-    {
-      "id": "vegetable-stir-fry",
-      "name": "Vegetable Stir Fry",
-      "cuisine": "asian",
-      "category": "lunch",
-      "prepTime": 15,
-      "cookTime": 10,
-      "servings": 4,
-      "calories": 450,
-      "ingredients": [
-        { "name": "broccoli", "amount": 200, "unit": "g" },
-        { "name": "carrots", "amount": 200, "unit": "g" },
-        { "name": "bell peppers", "amount": 2, "unit": "" },
-        { "name": "snap peas", "amount": 100, "unit": "g" },
-        { "name": "garlic", "amount": 3, "unit": "cloves" },
-        { "name": "ginger", "amount": 25, "unit": "g" },
-        { "name": "soy sauce", "amount": 45, "unit": "ml" },
-        { "name": "sesame oil", "amount": 30, "unit": "ml" },
-        { "name": "rice vinegar", "amount": 15, "unit": "ml" },
-        { "name": "honey", "amount": 20, "unit": "g" },
-        { "name": "cornstarch", "amount": 3, "unit": "g" },
-        { "name": "vegetable oil", "amount": 30, "unit": "ml" },
-        { "name": "red pepper flakes", "amount": 0.5, "unit": "g" }
-      ],
-      "instructions": "Cut broccoli into florets, slice carrots and bell peppers into strips. Mix soy sauce, sesame oil, rice vinegar, honey, and cornstarch for the stir-fry sauce. Heat vegetable oil in a wok or large skillet over high heat. Add broccoli, carrots, and bell peppers, stir-fry 3-4 min until crisp-tender. Add snap peas, cook 1 more min. Add minced garlic and ginger, cook 30 seconds. Pour sauce over vegetables, toss until sauce thickens and coats everything. Serve over rice or noodles, garnished with red pepper flakes."
-    },
-    {
-      "id": "pierogi",
-      "name": "Pierogi (Polish Dumplings)",
-      "cuisine": "slavic",
-      "category": "dinner",
-      "prepTime": 45,
-      "cookTime": 20,
-      "servings": 4,
-      "calories": 550,
-      "ingredients": [
-        { "name": "flour", "amount": 400, "unit": "g" },
-        { "name": "water", "amount": 240, "unit": "ml" },
-        { "name": "eggs", "amount": 2, "unit": "" },
-        { "name": "salt", "amount": 3, "unit": "g" },
-        { "name": "potatoes", "amount": 800, "unit": "g" },
-        { "name": "farmer's cheese", "amount": 200, "unit": "g" },
-        { "name": "onion", "amount": 1, "unit": "large" },
-        { "name": "butter", "amount": 56, "unit": "g" },
-        { "name": "sour cream", "amount": 200, "unit": "g" },
-        { "name": "pepper", "amount": 1, "unit": "g" }
-      ],
-      "instructions": "For dough: Mix flour and salt. Add water and eggs, knead until smooth. Cover and rest 30 min. For filling: Boil and mash potatoes. Dice onion and sauté in 2 tbsp butter until golden. Mix potatoes with farmer's cheese, fried onion, salt and pepper. Roll dough thin on floured surface. Cut circles with a glass or cutter. Place filling in center, fold over, seal edges tightly with fork. Boil in salted water 3-4 min until they float. Fry pierogi in remaining butter until golden on both sides. Serve with sour cream."
-    },
-    {
-      "id": "cabbage-soup",
-      "name": "Cabbage Soup",
-      "cuisine": "slavic",
-      "category": "lunch",
-      "prepTime": 15,
-      "cookTime": 30,
-      "servings": 6,
-      "calories": 350,
-      "ingredients": [
-        { "name": "green cabbage", "amount": 500, "unit": "g" },
-        { "name": "onion", "amount": 1, "unit": "large" },
-        { "name": "carrots", "amount": 200, "unit": "g" },
-        { "name": "celery", "amount": 2, "unit": "stalks" },
-        { "name": "diced tomatoes", "amount": 400, "unit": "g" },
-        { "name": "garlic", "amount": 4, "unit": "cloves" },
-        { "name": "vegetable or chicken broth", "amount": 1.5, "unit": "liters" },
-        { "name": "bay leaf", "amount": 1, "unit": "" },
-        { "name": "vegetable oil", "amount": 30, "unit": "ml" },
-        { "name": "salt", "amount": 5, "unit": "g" },
-        { "name": "pepper", "amount": 1, "unit": "g" }
-      ],
-      "instructions": "Chop cabbage into thin strips. Dice onion, carrots, and celery. Mince garlic. Heat oil in a large pot over medium heat. Sauté onion, carrots, and celery for 5 min. Add garlic, cook 1 min. Add cabbage and canned diced tomatoes, stir to combine. Pour in broth, add bay leaf. Bring to boil, reduce heat, cover and simmer 20-25 min until vegetables are tender. Season with salt and pepper. Remove bay leaf before serving."
-    },
-    {
-      "id": "kung-pao-chicken",
-      "name": "Kung Pao Chicken",
-      "cuisine": "asian",
-      "category": "dinner",
-      "prepTime": 20,
-      "cookTime": 15,
-      "servings": 4,
-      "calories": 580,
-      "ingredients": [
-        { "name": "chicken breast", "amount": 400, "unit": "g" },
-        { "name": "dried red chili peppers", "amount": 10, "unit": "" },
-        { "name": "peanuts", "amount": 80, "unit": "g" },
-        { "name": "bell pepper", "amount": 1, "unit": "large" },
-        { "name": "zucchini", "amount": 1, "unit": "medium" },
-        { "name": "green onions", "amount": 4, "unit": "stalks" },
-        { "name": "garlic", "amount": 4, "unit": "cloves" },
-        { "name": "ginger", "amount": 25, "unit": "g" },
-        { "name": "soy sauce", "amount": 45, "unit": "ml" },
-        { "name": "rice vinegar", "amount": 30, "unit": "ml" },
-        { "name": "sugar", "amount": 10, "unit": "g" },
-        { "name": "cornstarch", "amount": 10, "unit": "g" },
-        { "name": "vegetable oil", "amount": 45, "unit": "ml" },
-        { "name": "sesame oil", "amount": 5, "unit": "ml" }
-      ],
-      "instructions": "For sauce: Mix soy sauce, rice vinegar, sugar, cornstarch, and 2 tbsp water. Cut chicken into 2cm cubes. Dice bell pepper and zucchini. Slice green onions. Mince garlic and ginger. Heat wok over high heat with 2 tbsp oil. Stir-fry chicken until golden, about 3 min, set aside. Add more oil, fry dried chilies for 30 seconds (don't burn). Add bell pepper, zucchini, garlic, and ginger, stir-fry 2 min. Return chicken to wok. Pour in sauce, toss until thickened. Remove from heat, stir in sesame oil. Garnish with peanuts and green onions. Serve hot with rice."
-    },
-    {
-      "id": "blini",
-      "name": "Blini (Russian Pancakes)",
-      "cuisine": "slavic",
-      "category": "breakfast",
-      "prepTime": 15,
-      "cookTime": 20,
-      "servings": 4,
-      "calories": 450,
-      "ingredients": [
-        { "name": "flour", "amount": 200, "unit": "g" },
-        { "name": "milk", "amount": 400, "unit": "ml" },
-        { "name": "eggs", "amount": 3, "unit": "" },
-        { "name": "sugar", "amount": 12, "unit": "g" },
-        { "name": "salt", "amount": 1.25, "unit": "g" },
-        { "name": "butter", "amount": 60, "unit": "g" },
-        { "name": "vegetable oil", "amount": 30, "unit": "ml" },
-        { "name": "sour cream", "amount": 150, "unit": "g" },
-        { "name": "berries or jam", "amount": 100, "unit": "g" }
-      ],
-      "instructions": "Mix flour, sugar, and salt in a bowl. In another bowl, whisk milk, eggs, and melted butter. Combine wet and dry ingredients, whisk until smooth batter forms. Heat a non-stick pan over medium heat, add small amount of oil. Pour about 2-3 tbsp batter into pan, quickly swirl to coat bottom and make thin crepe. Cook 1-2 min until edges lift and bottom is golden. Flip and cook 30-60 seconds on second side. Repeat with remaining batter, stacking pancakes. Serve warm with sour cream and fresh berries or your favorite jam."
-    },
-    {
-      "id": "beef-noodle-soup",
-      "name": "Beef Noodle Soup",
-      "cuisine": "asian",
-      "category": "lunch",
-      "prepTime": 20,
-      "cookTime": 35,
-      "servings": 4,
-      "calories": 500,
-      "ingredients": [
-        { "name": "beef steak", "amount": 300, "unit": "g" },
-        { "name": "egg noodles", "amount": 200, "unit": "g" },
-        { "name": "beef broth", "amount": 1.5, "unit": "liters" },
-        { "name": "broccoli", "amount": 150, "unit": "g" },
-        { "name": "carrots", "amount": 200, "unit": "g" },
-        { "name": "onion", "amount": 1, "unit": "medium" },
-        { "name": "garlic", "amount": 3, "unit": "cloves" },
-        { "name": "ginger", "amount": 25, "unit": "g" },
-        { "name": "soy sauce", "amount": 45, "unit": "ml" },
-        { "name": "star anise", "amount": 2, "unit": "" },
-        { "name": "green onions", "amount": 3, "unit": "stalks" },
-        { "name": "vegetable oil", "amount": 30, "unit": "ml" },
-        { "name": "salt", "amount": 4, "unit": "g" },
-        { "name": "pepper", "amount": 1, "unit": "g" }
-      ],
-      "instructions": "Slice beef into thin strips. Cut broccoli into florets, slice carrots into coins, dice onion. Slice green onions. Mince garlic and ginger. Heat oil in a large pot over high heat. Sear beef strips quickly until browned, about 2 min, set aside. Reduce heat to medium, add onion, garlic, ginger, cook 2 min. Add broth and star anise, bring to boil, reduce heat, simmer 20 min. Add broccoli and carrots, cook 5 min. Add egg noodles, cook until tender, about 5 min. Return beef to pot. Season with soy sauce, salt, and pepper. Serve hot, garnished with green onions."
-    },
-    {
-      "id": "pelmeni",
-      "name": "Pelmeni (Russian Meat Dumplings)",
-      "cuisine": "slavic",
-      "category": "dinner",
-      "prepTime": 60,
-      "cookTime": 15,
-      "servings": 6,
-      "calories": 580,
-      "ingredients": [
-        { "name": "flour", "amount": 400, "unit": "g" },
-        { "name": "water", "amount": 240, "unit": "ml" },
-        { "name": "eggs", "amount": 2, "unit": "" },
-        { "name": "ground beef", "amount": 400, "unit": "g" },
-        { "name": "ground pork", "amount": 200, "unit": "g" },
-        { "name": "onion", "amount": 2, "unit": "large" },
-        { "name": "butter", "amount": 56, "unit": "g" },
-        { "name": "sour cream", "amount": 200, "unit": "g" },
-        { "name": "beef broth", "amount": 2, "unit": "liters" },
-        { "name": "fresh dill", "amount": 20, "unit": "g" },
-        { "name": "salt", "amount": 6, "unit": "g" },
-        { "name": "pepper", "amount": 2, "unit": "g" }
-      ],
-      "instructions": "For dough: Mix flour, water, and eggs until smooth dough forms. Knead 5 min, cover and rest 30 min. For filling: Grate onions or mince finely. Mix ground beef, pork, onion, salt, and pepper until well combined. Roll dough thin on floured surface. Cut into 5cm circles. Place small amount of filling in center of each. Fold into half-moon, pinch edges tightly. Bring corners together to form traditional pelmeni shape. Bring beef broth to boil. Add pelmeni in batches, cook 7-8 min until they float. Serve hot with melted butter, sour cream, and fresh dill."
-    },
-    {
-      "id": "dim-sum-dumplings",
-      "name": "Dim Sum Dumplings",
-      "cuisine": "asian",
-      "category": "breakfast",
-      "prepTime": 30,
-      "cookTime": 15,
-      "servings": 4,
-      "calories": 450,
-      "ingredients": [
-        { "name": "dumpling wrappers", "amount": 30, "unit": "" },
-        { "name": "ground pork", "amount": 400, "unit": "g" },
-        { "name": "shrimp", "amount": 100, "unit": "g" },
-        { "name": "cabbage", "amount": 100, "unit": "g" },
-        { "name": "green onions", "amount": 4, "unit": "stalks" },
-        { "name": "ginger", "amount": 25, "unit": "g" },
-        { "name": "garlic", "amount": 3, "unit": "cloves" },
-        { "name": "soy sauce", "amount": 30, "unit": "ml" },
-        { "name": "sesame oil", "amount": 15, "unit": "ml" },
-        { "name": "rice vinegar", "amount": 15, "unit": "ml" },
-        { "name": "salt", "amount": 4, "unit": "g" },
-        { "name": "pepper", "amount": 1, "unit": "g" }
-      ],
-      "instructions": "Chop shrimp into small pieces. Shred cabbage. Slice green onions. Mince ginger and garlic. Mix ground pork with shrimp, cabbage, green onions, ginger, garlic, soy sauce, sesame oil, rice vinegar, salt, and pepper until well combined. Place about 1 tbsp filling in center of each wrapper. Moisten edges with water, fold in half, pleat and seal tightly. Set up steamer with boiling water. Place dumplings in steamer (lined with parchment), don't overcrowd. Steam 10-12 min until wrappers are translucent. For dipping sauce, mix equal parts soy sauce and rice vinegar. Serve immediately."
-    },
-    {
-      "id": "potato-vareniki",
-      "name": "Potato Vareniki",
-      "cuisine": "slavic",
-      "category": "lunch",
-      "prepTime": 45,
-      "cookTime": 20,
-      "servings": 4,
-      "calories": 520,
-      "ingredients": [
-        { "name": "flour", "amount": 400, "unit": "g" },
-        { "name": "milk", "amount": 120, "unit": "ml" },
-        { "name": "butter", "amount": 28, "unit": "g" },
-        { "name": "eggs", "amount": 2, "unit": "" },
-        { "name": "potatoes", "amount": 1000, "unit": "g" },
-        { "name": "bacon", "amount": 150, "unit": "g" },
-        { "name": "onion", "amount": 2, "unit": "large" },
-        { "name": "sour cream", "amount": 200, "unit": "g" },
-        { "name": "salt", "amount": 6, "unit": "g" },
-        { "name": "pepper", "amount": 1, "unit": "g" }
-      ],
-      "instructions": "For dough: Mix flour, milk, 2 tbsp melted butter, and eggs. Knead until smooth, rest 30 min. For filling: Peel and boil potatoes until tender. Drain, mash until smooth. Dice bacon and onions. Fry bacon until crispy, add onions, cook until golden. Mix mashed potatoes with bacon and onions, season with salt and pepper. Roll dough thin. Cut into circles with a glass. Place filling in center, fold, seal edges. Boil vareniki in salted water 3-4 min until they float. Transfer to pan with remaining butter, fry until golden on both sides. Serve with sour cream."
-    },
-    {
-      "id": "butter-chicken",
-      "name": "Butter Chicken",
-      "cuisine": "asian",
-      "category": "dinner",
-      "prepTime": 40,
-      "cookTime": 30,
-      "servings": 4,
-      "calories": 720,
-      "ingredients": [
-        { "name": "chicken breast", "amount": 500, "unit": "g" },
-        { "name": "Greek yogurt", "amount": 240, "unit": "g" },
-        { "name": "lemon juice", "amount": 30, "unit": "ml" },
-        { "name": "ginger", "amount": 15, "unit": "g" },
-        { "name": "garlic", "amount": 15, "unit": "g" },
-        { "name": "garam masala", "amount": 20, "unit": "g" },
-        { "name": "turmeric", "amount": 3, "unit": "g" },
-        { "name": "paprika", "amount": 3, "unit": "g" },
-        { "name": "butter", "amount": 56, "unit": "g" },
-        { "name": "tomato puree", "amount": 240, "unit": "g" },
-        { "name": "heavy cream", "amount": 240, "ml": "" },
-        { "name": "basmati rice", "amount": 300, "unit": "g" },
-        { "name": "fresh cilantro", "amount": 10, "unit": "g" },
-        { "name": "salt", "amount": 5, "unit": "g" },
-        { "name": "pepper", "amount": 2, "unit": "g" }
-      ],
-      "instructions": "Cut chicken into 2cm cubes. Mix yogurt, lemon juice, minced ginger and garlic, garam masala, turmeric, paprika, salt, and pepper. Add chicken, marinate 30 min or overnight. Cook rice according to package directions. Heat 2 tbsp butter in a large pan over medium-high heat. Sear chicken pieces until golden, about 3-4 min per side. Remove and set aside. Add remaining butter to pan, pour in tomato puree, simmer 5 min. Reduce heat to low, stir in heavy cream. Return chicken to sauce, simmer 5-7 min until chicken is cooked through. Adjust seasoning. Serve over basmati rice, garnished with fresh cilantro."
-    },
-    {
-      "id": "granola-yogurt",
-      "name": "Granola & Yogurt",
-      "cuisine": "universal",
-      "category": "breakfast",
-      "prepTime": 10,
-      "cookTime": 30,
-      "servings": 4,
-      "calories": 350,
-      "ingredients": [
-        { "name": "rolled oats", "amount": 200, "unit": "g" },
-        { "name": "mixed nuts (almonds, walnuts)", "amount": 100, "unit": "g" },
-        { "name": "honey", "amount": 60, "unit": "g" },
-        { "name": "coconut oil", "amount": 30, "unit": "g" },
-        { "name": "Greek yogurt", "amount": 400, "unit": "g" },
-        { "name": "fresh berries", "amount": 200, "unit": "g" },
-        { "name": "cinnamon", "amount": 3, "unit": "g" },
-        { "name": "vanilla extract", "amount": 5, "unit": "ml" }
-      ],
-      "instructions": "Preheat oven to 160°C (320°F). Line a baking sheet with parchment paper. Roughly chop nuts. In a large bowl, combine oats, chopped nuts, and cinnamon. Melt coconut oil slightly if solid. Add honey, melted coconut oil, and vanilla extract to oats mixture. Stir until everything is well coated. Spread mixture evenly on prepared baking sheet. Bake 25-30 minutes, stirring every 10 minutes, until golden brown. Remove from oven and let cool completely - it will crisp up as it cools. Store granola in an airtight container. Serve with Greek yogurt and fresh berries."
-    },
-    {
-      "id": "solyanka",
-      "name": "Solyanka",
-      "cuisine": "slavic",
-      "category": "lunch",
-      "prepTime": 20,
-      "cookTime": 35,
-      "servings": 6,
-      "calories": 480,
-      "ingredients": [
-        { "name": "beef broth", "amount": 2, "unit": "liters" },
-        { "name": "ham or sausage", "amount": 200, "unit": "g" },
-        { "name": "salami", "amount": 100, "unit": "g" },
-        { "name": "pickles", "amount": 3, "unit": "large" },
-        { "name": "olives", "amount": 100, "unit": "g" },
-        { "name": "capers", "amount": 30, "unit": "g" },
-        { "name": "onion", "amount": 1, "unit": "large" },
-        { "name": "tomato paste", "amount": 45, "unit": "g" },
-        { "name": "lemon", "amount": 0.5, "unit": "" },
-        { "name": "sour cream", "amount": 200, "unit": "g" },
-        { "name": "fresh dill", "amount": 10, "unit": "g" },
-        { "name": "butter", "amount": 28, "unit": "g" },
-        { "name": "salt", "amount": 4, "unit": "g" },
-        { "name": "pepper", "amount": 1, "unit": "g" }
-      ],
-      "instructions": "Dice ham, sausage, and salami into small cubes. Dice pickles and olives. Dice onion. Chop dill. Melt butter in a large pot over medium heat. Sauté onion until translucent, about 3 min. Add tomato paste, cook 2 min, stirring constantly. Pour in beef broth, bring to boil. Add diced meats, pickles, olives, and capers. Reduce heat, cover, simmer 20 min. Season with salt and pepper. Add juice from half lemon just before serving. Serve hot in bowls with a generous dollop of sour cream and fresh dill on top."
-    },
-    {
-      "id": "lasagna",
-      "name": "Lasagna",
-      "cuisine": "slavic",
-      "category": "dinner",
-      "prepTime": 30,
-      "cookTime": 50,
-      "servings": 8,
-      "calories": 750,
-      "ingredients": [
-        { "name": "lasagna noodles", "amount": 300, "unit": "g" },
-        { "name": "ground beef", "amount": 500, "unit": "g" },
-        { "name": "tomato sauce", "amount": 800, "unit": "g" },
-        { "name": "ricotta cheese", "amount": 400, "unit": "g" },
-        { "name": "mozzarella cheese", "amount": 300, "unit": "g" },
-        { "name": "parmesan cheese", "amount": 100, "unit": "g" },
-        { "name": "eggs", "amount": 2, "unit": "" },
-        { "name": "onion", "amount": 1, "unit": "large" },
-        { "name": "garlic", "amount": 4, "unit": "cloves" },
-        { "name": "Italian herbs", "amount": 10, "unit": "g" },
-        { "name": "olive oil", "amount": 30, "unit": "ml" },
-        { "name": "salt", "amount": 5, "unit": "g" },
-        { "name": "pepper", "amount": 2, "unit": "g" }
-      ],
-      "instructions": "Preheat oven to 180°C (350°F). Cook lasagna noodles according to package, drain. Dice onion and mince garlic. Heat olive oil in a large pan over medium-high heat. Add ground beef, cook until browned, breaking up with a spoon. Add onion and garlic, cook 5 min. Pour in tomato sauce, add Italian herbs, salt, and pepper. Simmer 15 min. In a bowl, mix ricotta with eggs, half the parmesan, salt, and pepper. Spread a thin layer of meat sauce on bottom of 9x13 inch baking dish. Layer: 3 noodles, 1/3 meat sauce, 1/4 ricotta mixture, 1/4 mozzarella. Repeat twice more. Top with remaining noodles, remaining sauce, and remaining cheeses. Bake 45-50 min until bubbly and cheese is golden. Let rest 15 min before serving."
+      "targetCalories": 2100,
+      "recipe": {
+        "title": "Beef stroganoff with rice",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
+        },
+        "source": "fallback_template",
+        "url": null
+      }
     }
-  ]
+  },
+  "Tuesday": {
+    "breakfast": {
+      "name": "Scrambled eggs with vegetables",
+      "cuisine": "slavic",
+      "targetCalories": 1400,
+      "recipe": {
+        "title": "Scrambled eggs with vegetables",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "snack": {
+      "name": "Green tea cookies",
+      "cuisine": "asian",
+      "targetCalories": 500,
+      "recipe": {
+        "title": "Green tea cookies",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "dinner": {
+      "name": "Pasta carbonara",
+      "cuisine": "slavic",
+      "targetCalories": 2100,
+      "recipe": {
+        "title": "Pasta carbonara",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    }
+  },
+  "Wednesday": {
+    "breakfast": {
+      "name": "Congee with egg and scallions",
+      "cuisine": "asian",
+      "targetCalories": 1400,
+      "recipe": {
+        "title": "Congee with egg and scallions",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "snack": {
+      "name": "Banana with peanut butter",
+      "cuisine": "slavic",
+      "targetCalories": 500,
+      "recipe": {
+        "title": "Banana with peanut butter",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "dinner": {
+      "name": "Shashlik (grilled meat) with salad",
+      "cuisine": "slavic",
+      "targetCalories": 2100,
+      "recipe": {
+        "title": "Shashlik (grilled meat) with salad",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    }
+  },
+  "Thursday": {
+    "breakfast": {
+      "name": "Blini with cheese filling",
+      "cuisine": "slavic",
+      "targetCalories": 1400,
+      "recipe": {
+        "title": "Blini with cheese filling",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "snack": {
+      "name": "Cottage cheese with herbs",
+      "cuisine": "slavic",
+      "targetCalories": 500,
+      "recipe": {
+        "title": "Cottage cheese with herbs",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "dinner": {
+      "name": "Borscht with sour cream",
+      "cuisine": "slavic",
+      "targetCalories": 2100,
+      "recipe": {
+        "title": "Borscht with sour cream",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    }
+  },
+  "Friday": {
+    "breakfast": {
+      "name": "Kasha with butter and milk",
+      "cuisine": "slavic",
+      "targetCalories": 1400,
+      "recipe": {
+        "title": "Kasha with butter and milk",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "snack": {
+      "name": "Seaweed snacks",
+      "cuisine": "asian",
+      "targetCalories": 500,
+      "recipe": {
+        "title": "Seaweed snacks",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "dinner": {
+      "name": "Japanese ramen",
+      "cuisine": "asian",
+      "targetCalories": 2100,
+      "recipe": {
+        "title": "Japanese ramen",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    }
+  },
+  "Saturday": {
+    "breakfast": {
+      "name": "Buckwheat porridge with milk and berries",
+      "cuisine": "slavic",
+      "targetCalories": 1400,
+      "recipe": {
+        "title": "Buckwheat porridge with milk and berries",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "snack": {
+      "name": "Pickled ginger and daikon",
+      "cuisine": "asian",
+      "targetCalories": 500,
+      "recipe": {
+        "title": "Pickled ginger and daikon",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "dinner": {
+      "name": "Korean bibimbap",
+      "cuisine": "asian",
+      "targetCalories": 2100,
+      "recipe": {
+        "title": "Korean bibimbap",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    }
+  },
+  "Sunday": {
+    "breakfast": {
+      "name": "Fried eggs with bread",
+      "cuisine": "slavic",
+      "targetCalories": 1400,
+      "recipe": {
+        "title": "Fried eggs with bread",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "snack": {
+      "name": "Mango slices",
+      "cuisine": "asian",
+      "targetCalories": 500,
+      "recipe": {
+        "title": "Mango slices",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "dinner": {
+      "name": "Pelmeni with sour cream",
+      "cuisine": "slavic",
+      "targetCalories": 2100,
+      "recipe": {
+        "title": "Pelmeni with sour cream",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    }
+  }
 }
