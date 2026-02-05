@@ -1,625 +1,67 @@
 {
   "Monday": {
     "breakfast": {
-      "name": "Miso soup with tofu",
+      "name": "Rice noodles with egg",
       "cuisine": "asian",
       "targetCalories": 1400,
       "recipe": {
+        "title": "Rice noodles with egg",
+        "cuisine": "unknown",
         "ingredients": [
-          "2 cups vegetable broth",
-          "1.5-2 tbsp white or yellow miso paste",
-          "1/2 block (7 oz) firm tofu, cubed",
-          "1 cup greens (spinach, chard, or bok choy), chopped",
-          "1 green onion, sliced (white and green parts)",
-          "1 sheet nori seaweed, cut into strips",
-          "1/2 tbsp soy sauce (optional)",
-          "Sesame oil for drizzling (optional)"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "In a medium pot, bring vegetable broth to a simmer",
-          "In a small bowl, whisk miso paste with a few tablespoons of hot broth until smooth",
-          "Add tofu cubes and greens to the simmering broth, cook 2-3 minutes",
-          "Add green onions and nori strips, cook 1 more minute",
-          "Remove pot from heat (important - don't boil miso after adding)",
-          "Stir in the miso paste mixture until well combined",
-          "Taste and adjust with soy sauce if needed",
-          "Serve hot, drizzled with sesame oil if desired"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 180,
-          "protein": 14,
-          "carbs": 16,
-          "fat": 8,
-          "fiber": 3
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
         },
-        "source": "Minimalist Baker",
-        "prepTime": "5 min",
-        "cookTime": "10 min",
-        "servings": 2
+        "source": "fallback_template",
+        "url": null
       }
     },
     "snack": {
-      "name": "Mango slices",
+      "name": "Green tea cookies",
       "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
+        "title": "Green tea cookies",
+        "cuisine": "unknown",
         "ingredients": [
-          "2 ripe mangoes",
-          "Optional: lime wedges",
-          "Optional: chili powder or Tajín seasoning",
-          "Optional: salt",
-          "Optional: mint leaves for garnish"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Select mangoes that yield slightly to gentle pressure",
-          "Place mango on a cutting board",
-          "Slice off both sides (cheeks) as close to the pit as possible",
-          "Score the flesh in a crosshatch pattern, being careful not to cut through the skin",
-          "Push the skin from underneath to pop the cubes outward",
-          "Slice off the cubes or eat directly from the skin",
-          "Trim remaining flesh from around the pit",
-          "Arrange mango slices on a plate",
-          "Optional: squeeze fresh lime juice over",
-          "Optional: sprinkle with chili powder or Tajín",
-          "Optional: add a pinch of salt",
-          "Optional: garnish with mint leaves",
-          "Serve immediately for best freshness",
-          "Can be stored in refrigerator for up to 3 days"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 200,
-          "protein": 2,
-          "carbs": 50,
-          "fat": 1,
-          "fiber": 5
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
         },
-        "source": "Fresh mango slices",
-        "prepTime": "5 min",
-        "cookTime": "0 min",
-        "servings": 2
+        "source": "fallback_template",
+        "url": null
       }
     },
     "dinner": {
-      "name": "Pelmeni with sour cream",
-      "cuisine": "slavic",
-      "targetCalories": 2100,
-      "recipe": {
-        "ingredients": [
-          "For dough:",
-          "1 cup all-purpose flour",
-          "1/4 cup water",
-          "1/2 egg",
-          "1/4 tsp salt",
-          "For filling:",
-          "1/4 lb (112g) ground beef",
-          "1/4 lb (112g) ground pork",
-          "1/2 large onion, very finely chopped or grated",
-          "1 clove garlic, minced",
-          "1/2 tsp salt",
-          "1/4 tsp black pepper",
-          "For serving:",
-          "Sour cream",
-          "Butter",
-          "Fresh dill or parsley",
-          "Optional: vinegar or soy sauce for dipping"
-        ],
-        "instructions": [
-          "Make dough: mix flour and salt, make a well in center",
-          "Add egg and water, gradually mix until dough forms",
-          "Knead for 5-8 minutes until smooth and elastic",
-          "Cover with plastic wrap, rest for 30 minutes",
-          "Make filling: mix beef, pork, onion, garlic, salt, and pepper",
-          "Mix thoroughly, you can use a food processor for finer texture",
-          "Refrigerate filling until ready to use",
-          "Roll dough thin on floured surface",
-          "Cut into 2-inch circles using a glass or cutter",
-          "Place 1/2 tsp filling in center of each circle",
-          "Fold in half to form a half-moon, press edges to seal",
-          "Bring corners together, pinch to form traditional pelmeni shape",
-          "Place on floured surface until ready to cook",
-          "Bring large pot of salted water to boil",
-          "Add pelmeni, stir gently so they don't stick",
-          "Cook for 7-10 minutes until they float",
-          "Remove with slotted spoon",
-          "Toss with butter, serve with sour cream and fresh dill",
-          "Optional: add vinegar or soy sauce for dipping"
-        ],
-        "nutrition": {
-          "calories": 380,
-          "protein": 22,
-          "carbs": 30,
-          "fat": 20,
-          "fiber": 1
-        },
-        "source": "Traditional Russian dumplings",
-        "prepTime": "45 min",
-        "cookTime": "10 min",
-        "servings": 2
-      }
-    }
-  },
-  "Tuesday": {
-    "breakfast": {
-      "name": "Kasha with butter and milk",
-      "cuisine": "slavic",
-      "targetCalories": 1400,
-      "recipe": {
-        "ingredients": [
-          "1 cup buckwheat groats (grechka)",
-          "2 cups water or chicken broth",
-          "1/2 cup milk (dairy, almond, or oat milk)",
-          "2-3 tbsp butter",
-          "1/2 tsp salt",
-          "Optional: 1 tsp sugar or honey",
-          "Optional: fried onions for topping"
-        ],
-        "instructions": [
-          "Rinse buckwheat groats thoroughly until water runs clear",
-          "In a dry skillet over medium heat, toast groats for 3-4 minutes, stirring constantly",
-          "Bring water or broth to a boil in a medium pot",
-          "Add toasted buckwheat and salt, reduce heat to low",
-          "Cover and simmer for 15-20 minutes until water is absorbed",
-          "Remove from heat, let stand covered for 5 minutes",
-          "Fluff with a fork",
-          "Stir in butter and milk until creamy",
-          "Optional: add sugar or honey to taste",
-          "Optional: top with fried onions for extra flavor",
-          "Serve warm as a side dish or simple breakfast"
-        ],
-        "nutrition": {
-          "calories": 340,
-          "protein": 10,
-          "carbs": 45,
-          "fat": 14,
-          "fiber": 6
-        },
-        "source": "Simple Slavic buckwheat porridge",
-        "prepTime": "5 min",
-        "cookTime": "20 min",
-        "servings": 2
-      }
-    },
-    "snack": {
-      "name": "Seaweed snacks",
-      "cuisine": "asian",
-      "targetCalories": 500,
-      "recipe": {
-        "ingredients": [
-          "5 sheets roasted nori seaweed (or store-bought seaweed snacks)",
-          "1/2 tsp sesame oil (if making homemade)",
-          "1/4 tsp salt (if making homemade)",
-          "Optional: chili powder",
-          "Optional: sugar for sweet version",
-          "Note: These are typically store-bought snacks"
-        ],
-        "instructions": [
-          "Easiest: purchase pre-made roasted seaweed snacks (nori) from Asian grocery store",
-          "For homemade version:",
-          "Preheat oven to 250°F (120°C)",
-          "Cut nori sheets into smaller squares or rectangles",
-          "Lightly brush both sides with sesame oil",
-          "Sprinkle with salt (and optional chili powder or sugar)",
-          "Place on baking sheet in single layer",
-          "Bake for 10-15 minutes until crispy",
-          "Let cool completely - they will get crispier",
-          "Store in airtight container with desiccant packet",
-          "Best consumed within 2-3 days",
-          "Serve as a healthy snack"
-        ],
-        "nutrition": {
-          "calories": 15,
-          "protein": 1,
-          "carbs": 2,
-          "fat": 0,
-          "fiber": 0
-        },
-        "source": "Roasted seaweed snacks",
-        "prepTime": "5 min",
-        "cookTime": "15 min",
-        "servings": 2
-      }
-    },
-    "dinner": {
-      "name": "Pasta carbonara",
-      "cuisine": "slavic",
-      "targetCalories": 2100,
-      "recipe": {
-        "ingredients": [
-          "175g spaghetti",
-          "100g guanciale (cured pork cheek)",
-          "2 eggs",
-          "50g Pecorino Romano cheese, grated",
-          "Freshly ground black pepper to taste"
-        ],
-        "instructions": [
-          "Bring a pot of salted water to boil",
-          "Cut guanciale into small cubes or slices",
-          "Cook guanciale in a skillet over medium heat for 2-3 minutes until crispy, remove from heat and set aside",
-          "In a bowl, whisk together eggs, grated Pecorino Romano, and plenty of black pepper until creamy",
-          "Cook spaghetti al dente according to package instructions",
-          "Drain spaghetti, reserving some pasta water",
-          "Place spaghetti in the skillet with the guanciale over high heat to coat with rendered fat",
-          "TURN OFF THE HEAT completely",
-          "Pour egg and cheese mixture over hot pasta and stir quickly - the residual heat will create a creamy sauce",
-          "If too thick, add a splash of pasta water to loosen",
-          "Serve immediately, topped with extra guanciale, grated Pecorino Romano, and black pepper"
-        ],
-        "nutrition": {
-          "calories": 841,
-          "protein": 30,
-          "carbs": 67,
-          "fat": 50,
-          "fiber": 3
-        },
-        "source": "Recipes from Italy - Authentic Roman Carbonara",
-        "prepTime": "20 min",
-        "cookTime": "15 min",
-        "servings": 2
-      }
-    }
-  },
-  "Wednesday": {
-    "breakfast": {
-      "name": "Rice porridge with pickles",
-      "cuisine": "asian",
-      "targetCalories": 1400,
-      "recipe": {
-        "ingredients": [
-          "1/2 cup jasmine rice",
-          "4 cups chicken or vegetable broth",
-          "1 cup water",
-          "1/2 inch ginger, sliced thin",
-          "Pickled vegetables (pickled carrots, daikon, or cabbage)",
-          "1-2 scallions/green onions, chopped",
-          "2 cloves garlic, minced",
-          "1 tbsp soy sauce",
-          "1/2 tsp sesame oil",
-          "Optional: fried shallots, chili oil, cilantro"
-        ],
-        "instructions": [
-          "Rinse rice until water runs clear",
-          "In a large pot, bring broth, water, and ginger to a boil",
-          "Add rice, reduce heat to low",
-          "Simmer uncovered for 1-1.5 hours, stirring occasionally",
-          "Cook until rice breaks down and porridge reaches desired consistency",
-          "Add more water if needed for thinner consistency",
-          "Season with soy sauce and sesame oil",
-          "Prepare pickled vegetables on the side",
-          "Serve hot porridge garnished with chopped scallions",
-          "Serve pickled vegetables on the side",
-          "Optional: add fried shallots, chili oil, or cilantro as toppings"
-        ],
-        "nutrition": {
-          "calories": 320,
-          "protein": 10,
-          "carbs": 55,
-          "fat": 6,
-          "fiber": 2
-        },
-        "source": "Chinese rice porridge (congee)",
-        "prepTime": "5 min",
-        "cookTime": "90 min",
-        "servings": 2
-      }
-    },
-    "snack": {
-      "name": "Cottage cheese with herbs",
-      "cuisine": "slavic",
-      "targetCalories": 500,
-      "recipe": {
-        "ingredients": [
-          "1 cup cottage cheese or farmer's cheese (tvorog)",
-          "1 tbsp sour cream or Greek yogurt",
-          "1 tbsp fresh dill, chopped",
-          "1 tbsp fresh parsley, chopped",
-          "1 tbsp fresh chives, chopped",
-          "1/4 tsp salt",
-          "1/8 tsp black pepper",
-          "1/2 tbsp olive oil or sunflower oil",
-          "Optional: 1/2 small clove garlic, minced",
-          "Optional: 1/4 tsp paprika",
-          "Optional: cucumber or tomato on the side"
-        ],
-        "instructions": [
-          "Place cottage cheese in a mixing bowl",
-          "Add sour cream or yogurt and mix well until smooth",
-          "Finely chop fresh herbs: dill, parsley, and chives",
-          "Add herbs to the cheese mixture",
-          "Add salt and black pepper to taste",
-          "Optional: add minced garlic for extra flavor",
-          "Drizzle with olive oil or sunflower oil",
-          "Optional: sprinkle with paprika",
-          "Mix thoroughly until well combined",
-          "Taste and adjust seasoning as needed",
-          "Serve as a spread on bread, or on its own",
-          "Optional: serve with cucumber or tomato slices on the side",
-          "Can be made ahead and refrigerated for 2-3 days"
-        ],
-        "nutrition": {
-          "calories": 180,
-          "protein": 16,
-          "carbs": 6,
-          "fat": 11,
-          "fiber": 0
-        },
-        "source": "Slavic herb-seasoned cottage cheese",
-        "prepTime": "10 min",
-        "cookTime": "0 min",
-        "servings": 2
-      }
-    },
-    "dinner": {
-      "name": "Sichuan mapo tofu",
+      "name": "Thai green curry",
       "cuisine": "asian",
       "targetCalories": 2100,
       "recipe": {
-        "ingredients": [
-          "1/2 block (7 oz) firm or extra firm tofu, cubed",
-          "1.5 tbsp vegetable oil",
-          "1-2 tbsp Sichuan chili bean paste (doubanjiang)",
-          "1/4 lb (112g) ground pork",
-          "1-2 tbsp fermented black beans (douchi), rinsed",
-          "1 tbsp soy sauce",
-          "1/2 tsp sugar",
-          "1/2 cup chicken stock",
-          "1/2 tbsp cornstarch mixed with 1 tbsp water",
-          "1-2 dried red chilies",
-          "1/2 tsp Sichuan peppercorns, toasted and ground",
-          "1 clove garlic, minced",
-          "1/2 tbsp fresh ginger, minced",
-          "1 green onion, sliced",
-          "Optional: 1/2 tsp five-spice powder"
-        ],
-        "instructions": [
-          "Cut tofu into 1-inch cubes",
-          "Bring water to boil, add tofu and blanch for 2 minutes to remove moisture",
-          "Drain and set aside",
-          "Heat oil in wok or large pan over medium heat",
-          "Add ground pork, cook until browned, break up any clumps",
-          "Add chili bean paste, fermented black beans, garlic, and ginger",
-          "Stir-fry for 1-2 minutes until fragrant",
-          "Add soy sauce, sugar, and chicken stock",
-          "Bring to a simmer",
-          "Add tofu cubes, gently stir to combine",
-          "Simmer for 5 minutes, letting tofu absorb flavors",
-          "Stir in cornstarch mixture to thicken sauce",
-          "Add dried red chilies and ground Sichuan peppercorns",
-          "Cook 1-2 more minutes",
-          "Garnish with sliced green onions",
-          "Serve hot over steamed rice"
-        ],
-        "nutrition": {
-          "calories": 380,
-          "protein": 28,
-          "carbs": 12,
-          "fat": 26,
-          "fiber": 2
-        },
-        "source": "Authentic Sichuan spicy tofu",
-        "prepTime": "15 min",
-        "cookTime": "20 min",
-        "servings": 2
-      }
-    }
-  },
-  "Thursday": {
-    "breakfast": {
-      "name": "Blini with cheese filling",
-      "cuisine": "slavic",
-      "targetCalories": 1400,
-      "recipe": {
-        "ingredients": [
-          "For blini (crepes):",
-          "1/2 cup all-purpose flour",
-          "1 egg",
-          "3/4 cup milk",
-          "1 tbsp butter, melted",
-          "1/2 tbsp sugar",
-          "1/8 tsp salt",
-          "Butter or oil for cooking",
-          "For cheese filling:",
-          "1/2 cup cottage cheese or farmer's cheese (tvorog)",
-          "1/4 cup ricotta cheese",
-          "1/2 egg yolk",
-          "1 tbsp sugar",
-          "1/2 tsp vanilla extract",
-          "Optional: raisins or dried currants",
-          "Optional: sour cream for serving"
-        ],
-        "instructions": [
-          "Make the batter: whisk flour, eggs, milk, melted butter, sugar and salt until smooth",
-          "Let batter rest for 20-30 minutes",
-          "Make filling: mix cottage cheese, ricotta, egg yolk, sugar, and vanilla until combined",
-          "Optional: add raisins to the filling",
-          "Heat a non-stick pan over medium heat, lightly grease with butter",
-          "Pour small ladle of batter, swirling to coat pan thinly",
-          "Cook until edges lift and bubbles form, about 45 seconds",
-          "Flip and cook 15-20 seconds more until set",
-          "Stack blini on a plate, keep warm",
-          "To serve, place 2-3 tbsp of cheese filling in center of each blini",
-          "Fold into quarters or roll up",
-          "Serve warm, topped with sour cream if desired"
-        ],
-        "nutrition": {
-          "calories": 380,
-          "protein": 14,
-          "carbs": 42,
-          "fat": 18,
-          "fiber": 1
-        },
-        "source": "Traditional Russian blini with cheese",
-        "prepTime": "20 min",
-        "cookTime": "15 min",
-        "servings": 2
-      }
-    },
-    "snack": {
-      "name": "Nuts and dried fruits",
-      "cuisine": "slavic",
-      "targetCalories": 500,
-      "recipe": {
-        "ingredients": [
-          "1/2 cup mixed nuts (almonds, walnuts, cashews, pecans)",
-          "1/2 cup mixed dried fruits (raisins, cranberries, apricots, dates)",
-          "Optional: dark chocolate chips or chunks",
-          "Optional: pumpkin seeds or sunflower seeds",
-          "Optional: cinnamon or cardamom for seasoning"
-        ],
-        "instructions": [
-          "Choose raw or roasted nuts according to preference",
-          "If nuts are raw, toast them in a dry pan for 3-5 minutes until fragrant",
-          "Let nuts cool completely",
-          "Chop large dried fruits (apricots, dates) into bite-sized pieces",
-          "Combine nuts and dried fruits in a bowl",
-          "Optional: add dark chocolate chips for extra indulgence",
-          "Optional: add pumpkin or sunflower seeds for variety",
-          "Optional: sprinkle with cinnamon or cardamom",
-          "Store in airtight container for up to 2 weeks",
-          "Portion into snack-sized bags for easy grabbing"
-        ],
-        "nutrition": {
-          "calories": 450,
-          "protein": 10,
-          "carbs": 35,
-          "fat": 30,
-          "fiber": 6
-        },
-        "source": "Trail mix snack",
-        "prepTime": "5 min",
-        "cookTime": "5 min (toasting)",
-        "servings": 2
-      }
-    },
-    "dinner": {
-      "name": "Japanese ramen",
-      "cuisine": "asian",
-      "targetCalories": 2100,
-      "recipe": {
-        "ingredients": [
-          "1 package ramen noodles (or fresh ramen)",
-          "3 cups chicken or pork broth",
-          "1 tbsp soy sauce",
-          "1/2 tbsp miso paste or 1/2 tsp salt",
-          "1 soft-boiled egg",
-          "2 oz (57g) pork belly or chashu, sliced (optional)",
-          "1 cup mushrooms (shiitake or enoki)",
-          "1 green onion, sliced",
-          "1/2 cup bean sprouts",
-          "1/2 nori sheet, cut into strips",
-          "1 tbsp sesame oil",
-          "Optional: chili oil, corn, bamboo shoots"
-        ],
-        "instructions": [
-          "Prepare soft-boiled eggs: boil eggs 6.5 minutes, cool in ice water, peel",
-          "In a large pot, bring broth to a simmer",
-          "Add soy sauce, miso paste (or salt), and 1/2 tbsp sesame oil",
-          "Cook ramen noodles according to package, drain and set aside",
-          "In the broth, add mushrooms and cook 2-3 minutes",
-          "Divide noodles among serving bowls",
-          "Ladle hot broth over noodles",
-          "Top with sliced pork (if using), halved soft-boiled eggs",
-          "Add bean sprouts, green onions, nori strips",
-          "Drizzle with remaining sesame oil and chili oil if desired",
-          "Serve immediately while hot"
-        ],
-        "nutrition": {
-          "calories": 520,
-          "protein": 26,
-          "carbs": 58,
-          "fat": 20,
-          "fiber": 4
-        },
-        "source": "Japanese ramen recipe",
-        "prepTime": "15 min",
-        "cookTime": "25 min",
-        "servings": 2
-      }
-    }
-  },
-  "Friday": {
-    "breakfast": {
-      "name": "Oatmeal with honey and nuts",
-      "cuisine": "slavic",
-      "targetCalories": 1400,
-      "recipe": {
-        "ingredients": [
-          "1 cup rolled oats",
-          "2 cups milk (dairy, almond, or oat milk)",
-          "1 cup water",
-          "1/4 tsp salt",
-          "2 tbsp honey or maple syrup",
-          "1/2 cup mixed nuts (walnuts, almonds, pecans), chopped",
-          "1/2 tsp cinnamon (optional)",
-          "1 tsp vanilla extract (optional)",
-          "Fresh berries or sliced banana for topping (optional)",
-          "Butter or extra honey for drizzling (optional)"
-        ],
-        "instructions": [
-          "Combine oats, milk, water, and salt in a medium saucepan",
-          "Bring to a boil over medium heat, stirring occasionally",
-          "Reduce heat to low and simmer 5-7 minutes until oats are soft and creamy",
-          "Remove from heat, stir in vanilla if using",
-          "Stir in honey and cinnamon",
-          "Divide oatmeal into serving bowls",
-          "Top generously with chopped nuts",
-          "Add fresh berries or sliced banana if desired",
-          "Drizzle with extra honey or butter if you like",
-          "Serve warm"
-        ],
-        "nutrition": {
-          "calories": 380,
-          "protein": 12,
-          "carbs": 52,
-          "fat": 14,
-          "fiber": 6
-        },
-        "source": "Classic oatmeal breakfast",
-        "prepTime": "2 min",
-        "cookTime": "10 min",
-        "servings": 2
-      }
-    },
-    "snack": {
-      "name": "Apple slices with cheese",
-      "cuisine": "slavic",
-      "targetCalories": 500,
-      "recipe": {
-        "ingredients": [
-          "2 apples (any variety - Granny Smith, Honeycrisp, Fuji)",
-          "4 oz (120g) cheese (cheddar, gouda, brie, or your favorite)",
-          "Optional: honey for drizzling",
-          "Optional: walnuts or pecans",
-          "Optional: cinnamon"
-        ],
-        "instructions": [
-          "Wash apples thoroughly",
-          "Core apples and slice into wedges or rounds",
-          "Slice cheese into thin pieces or small cubes",
-          "Arrange apple slices on a serving plate or board",
-          "Place cheese alongside or on top of apple slices",
-          "Optional: drizzle with honey",
-          "Optional: sprinkle with chopped nuts and cinnamon",
-          "Serve immediately for best freshness"
-        ],
-        "nutrition": {
-          "calories": 220,
-          "protein": 8,
-          "carbs": 28,
-          "fat": 9,
-          "fiber": 4
-        },
-        "source": "Classic fruit and cheese snack",
-        "prepTime": "5 min",
-        "cookTime": "0 min",
-        "servings": 2
-      }
-    },
-    "dinner": {
-      "name": "Shashlik (grilled meat) with salad",
-      "cuisine": "slavic",
-      "targetCalories": 2100,
-      "recipe": {
-        "title": "Shashlik (grilled meat) with salad",
+        "title": "Thai green curry",
         "cuisine": "unknown",
         "ingredients": [
           "Main ingredients vary by recipe",
@@ -643,91 +85,61 @@
       }
     }
   },
-  "Saturday": {
+  "Tuesday": {
     "breakfast": {
-      "name": "Syrniki (cottage cheese pancakes)",
+      "name": "Kasha with butter and milk",
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
+        "title": "Kasha with butter and milk",
+        "cuisine": "unknown",
         "ingredients": [
-          "3/4 cup cottage cheese or farmer's cheese (tvorog)",
-          "2 tbsp all-purpose flour",
-          "1/2 egg",
-          "1-1.5 tbsp sugar (adjust to taste)",
-          "1/8 tsp salt",
-          "1/2 tsp vanilla extract (optional)",
-          "1/4 cup flour for coating",
-          "2 tbsp butter or oil for frying",
-          "Optional: raisins or dried cranberries",
-          "Optional: sour cream for serving",
-          "Optional: honey or jam for serving",
-          "Optional: fresh berries"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Place cottage cheese in a bowl, mash with a fork",
-          "Add egg, sugar, salt, and vanilla, mix well",
-          "Add 2 tbsp flour, mix until combined",
-          "Optional: add raisins or dried cranberries",
-          "The dough should be slightly sticky but manageable",
-          "Place 1/4 cup flour in a shallow plate for coating",
-          "Take about 1 tbsp of dough, form into a small patty",
-          "Dredge both sides in flour, shake off excess",
-          "Repeat with remaining dough",
-          "Heat butter or oil in a non-stick pan over medium heat",
-          "Fry syrniki in batches for 3-4 minutes per side until golden brown",
-          "Don't crowd the pan - cook 2-3 at a time",
-          "Transfer to paper towels to drain excess oil",
-          "Serve warm with sour cream, honey, or fresh berries",
-          "Can be served for breakfast or dessert"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 320,
-          "protein": 14,
-          "carbs": 32,
-          "fat": 16,
-          "fiber": 0
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
         },
-        "source": "Traditional Slavic cottage cheese pancakes",
-        "prepTime": "15 min",
-        "cookTime": "15 min",
-        "servings": 2
+        "source": "fallback_template",
+        "url": null
       }
     },
     "snack": {
-      "name": "Ryebread with butter",
+      "name": "Pickled vegetables",
       "cuisine": "slavic",
       "targetCalories": 500,
       "recipe": {
+        "title": "Pickled vegetables",
+        "cuisine": "unknown",
         "ingredients": [
-          "4 slices traditional Russian or Eastern European rye bread",
-          "3-4 tbsp butter (salted or unsalted to taste)",
-          "Optional: coarse salt",
-          "Optional: fresh dill for garnish",
-          "Optional: garlic cloves for rubbing",
-          "Optional: radish slices or cucumber"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Slice rye bread into thick or thin slices according to preference",
-          "Bring butter to room temperature for easy spreading",
-          "Generously spread butter over each slice",
-          "Optional: sprinkle with coarse salt",
-          "Optional: rub warm bread with a cut garlic clove for extra flavor",
-          "Optional: garnish with fresh dill",
-          "Optional: serve with radish slices or cucumber on the side",
-          "Can be served as a simple breakfast, snack, or side dish",
-          "Best served at room temperature or lightly toasted"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 220,
-          "protein": 5,
-          "carbs": 25,
-          "fat": 12,
-          "fiber": 3
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
         },
-        "source": "Simple Slavic bread and butter",
-        "prepTime": "2 min",
-        "cookTime": "0 min",
-        "servings": 2
+        "source": "fallback_template",
+        "url": null
       }
     },
     "dinner": {
@@ -759,85 +171,405 @@
       }
     }
   },
-  "Sunday": {
+  "Wednesday": {
     "breakfast": {
-      "name": "Fried eggs with bread",
-      "cuisine": "slavic",
+      "name": "Congee with egg and scallions",
+      "cuisine": "asian",
       "targetCalories": 1400,
       "recipe": {
+        "title": "Congee with egg and scallions",
+        "cuisine": "unknown",
         "ingredients": [
-          "4 large eggs",
-          "4 slices crusty bread (rye, sourdough or whole grain)",
-          "2-3 tbsp butter or oil",
-          "Optional: fresh herbs (chives, parsley)",
-          "Optional: garlic cloves for rubbing bread"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Heat butter or oil in a non-stick pan over medium heat",
-          "Crack eggs into pan, being careful not to break yolks",
-          "Season with salt and pepper",
-          "Cook until whites are set but yolks are still runny, 3-4 minutes",
-          "For over-easy, carefully flip and cook 30 more seconds",
-          "Toast bread until golden and crispy",
-          "Optional: rub warm bread with cut garlic clove",
-          "Place eggs on toast, garnish with fresh herbs if desired",
-          "Serve immediately while eggs are hot"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 320,
-          "protein": 18,
-          "carbs": 25,
-          "fat": 18,
-          "fiber": 2
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
         },
-        "source": "Classic breakfast preparation",
-        "prepTime": "2 min",
-        "cookTime": "5 min",
-        "servings": 2
+        "source": "fallback_template",
+        "url": null
       }
     },
     "snack": {
-      "name": "Pickled ginger and daikon",
+      "name": "Ryebread with butter",
+      "cuisine": "slavic",
+      "targetCalories": 500,
+      "recipe": {
+        "title": "Ryebread with butter",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "dinner": {
+      "name": "Vietnamese pho",
+      "cuisine": "asian",
+      "targetCalories": 2100,
+      "recipe": {
+        "title": "Vietnamese pho",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    }
+  },
+  "Thursday": {
+    "breakfast": {
+      "name": "Syrniki (cottage cheese pancakes)",
+      "cuisine": "slavic",
+      "targetCalories": 1400,
+      "recipe": {
+        "title": "Syrniki (cottage cheese pancakes)",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "snack": {
+      "name": "Yogurt with honey",
+      "cuisine": "slavic",
+      "targetCalories": 500,
+      "recipe": {
+        "title": "Yogurt with honey",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "dinner": {
+      "name": "Borscht with sour cream",
+      "cuisine": "slavic",
+      "targetCalories": 2100,
+      "recipe": {
+        "title": "Borscht with sour cream",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    }
+  },
+  "Friday": {
+    "breakfast": {
+      "name": "Oatmeal with honey and nuts",
+      "cuisine": "slavic",
+      "targetCalories": 1400,
+      "recipe": {
+        "title": "Oatmeal with honey and nuts",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "snack": {
+      "name": "Seaweed snacks",
       "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
+        "title": "Seaweed snacks",
+        "cuisine": "unknown",
         "ingredients": [
-          "1 cup daikon radish, cut into matchsticks",
-          "1/2 cup fresh young ginger, peeled and sliced paper-thin",
-          "1/2 cup rice vinegar",
-          "1/4 cup water",
-          "1 tbsp sugar",
-          "1/2 tsp salt",
-          "Optional: 2 tbsp dry white wine",
-          "Optional: 1 dried red chili",
-          "Optional: yuzu peel or lemon zest"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Cut daikon into thin matchsticks, about 2 inches long",
-          "Peel ginger and slice as thinly as possible (use a mandoline if available)",
-          "Place daikon and ginger in a clean glass jar",
-          "In a saucepan, combine rice vinegar, water, sugar, and salt",
-          "Optional: add dry white wine for sweetness",
-          "Bring to a simmer, stirring until sugar and salt dissolve",
-          "Let the brine cool completely",
-          "Pour cooled brine over daikon and ginger",
-          "Optional: add dried chili and yuzu peel",
-          "Make sure vegetables are completely submerged",
-          "Seal jar and refrigerate",
-          "Ready to eat after 24 hours, best after 2-3 days",
-          "Will keep refrigerated for 2-3 weeks"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 40,
-          "protein": 1,
-          "carbs": 9,
-          "fat": 0,
-          "fiber": 1
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
         },
-        "source": "Japanese pickled ginger and radish (takuan)",
-        "prepTime": "15 min",
-        "cookTime": "5 min + 24h pickling",
-        "servings": 2
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "dinner": {
+      "name": "Pasta carbonara",
+      "cuisine": "slavic",
+      "targetCalories": 2100,
+      "recipe": {
+        "title": "Pasta carbonara",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    }
+  },
+  "Saturday": {
+    "breakfast": {
+      "name": "Blini with cheese filling",
+      "cuisine": "slavic",
+      "targetCalories": 1400,
+      "recipe": {
+        "title": "Blini with cheese filling",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "snack": {
+      "name": "Banana with peanut butter",
+      "cuisine": "slavic",
+      "targetCalories": 500,
+      "recipe": {
+        "title": "Banana with peanut butter",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "dinner": {
+      "name": "Shashlik (grilled meat) with salad",
+      "cuisine": "slavic",
+      "targetCalories": 2100,
+      "recipe": {
+        "title": "Shashlik (grilled meat) with salad",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    }
+  },
+  "Sunday": {
+    "breakfast": {
+      "name": "Scrambled eggs with vegetables",
+      "cuisine": "slavic",
+      "targetCalories": 1400,
+      "recipe": {
+        "title": "Scrambled eggs with vegetables",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "snack": {
+      "name": "Edamame with sea salt",
+      "cuisine": "asian",
+      "targetCalories": 500,
+      "recipe": {
+        "title": "Edamame with sea salt",
+        "cuisine": "unknown",
+        "ingredients": [
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
+        },
+        "source": "fallback_template",
+        "url": null
       }
     },
     "dinner": {
@@ -845,49 +577,27 @@
       "cuisine": "asian",
       "targetCalories": 2100,
       "recipe": {
+        "title": "Chicken teriyaki with rice",
+        "cuisine": "unknown",
         "ingredients": [
-          "1/2 lb (225g) chicken thighs or breast, cut into bite-sized pieces",
-          "1 cup jasmine rice",
-          "For teriyaki sauce:",
-          "2 tbsp soy sauce",
-          "1 tbsp dry white wine (substituted for mirin)",
-          "1 tbsp dry white wine (substituted for sake)",
-          "1 tbsp sugar",
-          "1/2 tbsp honey",
-          "1/2 tsp sesame oil",
-          "1/2 clove garlic, minced",
-          "1/2 tsp fresh ginger, grated",
-          "1 tbsp vegetable oil",
-          "1/2 tbsp cornstarch mixed with 1/2 tbsp water",
-          "Sesame seeds for garnish",
-          "Green onions, sliced for garnish",
-          "Optional: steamed broccoli or vegetables"
+          "Main ingredients vary by recipe",
+          "Seasonings to taste",
+          "Cook according to recipe instructions"
         ],
         "instructions": [
-          "Cook rice according to package instructions",
-          "Make teriyaki sauce: combine soy sauce, dry white wine, sugar, honey, sesame oil, garlic, and ginger in a bowl",
-          "Heat vegetable oil in a large wok or skillet over medium-high heat",
-          "Add chicken pieces, cook 5-6 minutes until browned",
-          "Add teriyaki sauce to the pan",
-          "Bring to a simmer, cook 3-4 minutes",
-          "Stir in cornstarch mixture to thicken sauce",
-          "Continue cooking 1-2 minutes until sauce coats chicken",
-          "Remove from heat",
-          "Serve chicken and sauce over steamed rice",
-          "Garnish with sesame seeds and green onions",
-          "Optional: serve with steamed broccoli or other vegetables"
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
         ],
         "nutrition": {
-          "calories": 520,
-          "protein": 32,
-          "carbs": 58,
-          "fat": 16,
-          "fiber": 1
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
         },
-        "source": "Japanese-style chicken teriyaki",
-        "prepTime": "15 min",
-        "cookTime": "20 min",
-        "servings": 2
+        "source": "fallback_template",
+        "url": null
       }
     }
   }

@@ -84,7 +84,9 @@ function extractIngredientName(fullIngredient) {
  * @returns {string} Quantity string
  */
 function extractQuantity(fullIngredient) {
-  const match = fullIngredient.match(/^[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?(?:\s*\/\s*[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?)?\s*(?:cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|piece|pieces|slice|slices|bunch|head|clove|cloves)?/i);
+  // Match: number (with fractions) + optional unit
+  // Units must be complete words to avoid matching parts of words
+  const match = fullIngredient.match(/^[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?(?:\s*\/\s*[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?)?(?:\s+(?:cup|cups|tablespoon|tbsp|teaspoon|tsp|ounce|oz|pound|lb|gram|g|kg|milliliter|ml|liter|piece|pieces|slice|slices|bunch|head|clove|cloves))?\b/i);
   return match ? match[0].trim() : 'as needed';
 }
 
