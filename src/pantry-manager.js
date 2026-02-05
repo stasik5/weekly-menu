@@ -65,14 +65,20 @@ function getEmojiForIngredient(ingredientName) {
 function parseIngredientQuantity(ingredientText) {
   const text = ingredientText.trim();
 
-  // Try to extract quantity at the start
-  const quantityMatch = text.match(/^([\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?)\s*(cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|liter|piece|pieces|slice|slices|bunch|head|clove|cloves)?/i);
+  // First, try to extract a simple number at the start (for grocery list items)
+  const simpleNumberMatch = text.match(/^([\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?)/);
 
-  if (!quantityMatch) {
+  if (!simpleNumberMatch) {
+    // No number found at all - check for N/A or "Need to stock"
+    const lowerText = text.toLowerCase();
+    if (lowerText === 'n/a' || lowerText === 'need to stock') {
+      return { value: 0, unit: '', name: text };
+    }
+    // Still return 0 but keep the name
     return { value: 0, unit: '', name: text };
   }
 
-  let numStr = quantityMatch[1];
+  let numStr = simpleNumberMatch[1];
   let value = 0;
 
   // Handle fractions
@@ -111,7 +117,9 @@ function parseIngredientQuantity(ingredientText) {
     value = parseFloat(numStr);
   }
 
-  let unit = quantityMatch[2] ? quantityMatch[2].toLowerCase() : '';
+  // Try to extract unit after the number
+  const unitMatch = text.match(/^[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?\s*([a-z]+(?:\s+[a-z]+)?)?/i);
+  let unit = unitMatch && unitMatch[1] ? unitMatch[1].toLowerCase() : '';
 
   // Normalize units
   if (unit === 'c' || unit === 'cup' || unit === 'cups') {
@@ -130,15 +138,21 @@ function parseIngredientQuantity(ingredientText) {
     unit = 'kg';
   } else if (unit === 'l' || unit === 'liter' || unit === 'liters') {
     unit = 'l';
+  } else if (unit === 'ml' || unit === 'milliliter' || unit === 'milliliters') {
+    unit = 'ml';
+  } else if (unit.includes('can') || unit.includes('bottle')) {
+    // Keep the unit as is for these special cases
+    unit = unit;
   }
 
-  // Extract name (remove quantity and unit)
-  let name = text
-    .replace(quantityMatch[0], '')
-    .replace(/^\s*of\s*/i, '')
-    .trim();
+  // Extract name (remove the number and any immediately following unit text)
+  // This handles both "1.9kg Chicken Breast" and "2 cans (800g each) Tomatoes"
+  let name = text.replace(simpleNumberMatch[0], '').trim();
 
-  return { value, unit, name: name || ingredientText };
+  // Remove any leading unit words
+  name = name.replace(/^(kg|g|lb|oz|ml|l|cup|cups|tbsp|tsp|piece|pieces|slice|slices|bunch|head|clove|cloves|cans?|bottles?|heads?|stalks?|bunches?)\s*/i, '');
+
+  return { value, unit, name: name || text };
 }
 
 /**
