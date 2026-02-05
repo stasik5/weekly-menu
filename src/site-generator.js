@@ -50,11 +50,11 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
   const pantrySection = pantry ? `
     <!-- Virtual Pantry -->
     <section class="section">
-      <h2>📦 Virtual Pantry</h2>
+      <h2>📦 Кладовая (Склад)</h2>
       <p style="color: #94a3b8; margin-bottom: 15px;">
-        Weekly ingredient tracking based on menu (not real inventory)
+        Еженедельный учет продуктов на основе меню (не реальный инвентарь)
       </p>
-      <button id="toggle-daily" onclick="toggleDaily()">[Show Daily Breakdown]</button>
+      <button id="toggle-daily" onclick="toggleDaily()">[Показать использование по дням]</button>
       <div class="pantry-items">
         ${pantryManager.formatPantryDisplay(pantry, false)}
       </div>
@@ -62,11 +62,11 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
   ` : '';
 
   const html = `<!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weekly Menu - ${weekLabel}</title>
+  <title>Еженедельное меню - ${weekLabel}</title>
   <style>
     * {
       margin: 0;
@@ -495,35 +495,70 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
 <body>
   <div class="container">
     <header>
-      <h1>🍽️ Weekly Menu</h1>
+      <h1>🍽️ Еженедельное меню</h1>
       <div class="week-label">${weekLabel}</div>
     </header>
 
+    <!-- Pantry (shown first as main shopping reference) -->
+    ${pantrySection}
+
     <!-- Meal Grid -->
     <section class="section">
-      <h2>Weekly Meals (Click any meal to see the recipe 📖)</h2>
+      <h2>Блюда на неделю (Нажмите на любое блюдо для рецепта 📖)</h2>
       <div class="meal-grid">
-        ${days.map(day => `
+        ${days.map(day => {
+          // Translate day names
+          const dayTranslations = {
+            'Monday': 'Понедельник',
+            'Tuesday': 'Вторник',
+            'Wednesday': 'Среда',
+            'Thursday': 'Четверг',
+            'Friday': 'Пятница',
+            'Saturday': 'Суббота',
+            'Sunday': 'Воскресенье'
+          };
+          const translatedDay = dayTranslations[day] || day;
+
+          // Translate meal types
+          const mealTypeTranslations = {
+            'breakfast': 'Завтрак',
+            'snack': 'Перекус',
+            'dinner': 'Ужин'
+          };
+
+          return `
           <div class="day-card">
-            <div class="day-header">${day}</div>
+            <div class="day-header">${translatedDay}</div>
             <div class="meals">
               ${mealTypes.map(mealType => {
                 const meal = weeklyPlan[day][mealType];
+                const translatedMealType = mealTypeTranslations[mealType] || mealType;
+                // Translate cuisine
+                const cuisineTranslations = {
+                  'slavic': 'Славянская',
+                  'asian': 'Азиатская',
+                  'european': 'Европейская',
+                  'mediterranean': 'Средиземноморская',
+                  'american': 'Американская'
+                };
+                const translatedCuisine = cuisineTranslations[meal.cuisine] || meal.cuisine;
                 return `
                   <div class="meal" data-day="${day}" data-meal="${mealType}" onclick="openModal('${day}', '${mealType}')">
-                    <div class="meal-type">${mealType}</div>
+                    <div class="meal-type">${translatedMealType}</div>
                     <div class="meal-name">${meal.name}</div>
-                    <div class="meal-cuisine">${meal.cuisine || ''}</div>
+                    <div class="meal-cuisine">${translatedCuisine || ''}</div>
                   </div>
                 `;
               }).join('')}
             </div>
           </div>
-        `).join('')}
+        `;
+        }).join('')}
       </div>
     </section>
 
-    <!-- Grocery List -->
+    <!-- Grocery List - Hidden (commented out, pantry is now the main reference) -->
+    <!--
     <section class="section">
       <h2>Grocery List</h2>
       ${Object.entries(groceryList).map(([category, items]) => {
@@ -544,8 +579,7 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
         `;
       }).join('')}
     </section>
-
-    ${pantrySection}
+    -->
 
     <!-- Recipe Modal -->
     <div class="modal-overlay" id="recipeModal">
@@ -555,12 +589,12 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
         <div class="modal-cuisine" id="modalCuisine"></div>
 
         <div class="modal-section">
-          <h4>🥗 Ingredients</h4>
+          <h4>🥗 Ингредиенты</h4>
           <ul id="modalIngredients"></ul>
         </div>
 
         <div class="modal-section">
-          <h4>👨‍🍳 Instructions</h4>
+          <h4>👨‍🍳 Инструкции</h4>
           <ol id="modalInstructions"></ol>
         </div>
 
@@ -597,9 +631,9 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
 
       const sourceEl = document.getElementById('modalSource');
       if (recipe.url) {
-        sourceEl.innerHTML = \`<a href="\${recipe.url}" target="_blank" rel="noopener noreferrer">🔗 View Full Recipe Source</a>\`;
+        sourceEl.innerHTML = \`<a href="\${recipe.url}" target="_blank" rel="noopener noreferrer">🔗 Полный рецепт</a>\`;
       } else {
-        sourceEl.innerHTML = \`<small>Source: \${recipe.source}</small>\`;
+        sourceEl.innerHTML = \`<small>Источник: \${recipe.source}</small>\`;
       }
 
       document.getElementById('recipeModal').classList.add('active');

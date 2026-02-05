@@ -191,7 +191,19 @@ function generatePantryFromGroceryList(groceryList, menu) {
       if (!mealData.recipe || !mealData.recipe.ingredients) continue;
 
       for (const ingredient of mealData.recipe.ingredients) {
-        const parsed = parseIngredientQuantity(ingredient);
+        // Handle both string ingredients and object ingredients
+        let ingredientText;
+        if (typeof ingredient === 'string') {
+          ingredientText = ingredient;
+        } else if (typeof ingredient === 'object' && ingredient.item) {
+          // New format: {item: "flour", quantity: "500g"}
+          ingredientText = `${ingredient.quantity || ''} ${ingredient.item || ''}`.trim();
+        } else {
+          // Unknown format, skip
+          continue;
+        }
+
+        const parsed = parseIngredientQuantity(ingredientText);
         const normalizedName = normalizeIngredientName(parsed.name);
 
         if (pantry[normalizedName]) {
