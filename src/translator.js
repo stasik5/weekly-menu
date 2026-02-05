@@ -1,12 +1,14 @@
 /**
  * Russian Translation Module
- * Translates English recipes to Russian
- * NOTE: Currently using placeholder translations
- * To enable real translations, configure a translation service (e.g., Google Translate API, DeepL, etc.)
+ * Translates English recipes to Russian using OpenClaw agent-based translation
  */
 
 const fs = require('fs');
 const path = require('path');
+const { exec } = require('child_process');
+const { promisify } = require('util');
+
+const execAsync = promisify(exec);
 
 // Translation cache file path
 const CACHE_PATH = path.join(__dirname, '../output/translation-cache.json');
@@ -33,13 +35,30 @@ function saveCache() {
 }
 
 /**
- * Translate text to Russian (placeholder implementation)
- * TODO: Integrate with a real translation service
- * Options:
- * - Google Cloud Translation API
- * - DeepL API
- * - LibreTranslate (self-hosted)
- * - Yandex Translation API
+ * Check if we're in OpenClaw environment with sessions_spawn available
+ * @returns {boolean}
+ */
+function hasSessionsSpawn() {
+  return typeof sessions_spawn === 'function' || global.sessions_spawn !== undefined;
+}
+
+/**
+ * Get the sessions_spawn function from global or require it
+ * @returns {Function|null}
+ */
+function getSessionsSpawn() {
+  if (typeof sessions_spawn === 'function') {
+    return sessions_spawn;
+  }
+  if (global.sessions_spawn && typeof global.sessions_spawn === 'function') {
+    return global.sessions_spawn;
+  }
+  return null;
+}
+
+/**
+ * Translate text to Russian using OpenClaw agent
+ * Falls back to cache if available, returns original if no agent available
  *
  * @param {string} text - Text to translate
  * @param {string} targetLang - Target language code (default: 'ru' for Russian)
@@ -56,38 +75,46 @@ async function translateText(text, targetLang = 'ru') {
     return translationCache[cacheKey];
   }
 
-  // TODO: Replace with real translation service call
-  // Example using Google Cloud Translation API:
-  /*
-  const { TranslationServiceClient } = require('@google-cloud/translate').v3;
-  const client = new TranslationServiceClient();
-  const projectId = 'your-project-id';
-  const location = 'global';
+  // Check if sessions_spawn is available
+  const sessionsSpawn = getSessionsSpawn();
+  if (!sessionsSpawn) {
+    console.log(`⚠️ No sessions_spawn available, returning original text: "${text.substring(0, 50)}..."`);
+    const result = text;
+    translationCache[cacheKey] = result;
+    saveCache();
+    return result;
+  }
 
-  const request = {
-    parent: `projects/${projectId}/locations/${location}`,
-    contents: [text],
-    mimeType: 'text/plain',
-    targetLanguageCode: targetLang,
-  };
+  try {
+    // Spawn agent for translation
+    const result = await sessionsSpawn({
+      task: `Translate this text to ${targetLang}. Return ONLY the translated text, no explanations or formatting:\n\n${text}`,
+      label: 'translate',
+      timeoutSeconds: 30,
+      cleanup: 'delete'
+    });
 
-  const [response] = await client.translateText(request);
-  const translatedText = response.translations[0].translatedText;
+    // Extract the translated text from the agent response
+    // The response structure depends on how sessions_spawn returns data
+    const translatedText = typeof result === 'string' ? result.trim() :
+                          result?.response?.trim() ||
+                          result?.output?.trim() ||
+                          result?.text?.trim() ||
+                          text; // fallback to original
 
-  translationCache[cacheKey] = translatedText;
-  saveCache();
-  return translatedText;
-  */
+    translationCache[cacheKey] = translatedText;
+    saveCache();
 
-  // Placeholder: Log what needs translation and return original
-  console.log(`[TRANSLATION NEEDED] "${text}" → ${targetLang}`);
+    return translatedText;
 
-  // Return original text for now
-  const result = text;
-  translationCache[cacheKey] = result;
-  saveCache();
-
-  return result;
+  } catch (error) {
+    console.warn(`⚠️ Translation failed for "${text.substring(0, 50)}...": ${error.message}`);
+    // Return original text on error
+    const result = text;
+    translationCache[cacheKey] = result;
+    saveCache();
+    return result;
+  }
 }
 
 /**
@@ -154,7 +181,9 @@ async function translateRecipe(recipe) {
 }
 
 /**
- * Translate all recipes in a weekly meal plan
+ * Translate all recipes in a weekly meal plan using BATCH translation
+ * Spawns a single agent to translate everything at once for efficiency
+ *
  * @param {Object} weeklyPlan - Weekly plan with days → meals → recipe
  * @returns {Promise<Object>} Weekly plan with translated recipes
  */
@@ -163,7 +192,144 @@ async function translateWeeklyPlan(weeklyPlan) {
     return weeklyPlan;
   }
 
-  console.log('\n🌐 Translating weekly plan to Russian...\n');
+  console.log('\n🌐 Translating weekly plan to Russian (batch mode)...\n');
+
+  // Check if sessions_spawn is available
+  const sessionsSpawn = getSessionsSpawn();
+  if (!sessionsSpawn) {
+    console.log('⚠️ No sessions_spawn available, using individual translation fallback...\n');
+    return translateWeeklyPlanFallback(weeklyPlan);
+  }
+
+  try {
+    // Prepare the plan for the agent - create a clean JSON structure
+    const planForAgent = {};
+    for (const [day, meals] of Object.entries(weeklyPlan)) {
+      planForAgent[day] = {};
+      for (const [mealType, mealData] of Object.entries(meals)) {
+        planForAgent[day][mealType] = {
+          name: mealData.name || '',
+          targetCalories: mealData.targetCalories,
+          recipe: mealData.recipe ? {
+            name: mealData.recipe.name || mealData.recipe.title || '',
+            title: mealData.recipe.title || mealData.recipe.name || '',
+            ingredients: (mealData.recipe.ingredients || []).map(ing => ({
+              name: ing.name || '',
+              amount: ing.amount,
+              unit: ing.unit,
+              instructions: ing.instructions || ''
+            })),
+            instructions: Array.isArray(mealData.recipe.instructions)
+              ? mealData.recipe.instructions
+              : mealData.recipe.instructions || ''
+          } : null
+        };
+      }
+    }
+
+    // Create the agent task
+    const agentTask = `Translate the following meal plan to Russian. Return ONLY valid JSON with the exact same structure.
+
+Translate ALL text to Russian:
+- Meal names
+- Recipe names and titles
+- All ingredient names
+- All instructions
+
+Keep numeric values, units, and structure exactly the same. Do NOT translate the day names (Monday, Tuesday, etc.) - keep them in English.
+
+Return ONLY the translated JSON. No explanations, no markdown formatting, just the raw JSON:
+
+${JSON.stringify(planForAgent, null, 2)}`;
+
+    console.log('🤖 Spawning translation agent...\n');
+
+    // Spawn the agent
+    const result = await sessionsSpawn({
+      task: agentTask,
+      label: 'translate-weekly-plan',
+      timeoutSeconds: 180, // 3 minutes for full plan
+      cleanup: 'delete'
+    });
+
+    // Parse the agent response
+    let translatedData;
+    const responseText = typeof result === 'string' ? result :
+                        result?.response ||
+                        result?.output ||
+                        result?.text ||
+                        JSON.stringify(result);
+
+    // Try to extract JSON from the response
+    const jsonMatch = responseText.match(/\{[\s\S]*\}/);
+    if (jsonMatch) {
+      translatedData = JSON.parse(jsonMatch[0]);
+    } else {
+      throw new Error('No valid JSON found in agent response');
+    }
+
+    // Apply translations back to the original weekly plan structure
+    const translatedPlan = {};
+    for (const [day, meals] of Object.entries(weeklyPlan)) {
+      translatedPlan[day] = {};
+      for (const [mealType, mealData] of Object.entries(meals)) {
+        const translatedMeal = translatedData[day]?.[mealType];
+
+        translatedPlan[day][mealType] = {
+          ...mealData,
+          name: translatedMeal?.name || mealData.name,
+          targetCalories: mealData.targetCalories
+        };
+
+        // Apply recipe translations if exists
+        if (mealData.recipe && translatedMeal?.recipe) {
+          const originalRecipe = mealData.recipe;
+          const translatedRecipeData = translatedMeal.recipe;
+
+          translatedPlan[day][mealType].recipe = {
+            ...originalRecipe,
+            name: translatedRecipeData.name || translatedRecipeData.title || originalRecipe.name,
+            title: translatedRecipeData.title || translatedRecipeData.name || originalRecipe.title,
+            ingredients: (originalRecipe.ingredients || []).map((ing, idx) => ({
+              ...ing,
+              name: translatedRecipeData.ingredients?.[idx]?.name || ing.name,
+              instructions: translatedRecipeData.ingredients?.[idx]?.instructions || ing.instructions
+            })),
+            instructions: Array.isArray(originalRecipe.instructions)
+              ? (translatedRecipeData.instructions || originalRecipe.instructions)
+              : (translatedRecipeData.instructions || originalRecipe.instructions)
+          };
+        }
+      }
+
+      console.log(`  ✓ Translated ${day}`);
+    }
+
+    console.log('\n✓ Batch translation complete\n');
+    return translatedPlan;
+
+  } catch (error) {
+    console.warn(`⚠️ Batch translation failed: ${error.message}`);
+    console.log('🔄 Falling back to individual translation...\n');
+
+    // Fallback to individual translation
+    return translateWeeklyPlanFallback(weeklyPlan);
+  }
+}
+
+/**
+ * Fallback translation method - translates each item individually
+ * Used when batch translation fails or sessions_spawn is not available
+ *
+ * @param {Object} weeklyPlan - Weekly plan with days → meals → recipe
+ * @returns {Promise<Object>} Weekly plan with translated recipes
+ */
+async function translateWeeklyPlanFallback(weeklyPlan) {
+  if (!weeklyPlan) {
+    return weeklyPlan;
+  }
+
+  console.log('🔄 Using individual translation (fallback mode)...\n');
 
   const translatedPlan = {};
 
@@ -182,7 +348,7 @@ async function translateWeeklyPlan(weeklyPlan) {
     console.log(`  ✓ Translated ${day}`);
   }
 
-  console.log('\n✓ Translation complete\n');
+  console.log('\n✓ Translation complete (fallback mode)\n');
   return translatedPlan;
 }
 
@@ -202,5 +368,8 @@ module.exports = {
   translateIngredient,
   translateRecipe,
   translateWeeklyPlan,
-  clearCache
+  translateWeeklyPlanFallback,
+  clearCache,
+  hasSessionsSpawn,
+  getSessionsSpawn
 };
