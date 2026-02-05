@@ -1,21 +1,4 @@
 {
-  "-5 green onions (scallions), chopped": {
-    "emoji": "🧅",
-    "name": "-5 green onions (scallions), chopped",
-    "normalizedName": "-5 green onions (scallions), chopped",
-    "total": 4,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Saturday",
-        "mealType": "breakfast",
-        "amount": 4,
-        "unit": "",
-        "meal": "Congee with egg and scallions"
-      }
-    ]
-  },
   "arge carrots, diced": {
     "emoji": "🥕",
     "name": "arge carrots, diced",
@@ -301,6 +284,15 @@
         "meal": "Vietnamese pho"
       }
     ]
+  },
+  "reen onions (scallions), chopped": {
+    "emoji": "🧅",
+    "name": "reen onions (scallions), chopped",
+    "normalizedName": "reen onions (scallions), chopped",
+    "total": 4,
+    "unit": "",
+    "remaining": 4,
+    "dailyUsage": []
   },
   "reen onions, chopped": {
     "emoji": "🧅",
@@ -705,57 +697,6 @@
     "remaining": 1,
     "dailyUsage": []
   },
-  "-2 tablespoons honey or sugar": {
-    "emoji": "🍯",
-    "name": "-2 tablespoons honey or sugar",
-    "normalizedName": "-2 tablespoons honey or sugar",
-    "total": 2,
-    "unit": "",
-    "remaining": 1,
-    "dailyUsage": [
-      {
-        "day": "Tuesday",
-        "mealType": "breakfast",
-        "amount": 1,
-        "unit": "",
-        "meal": "Kasha with butter and milk"
-      }
-    ]
-  },
-  "-3 tablespoons honey": {
-    "emoji": "🍯",
-    "name": "-3 tablespoons honey",
-    "normalizedName": "-3 tablespoons honey",
-    "total": 2,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Tuesday",
-        "mealType": "snack",
-        "amount": 2,
-        "unit": "",
-        "meal": "Yogurt with honey"
-      }
-    ]
-  },
-  "-4 tablespoons white miso paste": {
-    "emoji": "📦",
-    "name": "-4 tablespoons white miso paste",
-    "normalizedName": "-4 tablespoons white miso paste",
-    "total": 3,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Sunday",
-        "mealType": "breakfast",
-        "amount": 3,
-        "unit": "",
-        "meal": "Miso soup with tofu"
-      }
-    ]
-  },
   "coarse sea salt": {
     "emoji": "🧂",
     "name": "coarse sea salt",
@@ -805,9 +746,27 @@
     "emoji": "🍯",
     "name": "s honey",
     "normalizedName": "s honey",
-    "total": 2,
+    "total": 4,
     "unit": "",
-    "remaining": 2,
+    "remaining": 4,
+    "dailyUsage": []
+  },
+  "s honey or sugar": {
+    "emoji": "🍯",
+    "name": "s honey or sugar",
+    "normalizedName": "s honey or sugar",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "s honey or sugar to": {
+    "emoji": "🍯",
+    "name": "s honey or sugar to",
+    "normalizedName": "s honey or sugar to",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
     "dailyUsage": []
   },
   "s soy sauce": {
@@ -853,6 +812,15 @@
     "total": 2,
     "unit": "",
     "remaining": 2,
+    "dailyUsage": []
+  },
+  "s white miso paste": {
+    "emoji": "📦",
+    "name": "s white miso paste",
+    "normalizedName": "s white miso paste",
+    "total": 3,
+    "unit": "",
+    "remaining": 3,
     "dailyUsage": []
   },
   "salt": {
@@ -917,23 +885,6 @@
     "unit": "",
     "remaining": 1,
     "dailyUsage": []
-  },
-  "-4 clove": {
-    "emoji": "📦",
-    "name": "-4 cloves",
-    "normalizedName": "-4 clove",
-    "total": 3,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Sunday",
-        "mealType": "dinner",
-        "amount": 3,
-        "unit": "",
-        "meal": "Vietnamese pho"
-      }
-    ]
   },
   "bay leaf": {
     "emoji": "📦",
@@ -1063,6 +1014,15 @@
     "total": 1,
     "unit": "",
     "remaining": 1,
+    "dailyUsage": []
+  },
+  "": {
+    "emoji": "📦",
+    "name": "s",
+    "normalizedName": "",
+    "total": 3,
+    "unit": "",
+    "remaining": 3,
     "dailyUsage": []
   },
   "s fresh chives, chopped": {

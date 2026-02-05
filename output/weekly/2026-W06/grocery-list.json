@@ -1,18 +1,6 @@
 {
   "produce": [
     {
-      "name": "-5 green onions (scallions), chopped",
-      "quantity": "4  (4)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Saturday",
-          "mealType": "breakfast",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
       "name": "apples (Granny Smith or any",
       "quantity": "as needed",
       "category": "produce",
@@ -476,6 +464,18 @@
           "day": "Monday",
           "mealType": "snack",
           "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "reen onions (scallions), chopped",
+      "quantity": "4  (4-5)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Saturday",
+          "mealType": "breakfast",
+          "cuisine": "asian"
         }
       ]
     },
@@ -1219,47 +1219,6 @@
   ],
   "pantry": [
     {
-      "name": "-2 tablespoons honey or sugar",
-      "quantity": "2  (2 )",
-      "category": "pantry",
-      "usedIn": [
-        {
-          "day": "Tuesday",
-          "mealType": "breakfast",
-          "cuisine": "slavic"
-        },
-        {
-          "day": "Thursday",
-          "mealType": "breakfast",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "-3 tablespoons honey",
-      "quantity": "2  (2)",
-      "category": "pantry",
-      "usedIn": [
-        {
-          "day": "Tuesday",
-          "mealType": "snack",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "-4 tablespoons white miso paste",
-      "quantity": "3  (3)",
-      "category": "pantry",
-      "usedIn": [
-        {
-          "day": "Sunday",
-          "mealType": "breakfast",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
       "name": "all-purpose flour",
       "quantity": "as needed",
       "category": "pantry",
@@ -1578,11 +1537,40 @@
     },
     {
       "name": "s honey",
-      "quantity": "2  (2)",
+      "quantity": "4  (4 )",
       "category": "pantry",
       "usedIn": [
         {
+          "day": "Tuesday",
+          "mealType": "snack",
+          "cuisine": "slavic"
+        },
+        {
           "day": "Wednesday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "s honey or sugar",
+      "quantity": "1  (1-2)",
+      "category": "pantry",
+      "usedIn": [
+        {
+          "day": "Tuesday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "s honey or sugar to",
+      "quantity": "1  (1-2)",
+      "category": "pantry",
+      "usedIn": [
+        {
+          "day": "Thursday",
           "mealType": "breakfast",
           "cuisine": "slavic"
         }
@@ -1665,6 +1653,18 @@
           "day": "Thursday",
           "mealType": "dinner",
           "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "s white miso paste",
+      "quantity": "3  (3-4)",
+      "category": "pantry",
+      "usedIn": [
+        {
+          "day": "Sunday",
+          "mealType": "breakfast",
+          "cuisine": "asian"
         }
       ]
     },
@@ -1918,18 +1918,6 @@
   ],
   "other": [
     {
-      "name": "-4 cloves",
-      "quantity": "3  (3)",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Sunday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
       "name": "bay leaf",
       "quantity": "1  (1)",
       "category": "other",
@@ -2169,6 +2157,18 @@
           "day": "Monday",
           "mealType": "snack",
           "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "s",
+      "quantity": "3  (3-4 cloves)",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Sunday",
+          "mealType": "dinner",
+          "cuisine": "asian"
         }
       ]
     },

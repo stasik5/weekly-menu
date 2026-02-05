@@ -68,7 +68,7 @@ function categorizeIngredient(ingredient) {
 function extractIngredientName(fullIngredient) {
   // Remove leading numbers, fractions, and common measurement words
   let name = fullIngredient
-    .replace(/^[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?(?:\s*\/\s*[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?)?\s*/, '') // Remove leading numbers, fractions, and decimals (e.g., "1", "1.5", "1/2", "3/4")
+    .replace(/^[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?(?:\s*-\s*[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?)?(?:\s*\/\s*[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?)?\s*/, '') // Remove leading numbers, fractions, and decimals (e.g., "1", "1.5", "1/2", "3/4")
     .replace(/^(cup|cups|tablespoon|tbsp|teaspoon|tsp|ounce|oz|pound|lb|gram|g|kg|ml|liter|l|piece|pieces|slice|slices|bunch|head|clove|cloves)\s*(of\s*)?/i, '') // Remove measurements
     .replace(/^\s*\(|\)\s*$/g, '') // Remove surrounding parentheses
     .trim();
@@ -86,7 +86,7 @@ function extractIngredientName(fullIngredient) {
 function extractQuantity(fullIngredient) {
   // Match: number (with fractions) + optional unit
   // Units must be complete words to avoid matching parts of words
-  const match = fullIngredient.match(/^[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?(?:\s*\/\s*[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?)?(?:\s+(?:cup|cups|tablespoon|tbsp|teaspoon|tsp|ounce|oz|pound|lb|gram|g|kg|milliliter|ml|liter|piece|pieces|slice|slices|bunch|head|clove|cloves))?\b/i);
+  const match = fullIngredient.match(/^[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?(?:\s*-\s*[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?)?(?:\s*\/\s*[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?)?(?:\s+(?:cup|cups|tablespoon|tbsp|teaspoon|tsp|ounce|oz|pound|lb|gram|g|kg|milliliter|ml|liter|piece|pieces|slice|slices|bunch|head|clove|cloves))?\b/i);
   return match ? match[0].trim() : 'as needed';
 }
 
