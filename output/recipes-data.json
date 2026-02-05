@@ -1,6 +1,6 @@
 {
-  "Blini with cheese filling": {
-    "title": "Blini with cheese filling",
+  "Рисовая каша с соленьями": {
+    "title": "Рисовая каша с соленьями",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -22,8 +22,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Yogurt with honey": {
-    "title": "Yogurt with honey",
+  "Жареный тофу кубиками": {
+    "title": "Жареный тофу кубиками",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -45,8 +45,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Pasta carbonara": {
-    "title": "Pasta carbonara",
+  "Вьетнамский фо": {
+    "title": "Вьетнамский фо",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -68,8 +68,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Buckwheat porridge with milk and berries": {
-    "title": "Buckwheat porridge with milk and berries",
+  "Блины с сырной начинкой": {
+    "title": "Блины с сырной начинкой",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -91,8 +91,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Pickled vegetables": {
-    "title": "Pickled vegetables",
+  "Йогурт с мёдом": {
+    "title": "Йогурт с мёдом",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -114,8 +114,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Pad Thai with shrimp": {
-    "title": "Pad Thai with shrimp",
+  "Тайский зелёный карри": {
+    "title": "Тайский зелёный карри",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -137,8 +137,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Syrniki (cottage cheese pancakes)": {
-    "title": "Syrniki (cottage cheese pancakes)",
+  "Жареный рис с овощами": {
+    "title": "Жареный рис с овощами",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -160,8 +160,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Apple slices with cheese": {
-    "title": "Apple slices with cheese",
+  "Банан с арахисовой пастой": {
+    "title": "Банан с арахисовой пастой",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -183,8 +183,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Borscht with sour cream": {
-    "title": "Borscht with sour cream",
+  "Борщ со сметаной": {
+    "title": "Борщ со сметаной",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -206,8 +206,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Fried eggs with bread": {
-    "title": "Fried eggs with bread",
+  "Жареные яйца с хлебом": {
+    "title": "Жареные яйца с хлебом",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -229,8 +229,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Edamame with sea salt": {
-    "title": "Edamame with sea salt",
+  "Дольки яблока с сыром": {
+    "title": "Дольки яблока с сыром",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -252,8 +252,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Cabbage rolls with meat": {
-    "title": "Cabbage rolls with meat",
+  "Японская лапша рамэн": {
+    "title": "Японская лапша рамэн",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -275,8 +275,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Congee with egg and scallions": {
-    "title": "Congee with egg and scallions",
+  "Каша с маслом и молоком": {
+    "title": "Каша с маслом и молоком",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -298,8 +298,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Seaweed snacks": {
-    "title": "Seaweed snacks",
+  "Маринованный имбирь и дайкон": {
+    "title": "Маринованный имбирь и дайкон",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -321,8 +321,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Pelmeni with sour cream": {
-    "title": "Pelmeni with sour cream",
+  "Бефстроганов с рисом": {
+    "title": "Бефстроганов с рисом",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -344,8 +344,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Miso soup with tofu": {
-    "title": "Miso soup with tofu",
+  "Гречневая каша с молоком и ягодами": {
+    "title": "Гречневая каша с молоком и ягодами",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -367,8 +367,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Nuts and dried fruits": {
-    "title": "Nuts and dried fruits",
+  "Рисовые крекеры": {
+    "title": "Рисовые крекеры",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -390,8 +390,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Shashlik (grilled meat) with salad": {
-    "title": "Shashlik (grilled meat) with salad",
+  "Шашлык с салатом": {
+    "title": "Шашлык с салатом",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -413,8 +413,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Steamed buns with pork": {
-    "title": "Steamed buns with pork",
+  "Сырники (творожные оладьи)": {
+    "title": "Сырники (творожные оладьи)",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -436,8 +436,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Pickled ginger and daikon": {
-    "title": "Pickled ginger and daikon",
+  "Ржаной хлеб с маслом": {
+    "title": "Ржаной хлеб с маслом",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -459,8 +459,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Japanese ramen": {
-    "title": "Japanese ramen",
+  "Куриный суп с овощами": {
+    "title": "Куриный суп с овощами",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",

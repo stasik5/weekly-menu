@@ -1,13 +1,23 @@
 {
   "Monday": {
     "breakfast": {
-      "name": "Blini with cheese filling",
-      "cuisine": "slavic",
+      "name": "Рисовая каша с соленьями",
+      "cuisine": "asian",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Blini with cheese filling",
+        "title": "Рисовая каша с соленьями",
         "cuisine": "unknown",
-        "ingredients": [],
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
         "instructions": [
           "Prepare ingredients according to standard cooking methods",
           "Cook until done",
@@ -25,13 +35,23 @@
       }
     },
     "snack": {
-      "name": "Yogurt with honey",
-      "cuisine": "slavic",
+      "name": "Жареный тофу кубиками",
+      "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
-        "title": "Yogurt with honey",
+        "title": "Жареный тофу кубиками",
         "cuisine": "unknown",
-        "ingredients": [],
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
         "instructions": [
           "Prepare ingredients according to standard cooking methods",
           "Cook until done",
@@ -49,13 +69,23 @@
       }
     },
     "dinner": {
-      "name": "Fried eggs with bread",
-      "cuisine": "slavic",
+      "name": "Вьетнамский фо",
+      "cuisine": "asian",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Pasta carbonara",
+        "title": "Вьетнамский фо",
         "cuisine": "unknown",
-        "ingredients": [],
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
         "instructions": [
           "Prepare ingredients according to standard cooking methods",
           "Cook until done",
@@ -75,13 +105,23 @@
   },
   "Tuesday": {
     "breakfast": {
-      "name": "Buckwheat porridge with milk and berries",
+      "name": "Блины с сырной начинкой",
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Buckwheat porridge with milk and berries",
+        "title": "Блины с сырной начинкой",
         "cuisine": "unknown",
-        "ingredients": [],
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
         "instructions": [
           "Prepare ingredients according to standard cooking methods",
           "Cook until done",
@@ -99,13 +139,23 @@
       }
     },
     "snack": {
-      "name": "Pickled vegetables",
+      "name": "Йогурт с мёдом",
       "cuisine": "slavic",
       "targetCalories": 500,
       "recipe": {
-        "title": "Pickled vegetables",
+        "title": "Йогурт с мёдом",
         "cuisine": "unknown",
-        "ingredients": [],
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
         "instructions": [
           "Prepare ingredients according to standard cooking methods",
           "Cook until done",
@@ -123,13 +173,23 @@
       }
     },
     "dinner": {
-      "name": "Pad Thai with shrimp",
+      "name": "Тайский зелёный карри",
       "cuisine": "asian",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Pad Thai with shrimp",
+        "title": "Тайский зелёный карри",
         "cuisine": "unknown",
-        "ingredients": [],
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
         "instructions": [
           "Prepare ingredients according to standard cooking methods",
           "Cook until done",
@@ -149,13 +209,23 @@
   },
   "Wednesday": {
     "breakfast": {
-      "name": "Syrniki (cottage cheese pancakes)",
-      "cuisine": "slavic",
+      "name": "Жареный рис с овощами",
+      "cuisine": "asian",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Syrniki (cottage cheese pancakes)",
+        "title": "Жареный рис с овощами",
         "cuisine": "unknown",
-        "ingredients": [],
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
         "instructions": [
           "Prepare ingredients according to standard cooking methods",
           "Cook until done",
@@ -173,13 +243,23 @@
       }
     },
     "snack": {
-      "name": "Apple slices with cheese",
+      "name": "Банан с арахисовой пастой",
       "cuisine": "slavic",
       "targetCalories": 500,
       "recipe": {
-        "title": "Apple slices with cheese",
+        "title": "Банан с арахисовой пастой",
         "cuisine": "unknown",
-        "ingredients": [],
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
         "instructions": [
           "Prepare ingredients according to standard cooking methods",
           "Cook until done",
@@ -197,13 +277,23 @@
       }
     },
     "dinner": {
-      "name": "Borscht with sour cream",
+      "name": "Борщ со сметаной",
       "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Borscht with sour cream",
+        "title": "Борщ со сметаной",
         "cuisine": "unknown",
-        "ingredients": [],
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
         "instructions": [
           "Prepare ingredients according to standard cooking methods",
           "Cook until done",
@@ -223,13 +313,23 @@
   },
   "Thursday": {
     "breakfast": {
-      "name": "Fried eggs with bread",
+      "name": "Жареные яйца с хлебом",
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Fried eggs with bread",
+        "title": "Жареные яйца с хлебом",
         "cuisine": "unknown",
-        "ingredients": [],
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
         "instructions": [
           "Prepare ingredients according to standard cooking methods",
           "Cook until done",
@@ -247,13 +347,23 @@
       }
     },
     "snack": {
-      "name": "Edamame with sea salt",
-      "cuisine": "asian",
+      "name": "Дольки яблока с сыром",
+      "cuisine": "slavic",
       "targetCalories": 500,
       "recipe": {
-        "title": "Edamame with sea salt",
+        "title": "Дольки яблока с сыром",
         "cuisine": "unknown",
-        "ingredients": [],
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
         "instructions": [
           "Prepare ingredients according to standard cooking methods",
           "Cook until done",
@@ -271,13 +381,23 @@
       }
     },
     "dinner": {
-      "name": "Cabbage rolls with meat",
-      "cuisine": "slavic",
+      "name": "Японская лапша рамэн",
+      "cuisine": "asian",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Cabbage rolls with meat",
+        "title": "Японская лапша рамэн",
         "cuisine": "unknown",
-        "ingredients": [],
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
         "instructions": [
           "Prepare ingredients according to standard cooking methods",
           "Cook until done",
@@ -297,13 +417,23 @@
   },
   "Friday": {
     "breakfast": {
-      "name": "Congee with egg and scallions",
-      "cuisine": "asian",
+      "name": "Каша с маслом и молоком",
+      "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Congee with egg and scallions",
+        "title": "Каша с маслом и молоком",
         "cuisine": "unknown",
-        "ingredients": [],
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
         "instructions": [
           "Prepare ingredients according to standard cooking methods",
           "Cook until done",
@@ -321,13 +451,23 @@
       }
     },
     "snack": {
-      "name": "Seaweed snacks",
+      "name": "Маринованный имбирь и дайкон",
       "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
-        "title": "Seaweed snacks",
+        "title": "Маринованный имбирь и дайкон",
         "cuisine": "unknown",
-        "ingredients": [],
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
         "instructions": [
           "Prepare ingredients according to standard cooking methods",
           "Cook until done",
@@ -345,13 +485,23 @@
       }
     },
     "dinner": {
-      "name": "Pelmeni with sour cream",
+      "name": "Бефстроганов с рисом",
       "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Pelmeni with sour cream",
+        "title": "Бефстроганов с рисом",
         "cuisine": "unknown",
-        "ingredients": [],
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
         "instructions": [
           "Prepare ingredients according to standard cooking methods",
           "Cook until done",
@@ -371,13 +521,23 @@
   },
   "Saturday": {
     "breakfast": {
-      "name": "Miso soup with tofu",
-      "cuisine": "asian",
+      "name": "Гречневая каша с молоком и ягодами",
+      "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Miso soup with tofu",
+        "title": "Гречневая каша с молоком и ягодами",
         "cuisine": "unknown",
-        "ingredients": [],
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
         "instructions": [
           "Prepare ingredients according to standard cooking methods",
           "Cook until done",
@@ -395,13 +555,23 @@
       }
     },
     "snack": {
-      "name": "Nuts and dried fruits",
-      "cuisine": "slavic",
+      "name": "Рисовые крекеры",
+      "cuisine": "asian",
       "targetCalories": 500,
       "recipe": {
-        "title": "Nuts and dried fruits",
+        "title": "Рисовые крекеры",
         "cuisine": "unknown",
-        "ingredients": [],
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
         "instructions": [
           "Prepare ingredients according to standard cooking methods",
           "Cook until done",
@@ -419,13 +589,23 @@
       }
     },
     "dinner": {
-      "name": "Shashlik (grilled meat) with salad",
+      "name": "Шашлык с салатом",
       "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Shashlik (grilled meat) with salad",
+        "title": "Шашлык с салатом",
         "cuisine": "unknown",
-        "ingredients": [],
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
         "instructions": [
           "Prepare ingredients according to standard cooking methods",
           "Cook until done",
@@ -445,13 +625,23 @@
   },
   "Sunday": {
     "breakfast": {
-      "name": "Steamed buns with pork",
-      "cuisine": "asian",
+      "name": "Сырники (творожные оладьи)",
+      "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Steamed buns with pork",
+        "title": "Сырники (творожные оладьи)",
         "cuisine": "unknown",
-        "ingredients": [],
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
         "instructions": [
           "Prepare ingredients according to standard cooking methods",
           "Cook until done",
@@ -469,13 +659,23 @@
       }
     },
     "snack": {
-      "name": "Pickled ginger and daikon",
-      "cuisine": "asian",
+      "name": "Ржаной хлеб с маслом",
+      "cuisine": "slavic",
       "targetCalories": 500,
       "recipe": {
-        "title": "Pickled ginger and daikon",
+        "title": "Ржаной хлеб с маслом",
         "cuisine": "unknown",
-        "ingredients": [],
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
         "instructions": [
           "Prepare ingredients according to standard cooking methods",
           "Cook until done",
@@ -493,13 +693,23 @@
       }
     },
     "dinner": {
-      "name": "Japanese ramen",
-      "cuisine": "asian",
+      "name": "Куриный суп с овощами",
+      "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Japanese ramen",
+        "title": "Куриный суп с овощами",
         "cuisine": "unknown",
-        "ingredients": [],
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
         "instructions": [
           "Prepare ingredients according to standard cooking methods",
           "Cook until done",

@@ -1,120 +1,120 @@
 {
   "Monday": {
     "breakfast": {
-      "name": "Blini with cheese filling",
-      "cuisine": "slavic",
+      "name": "Рисовая каша с соленьями",
+      "cuisine": "asian",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Yogurt with honey",
-      "cuisine": "slavic",
+      "name": "Жареный тофу кубиками",
+      "cuisine": "asian",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Pasta carbonara",
-      "cuisine": "slavic",
+      "name": "Вьетнамский фо",
+      "cuisine": "asian",
       "targetCalories": 2100
     }
   },
   "Tuesday": {
     "breakfast": {
-      "name": "Buckwheat porridge with milk and berries",
+      "name": "Блины с сырной начинкой",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Pickled vegetables",
+      "name": "Йогурт с мёдом",
       "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Pad Thai with shrimp",
+      "name": "Тайский зелёный карри",
       "cuisine": "asian",
       "targetCalories": 2100
     }
   },
   "Wednesday": {
     "breakfast": {
-      "name": "Syrniki (cottage cheese pancakes)",
-      "cuisine": "slavic",
+      "name": "Жареный рис с овощами",
+      "cuisine": "asian",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Apple slices with cheese",
+      "name": "Банан с арахисовой пастой",
       "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Borscht with sour cream",
+      "name": "Борщ со сметаной",
       "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
   "Thursday": {
     "breakfast": {
-      "name": "Fried eggs with bread",
+      "name": "Жареные яйца с хлебом",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Edamame with sea salt",
-      "cuisine": "asian",
+      "name": "Дольки яблока с сыром",
+      "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Cabbage rolls with meat",
-      "cuisine": "slavic",
+      "name": "Японская лапша рамэн",
+      "cuisine": "asian",
       "targetCalories": 2100
     }
   },
   "Friday": {
     "breakfast": {
-      "name": "Congee with egg and scallions",
-      "cuisine": "asian",
+      "name": "Каша с маслом и молоком",
+      "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Seaweed snacks",
+      "name": "Маринованный имбирь и дайкон",
       "cuisine": "asian",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Pelmeni with sour cream",
+      "name": "Бефстроганов с рисом",
       "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
   "Saturday": {
     "breakfast": {
-      "name": "Miso soup with tofu",
-      "cuisine": "asian",
+      "name": "Гречневая каша с молоком и ягодами",
+      "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Nuts and dried fruits",
-      "cuisine": "slavic",
+      "name": "Рисовые крекеры",
+      "cuisine": "asian",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Shashlik (grilled meat) with salad",
+      "name": "Шашлык с салатом",
       "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
   "Sunday": {
     "breakfast": {
-      "name": "Steamed buns with pork",
-      "cuisine": "asian",
+      "name": "Сырники (творожные оладьи)",
+      "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Pickled ginger and daikon",
-      "cuisine": "asian",
+      "name": "Ржаной хлеб с маслом",
+      "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Japanese ramen",
-      "cuisine": "asian",
+      "name": "Куриный суп с овощами",
+      "cuisine": "slavic",
       "targetCalories": 2100
     }
   }

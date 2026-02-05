@@ -1,72 +1,73 @@
 /**
- * Menu Generator - Creates weekly meal plans
+ * Menu Generator - Creates weekly meal plans with Russian names
  * Generates 7 days × 3 meals (breakfast, snack, dinner)
  * Alternates between Slavic/pasta (60%) and Asian (40%) cuisines
+ * All meal names are in Russian for direct web_search queries
  */
 
 const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 const MEAL_TYPES = ['breakfast', 'snack', 'dinner'];
 
-// Meal templates with calorie targets and cuisine types
+// Meal templates with calorie targets and cuisine types (RUSSIAN NAMES)
 const MEAL_TEMPLATES = {
   // Slavic/Pasta meals (60% preference)
   slavic: {
     breakfast: [
-      'Buckwheat porridge with milk and berries',
-      'Oatmeal with honey and nuts',
-      'Fried eggs with bread',
-      'Syrniki (cottage cheese pancakes)',
-      'Blini with cheese filling',
-      'Kasha with butter and milk',
-      'Scrambled eggs with vegetables'
+      'Гречневая каша с молоком и ягодами',           // Buckwheat porridge with milk and berries
+      'Овсянка с мёдом и орехами',                  // Oatmeal with honey and nuts
+      'Жареные яйца с хлебом',                       // Fried eggs with bread
+      'Сырники (творожные оладьи)',                  // Syrniki (cottage cheese pancakes)
+      'Блины с сырной начинкой',                      // Blini with cheese filling
+      'Каша с маслом и молоком',                      // Kasha with butter and milk
+      'Яичница с овощами'                             // Scrambled eggs with vegetables
     ],
     snack: [
-      'Apple slices with cheese',
-      'Yogurt with honey',
-      'Nuts and dried fruits',
-      'Cottage cheese with herbs',
-      'Banana with peanut butter',
-      'Pickled vegetables',
-      'Ryebread with butter'
+      'Дольки яблока с сыром',                        // Apple slices with cheese
+      'Йогурт с мёдом',                              // Yogurt with honey
+      'Орехи и сухофрукты',                          // Nuts and dried fruits
+      'Творог с зеленью',                             // Cottage cheese with herbs
+      'Банан с арахисовой пастой',                   // Banana with peanut butter
+      'Маринованные овощи',                           // Pickled vegetables
+      'Ржаной хлеб с маслом'                         // Ryebread with butter
     ],
     dinner: [
-      'Chicken soup with vegetables',
-      'Borscht with sour cream',
-      'Beef stroganoff with rice',
-      'Pelmeni with sour cream',
-      'Shashlik (grilled meat) with salad',
-      'Pasta carbonara',
-      'Cabbage rolls with meat'
+      'Куриный суп с овощами',                        // Chicken soup with vegetables
+      'Борщ со сметаной',                            // Borscht with sour cream
+      'Бефстроганов с рисом',                         // Beef stroganoff with rice
+      'Пельмени со сметаной',                         // Pelmeni with sour cream
+      'Шашлык с салатом',                            // Shashlik (grilled meat) with salad
+      'Паста карбонара',                             // Pasta carbonara
+      'Голубцы с мясом'                              // Cabbage rolls with meat
     ]
   },
   // Asian meals (40% preference)
   asian: {
     breakfast: [
-      'Congee with egg and scallions',
-      'Steamed buns with pork',
-      'Rice porridge with pickles',
-      'Fried rice with vegetables',
-      'Miso soup with tofu',
-      'Rice noodles with egg',
-      'Dim sum dumplings'
+      'Конджи с яйцом и зелёным луком',              // Congee with egg and scallions
+      'Паровые булочки со свининой',                  // Steamed buns with pork
+      'Рисовая каша с соленьями',                     // Rice porridge with pickles
+      'Жареный рис с овощами',                        // Fried rice with vegetables
+      'Мисо-суп с тофу',                            // Miso soup with tofu
+      'Лапша с яйцом',                               // Rice noodles with egg
+      'Дим самы (паровые пельмени)'                  // Dim sum dumplings
     ],
     snack: [
-      'Edamame with sea salt',
-      'Seaweed snacks',
-      'Rice crackers',
-      'Pickled ginger and daikon',
-      'Mango slices',
-      'Green tea cookies',
-      'Fried tofu cubes'
+      'Эдамаме с морской солью',                      // Edamame with sea salt
+      'Чипсы из морской капусты',                     // Seaweed snacks
+      'Рисовые крекеры',                              // Rice crackers
+      'Маринованный имбирь и дайкон',                 // Pickled ginger and daikon
+      'Дольки манго',                                // Mango slices
+      'Печенье с зелёным чаем',                      // Green tea cookies
+      'Жареный тофу кубиками'                        // Fried tofu cubes
     ],
     dinner: [
-      'Chicken teriyaki with rice',
-      'Pad Thai with shrimp',
-      'Vietnamese pho',
-      'Korean bibimbap',
-      'Sichuan mapo tofu',
-      'Thai green curry',
-      'Japanese ramen'
+      'Куриный терияки с рисом',                      // Chicken teriyaki with rice
+      'Пад тай с креветками',                         // Pad Thai with shrimp
+      'Вьетнамский фо',                               // Vietnamese pho
+      'Корейский бибимбап',                          // Korean bibimbap
+      'Сычуаньский мапо тофу',                       // Sichuan mapo tofu
+      'Тайский зелёный карри',                        // Thai green curry
+      'Японская лапша рамэн'                          // Japanese ramen
     ]
   }
 };
