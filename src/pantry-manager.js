@@ -161,7 +161,7 @@ function normalizeIngredientName(name) {
  * @returns {Object} Pantry data structure
  */
 function generatePantryFromGroceryList(groceryList, menu) {
-  console.log('\n📦 Generating virtual pantry from grocery list...\n');
+  console.log('\n📦 Generating virtual pantry from recipes...\n');
 
   const pantry = {};
   const days = Object.keys(menu);
@@ -182,39 +182,7 @@ function generatePantryFromGroceryList(groceryList, menu) {
     'varies by recipe'
   ];
 
-  // First pass: collect all ingredients from grocery list
-  for (const [category, items] of Object.entries(groceryList)) {
-    for (const item of items) {
-      // Handle both 'name' and 'item' field names
-      const itemName = item.name || item.item;
-      const normalizedName = normalizeIngredientName(itemName);
-      const parsed = parseIngredientQuantity(item.quantity);
-      const emoji = getEmojiForIngredient(itemName);
-
-      // Skip items with 0 quantity or generic names
-      if (parsed.value <= 0) {
-        continue;
-      }
-
-      // Skip generic ingredients
-      const lowerName = itemName.toLowerCase();
-      if (skipPatterns.some(pattern => lowerName.includes(pattern))) {
-        continue;
-      }
-
-      pantry[normalizedName] = {
-        emoji,
-        name: itemName,
-        normalizedName,
-        total: parsed.value,
-        unit: parsed.unit,
-        remaining: parsed.value,
-        dailyUsage: []
-      };
-    }
-  }
-
-  // Second pass: calculate daily usage based on menu
+  // First pass: collect all ingredients from recipes (not grocery list)
   for (const day of days) {
     for (const [mealType, mealData] of Object.entries(menu[day])) {
       if (!mealData.recipe || !mealData.recipe.ingredients) continue;
@@ -241,26 +209,35 @@ function generatePantryFromGroceryList(groceryList, menu) {
           continue;
         }
 
-        if (pantry[normalizedName]) {
-          // Deduct this amount
-          pantry[normalizedName].remaining -= parsed.value;
-          pantry[normalizedName].dailyUsage.push({
-            day,
-            mealType,
-            amount: parsed.value,
+        if (!pantry[normalizedName]) {
+          // Create new pantry item
+          pantry[normalizedName] = {
+            emoji: getEmojiForIngredient(parsed.name),
+            name: parsed.name,
+            normalizedName,
+            total: 0,  // Will be accumulated
             unit: parsed.unit,
-            meal: mealData.name
-          });
+            remaining: 0,
+            dailyUsage: []
+          };
         }
+
+        // Accumulate total quantity needed
+        pantry[normalizedName].total += parsed.value;
+        pantry[normalizedName].dailyUsage.push({
+          day,
+          mealType,
+          amount: parsed.value,
+          unit: parsed.unit,
+          meal: mealData.name
+        });
       }
     }
   }
 
-  // Fix any negative values (rounding errors) to 0
+  // Set remaining equal to total (everything is initially "in pantry")
   for (const key of Object.keys(pantry)) {
-    if (pantry[key].remaining < 0) {
-      pantry[key].remaining = 0;
-    }
+    pantry[key].remaining = pantry[key].total;
   }
 
   console.log(`✓ Generated pantry with ${Object.keys(pantry).length} items\n`);
@@ -307,7 +284,7 @@ function formatPantryDisplay(pantry, showDaily = false) {
     });
 
   if (items.length === 0) {
-    return '<p>No pantry items to display.</p>';
+    return '<p>Нет продуктов для отображения.</p>';
   }
 
   let html = '';
@@ -343,7 +320,7 @@ function formatPantryDisplay(pantry, showDaily = false) {
  */
 function renderDailyBreakdown(item) {
   if (!item.dailyUsage || item.dailyUsage.length === 0) {
-    return '<div class="daily-breakdown hidden">No usage recorded</div>';
+    return '<div class="daily-breakdown hidden">Нет использования</div>';
   }
 
   // Group by day

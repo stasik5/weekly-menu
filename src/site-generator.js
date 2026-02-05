@@ -8,6 +8,94 @@ const path = require('path');
 const pantryManager = require('./pantry-manager');
 
 /**
+ * Translation mapping from English to Russian
+ */
+const translations = {
+  // Days of week
+  'Monday': 'Понедельник',
+  'Tuesday': 'Вторник',
+  'Wednesday': 'Среда',
+  'Thursday': 'Четверг',
+  'Friday': 'Пятница',
+  'Saturday': 'Суббота',
+  'Sunday': 'Воскресенье',
+
+  // Meal types
+  'breakfast': 'Завтрак',
+  'snack': 'Перекус',
+  'dinner': 'Ужин',
+  'lunch': 'Обед',
+
+  // Cuisines
+  'slavic': 'Славянская',
+  'asian': 'Азиатская',
+  'european': 'Европейская',
+  'mediterranean': 'Средиземноморская',
+  'american': 'Американская',
+  'italian': 'Итальянская',
+  'mexican': 'Мексиканская',
+  'indian': 'Индийская',
+  'chinese': 'Китайская',
+  'japanese': 'Японская',
+  'thai': 'Тайская',
+  'french': 'Французская',
+  'german': 'Немецкая',
+  'greek': 'Греческая',
+
+  // UI text
+  'Weekly Menu': 'Еженедельное меню',
+  'Pantry (Warehouse)': 'Кладовая (Склад)',
+  'Weekly ingredient tracking based on menu (not real inventory)': 'Еженедельный учет продуктов на основе меню (не реальный инвентарь)',
+  'Show by days': 'Показать по дням',
+  'Hide by days': 'Скрыть по дням',
+  'Meals for the week (Click any meal for recipe)': 'Блюда на неделю (Нажмите на любое блюдо для рецепта)',
+  'Ingredients': 'Ингредиенты',
+  'Instructions': 'Инструкции',
+  'Full recipe': 'Полный рецепт',
+  'Source:': 'Источник:',
+
+  // Common phrases
+  'No pantry items to display.': 'Нет продуктов для отображения.',
+  'No usage recorded': 'Нет использования'
+};
+
+/**
+ * Translate text to Russian
+ * @param {string} text - English text to translate
+ * @returns {string} Russian translation
+ */
+function translate(text) {
+  return translations[text] || text;
+}
+
+/**
+ * Translate day name
+ * @param {string} day - English day name
+ * @returns {string} Russian day name
+ */
+function translateDay(day) {
+  return translate(day);
+}
+
+/**
+ * Translate meal type
+ * @param {string} mealType - English meal type
+ * @returns {string} Russian meal type
+ */
+function translateMealType(mealType) {
+  return translate(mealType);
+}
+
+/**
+ * Translate cuisine
+ * @param {string} cuisine - English cuisine name
+ * @returns {string} Russian cuisine name
+ */
+function translateCuisine(cuisine) {
+  return translate(cuisine);
+}
+
+/**
  * Extract recipes from weekly plan for embedding in HTML
  * @param {Object} plan - Weekly meal plan
  * @returns {Object} Recipe data keyed by day-mealType
@@ -50,11 +138,11 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
   const pantrySection = pantry ? `
     <!-- Virtual Pantry -->
     <section class="section">
-      <h2>📦 Кладовая (Склад)</h2>
+      <h2>📦 ${translate('Pantry (Warehouse)')}</h2>
       <p style="color: #94a3b8; margin-bottom: 15px;">
-        Еженедельный учет продуктов на основе меню (не реальный инвентарь)
+        ${translate('Weekly ingredient tracking based on menu (not real inventory)')}
       </p>
-      <button id="toggle-daily" onclick="toggleDaily()">[Показать по дням]</button>
+      <button id="toggle-daily" onclick="toggleDaily()">[${translate('Show by days')}]</button>
       <div class="pantry-items">
         ${pantryManager.formatPantryDisplay(pantry, false)}
       </div>
@@ -498,7 +586,7 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
 <body>
   <div class="container">
     <header>
-      <h1>🍽️ Еженедельное меню</h1>
+      <h1>🍽️ ${translate('Weekly Menu')}</h1>
       <div class="week-label">${weekLabel}</div>
     </header>
 
@@ -507,27 +595,10 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
 
     <!-- Meal Grid -->
     <section class="section">
-      <h2>Блюда на неделю (Нажмите на любое блюдо для рецепта 📖)</h2>
+      <h2>${translate('Meals for the week (Click any meal for recipe)')}</h2>
       <div class="meal-grid">
         ${days.map(day => {
-          // Translate day names
-          const dayTranslations = {
-            'Monday': 'Понедельник',
-            'Tuesday': 'Вторник',
-            'Wednesday': 'Среда',
-            'Thursday': 'Четверг',
-            'Friday': 'Пятница',
-            'Saturday': 'Суббота',
-            'Sunday': 'Воскресенье'
-          };
-          const translatedDay = dayTranslations[day] || day;
-
-          // Translate meal types
-          const mealTypeTranslations = {
-            'breakfast': 'Завтрак',
-            'snack': 'Перекус',
-            'dinner': 'Ужин'
-          };
+          const translatedDay = translateDay(day);
 
           return `
           <div class="day-card">
@@ -535,16 +606,8 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
             <div class="meals">
               ${mealTypes.map(mealType => {
                 const meal = weeklyPlan[day][mealType];
-                const translatedMealType = mealTypeTranslations[mealType] || mealType;
-                // Translate cuisine
-                const cuisineTranslations = {
-                  'slavic': 'Славянская',
-                  'asian': 'Азиатская',
-                  'european': 'Европейская',
-                  'mediterranean': 'Средиземноморская',
-                  'american': 'Американская'
-                };
-                const translatedCuisine = cuisineTranslations[meal.cuisine] || meal.cuisine;
+                const translatedMealType = translateMealType(mealType);
+                const translatedCuisine = translateCuisine(meal.cuisine);
                 return `
                   <div class="meal" data-day="${day}" data-meal="${mealType}" onclick="openModal('${day}', '${mealType}')">
                     <div class="meal-type">${translatedMealType}</div>
@@ -562,27 +625,6 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
 
     <!-- Grocery List - Hidden (commented out, pantry is now the main reference) -->
     <!--
-    <section class="section">
-      <h2>Grocery List</h2>
-      ${Object.entries(groceryList).map(([category, items]) => {
-        if (items.length === 0) return '';
-        return `
-          <div class="grocery-category">
-            <h3>${category.charAt(0).toUpperCase() + category.slice(1)}</h3>
-            <div class="grocery-items">
-              ${items.map(item => `
-                <div class="grocery-item">
-                  <input type="checkbox" id="item-${item.name.replace(/\s+/g, '-')}">
-                  <label for="item-${item.name.replace(/\s+/g, '-')}" class="grocery-item-name">${item.name}</label>
-                  <span class="grocery-item-qty">(${item.quantity})</span>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-        `;
-      }).join('')}
-    </section>
-    -->
 
     <!-- Recipe Modal -->
     <div class="modal-overlay" id="recipeModal">
@@ -592,12 +634,12 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
         <div class="modal-cuisine" id="modalCuisine"></div>
 
         <div class="modal-section">
-          <h4>🥗 Ингредиенты</h4>
+          <h4>🥗 ${translate('Ingredients')}</h4>
           <ul id="modalIngredients"></ul>
         </div>
 
         <div class="modal-section">
-          <h4>👨‍🍳 Инструкции</h4>
+          <h4>👨‍🍳 ${translate('Instructions')}</h4>
           <ol id="modalInstructions"></ol>
         </div>
 
@@ -634,9 +676,9 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
 
       const sourceEl = document.getElementById('modalSource');
       if (recipe.url) {
-        sourceEl.innerHTML = \`<a href="\${recipe.url}" target="_blank" rel="noopener noreferrer">🔗 Полный рецепт</a>\`;
+        sourceEl.innerHTML = \`<a href="\${recipe.url}" target="_blank" rel="noopener noreferrer">🔗 ${translate('Full recipe')}</a>\`;
       } else {
-        sourceEl.innerHTML = \`<small>Источник: \${recipe.source}</small>\`;
+        sourceEl.innerHTML = \`<small>${translate('Source:')} \${recipe.source}</small>\`;
       }
 
       document.getElementById('recipeModal').classList.add('active');
@@ -660,8 +702,8 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
 
       breakdowns.forEach(el => el.classList.toggle('hidden'));
       button.textContent = breakdowns[0] && breakdowns[0].classList.contains('hidden')
-        ? '[Показать по дням]'
-        : '[Скрыть по дням]';
+        ? '[${translate('Show by days')}]'
+        : '[${translate('Hide by days')}]';
     }
 
     // Close on overlay click
