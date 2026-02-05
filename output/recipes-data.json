@@ -1,485 +1,1150 @@
 {
+  "Buckwheat porridge with milk and berries": {
+    "title": "Buckwheat Porridge with Milk and Berries",
+    "cuisine": "slavic",
+    "ingredients": [
+      "200g buckwheat groats (kasha)",
+      "400ml milk",
+      "200ml water",
+      "2 tbsp honey",
+      "200g mixed berries (fresh or frozen)",
+      "1 tbsp butter",
+      "1/2 tsp cinnamon",
+      "Pinch of salt"
+    ],
+    "instructions": [
+      "Rinse buckwheat well",
+      "Toast buckwheat in a dry pan for 2-3 minutes",
+      "Add water and salt, bring to boil",
+      "Reduce heat, cover and simmer for 15 minutes",
+      "Add milk, simmer for another 5 minutes",
+      "Remove from heat, stir in butter and honey",
+      "Let stand for 5 minutes",
+      "Serve warm topped with fresh berries",
+      "Sprinkle with cinnamon if desired"
+    ],
+    "nutrition": {"calories": 1400, "protein": 45, "carbs": 220, "fat": 40},
+    "source": "manual",
+    "url": null
+  },
   "Oatmeal with honey and nuts": {
-    "title": "Oatmeal with honey and nuts",
-    "cuisine": "unknown",
+    "title": "Oatmeal with Honey and Nuts",
+    "cuisine": "slavic",
     "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
+      "200g rolled oats",
+      "500ml milk or water",
+      "2 tbsp honey",
+      "50g mixed nuts (walnuts, almonds)",
+      "1/2 tsp cinnamon",
+      "1/4 tsp salt",
+      "1 tbsp butter (optional)",
+      "Fresh berries for topping"
     ],
     "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
+      "Bring milk or water to a boil in a saucepan",
+      "Add oats, reduce heat to low, and simmer for 5 minutes",
+      "Stir in cinnamon and salt",
+      "Remove from heat, add honey and butter",
+      "Top with chopped nuts and fresh berries",
       "Serve hot"
     ],
-    "nutrition": {
-      "calories": 1400,
-      "protein": 53,
-      "carbs": 105,
-      "fat": 86
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Seaweed snacks": {
-    "title": "Seaweed snacks",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 500,
-      "protein": 19,
-      "carbs": 38,
-      "fat": 31
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Pasta carbonara": {
-    "title": "Pasta carbonara",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 2100,
-      "protein": 131,
-      "carbs": 215,
-      "fat": 79
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Scrambled eggs with vegetables": {
-    "title": "Scrambled eggs with vegetables",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 1400,
-      "protein": 53,
-      "carbs": 105,
-      "fat": 86
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Fried tofu cubes": {
-    "title": "Fried tofu cubes",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 500,
-      "protein": 19,
-      "carbs": 38,
-      "fat": 31
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Beef stroganoff with rice": {
-    "title": "Beef stroganoff with rice",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 2100,
-      "protein": 131,
-      "carbs": 215,
-      "fat": 79
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Syrniki (cottage cheese pancakes)": {
-    "title": "Syrniki (cottage cheese pancakes)",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 1400,
-      "protein": 53,
-      "carbs": 105,
-      "fat": 86
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Green tea cookies": {
-    "title": "Green tea cookies",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 500,
-      "protein": 19,
-      "carbs": 38,
-      "fat": 31
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Thai green curry": {
-    "title": "Thai green curry",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 2100,
-      "protein": 131,
-      "carbs": 215,
-      "fat": 79
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Congee with egg and scallions": {
-    "title": "Congee with egg and scallions",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 1400,
-      "protein": 53,
-      "carbs": 105,
-      "fat": 86
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Mango slices": {
-    "title": "Mango slices",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 500,
-      "protein": 19,
-      "carbs": 38,
-      "fat": 31
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Cabbage rolls with meat": {
-    "title": "Cabbage rolls with meat",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 2100,
-      "protein": 131,
-      "carbs": 215,
-      "fat": 79
-    },
-    "source": "fallback_template",
+    "nutrition": {"calories": 1400, "protein": 45, "carbs": 180, "fat": 55},
+    "source": "manual",
     "url": null
   },
   "Fried eggs with bread": {
-    "title": "Fried eggs with bread",
-    "cuisine": "unknown",
+    "title": "Fried Eggs with Bread",
+    "cuisine": "slavic",
     "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
+      "6 large eggs",
+      "4 slices bread (rye or whole grain)",
+      "3 tbsp butter or oil",
+      "Salt and black pepper to taste",
+      "Optional: fresh herbs (dill, parsley), tomatoes, pickles"
     ],
     "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
+      "Heat butter or oil in a large pan over medium heat",
+      "Crack eggs into the pan, being careful not to break yolks",
+      "Season with salt and pepper",
+      "Cook for 2-3 minutes until whites are set but yolks are still runny",
+      "For over-easy, flip carefully and cook for another 30 seconds",
+      "Toast bread until golden",
+      "Serve eggs on toast or on the side",
+      "Garnish with fresh herbs if desired",
+      "Accompany with tomatoes or pickles for a complete meal"
     ],
-    "nutrition": {
-      "calories": 1400,
-      "protein": 53,
-      "carbs": 105,
-      "fat": 86
-    },
-    "source": "fallback_template",
+    "nutrition": {"calories": 1400, "protein": 65, "carbs": 80, "fat": 85},
+    "source": "manual",
     "url": null
   },
-  "Pickled vegetables": {
-    "title": "Pickled vegetables",
-    "cuisine": "unknown",
+  "Syrniki (cottage cheese pancakes)": {
+    "title": "Syrniki (Cottage Cheese Pancakes)",
+    "cuisine": "slavic",
     "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
+      "400g cottage cheese",
+      "2 large eggs",
+      "3-4 tbsp sugar",
+      "1/2 tsp salt",
+      "3-4 tbsp flour",
+      "1 tsp vanilla extract",
+      "Oil for frying",
+      "Sour cream for serving",
+      "Fresh berries or jam for topping"
     ],
     "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
+      "Mash cottage cheese in a bowl",
+      "Add eggs, sugar, salt, and vanilla, mix well",
+      "Gradually add flour until mixture holds together",
+      "Form small patties with damp hands",
+      "Heat oil in a pan over medium heat",
+      "Fry syrniki for 3-4 minutes per side until golden brown",
+      "Drain on paper towels",
+      "Serve hot with sour cream and berries or jam"
     ],
-    "nutrition": {
-      "calories": 500,
-      "protein": 19,
-      "carbs": 38,
-      "fat": 31
-    },
-    "source": "fallback_template",
+    "nutrition": {"calories": 1400, "protein": 65, "carbs": 160, "fat": 55},
+    "source": "manual",
     "url": null
   },
-  "Pelmeni with sour cream": {
-    "title": "Pelmeni with sour cream",
-    "cuisine": "unknown",
+  "Blini with cheese filling": {
+    "title": "Blini with Cheese Filling",
+    "cuisine": "slavic",
     "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
+      "200g flour",
+      "300ml milk",
+      "2 large eggs",
+      "2 tbsp sugar",
+      "1/2 tsp salt",
+      "2 tbsp melted butter",
+      "Filling: 300g cottage cheese or farmer's cheese, 1 egg, 2 tbsp sour cream, 2 tbsp sugar, 1 tsp vanilla"
     ],
     "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
+      "Mix flour, sugar, and salt in a bowl",
+      "Whisk eggs and milk together, add to dry ingredients",
+      "Add melted butter, whisk until smooth batter forms",
+      "Let batter rest for 15 minutes",
+      "Heat a non-stick pan, lightly butter it",
+      "Pour small ladle of batter, swirl to make thin pancake",
+      "Cook for 1-2 minutes per side until golden",
+      "For filling: mix cottage cheese, egg, sour cream, sugar, and vanilla",
+      "Spread filling on blini, roll up",
+      "Serve with sour cream and berries"
     ],
-    "nutrition": {
-      "calories": 2100,
-      "protein": 131,
-      "carbs": 215,
-      "fat": 79
-    },
-    "source": "fallback_template",
+    "nutrition": {"calories": 1400, "protein": 60, "carbs": 160, "fat": 55},
+    "source": "manual",
     "url": null
   },
-  "Buckwheat porridge with milk and berries": {
-    "title": "Buckwheat porridge with milk and berries",
-    "cuisine": "unknown",
+  "Kasha with butter and milk": {
+    "title": "Kasha (Buckwheat) with Butter and Milk",
+    "cuisine": "slavic",
     "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
+      "200g buckwheat groats",
+      "500ml water or broth",
+      "200ml milk",
+      "3 tbsp butter",
+      "1 tsp salt",
+      "Optional: fried onions, mushrooms"
     ],
     "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
+      "Rinse buckwheat well, drain",
+      "Toast buckwheat in a dry pan for 2-3 minutes until fragrant",
+      "Add water or broth and salt, bring to boil",
+      "Reduce heat to low, cover and simmer for 15-20 minutes",
+      "Remove from heat, let stand covered for 5 minutes",
+      "Fluff with a fork",
+      "Stir in butter",
+      "Serve warm, optionally with milk on the side",
+      "Can also be served with fried onions or mushrooms"
     ],
-    "nutrition": {
-      "calories": 1400,
-      "protein": 53,
-      "carbs": 105,
-      "fat": 86
-    },
-    "source": "fallback_template",
+    "nutrition": {"calories": 1400, "protein": 40, "carbs": 200, "fat": 50},
+    "source": "manual",
     "url": null
   },
-  "Ryebread with butter": {
-    "title": "Ryebread with butter",
-    "cuisine": "unknown",
+  "Scrambled eggs with vegetables": {
+    "title": "Scrambled Eggs with Vegetables",
+    "cuisine": "slavic",
     "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
+      "8 large eggs",
+      "1 bell pepper, diced",
+      "1 small onion, diced",
+      "100g spinach or chard",
+      "2 tomatoes, diced",
+      "2 tbsp butter or oil",
+      "50g feta or cottage cheese (optional)",
+      "Fresh herbs (dill, parsley)",
+      "Salt and pepper to taste"
     ],
     "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
+      "Heat butter in a large pan over medium heat",
+      "Sauté onions and peppers until softened",
+      "Add tomatoes and spinach, cook until wilted",
+      "Beat eggs with salt and pepper",
+      "Pour eggs over vegetables",
+      "Gently stir and fold eggs until set but still moist",
+      "Add cheese if using, stir briefly to melt",
+      "Garnish with fresh herbs, serve immediately"
     ],
-    "nutrition": {
-      "calories": 500,
-      "protein": 19,
-      "carbs": 38,
-      "fat": 31
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Japanese ramen": {
-    "title": "Japanese ramen",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 2100,
-      "protein": 131,
-      "carbs": 215,
-      "fat": 79
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Rice porridge with pickles": {
-    "title": "Rice porridge with pickles",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 1400,
-      "protein": 53,
-      "carbs": 105,
-      "fat": 86
-    },
-    "source": "fallback_template",
+    "nutrition": {"calories": 1400, "protein": 80, "carbs": 40, "fat": 100},
+    "source": "manual",
     "url": null
   },
   "Apple slices with cheese": {
-    "title": "Apple slices with cheese",
-    "cuisine": "unknown",
+    "title": "Apple Slices with Cheese",
+    "cuisine": "slavic",
     "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
+      "3 medium apples",
+      "150g cheese (Gouda, cheddar, or any firm cheese)",
+      "1 tbsp honey (optional)",
+      "1/4 tsp cinnamon (optional)",
+      "Nuts for garnish (walnuts or almonds)"
     ],
     "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
+      "Wash and slice apples",
+      "Slice cheese into thin pieces or cubes",
+      "Arrange apple and cheese on a plate",
+      "Drizzle with honey if desired",
+      "Sprinkle with cinnamon if desired",
+      "Top with nuts for crunch",
+      "Serve immediately"
     ],
-    "nutrition": {
-      "calories": 500,
-      "protein": 19,
-      "carbs": 38,
-      "fat": 31
-    },
-    "source": "fallback_template",
+    "nutrition": {"calories": 500, "protein": 20, "carbs": 55, "fat": 25},
+    "source": "manual",
+    "url": null
+  },
+  "Yogurt with honey": {
+    "title": "Yogurt with Honey",
+    "cuisine": "slavic",
+    "ingredients": [
+      "400g Greek yogurt",
+      "3 tbsp honey",
+      "100g mixed berries",
+      "50g granola",
+      "1/2 tsp cinnamon",
+      "Nuts (walnuts, almonds) for topping"
+    ],
+    "instructions": [
+      "Spoon yogurt into a bowl",
+      "Drizzle honey over yogurt",
+      "Top with fresh berries",
+      "Sprinkle granola over the top",
+      "Add cinnamon for extra flavor",
+      "Garnish with nuts",
+      "Serve immediately"
+    ],
+    "nutrition": {"calories": 500, "protein": 30, "carbs": 60, "fat": 15},
+    "source": "manual",
+    "url": null
+  },
+  "Nuts and dried fruits": {
+    "title": "Nuts and Dried Fruits",
+    "cuisine": "slavic",
+    "ingredients": [
+      "100g mixed nuts (walnuts, almonds, cashews)",
+      "100g dried fruits (raisins, apricots, dates)",
+      "50g dried berries (cranberries, blueberries)",
+      "1 tbsp honey (optional)",
+      "1/4 tsp cinnamon (optional)"
+    ],
+    "instructions": [
+      "Mix nuts and dried fruits in a bowl",
+      "Drizzle with honey if desired for extra sweetness",
+      "Sprinkle with cinnamon for extra flavor",
+      "Serve as a snack",
+      "Store in an airtight container"
+    ],
+    "nutrition": {"calories": 500, "protein": 15, "carbs": 50, "fat": 35},
+    "source": "manual",
+    "url": null
+  },
+  "Cottage cheese with herbs": {
+    "title": "Cottage Cheese with Herbs",
+    "cuisine": "slavic",
+    "ingredients": [
+      "300g cottage cheese",
+      "2 tbsp sour cream",
+      "1-2 garlic cloves, minced",
+      "2 tbsp fresh dill, chopped",
+      "1 tbsp fresh parsley, chopped",
+      "Salt and black pepper to taste",
+      "1 tsp olive oil (optional)"
+    ],
+    "instructions": [
+      "Place cottage cheese in a serving bowl",
+      "Add sour cream and mix lightly",
+      "Stir in minced garlic",
+      "Add chopped fresh herbs",
+      "Season with salt and pepper to taste",
+      "Drizzle with olive oil if desired",
+      "Serve on toast or with vegetables"
+    ],
+    "nutrition": {"calories": 500, "protein": 45, "carbs": 15, "fat": 30},
+    "source": "manual",
+    "url": null
+  },
+  "Banana with peanut butter": {
+    "title": "Banana with Peanut Butter",
+    "cuisine": "slavic",
+    "ingredients": [
+      "3 large bananas",
+      "120g natural peanut butter",
+      "1 tbsp honey",
+      "1/4 tsp cinnamon",
+      "30g granola or chopped nuts (optional)"
+    ],
+    "instructions": [
+      "Peel bananas and slice or leave whole",
+      "Spread peanut butter on bananas or use as dip",
+      "Drizzle with honey",
+      "Sprinkle with cinnamon",
+      "Top with granola or nuts if desired",
+      "Serve immediately"
+    ],
+    "nutrition": {"calories": 500, "protein": 15, "carbs": 65, "fat": 22},
+    "source": "manual",
+    "url": null
+  },
+  "Pickled vegetables": {
+    "title": "Pickled Vegetables",
+    "cuisine": "slavic",
+    "ingredients": [
+      "300g mixed vegetables (cucumbers, carrots, cauliflower)",
+      "1 cup white vinegar",
+      "1/2 cup water",
+      "1 tbsp sugar",
+      "1 tbsp salt",
+      "1 garlic clove, minced",
+      "1 tsp dill seeds",
+      "1 bay leaf"
+    ],
+    "instructions": [
+      "Cut vegetables into bite-sized pieces",
+      "Combine vinegar, water, sugar, and salt in a saucepan",
+      "Heat until sugar and salt dissolve",
+      "Add garlic, dill seeds, and bay leaf",
+      "Place vegetables in a clean jar",
+      "Pour the hot brine over the vegetables",
+      "Cover and refrigerate for at least 24 hours",
+      "Serve chilled as a side dish or snack"
+    ],
+    "nutrition": {"calories": 500, "protein": 10, "carbs": 100, "fat": 5},
+    "source": "manual",
+    "url": null
+  },
+  "Ryebread with butter": {
+    "title": "Ryebread with Butter",
+    "cuisine": "slavic",
+    "ingredients": [
+      "4 slices ryebread or whole grain bread",
+      "60g butter, softened",
+      "Salt to taste",
+      "Optional: garlic, herbs (dill, parsley)",
+      "Optional: cheese slices"
+    ],
+    "instructions": [
+      "Toast bread if desired",
+      "Spread butter generously on each slice",
+      "Sprinkle with salt to taste",
+      "For garlic bread: rub with a cut garlic clove",
+      "For herb butter: mix herbs into softened butter first",
+      "Serve with cheese if desired",
+      "Best served fresh"
+    ],
+    "nutrition": {"calories": 500, "protein": 8, "carbs": 40, "fat": 35},
+    "source": "manual",
+    "url": null
+  },
+  "Chicken soup with vegetables": {
+    "title": "Chicken Soup with Vegetables",
+    "cuisine": "slavic",
+    "ingredients": [
+      "500g chicken breast or thighs",
+      "2 carrots, sliced",
+      "2 potatoes, cubed",
+      "1 onion, diced",
+      "2 celery stalks, sliced",
+      "1.5L water or chicken broth",
+      "2 garlic cloves, minced",
+      "Fresh dill and parsley",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Place chicken in a large pot with water or broth",
+      "Bring to boil, skim any foam",
+      "Reduce heat, simmer for 20 minutes until chicken is cooked",
+      "Remove chicken, shred when cool",
+      "Add vegetables to the pot, simmer for 15 minutes",
+      "Return shredded chicken to the pot",
+      "Add garlic and herbs, season with salt and pepper",
+      "Simmer for another 5 minutes",
+      "Serve hot with fresh bread"
+    ],
+    "nutrition": {"calories": 2100, "protein": 150, "carbs": 150, "fat": 85},
+    "source": "manual",
+    "url": null
+  },
+  "Borscht with sour cream": {
+    "title": "Borscht with Sour Cream",
+    "cuisine": "slavic",
+    "ingredients": [
+      "400g beef (optional, for meat version)",
+      "3 large beets, peeled and grated",
+      "2 large potatoes, cubed",
+      "1 large carrot, grated",
+      "1 large onion, diced",
+      "300g cabbage, shredded",
+      "2 tomatoes, diced",
+      "1 tbsp tomato paste",
+      "2 garlic cloves, minced",
+      "2 bay leaves",
+      "4-5 peppercorns",
+      "2 tbsp vinegar",
+      "Sour cream for serving",
+      "Fresh dill for garnish"
+    ],
+    "instructions": [
+      "If using meat, boil beef for 1-2 hours, remove and cube",
+      "Add potatoes to broth, cook for 10 minutes",
+      "In a separate pan, sauté onions and carrots",
+      "Add beets, tomatoes, tomato paste, simmer for 10 minutes",
+      "Add to the pot along with cabbage, garlic, bay leaves, and peppercorns",
+      "Simmer for 15-20 minutes until all vegetables are tender",
+      "Add vinegar for brightness, season with salt",
+      "Return meat to pot if using, heat through",
+      "Serve hot with a dollop of sour cream and fresh dill"
+    ],
+    "nutrition": {"calories": 2100, "protein": 100, "carbs": 220, "fat": 80},
+    "source": "manual",
+    "url": null
+  },
+  "Beef stroganoff with rice": {
+    "title": "Beef Stroganoff with Rice",
+    "cuisine": "slavic",
+    "ingredients": [
+      "400g beef sirloin, cut into strips",
+      "200g mushrooms, sliced",
+      "1 large onion, diced",
+      "2 garlic cloves, minced",
+      "2 tbsp butter",
+      "1 tbsp flour",
+      "250ml beef broth",
+      "150ml sour cream",
+      "1 tbsp Dijon mustard",
+      "200g rice",
+      "Fresh parsley, chopped",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Cook rice according to package instructions",
+      "Season beef with salt and pepper, sear in butter until browned, set aside",
+      "In the same pan, sauté onions and mushrooms until soft",
+      "Add garlic, cook for 1 minute",
+      "Sprinkle flour, stir to coat",
+      "Add beef broth, bring to simmer and cook for 5 minutes",
+      "Return beef to pan, stir in sour cream and mustard",
+      "Simmer gently for 2-3 minutes until sauce thickens",
+      "Serve over rice, garnished with parsley"
+    ],
+    "nutrition": {"calories": 2100, "protein": 120, "carbs": 200, "fat": 85},
+    "source": "manual",
+    "url": null
+  },
+  "Pelmeni with sour cream": {
+    "title": "Pelmeni with Sour Cream",
+    "cuisine": "slavic",
+    "ingredients": [
+      "400g store-bought pelmeni or homemade dumplings",
+      "For homemade dough: 200g flour, 1 egg, 50ml water, salt",
+      "For homemade filling: 300g ground pork, 100g ground beef, 2 onions, salt, pepper",
+      "200ml sour cream",
+      "Fresh dill for garnish",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Bring a large pot of salted water to boil",
+      "Add frozen pelmeni (or fresh if homemade)",
+      "Cook for 7-10 minutes until they float",
+      "Drain well",
+      "For homemade: make dough, roll thin, cut circles, add meat filling, seal edges",
+      "Serve hot with a generous dollop of sour cream",
+      "Garnish with fresh dill",
+      "Season with salt and pepper to taste"
+    ],
+    "nutrition": {"calories": 2100, "protein": 115, "carbs": 190, "fat": 90},
+    "source": "manual",
     "url": null
   },
   "Shashlik (grilled meat) with salad": {
-    "title": "Shashlik (grilled meat) with salad",
-    "cuisine": "unknown",
+    "title": "Shashlik (Grilled Meat) with Salad",
+    "cuisine": "slavic",
     "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
+      "600g pork or lamb, cut into 3cm cubes",
+      "2 large onions, quartered",
+      "1 large bell pepper, cut into squares",
+      "2 tbsp vegetable oil",
+      "Marinade: 1/2 cup kefir or yogurt, 2 tbsp vinegar, 1 tsp paprika, 3 garlic cloves, minced, salt and pepper",
+      "Salad: 200g cabbage, 1 carrot, 1 cucumber, 2 tbsp sour cream, dill, salt, pepper"
     ],
     "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
+      "Mix marinade ingredients, coat meat and vegetables, marinate for 2-4 hours",
+      "Thread meat, onions, and peppers onto skewers",
+      "Preheat grill or grill pan to medium-high",
+      "Brush skewers with vegetable oil",
+      "Grill for 12-15 minutes, turning frequently, until charred and cooked through",
+      "For salad: shred cabbage, grate carrot, slice cucumber",
+      "Mix with sour cream, dill, salt, and pepper",
+      "Serve shashlik hot with salad on the side"
+    ],
+    "nutrition": {"calories": 2100, "protein": 130, "carbs": 80, "fat": 140},
+    "source": "manual",
+    "url": null
+  },
+  "Pasta carbonara": {
+    "title": "Pasta Carbonara",
+    "cuisine": "slavic",
+    "ingredients": [
+      "400g spaghetti",
+      "200g pancetta or bacon",
+      "4 large egg yolks",
+      "100g Pecorino Romano cheese, grated",
+      "50g Parmesan cheese, grated",
+      "2 garlic cloves, peeled (for infusing)",
+      "Freshly ground black pepper",
+      "Salt for pasta water"
+    ],
+    "instructions": [
+      "Bring a large pot of salted water to boil, cook pasta al dente",
+      "While pasta cooks, crisp pancetta in a large pan",
+      "Remove pancetta, leave fat in pan, rub with garlic cloves",
+      "In a bowl, whisk egg yolks, cheeses, and plenty of black pepper",
+      "Add 2-3 tbsp pasta water to egg mixture, whisk to loosen",
+      "Drain pasta, reserving pasta water",
+      "Add hot pasta to pancetta pan, toss briefly",
+      "Remove from heat, quickly add egg mixture, toss vigorously",
+      "Add more pasta water if needed for silky sauce",
+      "Serve immediately with extra cheese and pepper"
+    ],
+    "nutrition": {"calories": 2100, "protein": 85, "carbs": 240, "fat": 90},
+    "source": "manual",
+    "url": null
+  },
+  "Cabbage rolls with meat": {
+    "title": "Cabbage Rolls with Meat",
+    "cuisine": "slavic",
+    "ingredients": [
+      "1 large cabbage head",
+      "400g ground pork",
+      "200g ground beef",
+      "1 cup rice, cooked",
+      "1 large onion, diced",
+      "2 garlic cloves, minced",
+      "1 egg",
+      "2 tbsp tomato paste",
+      "500ml tomato sauce or crushed tomatoes",
+      "Fresh dill",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Boil cabbage whole, carefully peel leaves",
+      "Mix meats, rice, onion, garlic, egg, salt, and pepper",
+      "Place filling in each cabbage leaf, roll and tuck edges",
+      "Arrange rolls in a baking dish",
+      "Mix tomato paste with sauce, pour over rolls",
+      "Cover and bake at 180°C for 1 hour",
+      "Garnish with fresh dill",
+      "Serve hot with sour cream"
+    ],
+    "nutrition": {"calories": 2100, "protein": 120, "carbs": 180, "fat": 100},
+    "source": "manual",
+    "url": null
+  },
+  "Congee with egg and scallions": {
+    "title": "Congee with Egg and Scallions",
+    "cuisine": "asian",
+    "ingredients": [
+      "150g jasmine rice",
+      "1.5L water or chicken broth",
+      "4 large eggs",
+      "4-6 green onions, sliced",
+      "2 tbsp sesame oil",
+      "2 tbsp soy sauce",
+      "1 piece ginger, sliced",
+      "Salt and white pepper to taste",
+      "Fried shallots for topping (optional)",
+      "Chili oil (optional)"
+    ],
+    "instructions": [
+      "Rinse rice well, drain",
+      "Bring water or broth to boil, add rice and ginger",
+      "Reduce to low, simmer uncovered for 45-60 minutes, stirring occasionally",
+      "Congee is done when rice is completely broken down and creamy",
+      "Season with salt and white pepper",
+      "Poach eggs in boiling water for 3-4 minutes",
+      "Serve congee in bowls topped with a poached egg",
+      "Garnish with green onions, sesame oil, soy sauce",
+      "Add fried shallots and chili oil if desired"
+    ],
+    "nutrition": {"calories": 1400, "protein": 55, "carbs": 210, "fat": 40},
+    "source": "manual",
+    "url": null
+  },
+  "Steamed buns for pork": {
+    "title": "Steamed Buns with Pork (Char Siu Bao)",
+    "cuisine": "asian",
+    "ingredients": [
+      "Bun dough: 300g flour, 150ml warm water, 7g yeast, 2 tbsp sugar, 1 tbsp oil",
+      "Filling: 300g pork shoulder, minced, 3 tbsp hoisin sauce, 2 tbsp soy sauce, 1 tbsp oyster sauce, 2 tbsp sugar, 2 tbsp cornstarch, 1 tbsp sesame oil, 1 scallion, minced"
+    ],
+    "instructions": [
+      "For dough: mix yeast with warm water and sugar, let sit 5 minutes",
+      "Mix flour, add yeast mixture and oil, knead until smooth",
+      "Let dough rise for 1 hour",
+      "For filling: mix pork with all sauce ingredients",
+      "Divide dough into 12 pieces, roll into circles",
+      "Place filling in center, pleat edges to seal",
+      "Place buns on parchment paper in a steamer",
+      "Steam for 12-15 minutes until puffy",
       "Serve hot"
     ],
-    "nutrition": {
-      "calories": 2100,
-      "protein": 131,
-      "carbs": 215,
-      "fat": 79
-    },
-    "source": "fallback_template",
+    "nutrition": {"calories": 1400, "protein": 65, "carbs": 180, "fat": 45},
+    "source": "manual",
+    "url": null
+  },
+  "Rice porridge with pickles": {
+    "title": "Rice Porridge with Pickles",
+    "cuisine": "asian",
+    "ingredients": [
+      "150g white rice",
+      "1.2L water or broth",
+      "100g pickled vegetables (kimchi, pickled radish, pickled cucumber)",
+      "1 egg per person",
+      "2 tbsp soy sauce",
+      "1 tbsp sesame oil",
+      "1 piece ginger, sliced",
+      "Green onions for garnish",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Rinse rice well",
+      "Add water or broth and ginger to a pot, bring to boil",
+      "Add rice, reduce heat, cover and simmer for 30-40 minutes",
+      "Stir occasionally, add more water if needed",
+      "Rice should be very soft and porridge-like",
+      "Season with salt and soy sauce",
+      "Fry eggs sunny-side up",
+      "Serve porridge in bowls topped with fried egg",
+      "Serve pickles on the side",
+      "Garnish with green onions and sesame oil"
+    ],
+    "nutrition": {"calories": 1400, "protein": 45, "carbs": 230, "fat": 35},
+    "source": "manual",
+    "url": null
+  },
+  "Fried rice with vegetables": {
+    "title": "Fried Rice with Vegetables",
+    "cuisine": "asian",
+    "ingredients": [
+      "400g cooked rice (preferably day-old)",
+      "2 large eggs, beaten",
+      "100g mixed vegetables (peas, carrots, corn)",
+      "1 bell pepper, diced",
+      "2 green onions, sliced",
+      "3 tbsp vegetable oil",
+      "2 tbsp soy sauce",
+      "1 tbsp sesame oil",
+      "2 garlic cloves, minced",
+      "1 tsp fresh ginger, grated",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Heat oil in a wok or large pan over high heat",
+      "Scramble eggs, remove from pan and set aside",
+      "Add more oil, stir-fry garlic and ginger until fragrant",
+      "Add bell pepper and mixed vegetables, stir-fry for 2-3 minutes",
+      "Add rice, break up any clumps",
+      "Add soy sauce, sesame oil, salt, and pepper",
+      "Stir-fry for 3-5 minutes until everything is heated through",
+      "Return eggs to the pan, toss to combine",
+      "Garnish with green onions",
+      "Serve hot"
+    ],
+    "nutrition": {"calories": 1400, "protein": 40, "carbs": 200, "fat": 55},
+    "source": "manual",
+    "url": null
+  },
+  "Miso soup with tofu": {
+    "title": "Miso Soup with Tofu",
+    "cuisine": "asian",
+    "ingredients": [
+      "1.2L dashi stock (or water with dashi powder)",
+      "300g silken tofu, cubed",
+      "4 tbsp white miso paste",
+      "2 green onions, sliced",
+      "1 sheet nori, cut into strips",
+      "2 cups water or dashi"
+    ],
+    "instructions": [
+      "Bring dashi stock to a simmer (don't boil)",
+      "Add tofu cubes, simmer for 1-2 minutes",
+      "Remove a small amount of hot stock and dissolve miso paste in it",
+      "Add dissolved miso back to the pot (don't boil after adding miso)",
+      "Heat through, about 1 minute",
+      "Ladle into bowls",
+      "Garnish with green onions and nori strips",
+      "Serve immediately"
+    ],
+    "nutrition": {"calories": 1400, "protein": 50, "carbs": 120, "fat": 70},
+    "source": "manual",
+    "url": null
+  },
+  "Rice noodles with egg": {
+    "title": "Rice Noodles with Egg",
+    "cuisine": "asian",
+    "ingredients": [
+      "300g rice noodles",
+      "4 large eggs",
+      "2 tbsp vegetable oil",
+      "3 tbsp soy sauce",
+      "1 tbsp oyster sauce",
+      "1 tbsp sesame oil",
+      "2 garlic cloves, minced",
+      "100g bean sprouts",
+      "2 green onions, sliced",
+      "Fresh cilantro"
+    ],
+    "instructions": [
+      "Soak rice noodles in warm water for 30 minutes, drain",
+      "Beat eggs with 1 tbsp soy sauce",
+      "Heat oil in a wok, scramble eggs, set aside",
+      "Add more oil, stir-fry garlic until fragrant",
+      "Add noodles, remaining soy sauce, oyster sauce, and sesame oil",
+      "Stir-fry for 3-4 minutes until noodles are coated",
+      "Add bean sprouts, toss briefly",
+      "Return eggs to the pan, toss to combine",
+      "Garnish with green onions and cilantro",
+      "Serve hot"
+    ],
+    "nutrition": {"calories": 1400, "protein": 55, "carbs": 180, "fat": 50},
+    "source": "manual",
+    "url": null
+  },
+  "Dim sum dumplings": {
+    "title": "Dim Sum Dumplings",
+    "cuisine": "asian",
+    "ingredients": [
+      "Dough: 250g flour, 120ml hot water",
+      "Filling: 200g ground pork, 100g shrimp, chopped, 2 tbsp soy sauce, 1 tbsp sesame oil, 2 tbsp cornstarch, 1 scallion, minced, 1 tsp fresh ginger, grated",
+      "Dipping sauce: 3 tbsp soy sauce, 1 tbsp rice vinegar, 1 tsp chili oil"
+    ],
+    "instructions": [
+      "For dough: mix flour and hot water, knead until smooth, rest for 30 minutes",
+      "For filling: mix all ingredients in a bowl",
+      "Divide dough into 24 pieces, roll into circles",
+      "Place filling in center, pleat edges to seal (gather at top)",
+      "Place dumplings in a steamer lined with parchment",
+      "Steam for 8-10 minutes until translucent",
+      "Mix dipping sauce ingredients",
+      "Serve hot with dipping sauce"
+    ],
+    "nutrition": {"calories": 1400, "protein": 75, "carbs": 160, "fat": 50},
+    "source": "manual",
+    "url": null
+  },
+  "Edamame with sea salt": {
+    "title": "Edamame with Sea Salt",
+    "cuisine": "asian",
+    "ingredients": [
+      "400g edamame pods (fresh or frozen)",
+      "1 tbsp sea salt",
+      "1 tbsp coarse salt for serving"
+    ],
+    "instructions": [
+      "Bring a large pot of salted water to boil",
+      "Add edamame, boil for 5-6 minutes",
+      "Drain well",
+      "Toss with sea salt while still warm",
+      "Serve in a bowl with coarse salt for dipping",
+      "Squeeze pods to eat the beans inside",
+      "Discard the pods"
+    ],
+    "nutrition": {"calories": 500, "protein": 45, "carbs": 40, "fat": 20},
+    "source": "manual",
+    "url": null
+  },
+  "Seaweed snacks": {
+    "title": "Seaweed Snacks",
+    "cuisine": "asian",
+    "ingredients": [
+      "10 sheets roasted seaweed (nori)",
+      "1 tbsp sesame oil",
+      "1/2 tsp sea salt",
+      "Optional: additional seasonings (chili flakes, garlic powder)"
+    ],
+    "instructions": [
+      "Preheat oven to 150°C (300°F)",
+      "Cut nori sheets into smaller squares if desired",
+      "Brush lightly with sesame oil",
+      "Sprinkle with sea salt and any additional seasonings",
+      "Bake for 5-8 minutes until crispy but not burnt",
+      "Alternatively, enjoy pre-made roasted seaweed snacks",
+      "Store in an airtight container to maintain crispness"
+    ],
+    "nutrition": {"calories": 500, "protein": 20, "carbs": 40, "fat": 25},
+    "source": "manual",
+    "url": null
+  },
+  "Rice crackers": {
+    "title": "Rice Crackers",
+    "cuisine": "asian",
+    "ingredients": [
+      "200g cooked rice, cooled",
+      "2 tbsp rice flour",
+      "1 tbsp water",
+      "1 tsp salt",
+      "1 tsp sesame seeds",
+      "Oil for frying"
+    ],
+    "instructions": [
+      "Mix cooked rice with rice flour, water, and salt",
+      "Knead until smooth, form into small balls",
+      "Flatten each ball into a thin disc",
+      "Sprinkle with sesame seeds",
+      "Heat oil in a pan to 180°C",
+      "Fry rice crackers until golden and crispy",
+      "Drain on paper towels",
+      "Cool completely before storing",
+      "Store in an airtight container"
+    ],
+    "nutrition": {"calories": 500, "protein": 10, "carbs": 80, "fat": 15},
+    "source": "manual",
+    "url": null
+  },
+  "Pickled ginger and daikon": {
+    "title": "Pickled Ginger and Daikon",
+    "cuisine": "asian",
+    "ingredients": [
+      "200g young ginger, peeled",
+      "200g daikon radish",
+      "1 cup rice vinegar",
+      "1/2 cup sugar",
+      "1 tsp salt",
+      "1/2 cup water"
+    ],
+    "instructions": [
+      "Slice ginger into thin strips using a mandoline or sharp knife",
+      "Slice daikon into thin strips or matchsticks",
+      "Blanch daikon in boiling water for 30 seconds, drain",
+      "Combine vinegar, sugar, salt, and water in a saucepan",
+      "Heat until sugar and salt dissolve, then cool",
+      "Place ginger and daikon in a clean jar",
+      "Pour the cooled pickling liquid over the vegetables",
+      "Cover and refrigerate for at least 24 hours",
+      "Store in refrigerator for up to 2 weeks",
+      "Serve as a side dish or garnish"
+    ],
+    "nutrition": {"calories": 500, "protein": 5, "carbs": 100, "fat": 0},
+    "source": "manual",
+    "url": null
+  },
+  "Mango slices": {
+    "title": "Mango Slices",
+    "cuisine": "asian",
+    "ingredients": [
+      "2-3 ripe mangoes",
+      "1 tbsp lime juice",
+      "Optional: 1/4 tsp chili powder",
+      "Optional: 1 tsp honey for drizzling"
+    ],
+    "instructions": [
+      "Wash mangoes",
+      "Slice off each side of the mango, avoiding the large pit in the center",
+      "Score the flesh in a grid pattern without cutting through the skin",
+      "Press the skin-side up to push the cubes outward",
+      "Slice cubes off the skin",
+      "Arrange on a plate",
+      "Drizzle with lime juice",
+      "Optionally sprinkle with a pinch of chili powder for heat",
+      "Optionally drizzle with honey for extra sweetness",
+      "Serve immediately"
+    ],
+    "nutrition": {"calories": 500, "protein": 5, "carbs": 120, "fat": 5},
+    "source": "manual",
+    "url": null
+  },
+  "Green tea cookies": {
+    "title": "Green Tea Cookies",
+    "cuisine": "asian",
+    "ingredients": [
+      "200g all-purpose flour",
+      "100g unsalted butter, softened",
+      "80g powdered sugar",
+      "1 large egg yolk",
+      "2 tbsp matcha powder",
+      "1/4 tsp salt",
+      "1 tsp vanilla extract"
+    ],
+    "instructions": [
+      "Preheat oven to 175°C (350°F)",
+      "Beat butter and powdered sugar until light and fluffy",
+      "Add egg yolk and vanilla, mix well",
+      "Sift together flour, matcha powder, and salt",
+      "Gradually add dry ingredients to butter mixture, mix until just combined",
+      "Shape dough into a log, wrap and refrigerate for 30 minutes",
+      "Slice into 0.5cm rounds, place on baking sheet",
+      "Bake for 12-15 minutes until edges are lightly golden",
+      "Cool on wire rack"
+    ],
+    "nutrition": {"calories": 500, "protein": 8, "carbs": 60, "fat": 25},
+    "source": "manual",
+    "url": null
+  },
+  "Fried tofu cubes": {
+    "title": "Fried Tofu Cubes",
+    "cuisine": "asian",
+    "ingredients": [
+      "300g firm tofu",
+      "2 tbsp soy sauce",
+      "1 tbsp sesame oil",
+      "1 garlic clove, minced",
+      "1 tsp ginger, grated",
+      "2 green onions, sliced",
+      "1 tbsp cornstarch",
+      "Oil for frying",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Press tofu to remove excess water, then cut into 2cm cubes",
+      "Coat tofu lightly with cornstarch",
+      "Heat oil in a wok or pan over medium-high heat",
+      "Fry tofu cubes until golden brown on all sides, about 5-7 minutes",
+      "Remove tofu and drain on paper towels",
+      "In the same pan, stir-fry garlic and ginger until fragrant",
+      "Add soy sauce, sesame oil, and green onions",
+      "Return tofu, toss to coat, season with salt and pepper",
+      "Serve hot"
+    ],
+    "nutrition": {"calories": 500, "protein": 35, "carbs": 25, "fat": 30},
+    "source": "manual",
+    "url": null
+  },
+  "Chicken teriyaki with rice": {
+    "title": "Chicken Teriyaki with Rice",
+    "cuisine": "asian",
+    "ingredients": [
+      "500g chicken thighs, cubed",
+      "200g rice",
+      "3 tbsp soy sauce",
+      "2 tbsp mirin",
+      "2 tbsp sake",
+      "2 tbsp sugar",
+      "1 tbsp vegetable oil",
+      "1 tbsp sesame oil",
+      "1 green onion, sliced",
+      "Sesame seeds"
+    ],
+    "instructions": [
+      "Cook rice according to package instructions",
+      "Mix soy sauce, mirin, sake, and sugar for teriyaki sauce",
+      "Heat oil in a pan, brown chicken pieces",
+      "Add teriyaki sauce, simmer until chicken is cooked through and sauce thickens",
+      "Remove from heat, stir in sesame oil",
+      "Serve chicken over rice",
+      "Garnish with green onions and sesame seeds"
+    ],
+    "nutrition": {"calories": 2100, "protein": 130, "carbs": 200, "fat": 70},
+    "source": "manual",
+    "url": null
+  },
+  "Pad Thai with shrimp": {
+    "title": "Pad Thai with Shrimp",
+    "cuisine": "asian",
+    "ingredients": [
+      "300g rice noodles",
+      "200g shrimp, peeled and deveined",
+      "2 large eggs, beaten",
+      "100g bean sprouts",
+      "3 green onions, sliced",
+      "2 tbsp crushed peanuts",
+      "2 tbsp fish sauce",
+      "1 tbsp tamarind paste or 2 tbsp lime juice",
+      "1 tbsp brown sugar",
+      "3 tbsp vegetable oil",
+      "2 garlic cloves, minced",
+      "Lime wedges for serving"
+    ],
+    "instructions": [
+      "Soak rice noodles in warm water for 30 minutes, drain",
+      "Mix fish sauce, tamarind paste/lime juice, and sugar",
+      "Heat oil in a wok, scramble eggs, set aside",
+      "Add more oil, stir-fry garlic",
+      "Add shrimp, cook until pink",
+      "Add noodles and sauce mixture, toss to coat",
+      "Add bean sprouts and green onions, toss briefly",
+      "Return eggs, toss to combine",
+      "Serve topped with crushed peanuts and lime wedges"
+    ],
+    "nutrition": {"calories": 2100, "protein": 90, "carbs": 240, "fat": 75},
+    "source": "manual",
+    "url": null
+  },
+  "Vietnamese pho": {
+    "title": "Vietnamese Pho",
+    "cuisine": "asian",
+    "ingredients": [
+      "400g beef sirloin, thinly sliced",
+      "300g rice noodles",
+      "1.5L beef broth",
+      "2 star anise",
+      "1 cinnamon stick",
+      "1 onion, charred",
+      "2-inch piece ginger, charred",
+      "100g bean sprouts",
+      "2 green onions, sliced",
+      "Fresh basil and cilantro",
+      "Lime wedges",
+      "2 tbsp fish sauce",
+      "1 tbsp hoisin sauce"
+    ],
+    "instructions": [
+      "Char onion and ginger over open flame or in a dry pan",
+      "Bring beef broth to boil, add star anise, cinnamon, charred onion and ginger",
+      "Simmer for 30 minutes, strain",
+      "Cook rice noodles according to package, drain",
+      "Arrange noodles in bowls",
+      "Top with raw beef slices",
+      "Ladle hot broth over beef (cooks it)",
+      "Garnish with bean sprouts, green onions, basil, cilantro",
+      "Serve with lime wedges, fish sauce, and hoisin sauce on the side"
+    ],
+    "nutrition": {"calories": 2100, "protein": 130, "carbs": 210, "fat": 65},
+    "source": "manual",
+    "url": null
+  },
+  "Korean bibimbap": {
+    "title": "Korean Bibimbap",
+    "cuisine": "asian",
+    "ingredients": [
+      "400g cooked rice",
+      "200g beef, marinated and sliced thin",
+      "100g bean sprouts",
+      "100g spinach",
+      "1 carrot, julienned",
+      "1 zucchini, julienned",
+      "4 eggs",
+      "3 tbsp gochujang (Korean chili paste)",
+      "2 tbsp sesame oil",
+      "1 tbsp soy sauce",
+      "Sesame seeds, sliced green onions for garnish"
+    ],
+    "instructions": [
+      "Season rice with sesame oil and soy sauce, set aside",
+      "Marinate beef with soy sauce, sesame oil, garlic",
+      "Stir-fry beef until cooked, set aside",
+      "Blanch bean sprouts and spinach separately, season with sesame oil and salt",
+      "Stir-fry carrots and zucchini separately, season",
+      "Fry eggs sunny-side up",
+      "Arrange rice in bowls",
+      "Arrange vegetables and beef on top in sections",
+      "Top each bowl with a fried egg",
+      "Serve with gochujang on the side",
+      "Mix everything together before eating"
+    ],
+    "nutrition": {"calories": 2100, "protein": 95, "carbs": 240, "fat": 80},
+    "source": "manual",
+    "url": null
+  },
+  "Sichuan mapo tofu": {
+    "title": "Sichuan Mapo Tofu",
+    "cuisine": "asian",
+    "ingredients": [
+      "400g silken tofu, cubed",
+      "200g ground pork",
+      "2 tbsp doubanjiang (chili bean paste)",
+      "1 tbsp fermented black beans",
+      "2 garlic cloves, minced",
+      "1 tbsp fresh ginger, grated",
+      "2 green onions, sliced",
+      "1 tbsp cornstarch mixed with 2 tbsp water",
+      "1 cup chicken broth",
+      "1 tbsp soy sauce",
+      "1 tsp Sichuan peppercorns"
+    ],
+    "instructions": [
+      "Cube tofu and set aside",
+      "Heat oil in a wok, brown pork",
+      "Add doubanjiang, black beans, garlic, and ginger",
+      "Stir-fry until fragrant",
+      "Add chicken broth and soy sauce, bring to simmer",
+      "Gently add tofu, simmer for 5 minutes",
+      "Add cornstarch slurry to thicken sauce",
+      "Stir in Sichuan peppercorns",
+      "Garnish with green onions",
+      "Serve hot over rice"
+    ],
+    "nutrition": {"calories": 2100, "protein": 100, "carbs": 180, "fat": 100},
+    "source": "manual",
+    "url": null
+  },
+  "Thai green curry": {
+    "title": "Thai Green Curry",
+    "cuisine": "asian",
+    "ingredients": [
+      "400g chicken or tofu",
+      "400ml coconut milk",
+      "3 tbsp green curry paste",
+      "1 bell pepper, sliced",
+      "100g bamboo shoots",
+      "100g Thai eggplant or regular eggplant",
+      "2 tbsp fish sauce",
+      "1 tbsp palm sugar or brown sugar",
+      "1 tbsp Thai basil leaves",
+      "1 kaffir lime leaf (optional)",
+      "Jasmine rice for serving"
+    ],
+    "instructions": [
+      "Cook rice according to package instructions",
+      "Heat a wok, add 1/4 cup coconut cream (the thick part from top of can)",
+      "Stir-fry curry paste until fragrant",
+      "Add protein, cook until almost done",
+      "Add remaining coconut milk, bell pepper, bamboo shoots, and eggplant",
+      "Simmer for 10 minutes until vegetables are tender",
+      "Season with fish sauce and sugar",
+      "Add Thai basil and kaffir lime leaf",
+      "Serve over jasmine rice"
+    ],
+    "nutrition": {"calories": 2100, "protein": 85, "carbs": 180, "fat": 115},
+    "source": "manual",
+    "url": null
+  },
+  "Japanese ramen": {
+    "title": "Japanese Ramen",
+    "cuisine": "asian",
+    "ingredients": [
+      "300g ramen noodles",
+      "800ml chicken or pork broth",
+      "150g chashu pork belly or other protein",
+      "2 soft-boiled eggs (ajitsuke tamago)",
+      "200g bamboo shoots",
+      "2 green onions, sliced",
+      "100g bean sprouts",
+      "2 sheets nori",
+      "2 tbsp soy sauce",
+      "1 tbsp miso paste",
+      "1 tsp sesame oil",
+      "Chili oil to taste"
+    ],
+    "instructions": [
+      "Prepare broth: combine stock, soy sauce, and miso, simmer",
+      "Cook ramen noodles according to package instructions, drain",
+      "Slice chashu pork and briefly warm in broth",
+      "Prepare soft-boiled eggs (6-7 minutes in boiling water)",
+      "Arrange noodles in bowls",
+      "Ladle hot broth over noodles",
+      "Top with pork, egg halves, bamboo shoots, bean sprouts",
+      "Garnish with green onions, nori sheets",
+      "Add sesame oil and chili oil to taste",
+      "Serve immediately while hot"
+    ],
+    "nutrition": {"calories": 2100, "protein": 110, "carbs": 230, "fat": 85},
+    "source": "manual",
     "url": null
   }
 }
