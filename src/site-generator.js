@@ -54,7 +54,7 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
       <p style="color: #94a3b8; margin-bottom: 15px;">
         Еженедельный учет продуктов на основе меню (не реальный инвентарь)
       </p>
-      <button id="toggle-daily" onclick="toggleDaily()">[Показать использование по дням]</button>
+      <button id="toggle-daily" onclick="toggleDaily()">[Показать по дням]</button>
       <div class="pantry-items">
         ${pantryManager.formatPantryDisplay(pantry, false)}
       </div>
@@ -302,6 +302,11 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
       flex: 1;
       color: #e8eaf0;
       font-weight: 500;
+      overflow: visible;
+      min-width: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .pantry-item .amount {
@@ -657,8 +662,8 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
 
       breakdowns.forEach(el => el.classList.toggle('hidden'));
       button.textContent = breakdowns[0] && breakdowns[0].classList.contains('hidden')
-        ? '[Show Daily Breakdown]'
-        : '[Hide Daily Breakdown]';
+        ? '[Показать по дням]'
+        : '[Скрыть по дням]';
     }
 
     // Close on overlay click

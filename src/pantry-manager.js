@@ -166,12 +166,39 @@ function generatePantryFromGroceryList(groceryList, menu) {
   const pantry = {};
   const days = Object.keys(menu);
 
+  // Generic ingredients to skip (fallback templates)
+  const skipPatterns = [
+    'main ingredients vary',
+    'seasonings to taste',
+    'cook according to recipe',
+    'for blini',
+    'for dough',
+    'for filling',
+    'for serving',
+    'for teriyaki sauce',
+    'for cheese filling',
+    'optional:',
+    'note:',
+    'varies by recipe'
+  ];
+
   // First pass: collect all ingredients from grocery list
   for (const [category, items] of Object.entries(groceryList)) {
     for (const item of items) {
       const normalizedName = normalizeIngredientName(item.name);
       const parsed = parseIngredientQuantity(item.quantity);
       const emoji = getEmojiForIngredient(item.name);
+
+      // Skip items with 0 quantity or generic names
+      if (parsed.value <= 0) {
+        continue;
+      }
+
+      // Skip generic ingredients
+      const lowerName = item.name.toLowerCase();
+      if (skipPatterns.some(pattern => lowerName.includes(pattern))) {
+        continue;
+      }
 
       pantry[normalizedName] = {
         emoji,
@@ -205,6 +232,12 @@ function generatePantryFromGroceryList(groceryList, menu) {
 
         const parsed = parseIngredientQuantity(ingredientText);
         const normalizedName = normalizeIngredientName(parsed.name);
+
+        // Skip generic ingredients
+        const lowerName = parsed.name.toLowerCase();
+        if (skipPatterns.some(pattern => lowerName.includes(pattern))) {
+          continue;
+        }
 
         if (pantry[normalizedName]) {
           // Deduct this amount

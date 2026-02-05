@@ -239,6 +239,11 @@
       flex: 1;
       color: #e8eaf0;
       font-weight: 500;
+      overflow: visible;
+      min-width: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .pantry-item .amount {
@@ -444,7 +449,7 @@
       <p style="color: #94a3b8; margin-bottom: 15px;">
         Еженедельный учет продуктов на основе меню (не реальный инвентарь)
       </p>
-      <button id="toggle-daily" onclick="toggleDaily()">[Показать использование по дням]</button>
+      <button id="toggle-daily" onclick="toggleDaily()">[Показать по дням]</button>
       <div class="pantry-items">
         <p>No pantry items to display.</p>
       </div>
@@ -462,20 +467,20 @@
               
                   <div class="meal" data-day="Monday" data-meal="breakfast" onclick="openModal('Monday', 'breakfast')">
                     <div class="meal-type">Завтрак</div>
-                    <div class="meal-name">Rice noodles with egg</div>
-                    <div class="meal-cuisine">Азиатская</div>
+                    <div class="meal-name">Blini with cheese filling</div>
+                    <div class="meal-cuisine">Славянская</div>
                   </div>
                 
                   <div class="meal" data-day="Monday" data-meal="snack" onclick="openModal('Monday', 'snack')">
                     <div class="meal-type">Перекус</div>
-                    <div class="meal-name">Green tea cookies</div>
-                    <div class="meal-cuisine">Азиатская</div>
+                    <div class="meal-name">Yogurt with honey</div>
+                    <div class="meal-cuisine">Славянская</div>
                   </div>
                 
                   <div class="meal" data-day="Monday" data-meal="dinner" onclick="openModal('Monday', 'dinner')">
                     <div class="meal-type">Ужин</div>
-                    <div class="meal-name">Thai green curry</div>
-                    <div class="meal-cuisine">Азиатская</div>
+                    <div class="meal-name">Pelmeni with sour cream</div>
+                    <div class="meal-cuisine">Славянская</div>
                   </div>
                 
             </div>
@@ -487,20 +492,20 @@
               
                   <div class="meal" data-day="Tuesday" data-meal="breakfast" onclick="openModal('Tuesday', 'breakfast')">
                     <div class="meal-type">Завтрак</div>
-                    <div class="meal-name">Kasha with butter and milk</div>
-                    <div class="meal-cuisine">Славянская</div>
+                    <div class="meal-name">Miso soup with tofu</div>
+                    <div class="meal-cuisine">Азиатская</div>
                   </div>
                 
                   <div class="meal" data-day="Tuesday" data-meal="snack" onclick="openModal('Tuesday', 'snack')">
                     <div class="meal-type">Перекус</div>
-                    <div class="meal-name">Pickled vegetables</div>
+                    <div class="meal-name">Ryebread with butter</div>
                     <div class="meal-cuisine">Славянская</div>
                   </div>
                 
                   <div class="meal" data-day="Tuesday" data-meal="dinner" onclick="openModal('Tuesday', 'dinner')">
                     <div class="meal-type">Ужин</div>
-                    <div class="meal-name">Chicken soup with vegetables</div>
-                    <div class="meal-cuisine">Славянская</div>
+                    <div class="meal-name">Japanese ramen</div>
+                    <div class="meal-cuisine">Азиатская</div>
                   </div>
                 
             </div>
@@ -512,20 +517,20 @@
               
                   <div class="meal" data-day="Wednesday" data-meal="breakfast" onclick="openModal('Wednesday', 'breakfast')">
                     <div class="meal-type">Завтрак</div>
-                    <div class="meal-name">Congee with egg and scallions</div>
+                    <div class="meal-name">Rice noodles with egg</div>
                     <div class="meal-cuisine">Азиатская</div>
                   </div>
                 
                   <div class="meal" data-day="Wednesday" data-meal="snack" onclick="openModal('Wednesday', 'snack')">
                     <div class="meal-type">Перекус</div>
-                    <div class="meal-name">Ryebread with butter</div>
-                    <div class="meal-cuisine">Славянская</div>
+                    <div class="meal-name">Edamame with sea salt</div>
+                    <div class="meal-cuisine">Азиатская</div>
                   </div>
                 
                   <div class="meal" data-day="Wednesday" data-meal="dinner" onclick="openModal('Wednesday', 'dinner')">
                     <div class="meal-type">Ужин</div>
-                    <div class="meal-name">Vietnamese pho</div>
-                    <div class="meal-cuisine">Азиатская</div>
+                    <div class="meal-name">Borscht with sour cream</div>
+                    <div class="meal-cuisine">Славянская</div>
                   </div>
                 
             </div>
@@ -537,19 +542,19 @@
               
                   <div class="meal" data-day="Thursday" data-meal="breakfast" onclick="openModal('Thursday', 'breakfast')">
                     <div class="meal-type">Завтрак</div>
-                    <div class="meal-name">Syrniki (cottage cheese pancakes)</div>
+                    <div class="meal-name">Oatmeal with honey and nuts</div>
                     <div class="meal-cuisine">Славянская</div>
                   </div>
                 
                   <div class="meal" data-day="Thursday" data-meal="snack" onclick="openModal('Thursday', 'snack')">
                     <div class="meal-type">Перекус</div>
-                    <div class="meal-name">Yogurt with honey</div>
+                    <div class="meal-name">Apple slices with cheese</div>
                     <div class="meal-cuisine">Славянская</div>
                   </div>
                 
                   <div class="meal" data-day="Thursday" data-meal="dinner" onclick="openModal('Thursday', 'dinner')">
                     <div class="meal-type">Ужин</div>
-                    <div class="meal-name">Borscht with sour cream</div>
+                    <div class="meal-name">Chicken soup with vegetables</div>
                     <div class="meal-cuisine">Славянская</div>
                   </div>
                 
@@ -562,20 +567,20 @@
               
                   <div class="meal" data-day="Friday" data-meal="breakfast" onclick="openModal('Friday', 'breakfast')">
                     <div class="meal-type">Завтрак</div>
-                    <div class="meal-name">Oatmeal with honey and nuts</div>
-                    <div class="meal-cuisine">Славянская</div>
+                    <div class="meal-name">Rice porridge with pickles</div>
+                    <div class="meal-cuisine">Азиатская</div>
                   </div>
                 
                   <div class="meal" data-day="Friday" data-meal="snack" onclick="openModal('Friday', 'snack')">
                     <div class="meal-type">Перекус</div>
-                    <div class="meal-name">Seaweed snacks</div>
-                    <div class="meal-cuisine">Азиатская</div>
+                    <div class="meal-name">Nuts and dried fruits</div>
+                    <div class="meal-cuisine">Славянская</div>
                   </div>
                 
                   <div class="meal" data-day="Friday" data-meal="dinner" onclick="openModal('Friday', 'dinner')">
                     <div class="meal-type">Ужин</div>
-                    <div class="meal-name">Pasta carbonara</div>
-                    <div class="meal-cuisine">Славянская</div>
+                    <div class="meal-name">Korean bibimbap</div>
+                    <div class="meal-cuisine">Азиатская</div>
                   </div>
                 
             </div>
@@ -587,20 +592,20 @@
               
                   <div class="meal" data-day="Saturday" data-meal="breakfast" onclick="openModal('Saturday', 'breakfast')">
                     <div class="meal-type">Завтрак</div>
-                    <div class="meal-name">Blini with cheese filling</div>
+                    <div class="meal-name">Syrniki (cottage cheese pancakes)</div>
                     <div class="meal-cuisine">Славянская</div>
                   </div>
                 
                   <div class="meal" data-day="Saturday" data-meal="snack" onclick="openModal('Saturday', 'snack')">
                     <div class="meal-type">Перекус</div>
-                    <div class="meal-name">Banana with peanut butter</div>
-                    <div class="meal-cuisine">Славянская</div>
+                    <div class="meal-name">Pickled ginger and daikon</div>
+                    <div class="meal-cuisine">Азиатская</div>
                   </div>
                 
                   <div class="meal" data-day="Saturday" data-meal="dinner" onclick="openModal('Saturday', 'dinner')">
                     <div class="meal-type">Ужин</div>
-                    <div class="meal-name">Shashlik (grilled meat) with salad</div>
-                    <div class="meal-cuisine">Славянская</div>
+                    <div class="meal-name">Sichuan mapo tofu</div>
+                    <div class="meal-cuisine">Азиатская</div>
                   </div>
                 
             </div>
@@ -612,20 +617,20 @@
               
                   <div class="meal" data-day="Sunday" data-meal="breakfast" onclick="openModal('Sunday', 'breakfast')">
                     <div class="meal-type">Завтрак</div>
-                    <div class="meal-name">Scrambled eggs with vegetables</div>
+                    <div class="meal-name">Buckwheat porridge with milk and berries</div>
                     <div class="meal-cuisine">Славянская</div>
                   </div>
                 
                   <div class="meal" data-day="Sunday" data-meal="snack" onclick="openModal('Sunday', 'snack')">
                     <div class="meal-type">Перекус</div>
-                    <div class="meal-name">Edamame with sea salt</div>
-                    <div class="meal-cuisine">Азиатская</div>
+                    <div class="meal-name">Banana with peanut butter</div>
+                    <div class="meal-cuisine">Славянская</div>
                   </div>
                 
                   <div class="meal" data-day="Sunday" data-meal="dinner" onclick="openModal('Sunday', 'dinner')">
                     <div class="meal-type">Ужин</div>
-                    <div class="meal-name">Chicken teriyaki with rice</div>
-                    <div class="meal-cuisine">Азиатская</div>
+                    <div class="meal-name">Beef stroganoff with rice</div>
+                    <div class="meal-cuisine">Славянская</div>
                   </div>
                 
             </div>
@@ -691,7 +696,7 @@
 
   <script>
     // Recipe data - embedded in the page
-    const recipesData = {"Monday-breakfast":{"title":"Rice noodles with egg","cuisine":"asian","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Monday-snack":{"title":"Green tea cookies","cuisine":"asian","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Monday-dinner":{"title":"Thai green curry","cuisine":"asian","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null},"Tuesday-breakfast":{"title":"Kasha with butter and milk","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Tuesday-snack":{"title":"Pickled vegetables","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Tuesday-dinner":{"title":"Chicken soup with vegetables","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null},"Wednesday-breakfast":{"title":"Congee with egg and scallions","cuisine":"asian","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Wednesday-snack":{"title":"Ryebread with butter","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Wednesday-dinner":{"title":"Vietnamese pho","cuisine":"asian","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null},"Thursday-breakfast":{"title":"Syrniki (cottage cheese pancakes)","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Thursday-snack":{"title":"Yogurt with honey","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Thursday-dinner":{"title":"Borscht with sour cream","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null},"Friday-breakfast":{"title":"Oatmeal with honey and nuts","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Friday-snack":{"title":"Seaweed snacks","cuisine":"asian","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Friday-dinner":{"title":"Pasta carbonara","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null},"Saturday-breakfast":{"title":"Blini with cheese filling","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Saturday-snack":{"title":"Banana with peanut butter","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Saturday-dinner":{"title":"Shashlik (grilled meat) with salad","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null},"Sunday-breakfast":{"title":"Scrambled eggs with vegetables","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Sunday-snack":{"title":"Edamame with sea salt","cuisine":"asian","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Sunday-dinner":{"title":"Chicken teriyaki with rice","cuisine":"asian","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null}};
+    const recipesData = {"Monday-breakfast":{"title":"Blini with cheese filling","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Monday-snack":{"title":"Yogurt with honey","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Monday-dinner":{"title":"Pelmeni with sour cream","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null},"Tuesday-breakfast":{"title":"Miso soup with tofu","cuisine":"asian","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Tuesday-snack":{"title":"Ryebread with butter","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Tuesday-dinner":{"title":"Japanese ramen","cuisine":"asian","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null},"Wednesday-breakfast":{"title":"Rice noodles with egg","cuisine":"asian","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Wednesday-snack":{"title":"Edamame with sea salt","cuisine":"asian","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Wednesday-dinner":{"title":"Borscht with sour cream","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null},"Thursday-breakfast":{"title":"Oatmeal with honey and nuts","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Thursday-snack":{"title":"Apple slices with cheese","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Thursday-dinner":{"title":"Chicken soup with vegetables","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null},"Friday-breakfast":{"title":"Rice porridge with pickles","cuisine":"asian","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Friday-snack":{"title":"Nuts and dried fruits","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Friday-dinner":{"title":"Korean bibimbap","cuisine":"asian","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null},"Saturday-breakfast":{"title":"Syrniki (cottage cheese pancakes)","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Saturday-snack":{"title":"Pickled ginger and daikon","cuisine":"asian","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Saturday-dinner":{"title":"Sichuan mapo tofu","cuisine":"asian","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null},"Sunday-breakfast":{"title":"Buckwheat porridge with milk and berries","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Sunday-snack":{"title":"Banana with peanut butter","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Sunday-dinner":{"title":"Beef stroganoff with rice","cuisine":"slavic","ingredients":["Main ingredients vary by recipe","Seasonings to taste","Cook according to recipe instructions"],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null}};
 
     /**
      * Open modal with recipe details
@@ -743,8 +748,8 @@
 
       breakdowns.forEach(el => el.classList.toggle('hidden'));
       button.textContent = breakdowns[0] && breakdowns[0].classList.contains('hidden')
-        ? '[Show Daily Breakdown]'
-        : '[Hide Daily Breakdown]';
+        ? '[Показать по дням]'
+        : '[Скрыть по дням]';
     }
 
     // Close on overlay click
