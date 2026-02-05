@@ -161,7 +161,7 @@ function normalizeIngredientName(name) {
  * @returns {Object} Pantry data structure
  */
 function generatePantryFromGroceryList(groceryList, menu) {
-  console.log('\n📦 Generating virtual pantry from recipes...\n');
+  console.log('\n📦 Generating virtual pantry from grocery list...\n');
 
   const pantry = {};
   const days = Object.keys(menu);
@@ -179,10 +179,46 @@ function generatePantryFromGroceryList(groceryList, menu) {
     'for cheese filling',
     'optional:',
     'note:',
-    'varies by recipe'
+    'varies by recipe',
+    'need to stock',
+    'tap water'
   ];
 
-  // First pass: collect all ingredients from recipes (not grocery list)
+  // First pass: collect all ingredients from grocery list
+  for (const [category, items] of Object.entries(groceryList)) {
+    for (const item of items) {
+      // Handle both 'name' and 'item' field names
+      const itemName = item.name || item.item;
+      const normalizedName = normalizeIngredientName(itemName);
+      const parsed = parseIngredientQuantity(item.quantity);
+      const emoji = getEmojiForIngredient(itemName);
+
+      // Skip items with 0 quantity or N/A
+      if (parsed.value <= 0 || item.quantity === 'N/A') {
+        continue;
+      }
+
+      // Skip generic ingredients
+      const lowerName = itemName.toLowerCase();
+      if (skipPatterns.some(pattern => lowerName.includes(pattern))) {
+        continue;
+      }
+
+      // Initialize pantry item with full quantity (not used yet)
+      pantry[normalizedName] = {
+        emoji,
+        name: itemName,
+        normalizedName,
+        total: parsed.value,
+        unit: parsed.unit,
+        remaining: parsed.value, // Start with full amount
+        dailyUsage: []
+      };
+    }
+  }
+
+  // Second pass: try to calculate daily usage based on menu
+  // Only subtract if we can match ingredients properly
   for (const day of days) {
     for (const [mealType, mealData] of Object.entries(menu[day])) {
       if (!mealData.recipe || !mealData.recipe.ingredients) continue;
@@ -209,35 +245,28 @@ function generatePantryFromGroceryList(groceryList, menu) {
           continue;
         }
 
-        if (!pantry[normalizedName]) {
-          // Create new pantry item
-          pantry[normalizedName] = {
-            emoji: getEmojiForIngredient(parsed.name),
-            name: parsed.name,
-            normalizedName,
-            total: 0,  // Will be accumulated
+        if (pantry[normalizedName]) {
+          // Deduct this amount
+          pantry[normalizedName].remaining -= parsed.value;
+          pantry[normalizedName].dailyUsage.push({
+            day,
+            mealType,
+            amount: parsed.value,
             unit: parsed.unit,
-            remaining: 0,
-            dailyUsage: []
-          };
+            meal: mealData.name
+          });
         }
-
-        // Accumulate total quantity needed
-        pantry[normalizedName].total += parsed.value;
-        pantry[normalizedName].dailyUsage.push({
-          day,
-          mealType,
-          amount: parsed.value,
-          unit: parsed.unit,
-          meal: mealData.name
-        });
       }
     }
   }
 
-  // Set remaining equal to total (everything is initially "in pantry")
+  // Fix any negative values (rounding errors or mismatched ingredients) to 0
+  // Also, if remaining equals total, it means we couldn't match ingredients
+  // In that case, we assume all items are still available (not used yet)
   for (const key of Object.keys(pantry)) {
-    pantry[key].remaining = pantry[key].total;
+    if (pantry[key].remaining < 0) {
+      pantry[key].remaining = 0;
+    }
   }
 
   console.log(`✓ Generated pantry with ${Object.keys(pantry).length} items\n`);

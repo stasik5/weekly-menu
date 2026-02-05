@@ -1,1 +1,812 @@
-{}
+{
+  "chicken breast": {
+    "emoji": "🐔",
+    "name": "Chicken Breast",
+    "normalizedName": "chicken breast",
+    "total": 1.9,
+    "unit": "kg",
+    "remaining": 1.9,
+    "dailyUsage": []
+  },
+  "beef sirloin or rib eye": {
+    "emoji": "🥩",
+    "name": "Beef Sirloin or Rib Eye",
+    "normalizedName": "beef sirloin or rib eye",
+    "total": 500,
+    "unit": "g",
+    "remaining": 500,
+    "dailyUsage": []
+  },
+  "beef steak": {
+    "emoji": "🥩",
+    "name": "Beef Steak",
+    "normalizedName": "beef steak",
+    "total": 300,
+    "unit": "g",
+    "remaining": 300,
+    "dailyUsage": []
+  },
+  "ground beef": {
+    "emoji": "🥩",
+    "name": "Ground Beef",
+    "normalizedName": "ground beef",
+    "total": 900,
+    "unit": "g",
+    "remaining": 900,
+    "dailyUsage": []
+  },
+  "ground pork": {
+    "emoji": "🐖",
+    "name": "Ground Pork",
+    "normalizedName": "ground pork",
+    "total": 400,
+    "unit": "g",
+    "remaining": 400,
+    "dailyUsage": []
+  },
+  "ham or sausage": {
+    "emoji": "📦",
+    "name": "Ham or Sausage",
+    "normalizedName": "ham or sausage",
+    "total": 200,
+    "unit": "g",
+    "remaining": 200,
+    "dailyUsage": []
+  },
+  "salami": {
+    "emoji": "📦",
+    "name": "Salami",
+    "normalizedName": "salami",
+    "total": 100,
+    "unit": "g",
+    "remaining": 100,
+    "dailyUsage": []
+  },
+  "bacon": {
+    "emoji": "📦",
+    "name": "Bacon",
+    "normalizedName": "bacon",
+    "total": 150,
+    "unit": "g",
+    "remaining": 150,
+    "dailyUsage": []
+  },
+  "shrimp": {
+    "emoji": "🦐",
+    "name": "Shrimp",
+    "normalizedName": "shrimp",
+    "total": 100,
+    "unit": "g",
+    "remaining": 100,
+    "dailyUsage": []
+  },
+  "farmer's cheese (tvorog)": {
+    "emoji": "🧀",
+    "name": "Farmer's Cheese (Tvorog)",
+    "normalizedName": "farmer's cheese (tvorog)",
+    "total": 700,
+    "unit": "g",
+    "remaining": 700,
+    "dailyUsage": []
+  },
+  "sour cream": {
+    "emoji": "🥛",
+    "name": "Sour Cream",
+    "normalizedName": "sour cream",
+    "total": 1.6,
+    "unit": "kg",
+    "remaining": 1.6,
+    "dailyUsage": []
+  },
+  "greek yogurt": {
+    "emoji": "🥛",
+    "name": "Greek Yogurt",
+    "normalizedName": "greek yogurt",
+    "total": 640,
+    "unit": "g",
+    "remaining": 640,
+    "dailyUsage": []
+  },
+  "heavy cream": {
+    "emoji": "🥛",
+    "name": "Heavy Cream",
+    "normalizedName": "heavy cream",
+    "total": 240,
+    "unit": "ml",
+    "remaining": 240,
+    "dailyUsage": []
+  },
+  "ricotta cheese": {
+    "emoji": "🧀",
+    "name": "Ricotta Cheese",
+    "normalizedName": "ricotta cheese",
+    "total": 400,
+    "unit": "g",
+    "remaining": 400,
+    "dailyUsage": []
+  },
+  "mozzarella cheese": {
+    "emoji": "🧀",
+    "name": "Mozzarella Cheese",
+    "normalizedName": "mozzarella cheese",
+    "total": 300,
+    "unit": "g",
+    "remaining": 300,
+    "dailyUsage": []
+  },
+  "parmesan cheese": {
+    "emoji": "🧀",
+    "name": "Parmesan Cheese",
+    "normalizedName": "parmesan cheese",
+    "total": 100,
+    "unit": "g",
+    "remaining": 100,
+    "dailyUsage": []
+  },
+  "butter": {
+    "emoji": "🧈",
+    "name": "Butter",
+    "normalizedName": "butter",
+    "total": 300,
+    "unit": "g",
+    "remaining": 300,
+    "dailyUsage": []
+  },
+  "beet": {
+    "emoji": "📦",
+    "name": "Beets",
+    "normalizedName": "beet",
+    "total": 600,
+    "unit": "g",
+    "remaining": 600,
+    "dailyUsage": []
+  },
+  "cabbage (green)": {
+    "emoji": "📦",
+    "name": "Cabbage (Green)",
+    "normalizedName": "cabbage (green)",
+    "total": 1.2,
+    "unit": "kg",
+    "remaining": 1.2,
+    "dailyUsage": []
+  },
+  "onion": {
+    "emoji": "🧅",
+    "name": "Onions",
+    "normalizedName": "onion",
+    "total": 10,
+    "unit": "",
+    "remaining": 10,
+    "dailyUsage": []
+  },
+  "garlic": {
+    "emoji": "🧄",
+    "name": "Garlic",
+    "normalizedName": "garlic",
+    "total": 2,
+    "unit": "head",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "carrot": {
+    "emoji": "🥕",
+    "name": "Carrots",
+    "normalizedName": "carrot",
+    "total": 1.2,
+    "unit": "kg",
+    "remaining": 1.2,
+    "dailyUsage": []
+  },
+  "potatoe": {
+    "emoji": "🥔",
+    "name": "Potatoes",
+    "normalizedName": "potatoe",
+    "total": 2.8,
+    "unit": "kg",
+    "remaining": 2.8,
+    "dailyUsage": []
+  },
+  "bell pepper": {
+    "emoji": "⚫",
+    "name": "Bell Peppers",
+    "normalizedName": "bell pepper",
+    "total": 6,
+    "unit": "",
+    "remaining": 6,
+    "dailyUsage": []
+  },
+  "tomatoe": {
+    "emoji": "🍅",
+    "name": "Tomatoes",
+    "normalizedName": "tomatoe",
+    "total": 4,
+    "unit": "",
+    "remaining": 4,
+    "dailyUsage": []
+  },
+  "broccoli": {
+    "emoji": "🥦",
+    "name": "Broccoli",
+    "normalizedName": "broccoli",
+    "total": 350,
+    "unit": "g",
+    "remaining": 350,
+    "dailyUsage": []
+  },
+  "snap pea": {
+    "emoji": "🟢",
+    "name": "Snap Peas",
+    "normalizedName": "snap pea",
+    "total": 100,
+    "unit": "g",
+    "remaining": 100,
+    "dailyUsage": []
+  },
+  "celery": {
+    "emoji": "📦",
+    "name": "Celery",
+    "normalizedName": "celery",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "zucchini": {
+    "emoji": "📦",
+    "name": "Zucchini",
+    "normalizedName": "zucchini",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "mushroom": {
+    "emoji": "🍄",
+    "name": "Mushrooms",
+    "normalizedName": "mushroom",
+    "total": 250,
+    "unit": "g",
+    "remaining": 250,
+    "dailyUsage": []
+  },
+  "green onion": {
+    "emoji": "🧅",
+    "name": "Green Onions",
+    "normalizedName": "green onion",
+    "total": 3,
+    "unit": "bunch",
+    "remaining": 3,
+    "dailyUsage": []
+  },
+  "fresh ginger": {
+    "emoji": "📦",
+    "name": "Fresh Ginger",
+    "normalizedName": "fresh ginger",
+    "total": 150,
+    "unit": "g",
+    "remaining": 150,
+    "dailyUsage": []
+  },
+  "fresh cilantro": {
+    "emoji": "📦",
+    "name": "Fresh Cilantro",
+    "normalizedName": "fresh cilantro",
+    "total": 2,
+    "unit": "bunch",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "fresh dill": {
+    "emoji": "📦",
+    "name": "Fresh Dill",
+    "normalizedName": "fresh dill",
+    "total": 2,
+    "unit": "bunch",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "fresh parsley": {
+    "emoji": "📦",
+    "name": "Fresh Parsley",
+    "normalizedName": "fresh parsley",
+    "total": 1,
+    "unit": "bunch",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "pickle": {
+    "emoji": "📦",
+    "name": "Pickles",
+    "normalizedName": "pickle",
+    "total": 3,
+    "unit": "l",
+    "remaining": 3,
+    "dailyUsage": []
+  },
+  "lemon": {
+    "emoji": "🍋",
+    "name": "Lemons",
+    "normalizedName": "lemon",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "lime": {
+    "emoji": "🟢",
+    "name": "Limes",
+    "normalizedName": "lime",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "fresh berrie": {
+    "emoji": "📦",
+    "name": "Fresh Berries",
+    "normalizedName": "fresh berrie",
+    "total": 400,
+    "unit": "g",
+    "remaining": 400,
+    "dailyUsage": []
+  },
+  "jasmine rice": {
+    "emoji": "🍚",
+    "name": "Jasmine Rice",
+    "normalizedName": "jasmine rice",
+    "total": 500,
+    "unit": "g",
+    "remaining": 500,
+    "dailyUsage": []
+  },
+  "brown rice": {
+    "emoji": "🍚",
+    "name": "Brown Rice",
+    "normalizedName": "brown rice",
+    "total": 300,
+    "unit": "g",
+    "remaining": 300,
+    "dailyUsage": []
+  },
+  "basmati rice": {
+    "emoji": "🍚",
+    "name": "Basmati Rice",
+    "normalizedName": "basmati rice",
+    "total": 300,
+    "unit": "g",
+    "remaining": 300,
+    "dailyUsage": []
+  },
+  "egg noodle": {
+    "emoji": "🥚",
+    "name": "Egg Noodles",
+    "normalizedName": "egg noodle",
+    "total": 500,
+    "unit": "g",
+    "remaining": 500,
+    "dailyUsage": []
+  },
+  "rice noodle": {
+    "emoji": "🍚",
+    "name": "Rice Noodles",
+    "normalizedName": "rice noodle",
+    "total": 300,
+    "unit": "g",
+    "remaining": 300,
+    "dailyUsage": []
+  },
+  "lasagna noodle": {
+    "emoji": "🍜",
+    "name": "Lasagna Noodles",
+    "normalizedName": "lasagna noodle",
+    "total": 300,
+    "unit": "g",
+    "remaining": 300,
+    "dailyUsage": []
+  },
+  "flour (all-purpose)": {
+    "emoji": "🌾",
+    "name": "Flour (All-purpose)",
+    "normalizedName": "flour (all-purpose)",
+    "total": 2,
+    "unit": "kg",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "rolled oat": {
+    "emoji": "📦",
+    "name": "Rolled Oats",
+    "normalizedName": "rolled oat",
+    "total": 200,
+    "unit": "g",
+    "remaining": 200,
+    "dailyUsage": []
+  },
+  "tomato sauce": {
+    "emoji": "🍅",
+    "name": "Tomato Sauce",
+    "normalizedName": "tomato sauce",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "diced tomatoe": {
+    "emoji": "🍅",
+    "name": "Diced Tomatoes",
+    "normalizedName": "diced tomatoe",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "tomato paste": {
+    "emoji": "🍅",
+    "name": "Tomato Paste",
+    "normalizedName": "tomato paste",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "beef broth": {
+    "emoji": "🥩",
+    "name": "Beef Broth",
+    "normalizedName": "beef broth",
+    "total": 4,
+    "unit": "l",
+    "remaining": 4,
+    "dailyUsage": []
+  },
+  "vegetable or chicken broth": {
+    "emoji": "🐔",
+    "name": "Vegetable or Chicken Broth",
+    "normalizedName": "vegetable or chicken broth",
+    "total": 1.5,
+    "unit": "l",
+    "remaining": 1.5,
+    "dailyUsage": []
+  },
+  "frozen peas and carrot": {
+    "emoji": "🥕",
+    "name": "Frozen Peas and Carrots",
+    "normalizedName": "frozen peas and carrot",
+    "total": 150,
+    "unit": "g",
+    "remaining": 150,
+    "dailyUsage": []
+  },
+  "bean sprout": {
+    "emoji": "📦",
+    "name": "Bean Sprouts",
+    "normalizedName": "bean sprout",
+    "total": 150,
+    "unit": "g",
+    "remaining": 150,
+    "dailyUsage": []
+  },
+  "olive": {
+    "emoji": "📦",
+    "name": "Olives",
+    "normalizedName": "olive",
+    "total": 100,
+    "unit": "g",
+    "remaining": 100,
+    "dailyUsage": []
+  },
+  "caper": {
+    "emoji": "📦",
+    "name": "Capers",
+    "normalizedName": "caper",
+    "total": 30,
+    "unit": "g",
+    "remaining": 30,
+    "dailyUsage": []
+  },
+  "dumpling wrapper": {
+    "emoji": "📦",
+    "name": "Dumpling Wrappers",
+    "normalizedName": "dumpling wrapper",
+    "total": 30,
+    "unit": "",
+    "remaining": 30,
+    "dailyUsage": []
+  },
+  "peanut": {
+    "emoji": "📦",
+    "name": "Peanuts",
+    "normalizedName": "peanut",
+    "total": 130,
+    "unit": "g",
+    "remaining": 130,
+    "dailyUsage": []
+  },
+  "mixed nut": {
+    "emoji": "📦",
+    "name": "Mixed Nuts",
+    "normalizedName": "mixed nut",
+    "total": 100,
+    "unit": "g",
+    "remaining": 100,
+    "dailyUsage": []
+  },
+  "dried red chili pepper": {
+    "emoji": "⚫",
+    "name": "Dried Red Chili Peppers",
+    "normalizedName": "dried red chili pepper",
+    "total": 10,
+    "unit": "",
+    "remaining": 10,
+    "dailyUsage": []
+  },
+  "star anise": {
+    "emoji": "📦",
+    "name": "Star Anise",
+    "normalizedName": "star anise",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "egg": {
+    "emoji": "🥚",
+    "name": "Eggs",
+    "normalizedName": "egg",
+    "total": 30,
+    "unit": "",
+    "remaining": 30,
+    "dailyUsage": []
+  },
+  "milk": {
+    "emoji": "🥛",
+    "name": "Milk",
+    "normalizedName": "milk",
+    "total": 400,
+    "unit": "ml",
+    "remaining": 400,
+    "dailyUsage": []
+  },
+  "vegetable oil": {
+    "emoji": "🫗",
+    "name": "Vegetable Oil",
+    "normalizedName": "vegetable oil",
+    "total": 500,
+    "unit": "ml",
+    "remaining": 500,
+    "dailyUsage": []
+  },
+  "sesame oil": {
+    "emoji": "🫗",
+    "name": "Sesame Oil",
+    "normalizedName": "sesame oil",
+    "total": 50,
+    "unit": "ml",
+    "remaining": 50,
+    "dailyUsage": []
+  },
+  "olive oil": {
+    "emoji": "🫗",
+    "name": "Olive Oil",
+    "normalizedName": "olive oil",
+    "total": 30,
+    "unit": "ml",
+    "remaining": 30,
+    "dailyUsage": []
+  },
+  "coconut oil": {
+    "emoji": "🫗",
+    "name": "Coconut Oil",
+    "normalizedName": "coconut oil",
+    "total": 30,
+    "unit": "g",
+    "remaining": 30,
+    "dailyUsage": []
+  },
+  "sugar (white)": {
+    "emoji": "🍬",
+    "name": "Sugar (White)",
+    "normalizedName": "sugar (white)",
+    "total": 50,
+    "unit": "g",
+    "remaining": 50,
+    "dailyUsage": []
+  },
+  "brown sugar": {
+    "emoji": "🍬",
+    "name": "Brown Sugar",
+    "normalizedName": "brown sugar",
+    "total": 35,
+    "unit": "g",
+    "remaining": 35,
+    "dailyUsage": []
+  },
+  "honey": {
+    "emoji": "🍯",
+    "name": "Honey",
+    "normalizedName": "honey",
+    "total": 65,
+    "unit": "g",
+    "remaining": 65,
+    "dailyUsage": []
+  },
+  "cornstarch": {
+    "emoji": "🌽",
+    "name": "Cornstarch",
+    "normalizedName": "cornstarch",
+    "total": 14,
+    "unit": "g",
+    "remaining": 14,
+    "dailyUsage": []
+  },
+  "vanilla extract": {
+    "emoji": "📦",
+    "name": "Vanilla Extract",
+    "normalizedName": "vanilla extract",
+    "total": 5,
+    "unit": "ml",
+    "remaining": 5,
+    "dailyUsage": []
+  },
+  "soy sauce": {
+    "emoji": "🥫",
+    "name": "Soy Sauce",
+    "normalizedName": "soy sauce",
+    "total": 200,
+    "unit": "ml",
+    "remaining": 200,
+    "dailyUsage": []
+  },
+  "fish sauce": {
+    "emoji": "🐟",
+    "name": "Fish Sauce",
+    "normalizedName": "fish sauce",
+    "total": 45,
+    "unit": "ml",
+    "remaining": 45,
+    "dailyUsage": []
+  },
+  "oyster sauce": {
+    "emoji": "🥫",
+    "name": "Oyster Sauce",
+    "normalizedName": "oyster sauce",
+    "total": 30,
+    "unit": "ml",
+    "remaining": 30,
+    "dailyUsage": []
+  },
+  "rice vinegar": {
+    "emoji": "🍚",
+    "name": "Rice Vinegar",
+    "normalizedName": "rice vinegar",
+    "total": 60,
+    "unit": "ml",
+    "remaining": 60,
+    "dailyUsage": []
+  },
+  "dijon mustard": {
+    "emoji": "📦",
+    "name": "Dijon Mustard",
+    "normalizedName": "dijon mustard",
+    "total": 15,
+    "unit": "ml",
+    "remaining": 15,
+    "dailyUsage": []
+  },
+  "tamarind paste": {
+    "emoji": "📦",
+    "name": "Tamarind Paste",
+    "normalizedName": "tamarind paste",
+    "total": 30,
+    "unit": "g",
+    "remaining": 30,
+    "dailyUsage": []
+  },
+  "tomato puree": {
+    "emoji": "🍅",
+    "name": "Tomato Puree",
+    "normalizedName": "tomato puree",
+    "total": 240,
+    "unit": "g",
+    "remaining": 240,
+    "dailyUsage": []
+  },
+  "italian herb": {
+    "emoji": "🌿",
+    "name": "Italian Herbs",
+    "normalizedName": "italian herb",
+    "total": 10,
+    "unit": "g",
+    "remaining": 10,
+    "dailyUsage": []
+  },
+  "garam masala": {
+    "emoji": "📦",
+    "name": "Garam Masala",
+    "normalizedName": "garam masala",
+    "total": 20,
+    "unit": "g",
+    "remaining": 20,
+    "dailyUsage": []
+  },
+  "turmeric": {
+    "emoji": "📦",
+    "name": "Turmeric",
+    "normalizedName": "turmeric",
+    "total": 4,
+    "unit": "g",
+    "remaining": 4,
+    "dailyUsage": []
+  },
+  "paprika": {
+    "emoji": "📦",
+    "name": "Paprika",
+    "normalizedName": "paprika",
+    "total": 4,
+    "unit": "g",
+    "remaining": 4,
+    "dailyUsage": []
+  },
+  "cumin": {
+    "emoji": "📦",
+    "name": "Cumin",
+    "normalizedName": "cumin",
+    "total": 2,
+    "unit": "g",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "coriander": {
+    "emoji": "📦",
+    "name": "Coriander",
+    "normalizedName": "coriander",
+    "total": 2,
+    "unit": "g",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "cinnamon": {
+    "emoji": "📦",
+    "name": "Cinnamon",
+    "normalizedName": "cinnamon",
+    "total": 3,
+    "unit": "g",
+    "remaining": 3,
+    "dailyUsage": []
+  },
+  "red pepper flake": {
+    "emoji": "⚫",
+    "name": "Red Pepper Flakes",
+    "normalizedName": "red pepper flake",
+    "total": 0.5,
+    "unit": "g",
+    "remaining": 0.5,
+    "dailyUsage": []
+  },
+  "salt": {
+    "emoji": "🧂",
+    "name": "Salt",
+    "normalizedName": "salt",
+    "total": 50,
+    "unit": "g",
+    "remaining": 50,
+    "dailyUsage": []
+  },
+  "black pepper": {
+    "emoji": "⚫",
+    "name": "Black Pepper",
+    "normalizedName": "black pepper",
+    "total": 15,
+    "unit": "g",
+    "remaining": 15,
+    "dailyUsage": []
+  },
+  "bay leaf": {
+    "emoji": "📦",
+    "name": "Bay Leaf",
+    "normalizedName": "bay leaf",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  }
+}
