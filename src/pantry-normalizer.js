@@ -8,7 +8,9 @@
  * Ordered from specific to general for better matching
  */
 const PREP_METHODS = [
-  // Specific cooking methods
+  // Specific multi-word combinations (must come before single words)
+  /\bseeded and chopped\b/gi,
+  /\bseeded and sliced\b/gi,
   /\bfinely chopped\b/gi,
   /\blightly sautéed\b/gi,
   /\bdiced into\b/gi,
@@ -28,6 +30,7 @@ const PREP_METHODS = [
   /\bquartered\b/gi,
   /\bhalved\b/gi,
   /\bpeeled\b/gi,
+  /\bseeded\b/gi,
   /\bdeseeded\b/gi,
   /\bcored\b/gi,
   /\btrimmed\b/gi,
@@ -79,7 +82,8 @@ const USAGE_NOTES = [
   /\bfor topping\b/gi,
   /\bfor decoration\b/gi,
   /\bto serve\b/gi,
-  /\bto taste\b/gi
+  /\bto taste\b/gi,
+  /\bserving\b/gi
 ];
 
 /**

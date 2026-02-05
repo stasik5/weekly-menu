@@ -1,7 +1,75 @@
 {
   "Monday": {
     "breakfast": {
-      "name": "Fried eggs with bread",
+      "name": "Kasha with butter and milk",
+      "cuisine": "slavic",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Pickled ginger and daikon",
+      "cuisine": "asian",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Thai green curry",
+      "cuisine": "asian",
+      "targetCalories": 2100
+    }
+  },
+  "Tuesday": {
+    "breakfast": {
+      "name": "Syrniki (cottage cheese pancakes)",
+      "cuisine": "slavic",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Nuts and dried fruits",
+      "cuisine": "slavic",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Vietnamese pho",
+      "cuisine": "asian",
+      "targetCalories": 2100
+    }
+  },
+  "Wednesday": {
+    "breakfast": {
+      "name": "Congee with egg and scallions",
+      "cuisine": "asian",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Yogurt with honey",
+      "cuisine": "slavic",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Pasta carbonara",
+      "cuisine": "slavic",
+      "targetCalories": 2100
+    }
+  },
+  "Thursday": {
+    "breakfast": {
+      "name": "Steamed buns with pork",
+      "cuisine": "asian",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Ryebread with butter",
+      "cuisine": "slavic",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Shashlik (grilled meat) with salad",
+      "cuisine": "slavic",
+      "targetCalories": 2100
+    }
+  },
+  "Friday": {
+    "breakfast": {
+      "name": "Blini with cheese filling",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
@@ -16,14 +84,14 @@
       "targetCalories": 2100
     }
   },
-  "Tuesday": {
+  "Saturday": {
     "breakfast": {
-      "name": "Syrniki (cottage cheese pancakes)",
-      "cuisine": "slavic",
+      "name": "Fried rice with vegetables",
+      "cuisine": "asian",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Banana with peanut butter",
+      "name": "Cottage cheese with herbs",
       "cuisine": "slavic",
       "targetCalories": 500
     },
@@ -33,9 +101,9 @@
       "targetCalories": 2100
     }
   },
-  "Wednesday": {
+  "Sunday": {
     "breakfast": {
-      "name": "Kasha with butter and milk",
+      "name": "Fried eggs with bread",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
@@ -47,74 +115,6 @@
     "dinner": {
       "name": "Chicken soup with vegetables",
       "cuisine": "slavic",
-      "targetCalories": 2100
-    }
-  },
-  "Thursday": {
-    "breakfast": {
-      "name": "Scrambled eggs with vegetables",
-      "cuisine": "slavic",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Apple slices with cheese",
-      "cuisine": "slavic",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Beef stroganoff with rice",
-      "cuisine": "slavic",
-      "targetCalories": 2100
-    }
-  },
-  "Friday": {
-    "breakfast": {
-      "name": "Blini with cheese filling",
-      "cuisine": "slavic",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Edamame with sea salt",
-      "cuisine": "asian",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Vietnamese pho",
-      "cuisine": "asian",
-      "targetCalories": 2100
-    }
-  },
-  "Saturday": {
-    "breakfast": {
-      "name": "Steamed buns with pork",
-      "cuisine": "asian",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Pickled ginger and daikon",
-      "cuisine": "asian",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Pelmeni with sour cream",
-      "cuisine": "slavic",
-      "targetCalories": 2100
-    }
-  },
-  "Sunday": {
-    "breakfast": {
-      "name": "Miso soup with tofu",
-      "cuisine": "asian",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Cottage cheese with herbs",
-      "cuisine": "slavic",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Sichuan mapo tofu",
-      "cuisine": "asian",
       "targetCalories": 2100
     }
   }
