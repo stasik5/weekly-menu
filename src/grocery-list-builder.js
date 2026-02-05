@@ -35,11 +35,22 @@ const CATEGORY_KEYWORDS = {
 
 /**
  * Categorize an ingredient based on its name
- * @param {string} ingredient - Ingredient text with quantity
+ * @param {string|Object} ingredient - Ingredient text with quantity, or ingredient object
  * @returns {string} Category name
  */
 function categorizeIngredient(ingredient) {
-  const lower = ingredient.toLowerCase();
+  // Handle both string and object formats
+  let ingredientStr;
+
+  if (typeof ingredient === 'string') {
+    ingredientStr = ingredient;
+  } else if (typeof ingredient === 'object' && ingredient !== null) {
+    ingredientStr = ingredient.name || ingredient.title || '';
+  } else {
+    return 'other';
+  }
+
+  const lower = ingredientStr.toLowerCase();
 
   for (const [category, keywords] of Object.entries(CATEGORY_KEYWORDS)) {
     for (const keyword of keywords) {
@@ -54,12 +65,23 @@ function categorizeIngredient(ingredient) {
 
 /**
  * Extract the ingredient name (without quantity)
- * @param {string} fullIngredient - Full ingredient text with quantity
+ * @param {string|Object} fullIngredient - Full ingredient text with quantity, or ingredient object
  * @returns {string} Just the ingredient name
  */
 function extractIngredientName(fullIngredient) {
+  // Handle both string and object formats
+  let ingredientStr;
+
+  if (typeof fullIngredient === 'string') {
+    ingredientStr = fullIngredient;
+  } else if (typeof fullIngredient === 'object' && fullIngredient !== null) {
+    ingredientStr = fullIngredient.name || fullIngredient.title || '';
+  } else {
+    return '';
+  }
+
   // Remove leading numbers and common measurement words
-  let name = fullIngredient
+  let name = ingredientStr
     .replace(/^\d+[\s½⅓⅔¼¾⅕⅛⅐⅑⅒]?/, '') // Remove leading numbers
     .replace(/^(cup|cups|tablespoon|tbsp|teaspoon|tsp|ounce|oz|pound|lb|gram|g|kg|ml|liter|l|piece|pieces|slice|slices|bunch|head|clove|cloves)\s*(of\s*)?/i, '') // Remove measurements
     .replace(/^\s*\(|\)\s*$/g, '') // Remove surrounding parentheses
@@ -72,11 +94,26 @@ function extractIngredientName(fullIngredient) {
 
 /**
  * Extract quantity from ingredient text
- * @param {string} fullIngredient - Full ingredient text
+ * @param {string|Object} fullIngredient - Full ingredient text or ingredient object
  * @returns {string} Quantity string
  */
 function extractQuantity(fullIngredient) {
-  const match = fullIngredient.match(/^[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\s*(?:cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|piece|pieces|slice|slices|bunch|head|clove|cloves)?)/i);
+  // Handle both string and object formats
+  let ingredientStr;
+
+  if (typeof fullIngredient === 'string') {
+    ingredientStr = fullIngredient;
+  } else if (typeof fullIngredient === 'object' && fullIngredient !== null) {
+    // If object has a quantity property, use it
+    if (fullIngredient.quantity) {
+      return fullIngredient.quantity;
+    }
+    ingredientStr = fullIngredient.name || fullIngredient.title || '';
+  } else {
+    return 'as needed';
+  }
+
+  const match = ingredientStr.match(/^[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\s*(?:cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|piece|pieces|slice|slices|bunch|head|clove|cloves)?)/i);
   return match ? match[0].trim() : 'as needed';
 }
 

@@ -167,17 +167,12 @@ async function generateWeeklyMenu(webSearch = null, publish = true, useAgent = t
       planWithRecipes = planWithFallback;
     }
 
-    console.log('✓ Recipes attached to meals');
+    console.log('✓ Recipes attached to meals (already in Russian)');
 
-    // Step 3: Translate to Russian (NEW)
-    console.log('\n3. Translating recipes to Russian...');
-    const translatedPlan = await translator.translateWeeklyPlan(planWithRecipes);
-    console.log('✓ Recipes translated to Russian');
-
-    // Step 4: Chef review
-    console.log('\n4. Running chef review...');
-    const chefReview = chefReviewer.reviewMenu(translatedPlan);
-    let finalPlan = translatedPlan;
+    // Step 3: Chef review
+    console.log('\n3. Running chef review...');
+    const chefReview = chefReviewer.reviewMenu(planWithRecipes);
+    let finalPlan = planWithRecipes;
     if (chefReview.modified) {
       console.log('✓ Menu optimized based on chef suggestions');
       finalPlan = chefReview.optimizedMenu;
@@ -185,30 +180,30 @@ async function generateWeeklyMenu(webSearch = null, publish = true, useAgent = t
       console.log('✓ Menu approved by chef (no changes needed)');
     }
 
-    // Step 5: Normalize ingredients (strip prep methods, merge duplicates) (NEW)
-    console.log('\n5. Normalizing ingredients...');
+    // Step 4: Normalize ingredients (strip prep methods, merge duplicates)
+    console.log('\n4. Normalizing ingredients...');
     const normalizedPlan = pantryNormalizer.normalizeWeeklyPlan(finalPlan);
     console.log('✓ Ingredients normalized (prep methods removed, duplicates merged)');
 
-    // Step 6: Build grocery list
-    console.log('\n6. Building grocery list...');
+    // Step 5: Build grocery list
+    console.log('\n5. Building grocery list...');
     const groceryList = groceryListBuilder.buildGroceryList(normalizedPlan);
     const totalItems = Object.values(groceryList).reduce((sum, items) => sum + items.length, 0);
     console.log(`✓ Grocery list built with ${totalItems} items`);
 
-    // Step 7: Generate virtual pantry
-    console.log('\n7. Generating virtual pantry...');
+    // Step 6: Generate virtual pantry
+    console.log('\n6. Generating virtual pantry...');
     const pantry = pantryManager.generatePantryFromGroceryList(groceryList, normalizedPlan);
     console.log(`✓ Virtual pantry created with ${Object.keys(pantry).length} items`);
 
-    // Step 8: Generate HTML
-    console.log('\n8. Generating HTML site...');
+    // Step 7: Generate HTML
+    console.log('\n7. Generating HTML site...');
     const weekLabel = siteGenerator.getWeekLabel();
     const html = siteGenerator.generateHTML(normalizedPlan, groceryList, pantry, weekLabel);
     console.log(`✓ HTML generated for ${weekLabel}`);
 
-    // Step 9: Save files
-    console.log('\n9. Saving files...');
+    // Step 8: Save files
+    console.log('\n8. Saving files...');
     const outputDir = path.join(__dirname, config.output.weeklyDir, weekLabel);
     const htmlPath = path.join(outputDir, 'index.html');
     const jsonPath = path.join(outputDir, 'recipes.json');
@@ -222,12 +217,12 @@ async function generateWeeklyMenu(webSearch = null, publish = true, useAgent = t
     console.log(`✓ JSON saved to: ${jsonPath}`);
     console.log(`✓ Pantry saved to: ${pantryPath}`);
 
-    // Step 10: Publish to GitHub
+    // Step 9: Publish to GitHub
     if (publish) {
-      console.log('\n10. Publishing to GitHub...');
+      console.log('\n9. Publishing to GitHub...');
       result.publishResult = await publisher.publishToGitHub(htmlPath, weekLabel);
     } else {
-      console.log('\n10. Skipped GitHub publishing (publish=false)');
+      console.log('\n9. Skipped GitHub publishing (publish=false)');
     }
 
     result.success = true;

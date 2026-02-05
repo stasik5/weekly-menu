@@ -169,13 +169,85 @@ function createFallbackRecipe(mealName, mealType, calories) {
 }
 
 /**
- * Build search query for web_search
+ * Mapping of English meal names to Russian search queries
+ */
+const RUSSIAN_SEARCH_QUERIES = {
+  // Slavic breakfast
+  'Buckwheat porridge with milk and berries': 'гречневая каша с молоком и ягодами рецепт',
+  'Oatmeal with honey and nuts': 'овсяная каша с медом и орехами рецепт',
+  'Fried eggs with bread': 'яичница с хлебом рецепт',
+  'Syrniki (cottage cheese pancakes)': 'сырники рецепт',
+  'Blini with cheese filling': 'блины с сыром рецепт',
+  'Kasha with butter and milk': 'каша с маслом и молоком рецепт',
+  'Scrambled eggs with vegetables': 'омлет с овощами рецепт',
+
+  // Slavic snack
+  'Apple slices with cheese': 'яблоки с сыром рецепт',
+  'Yogurt with honey': 'йогурт с медом рецепт',
+  'Nuts and dried fruits': 'орехи и сухофрукты рецепт',
+  'Cottage cheese with herbs': 'творог с зеленью рецепт',
+  'Banana with peanut butter': 'банан с арахисовой пастой рецепт',
+  'Pickled vegetables': 'маринованные овощи рецепт',
+  'Ryebread with butter': 'ржаной хлеб с маслом рецепт',
+
+  // Slavic dinner
+  'Chicken soup with vegetables': 'куриный суп с овощами рецепт',
+  'Borscht with sour cream': 'борщ со сметаной рецепт',
+  'Beef stroganoff with rice': 'бефстроганов с рисом рецепт',
+  'Pelmeni with sour cream': 'пельмени со сметаной рецепт',
+  'Shashlik (grilled meat) with salad': 'шашлык с салатом рецепт',
+  'Pasta carbonara': 'паста карбонара рецепт',
+  'Cabbage rolls with meat': 'голубцы с мясом рецепт',
+
+  // Asian breakfast
+  'Congee with egg and scallions': 'рисовая каша с яйцом и зеленым луком рецепт',
+  'Steamed buns with pork': 'паровые булочки со свининой рецепт',
+  'Rice porridge with pickles': 'рисовая каша с соленьями рецепт',
+  'Fried rice with vegetables': 'жареный рис с овощами рецепт',
+  'Miso soup with tofu': 'мисо суп с тофу рецепт',
+  'Rice noodles with egg': 'рисовая лапша с яйцом рецепт',
+  'Dim sum dumplings': 'димсамы рецепт',
+
+  // Asian snack
+  'Edamame with sea salt': 'эдамаме с морской солью рецепт',
+  'Seaweed snacks': 'сушеные водоросли рецепт',
+  'Rice crackers': 'рисовые крекеры рецепт',
+  'Pickled ginger and daikon': 'маринованный имбирь и дайкон рецепт',
+  'Mango slices': 'дольки манго рецепт',
+  'Green tea cookies': 'печенье с зеленым чаем рецепт',
+  'Fried tofu cubes': 'жареный тофу кубиками рецепт',
+
+  // Asian dinner
+  'Chicken teriyaki with rice': 'курица терияки с рисом рецепт',
+  'Pad Thai with shrimp': 'пад тай с креветками рецепт',
+  'Vietnamese pho': 'вьетнамский фо рецепт',
+  'Korean bibimbap': 'корейский пибимбап рецепт',
+  'Sichuan mapo tofu': 'сычуаньский мапо тофу рецепт',
+  'Thai green curry': 'тайский зеленый карри рецепт',
+  'Japanese ramen': 'японский рамен рецепт'
+};
+
+/**
+ * Build search query for web_search - using Russian queries
  * @param {string} mealName - Name of the meal to search for
  * @param {string} cuisine - Cuisine type (slavic/asian)
- * @returns {string} Search query
+ * @returns {string} Search query in Russian
  */
 function buildSearchQuery(mealName, cuisine) {
-  return `${mealName} ${cuisine} recipe ingredients instructions`;
+  // Check if we have a specific Russian query for this meal
+  if (RUSSIAN_SEARCH_QUERIES[mealName]) {
+    return RUSSIAN_SEARCH_QUERIES[mealName];
+  }
+
+  // Fallback: transliterate/translate and add "рецепт" (recipe)
+  // For unknown meals, try a generic Russian search
+  const fallbackQueries = {
+    'slavic': 'словарный рецепт',
+    'asian': 'азиатский рецепт'
+  };
+
+  console.warn(`  No specific Russian query for "${mealName}", using generic ${cuisine} search`);
+  return fallbackQueries[cuisine] || 'рецепт';
 }
 
 /**
