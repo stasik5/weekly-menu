@@ -56,7 +56,18 @@ const translations = {
 
   // Common phrases
   'No pantry items to display.': 'Нет продуктов для отображения.',
-  'No usage recorded': 'Нет использования'
+  'No usage recorded': 'Нет использования',
+
+  // Fallback recipe ingredients
+  'Main ingredients vary by recipe': 'Основные ингредиенты зависят от рецепта',
+  'Seasonings to taste': 'Специи по вкусу',
+  'Cook according to recipe instructions': 'Готовить согласно инструкции рецепта',
+
+  // Fallback recipe instructions
+  'Prepare ingredients according to standard cooking methods': 'Подготовьте ингредиенты стандартными методами готовки',
+  'Cook until done': 'Готовьте до готовности',
+  'Season to taste': 'Посолите и поперчите по вкусу',
+  'Serve hot': 'Подавайте горячим'
 };
 
 /**
@@ -666,12 +677,29 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
 
       const ingredientsList = document.getElementById('modalIngredients');
       ingredientsList.innerHTML = (recipe.ingredients || [])
-        .map(ing => \`<li>\${ing}</li>\`)
+        .map(ing => {
+          // Translate common fallback ingredients
+          const translations = {
+            'Main ingredients vary by recipe': 'Основные ингредиенты зависят от рецепта',
+            'Seasonings to taste': 'Специи по вкусу',
+            'Cook according to recipe instructions': 'Готовить согласно инструкции рецепта'
+          };
+          return \`<li>\${translations[ing] || ing}</li>\`;
+        })
         .join('');
 
       const instructionsList = document.getElementById('modalInstructions');
       instructionsList.innerHTML = (recipe.instructions || [])
-        .map((inst, i) => \`<li>\${inst}</li>\`)
+        .map((inst, i) => {
+          // Translate common fallback instructions
+          const translations = {
+            'Prepare ingredients according to standard cooking methods': 'Подготовьте ингредиенты стандартными методами готовки',
+            'Cook until done': 'Готовьте до готовности',
+            'Season to taste': 'Посолите и поперчите по вкусу',
+            'Serve hot': 'Подавайте горячим'
+          };
+          return \`<li>\${translations[inst] || inst}</li>\`;
+        })
         .join('');
 
       const sourceEl = document.getElementById('modalSource');
