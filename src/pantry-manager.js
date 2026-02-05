@@ -167,21 +167,16 @@ function generatePantryFromGroceryList(groceryList, menu) {
   const days = Object.keys(menu);
 
   // Generic ingredients to skip (fallback templates)
+  // Only skip if the FULL ingredient matches - don't filter partial matches
   const skipPatterns = [
     'main ingredients vary',
     'seasonings to taste',
     'cook according to recipe',
-    'for blini',
-    'for dough',
-    'for filling',
-    'for serving',
-    'for teriyaki sauce',
-    'for cheese filling',
-    'optional:',
-    'note:',
     'varies by recipe',
     'need to stock',
-    'tap water'
+    'tap water',
+    'note:',
+    'optional:'
   ];
 
   // First pass: collect all ingredients from grocery list
@@ -198,9 +193,10 @@ function generatePantryFromGroceryList(groceryList, menu) {
         continue;
       }
 
-      // Skip generic ingredients
-      const lowerName = itemName.toLowerCase();
-      if (skipPatterns.some(pattern => lowerName.includes(pattern))) {
+      // Skip generic ingredients - only exact matches, not partial
+      const lowerName = itemName.toLowerCase().trim();
+      if (skipPatterns.includes(lowerName)) {
+        console.log(`  Skipping: ${itemName} (matched generic pattern)`);
         continue;
       }
 
@@ -239,9 +235,10 @@ function generatePantryFromGroceryList(groceryList, menu) {
         const parsed = parseIngredientQuantity(ingredientText);
         const normalizedName = normalizeIngredientName(parsed.name);
 
-        // Skip generic ingredients
-        const lowerName = parsed.name.toLowerCase();
-        if (skipPatterns.some(pattern => lowerName.includes(pattern))) {
+        // Skip generic ingredients - only exact matches, not partial
+        const lowerName = parsed.name.toLowerCase().trim();
+        if (skipPatterns.includes(lowerName)) {
+          console.log(`  Skipping ingredient from menu: ${parsed.name} (matched generic pattern)`);
           continue;
         }
 
