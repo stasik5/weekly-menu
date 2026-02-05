@@ -12,77 +12,77 @@
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Oatmeal with honey and nuts"
+        "meal": "Fried rice with vegetables"
       },
       {
         "day": "Monday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Banana with peanut butter"
+      },
+      {
+        "day": "Monday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Pelmeni with sour cream"
+      },
+      {
+        "day": "Tuesday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Fried eggs with bread"
+      },
+      {
+        "day": "Tuesday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Ryebread with butter"
+      },
+      {
+        "day": "Tuesday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Chicken soup with vegetables"
+      },
+      {
+        "day": "Wednesday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Rice porridge with pickles"
+      },
+      {
+        "day": "Wednesday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
         "meal": "Seaweed snacks"
       },
       {
-        "day": "Monday",
-        "mealType": "dinner",
-        "amount": 0,
-        "unit": "",
-        "meal": "Fried eggs with bread"
-      },
-      {
-        "day": "Tuesday",
-        "mealType": "breakfast",
-        "amount": 0,
-        "unit": "",
-        "meal": "Scrambled eggs with vegetables"
-      },
-      {
-        "day": "Tuesday",
-        "mealType": "snack",
-        "amount": 0,
-        "unit": "",
-        "meal": "Fried tofu cubes"
-      },
-      {
-        "day": "Tuesday",
-        "mealType": "dinner",
-        "amount": 0,
-        "unit": "",
-        "meal": "Fried eggs with bread"
-      },
-      {
-        "day": "Wednesday",
-        "mealType": "breakfast",
-        "amount": 0,
-        "unit": "",
-        "meal": "Syrniki (cottage cheese pancakes)"
-      },
-      {
-        "day": "Wednesday",
-        "mealType": "snack",
-        "amount": 0,
-        "unit": "",
-        "meal": "Green tea cookies"
-      },
-      {
         "day": "Wednesday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Thai green curry"
+        "meal": "Rice crackers"
       },
       {
         "day": "Thursday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Congee with egg and scallions"
+        "meal": "Blini with cheese filling"
       },
       {
         "day": "Thursday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Mango slices"
+        "meal": "Rice crackers"
       },
       {
         "day": "Thursday",
@@ -96,35 +96,35 @@
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Fried eggs with bread"
+        "meal": "Oatmeal with honey and nuts"
       },
       {
         "day": "Friday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Pickled vegetables"
+        "meal": "Pickled ginger and daikon"
       },
       {
         "day": "Friday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Pelmeni with sour cream"
+        "meal": "Beef stroganoff with rice"
       },
       {
         "day": "Saturday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Buckwheat porridge with milk and berries"
+        "meal": "Syrniki (cottage cheese pancakes)"
       },
       {
         "day": "Saturday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Ryebread with butter"
+        "meal": "Nuts and dried fruits"
       },
       {
         "day": "Saturday",
@@ -138,21 +138,21 @@
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Rice porridge with pickles"
+        "meal": "Kasha with butter and milk"
       },
       {
         "day": "Sunday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Apple slices with cheese"
+        "meal": "Yogurt with honey"
       },
       {
         "day": "Sunday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Shashlik (grilled meat) with salad"
+        "meal": "Thai green curry"
       }
     ]
   },
@@ -169,77 +169,77 @@
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Oatmeal with honey and nuts"
+        "meal": "Fried rice with vegetables"
       },
       {
         "day": "Monday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Banana with peanut butter"
+      },
+      {
+        "day": "Monday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Pelmeni with sour cream"
+      },
+      {
+        "day": "Tuesday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Fried eggs with bread"
+      },
+      {
+        "day": "Tuesday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Ryebread with butter"
+      },
+      {
+        "day": "Tuesday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Chicken soup with vegetables"
+      },
+      {
+        "day": "Wednesday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Rice porridge with pickles"
+      },
+      {
+        "day": "Wednesday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
         "meal": "Seaweed snacks"
       },
       {
-        "day": "Monday",
-        "mealType": "dinner",
-        "amount": 0,
-        "unit": "",
-        "meal": "Fried eggs with bread"
-      },
-      {
-        "day": "Tuesday",
-        "mealType": "breakfast",
-        "amount": 0,
-        "unit": "",
-        "meal": "Scrambled eggs with vegetables"
-      },
-      {
-        "day": "Tuesday",
-        "mealType": "snack",
-        "amount": 0,
-        "unit": "",
-        "meal": "Fried tofu cubes"
-      },
-      {
-        "day": "Tuesday",
-        "mealType": "dinner",
-        "amount": 0,
-        "unit": "",
-        "meal": "Fried eggs with bread"
-      },
-      {
-        "day": "Wednesday",
-        "mealType": "breakfast",
-        "amount": 0,
-        "unit": "",
-        "meal": "Syrniki (cottage cheese pancakes)"
-      },
-      {
-        "day": "Wednesday",
-        "mealType": "snack",
-        "amount": 0,
-        "unit": "",
-        "meal": "Green tea cookies"
-      },
-      {
         "day": "Wednesday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Thai green curry"
+        "meal": "Rice crackers"
       },
       {
         "day": "Thursday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Congee with egg and scallions"
+        "meal": "Blini with cheese filling"
       },
       {
         "day": "Thursday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Mango slices"
+        "meal": "Rice crackers"
       },
       {
         "day": "Thursday",
@@ -253,35 +253,35 @@
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Fried eggs with bread"
+        "meal": "Oatmeal with honey and nuts"
       },
       {
         "day": "Friday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Pickled vegetables"
+        "meal": "Pickled ginger and daikon"
       },
       {
         "day": "Friday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Pelmeni with sour cream"
+        "meal": "Beef stroganoff with rice"
       },
       {
         "day": "Saturday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Buckwheat porridge with milk and berries"
+        "meal": "Syrniki (cottage cheese pancakes)"
       },
       {
         "day": "Saturday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Ryebread with butter"
+        "meal": "Nuts and dried fruits"
       },
       {
         "day": "Saturday",
@@ -295,21 +295,21 @@
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Rice porridge with pickles"
+        "meal": "Kasha with butter and milk"
       },
       {
         "day": "Sunday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Apple slices with cheese"
+        "meal": "Yogurt with honey"
       },
       {
         "day": "Sunday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Shashlik (grilled meat) with salad"
+        "meal": "Thai green curry"
       }
     ]
   },
@@ -326,77 +326,77 @@
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Oatmeal with honey and nuts"
+        "meal": "Fried rice with vegetables"
       },
       {
         "day": "Monday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Banana with peanut butter"
+      },
+      {
+        "day": "Monday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Pelmeni with sour cream"
+      },
+      {
+        "day": "Tuesday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Fried eggs with bread"
+      },
+      {
+        "day": "Tuesday",
+        "mealType": "snack",
+        "amount": 0,
+        "unit": "",
+        "meal": "Ryebread with butter"
+      },
+      {
+        "day": "Tuesday",
+        "mealType": "dinner",
+        "amount": 0,
+        "unit": "",
+        "meal": "Chicken soup with vegetables"
+      },
+      {
+        "day": "Wednesday",
+        "mealType": "breakfast",
+        "amount": 0,
+        "unit": "",
+        "meal": "Rice porridge with pickles"
+      },
+      {
+        "day": "Wednesday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
         "meal": "Seaweed snacks"
       },
       {
-        "day": "Monday",
-        "mealType": "dinner",
-        "amount": 0,
-        "unit": "",
-        "meal": "Fried eggs with bread"
-      },
-      {
-        "day": "Tuesday",
-        "mealType": "breakfast",
-        "amount": 0,
-        "unit": "",
-        "meal": "Scrambled eggs with vegetables"
-      },
-      {
-        "day": "Tuesday",
-        "mealType": "snack",
-        "amount": 0,
-        "unit": "",
-        "meal": "Fried tofu cubes"
-      },
-      {
-        "day": "Tuesday",
-        "mealType": "dinner",
-        "amount": 0,
-        "unit": "",
-        "meal": "Fried eggs with bread"
-      },
-      {
-        "day": "Wednesday",
-        "mealType": "breakfast",
-        "amount": 0,
-        "unit": "",
-        "meal": "Syrniki (cottage cheese pancakes)"
-      },
-      {
-        "day": "Wednesday",
-        "mealType": "snack",
-        "amount": 0,
-        "unit": "",
-        "meal": "Green tea cookies"
-      },
-      {
         "day": "Wednesday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Thai green curry"
+        "meal": "Rice crackers"
       },
       {
         "day": "Thursday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Congee with egg and scallions"
+        "meal": "Blini with cheese filling"
       },
       {
         "day": "Thursday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Mango slices"
+        "meal": "Rice crackers"
       },
       {
         "day": "Thursday",
@@ -410,35 +410,35 @@
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Fried eggs with bread"
+        "meal": "Oatmeal with honey and nuts"
       },
       {
         "day": "Friday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Pickled vegetables"
+        "meal": "Pickled ginger and daikon"
       },
       {
         "day": "Friday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Pelmeni with sour cream"
+        "meal": "Beef stroganoff with rice"
       },
       {
         "day": "Saturday",
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Buckwheat porridge with milk and berries"
+        "meal": "Syrniki (cottage cheese pancakes)"
       },
       {
         "day": "Saturday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Ryebread with butter"
+        "meal": "Nuts and dried fruits"
       },
       {
         "day": "Saturday",
@@ -452,21 +452,21 @@
         "mealType": "breakfast",
         "amount": 0,
         "unit": "",
-        "meal": "Rice porridge with pickles"
+        "meal": "Kasha with butter and milk"
       },
       {
         "day": "Sunday",
         "mealType": "snack",
         "amount": 0,
         "unit": "",
-        "meal": "Apple slices with cheese"
+        "meal": "Yogurt with honey"
       },
       {
         "day": "Sunday",
         "mealType": "dinner",
         "amount": 0,
         "unit": "",
-        "meal": "Shashlik (grilled meat) with salad"
+        "meal": "Thai green curry"
       }
     ]
   }
