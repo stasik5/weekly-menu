@@ -1,0 +1,120 @@
+{
+  "week": "2026-W06",
+  "generatedDate": "2026-02-05",
+  "groceryList": {
+    "meat": [
+      { "item": "Chicken Breast", "quantity": "1.9kg", "notes": "For fried rice, pad thai, kung pao, butter chicken" },
+      { "item": "Beef Sirloin or Rib Eye", "quantity": "500g", "notes": "For stroganoff" },
+      { "item": "Beef Steak", "quantity": "300g", "notes": "For noodle soup" },
+      { "item": "Ground Beef", "quantity": "900g", "notes": "500g for lasagna, 400g for pelmeni" },
+      { "item": "Ground Pork", "quantity": "200g", "notes": "For pelmeni" },
+      { "item": "Ground Pork", "quantity": "400g", "notes": "For dim sum dumplings" },
+      { "item": "Ham or Sausage", "quantity": "200g", "notes": "For solyanka" },
+      { "item": "Salami", "quantity": "100g", "notes": "For solyanka" },
+      { "item": "Bacon", "quantity": "150g", "notes": "For potato vareniki" },
+      { "item": "Shrimp", "quantity": "100g", "notes": "For dim sum dumplings" }
+    ],
+    "dairy": [
+      { "item": "Farmer's Cheese (Tvorog)", "quantity": "700g", "notes": "500g for syrniki, 200g for pierogi" },
+      { "item": "Sour Cream", "quantity": "1.6kg", "notes": "For syrniki, stroganoff, borscht, pierogi, pelmeni, vareniki, solyanka" },
+      { "item": "Greek Yogurt", "quantity": "640g", "notes": "400g for granola, 240g for butter chicken marinade" },
+      { "item": "Heavy Cream", "quantity": "240ml", "notes": "For butter chicken" },
+      { "item": "Ricotta Cheese", "quantity": "400g", "notes": "For lasagna" },
+      { "item": "Mozzarella Cheese", "quantity": "300g", "notes": "For lasagna, shredded" },
+      { "item": "Parmesan Cheese", "quantity": "100g", "notes": "Grated, for lasagna" },
+      { "item": "Butter", "quantity": "300g", "notes": "For cooking and serving" }
+    ],
+    "vegetables": [
+      { "item": "Beets", "quantity": "600g", "notes": "For borscht" },
+      { "item": "Cabbage (Green)", "quantity": "1.2kg", "notes": "300g for borscht, 500g for cabbage soup, 400g for dim sum" },
+      { "item": "Onions", "quantity": "10", "notes": "Yellow, various recipes" },
+      { "item": "Garlic", "quantity": "2 heads", "notes": "Fresh, various recipes" },
+      { "item": "Carrots", "quantity": "1.2kg", "notes": "For soups and stir-fry" },
+      { "item": "Potatoes", "quantity": "2.8kg", "notes": "For soups, pierogi, vareniki" },
+      { "item": "Bell Peppers", "quantity": "6", "notes": "Various colors for shakshuka, stir-fry, kung pao" },
+      { "item": "Tomatoes", "quantity": "4 medium", "notes": "Fresh for shakshuka" },
+      { "item": "Broccoli", "quantity": "350g", "notes": "For stir-fry and noodle soup" },
+      { "item": "Snap Peas", "quantity": "100g", "notes": "For vegetable stir-fry" },
+      { "item": "Celery", "quantity": "2 stalks", "notes": "For cabbage soup" },
+      { "item": "Zucchini", "quantity": "1 medium", "notes": "For kung pao chicken" },
+      { "item": "Mushrooms", "quantity": "250g", "notes": "For stroganoff" },
+      { "item": "Green Onions", "quantity": "3 bunches", "notes": "For Asian dishes" },
+      { "item": "Fresh Ginger", "quantity": "150g", "notes": "Root for Asian cooking" },
+      { "item": "Fresh Cilantro", "quantity": "2 bunches", "notes": "Optional garnish" },
+      { "item": "Fresh Dill", "quantity": "2 bunches", "notes": "For Slavic dishes" },
+      { "item": "Fresh Parsley", "quantity": "1 bunch", "notes": "Optional garnish" },
+      { "item": "Pickles", "quantity": "3 large", "notes": "Dilled, for solyanka" }
+    ],
+    "fruits": [
+      { "item": "Lemons", "quantity": "2", "notes": "For butter chicken and solyanka" },
+      { "item": "Limes", "quantity": "2", "notes": "For pad thai" },
+      { "item": "Fresh Berries", "quantity": "400g", "notes": "For syrniki, blini, granola (mixed berries preferred)" }
+    ],
+    "grains": [
+      { "item": "Jasmine Rice", "quantity": "500g", "notes": "For congee" },
+      { "item": "Brown Rice", "quantity": "300g", "notes": "Preferably cooked and day-old for fried rice" },
+      { "item": "Basmati Rice", "quantity": "300g", "notes": "For butter chicken" },
+      { "item": "Egg Noodles", "quantity": "500g", "notes": "Dried, for stroganoff and noodle soup" },
+      { "item": "Rice Noodles", "quantity": "300g", "notes": "Flat, for pad thai" },
+      { "item": "Lasagna Noodles", "quantity": "300g", "notes": "Dried" },
+      { "item": "Flour (All-purpose)", "quantity": "2kg", "notes": "For doughs" },
+      { "item": "Rolled Oats", "quantity": "200g", "notes": "For granola" }
+    ],
+    "canned_goods": [
+      { "item": "Tomato Sauce", "quantity": "2 cans (800g each)", "notes": "For lasagna" },
+      { "item": "Diced Tomatoes", "quantity": "1 can (400g)", "notes": "For cabbage soup" },
+      { "item": "Tomato Paste", "quantity": "1 tube", "notes": "For borscht, solyanka, stroganoff" },
+      { "item": "Beef Broth", "quantity": "4 liters", "notes": "For soups and boiling" },
+      { "item": "Vegetable or Chicken Broth", "quantity": "1.5 liters", "notes": "For cabbage soup" },
+      { "item": "Frozen Peas and Carrots", "quantity": "150g", "notes": "For fried rice" },
+      { "item": "Bean Sprouts", "quantity": "150g", "notes": "Fresh, for pad thai" },
+      { "item": "Olives", "quantity": "100g", "notes": "For solyanka" },
+      { "item": "Capers", "quantity": "30g", "notes": "For solyanka" },
+      { "item": "Dumpling Wrappers", "quantity": "30", "notes": "For dim sum" }
+    ],
+    "nuts_seeds": [
+      { "item": "Peanuts", "quantity": "130g", "notes": "Unsalted, for pad thai and kung pao" },
+      { "item": "Mixed Nuts", "quantity": "100g", "notes": "Almonds, walnuts for granola" },
+      { "item": "Dried Red Chili Peppers", "quantity": "10-15", "notes": "For kung pao" },
+      { "item": "Star Anise", "quantity": "2", "notes": "For beef noodle soup" }
+    ],
+    "other": [
+      { "item": "Eggs", "quantity": "30", "notes": "Large (24 already in pantry, need 6 more)" },
+      { "item": "Milk", "quantity": "400ml", "notes": "For blini and vareniki" },
+      { "item": "Water", "quantity": "N/A", "notes": "Tap water for cooking" },
+      { "item": "Vegetable Oil", "quantity": "500ml", "notes": "Need to stock" },
+      { "item": "Sesame Oil", "quantity": "50ml", "notes": "Need to stock" },
+      { "item": "Olive Oil", "quantity": "30ml", "notes": "Need to stock" },
+      { "item": "Coconut Oil", "quantity": "30g", "notes": "Need to stock" },
+      { "item": "Sugar (White)", "quantity": "50g", "notes": "Need to stock" },
+      { "item": "Brown Sugar", "quantity": "35g", "notes": "Need to stock" },
+      { "item": "Honey", "quantity": "65g", "notes": "Need to stock" },
+      { "item": "Cornstarch", "quantity": "14g", "notes": "Need to stock" },
+      { "item": "Vanilla Extract", "quantity": "5ml", "notes": "Need to stock" },
+      { "item": "Soy Sauce", "quantity": "200ml", "notes": "Need to stock" },
+      { "item": "Fish Sauce", "quantity": "45ml", "notes": "Need to stock" },
+      { "item": "Oyster Sauce", "quantity": "30ml", "notes": "Need to stock" },
+      { "item": "Rice Vinegar", "quantity": "60ml", "notes": "Need to stock" },
+      { "item": "Dijon Mustard", "quantity": "15ml", "notes": "Need to stock" },
+      { "item": "Tamarind Paste", "quantity": "30g", "notes": "Need to stock" },
+      { "item": "Tomato Puree", "quantity": "240g", "notes": "Need to stock" },
+      { "item": "Italian Herbs", "quantity": "10g", "notes": "Need to stock" },
+      { "item": "Garam Masala", "quantity": "20g", "notes": "Need to stock" },
+      { "item": "Turmeric", "quantity": "4g", "notes": "Need to stock" },
+      { "item": "Paprika", "quantity": "4g", "notes": "Need to stock" },
+      { "item": "Cumin", "quantity": "2g", "notes": "Need to stock" },
+      { "item": "Coriander", "quantity": "2g", "notes": "Need to stock" },
+      { "item": "Cinnamon", "quantity": "3g", "notes": "Need to stock" },
+      { "item": "Red Pepper Flakes", "quantity": "0.5g", "notes": "Need to stock" },
+      { "item": "Salt", "quantity": "50g", "notes": "Need to stock" },
+      { "item": "Black Pepper", "quantity": "15g", "notes": "Need to stock" },
+      { "item": "Bay Leaf", "quantity": "1", "notes": "Need to stock" }
+    ]
+  },
+  "summary": {
+    "totalItems": 87,
+    "categories": 8,
+    "estimatedCost": "€150-200",
+    "notes": "Check pantry for items marked 'Need to stock' before shopping"
+  }
+}
