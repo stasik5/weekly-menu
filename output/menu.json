@@ -6,7 +6,7 @@
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Nuts and dried fruits",
+      "name": "Pickled vegetables",
       "cuisine": "slavic",
       "targetCalories": 500
     },
@@ -18,7 +18,24 @@
   },
   "Tuesday": {
     "breakfast": {
-      "name": "Syrniki (cottage cheese pancakes)",
+      "name": "Kasha with butter and milk",
+      "cuisine": "slavic",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Yogurt with honey",
+      "cuisine": "slavic",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Pelmeni with sour cream",
+      "cuisine": "slavic",
+      "targetCalories": 2100
+    }
+  },
+  "Wednesday": {
+    "breakfast": {
+      "name": "Oatmeal with honey and nuts",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
@@ -28,36 +45,19 @@
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Korean bibimbap",
+      "name": "Pad Thai with shrimp",
       "cuisine": "asian",
       "targetCalories": 2100
     }
   },
-  "Wednesday": {
+  "Thursday": {
     "breakfast": {
       "name": "Buckwheat porridge with milk and berries",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Mango slices",
-      "cuisine": "asian",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Beef stroganoff with rice",
-      "cuisine": "slavic",
-      "targetCalories": 2100
-    }
-  },
-  "Thursday": {
-    "breakfast": {
-      "name": "Blini with cheese filling",
-      "cuisine": "slavic",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Pickled ginger and daikon",
+      "name": "Edamame with sea salt",
       "cuisine": "asian",
       "targetCalories": 500
     },
@@ -69,18 +69,18 @@
   },
   "Friday": {
     "breakfast": {
-      "name": "Kasha with butter and milk",
+      "name": "Scrambled eggs with vegetables",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Cottage cheese with herbs",
-      "cuisine": "slavic",
+      "name": "Fried tofu cubes",
+      "cuisine": "asian",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Chicken soup with vegetables",
-      "cuisine": "slavic",
+      "name": "Sichuan mapo tofu",
+      "cuisine": "asian",
       "targetCalories": 2100
     }
   },
@@ -96,8 +96,8 @@
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Pad Thai with shrimp",
-      "cuisine": "asian",
+      "name": "Chicken soup with vegetables",
+      "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
@@ -108,12 +108,12 @@
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Pickled vegetables",
+      "name": "Cottage cheese with herbs",
       "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Japanese ramen",
+      "name": "Vietnamese pho",
       "cuisine": "asian",
       "targetCalories": 2100
     }
