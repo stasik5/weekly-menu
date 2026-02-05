@@ -4,7 +4,7 @@
  * Alternates between Slavic/pasta (60%) and Asian (40%) cuisines
  */
 
-const DAYS = ['Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 const MEAL_TYPES = ['breakfast', 'snack', 'dinner'];
 
 // Meal templates with calorie targets and cuisine types
