@@ -185,9 +185,11 @@ function generatePantryFromGroceryList(groceryList, menu) {
   // First pass: collect all ingredients from grocery list
   for (const [category, items] of Object.entries(groceryList)) {
     for (const item of items) {
-      const normalizedName = normalizeIngredientName(item.name);
+      // Handle both 'name' and 'item' field names
+      const itemName = item.name || item.item;
+      const normalizedName = normalizeIngredientName(itemName);
       const parsed = parseIngredientQuantity(item.quantity);
-      const emoji = getEmojiForIngredient(item.name);
+      const emoji = getEmojiForIngredient(itemName);
 
       // Skip items with 0 quantity or generic names
       if (parsed.value <= 0) {
@@ -195,14 +197,14 @@ function generatePantryFromGroceryList(groceryList, menu) {
       }
 
       // Skip generic ingredients
-      const lowerName = item.name.toLowerCase();
+      const lowerName = itemName.toLowerCase();
       if (skipPatterns.some(pattern => lowerName.includes(pattern))) {
         continue;
       }
 
       pantry[normalizedName] = {
         emoji,
-        name: item.name,
+        name: itemName,
         normalizedName,
         total: parsed.value,
         unit: parsed.unit,

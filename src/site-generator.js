@@ -303,10 +303,8 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
       color: #e8eaf0;
       font-weight: 500;
       overflow: visible;
-      min-width: 0;
       white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      min-width: 0;
     }
 
     .pantry-item .amount {

@@ -1,213 +1,6 @@
 {
-  "Rice noodles with egg": {
-    "title": "Rice noodles with egg",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 1400,
-      "protein": 53,
-      "carbs": 105,
-      "fat": 86
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Green tea cookies": {
-    "title": "Green tea cookies",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 500,
-      "protein": 19,
-      "carbs": 38,
-      "fat": 31
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Thai green curry": {
-    "title": "Thai green curry",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 2100,
-      "protein": 131,
-      "carbs": 215,
-      "fat": 79
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Kasha with butter and milk": {
-    "title": "Kasha with butter and milk",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 1400,
-      "protein": 53,
-      "carbs": 105,
-      "fat": 86
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Pickled vegetables": {
-    "title": "Pickled vegetables",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 500,
-      "protein": 19,
-      "carbs": 38,
-      "fat": 31
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Chicken soup with vegetables": {
-    "title": "Chicken soup with vegetables",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 2100,
-      "protein": 131,
-      "carbs": 215,
-      "fat": 79
-    },
-    "source": "fallback_template",
-    "url": null
-  },
   "Congee with egg and scallions": {
     "title": "Congee with egg and scallions",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 1400,
-      "protein": 53,
-      "carbs": 105,
-      "fat": 86
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Ryebread with butter": {
-    "title": "Ryebread with butter",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 500,
-      "protein": 19,
-      "carbs": 38,
-      "fat": 31
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Vietnamese pho": {
-    "title": "Vietnamese pho",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 2100,
-      "protein": 131,
-      "carbs": 215,
-      "fat": 79
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Syrniki (cottage cheese pancakes)": {
-    "title": "Syrniki (cottage cheese pancakes)",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -252,8 +45,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Borscht with sour cream": {
-    "title": "Borscht with sour cream",
+  "Beef stroganoff with rice": {
+    "title": "Beef stroganoff with rice",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -275,8 +68,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Oatmeal with honey and nuts": {
-    "title": "Oatmeal with honey and nuts",
+  "Miso soup with tofu": {
+    "title": "Miso soup with tofu",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -298,8 +91,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Seaweed snacks": {
-    "title": "Seaweed snacks",
+  "Pickled ginger and daikon": {
+    "title": "Pickled ginger and daikon",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -321,8 +114,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Pasta carbonara": {
-    "title": "Pasta carbonara",
+  "Pelmeni with sour cream": {
+    "title": "Pelmeni with sour cream",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -344,8 +137,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Blini with cheese filling": {
-    "title": "Blini with cheese filling",
+  "Fried rice with vegetables": {
+    "title": "Fried rice with vegetables",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -367,8 +160,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Banana with peanut butter": {
-    "title": "Banana with peanut butter",
+  "Apple slices with cheese": {
+    "title": "Apple slices with cheese",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -390,8 +183,77 @@
     "source": "fallback_template",
     "url": null
   },
-  "Shashlik (grilled meat) with salad": {
-    "title": "Shashlik (grilled meat) with salad",
+  "Chicken soup with vegetables": {
+    "title": "Chicken soup with vegetables",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 2100,
+      "protein": 131,
+      "carbs": 215,
+      "fat": 79
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Fried eggs with bread": {
+    "title": "Fried eggs with bread",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 1400,
+      "protein": 53,
+      "carbs": 105,
+      "fat": 86
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Pickled vegetables": {
+    "title": "Pickled vegetables",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 500,
+      "protein": 19,
+      "carbs": 38,
+      "fat": 31
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Sichuan mapo tofu": {
+    "title": "Sichuan mapo tofu",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -436,8 +298,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Edamame with sea salt": {
-    "title": "Edamame with sea salt",
+  "Nuts and dried fruits": {
+    "title": "Nuts and dried fruits",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -459,8 +321,146 @@
     "source": "fallback_template",
     "url": null
   },
-  "Chicken teriyaki with rice": {
-    "title": "Chicken teriyaki with rice",
+  "Pad Thai with shrimp": {
+    "title": "Pad Thai with shrimp",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 2100,
+      "protein": 131,
+      "carbs": 215,
+      "fat": 79
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Rice porridge with pickles": {
+    "title": "Rice porridge with pickles",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 1400,
+      "protein": 53,
+      "carbs": 105,
+      "fat": 86
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Banana with peanut butter": {
+    "title": "Banana with peanut butter",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 500,
+      "protein": 19,
+      "carbs": 38,
+      "fat": 31
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Borscht with sour cream": {
+    "title": "Borscht with sour cream",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 2100,
+      "protein": 131,
+      "carbs": 215,
+      "fat": 79
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Syrniki (cottage cheese pancakes)": {
+    "title": "Syrniki (cottage cheese pancakes)",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 1400,
+      "protein": 53,
+      "carbs": 105,
+      "fat": 86
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Seaweed snacks": {
+    "title": "Seaweed snacks",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 500,
+      "protein": 19,
+      "carbs": 38,
+      "fat": 31
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Shashlik (grilled meat) with salad": {
+    "title": "Shashlik (grilled meat) with salad",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
