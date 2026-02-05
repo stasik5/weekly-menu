@@ -1,31 +1,7 @@
 {
   "produce": [
     {
-      "name": "apples (Granny Smith or any",
-      "quantity": "as needed",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Saturday",
-          "mealType": "snack",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "arge carrots, diced",
-      "quantity": "2  (2)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Saturday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "arge head of cabbage",
+      "name": "1 bunch fresh dill, chopped",
       "quantity": "1  (1)",
       "category": "produce",
       "usedIn": [
@@ -37,7 +13,31 @@
       ]
     },
     {
-      "name": "arge onion, diced",
+      "name": "1 clove garlic, sliced",
+      "quantity": "1  (1)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "snack",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "1 large head of cabbage",
+      "quantity": "1  (1)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "1 large onion, diced",
       "quantity": "3  (3 )",
       "category": "produce",
       "usedIn": [
@@ -59,25 +59,49 @@
       ]
     },
     {
-      "name": "bean sprouts",
-      "quantity": "as needed + as needed",
+      "name": "1 small head of cabbage,",
+      "quantity": "1  (1)",
       "category": "produce",
       "usedIn": [
         {
-          "day": "Wednesday",
+          "day": "Thursday",
           "mealType": "dinner",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "1 small onion, finely minced",
+      "quantity": "1  (1)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Tuesday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "1 thumb-sized piece of ginger,",
+      "quantity": "2  (2 )",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "breakfast",
           "cuisine": "asian"
         },
         {
-          "day": "Sunday",
-          "mealType": "dinner",
+          "day": "Saturday",
+          "mealType": "breakfast",
           "cuisine": "asian"
         }
       ]
     },
     {
-      "name": "bell pepper, diced",
-      "quantity": "1  (1/2)",
+      "name": "1/2 bell pepper, diced",
+      "quantity": "1  (1)",
       "category": "produce",
       "usedIn": [
         {
@@ -88,19 +112,67 @@
       ]
     },
     {
-      "name": "bell peppers, sliced",
-      "quantity": "as needed",
+      "name": "1/2 cup Chinese pickled vegetables",
+      "quantity": "1  (1)",
       "category": "produce",
       "usedIn": [
         {
           "day": "Monday",
-          "mealType": "snack",
+          "mealType": "breakfast",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "1/2 cup spinach, chopped",
+      "quantity": "1  (1)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Friday",
+          "mealType": "breakfast",
           "cuisine": "slavic"
         }
       ]
     },
     {
-      "name": "black pepper",
+      "name": "1/2 onion, diced",
+      "quantity": "1  (1)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Friday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "1/2 teaspoon garlic powder",
+      "quantity": "1  (1)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Friday",
+          "mealType": "snack",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "1/2 teaspoon white pepper",
+      "quantity": "1  (1)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Saturday",
+          "mealType": "breakfast",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "1/4 teaspoon black pepper",
       "quantity": "2  (2 )",
       "category": "produce",
       "usedIn": [
@@ -112,6 +184,326 @@
         {
           "day": "Sunday",
           "mealType": "snack",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "100g bean sprouts",
+      "quantity": "1  (1)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Wednesday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "100g mushrooms, sliced",
+      "quantity": "1  (1)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Friday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "100g red onion, sliced",
+      "quantity": "1  (1)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "snack",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "150g bell peppers, sliced",
+      "quantity": "1  (1)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "snack",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "2 carrots, grated",
+      "quantity": "2  (2)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "2 cloves garlic, minced",
+      "quantity": "4  (4 )",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        },
+        {
+          "day": "Tuesday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "2 cloves garlic, smashed",
+      "quantity": "2  (2)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "breakfast",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "2 green onions, chopped",
+      "quantity": "2  (2)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "breakfast",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "2 green onions, finely chopped",
+      "quantity": "2  (2)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Sunday",
+          "mealType": "breakfast",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "2 green onions, sliced",
+      "quantity": "2  (2)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Sunday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "2 inches ginger, charred",
+      "quantity": "2  (2)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Sunday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "2 large carrots, diced",
+      "quantity": "2  (2)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Saturday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "2 medium carrots, grated",
+      "quantity": "2  (2)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Thursday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "2 medium potatoes, diced",
+      "quantity": "2  (2)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Thursday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "2 onions, halved and charred",
+      "quantity": "2  (2)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Sunday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "2 stalks celery, diced",
+      "quantity": "2  (2)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Saturday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "200g bean sprouts",
+      "quantity": "2  (2)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Sunday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "200g carrots, sliced into rounds",
+      "quantity": "2  (2)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "snack",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "200g cucumbers, sliced into rounds",
+      "quantity": "2  (2)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "snack",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "3 cloves garlic, minced",
+      "quantity": "9  (9 )",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Wednesday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        },
+        {
+          "day": "Thursday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        },
+        {
+          "day": "Friday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "3 green onions, chopped",
+      "quantity": "6  (6 )",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Wednesday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        },
+        {
+          "day": "Friday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "3 medium potatoes, diced",
+      "quantity": "3  (3)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Saturday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "300g apples (Granny Smith or",
+      "quantity": "3  (3)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Saturday",
+          "mealType": "snack",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "4-5 green onions (scallions), chopped",
+      "quantity": "4  (4)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Saturday",
+          "mealType": "breakfast",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "500ml tomato sauce or passata",
+      "quantity": "5  (5)",
+      "category": "produce",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "dinner",
           "cuisine": "slavic"
         }
       ]
@@ -129,42 +521,6 @@
       ]
     },
     {
-      "name": "carrots, grated",
-      "quantity": "2  (2)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "carrots, sliced into rounds",
-      "quantity": "as needed",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "snack",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "Chinese pickled vegetables (pickled radish,",
-      "quantity": "1  (1/2 cup)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "breakfast",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
       "name": "cornstarch mixed with 2 tablespoons",
       "quantity": "1  (1 tablespoon)",
       "category": "produce",
@@ -173,18 +529,6 @@
           "day": "Friday",
           "mealType": "dinner",
           "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "cucumbers, sliced into rounds",
-      "quantity": "as needed",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "snack",
-          "cuisine": "slavic"
         }
       ]
     },
@@ -202,7 +546,7 @@
     },
     {
       "name": "Fresh basil",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "produce",
       "usedIn": [
         {
@@ -214,7 +558,7 @@
     },
     {
       "name": "Fresh cilantro",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "produce",
       "usedIn": [
         {
@@ -226,7 +570,7 @@
     },
     {
       "name": "Fresh cilantro for garnish",
-      "quantity": "as needed + as needed",
+      "quantity": " + ",
       "category": "produce",
       "usedIn": [
         {
@@ -242,20 +586,8 @@
       ]
     },
     {
-      "name": "fresh dill, chopped",
-      "quantity": "1 bunch (1 bunch)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
       "name": "Fresh dill, chopped",
-      "quantity": "as needed + as needed",
+      "quantity": " + ",
       "category": "produce",
       "usedIn": [
         {
@@ -272,7 +604,7 @@
     },
     {
       "name": "Fresh herbs for garnish (chives,",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "produce",
       "usedIn": [
         {
@@ -284,7 +616,7 @@
     },
     {
       "name": "Fresh parsley or dill for",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "produce",
       "usedIn": [
         {
@@ -307,32 +639,8 @@
       ]
     },
     {
-      "name": "garlic powder",
-      "quantity": "1  (1/2 teaspoon)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Friday",
-          "mealType": "snack",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "garlic, sliced",
-      "quantity": "1 clove (1 clove)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "snack",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "ime wedges",
-      "quantity": "as needed",
+      "name": "Lime wedges",
+      "quantity": "",
       "category": "produce",
       "usedIn": [
         {
@@ -343,8 +651,8 @@
       ]
     },
     {
-      "name": "ime wedges for serving",
-      "quantity": "as needed",
+      "name": "Lime wedges for serving",
+      "quantity": "",
       "category": "produce",
       "usedIn": [
         {
@@ -355,85 +663,8 @@
       ]
     },
     {
-      "name": "inches ginger, charred",
-      "quantity": "2  (2)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Sunday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "medium carrots, grated",
-      "quantity": "2  (2)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Thursday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "medium potatoes, diced",
-      "quantity": "5  (5 )",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Thursday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        },
-        {
-          "day": "Saturday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "mushrooms, sliced",
-      "quantity": "as needed",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Friday",
-          "mealType": "breakfast",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "onion, diced",
-      "quantity": "1  (1/2)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Friday",
-          "mealType": "breakfast",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "onions, halved and charred",
-      "quantity": "2  (2)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Sunday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
       "name": "Optional: 1 clove garlic, minced",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "produce",
       "usedIn": [
         {
@@ -445,89 +676,19 @@
     },
     {
       "name": "Optional: 1 clove garlic, rubbed",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "produce",
       "usedIn": [
         {
           "day": "Wednesday",
           "mealType": "snack",
           "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "red onion, sliced",
-      "quantity": "as needed",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "snack",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "reen onions (scallions), chopped",
-      "quantity": "4  (4-5)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Saturday",
-          "mealType": "breakfast",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "reen onions, chopped",
-      "quantity": "8  (8 )",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "breakfast",
-          "cuisine": "asian"
-        },
-        {
-          "day": "Wednesday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        },
-        {
-          "day": "Friday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "reen onions, finely chopped",
-      "quantity": "2  (2)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Sunday",
-          "mealType": "breakfast",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "reen onions, sliced",
-      "quantity": "2  (2)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Sunday",
-          "mealType": "dinner",
-          "cuisine": "asian"
         }
       ]
     },
     {
       "name": "s cornstarch",
-      "quantity": "2  (2)",
+      "quantity": "2  (2 tablespoon)",
       "category": "produce",
       "usedIn": [
         {
@@ -539,7 +700,7 @@
     },
     {
       "name": "s fermented black beans",
-      "quantity": "2  (2)",
+      "quantity": "2  (2 tablespoon)",
       "category": "produce",
       "usedIn": [
         {
@@ -551,7 +712,7 @@
     },
     {
       "name": "s fresh dill, chopped",
-      "quantity": "2  (2)",
+      "quantity": "2  (2 tablespoon)",
       "category": "produce",
       "usedIn": [
         {
@@ -562,52 +723,8 @@
       ]
     },
     {
-      "name": "s garlic, minced",
-      "quantity": "13 clove (13 clove)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        },
-        {
-          "day": "Tuesday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        },
-        {
-          "day": "Wednesday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        },
-        {
-          "day": "Thursday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        },
-        {
-          "day": "Friday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "s garlic, smashed",
-      "quantity": "2 clove (2 clove)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "breakfast",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
       "name": "s ginger, minced",
-      "quantity": "2  (2)",
+      "quantity": "2  (2 tablespoon)",
       "category": "produce",
       "usedIn": [
         {
@@ -619,7 +736,7 @@
     },
     {
       "name": "s lime juice",
-      "quantity": "2  (2)",
+      "quantity": "2  (2 tablespoon)",
       "category": "produce",
       "usedIn": [
         {
@@ -631,7 +748,7 @@
     },
     {
       "name": "s Sichuan chili bean paste",
-      "quantity": "3  (3)",
+      "quantity": "3  (3 tablespoon)",
       "category": "produce",
       "usedIn": [
         {
@@ -643,7 +760,7 @@
     },
     {
       "name": "s tomato paste",
-      "quantity": "3  (3)",
+      "quantity": "3  (3 tablespoon)",
       "category": "produce",
       "usedIn": [
         {
@@ -655,7 +772,7 @@
     },
     {
       "name": "Salt and pepper to taste",
-      "quantity": "as needed + as needed + as needed + as needed + as needed",
+      "quantity": " +  +  +  + ",
       "category": "produce",
       "usedIn": [
         {
@@ -682,108 +799,12 @@
           "day": "Saturday",
           "mealType": "dinner",
           "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "small head of cabbage, shredded",
-      "quantity": "1  (1)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Thursday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "small onion, finely minced",
-      "quantity": "1  (1)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Tuesday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "spinach, chopped",
-      "quantity": "1  (1/2 cup)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Friday",
-          "mealType": "breakfast",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "stalks celery, diced",
-      "quantity": "2  (2)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Saturday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "thumb-sized piece of ginger, julienned",
-      "quantity": "1  (1)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Saturday",
-          "mealType": "breakfast",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "thumb-sized piece of ginger, sliced",
-      "quantity": "1  (1)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "breakfast",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "tomato sauce or passata",
-      "quantity": "as needed",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "white pepper",
-      "quantity": "1  (1/2 teaspoon)",
-      "category": "produce",
-      "usedIn": [
-        {
-          "day": "Saturday",
-          "mealType": "breakfast",
-          "cuisine": "asian"
         }
       ]
     },
     {
       "name": "White pepper to taste",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "produce",
       "usedIn": [
         {
@@ -796,32 +817,8 @@
   ],
   "meat": [
     {
-      "name": "beef brisket or oxtail",
-      "quantity": "as needed",
-      "category": "meat",
-      "usedIn": [
-        {
-          "day": "Sunday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "beef broth",
-      "quantity": "as needed",
-      "category": "meat",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "beef or pork, cubed (optional",
-      "quantity": "as needed",
+      "name": "1.5 liters beef broth or",
+      "quantity": "1  (1)",
       "category": "meat",
       "usedIn": [
         {
@@ -832,20 +829,8 @@
       ]
     },
     {
-      "name": "beef sirloin, paper-thin sliced",
-      "quantity": "as needed",
-      "category": "meat",
-      "usedIn": [
-        {
-          "day": "Sunday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "chicken breast or thighs, cubed",
-      "quantity": "as needed",
+      "name": "1.5 liters chicken broth",
+      "quantity": "1  (1)",
       "category": "meat",
       "usedIn": [
         {
@@ -856,8 +841,20 @@
       ]
     },
     {
-      "name": "chicken or vegetable broth",
-      "quantity": "as needed",
+      "name": "200g beef sirloin, paper-thin sliced",
+      "quantity": "2  (2)",
+      "category": "meat",
+      "usedIn": [
+        {
+          "day": "Sunday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "200g ground pork",
+      "quantity": "2  (2)",
       "category": "meat",
       "usedIn": [
         {
@@ -868,32 +865,32 @@
       ]
     },
     {
-      "name": "ground beef",
-      "quantity": "as needed",
+      "name": "300g shrimp, peeled and deveined",
+      "quantity": "3  (3)",
       "category": "meat",
       "usedIn": [
         {
-          "day": "Monday",
+          "day": "Wednesday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "400g beef or pork, cubed",
+      "quantity": "4  (4)",
+      "category": "meat",
+      "usedIn": [
+        {
+          "day": "Thursday",
           "mealType": "dinner",
           "cuisine": "slavic"
         }
       ]
     },
     {
-      "name": "ground pork",
-      "quantity": "as needed",
-      "category": "meat",
-      "usedIn": [
-        {
-          "day": "Friday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "ground pork and beef mixture",
-      "quantity": "as needed",
+      "name": "400g ground pork and beef",
+      "quantity": "4  (4)",
       "category": "meat",
       "usedIn": [
         {
@@ -904,26 +901,62 @@
       ]
     },
     {
-      "name": "s beef broth or water",
-      "quantity": "1.5  (1.5)",
+      "name": "500g beef brisket or oxtail",
+      "quantity": "5  (5)",
       "category": "meat",
       "usedIn": [
         {
-          "day": "Thursday",
+          "day": "Sunday",
           "mealType": "dinner",
-          "cuisine": "slavic"
+          "cuisine": "asian"
         }
       ]
     },
     {
-      "name": "s chicken broth",
-      "quantity": "1.5  (1.5)",
+      "name": "500g chicken breast or thighs,",
+      "quantity": "5  (5)",
       "category": "meat",
       "usedIn": [
         {
           "day": "Saturday",
           "mealType": "dinner",
           "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "500g ground beef",
+      "quantity": "5  (5)",
+      "category": "meat",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "500ml beef broth",
+      "quantity": "5  (5)",
+      "category": "meat",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "500ml chicken or vegetable broth",
+      "quantity": "5  (5)",
+      "category": "meat",
+      "usedIn": [
+        {
+          "day": "Friday",
+          "mealType": "dinner",
+          "cuisine": "asian"
         }
       ]
     },
@@ -945,8 +978,8 @@
       ]
     },
     {
-      "name": "s water or chicken broth",
-      "quantity": "4  (4 )",
+      "name": "water or chicken broth",
+      "quantity": "4 l",
       "category": "meat",
       "usedIn": [
         {
@@ -960,64 +993,11 @@
           "cuisine": "asian"
         }
       ]
-    },
-    {
-      "name": "shrimp, peeled and deveined",
-      "quantity": "as needed",
-      "category": "meat",
-      "usedIn": [
-        {
-          "day": "Wednesday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
     }
   ],
   "dairy": [
     {
-      "name": "butter",
-      "quantity": "as needed + 1 tablespoon",
-      "category": "dairy",
-      "usedIn": [
-        {
-          "day": "Tuesday",
-          "mealType": "breakfast",
-          "cuisine": "slavic"
-        },
-        {
-          "day": "Friday",
-          "mealType": "breakfast",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "Butter (optional",
-      "quantity": "as needed",
-      "category": "dairy",
-      "usedIn": [
-        {
-          "day": "Tuesday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "cottage cheese",
-      "quantity": "as needed",
-      "category": "dairy",
-      "usedIn": [
-        {
-          "day": "Sunday",
-          "mealType": "snack",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "egg",
+      "name": "1 egg",
       "quantity": "1  (1)",
       "category": "dairy",
       "usedIn": [
@@ -1029,25 +1009,56 @@
       ]
     },
     {
-      "name": "eggs",
-      "quantity": "8  (8 )",
+      "name": "100g sharp cheddar cheese, sliced",
+      "quantity": "1  (1)",
+      "category": "dairy",
+      "usedIn": [
+        {
+          "day": "Saturday",
+          "mealType": "snack",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "100g unsalted butter, softened",
+      "quantity": "1  (1)",
+      "category": "dairy",
+      "usedIn": [
+        {
+          "day": "Wednesday",
+          "mealType": "snack",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "2 eggs",
+      "quantity": "2  (2)",
       "category": "dairy",
       "usedIn": [
         {
           "day": "Wednesday",
           "mealType": "dinner",
           "cuisine": "asian"
-        },
+        }
+      ]
+    },
+    {
+      "name": "2 eggs, beaten",
+      "quantity": "2  (2)",
+      "category": "dairy",
+      "usedIn": [
         {
-          "day": "Friday",
-          "mealType": "breakfast",
+          "day": "Monday",
+          "mealType": "dinner",
           "cuisine": "slavic"
         }
       ]
     },
     {
-      "name": "eggs, beaten",
-      "quantity": "6  (6 )",
+      "name": "200ml sour cream",
+      "quantity": "4  (4 )",
       "category": "dairy",
       "usedIn": [
         {
@@ -1056,15 +1067,27 @@
           "cuisine": "slavic"
         },
         {
-          "day": "Saturday",
-          "mealType": "breakfast",
-          "cuisine": "asian"
+          "day": "Tuesday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
         }
       ]
     },
     {
-      "name": "Greek yogurt",
-      "quantity": "as needed",
+      "name": "300g cottage cheese",
+      "quantity": "3  (3)",
+      "category": "dairy",
+      "usedIn": [
+        {
+          "day": "Sunday",
+          "mealType": "snack",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "300g Greek yogurt",
+      "quantity": "3  (3)",
       "category": "dairy",
       "usedIn": [
         {
@@ -1075,8 +1098,20 @@
       ]
     },
     {
-      "name": "milk or water",
-      "quantity": "as needed",
+      "name": "4 eggs, beaten",
+      "quantity": "4  (4)",
+      "category": "dairy",
+      "usedIn": [
+        {
+          "day": "Saturday",
+          "mealType": "breakfast",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "400ml milk or water",
+      "quantity": "4  (4)",
       "category": "dairy",
       "usedIn": [
         {
@@ -1087,8 +1122,73 @@
       ]
     },
     {
+      "name": "400ml whole milk",
+      "quantity": "8  (8 )",
+      "category": "dairy",
+      "usedIn": [
+        {
+          "day": "Tuesday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        },
+        {
+          "day": "Thursday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "40g butter",
+      "quantity": "4  (4)",
+      "category": "dairy",
+      "usedIn": [
+        {
+          "day": "Tuesday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "6 eggs",
+      "quantity": "6  (6)",
+      "category": "dairy",
+      "usedIn": [
+        {
+          "day": "Friday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "butter",
+      "quantity": "1  (1 tablespoon)",
+      "category": "dairy",
+      "usedIn": [
+        {
+          "day": "Friday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "Butter (optional",
+      "quantity": "",
+      "category": "dairy",
+      "usedIn": [
+        {
+          "day": "Tuesday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
       "name": "Optional: 1 teaspoon butter",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "dairy",
       "usedIn": [
         {
@@ -1100,7 +1200,7 @@
     },
     {
       "name": "Optional: 1/4 cup grated cheese",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "dairy",
       "usedIn": [
         {
@@ -1112,7 +1212,7 @@
     },
     {
       "name": "s butter",
-      "quantity": "2  (2)",
+      "quantity": "2  (2 tablespoon)",
       "category": "dairy",
       "usedIn": [
         {
@@ -1124,7 +1224,7 @@
     },
     {
       "name": "s milk or cream",
-      "quantity": "2  (2)",
+      "quantity": "2  (2 tablespoon)",
       "category": "dairy",
       "usedIn": [
         {
@@ -1135,37 +1235,8 @@
       ]
     },
     {
-      "name": "sharp cheddar cheese, sliced",
-      "quantity": "as needed",
-      "category": "dairy",
-      "usedIn": [
-        {
-          "day": "Saturday",
-          "mealType": "snack",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "sour cream",
-      "quantity": "as needed + as needed",
-      "category": "dairy",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        },
-        {
-          "day": "Tuesday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
       "name": "Sour cream for serving",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "dairy",
       "usedIn": [
         {
@@ -1186,23 +1257,13 @@
           "cuisine": "slavic"
         }
       ]
-    },
+    }
+  ],
+  "pantry": [
     {
-      "name": "unsalted butter, softened",
-      "quantity": "as needed",
-      "category": "dairy",
-      "usedIn": [
-        {
-          "day": "Wednesday",
-          "mealType": "snack",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "whole milk",
-      "quantity": "as needed + as needed",
-      "category": "dairy",
+      "name": "1-2 tablespoons honey or sugar",
+      "quantity": "2  (2 )",
+      "category": "pantry",
       "usedIn": [
         {
           "day": "Tuesday",
@@ -1215,12 +1276,71 @@
           "cuisine": "slavic"
         }
       ]
-    }
-  ],
-  "pantry": [
+    },
     {
-      "name": "all-purpose flour",
-      "quantity": "as needed",
+      "name": "1/2 teaspoon salt",
+      "quantity": "6  (6 )",
+      "category": "pantry",
+      "usedIn": [
+        {
+          "day": "Tuesday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        },
+        {
+          "day": "Tuesday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        },
+        {
+          "day": "Wednesday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        },
+        {
+          "day": "Thursday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        },
+        {
+          "day": "Friday",
+          "mealType": "snack",
+          "cuisine": "asian"
+        },
+        {
+          "day": "Sunday",
+          "mealType": "snack",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "100g rolled oats",
+      "quantity": "1  (1)",
+      "category": "pantry",
+      "usedIn": [
+        {
+          "day": "Wednesday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "2-3 tablespoons honey",
+      "quantity": "2  (2)",
+      "category": "pantry",
+      "usedIn": [
+        {
+          "day": "Tuesday",
+          "mealType": "snack",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "200g all-purpose flour",
+      "quantity": "2  (2)",
       "category": "pantry",
       "usedIn": [
         {
@@ -1231,8 +1351,186 @@
       ]
     },
     {
+      "name": "200g roasted buckwheat groats",
+      "quantity": "4  (4 )",
+      "category": "pantry",
+      "usedIn": [
+        {
+          "day": "Tuesday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        },
+        {
+          "day": "Thursday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "200g short-grain white rice",
+      "quantity": "4  (4 )",
+      "category": "pantry",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "breakfast",
+          "cuisine": "asian"
+        },
+        {
+          "day": "Saturday",
+          "mealType": "breakfast",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "200g silken tofu, cubed",
+      "quantity": "2  (2)",
+      "category": "pantry",
+      "usedIn": [
+        {
+          "day": "Sunday",
+          "mealType": "breakfast",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "200g uncooked white rice",
+      "quantity": "2  (2)",
+      "category": "pantry",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "3-4 tablespoons white miso paste",
+      "quantity": "3  (3)",
+      "category": "pantry",
+      "usedIn": [
+        {
+          "day": "Sunday",
+          "mealType": "breakfast",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "300g rice noodles (flat, 1/4",
+      "quantity": "3  (3)",
+      "category": "pantry",
+      "usedIn": [
+        {
+          "day": "Wednesday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "300g rice noodles (pho",
+      "quantity": "3  (3)",
+      "category": "pantry",
+      "usedIn": [
+        {
+          "day": "Sunday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "300g rye bread, sliced",
+      "quantity": "3  (3)",
+      "category": "pantry",
+      "usedIn": [
+        {
+          "day": "Wednesday",
+          "mealType": "snack",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "300ml white vinegar",
+      "quantity": "3  (3)",
+      "category": "pantry",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "snack",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "400g firm tofu",
+      "quantity": "4  (4)",
+      "category": "pantry",
+      "usedIn": [
+        {
+          "day": "Friday",
+          "mealType": "snack",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "400g silken tofu, cubed",
+      "quantity": "4  (4)",
+      "category": "pantry",
+      "usedIn": [
+        {
+          "day": "Friday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "50g mixed nuts (almonds, walnuts,",
+      "quantity": "5  (5)",
+      "category": "pantry",
+      "usedIn": [
+        {
+          "day": "Wednesday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "50g roasted peanuts, crushed",
+      "quantity": "5  (5)",
+      "category": "pantry",
+      "usedIn": [
+        {
+          "day": "Wednesday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "50g walnuts, chopped",
+      "quantity": "5  (5)",
+      "category": "pantry",
+      "usedIn": [
+        {
+          "day": "Tuesday",
+          "mealType": "snack",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
       "name": "Broth:",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "pantry",
       "usedIn": [
         {
@@ -1256,7 +1554,7 @@
     },
     {
       "name": "Cooked rice for serving",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "pantry",
       "usedIn": [
         {
@@ -1291,38 +1589,14 @@
       ]
     },
     {
-      "name": "firm tofu",
-      "quantity": "as needed",
-      "category": "pantry",
-      "usedIn": [
-        {
-          "day": "Friday",
-          "mealType": "snack",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
       "name": "Hoisin sauce (optional",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "pantry",
       "usedIn": [
         {
           "day": "Sunday",
           "mealType": "dinner",
           "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "mixed nuts (almonds, walnuts, pecans),",
-      "quantity": "as needed",
-      "category": "pantry",
-      "usedIn": [
-        {
-          "day": "Wednesday",
-          "mealType": "breakfast",
-          "cuisine": "slavic"
         }
       ]
     },
@@ -1340,7 +1614,7 @@
     },
     {
       "name": "Noodles and toppings:",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "pantry",
       "usedIn": [
         {
@@ -1352,7 +1626,7 @@
     },
     {
       "name": "Optional: 1 tablespoon olive oil",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "pantry",
       "usedIn": [
         {
@@ -1364,7 +1638,7 @@
     },
     {
       "name": "Optional: 1 tablespoon soy sauce",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "pantry",
       "usedIn": [
         {
@@ -1376,7 +1650,7 @@
     },
     {
       "name": "Optional: 1 teaspoon caraway seeds",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "pantry",
       "usedIn": [
         {
@@ -1388,7 +1662,7 @@
     },
     {
       "name": "Optional: 1 teaspoon honey",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "pantry",
       "usedIn": [
         {
@@ -1400,7 +1674,7 @@
     },
     {
       "name": "Optional: 1/2 teaspoon sesame oil",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "pantry",
       "usedIn": [
         {
@@ -1412,7 +1686,7 @@
     },
     {
       "name": "Optional: 30g nuts (almonds, walnuts",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "pantry",
       "usedIn": [
         {
@@ -1424,7 +1698,7 @@
     },
     {
       "name": "Optional: 4 whole grain crackers",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "pantry",
       "usedIn": [
         {
@@ -1436,84 +1710,7 @@
     },
     {
       "name": "Optional: honey for sweet version",
-      "quantity": "as needed",
-      "category": "pantry",
-      "usedIn": [
-        {
-          "day": "Wednesday",
-          "mealType": "snack",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "rice noodles (flat, 1/4 inch",
-      "quantity": "as needed",
-      "category": "pantry",
-      "usedIn": [
-        {
-          "day": "Wednesday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "rice noodles (pho",
-      "quantity": "as needed",
-      "category": "pantry",
-      "usedIn": [
-        {
-          "day": "Sunday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "roasted buckwheat groats",
-      "quantity": "as needed + as needed",
-      "category": "pantry",
-      "usedIn": [
-        {
-          "day": "Tuesday",
-          "mealType": "breakfast",
-          "cuisine": "slavic"
-        },
-        {
-          "day": "Thursday",
-          "mealType": "breakfast",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "roasted peanuts, crushed",
-      "quantity": "as needed",
-      "category": "pantry",
-      "usedIn": [
-        {
-          "day": "Wednesday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "rolled oats",
-      "quantity": "as needed",
-      "category": "pantry",
-      "usedIn": [
-        {
-          "day": "Wednesday",
-          "mealType": "breakfast",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "rye bread, sliced",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "pantry",
       "usedIn": [
         {
@@ -1525,7 +1722,7 @@
     },
     {
       "name": "s brown sugar",
-      "quantity": "2  (2)",
+      "quantity": "2  (2 tablespoon)",
       "category": "pantry",
       "usedIn": [
         {
@@ -1537,14 +1734,9 @@
     },
     {
       "name": "s honey",
-      "quantity": "4  (4 )",
+      "quantity": "2  (2 tablespoon)",
       "category": "pantry",
       "usedIn": [
-        {
-          "day": "Tuesday",
-          "mealType": "snack",
-          "cuisine": "slavic"
-        },
         {
           "day": "Wednesday",
           "mealType": "breakfast",
@@ -1553,32 +1745,8 @@
       ]
     },
     {
-      "name": "s honey or sugar",
-      "quantity": "1  (1-2)",
-      "category": "pantry",
-      "usedIn": [
-        {
-          "day": "Tuesday",
-          "mealType": "breakfast",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "s honey or sugar to",
-      "quantity": "1  (1-2)",
-      "category": "pantry",
-      "usedIn": [
-        {
-          "day": "Thursday",
-          "mealType": "breakfast",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
       "name": "s soy sauce",
-      "quantity": "3  (3)",
+      "quantity": "3  (3 tablespoon)",
       "category": "pantry",
       "usedIn": [
         {
@@ -1590,7 +1758,7 @@
     },
     {
       "name": "s sugar",
-      "quantity": "2  (2)",
+      "quantity": "2  (2 tablespoon)",
       "category": "pantry",
       "usedIn": [
         {
@@ -1634,7 +1802,7 @@
     },
     {
       "name": "s vegetable oil for frying",
-      "quantity": "3  (3)",
+      "quantity": "3  (3 tablespoon)",
       "category": "pantry",
       "usedIn": [
         {
@@ -1646,31 +1814,19 @@
     },
     {
       "name": "s vinegar",
-      "quantity": "2  (2)",
+      "quantity": "2  (2 tablespoon)",
       "category": "pantry",
       "usedIn": [
         {
           "day": "Thursday",
           "mealType": "dinner",
           "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "s white miso paste",
-      "quantity": "3  (3-4)",
-      "category": "pantry",
-      "usedIn": [
-        {
-          "day": "Sunday",
-          "mealType": "breakfast",
-          "cuisine": "asian"
         }
       ]
     },
     {
       "name": "salt",
-      "quantity": "8  (8 )",
+      "quantity": "2  (2 )",
       "category": "pantry",
       "usedIn": [
         {
@@ -1680,36 +1836,6 @@
         },
         {
           "day": "Monday",
-          "mealType": "snack",
-          "cuisine": "slavic"
-        },
-        {
-          "day": "Tuesday",
-          "mealType": "breakfast",
-          "cuisine": "slavic"
-        },
-        {
-          "day": "Tuesday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        },
-        {
-          "day": "Wednesday",
-          "mealType": "breakfast",
-          "cuisine": "slavic"
-        },
-        {
-          "day": "Thursday",
-          "mealType": "breakfast",
-          "cuisine": "slavic"
-        },
-        {
-          "day": "Friday",
-          "mealType": "snack",
-          "cuisine": "asian"
-        },
-        {
-          "day": "Sunday",
           "mealType": "snack",
           "cuisine": "slavic"
         }
@@ -1717,7 +1843,7 @@
     },
     {
       "name": "Salt to taste",
-      "quantity": "as needed + as needed",
+      "quantity": " + ",
       "category": "pantry",
       "usedIn": [
         {
@@ -1758,7 +1884,7 @@
     },
     {
       "name": "Sesame oil for drizzling",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "pantry",
       "usedIn": [
         {
@@ -1781,40 +1907,6 @@
       ]
     },
     {
-      "name": "short-grain white rice",
-      "quantity": "as needed + as needed",
-      "category": "pantry",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "breakfast",
-          "cuisine": "asian"
-        },
-        {
-          "day": "Saturday",
-          "mealType": "breakfast",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "silken tofu, cubed",
-      "quantity": "as needed + as needed",
-      "category": "pantry",
-      "usedIn": [
-        {
-          "day": "Friday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        },
-        {
-          "day": "Sunday",
-          "mealType": "breakfast",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
       "name": "soy sauce",
       "quantity": "1  (1 tablespoon)",
       "category": "pantry",
@@ -1828,7 +1920,7 @@
     },
     {
       "name": "Soy sauce for serving",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "pantry",
       "usedIn": [
         {
@@ -1856,18 +1948,6 @@
       ]
     },
     {
-      "name": "uncooked white rice",
-      "quantity": "as needed",
-      "category": "pantry",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
       "name": "vegetable oil",
       "quantity": "1  (1 tablespoon)",
       "category": "pantry",
@@ -1880,20 +1960,8 @@
       ]
     },
     {
-      "name": "walnuts, chopped",
-      "quantity": "as needed",
-      "category": "pantry",
-      "usedIn": [
-        {
-          "day": "Tuesday",
-          "mealType": "snack",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
       "name": "Water for boiling",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "pantry",
       "usedIn": [
         {
@@ -1902,23 +1970,11 @@
           "cuisine": "asian"
         }
       ]
-    },
-    {
-      "name": "white vinegar",
-      "quantity": "as needed",
-      "category": "pantry",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "snack",
-          "cuisine": "slavic"
-        }
-      ]
     }
   ],
   "other": [
     {
-      "name": "bay leaf",
+      "name": "1 bay leaf",
       "quantity": "1  (1)",
       "category": "other",
       "usedIn": [
@@ -1930,7 +1986,79 @@
       ]
     },
     {
-      "name": "bay leaves",
+      "name": "1 cardamom pod",
+      "quantity": "1  (1)",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Sunday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "1 cinnamon stick",
+      "quantity": "1  (1)",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Sunday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "1/2 teaspoon cinnamon",
+      "quantity": "1  (1)",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Wednesday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "1/2 teaspoon smoked paprika",
+      "quantity": "1  (1)",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "10g dried wakame seaweed",
+      "quantity": "1  (1)",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Sunday",
+          "mealType": "breakfast",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "150g fresh berries (strawberries, blueberries,",
+      "quantity": "1  (1)",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Thursday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "2 bay leaves",
       "quantity": "2  (2)",
       "category": "other",
       "usedIn": [
@@ -1942,14 +2070,110 @@
       ]
     },
     {
-      "name": "cardamom pod",
-      "quantity": "1  (1)",
+      "name": "2.5 liters water",
+      "quantity": "2  (2)",
       "category": "other",
       "usedIn": [
         {
           "day": "Sunday",
           "mealType": "dinner",
           "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "200ml water",
+      "quantity": "2  (2)",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "snack",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "3 medium beets, peeled and",
+      "quantity": "3  (3)",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Thursday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "3 star anise",
+      "quantity": "3  (3)",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Sunday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "3-4 cloves",
+      "quantity": "3  (3)",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Sunday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "300g edamame pods (frozen",
+      "quantity": "3  (3)",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Thursday",
+          "mealType": "snack",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "400ml water",
+      "quantity": "4  (4)",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Tuesday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "500ml water",
+      "quantity": "5  (5)",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Thursday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "60ml warm water",
+      "quantity": "6  (6)",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Tuesday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
         }
       ]
     },
@@ -1978,30 +2202,6 @@
       ]
     },
     {
-      "name": "cinnamon",
-      "quantity": "1  (1/2 teaspoon)",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Wednesday",
-          "mealType": "breakfast",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "cinnamon stick",
-      "quantity": "1  (1)",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Sunday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
       "name": "cumin",
       "quantity": "1  (1 teaspoon)",
       "category": "other",
@@ -2015,71 +2215,23 @@
     },
     {
       "name": "Dough:",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "other",
       "usedIn": [
         {
           "day": "Tuesday",
           "mealType": "dinner",
           "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "dried wakame seaweed",
-      "quantity": "as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Sunday",
-          "mealType": "breakfast",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "edamame pods (frozen",
-      "quantity": "as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Thursday",
-          "mealType": "snack",
-          "cuisine": "asian"
         }
       ]
     },
     {
       "name": "Filling:",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "other",
       "usedIn": [
         {
           "day": "Tuesday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "fresh berries (strawberries, blueberries, raspberries",
-      "quantity": "as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Thursday",
-          "mealType": "breakfast",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "medium beets, peeled and grated",
-      "quantity": "3  (3)",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Thursday",
           "mealType": "dinner",
           "cuisine": "slavic"
         }
@@ -2087,7 +2239,7 @@
     },
     {
       "name": "Optional: 1/2 teaspoon cinnamon",
-      "quantity": "as needed + as needed + as needed",
+      "quantity": " +  + ",
       "category": "other",
       "usedIn": [
         {
@@ -2109,7 +2261,7 @@
     },
     {
       "name": "Optional: cinnamon",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "other",
       "usedIn": [
         {
@@ -2121,7 +2273,7 @@
     },
     {
       "name": "Optional: fresh berries",
-      "quantity": "as needed + as needed",
+      "quantity": " + ",
       "category": "other",
       "usedIn": [
         {
@@ -2150,7 +2302,7 @@
     },
     {
       "name": "Pickling liquid:",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "other",
       "usedIn": [
         {
@@ -2161,20 +2313,8 @@
       ]
     },
     {
-      "name": "s",
-      "quantity": "3  (3-4 cloves)",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Sunday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
       "name": "s fresh chives, chopped",
-      "quantity": "2  (2)",
+      "quantity": "2  (2 tablespoon)",
       "category": "other",
       "usedIn": [
         {
@@ -2186,7 +2326,7 @@
     },
     {
       "name": "s tamarind paste or concentrate",
-      "quantity": "2  (2)",
+      "quantity": "2  (2 tablespoon)",
       "category": "other",
       "usedIn": [
         {
@@ -2197,44 +2337,8 @@
       ]
     },
     {
-      "name": "s water",
-      "quantity": "2.5  (2.5)",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Sunday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "smoked paprika",
-      "quantity": "1  (1/2 teaspoon)",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
       "name": "Sriracha (optional",
-      "quantity": "as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Sunday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "star anise",
-      "quantity": "3  (3)",
+      "quantity": "",
       "category": "other",
       "usedIn": [
         {
@@ -2246,7 +2350,7 @@
     },
     {
       "name": "Thai chilies",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "other",
       "usedIn": [
         {
@@ -2258,46 +2362,12 @@
     },
     {
       "name": "To serve:",
-      "quantity": "as needed",
+      "quantity": "",
       "category": "other",
       "usedIn": [
         {
           "day": "Tuesday",
           "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "warm water",
-      "quantity": "as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Tuesday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "water",
-      "quantity": "as needed + as needed + as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "snack",
-          "cuisine": "slavic"
-        },
-        {
-          "day": "Tuesday",
-          "mealType": "breakfast",
-          "cuisine": "slavic"
-        },
-        {
-          "day": "Thursday",
-          "mealType": "breakfast",
           "cuisine": "slavic"
         }
       ]

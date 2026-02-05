@@ -66,10 +66,11 @@ function categorizeIngredient(ingredient) {
  * @returns {string} Just the ingredient name
  */
 function extractIngredientName(fullIngredient) {
-  // Remove leading numbers, fractions, and common measurement words
+  // Remove leading numbers, fractions, ranges, and common measurement words
+  // Handle both "200g" and "200 g" formats, avoid single-letter matches
   let name = fullIngredient
-    .replace(/^[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?(?:\s*-\s*[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?)?(?:\s*\/\s*[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?)?\s*/, '') // Remove leading numbers, fractions, and decimals (e.g., "1", "1.5", "1/2", "3/4")
-    .replace(/^(cup|cups|tablespoon|tbsp|teaspoon|tsp|ounce|oz|pound|lb|gram|g|kg|ml|liter|l|piece|pieces|slice|slices|bunch|head|clove|cloves)\s*(of\s*)?/i, '') // Remove measurements
+    // Remove number + optional range + optional unit (with or without space)
+    .replace(/^[\d½⅓⅔¼¾⅕ⅈ]?\s*(?:cup|cups|tablespoon|tbsp|teaspoon|tsp|ounce|oz|pound|lb|grams?|kgs?|mls?|liters?)\s*/i, '') // Remove measurements (no single-letter matches)
     .replace(/^\s*\(|\)\s*$/g, '') // Remove surrounding parentheses
     .trim();
 
@@ -84,9 +85,9 @@ function extractIngredientName(fullIngredient) {
  * @returns {string} Quantity string
  */
 function extractQuantity(fullIngredient) {
-  // Match: number (with fractions) + optional unit
+  // Match: number (with fractions) + optional range + optional unit (with or without space)
   // Units must be complete words to avoid matching parts of words
-  const match = fullIngredient.match(/^[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?(?:\s*-\s*[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?)?(?:\s*\/\s*[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?)?(?:\s+(?:cup|cups|tablespoon|tbsp|teaspoon|tsp|ounce|oz|pound|lb|gram|g|kg|milliliter|ml|liter|piece|pieces|slice|slices|bunch|head|clove|cloves))?\b/i);
+  const match = fullIngredient.match(/^[\d½⅓⅔¼¾⅕ⅈ]?\s*(?:cup|cups|tablespoon|tbsp|teaspoon|tsp|ounce|oz|pound|lb|grams?|kgs?|milliliters?|mls?|liters?|pieces?|slices?)?/i);
   return match ? match[0].trim() : 'as needed';
 }
 

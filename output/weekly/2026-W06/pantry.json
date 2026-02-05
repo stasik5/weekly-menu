@@ -1,117 +1,359 @@
 {
-  "arge carrots, diced": {
-    "emoji": "🥕",
-    "name": "arge carrots, diced",
-    "normalizedName": "arge carrots, diced",
-    "total": 2,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Saturday",
-        "mealType": "dinner",
-        "amount": 2,
-        "unit": "large carrots",
-        "meal": "Chicken soup with vegetables"
-      }
-    ]
-  },
-  "arge head of cabbage": {
+  "1 bunch fresh dill, chopped": {
     "emoji": "📦",
-    "name": "arge head of cabbage",
-    "normalizedName": "arge head of cabbage",
-    "total": 1,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Monday",
-        "mealType": "dinner",
-        "amount": 1,
-        "unit": "large head",
-        "meal": "Cabbage rolls with meat"
-      }
-    ]
-  },
-  "arge onion, diced": {
-    "emoji": "🧅",
-    "name": "arge onion, diced",
-    "normalizedName": "arge onion, diced",
-    "total": 3,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Monday",
-        "mealType": "dinner",
-        "amount": 1,
-        "unit": "large onion",
-        "meal": "Cabbage rolls with meat"
-      },
-      {
-        "day": "Thursday",
-        "mealType": "dinner",
-        "amount": 1,
-        "unit": "large onion",
-        "meal": "Borscht with sour cream"
-      },
-      {
-        "day": "Saturday",
-        "mealType": "dinner",
-        "amount": 1,
-        "unit": "large onion",
-        "meal": "Chicken soup with vegetables"
-      }
-    ]
-  },
-  "bell pepper, diced": {
-    "emoji": "⚫",
-    "name": "bell pepper, diced",
-    "normalizedName": "bell pepper, diced",
+    "name": "1 bunch fresh dill, chopped",
+    "normalizedName": "1 bunch fresh dill, chopped",
     "total": 1,
     "unit": "",
     "remaining": 1,
     "dailyUsage": []
   },
-  "black pepper": {
-    "emoji": "⚫",
-    "name": "black pepper",
-    "normalizedName": "black pepper",
+  "1 clove garlic, sliced": {
+    "emoji": "🧄",
+    "name": "1 clove garlic, sliced",
+    "normalizedName": "1 clove garlic, sliced",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "1 large head of cabbage": {
+    "emoji": "📦",
+    "name": "1 large head of cabbage",
+    "normalizedName": "1 large head of cabbage",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "1 large onion, diced": {
+    "emoji": "🧅",
+    "name": "1 large onion, diced",
+    "normalizedName": "1 large onion, diced",
+    "total": 3,
+    "unit": "",
+    "remaining": 3,
+    "dailyUsage": []
+  },
+  "1 small head of cabbage,": {
+    "emoji": "📦",
+    "name": "1 small head of cabbage,",
+    "normalizedName": "1 small head of cabbage,",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "1 small onion, finely minced": {
+    "emoji": "🧅",
+    "name": "1 small onion, finely minced",
+    "normalizedName": "1 small onion, finely minced",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "1 thumb-sized piece of ginger,": {
+    "emoji": "📦",
+    "name": "1 thumb-sized piece of ginger,",
+    "normalizedName": "1 thumb-sized piece of ginger,",
     "total": 2,
     "unit": "",
     "remaining": 2,
+    "dailyUsage": []
+  },
+  "1/2 bell pepper, diced": {
+    "emoji": "⚫",
+    "name": "1/2 bell pepper, diced",
+    "normalizedName": "1/2 bell pepper, diced",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "1/2 cup chinese pickled vegetable": {
+    "emoji": "🥬",
+    "name": "1/2 cup Chinese pickled vegetables",
+    "normalizedName": "1/2 cup chinese pickled vegetable",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "1/2 cup spinach, chopped": {
+    "emoji": "📦",
+    "name": "1/2 cup spinach, chopped",
+    "normalizedName": "1/2 cup spinach, chopped",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "1/2 onion, diced": {
+    "emoji": "🧅",
+    "name": "1/2 onion, diced",
+    "normalizedName": "1/2 onion, diced",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "1/2 teaspoon garlic powder": {
+    "emoji": "🧄",
+    "name": "1/2 teaspoon garlic powder",
+    "normalizedName": "1/2 teaspoon garlic powder",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "1/2 teaspoon white pepper": {
+    "emoji": "⚫",
+    "name": "1/2 teaspoon white pepper",
+    "normalizedName": "1/2 teaspoon white pepper",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "1/4 teaspoon black pepper": {
+    "emoji": "⚫",
+    "name": "1/4 teaspoon black pepper",
+    "normalizedName": "1/4 teaspoon black pepper",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "100g bean sprout": {
+    "emoji": "📦",
+    "name": "100g bean sprouts",
+    "normalizedName": "100g bean sprout",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "100g mushrooms, sliced": {
+    "emoji": "🍄",
+    "name": "100g mushrooms, sliced",
+    "normalizedName": "100g mushrooms, sliced",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "100g red onion, sliced": {
+    "emoji": "🧅",
+    "name": "100g red onion, sliced",
+    "normalizedName": "100g red onion, sliced",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "150g bell peppers, sliced": {
+    "emoji": "⚫",
+    "name": "150g bell peppers, sliced",
+    "normalizedName": "150g bell peppers, sliced",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "2 carrots, grated": {
+    "emoji": "🥕",
+    "name": "2 carrots, grated",
+    "normalizedName": "2 carrots, grated",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "2 cloves garlic, minced": {
+    "emoji": "🧄",
+    "name": "2 cloves garlic, minced",
+    "normalizedName": "2 cloves garlic, minced",
+    "total": 4,
+    "unit": "",
+    "remaining": 4,
+    "dailyUsage": []
+  },
+  "2 cloves garlic, smashed": {
+    "emoji": "🧄",
+    "name": "2 cloves garlic, smashed",
+    "normalizedName": "2 cloves garlic, smashed",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "2 green onions, chopped": {
+    "emoji": "🧅",
+    "name": "2 green onions, chopped",
+    "normalizedName": "2 green onions, chopped",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "2 green onions, finely chopped": {
+    "emoji": "🧅",
+    "name": "2 green onions, finely chopped",
+    "normalizedName": "2 green onions, finely chopped",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "2 green onions, sliced": {
+    "emoji": "🧅",
+    "name": "2 green onions, sliced",
+    "normalizedName": "2 green onions, sliced",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "2 inches ginger, charred": {
+    "emoji": "📦",
+    "name": "2 inches ginger, charred",
+    "normalizedName": "2 inches ginger, charred",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "2 large carrots, diced": {
+    "emoji": "🥕",
+    "name": "2 large carrots, diced",
+    "normalizedName": "2 large carrots, diced",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "2 medium carrots, grated": {
+    "emoji": "🥕",
+    "name": "2 medium carrots, grated",
+    "normalizedName": "2 medium carrots, grated",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "2 medium potatoes, diced": {
+    "emoji": "🥔",
+    "name": "2 medium potatoes, diced",
+    "normalizedName": "2 medium potatoes, diced",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "2 onions, halved and charred": {
+    "emoji": "🧅",
+    "name": "2 onions, halved and charred",
+    "normalizedName": "2 onions, halved and charred",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "2 stalks celery, diced": {
+    "emoji": "📦",
+    "name": "2 stalks celery, diced",
+    "normalizedName": "2 stalks celery, diced",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "200g bean sprout": {
+    "emoji": "📦",
+    "name": "200g bean sprouts",
+    "normalizedName": "200g bean sprout",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "200g carrots, sliced into round": {
+    "emoji": "🥕",
+    "name": "200g carrots, sliced into rounds",
+    "normalizedName": "200g carrots, sliced into round",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "200g cucumbers, sliced into round": {
+    "emoji": "🥒",
+    "name": "200g cucumbers, sliced into rounds",
+    "normalizedName": "200g cucumbers, sliced into round",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "3 cloves garlic, minced": {
+    "emoji": "🧄",
+    "name": "3 cloves garlic, minced",
+    "normalizedName": "3 cloves garlic, minced",
+    "total": 9,
+    "unit": "",
+    "remaining": 9,
+    "dailyUsage": []
+  },
+  "3 green onions, chopped": {
+    "emoji": "🧅",
+    "name": "3 green onions, chopped",
+    "normalizedName": "3 green onions, chopped",
+    "total": 6,
+    "unit": "",
+    "remaining": 6,
+    "dailyUsage": []
+  },
+  "3 medium potatoes, diced": {
+    "emoji": "🥔",
+    "name": "3 medium potatoes, diced",
+    "normalizedName": "3 medium potatoes, diced",
+    "total": 3,
+    "unit": "",
+    "remaining": 3,
+    "dailyUsage": []
+  },
+  "300g apples (granny smith or": {
+    "emoji": "🍎",
+    "name": "300g apples (Granny Smith or",
+    "normalizedName": "300g apples (granny smith or",
+    "total": 3,
+    "unit": "",
+    "remaining": 3,
+    "dailyUsage": []
+  },
+  "4-5 green onions (scallions), chopped": {
+    "emoji": "🧅",
+    "name": "4-5 green onions (scallions), chopped",
+    "normalizedName": "4-5 green onions (scallions), chopped",
+    "total": 4,
+    "unit": "",
+    "remaining": 4,
+    "dailyUsage": []
+  },
+  "500ml tomato sauce or passata": {
+    "emoji": "🍅",
+    "name": "500ml tomato sauce or passata",
+    "normalizedName": "500ml tomato sauce or passata",
+    "total": 5,
+    "unit": "",
+    "remaining": 5,
     "dailyUsage": []
   },
   "black peppercorn": {
     "emoji": "⚫",
     "name": "black peppercorns",
     "normalizedName": "black peppercorn",
-    "total": 1,
-    "unit": "",
-    "remaining": 1,
-    "dailyUsage": []
-  },
-  "carrots, grated": {
-    "emoji": "🥕",
-    "name": "carrots, grated",
-    "normalizedName": "carrots, grated",
-    "total": 2,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Monday",
-        "mealType": "dinner",
-        "amount": 2,
-        "unit": "carrots",
-        "meal": "Cabbage rolls with meat"
-      }
-    ]
-  },
-  "chinese pickled vegetables (pickled radish,": {
-    "emoji": "🥬",
-    "name": "Chinese pickled vegetables (pickled radish,",
-    "normalizedName": "chinese pickled vegetables (pickled radish,",
     "total": 1,
     "unit": "",
     "remaining": 1,
@@ -135,37 +377,6 @@
     "remaining": 1,
     "dailyUsage": []
   },
-  "fresh dill, chopped": {
-    "emoji": "📦",
-    "name": "fresh dill, chopped",
-    "normalizedName": "fresh dill, chopped",
-    "total": 1,
-    "unit": "bunch",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Monday",
-        "mealType": "dinner",
-        "amount": 1,
-        "unit": "bunch fresh",
-        "meal": "Cabbage rolls with meat"
-      },
-      {
-        "day": "Tuesday",
-        "mealType": "dinner",
-        "amount": 0,
-        "unit": "",
-        "meal": "Pelmeni with sour cream"
-      },
-      {
-        "day": "Thursday",
-        "mealType": "dinner",
-        "amount": 0,
-        "unit": "",
-        "meal": "Borscht with sour cream"
-      }
-    ]
-  },
   "fresh parsley, chopped": {
     "emoji": "📦",
     "name": "fresh parsley, chopped",
@@ -174,190 +385,6 @@
     "unit": "",
     "remaining": 1,
     "dailyUsage": []
-  },
-  "garlic powder": {
-    "emoji": "🧄",
-    "name": "garlic powder",
-    "normalizedName": "garlic powder",
-    "total": 1,
-    "unit": "",
-    "remaining": 1,
-    "dailyUsage": []
-  },
-  "garlic, sliced": {
-    "emoji": "🧄",
-    "name": "garlic, sliced",
-    "normalizedName": "garlic, sliced",
-    "total": 1,
-    "unit": "clove",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Monday",
-        "mealType": "snack",
-        "amount": 1,
-        "unit": "clove garlic",
-        "meal": "Pickled vegetables"
-      }
-    ]
-  },
-  "inches ginger, charred": {
-    "emoji": "📦",
-    "name": "inches ginger, charred",
-    "normalizedName": "inches ginger, charred",
-    "total": 2,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Sunday",
-        "mealType": "dinner",
-        "amount": 2,
-        "unit": "inches ginger",
-        "meal": "Vietnamese pho"
-      }
-    ]
-  },
-  "medium carrots, grated": {
-    "emoji": "🥕",
-    "name": "medium carrots, grated",
-    "normalizedName": "medium carrots, grated",
-    "total": 2,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Thursday",
-        "mealType": "dinner",
-        "amount": 2,
-        "unit": "medium carrots",
-        "meal": "Borscht with sour cream"
-      }
-    ]
-  },
-  "medium potatoes, diced": {
-    "emoji": "🥔",
-    "name": "medium potatoes, diced",
-    "normalizedName": "medium potatoes, diced",
-    "total": 5,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Thursday",
-        "mealType": "dinner",
-        "amount": 2,
-        "unit": "medium potatoes",
-        "meal": "Borscht with sour cream"
-      },
-      {
-        "day": "Saturday",
-        "mealType": "dinner",
-        "amount": 3,
-        "unit": "medium potatoes",
-        "meal": "Chicken soup with vegetables"
-      }
-    ]
-  },
-  "onion, diced": {
-    "emoji": "🧅",
-    "name": "onion, diced",
-    "normalizedName": "onion, diced",
-    "total": 1,
-    "unit": "",
-    "remaining": 1,
-    "dailyUsage": []
-  },
-  "onions, halved and charred": {
-    "emoji": "🧅",
-    "name": "onions, halved and charred",
-    "normalizedName": "onions, halved and charred",
-    "total": 2,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Sunday",
-        "mealType": "dinner",
-        "amount": 2,
-        "unit": "onions",
-        "meal": "Vietnamese pho"
-      }
-    ]
-  },
-  "reen onions (scallions), chopped": {
-    "emoji": "🧅",
-    "name": "reen onions (scallions), chopped",
-    "normalizedName": "reen onions (scallions), chopped",
-    "total": 4,
-    "unit": "",
-    "remaining": 4,
-    "dailyUsage": []
-  },
-  "reen onions, chopped": {
-    "emoji": "🧅",
-    "name": "reen onions, chopped",
-    "normalizedName": "reen onions, chopped",
-    "total": 8,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Monday",
-        "mealType": "breakfast",
-        "amount": 2,
-        "unit": "green onions",
-        "meal": "Rice porridge with pickles"
-      },
-      {
-        "day": "Wednesday",
-        "mealType": "dinner",
-        "amount": 3,
-        "unit": "green onions",
-        "meal": "Pad Thai with shrimp"
-      },
-      {
-        "day": "Friday",
-        "mealType": "dinner",
-        "amount": 3,
-        "unit": "green onions",
-        "meal": "Sichuan mapo tofu"
-      }
-    ]
-  },
-  "reen onions, finely chopped": {
-    "emoji": "🧅",
-    "name": "reen onions, finely chopped",
-    "normalizedName": "reen onions, finely chopped",
-    "total": 2,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Sunday",
-        "mealType": "breakfast",
-        "amount": 2,
-        "unit": "green onions",
-        "meal": "Miso soup with tofu"
-      }
-    ]
-  },
-  "reen onions, sliced": {
-    "emoji": "🧅",
-    "name": "reen onions, sliced",
-    "normalizedName": "reen onions, sliced",
-    "total": 2,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Sunday",
-        "mealType": "dinner",
-        "amount": 2,
-        "unit": "green onions",
-        "meal": "Vietnamese pho"
-      }
-    ]
   },
   "s cornstarch": {
     "emoji": "🌽",
@@ -385,68 +412,6 @@
     "unit": "",
     "remaining": 2,
     "dailyUsage": []
-  },
-  "s garlic, minced": {
-    "emoji": "🧄",
-    "name": "s garlic, minced",
-    "normalizedName": "s garlic, minced",
-    "total": 13,
-    "unit": "clove",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Monday",
-        "mealType": "dinner",
-        "amount": 2,
-        "unit": "cloves garlic",
-        "meal": "Cabbage rolls with meat"
-      },
-      {
-        "day": "Tuesday",
-        "mealType": "dinner",
-        "amount": 2,
-        "unit": "cloves garlic",
-        "meal": "Pelmeni with sour cream"
-      },
-      {
-        "day": "Wednesday",
-        "mealType": "dinner",
-        "amount": 3,
-        "unit": "cloves garlic",
-        "meal": "Pad Thai with shrimp"
-      },
-      {
-        "day": "Thursday",
-        "mealType": "dinner",
-        "amount": 3,
-        "unit": "cloves garlic",
-        "meal": "Borscht with sour cream"
-      },
-      {
-        "day": "Friday",
-        "mealType": "dinner",
-        "amount": 3,
-        "unit": "cloves garlic",
-        "meal": "Sichuan mapo tofu"
-      }
-    ]
-  },
-  "s garlic, smashed": {
-    "emoji": "🧄",
-    "name": "s garlic, smashed",
-    "normalizedName": "s garlic, smashed",
-    "total": 2,
-    "unit": "clove",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Monday",
-        "mealType": "breakfast",
-        "amount": 2,
-        "unit": "cloves garlic",
-        "meal": "Rice porridge with pickles"
-      }
-    ]
   },
   "s ginger, minced": {
     "emoji": "📦",
@@ -484,117 +449,112 @@
     "remaining": 3,
     "dailyUsage": []
   },
-  "small head of cabbage, shredded": {
-    "emoji": "📦",
-    "name": "small head of cabbage, shredded",
-    "normalizedName": "small head of cabbage, shredded",
-    "total": 1,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Thursday",
-        "mealType": "dinner",
-        "amount": 1,
-        "unit": "small head",
-        "meal": "Borscht with sour cream"
-      }
-    ]
-  },
-  "small onion, finely minced": {
-    "emoji": "🧅",
-    "name": "small onion, finely minced",
-    "normalizedName": "small onion, finely minced",
-    "total": 1,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Tuesday",
-        "mealType": "dinner",
-        "amount": 1,
-        "unit": "small onion",
-        "meal": "Pelmeni with sour cream"
-      }
-    ]
-  },
-  "spinach, chopped": {
-    "emoji": "📦",
-    "name": "spinach, chopped",
-    "normalizedName": "spinach, chopped",
+  "1.5 liters beef broth or": {
+    "emoji": "🥩",
+    "name": "1.5 liters beef broth or",
+    "normalizedName": "1.5 liters beef broth or",
     "total": 1,
     "unit": "",
     "remaining": 1,
     "dailyUsage": []
   },
-  "stalks celery, diced": {
-    "emoji": "📦",
-    "name": "stalks celery, diced",
-    "normalizedName": "stalks celery, diced",
+  "1.5 liters chicken broth": {
+    "emoji": "🐔",
+    "name": "1.5 liters chicken broth",
+    "normalizedName": "1.5 liters chicken broth",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "200g beef sirloin, paper-thin sliced": {
+    "emoji": "🥩",
+    "name": "200g beef sirloin, paper-thin sliced",
+    "normalizedName": "200g beef sirloin, paper-thin sliced",
     "total": 2,
     "unit": "",
     "remaining": 2,
     "dailyUsage": []
   },
-  "thumb-sized piece of ginger, julienned": {
-    "emoji": "📦",
-    "name": "thumb-sized piece of ginger, julienned",
-    "normalizedName": "thumb-sized piece of ginger, julienned",
-    "total": 1,
+  "200g ground pork": {
+    "emoji": "🐖",
+    "name": "200g ground pork",
+    "normalizedName": "200g ground pork",
+    "total": 2,
     "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Saturday",
-        "mealType": "breakfast",
-        "amount": 1,
-        "unit": "thumb",
-        "meal": "Congee with egg and scallions"
-      }
-    ]
-  },
-  "thumb-sized piece of ginger, sliced": {
-    "emoji": "📦",
-    "name": "thumb-sized piece of ginger, sliced",
-    "normalizedName": "thumb-sized piece of ginger, sliced",
-    "total": 1,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Monday",
-        "mealType": "breakfast",
-        "amount": 1,
-        "unit": "thumb",
-        "meal": "Rice porridge with pickles"
-      }
-    ]
-  },
-  "white pepper": {
-    "emoji": "⚫",
-    "name": "white pepper",
-    "normalizedName": "white pepper",
-    "total": 1,
-    "unit": "",
-    "remaining": 1,
+    "remaining": 2,
     "dailyUsage": []
   },
-  "s beef broth or water": {
+  "300g shrimp, peeled and deveined": {
+    "emoji": "🦐",
+    "name": "300g shrimp, peeled and deveined",
+    "normalizedName": "300g shrimp, peeled and deveined",
+    "total": 3,
+    "unit": "",
+    "remaining": 3,
+    "dailyUsage": []
+  },
+  "400g beef or pork, cubed": {
     "emoji": "🥩",
-    "name": "s beef broth or water",
-    "normalizedName": "s beef broth or water",
-    "total": 1.5,
+    "name": "400g beef or pork, cubed",
+    "normalizedName": "400g beef or pork, cubed",
+    "total": 4,
     "unit": "",
-    "remaining": 1.5,
+    "remaining": 4,
     "dailyUsage": []
   },
-  "s chicken broth": {
-    "emoji": "🐔",
-    "name": "s chicken broth",
-    "normalizedName": "s chicken broth",
-    "total": 1.5,
+  "400g ground pork and beef": {
+    "emoji": "🥩",
+    "name": "400g ground pork and beef",
+    "normalizedName": "400g ground pork and beef",
+    "total": 4,
     "unit": "",
-    "remaining": 1.5,
+    "remaining": 4,
+    "dailyUsage": []
+  },
+  "500g beef brisket or oxtail": {
+    "emoji": "🥩",
+    "name": "500g beef brisket or oxtail",
+    "normalizedName": "500g beef brisket or oxtail",
+    "total": 5,
+    "unit": "",
+    "remaining": 5,
+    "dailyUsage": []
+  },
+  "500g chicken breast or thighs,": {
+    "emoji": "🐔",
+    "name": "500g chicken breast or thighs,",
+    "normalizedName": "500g chicken breast or thighs,",
+    "total": 5,
+    "unit": "",
+    "remaining": 5,
+    "dailyUsage": []
+  },
+  "500g ground beef": {
+    "emoji": "🥩",
+    "name": "500g ground beef",
+    "normalizedName": "500g ground beef",
+    "total": 5,
+    "unit": "",
+    "remaining": 5,
+    "dailyUsage": []
+  },
+  "500ml beef broth": {
+    "emoji": "🥩",
+    "name": "500ml beef broth",
+    "normalizedName": "500ml beef broth",
+    "total": 5,
+    "unit": "",
+    "remaining": 5,
+    "dailyUsage": []
+  },
+  "500ml chicken or vegetable broth": {
+    "emoji": "🐔",
+    "name": "500ml chicken or vegetable broth",
+    "normalizedName": "500ml chicken or vegetable broth",
+    "total": 5,
+    "unit": "",
+    "remaining": 5,
     "dailyUsage": []
   },
   "s fish sauce": {
@@ -606,67 +566,146 @@
     "remaining": 4,
     "dailyUsage": []
   },
-  "s water or chicken broth": {
+  "water or chicken broth": {
     "emoji": "🐔",
-    "name": "s water or chicken broth",
-    "normalizedName": "s water or chicken broth",
+    "name": "water or chicken broth",
+    "normalizedName": "water or chicken broth",
+    "total": 4,
+    "unit": "l",
+    "remaining": 4,
+    "dailyUsage": []
+  },
+  "1 egg": {
+    "emoji": "🥚",
+    "name": "1 egg",
+    "normalizedName": "1 egg",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "100g sharp cheddar cheese, sliced": {
+    "emoji": "🧀",
+    "name": "100g sharp cheddar cheese, sliced",
+    "normalizedName": "100g sharp cheddar cheese, sliced",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "100g unsalted butter, softened": {
+    "emoji": "🧈",
+    "name": "100g unsalted butter, softened",
+    "normalizedName": "100g unsalted butter, softened",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "2 egg": {
+    "emoji": "🥚",
+    "name": "2 eggs",
+    "normalizedName": "2 egg",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "2 eggs, beaten": {
+    "emoji": "🥚",
+    "name": "2 eggs, beaten",
+    "normalizedName": "2 eggs, beaten",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "200ml sour cream": {
+    "emoji": "🥛",
+    "name": "200ml sour cream",
+    "normalizedName": "200ml sour cream",
     "total": 4,
     "unit": "",
     "remaining": 4,
     "dailyUsage": []
   },
-  "egg": {
+  "300g cottage cheese": {
+    "emoji": "🧀",
+    "name": "300g cottage cheese",
+    "normalizedName": "300g cottage cheese",
+    "total": 3,
+    "unit": "",
+    "remaining": 3,
+    "dailyUsage": []
+  },
+  "300g greek yogurt": {
+    "emoji": "🥛",
+    "name": "300g Greek yogurt",
+    "normalizedName": "300g greek yogurt",
+    "total": 3,
+    "unit": "",
+    "remaining": 3,
+    "dailyUsage": []
+  },
+  "4 eggs, beaten": {
     "emoji": "🥚",
-    "name": "eggs",
-    "normalizedName": "egg",
+    "name": "4 eggs, beaten",
+    "normalizedName": "4 eggs, beaten",
+    "total": 4,
+    "unit": "",
+    "remaining": 4,
+    "dailyUsage": []
+  },
+  "400ml milk or water": {
+    "emoji": "🥛",
+    "name": "400ml milk or water",
+    "normalizedName": "400ml milk or water",
+    "total": 4,
+    "unit": "",
+    "remaining": 4,
+    "dailyUsage": []
+  },
+  "400ml whole milk": {
+    "emoji": "🥛",
+    "name": "400ml whole milk",
+    "normalizedName": "400ml whole milk",
     "total": 8,
+    "unit": "",
+    "remaining": 8,
+    "dailyUsage": []
+  },
+  "40g butter": {
+    "emoji": "🧈",
+    "name": "40g butter",
+    "normalizedName": "40g butter",
+    "total": 4,
+    "unit": "",
+    "remaining": 4,
+    "dailyUsage": []
+  },
+  "6 egg": {
+    "emoji": "🥚",
+    "name": "6 eggs",
+    "normalizedName": "6 egg",
+    "total": 6,
+    "unit": "",
+    "remaining": 6,
+    "dailyUsage": []
+  },
+  "butter": {
+    "emoji": "🧈",
+    "name": "butter",
+    "normalizedName": "butter",
+    "total": 1,
     "unit": "",
     "remaining": 0,
     "dailyUsage": [
       {
         "day": "Tuesday",
-        "mealType": "dinner",
-        "amount": 1,
-        "unit": "egg",
-        "meal": "Pelmeni with sour cream"
-      },
-      {
-        "day": "Wednesday",
-        "mealType": "dinner",
-        "amount": 2,
-        "unit": "eggs",
-        "meal": "Pad Thai with shrimp"
-      },
-      {
-        "day": "Friday",
         "mealType": "breakfast",
-        "amount": 6,
-        "unit": "eggs",
-        "meal": "Scrambled eggs with vegetables"
-      }
-    ]
-  },
-  "eggs, beaten": {
-    "emoji": "🥚",
-    "name": "eggs, beaten",
-    "normalizedName": "eggs, beaten",
-    "total": 6,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Monday",
-        "mealType": "dinner",
-        "amount": 2,
-        "unit": "eggs",
-        "meal": "Cabbage rolls with meat"
-      },
-      {
-        "day": "Saturday",
-        "mealType": "breakfast",
-        "amount": 4,
-        "unit": "eggs",
-        "meal": "Congee with egg and scallions"
+        "amount": 40,
+        "unit": "g butter",
+        "meal": "Kasha with butter and milk"
       }
     ]
   },
@@ -695,6 +734,177 @@
     "total": 1,
     "unit": "",
     "remaining": 1,
+    "dailyUsage": []
+  },
+  "1-2 tablespoons honey or sugar": {
+    "emoji": "🍯",
+    "name": "1-2 tablespoons honey or sugar",
+    "normalizedName": "1-2 tablespoons honey or sugar",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "1/2 teaspoon salt": {
+    "emoji": "🧂",
+    "name": "1/2 teaspoon salt",
+    "normalizedName": "1/2 teaspoon salt",
+    "total": 6,
+    "unit": "",
+    "remaining": 6,
+    "dailyUsage": []
+  },
+  "100g rolled oat": {
+    "emoji": "📦",
+    "name": "100g rolled oats",
+    "normalizedName": "100g rolled oat",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "2-3 tablespoons honey": {
+    "emoji": "🍯",
+    "name": "2-3 tablespoons honey",
+    "normalizedName": "2-3 tablespoons honey",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "200g all-purpose flour": {
+    "emoji": "🌾",
+    "name": "200g all-purpose flour",
+    "normalizedName": "200g all-purpose flour",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "200g roasted buckwheat groat": {
+    "emoji": "📦",
+    "name": "200g roasted buckwheat groats",
+    "normalizedName": "200g roasted buckwheat groat",
+    "total": 4,
+    "unit": "",
+    "remaining": 4,
+    "dailyUsage": []
+  },
+  "200g short-grain white rice": {
+    "emoji": "🍚",
+    "name": "200g short-grain white rice",
+    "normalizedName": "200g short-grain white rice",
+    "total": 4,
+    "unit": "",
+    "remaining": 4,
+    "dailyUsage": []
+  },
+  "200g silken tofu, cubed": {
+    "emoji": "🧊",
+    "name": "200g silken tofu, cubed",
+    "normalizedName": "200g silken tofu, cubed",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "200g uncooked white rice": {
+    "emoji": "🍚",
+    "name": "200g uncooked white rice",
+    "normalizedName": "200g uncooked white rice",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "3-4 tablespoons white miso paste": {
+    "emoji": "📦",
+    "name": "3-4 tablespoons white miso paste",
+    "normalizedName": "3-4 tablespoons white miso paste",
+    "total": 3,
+    "unit": "",
+    "remaining": 3,
+    "dailyUsage": []
+  },
+  "300g rice noodles (flat, 1/4": {
+    "emoji": "🍚",
+    "name": "300g rice noodles (flat, 1/4",
+    "normalizedName": "300g rice noodles (flat, 1/4",
+    "total": 3,
+    "unit": "",
+    "remaining": 3,
+    "dailyUsage": []
+  },
+  "300g rice noodles (pho": {
+    "emoji": "🍚",
+    "name": "300g rice noodles (pho",
+    "normalizedName": "300g rice noodles (pho",
+    "total": 3,
+    "unit": "",
+    "remaining": 3,
+    "dailyUsage": []
+  },
+  "300g rye bread, sliced": {
+    "emoji": "🍞",
+    "name": "300g rye bread, sliced",
+    "normalizedName": "300g rye bread, sliced",
+    "total": 3,
+    "unit": "",
+    "remaining": 3,
+    "dailyUsage": []
+  },
+  "300ml white vinegar": {
+    "emoji": "📦",
+    "name": "300ml white vinegar",
+    "normalizedName": "300ml white vinegar",
+    "total": 3,
+    "unit": "",
+    "remaining": 3,
+    "dailyUsage": []
+  },
+  "400g firm tofu": {
+    "emoji": "🧊",
+    "name": "400g firm tofu",
+    "normalizedName": "400g firm tofu",
+    "total": 4,
+    "unit": "",
+    "remaining": 4,
+    "dailyUsage": []
+  },
+  "400g silken tofu, cubed": {
+    "emoji": "🧊",
+    "name": "400g silken tofu, cubed",
+    "normalizedName": "400g silken tofu, cubed",
+    "total": 4,
+    "unit": "",
+    "remaining": 4,
+    "dailyUsage": []
+  },
+  "50g mixed nuts (almonds, walnuts,": {
+    "emoji": "📦",
+    "name": "50g mixed nuts (almonds, walnuts,",
+    "normalizedName": "50g mixed nuts (almonds, walnuts,",
+    "total": 5,
+    "unit": "",
+    "remaining": 5,
+    "dailyUsage": []
+  },
+  "50g roasted peanuts, crushed": {
+    "emoji": "📦",
+    "name": "50g roasted peanuts, crushed",
+    "normalizedName": "50g roasted peanuts, crushed",
+    "total": 5,
+    "unit": "",
+    "remaining": 5,
+    "dailyUsage": []
+  },
+  "50g walnuts, chopped": {
+    "emoji": "📦",
+    "name": "50g walnuts, chopped",
+    "normalizedName": "50g walnuts, chopped",
+    "total": 5,
+    "unit": "",
+    "remaining": 5,
     "dailyUsage": []
   },
   "coarse sea salt": {
@@ -746,27 +956,9 @@
     "emoji": "🍯",
     "name": "s honey",
     "normalizedName": "s honey",
-    "total": 4,
+    "total": 2,
     "unit": "",
-    "remaining": 4,
-    "dailyUsage": []
-  },
-  "s honey or sugar": {
-    "emoji": "🍯",
-    "name": "s honey or sugar",
-    "normalizedName": "s honey or sugar",
-    "total": 1,
-    "unit": "",
-    "remaining": 1,
-    "dailyUsage": []
-  },
-  "s honey or sugar to": {
-    "emoji": "🍯",
-    "name": "s honey or sugar to",
-    "normalizedName": "s honey or sugar to",
-    "total": 1,
-    "unit": "",
-    "remaining": 1,
+    "remaining": 2,
     "dailyUsage": []
   },
   "s soy sauce": {
@@ -814,22 +1006,13 @@
     "remaining": 2,
     "dailyUsage": []
   },
-  "s white miso paste": {
-    "emoji": "📦",
-    "name": "s white miso paste",
-    "normalizedName": "s white miso paste",
-    "total": 3,
-    "unit": "",
-    "remaining": 3,
-    "dailyUsage": []
-  },
   "salt": {
     "emoji": "🧂",
     "name": "salt",
     "normalizedName": "salt",
-    "total": 8,
+    "total": 2,
     "unit": "",
-    "remaining": 8,
+    "remaining": 2,
     "dailyUsage": []
   },
   "sesame oil": {
@@ -886,56 +1069,158 @@
     "remaining": 1,
     "dailyUsage": []
   },
-  "bay leaf": {
+  "1 bay leaf": {
     "emoji": "📦",
-    "name": "bay leaf",
-    "normalizedName": "bay leaf",
+    "name": "1 bay leaf",
+    "normalizedName": "1 bay leaf",
     "total": 1,
     "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Saturday",
-        "mealType": "dinner",
-        "amount": 1,
-        "unit": "bay leaf",
-        "meal": "Chicken soup with vegetables"
-      }
-    ]
+    "remaining": 1,
+    "dailyUsage": []
   },
-  "bay leave": {
+  "1 cardamom pod": {
     "emoji": "📦",
-    "name": "bay leaves",
-    "normalizedName": "bay leave",
+    "name": "1 cardamom pod",
+    "normalizedName": "1 cardamom pod",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "1 cinnamon stick": {
+    "emoji": "📦",
+    "name": "1 cinnamon stick",
+    "normalizedName": "1 cinnamon stick",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "1/2 teaspoon cinnamon": {
+    "emoji": "📦",
+    "name": "1/2 teaspoon cinnamon",
+    "normalizedName": "1/2 teaspoon cinnamon",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "1/2 teaspoon smoked paprika": {
+    "emoji": "📦",
+    "name": "1/2 teaspoon smoked paprika",
+    "normalizedName": "1/2 teaspoon smoked paprika",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "10g dried wakame seaweed": {
+    "emoji": "📦",
+    "name": "10g dried wakame seaweed",
+    "normalizedName": "10g dried wakame seaweed",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "150g fresh berries (strawberries, blueberries,": {
+    "emoji": "📦",
+    "name": "150g fresh berries (strawberries, blueberries,",
+    "normalizedName": "150g fresh berries (strawberries, blueberries,",
+    "total": 1,
+    "unit": "",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "2 bay leave": {
+    "emoji": "📦",
+    "name": "2 bay leaves",
+    "normalizedName": "2 bay leave",
     "total": 2,
     "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Monday",
-        "mealType": "dinner",
-        "amount": 2,
-        "unit": "bay leaves",
-        "meal": "Cabbage rolls with meat"
-      }
-    ]
+    "remaining": 2,
+    "dailyUsage": []
   },
-  "cardamom pod": {
-    "emoji": "📦",
-    "name": "cardamom pod",
-    "normalizedName": "cardamom pod",
-    "total": 1,
+  "2.5 liters water": {
+    "emoji": "🥤",
+    "name": "2.5 liters water",
+    "normalizedName": "2.5 liters water",
+    "total": 2,
     "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Sunday",
-        "mealType": "dinner",
-        "amount": 1,
-        "unit": "cardamom pod",
-        "meal": "Vietnamese pho"
-      }
-    ]
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "200ml water": {
+    "emoji": "🥤",
+    "name": "200ml water",
+    "normalizedName": "200ml water",
+    "total": 2,
+    "unit": "",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "3 medium beets, peeled and": {
+    "emoji": "📦",
+    "name": "3 medium beets, peeled and",
+    "normalizedName": "3 medium beets, peeled and",
+    "total": 3,
+    "unit": "",
+    "remaining": 3,
+    "dailyUsage": []
+  },
+  "3 star anise": {
+    "emoji": "📦",
+    "name": "3 star anise",
+    "normalizedName": "3 star anise",
+    "total": 3,
+    "unit": "",
+    "remaining": 3,
+    "dailyUsage": []
+  },
+  "3-4 clove": {
+    "emoji": "📦",
+    "name": "3-4 cloves",
+    "normalizedName": "3-4 clove",
+    "total": 3,
+    "unit": "",
+    "remaining": 3,
+    "dailyUsage": []
+  },
+  "300g edamame pods (frozen": {
+    "emoji": "📦",
+    "name": "300g edamame pods (frozen",
+    "normalizedName": "300g edamame pods (frozen",
+    "total": 3,
+    "unit": "",
+    "remaining": 3,
+    "dailyUsage": []
+  },
+  "400ml water": {
+    "emoji": "🥤",
+    "name": "400ml water",
+    "normalizedName": "400ml water",
+    "total": 4,
+    "unit": "",
+    "remaining": 4,
+    "dailyUsage": []
+  },
+  "500ml water": {
+    "emoji": "🥤",
+    "name": "500ml water",
+    "normalizedName": "500ml water",
+    "total": 5,
+    "unit": "",
+    "remaining": 5,
+    "dailyUsage": []
+  },
+  "60ml warm water": {
+    "emoji": "🥤",
+    "name": "60ml warm water",
+    "normalizedName": "60ml warm water",
+    "total": 6,
+    "unit": "",
+    "remaining": 6,
+    "dailyUsage": []
   },
   "chili flake": {
     "emoji": "📦",
@@ -955,32 +1240,6 @@
     "remaining": 1,
     "dailyUsage": []
   },
-  "cinnamon": {
-    "emoji": "📦",
-    "name": "cinnamon",
-    "normalizedName": "cinnamon",
-    "total": 1,
-    "unit": "",
-    "remaining": 1,
-    "dailyUsage": []
-  },
-  "cinnamon stick": {
-    "emoji": "📦",
-    "name": "cinnamon stick",
-    "normalizedName": "cinnamon stick",
-    "total": 1,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Sunday",
-        "mealType": "dinner",
-        "amount": 1,
-        "unit": "cinnamon stick",
-        "meal": "Vietnamese pho"
-      }
-    ]
-  },
   "cumin": {
     "emoji": "📦",
     "name": "cumin",
@@ -990,23 +1249,6 @@
     "remaining": 1,
     "dailyUsage": []
   },
-  "medium beets, peeled and grated": {
-    "emoji": "📦",
-    "name": "medium beets, peeled and grated",
-    "normalizedName": "medium beets, peeled and grated",
-    "total": 3,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Thursday",
-        "mealType": "dinner",
-        "amount": 3,
-        "unit": "medium beets",
-        "meal": "Borscht with sour cream"
-      }
-    ]
-  },
   "paprika": {
     "emoji": "📦",
     "name": "paprika",
@@ -1014,15 +1256,6 @@
     "total": 1,
     "unit": "",
     "remaining": 1,
-    "dailyUsage": []
-  },
-  "": {
-    "emoji": "📦",
-    "name": "s",
-    "normalizedName": "",
-    "total": 3,
-    "unit": "",
-    "remaining": 3,
     "dailyUsage": []
   },
   "s fresh chives, chopped": {
@@ -1042,40 +1275,5 @@
     "unit": "",
     "remaining": 2,
     "dailyUsage": []
-  },
-  "s water": {
-    "emoji": "🥤",
-    "name": "s water",
-    "normalizedName": "s water",
-    "total": 2.5,
-    "unit": "",
-    "remaining": 2.5,
-    "dailyUsage": []
-  },
-  "smoked paprika": {
-    "emoji": "📦",
-    "name": "smoked paprika",
-    "normalizedName": "smoked paprika",
-    "total": 1,
-    "unit": "",
-    "remaining": 1,
-    "dailyUsage": []
-  },
-  "star anise": {
-    "emoji": "📦",
-    "name": "star anise",
-    "normalizedName": "star anise",
-    "total": 3,
-    "unit": "",
-    "remaining": 0,
-    "dailyUsage": [
-      {
-        "day": "Sunday",
-        "mealType": "dinner",
-        "amount": 3,
-        "unit": "star anise",
-        "meal": "Vietnamese pho"
-      }
-    ]
   }
 }
