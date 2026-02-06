@@ -1,74 +1,6 @@
 {
   "Monday": {
     "breakfast": {
-      "name": "Жареные яйца с хлебом",
-      "cuisine": "slavic",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Рисовые крекеры",
-      "cuisine": "asian",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Паста карбонара",
-      "cuisine": "slavic",
-      "targetCalories": 2100
-    }
-  },
-  "Tuesday": {
-    "breakfast": {
-      "name": "Гречневая каша с молоком и ягодами",
-      "cuisine": "slavic",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Дольки яблока с сыром",
-      "cuisine": "slavic",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Вьетнамский фо",
-      "cuisine": "asian",
-      "targetCalories": 2100
-    }
-  },
-  "Wednesday": {
-    "breakfast": {
-      "name": "Овсянка с мёдом и орехами",
-      "cuisine": "slavic",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Орехи и сухофрукты",
-      "cuisine": "slavic",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Куриный суп с овощами",
-      "cuisine": "slavic",
-      "targetCalories": 2100
-    }
-  },
-  "Thursday": {
-    "breakfast": {
-      "name": "Жареный рис с овощами",
-      "cuisine": "asian",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Эдамаме с морской солью",
-      "cuisine": "asian",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Корейский бибимбап",
-      "cuisine": "asian",
-      "targetCalories": 2100
-    }
-  },
-  "Friday": {
-    "breakfast": {
       "name": "Блины с сырной начинкой",
       "cuisine": "slavic",
       "targetCalories": 1400
@@ -79,20 +11,71 @@
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Пад тай с креветками",
+      "name": "Вьетнамский фо",
       "cuisine": "asian",
       "targetCalories": 2100
     }
   },
-  "Saturday": {
+  "Tuesday": {
     "breakfast": {
       "name": "Сырники (творожные оладьи)",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Ржаной хлеб с маслом",
+      "name": "Орехи и сухофрукты",
       "cuisine": "slavic",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Бефстроганов с рисом",
+      "cuisine": "slavic",
+      "targetCalories": 2100
+    }
+  },
+  "Wednesday": {
+    "breakfast": {
+      "name": "Каша с маслом и молоком",
+      "cuisine": "slavic",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Эдамаме с морской солью",
+      "cuisine": "asian",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Голубцы с мясом",
+      "cuisine": "slavic",
+      "targetCalories": 2100
+    }
+  },
+  "Thursday": {
+    "breakfast": {
+      "name": "Жареные яйца с хлебом",
+      "cuisine": "slavic",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Дольки манго",
+      "cuisine": "asian",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Пельмени со сметаной",
+      "cuisine": "slavic",
+      "targetCalories": 2100
+    }
+  },
+  "Friday": {
+    "breakfast": {
+      "name": "Дим самы (паровые пельмени)",
+      "cuisine": "asian",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Печенье с зелёным чаем",
+      "cuisine": "asian",
       "targetCalories": 500
     },
     "dinner": {
@@ -101,20 +84,37 @@
       "targetCalories": 2100
     }
   },
-  "Sunday": {
+  "Saturday": {
     "breakfast": {
-      "name": "Каша с маслом и молоком",
+      "name": "Яичница с овощами",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Банан с арахисовой пастой",
+      "name": "Йогурт с мёдом",
       "cuisine": "slavic",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Сычуаньский мапо тофу",
+      "name": "Корейский бибимбап",
       "cuisine": "asian",
+      "targetCalories": 2100
+    }
+  },
+  "Sunday": {
+    "breakfast": {
+      "name": "Овсянка с мёдом и орехами",
+      "cuisine": "slavic",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Рисовые крекеры",
+      "cuisine": "asian",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Борщ со сметаной",
+      "cuisine": "slavic",
       "targetCalories": 2100
     }
   }
