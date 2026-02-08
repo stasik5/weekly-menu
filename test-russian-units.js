@@ -8,6 +8,7 @@ console.log('Testing Russian unit support...\n');
 
 // Test cases for extractQuantity
 const quantityTests = [
+  // English format (quantity first)
   { input: '2 шт куриного филе', expected: '2 шт' },
   { input: '500 г муки', expected: '500 г' },
   { input: '1 кг картофеля', expected: '1 кг' },
@@ -19,6 +20,13 @@ const quantityTests = [
   { input: '½ луковицы', expected: '½ л' },
   { input: '1½ шт яйца', expected: '1½ шт' },
   { input: 'чеснок (по вкусу)', expected: 'as needed' },
+  // Russian format (ingredient first, quantity after dash)
+  { input: 'яйца - 3 шт', expected: '3 шт' },
+  { input: 'помидоры - 2 шт', expected: '2 шт' },
+  { input: 'куриное филе - 400 г', expected: '400 г' },
+  { input: 'морская соль - 1 ч.л.', expected: '1 ч.л.' },
+  { input: 'вода - 1 л', expected: '1 л' },
+  { input: 'лук репчатый - 1 шт', expected: '1 шт' },
 ];
 
 console.log('Testing extractQuantity():');
@@ -33,12 +41,18 @@ console.log(`\nextractQuantity: ${passed}/${quantityTests.length} passed\n`);
 
 // Test cases for extractIngredientName
 const nameTests = [
+  // English format
   { input: '2 шт куриного филе', expected: 'куриного филе' },
   { input: '500 г муки', expected: 'муки' },
   { input: '1 кг картофеля', expected: 'картофеля' },
   { input: '2 ч.л. соли', expected: 'соли' },
   { input: '3 ст.л. растительного масла', expected: 'растительного масла' },
   { input: 'чеснок (по вкусу)', expected: 'чеснок' },
+  // Russian format (ingredient first, quantity after dash)
+  { input: 'яйца - 3 шт', expected: 'яйца' },
+  { input: 'помидоры - 2 шт', expected: 'помидоры' },
+  { input: 'куриное филе - 400 г', expected: 'куриное филе' },
+  { input: 'морская соль - 1 ч.л.', expected: 'морская соль' },
 ];
 
 console.log('Testing extractIngredientName():');

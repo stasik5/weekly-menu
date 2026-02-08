@@ -80,7 +80,14 @@ function extractIngredientName(fullIngredient) {
     return '';
   }
 
-  // Remove leading numbers and common measurement words
+  // Handle Russian format: "ingredient - quantity"
+  // e.g., "яйца - 3 шт" → "яйца"
+  const dashMatch = ingredientStr.match(/^(.+?)\s*-\s*[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?\s*(?:шт|г|кг|ч\.л\.|ст\.л\.|л|мл|cup|cups|tbsp|tsp|oz|lb|piece|pieces|slice|slices|bunch|head|clove|cloves)?\s*$/i);
+  if (dashMatch) {
+    ingredientStr = dashMatch[1];
+  }
+
+  // Remove leading numbers and common measurement words (for English format)
   let name = ingredientStr
     .replace(/^\d+[\s½⅓⅔¼¾⅕⅛⅐⅑⅒]?/, '') // Remove leading numbers
     .replace(/^(cup|cups|tablespoon|tbsp|teaspoon|tsp|ounce|oz|pound|lb|gram|g|kg|ml|liter|l|piece|pieces|slice|slices|bunch|head|clove|cloves|шт|г|кг|ч\.л\.|ст\.л\.|л|мл)\s*(of\s*)?/i, '') // Remove measurements
@@ -115,7 +122,20 @@ function extractQuantity(fullIngredient) {
     return 'as needed';
   }
 
-  const match = ingredientStr.match(/^[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\s*(?:cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|piece|pieces|slice|slices|bunch|head|clove|cloves|шт|г|кг|ч\.л\.|ст\.л\.|л|мл)?)/i);
+  // Try both formats:
+  // 1. "3 eggs" - quantity first
+  // 2. "eggs - 3 шт" - ingredient first, quantity after dash
+  let match = ingredientStr.match(/^[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\s*(?:cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|piece|pieces|slice|slices|bunch|head|clove|cloves|шт|г|кг|ч\.л\.|ст\.л\.|л|мл)?)/i);
+
+  // If no match at start, try format "ingredient - quantity"
+  if (!match) {
+    match = ingredientStr.match(/-\s*[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?\s*(?:шт|г|кг|ч\.л\.|ст\.л\.|л|мл|cup|cups|tbsp|tsp|oz|lb|piece|pieces|slice|slices|bunch|head|clove|cloves)?\s*$/i);
+    if (match) {
+      // Return just the quantity part (after the dash)
+      return match[0].replace(/^-\s*/, '').trim();
+    }
+  }
+
   return match ? match[0].trim() : 'as needed';
 }
 
