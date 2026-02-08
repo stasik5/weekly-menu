@@ -5,6 +5,42 @@
   "pantry": [],
   "other": [
     {
+      "name": "авровый лист - 2 шт",
+      "quantity": "as needed",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "апша рамэн - 300 г",
+      "quantity": "as needed",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Thursday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "апша рисовая - 200 г",
+      "quantity": "as needed",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Saturday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
       "name": "арахис жареный - 50 г",
       "quantity": "as needed",
       "category": "other",
@@ -142,66 +178,6 @@
         {
           "day": "Sunday",
           "mealType": "snack",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "говядина - 200 г",
-      "quantity": "as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Sunday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "говядина (вырезка) - 500 г",
-      "quantity": "as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Friday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "гречка - 100 г",
-      "quantity": "as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Friday",
-          "mealType": "breakfast",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "грибы шампиньоны - 200 г",
-      "quantity": "as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Friday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "грибы шиитаке - 100 г",
-      "quantity": "as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Thursday",
-          "mealType": "dinner",
           "cuisine": "asian"
         }
       ]
@@ -361,6 +337,18 @@
       ]
     },
     {
+      "name": "имонный сок - 2 ст.л.",
+      "quantity": "as needed",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Saturday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
       "name": "картофель - 4 шт",
       "quantity": "as needed",
       "category": "other",
@@ -385,6 +373,18 @@
       ]
     },
     {
+      "name": "кунжут - 1 ч.л.",
+      "quantity": "as needed",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "snack",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
       "name": "кунжут - 2 ст.л.",
       "quantity": "as needed",
       "category": "other",
@@ -392,18 +392,6 @@
         {
           "day": "Sunday",
           "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "кунжут (по желанию) - 1",
-      "quantity": "as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "snack",
           "cuisine": "asian"
         }
       ]
@@ -465,107 +453,6 @@
           "day": "Monday",
           "mealType": "dinner",
           "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "лавровый лист - 2 шт",
-      "quantity": "as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "лапша рамэн - 300 г",
-      "quantity": "as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Thursday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "лапша рисовая - 200 г",
-      "quantity": "as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Saturday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "лимонный сок - 2 ст.л.",
-      "quantity": "as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Saturday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "лук репчатый - 1 шт",
-      "quantity": "as needed + as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "breakfast",
-          "cuisine": "slavic"
-        },
-        {
-          "day": "Monday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "лук репчатый - 2 шт",
-      "quantity": "as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Friday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "лук репчатый - 3 шт",
-      "quantity": "as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Tuesday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "лук-шалот - 3 шт",
-      "quantity": "as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Saturday",
-          "mealType": "dinner",
-          "cuisine": "asian"
         }
       ]
     },
@@ -743,6 +630,18 @@
       ]
     },
     {
+      "name": "мед - 1 ч.л.",
+      "quantity": "as needed",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Tuesday",
+          "mealType": "snack",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
       "name": "мед - 2 ст.л.",
       "quantity": "as needed",
       "category": "other",
@@ -774,18 +673,6 @@
         {
           "day": "Saturday",
           "mealType": "breakfast",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "мед (по желанию) - 1",
-      "quantity": "as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Tuesday",
-          "mealType": "snack",
           "cuisine": "slavic"
         }
       ]
@@ -933,7 +820,7 @@
       ]
     },
     {
-      "name": "нори (морская капуста) - 10",
+      "name": "нори - 10 листов",
       "quantity": "as needed",
       "category": "other",
       "usedIn": [
@@ -941,6 +828,30 @@
           "day": "Thursday",
           "mealType": "snack",
           "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "овядина - 200 г",
+      "quantity": "as needed",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Sunday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
+      "name": "овядина - 500 г",
+      "quantity": "as needed",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Friday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
         }
       ]
     },
@@ -969,7 +880,7 @@
       ]
     },
     {
-      "name": "орехи (по желанию) - 20",
+      "name": "орехи - 20 г",
       "quantity": "as needed",
       "category": "other",
       "usedIn": [
@@ -981,7 +892,7 @@
       ]
     },
     {
-      "name": "орехи (по желанию) - 30",
+      "name": "орехи - 30 г",
       "quantity": "as needed",
       "category": "other",
       "usedIn": [
@@ -1119,6 +1030,42 @@
       ]
     },
     {
+      "name": "речка - 100 г",
+      "quantity": "as needed",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Friday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "рибы шампиньоны - 200 г",
+      "quantity": "as needed",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Friday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "рибы шиитаке - 100 г",
+      "quantity": "as needed",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Thursday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
       "name": "рис - 100 г",
       "quantity": "as needed",
       "category": "other",
@@ -1206,7 +1153,7 @@
       ]
     },
     {
-      "name": "свинина (шея) - 800 г",
+      "name": "свинина - 800 г",
       "quantity": "as needed",
       "category": "other",
       "usedIn": [
@@ -1218,7 +1165,7 @@
       ]
     },
     {
-      "name": "семена льна (по желанию) -",
+      "name": "семена льна - 1 ч.л.",
       "quantity": "as needed",
       "category": "other",
       "usedIn": [
@@ -1508,6 +1455,59 @@
       ]
     },
     {
+      "name": "ук репчатый - 1 шт",
+      "quantity": "as needed + as needed",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "breakfast",
+          "cuisine": "slavic"
+        },
+        {
+          "day": "Monday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "ук репчатый - 2 шт",
+      "quantity": "as needed",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Friday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "ук репчатый - 3 шт",
+      "quantity": "as needed",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Tuesday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "ук-шалот - 3 шт",
+      "quantity": "as needed",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Saturday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
       "name": "уксус 9% - 3 ст.л.",
       "quantity": "as needed",
       "category": "other",
@@ -1544,7 +1544,7 @@
       ]
     },
     {
-      "name": "фрукты свежие (по желанию) -",
+      "name": "фрукты свежие - 100 г",
       "quantity": "as needed",
       "category": "other",
       "usedIn": [
@@ -1592,6 +1592,18 @@
       ]
     },
     {
+      "name": "чеснок - 1 зубчик",
+      "quantity": "as needed",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Friday",
+          "mealType": "snack",
+          "cuisine": "slavic"
+        }
+      ]
+    },
+    {
       "name": "чеснок - 2 зубчика",
       "quantity": "as needed + as needed + as needed",
       "category": "other",
@@ -1631,18 +1643,6 @@
       ]
     },
     {
-      "name": "чеснок (по желанию) - 1",
-      "quantity": "as needed",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Friday",
-          "mealType": "snack",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
       "name": "чеснок сушеный - по вкусу",
       "quantity": "as needed",
       "category": "other",
@@ -1655,7 +1655,7 @@
       ]
     },
     {
-      "name": "эдамаме (соя в стручках) -",
+      "name": "эдамаме - 300 г",
       "quantity": "as needed",
       "category": "other",
       "usedIn": [

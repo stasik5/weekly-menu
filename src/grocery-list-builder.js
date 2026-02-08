@@ -83,8 +83,10 @@ function extractIngredientName(fullIngredient) {
   // Remove leading numbers and common measurement words
   let name = ingredientStr
     .replace(/^\d+[\s½⅓⅔¼¾⅕⅛⅐⅑⅒]?/, '') // Remove leading numbers
-    .replace(/^(cup|cups|tablespoon|tbsp|teaspoon|tsp|ounce|oz|pound|lb|gram|g|kg|ml|liter|l|piece|pieces|slice|slices|bunch|head|clove|cloves)\s*(of\s*)?/i, '') // Remove measurements
-    .replace(/^\s*\(|\)\s*$/g, '') // Remove surrounding parentheses
+    .replace(/^(cup|cups|tablespoon|tbsp|teaspoon|tsp|ounce|oz|pound|lb|gram|g|kg|ml|liter|l|piece|pieces|slice|slices|bunch|head|clove|cloves|шт|г|кг|ч\.л\.|ст\.л\.|л|мл)\s*(of\s*)?/i, '') // Remove measurements
+    .replace(/\s*\(.*?\)\s*/g, ' ') // Remove content in parentheses
+    .replace(/[\(\)]/g, '') // Remove any remaining parentheses
+    .replace(/\s+/g, ' ') // Collapse multiple spaces
     .trim();
 
   // Keep first 3-5 words for better matching
@@ -113,7 +115,7 @@ function extractQuantity(fullIngredient) {
     return 'as needed';
   }
 
-  const match = ingredientStr.match(/^[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\s*(?:cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|piece|pieces|slice|slices|bunch|head|clove|cloves)?)/i);
+  const match = ingredientStr.match(/^[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\s*(?:cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|piece|pieces|slice|slices|bunch|head|clove|cloves|шт|г|кг|ч\.л\.|ст\.л\.|л|мл)?)/i);
   return match ? match[0].trim() : 'as needed';
 }
 
@@ -132,7 +134,7 @@ function combineQuantities(qty1, qty2) {
       '⅕': 0.2, '⅛': 0.125, '⅐': 0.143, '⅑': 0.111, '⅒': 0.1
     };
 
-    const match = qty.match(/^([\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?)\s*(cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|piece|pieces|slice|slices|bunch|head|clove|cloves)?/i);
+    const match = qty.match(/^([\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?)\s*(cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|piece|pieces|slice|slices|bunch|head|clove|cloves|шт|г|кг|ч\.л\.|ст\.л\.|л|мл)?/i);
     if (!match) return { value: 0, unit: '' };
 
     let numStr = match[1];
