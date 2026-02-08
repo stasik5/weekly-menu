@@ -1,144 +1,6 @@
 {
-  "Блины с сырной начинкой": {
-    "title": "Блины с сырной начинкой",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 1400,
-      "protein": 53,
-      "carbs": 105,
-      "fat": 86
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Творог с зеленью": {
-    "title": "Творог с зеленью",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 500,
-      "protein": 19,
-      "carbs": 38,
-      "fat": 31
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Вьетнамский фо": {
-    "title": "Вьетнамский фо",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 2100,
-      "protein": 131,
-      "carbs": 215,
-      "fat": 79
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Сырники (творожные оладьи)": {
-    "title": "Сырники (творожные оладьи)",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 1400,
-      "protein": 53,
-      "carbs": 105,
-      "fat": 86
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Орехи и сухофрукты": {
-    "title": "Орехи и сухофрукты",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 500,
-      "protein": 19,
-      "carbs": 38,
-      "fat": 31
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Бефстроганов с рисом": {
-    "title": "Бефстроганов с рисом",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 2100,
-      "protein": 131,
-      "carbs": 215,
-      "fat": 79
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Каша с маслом и молоком": {
-    "title": "Каша с маслом и молоком",
+  "Яичница с овощами": {
+    "title": "Яичница с овощами",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -183,8 +45,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Голубцы с мясом": {
-    "title": "Голубцы с мясом",
+  "Куриный суп с овощами": {
+    "title": "Куриный суп с овощами",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -229,8 +91,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Дольки манго": {
-    "title": "Дольки манго",
+  "Дольки яблока с сыром": {
+    "title": "Дольки яблока с сыром",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -252,146 +114,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Пельмени со сметаной": {
-    "title": "Пельмени со сметаной",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 2100,
-      "protein": 131,
-      "carbs": 215,
-      "fat": 79
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Дим самы (паровые пельмени)": {
-    "title": "Дим самы (паровые пельмени)",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 1400,
-      "protein": 53,
-      "carbs": 105,
-      "fat": 86
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Печенье с зелёным чаем": {
-    "title": "Печенье с зелёным чаем",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 500,
-      "protein": 19,
-      "carbs": 38,
-      "fat": 31
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Тайский зелёный карри": {
-    "title": "Тайский зелёный карри",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 2100,
-      "protein": 131,
-      "carbs": 215,
-      "fat": 79
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Яичница с овощами": {
-    "title": "Яичница с овощами",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 1400,
-      "protein": 53,
-      "carbs": 105,
-      "fat": 86
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Йогурт с мёдом": {
-    "title": "Йогурт с мёдом",
-    "cuisine": "unknown",
-    "ingredients": [
-      "Main ingredients vary by recipe",
-      "Seasonings to taste",
-      "Cook according to recipe instructions"
-    ],
-    "instructions": [
-      "Prepare ingredients according to standard cooking methods",
-      "Cook until done",
-      "Season to taste",
-      "Serve hot"
-    ],
-    "nutrition": {
-      "calories": 500,
-      "protein": 19,
-      "carbs": 38,
-      "fat": 31
-    },
-    "source": "fallback_template",
-    "url": null
-  },
-  "Корейский бибимбап": {
-    "title": "Корейский бибимбап",
+  "Шашлык с салатом": {
+    "title": "Шашлык с салатом",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",
@@ -436,6 +160,282 @@
     "source": "fallback_template",
     "url": null
   },
+  "Маринованный имбирь и дайкон": {
+    "title": "Маринованный имбирь и дайкон",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 500,
+      "protein": 19,
+      "carbs": 38,
+      "fat": 31
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Паста карбонара": {
+    "title": "Паста карбонара",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 2100,
+      "protein": 131,
+      "carbs": 215,
+      "fat": 79
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Блины с сырной начинкой": {
+    "title": "Блины с сырной начинкой",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 1400,
+      "protein": 53,
+      "carbs": 105,
+      "fat": 86
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Чипсы из морской капусты": {
+    "title": "Чипсы из морской капусты",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 500,
+      "protein": 19,
+      "carbs": 38,
+      "fat": 31
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Японская лапша рамэн": {
+    "title": "Японская лапша рамэн",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 2100,
+      "protein": 131,
+      "carbs": 215,
+      "fat": 79
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Гречневая каша с молоком и ягодами": {
+    "title": "Гречневая каша с молоком и ягодами",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 1400,
+      "protein": 53,
+      "carbs": 105,
+      "fat": 86
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Ржаной хлеб с маслом": {
+    "title": "Ржаной хлеб с маслом",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 500,
+      "protein": 19,
+      "carbs": 38,
+      "fat": 31
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Бефстроганов с рисом": {
+    "title": "Бефстроганов с рисом",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 2100,
+      "protein": 131,
+      "carbs": 215,
+      "fat": 79
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Сырники (творожные оладьи)": {
+    "title": "Сырники (творожные оладьи)",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 1400,
+      "protein": 53,
+      "carbs": 105,
+      "fat": 86
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Банан с арахисовой пастой": {
+    "title": "Банан с арахисовой пастой",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 500,
+      "protein": 19,
+      "carbs": 38,
+      "fat": 31
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Пад тай с креветками": {
+    "title": "Пад тай с креветками",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 2100,
+      "protein": 131,
+      "carbs": 215,
+      "fat": 79
+    },
+    "source": "fallback_template",
+    "url": null
+  },
+  "Конджи с яйцом и зелёным луком": {
+    "title": "Конджи с яйцом и зелёным луком",
+    "cuisine": "unknown",
+    "ingredients": [
+      "Main ingredients vary by recipe",
+      "Seasonings to taste",
+      "Cook according to recipe instructions"
+    ],
+    "instructions": [
+      "Prepare ingredients according to standard cooking methods",
+      "Cook until done",
+      "Season to taste",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": 1400,
+      "protein": 53,
+      "carbs": 105,
+      "fat": 86
+    },
+    "source": "fallback_template",
+    "url": null
+  },
   "Рисовые крекеры": {
     "title": "Рисовые крекеры",
     "cuisine": "unknown",
@@ -459,8 +459,8 @@
     "source": "fallback_template",
     "url": null
   },
-  "Борщ со сметаной": {
-    "title": "Борщ со сметаной",
+  "Корейский бибимбап": {
+    "title": "Корейский бибимбап",
     "cuisine": "unknown",
     "ingredients": [
       "Main ingredients vary by recipe",

@@ -1,219 +1,11 @@
 {
   "Monday": {
     "breakfast": {
-      "name": "Блины с сырной начинкой",
+      "name": "Яичница с овощами",
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Блины с сырной начинкой",
-        "cuisine": "unknown",
-        "ingredients": [
-          {
-            "name": "Main ingredients vary by recipe"
-          },
-          {
-            "name": "Seasonings"
-          },
-          {
-            "name": "Cook according to recipe instructions"
-          }
-        ],
-        "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
-        ],
-        "nutrition": {
-          "calories": 1400,
-          "protein": 53,
-          "carbs": 105,
-          "fat": 86
-        },
-        "source": "fallback_template",
-        "url": null
-      }
-    },
-    "snack": {
-      "name": "Творог с зеленью",
-      "cuisine": "slavic",
-      "targetCalories": 500,
-      "recipe": {
-        "title": "Творог с зеленью",
-        "cuisine": "unknown",
-        "ingredients": [
-          {
-            "name": "Main ingredients vary by recipe"
-          },
-          {
-            "name": "Seasonings"
-          },
-          {
-            "name": "Cook according to recipe instructions"
-          }
-        ],
-        "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
-        ],
-        "nutrition": {
-          "calories": 500,
-          "protein": 19,
-          "carbs": 38,
-          "fat": 31
-        },
-        "source": "fallback_template",
-        "url": null
-      }
-    },
-    "dinner": {
-      "name": "Вьетнамский фо",
-      "cuisine": "asian",
-      "targetCalories": 2100,
-      "recipe": {
-        "title": "Вьетнамский фо",
-        "cuisine": "unknown",
-        "ingredients": [
-          {
-            "name": "Main ingredients vary by recipe"
-          },
-          {
-            "name": "Seasonings"
-          },
-          {
-            "name": "Cook according to recipe instructions"
-          }
-        ],
-        "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
-        ],
-        "nutrition": {
-          "calories": 2100,
-          "protein": 131,
-          "carbs": 215,
-          "fat": 79
-        },
-        "source": "fallback_template",
-        "url": null
-      }
-    }
-  },
-  "Tuesday": {
-    "breakfast": {
-      "name": "Сырники (творожные оладьи)",
-      "cuisine": "slavic",
-      "targetCalories": 1400,
-      "recipe": {
-        "title": "Сырники (творожные оладьи)",
-        "cuisine": "unknown",
-        "ingredients": [
-          {
-            "name": "Main ingredients vary by recipe"
-          },
-          {
-            "name": "Seasonings"
-          },
-          {
-            "name": "Cook according to recipe instructions"
-          }
-        ],
-        "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
-        ],
-        "nutrition": {
-          "calories": 1400,
-          "protein": 53,
-          "carbs": 105,
-          "fat": 86
-        },
-        "source": "fallback_template",
-        "url": null
-      }
-    },
-    "snack": {
-      "name": "Орехи и сухофрукты",
-      "cuisine": "slavic",
-      "targetCalories": 500,
-      "recipe": {
-        "title": "Орехи и сухофрукты",
-        "cuisine": "unknown",
-        "ingredients": [
-          {
-            "name": "Main ingredients vary by recipe"
-          },
-          {
-            "name": "Seasonings"
-          },
-          {
-            "name": "Cook according to recipe instructions"
-          }
-        ],
-        "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
-        ],
-        "nutrition": {
-          "calories": 500,
-          "protein": 19,
-          "carbs": 38,
-          "fat": 31
-        },
-        "source": "fallback_template",
-        "url": null
-      }
-    },
-    "dinner": {
-      "name": "Бефстроганов с рисом",
-      "cuisine": "slavic",
-      "targetCalories": 2100,
-      "recipe": {
-        "title": "Бефстроганов с рисом",
-        "cuisine": "unknown",
-        "ingredients": [
-          {
-            "name": "Main ingredients vary by recipe"
-          },
-          {
-            "name": "Seasonings"
-          },
-          {
-            "name": "Cook according to recipe instructions"
-          }
-        ],
-        "instructions": [
-          "Prepare ingredients according to standard cooking methods",
-          "Cook until done",
-          "Season to taste",
-          "Serve hot"
-        ],
-        "nutrition": {
-          "calories": 2100,
-          "protein": 131,
-          "carbs": 215,
-          "fat": 79
-        },
-        "source": "fallback_template",
-        "url": null
-      }
-    }
-  },
-  "Wednesday": {
-    "breakfast": {
-      "name": "Каша с маслом и молоком",
-      "cuisine": "slavic",
-      "targetCalories": 1400,
-      "recipe": {
-        "title": "Каша с маслом и молоком",
+        "title": "Яичница с овощами",
         "cuisine": "unknown",
         "ingredients": [
           {
@@ -277,11 +69,11 @@
       }
     },
     "dinner": {
-      "name": "Голубцы с мясом",
+      "name": "Куриный суп с овощами",
       "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Голубцы с мясом",
+        "title": "Куриный суп с овощами",
         "cuisine": "unknown",
         "ingredients": [
           {
@@ -311,7 +103,7 @@
       }
     }
   },
-  "Thursday": {
+  "Tuesday": {
     "breakfast": {
       "name": "Жареные яйца с хлебом",
       "cuisine": "slavic",
@@ -347,11 +139,11 @@
       }
     },
     "snack": {
-      "name": "Дольки манго",
-      "cuisine": "asian",
+      "name": "Дольки яблока с сыром",
+      "cuisine": "slavic",
       "targetCalories": 500,
       "recipe": {
-        "title": "Дольки манго",
+        "title": "Дольки яблока с сыром",
         "cuisine": "unknown",
         "ingredients": [
           {
@@ -381,11 +173,219 @@
       }
     },
     "dinner": {
-      "name": "Пельмени со сметаной",
+      "name": "Шашлык с салатом",
       "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Пельмени со сметаной",
+        "title": "Шашлык с салатом",
+        "cuisine": "unknown",
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    }
+  },
+  "Wednesday": {
+    "breakfast": {
+      "name": "Овсянка с мёдом и орехами",
+      "cuisine": "slavic",
+      "targetCalories": 1400,
+      "recipe": {
+        "title": "Овсянка с мёдом и орехами",
+        "cuisine": "unknown",
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "snack": {
+      "name": "Маринованный имбирь и дайкон",
+      "cuisine": "asian",
+      "targetCalories": 500,
+      "recipe": {
+        "title": "Маринованный имбирь и дайкон",
+        "cuisine": "unknown",
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "dinner": {
+      "name": "Паста карбонара",
+      "cuisine": "slavic",
+      "targetCalories": 2100,
+      "recipe": {
+        "title": "Паста карбонара",
+        "cuisine": "unknown",
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 2100,
+          "protein": 131,
+          "carbs": 215,
+          "fat": 79
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    }
+  },
+  "Thursday": {
+    "breakfast": {
+      "name": "Блины с сырной начинкой",
+      "cuisine": "slavic",
+      "targetCalories": 1400,
+      "recipe": {
+        "title": "Блины с сырной начинкой",
+        "cuisine": "unknown",
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 1400,
+          "protein": 53,
+          "carbs": 105,
+          "fat": 86
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "snack": {
+      "name": "Чипсы из морской капусты",
+      "cuisine": "asian",
+      "targetCalories": 500,
+      "recipe": {
+        "title": "Чипсы из морской капусты",
+        "cuisine": "unknown",
+        "ingredients": [
+          {
+            "name": "Main ingredients vary by recipe"
+          },
+          {
+            "name": "Seasonings"
+          },
+          {
+            "name": "Cook according to recipe instructions"
+          }
+        ],
+        "instructions": [
+          "Prepare ingredients according to standard cooking methods",
+          "Cook until done",
+          "Season to taste",
+          "Serve hot"
+        ],
+        "nutrition": {
+          "calories": 500,
+          "protein": 19,
+          "carbs": 38,
+          "fat": 31
+        },
+        "source": "fallback_template",
+        "url": null
+      }
+    },
+    "dinner": {
+      "name": "Японская лапша рамэн",
+      "cuisine": "asian",
+      "targetCalories": 2100,
+      "recipe": {
+        "title": "Японская лапша рамэн",
         "cuisine": "unknown",
         "ingredients": [
           {
@@ -417,11 +417,11 @@
   },
   "Friday": {
     "breakfast": {
-      "name": "Дим самы (паровые пельмени)",
-      "cuisine": "asian",
+      "name": "Гречневая каша с молоком и ягодами",
+      "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Дим самы (паровые пельмени)",
+        "title": "Гречневая каша с молоком и ягодами",
         "cuisine": "unknown",
         "ingredients": [
           {
@@ -451,11 +451,11 @@
       }
     },
     "snack": {
-      "name": "Печенье с зелёным чаем",
-      "cuisine": "asian",
+      "name": "Ржаной хлеб с маслом",
+      "cuisine": "slavic",
       "targetCalories": 500,
       "recipe": {
-        "title": "Печенье с зелёным чаем",
+        "title": "Ржаной хлеб с маслом",
         "cuisine": "unknown",
         "ingredients": [
           {
@@ -485,11 +485,11 @@
       }
     },
     "dinner": {
-      "name": "Тайский зелёный карри",
-      "cuisine": "asian",
+      "name": "Бефстроганов с рисом",
+      "cuisine": "slavic",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Тайский зелёный карри",
+        "title": "Бефстроганов с рисом",
         "cuisine": "unknown",
         "ingredients": [
           {
@@ -521,11 +521,11 @@
   },
   "Saturday": {
     "breakfast": {
-      "name": "Яичница с овощами",
+      "name": "Сырники (творожные оладьи)",
       "cuisine": "slavic",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Яичница с овощами",
+        "title": "Сырники (творожные оладьи)",
         "cuisine": "unknown",
         "ingredients": [
           {
@@ -555,11 +555,11 @@
       }
     },
     "snack": {
-      "name": "Йогурт с мёдом",
+      "name": "Банан с арахисовой пастой",
       "cuisine": "slavic",
       "targetCalories": 500,
       "recipe": {
-        "title": "Йогурт с мёдом",
+        "title": "Банан с арахисовой пастой",
         "cuisine": "unknown",
         "ingredients": [
           {
@@ -589,11 +589,11 @@
       }
     },
     "dinner": {
-      "name": "Корейский бибимбап",
+      "name": "Пад тай с креветками",
       "cuisine": "asian",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Корейский бибимбап",
+        "title": "Пад тай с креветками",
         "cuisine": "unknown",
         "ingredients": [
           {
@@ -625,11 +625,11 @@
   },
   "Sunday": {
     "breakfast": {
-      "name": "Овсянка с мёдом и орехами",
-      "cuisine": "slavic",
+      "name": "Конджи с яйцом и зелёным луком",
+      "cuisine": "asian",
       "targetCalories": 1400,
       "recipe": {
-        "title": "Овсянка с мёдом и орехами",
+        "title": "Конджи с яйцом и зелёным луком",
         "cuisine": "unknown",
         "ingredients": [
           {
@@ -693,11 +693,11 @@
       }
     },
     "dinner": {
-      "name": "Борщ со сметаной",
-      "cuisine": "slavic",
+      "name": "Корейский бибимбап",
+      "cuisine": "asian",
       "targetCalories": 2100,
       "recipe": {
-        "title": "Борщ со сметаной",
+        "title": "Корейский бибимбап",
         "cuisine": "unknown",
         "ingredients": [
           {
