@@ -4,7 +4,7 @@
     "name": "авровый лист",
     "normalizedName": "авровый лист",
     "total": 2,
-    "unit": "",
+    "unit": "шт",
     "remaining": 2,
     "dailyUsage": []
   },
@@ -13,7 +13,7 @@
     "name": "апша рамэн",
     "normalizedName": "апша рамэн",
     "total": 300,
-    "unit": "",
+    "unit": "г",
     "remaining": 300,
     "dailyUsage": []
   },
@@ -22,7 +22,7 @@
     "name": "апша рисовая",
     "normalizedName": "апша рисовая",
     "total": 200,
-    "unit": "",
+    "unit": "г",
     "remaining": 200,
     "dailyUsage": []
   },
@@ -31,7 +31,7 @@
     "name": "арахис жареный",
     "normalizedName": "арахис жареный",
     "total": 50,
-    "unit": "",
+    "unit": "г",
     "remaining": 50,
     "dailyUsage": []
   },
@@ -40,7 +40,7 @@
     "name": "арахисовая паста",
     "normalizedName": "арахисовая паста",
     "total": 4,
-    "unit": "",
+    "unit": "ст",
     "remaining": 4,
     "dailyUsage": []
   },
@@ -49,7 +49,7 @@
     "name": "банан",
     "normalizedName": "банан",
     "total": 2,
-    "unit": "",
+    "unit": "шт",
     "remaining": 2,
     "dailyUsage": []
   },
@@ -58,7 +58,7 @@
     "name": "бекон",
     "normalizedName": "бекон",
     "total": 150,
-    "unit": "",
+    "unit": "г",
     "remaining": 150,
     "dailyUsage": []
   },
@@ -67,7 +67,7 @@
     "name": "бульон куриный",
     "normalizedName": "бульон куриный",
     "total": 1,
-    "unit": "",
+    "unit": "л",
     "remaining": 1,
     "dailyUsage": []
   },
@@ -76,7 +76,7 @@
     "name": "бульон мясной",
     "normalizedName": "бульон мясной",
     "total": 200,
-    "unit": "",
+    "unit": "мл",
     "remaining": 200,
     "dailyUsage": []
   },
@@ -85,7 +85,7 @@
     "name": "вода",
     "normalizedName": "вода",
     "total": 4,
-    "unit": "",
+    "unit": "л",
     "remaining": 4,
     "dailyUsage": []
   },
@@ -94,7 +94,7 @@
     "name": "дайкон",
     "normalizedName": "дайкон",
     "total": 300,
-    "unit": "",
+    "unit": "г",
     "remaining": 300,
     "dailyUsage": []
   },
@@ -103,7 +103,7 @@
     "name": "для начинки: сыр твердый",
     "normalizedName": "для начинки: сыр твердый",
     "total": 150,
-    "unit": "",
+    "unit": "г",
     "remaining": 150,
     "dailyUsage": []
   },
@@ -112,7 +112,7 @@
     "name": "для салата: помидоры",
     "normalizedName": "для салата: помидоры",
     "total": 4,
-    "unit": "",
+    "unit": "шт",
     "remaining": 4,
     "dailyUsage": []
   },
@@ -121,7 +121,7 @@
     "name": "имбирь свежий",
     "normalizedName": "имбирь свежий",
     "total": 100,
-    "unit": "",
+    "unit": "г",
     "remaining": 100,
     "dailyUsage": []
   },
@@ -130,7 +130,7 @@
     "name": "имонный сок",
     "normalizedName": "имонный сок",
     "total": 2,
-    "unit": "",
+    "unit": "ст",
     "remaining": 2,
     "dailyUsage": []
   },
@@ -139,7 +139,7 @@
     "name": "картофель",
     "normalizedName": "картофель",
     "total": 4,
-    "unit": "",
+    "unit": "шт",
     "remaining": 4,
     "dailyUsage": []
   },
@@ -148,7 +148,7 @@
     "name": "креветки",
     "normalizedName": "креветки",
     "total": 300,
-    "unit": "",
+    "unit": "г",
     "remaining": 300,
     "dailyUsage": []
   },
@@ -157,7 +157,7 @@
     "name": "кунжут",
     "normalizedName": "кунжут",
     "total": 1,
-    "unit": "",
+    "unit": "ч",
     "remaining": 1,
     "dailyUsage": []
   },
@@ -166,7 +166,7 @@
     "name": "кунжут белый",
     "normalizedName": "кунжут белый",
     "total": 3,
-    "unit": "",
+    "unit": "ст",
     "remaining": 3,
     "dailyUsage": []
   },
@@ -175,7 +175,7 @@
     "name": "кунжутное масло",
     "normalizedName": "кунжутное масло",
     "total": 2,
-    "unit": "",
+    "unit": "ст",
     "remaining": 2,
     "dailyUsage": []
   },
@@ -184,7 +184,7 @@
     "name": "куринное филе",
     "normalizedName": "куринное филе",
     "total": 300,
-    "unit": "",
+    "unit": "г",
     "remaining": 300,
     "dailyUsage": []
   },
@@ -193,7 +193,7 @@
     "name": "куриное филе",
     "normalizedName": "куриное филе",
     "total": 400,
-    "unit": "",
+    "unit": "г",
     "remaining": 400,
     "dailyUsage": []
   },
@@ -202,7 +202,7 @@
     "name": "масло арахисовое",
     "normalizedName": "масло арахисовое",
     "total": 3,
-    "unit": "",
+    "unit": "ст",
     "remaining": 3,
     "dailyUsage": []
   },
@@ -211,7 +211,7 @@
     "name": "масло кунжутное",
     "normalizedName": "масло кунжутное",
     "total": 3,
-    "unit": "",
+    "unit": "ст",
     "remaining": 3,
     "dailyUsage": []
   },
@@ -220,7 +220,7 @@
     "name": "масло оливковое",
     "normalizedName": "масло оливковое",
     "total": 2,
-    "unit": "",
+    "unit": "ст",
     "remaining": 2,
     "dailyUsage": []
   },
@@ -229,7 +229,7 @@
     "name": "масло подсолнечное",
     "normalizedName": "масло подсолнечное",
     "total": 3,
-    "unit": "",
+    "unit": "ст",
     "remaining": 3,
     "dailyUsage": []
   },
@@ -238,7 +238,7 @@
     "name": "масло растительное",
     "normalizedName": "масло растительное",
     "total": 8,
-    "unit": "",
+    "unit": "ст",
     "remaining": 8,
     "dailyUsage": []
   },
@@ -247,7 +247,7 @@
     "name": "масло сливочное",
     "normalizedName": "масло сливочное",
     "total": 6,
-    "unit": "",
+    "unit": "ст",
     "remaining": 6,
     "dailyUsage": []
   },
@@ -256,7 +256,7 @@
     "name": "мед",
     "normalizedName": "мед",
     "total": 3,
-    "unit": "",
+    "unit": "ч",
     "remaining": 3,
     "dailyUsage": []
   },
@@ -265,7 +265,7 @@
     "name": "молоко",
     "normalizedName": "молоко",
     "total": 2,
-    "unit": "",
+    "unit": "ст",
     "remaining": 2,
     "dailyUsage": []
   },
@@ -274,7 +274,7 @@
     "name": "морковь",
     "normalizedName": "морковь",
     "total": 4,
-    "unit": "",
+    "unit": "шт",
     "remaining": 4,
     "dailyUsage": []
   },
@@ -283,7 +283,7 @@
     "name": "морская соль",
     "normalizedName": "морская соль",
     "total": 1,
-    "unit": "",
+    "unit": "ч",
     "remaining": 1,
     "dailyUsage": []
   },
@@ -292,7 +292,7 @@
     "name": "мука",
     "normalizedName": "мука",
     "total": 6,
-    "unit": "",
+    "unit": "ст",
     "remaining": 6,
     "dailyUsage": []
   },
@@ -301,7 +301,7 @@
     "name": "мука пшеничная",
     "normalizedName": "мука пшеничная",
     "total": 250,
-    "unit": "",
+    "unit": "г",
     "remaining": 250,
     "dailyUsage": []
   },
@@ -310,7 +310,7 @@
     "name": "мука рисовая",
     "normalizedName": "мука рисовая",
     "total": 150,
-    "unit": "",
+    "unit": "г",
     "remaining": 150,
     "dailyUsage": []
   },
@@ -319,7 +319,7 @@
     "name": "овядина",
     "normalizedName": "овядина",
     "total": 700,
-    "unit": "",
+    "unit": "г",
     "remaining": 700,
     "dailyUsage": []
   },
@@ -328,7 +328,7 @@
     "name": "огурец",
     "normalizedName": "огурец",
     "total": 1,
-    "unit": "",
+    "unit": "шт",
     "remaining": 1,
     "dailyUsage": []
   },
@@ -337,7 +337,7 @@
     "name": "огурцы",
     "normalizedName": "огурцы",
     "total": 2,
-    "unit": "",
+    "unit": "шт",
     "remaining": 2,
     "dailyUsage": []
   },
@@ -346,7 +346,7 @@
     "name": "орехи",
     "normalizedName": "орехи",
     "total": 50,
-    "unit": "",
+    "unit": "г",
     "remaining": 50,
     "dailyUsage": []
   },
@@ -355,7 +355,7 @@
     "name": "орехи грецкие",
     "normalizedName": "орехи грецкие",
     "total": 30,
-    "unit": "",
+    "unit": "г",
     "remaining": 30,
     "dailyUsage": []
   },
@@ -364,7 +364,7 @@
     "name": "перец болгарский",
     "normalizedName": "перец болгарский",
     "total": 2,
-    "unit": "",
+    "unit": "шт",
     "remaining": 2,
     "dailyUsage": []
   },
@@ -373,7 +373,7 @@
     "name": "перец чили",
     "normalizedName": "перец чили",
     "total": 1,
-    "unit": "",
+    "unit": "шт",
     "remaining": 1,
     "dailyUsage": []
   },
@@ -382,7 +382,7 @@
     "name": "помидоры",
     "normalizedName": "помидоры",
     "total": 2,
-    "unit": "",
+    "unit": "шт",
     "remaining": 2,
     "dailyUsage": []
   },
@@ -391,7 +391,7 @@
     "name": "разрыхлитель",
     "normalizedName": "разрыхлитель",
     "total": 0.5,
-    "unit": "",
+    "unit": "ч",
     "remaining": 0.5,
     "dailyUsage": []
   },
@@ -400,7 +400,7 @@
     "name": "речка",
     "normalizedName": "речка",
     "total": 100,
-    "unit": "",
+    "unit": "г",
     "remaining": 100,
     "dailyUsage": []
   },
@@ -409,7 +409,7 @@
     "name": "рибы шампиньоны",
     "normalizedName": "рибы шампиньоны",
     "total": 200,
-    "unit": "",
+    "unit": "г",
     "remaining": 200,
     "dailyUsage": []
   },
@@ -418,7 +418,7 @@
     "name": "рибы шиитаке",
     "normalizedName": "рибы шиитаке",
     "total": 100,
-    "unit": "",
+    "unit": "г",
     "remaining": 100,
     "dailyUsage": []
   },
@@ -427,7 +427,7 @@
     "name": "рис",
     "normalizedName": "рис",
     "total": 500,
-    "unit": "",
+    "unit": "г",
     "remaining": 500,
     "dailyUsage": []
   },
@@ -436,7 +436,7 @@
     "name": "ростки сои",
     "normalizedName": "ростки сои",
     "total": 100,
-    "unit": "",
+    "unit": "г",
     "remaining": 100,
     "dailyUsage": []
   },
@@ -445,7 +445,7 @@
     "name": "сахар",
     "normalizedName": "сахар",
     "total": 5,
-    "unit": "",
+    "unit": "ст",
     "remaining": 5,
     "dailyUsage": []
   },
@@ -454,7 +454,7 @@
     "name": "свинина",
     "normalizedName": "свинина",
     "total": 800,
-    "unit": "",
+    "unit": "г",
     "remaining": 800,
     "dailyUsage": []
   },
@@ -463,7 +463,7 @@
     "name": "семена льна",
     "normalizedName": "семена льна",
     "total": 1,
-    "unit": "",
+    "unit": "ч",
     "remaining": 1,
     "dailyUsage": []
   },
@@ -472,7 +472,7 @@
     "name": "сливки 20%",
     "normalizedName": "сливки 20%",
     "total": 100,
-    "unit": "",
+    "unit": "мл",
     "remaining": 100,
     "dailyUsage": []
   },
@@ -481,7 +481,7 @@
     "name": "сливочное масло",
     "normalizedName": "сливочное масло",
     "total": 10,
-    "unit": "",
+    "unit": "г",
     "remaining": 10,
     "dailyUsage": []
   },
@@ -490,7 +490,7 @@
     "name": "сметана",
     "normalizedName": "сметана",
     "total": 2,
-    "unit": "",
+    "unit": "ст",
     "remaining": 2,
     "dailyUsage": []
   },
@@ -499,7 +499,7 @@
     "name": "соевый соус",
     "normalizedName": "соевый соус",
     "total": 9,
-    "unit": "",
+    "unit": "ст",
     "remaining": 9,
     "dailyUsage": []
   },
@@ -508,7 +508,7 @@
     "name": "соль",
     "normalizedName": "соль",
     "total": 1.5,
-    "unit": "",
+    "unit": "ч",
     "remaining": 1.5,
     "dailyUsage": []
   },
@@ -517,7 +517,7 @@
     "name": "соус рыбный",
     "normalizedName": "соус рыбный",
     "total": 2,
-    "unit": "",
+    "unit": "ст",
     "remaining": 2,
     "dailyUsage": []
   },
@@ -526,7 +526,7 @@
     "name": "спагетти",
     "normalizedName": "спагетти",
     "total": 300,
-    "unit": "",
+    "unit": "г",
     "remaining": 300,
     "dailyUsage": []
   },
@@ -535,7 +535,7 @@
     "name": "спаржевая фасоль",
     "normalizedName": "спаржевая фасоль",
     "total": 100,
-    "unit": "",
+    "unit": "г",
     "remaining": 100,
     "dailyUsage": []
   },
@@ -544,7 +544,7 @@
     "name": "сыр мягкий",
     "normalizedName": "сыр мягкий",
     "total": 100,
-    "unit": "",
+    "unit": "г",
     "remaining": 100,
     "dailyUsage": []
   },
@@ -553,7 +553,7 @@
     "name": "сыр пармезан",
     "normalizedName": "сыр пармезан",
     "total": 80,
-    "unit": "",
+    "unit": "г",
     "remaining": 80,
     "dailyUsage": []
   },
@@ -562,7 +562,7 @@
     "name": "сыр твердый",
     "normalizedName": "сыр твердый",
     "total": 100,
-    "unit": "",
+    "unit": "г",
     "remaining": 100,
     "dailyUsage": []
   },
@@ -571,7 +571,7 @@
     "name": "творог",
     "normalizedName": "творог",
     "total": 400,
-    "unit": "",
+    "unit": "г",
     "remaining": 400,
     "dailyUsage": []
   },
@@ -580,7 +580,7 @@
     "name": "ук репчатый",
     "normalizedName": "ук репчатый",
     "total": 7,
-    "unit": "",
+    "unit": "шт",
     "remaining": 7,
     "dailyUsage": []
   },
@@ -589,7 +589,7 @@
     "name": "ук-шалот",
     "normalizedName": "ук-шалот",
     "total": 3,
-    "unit": "",
+    "unit": "шт",
     "remaining": 3,
     "dailyUsage": []
   },
@@ -598,7 +598,7 @@
     "name": "уксус 9%",
     "normalizedName": "уксус 9%",
     "total": 3,
-    "unit": "",
+    "unit": "ст",
     "remaining": 3,
     "dailyUsage": []
   },
@@ -607,7 +607,7 @@
     "name": "уксус рисовый",
     "normalizedName": "уксус рисовый",
     "total": 3,
-    "unit": "",
+    "unit": "ст",
     "remaining": 3,
     "dailyUsage": []
   },
@@ -616,7 +616,7 @@
     "name": "фасоль стручковая",
     "normalizedName": "фасоль стручковая",
     "total": 100,
-    "unit": "",
+    "unit": "г",
     "remaining": 100,
     "dailyUsage": []
   },
@@ -625,7 +625,7 @@
     "name": "фрукты свежие",
     "normalizedName": "фрукты свежие",
     "total": 100,
-    "unit": "",
+    "unit": "г",
     "remaining": 100,
     "dailyUsage": []
   },
@@ -634,7 +634,7 @@
     "name": "хлеб ржаной",
     "normalizedName": "хлеб ржаной",
     "total": 200,
-    "unit": "",
+    "unit": "г",
     "remaining": 200,
     "dailyUsage": []
   },
@@ -643,7 +643,7 @@
     "name": "хлопья овсяные",
     "normalizedName": "хлопья овсяные",
     "total": 100,
-    "unit": "",
+    "unit": "г",
     "remaining": 100,
     "dailyUsage": []
   },
@@ -652,7 +652,7 @@
     "name": "эдамаме",
     "normalizedName": "эдамаме",
     "total": 300,
-    "unit": "",
+    "unit": "г",
     "remaining": 300,
     "dailyUsage": []
   },
@@ -661,7 +661,7 @@
     "name": "яблоки",
     "normalizedName": "яблоки",
     "total": 2,
-    "unit": "",
+    "unit": "шт",
     "remaining": 2,
     "dailyUsage": []
   },
@@ -670,7 +670,7 @@
     "name": "ягоды свежие",
     "normalizedName": "ягоды свежие",
     "total": 100,
-    "unit": "",
+    "unit": "г",
     "remaining": 100,
     "dailyUsage": []
   },
@@ -679,7 +679,7 @@
     "name": "яйца",
     "normalizedName": "яйца",
     "total": 16,
-    "unit": "",
+    "unit": "шт",
     "remaining": 16,
     "dailyUsage": []
   },
@@ -688,7 +688,7 @@
     "name": "яйцо",
     "normalizedName": "яйцо",
     "total": 4,
-    "unit": "",
+    "unit": "шт",
     "remaining": 4,
     "dailyUsage": []
   }

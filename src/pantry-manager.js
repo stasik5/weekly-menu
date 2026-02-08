@@ -118,28 +118,30 @@ function parseIngredientQuantity(ingredientText) {
   }
 
   // Try to extract unit after the number
-  const unitMatch = text.match(/^[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?\s*([a-z]+(?:\s+[a-z]+)?)?/i);
+  const unitMatch = text.match(/^[\d½⅓⅔¼¾⅕⅛⅐⅑⅒]+(?:\.\d+)?\s*([a-zа-я]+(?:\s+[a-zа-я]+)?)?/i);
   let unit = unitMatch && unitMatch[1] ? unitMatch[1].toLowerCase() : '';
 
-  // Normalize units
+  // Normalize units (English + Russian)
   if (unit === 'c' || unit === 'cup' || unit === 'cups') {
     unit = 'cups';
-  } else if (unit === 'tbsp' || unit === 'tablespoon' || unit === 'tablespoons') {
-    unit = 'tbsp';
-  } else if (unit === 'tsp' || unit === 'teaspoon' || unit === 'teaspoons') {
-    unit = 'tsp';
+  } else if (unit === 'tbsp' || unit === 'tablespoon' || unit === 'tablespoons' || unit === 'ст.л.' || unit === 'ст.л') {
+    unit = 'ст.л.';
+  } else if (unit === 'tsp' || unit === 'teaspoon' || unit === 'teaspoons' || unit === 'ч.л.' || unit === 'ч.л') {
+    unit = 'ч.л.';
   } else if (unit === 'oz' || unit === 'ounce' || unit === 'ounces') {
     unit = 'oz';
   } else if (unit === 'lb' || unit === 'pound' || unit === 'pounds') {
     unit = 'lb';
   } else if (unit === 'g' || unit === 'gram' || unit === 'grams') {
-    unit = 'g';
+    unit = 'г';
   } else if (unit === 'kg' || unit === 'kilogram' || unit === 'kilograms') {
-    unit = 'kg';
+    unit = 'кг';
   } else if (unit === 'l' || unit === 'liter' || unit === 'liters') {
-    unit = 'l';
+    unit = 'л';
   } else if (unit === 'ml' || unit === 'milliliter' || unit === 'milliliters') {
-    unit = 'ml';
+    unit = 'мл';
+  } else if (unit === 'шт' || unit === 'piece' || unit === 'pieces' || unit === 'штук') {
+    unit = 'шт';
   } else if (unit.includes('can') || unit.includes('bottle')) {
     // Keep the unit as is for these special cases
     unit = unit;
