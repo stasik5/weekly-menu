@@ -46,19 +46,18 @@ async function completePipeline() {
   // Step 5: Build grocery list
   console.log('\n5. Building grocery list...');
   const groceryList = groceryListBuilder.buildGroceryList(planWithRecipes);
-  const metricGroceryList = groceryListBuilder.updateToMetricUnits(groceryList);
-  const totalItems = Object.values(metricGroceryList).reduce((sum, items) => sum + items.length, 0);
-  console.log(`✓ Grocery list built with ${totalItems} items (metric units)`);
+  const totalItems = Object.values(groceryList).reduce((sum, items) => sum + items.length, 0);
+  console.log(`✓ Grocery list built with ${totalItems} items`);
 
   // Step 6: Generate pantry
   console.log('\n6. Generating virtual pantry...');
-  const pantry = pantryManager.generatePantryFromGroceryList(metricGroceryList, planWithRecipes);
+  const pantry = pantryManager.generatePantryFromGroceryList(groceryList, planWithRecipes);
   console.log(`✓ Virtual pantry created with ${Object.keys(pantry).length} items`);
 
   // Step 7: Generate HTML
   console.log('\n7. Generating HTML site...');
   const weekLabel = siteGenerator.getWeekLabel();
-  const html = siteGenerator.generateHTML(planWithRecipes, metricGroceryList, pantry, weekLabel);
+  const html = siteGenerator.generateHTML(planWithRecipes, groceryList, pantry, weekLabel);
   console.log(`✓ HTML generated for ${weekLabel}`);
 
   // Step 8: Save files
@@ -79,7 +78,7 @@ async function completePipeline() {
   pantryManager.savePantryJSON(pantry, pantryPath);
 
   // Also save grocery list separately
-  fs.writeFileSync(groceryListPath, JSON.stringify(metricGroceryList, null, 2), 'utf8');
+  fs.writeFileSync(groceryListPath, JSON.stringify(groceryList, null, 2), 'utf8');
 
   console.log(`✓ HTML saved to: ${htmlPath}`);
   console.log(`✓ JSON saved to: ${jsonPath}`);
