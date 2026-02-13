@@ -1,121 +1,193 @@
 {
-  "Monday": {
-    "breakfast": {
-      "name": "Яичница с овощами",
-      "cuisine": "slavic",
-      "targetCalories": 1400
+  "weekNumber": 8,
+  "year": 2026,
+  "startDate": "2026-02-17",
+  "endDate": "2026-02-23",
+  "nutritionTarget": "medium",
+  "totalCalories": 4000,
+  "cuisineRatio": {
+    "slavic": 0.6,
+    "asian": 0.4
+  },
+  "menu": {
+    "monday": {
+      "date": "2026-02-17",
+      "meals": {
+        "breakfast": {
+          "name": "Сырники (творожные оладьи)",
+          "cuisine": "slavic",
+          "calories": 1400,
+          "time": "30 мин"
+        },
+        "lunch": {
+          "name": "Бефстроганов с рисом",
+          "cuisine": "slavic",
+          "calories": 2100,
+          "time": "45 мин"
+        },
+        "dinner": {
+          "name": "Пад тай с креветками",
+          "cuisine": "asian",
+          "calories": 2100,
+          "time": "30 мин"
+        }
+      },
+      "totalCalories": 5600
     },
-    "snack": {
-      "name": "Эдамаме с морской солью",
-      "cuisine": "asian",
-      "targetCalories": 500
+    "tuesday": {
+      "date": "2026-02-18",
+      "meals": {
+        "breakfast": {
+          "name": "Блины с сырной начинкой",
+          "cuisine": "slavic",
+          "calories": 1400,
+          "time": "35 мин"
+        },
+        "lunch": {
+          "name": "Японская лапша рамэн",
+          "cuisine": "asian",
+          "calories": 2100,
+          "time": "40 мин"
+        },
+        "dinner": {
+          "name": "Пельмени (мясные)",
+          "cuisine": "slavic",
+          "calories": 1900,
+          "time": "50 мин"
+        }
+      },
+      "totalCalories": 5400
     },
-    "dinner": {
-      "name": "Куриный суп с овощами",
-      "cuisine": "slavic",
-      "targetCalories": 2100
+    "wednesday": {
+      "date": "2026-02-19",
+      "meals": {
+        "breakfast": {
+          "name": "Конджи с яйцом и зелёным луком",
+          "cuisine": "asian",
+          "calories": 1400,
+          "time": "60 мин"
+        },
+        "lunch": {
+          "name": "Борщ украинский",
+          "cuisine": "slavic",
+          "calories": 1800,
+          "time": "90 мин"
+        },
+        "dinner": {
+          "name": "Корейский бибимбап",
+          "cuisine": "asian",
+          "calories": 2100,
+          "time": "45 мин"
+        }
+      },
+      "totalCalories": 5300
+    },
+    "thursday": {
+      "date": "2026-02-20",
+      "meals": {
+        "breakfast": {
+          "name": "Гречневая каша с молоком и ягодами",
+          "cuisine": "slavic",
+          "calories": 1400,
+          "time": "25 мин"
+        },
+        "lunch": {
+          "name": "Терияки лосось",
+          "cuisine": "asian",
+          "calories": 1800,
+          "time": "25 мин"
+        },
+        "dinner": {
+          "name": "Куриные котлеты по-киевски",
+          "cuisine": "slavic",
+          "calories": 2000,
+          "time": "45 мин"
+        }
+      },
+      "totalCalories": 5200
+    },
+    "friday": {
+      "date": "2026-02-21",
+      "meals": {
+        "breakfast": {
+          "name": "Овсянка с мёдом и орехами",
+          "cuisine": "slavic",
+          "calories": 1400,
+          "time": "20 мин"
+        },
+        "lunch": {
+          "name": "Пад тай с курицей",
+          "cuisine": "asian",
+          "calories": 2000,
+          "time": "30 мин"
+        },
+        "dinner": {
+          "name": "Голубцы (капустные рулетики)",
+          "cuisine": "slavic",
+          "calories": 2100,
+          "time": "75 мин"
+        }
+      },
+      "totalCalories": 5500
+    },
+    "saturday": {
+      "date": "2026-02-22",
+      "meals": {
+        "breakfast": {
+          "name": "Яичница с овощами",
+          "cuisine": "slavic",
+          "calories": 1400,
+          "time": "15 мин"
+        },
+        "lunch": {
+          "name": "Том Ям с креветками",
+          "cuisine": "asian",
+          "calories": 1800,
+          "time": "35 мин"
+        },
+        "dinner": {
+          "name": "Вареники с картошкой",
+          "cuisine": "slavic",
+          "calories": 1900,
+          "time": "60 мин"
+        }
+      },
+      "totalCalories": 5100
+    },
+    "sunday": {
+      "date": "2026-02-23",
+      "meals": {
+        "breakfast": {
+          "name": "Блины с икрой",
+          "cuisine": "slavic",
+          "calories": 1500,
+          "time": "40 мин"
+        },
+        "lunch": {
+          "name": "Куриный суп с овощами",
+          "cuisine": "slavic",
+          "calories": 2100,
+          "time": "60 мин"
+        },
+        "dinner": {
+          "name": "Фо Бо с говядиной",
+          "cuisine": "asian",
+          "calories": 2000,
+          "time": "50 мин"
+        }
+      },
+      "totalCalories": 5600
     }
   },
-  "Tuesday": {
-    "breakfast": {
-      "name": "Жареные яйца с хлебом",
-      "cuisine": "slavic",
-      "targetCalories": 1400
+  "summary": {
+    "totalMeals": 21,
+    "slavicMeals": 13,
+    "asianMeals": 8,
+    "actualRatio": {
+      "slavic": 0.619,
+      "asian": 0.381
     },
-    "snack": {
-      "name": "Дольки яблока с сыром",
-      "cuisine": "slavic",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Шашлык с салатом",
-      "cuisine": "slavic",
-      "targetCalories": 2100
-    }
-  },
-  "Wednesday": {
-    "breakfast": {
-      "name": "Овсянка с мёдом и орехами",
-      "cuisine": "slavic",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Маринованный имбирь и дайкон",
-      "cuisine": "asian",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Паста карбонара",
-      "cuisine": "slavic",
-      "targetCalories": 2100
-    }
-  },
-  "Thursday": {
-    "breakfast": {
-      "name": "Блины с сырной начинкой",
-      "cuisine": "slavic",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Чипсы из морской капусты",
-      "cuisine": "asian",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Японская лапша рамэн",
-      "cuisine": "asian",
-      "targetCalories": 2100
-    }
-  },
-  "Friday": {
-    "breakfast": {
-      "name": "Гречневая каша с молоком и ягодами",
-      "cuisine": "slavic",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Ржаной хлеб с маслом",
-      "cuisine": "slavic",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Бефстроганов с рисом",
-      "cuisine": "slavic",
-      "targetCalories": 2100
-    }
-  },
-  "Saturday": {
-    "breakfast": {
-      "name": "Сырники (творожные оладьи)",
-      "cuisine": "slavic",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Банан с арахисовой пастой",
-      "cuisine": "slavic",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Пад тай с креветками",
-      "cuisine": "asian",
-      "targetCalories": 2100
-    }
-  },
-  "Sunday": {
-    "breakfast": {
-      "name": "Конджи с яйцом и зелёным луком",
-      "cuisine": "asian",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Рисовые крекеры",
-      "cuisine": "asian",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Корейский бибимбап",
-      "cuisine": "asian",
-      "targetCalories": 2100
-    }
+    "weeklyCalories": 37700,
+    "dailyAverage": 5386
   }
 }

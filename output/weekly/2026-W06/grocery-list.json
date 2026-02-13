@@ -155,18 +155,6 @@
       ]
     },
     {
-      "name": "дайкон",
-      "quantity": "300 г",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Wednesday",
-          "mealType": "snack",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
       "name": "для начинки: сыр твердый",
       "quantity": "150 г",
       "category": "other",
@@ -187,6 +175,18 @@
           "day": "Tuesday",
           "mealType": "dinner",
           "cuisine": "slavic"
+        }
+      ]
+    },
+    {
+      "name": "зеленый горошек",
+      "quantity": "300 г",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "snack",
+          "cuisine": "asian"
         }
       ]
     },
@@ -365,18 +365,6 @@
       ]
     },
     {
-      "name": "кунжутное масло",
-      "quantity": "2 ст.л.",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Sunday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
       "name": "куринное филе",
       "quantity": "300 г",
       "category": "other",
@@ -401,66 +389,8 @@
       ]
     },
     {
-      "name": "масло арахисовое",
-      "quantity": "3 ст.л.",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Saturday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "масло кунжутное",
-      "quantity": "3 ст.л. + 1 ч.л.",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Thursday",
-          "mealType": "snack",
-          "cuisine": "asian"
-        },
-        {
-          "day": "Thursday",
-          "mealType": "dinner",
-          "cuisine": "asian"
-        },
-        {
-          "day": "Sunday",
-          "mealType": "breakfast",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "масло оливковое",
-      "quantity": "2 ст.л.",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Wednesday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "масло подсолнечное",
-      "quantity": "3 ст.л.",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Sunday",
-          "mealType": "snack",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
       "name": "масло растительное",
-      "quantity": "8 ст.л.",
+      "quantity": "21 ст.л.",
       "category": "other",
       "usedIn": [
         {
@@ -474,9 +404,44 @@
           "cuisine": "slavic"
         },
         {
+          "day": "Wednesday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
+        },
+        {
           "day": "Thursday",
           "mealType": "breakfast",
           "cuisine": "slavic"
+        },
+        {
+          "day": "Thursday",
+          "mealType": "snack",
+          "cuisine": "asian"
+        },
+        {
+          "day": "Thursday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        },
+        {
+          "day": "Saturday",
+          "mealType": "dinner",
+          "cuisine": "asian"
+        },
+        {
+          "day": "Sunday",
+          "mealType": "breakfast",
+          "cuisine": "asian"
+        },
+        {
+          "day": "Sunday",
+          "mealType": "snack",
+          "cuisine": "asian"
+        },
+        {
+          "day": "Sunday",
+          "mealType": "dinner",
+          "cuisine": "asian"
         }
       ]
     },
@@ -608,18 +573,6 @@
       ]
     },
     {
-      "name": "морская соль",
-      "quantity": "1 ч.л.",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Monday",
-          "mealType": "snack",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
       "name": "мука",
       "quantity": "6 ст.л.",
       "category": "other",
@@ -638,7 +591,7 @@
     },
     {
       "name": "мука пшеничная",
-      "quantity": "250 г",
+      "quantity": "400 г",
       "category": "other",
       "usedIn": [
         {
@@ -646,18 +599,6 @@
           "mealType": "breakfast",
           "cuisine": "slavic"
         },
-        {
-          "day": "Sunday",
-          "mealType": "snack",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "мука рисовая",
-      "quantity": "150 г",
-      "category": "other",
-      "usedIn": [
         {
           "day": "Sunday",
           "mealType": "snack",
@@ -862,6 +803,18 @@
       ]
     },
     {
+      "name": "редька черная",
+      "quantity": "300 г",
+      "category": "other",
+      "usedIn": [
+        {
+          "day": "Wednesday",
+          "mealType": "snack",
+          "cuisine": "asian"
+        }
+      ]
+    },
+    {
       "name": "речка",
       "quantity": "100 г",
       "category": "other",
@@ -875,25 +828,18 @@
     },
     {
       "name": "рибы шампиньоны",
-      "quantity": "200 г",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Friday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "рибы шиитаке",
-      "quantity": "100 г",
+      "quantity": "300 г",
       "category": "other",
       "usedIn": [
         {
           "day": "Thursday",
           "mealType": "dinner",
           "cuisine": "asian"
+        },
+        {
+          "day": "Friday",
+          "mealType": "dinner",
+          "cuisine": "slavic"
         }
       ]
     },
@@ -1064,9 +1010,14 @@
     },
     {
       "name": "соль",
-      "quantity": "1.50 ч.л.",
+      "quantity": "2.50 ч.л.",
       "category": "other",
       "usedIn": [
+        {
+          "day": "Monday",
+          "mealType": "snack",
+          "cuisine": "asian"
+        },
         {
           "day": "Wednesday",
           "mealType": "snack",
@@ -1202,25 +1153,18 @@
       ]
     },
     {
-      "name": "сыр пармезан",
-      "quantity": "80 г",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Wednesday",
-          "mealType": "dinner",
-          "cuisine": "slavic"
-        }
-      ]
-    },
-    {
       "name": "сыр твердый",
-      "quantity": "100 г",
+      "quantity": "180 г",
       "category": "other",
       "usedIn": [
         {
           "day": "Tuesday",
           "mealType": "snack",
+          "cuisine": "slavic"
+        },
+        {
+          "day": "Wednesday",
+          "mealType": "dinner",
           "cuisine": "slavic"
         }
       ]
@@ -1239,7 +1183,7 @@
     },
     {
       "name": "ук репчатый",
-      "quantity": "7 шт",
+      "quantity": "10 шт",
       "category": "other",
       "usedIn": [
         {
@@ -1261,14 +1205,7 @@
           "day": "Friday",
           "mealType": "dinner",
           "cuisine": "slavic"
-        }
-      ]
-    },
-    {
-      "name": "ук-шалот",
-      "quantity": "3 шт",
-      "category": "other",
-      "usedIn": [
+        },
         {
           "day": "Saturday",
           "mealType": "dinner",
@@ -1289,7 +1226,7 @@
       ]
     },
     {
-      "name": "уксус рисовый",
+      "name": "уксус столовый 9%",
       "quantity": "3 ст.л.",
       "category": "other",
       "usedIn": [
@@ -1418,18 +1355,6 @@
       "usedIn": [
         {
           "day": "Thursday",
-          "mealType": "snack",
-          "cuisine": "asian"
-        }
-      ]
-    },
-    {
-      "name": "эдамаме",
-      "quantity": "300 г",
-      "category": "other",
-      "usedIn": [
-        {
-          "day": "Monday",
           "mealType": "snack",
           "cuisine": "asian"
         }
