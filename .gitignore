@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Output files (generated weekly)
+output/weekly/
+output/*.json
+
+# Keep these directories
+!output/.gitkeep
+!output/weekly/.gitkeep
+
+# Development files
+tests/dev-artifacts/
+*.log
+.DS_Store
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.bak

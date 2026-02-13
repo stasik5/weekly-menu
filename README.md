@@ -144,19 +144,37 @@ The `recipes.json` contains:
 - [x] Nutrition calculation
 - [x] Nutrition validation
 
-### ✅ Phase 2: Recipe Research (Foundation)
+### ✅ Phase 2: Recipe Research
 - [x] Recipe data structure with parsing functions
 - [x] Fallback recipe system
 - [x] Ingredient extraction and categorization
 - [x] Nutrition estimation framework
-- [x] web_search query builder (ready for integration)
+- [x] web_search query builder
 
-### 🔄 Phase 3: Automation (Future)
-- [ ] Actual web_search integration for recipes
-- [ ] Real ingredient parsing from recipe websites
-- [ ] GitHub API integration for auto-publish
-- [ ] 3-week history management
-- [ ] Cron job setup
+### ✅ Phase 3: Automation (COMPLETE)
+- [x] **web_search integration for recipes** - Uses OpenClaw's web_search tool
+- [x] **Real ingredient parsing** - Extracts ingredients from recipe websites
+- [x] **GitHub auto-publish** - Automatic commit and push to GitHub
+- [x] **Virtual pantry tracking** - Weekly ingredient tracking display
+- [x] **Cron job automation** - Runs every Sunday at 3AM/4AM UTC
+
+### 📅 Automated Schedule
+
+The system runs automatically on Sundays:
+
+- **3:00 AM UTC**: Menu Generator
+  - Generates full weekly menu
+  - Researches recipes using web_search
+  - Creates virtual pantry
+  - Publishes to GitHub
+
+- **4:00 AM UTC**: Menu Reviewer
+  - Validates generated menu
+  - Checks quality and completeness
+  - Self-heals if issues found
+  - Sends Telegram notification
+
+No manual intervention needed!
 
 ## Known Limitations
 
