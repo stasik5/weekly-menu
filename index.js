@@ -15,6 +15,7 @@ const pantryNormalizer = require('./src/pantry-normalizer');
 const groceryListBuilder = require('./src/grocery-list-builder');
 const chefReviewer = require('./src/chef-reviewer');
 const pantryManager = require('./src/pantry-manager');
+const pantryManagerEnhanced = require('./src/pantry-manager-enhanced');
 const siteGenerator = require('./src/site-generator');
 const publisher = require('./src/publisher');
 
@@ -190,10 +191,10 @@ async function generateWeeklyMenu(webSearch = null, publish = true, useAgent = t
     const totalItems = Object.values(groceryList).reduce((sum, items) => sum + items.length, 0);
     console.log(`✓ Grocery list built with ${totalItems} items`);
 
-    // Step 6: Generate virtual pantry
+    // Step 6: Generate virtual pantry (enhanced version)
     console.log('\n6. Generating virtual pantry...');
-    const pantry = pantryManager.generatePantryFromGroceryList(groceryList, normalizedPlan);
-    console.log(`✓ Virtual pantry created with ${Object.keys(pantry).length} items`);
+    const pantryData = pantryManagerEnhanced.generatePantryFromGroceryList(groceryList, normalizedPlan);
+    console.log(`✓ Virtual pantry created with ${pantryData.summary.totalItems} items`);
 
     // Step 7: Generate HTML site
     console.log('\n7. Generating HTML site...');
