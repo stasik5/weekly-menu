@@ -145,20 +145,29 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
   const mealTypes = ['breakfast', 'snack', 'dinner'];
   const recipesData = extractRecipes(weeklyPlan);
 
-  // Generate pantry display HTML if pantry data is available
-  const pantrySection = pantry ? `
-    <!-- Virtual Pantry -->
-    <section class="section">
-      <h2>📦 ${translate('Pantry (Warehouse)')}</h2>
-      <p style="color: #94a3b8; margin-bottom: 15px;">
-        ${translate('Weekly ingredient tracking based on menu (not real inventory)')}
+  // Shopping list button (replaces pantry display)
+  const pantrySection = `
+    <!-- Shopping List Button -->
+    <section class="section" style="text-align: center; padding: 30px;">
+      <a href="shopping-list.html" class="shopping-list-btn" style="
+        display: inline-block;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 18px 40px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: 600;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        transition: all 0.3s ease;
+      ">
+        📋 Открыть список покупок
+      </a>
+      <p style="color: #94a3b8; margin-top: 15px; font-size: 0.9em;">
+        Интерактивный список с чекбоксами
       </p>
-      <button id="toggle-daily" onclick="toggleDaily()">[${translate('Show by days')}]</button>
-      <div class="pantry-items">
-        ${pantryManager.formatPantryDisplay(pantry, false)}
-      </div>
     </section>
-  ` : '';
+  `;
 
   const html = `<!DOCTYPE html>
 <html lang="ru">
