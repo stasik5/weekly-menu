@@ -196,10 +196,33 @@ async function generateWeeklyMenu(webSearch = null, publish = true, useAgent = t
     const pantryData = pantryManagerEnhanced.generatePantryFromGroceryList(groceryList, normalizedPlan);
     console.log(`✓ Virtual pantry created with ${pantryData.summary.totalItems} items`);
 
+    // Flatten categorized pantry for formatPantryDisplay (which expects simple key-value structure)
+    const flatPantry = {};
+    for (const [category, items] of Object.entries(pantryData.categorized)) {
+      for (const [key, item] of Object.entries(items)) {
+        // Convert quantity string to numeric values for display
+        const qtyMatch = item.quantity?.match(/^([\d.]+)/);
+        const totalValue = qtyMatch ? parseFloat(qtyMatch[1]) : 1;
+        flatPantry[key] = {
+          emoji: item.emoji,
+          name: item.name,
+          normalizedName: key,
+          total: totalValue,
+          unit: item.quantity?.replace(/^[\d.]+\s*/, '') || '',
+          remaining: totalValue, // Show full amount (shopping list, not inventory)
+          dailyUsage: (item.usedIn || []).map(u => ({
+            day: u.day,
+            mealType: u.mealType,
+            meal: u.cuisine || ''
+          }))
+        };
+      }
+    }
+
     // Step 7: Generate HTML site
     console.log('\n7. Generating HTML site...');
     const weekLabel = siteGenerator.getWeekLabel();
-    const html = siteGenerator.generateHTML(normalizedPlan, groceryList, pantry, weekLabel);
+    const html = siteGenerator.generateHTML(normalizedPlan, groceryList, flatPantry, weekLabel);
     console.log(`✓ HTML generated for ${weekLabel}`);
 
     // Step 8: Save files
@@ -211,7 +234,7 @@ async function generateWeeklyMenu(webSearch = null, publish = true, useAgent = t
 
     siteGenerator.saveHTML(html, htmlPath);
     siteGenerator.saveRecipesJSON(normalizedPlan, jsonPath);
-    pantryManager.savePantryJSON(pantry, pantryPath);
+    pantryManager.savePantryJSON(pantryData, pantryPath);
 
     console.log(`✓ HTML saved to: ${htmlPath}`);
     console.log(`✓ JSON saved to: ${jsonPath}`);

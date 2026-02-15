@@ -88,10 +88,33 @@ async function runPipeline() {
     const pantryData = pantryManagerEnhanced.generatePantryFromGroceryList(groceryList, normalizedPlan);
     console.log(`✓ Virtual pantry created with ${pantryData.summary.totalItems} items\n`);
 
+    // Flatten categorized pantry for formatPantryDisplay (which expects simple key-value structure)
+    const flatPantry = {};
+    for (const [category, items] of Object.entries(pantryData.categorized)) {
+      for (const [key, item] of Object.entries(items)) {
+        // Convert quantity string to numeric values for display
+        const qtyMatch = item.quantity?.match(/^([\d.]+)/);
+        const totalValue = qtyMatch ? parseFloat(qtyMatch[1]) : 1;
+        flatPantry[key] = {
+          emoji: item.emoji,
+          name: item.name,
+          normalizedName: key,
+          total: totalValue,
+          unit: item.quantity?.replace(/^[\d.]+\s*/, '') || '',
+          remaining: totalValue, // Show full amount (shopping list, not inventory)
+          dailyUsage: (item.usedIn || []).map(u => ({
+            day: u.day,
+            mealType: u.mealType,
+            meal: u.cuisine || ''
+          }))
+        };
+      }
+    }
+
     // Step 7: Generate HTML
     console.log('🌐 STEP 7: Generating HTML site...');
     const weekLabel = siteGenerator.getWeekLabel();
-    const html = siteGenerator.generateHTML(normalizedPlan, groceryList, pantryData.pantry, weekLabel);
+    const html = siteGenerator.generateHTML(normalizedPlan, groceryList, flatPantry, weekLabel);
     console.log(`✓ HTML generated for week: ${weekLabel}\n`);
 
     // Step 8: Save files

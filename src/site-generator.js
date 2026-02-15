@@ -678,13 +678,15 @@ function generateHTML(weeklyPlan, groceryList, pantry = null, weekLabel) {
       const ingredientsList = document.getElementById('modalIngredients');
       ingredientsList.innerHTML = (recipe.ingredients || [])
         .map(ing => {
+          // Handle both object format {name: "..."} and string format
+          const ingText = typeof ing === 'object' && ing.name ? ing.name : String(ing);
           // Translate common fallback ingredients
           const translations = {
             'Main ingredients vary by recipe': 'Основные ингредиенты зависят от рецепта',
             'Seasonings to taste': 'Специи по вкусу',
             'Cook according to recipe instructions': 'Готовить согласно инструкции рецепта'
           };
-          return \`<li>\${translations[ing] || ing}</li>\`;
+          return \`<li>\${translations[ingText] || ingText}</li>\`;
         })
         .join('');
 
