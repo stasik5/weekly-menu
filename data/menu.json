@@ -1,0 +1,445 @@
+{
+  "weekOf": "2026-02-22",
+  "generated": "2026-02-21T23:00:00Z",
+  "cuisineRatio": {
+    "slavic": 60,
+    "asian": 40
+  },
+  "targetCalories": {
+    "lower": 3400,
+    "medium": 4000,
+    "higher": 4700
+  },
+  "days": [
+    {
+      "day": "Monday",
+      "date": "2026-02-23",
+      "meals": {
+        "breakfast": {
+          "name": "Classic Russian Blini with Sour Cream",
+          "cuisine": "Slavic",
+          "calories": 650,
+          "description": "Traditional thin crepes served with sour cream and berry jam",
+          "ingredients": [
+            {"item": "All-purpose flour", "amount": 200, "unit": "g"},
+            {"item": "Milk (2%)", "amount": 500, "unit": "ml"},
+            {"item": "Eggs", "amount": 3, "unit": "large"},
+            {"item": "Sugar", "amount": 30, "unit": "g"},
+            {"item": "Salt", "amount": 5, "unit": "g"},
+            {"item": "Vegetable oil", "amount": 45, "unit": "ml"},
+            {"item": "Sour cream", "amount": 100, "g": "g"},
+            {"item": "Berry jam", "amount": 80, "unit": "g"}
+          ],
+          "prepTime": "30 min"
+        },
+        "lunch": {
+          "name": "Japanese Miso Soup with Tofu",
+          "cuisine": "Asian",
+          "calories": 450,
+          "description": "Light and savory soup with silken tofu, wakame, and green onions",
+          "ingredients": [
+            {"item": "Dashi stock", "amount": 800, "unit": "ml"},
+            {"item": "Miso paste (white)", "amount": 60, "unit": "g"},
+            {"item": "Silken tofu", "amount": 200, "unit": "g"},
+            {"item": "Wakame seaweed (dried)", "amount": 10, "unit": "g"},
+            {"item": "Green onions", "amount": 30, "unit": "g"},
+            {"item": "Soy sauce", "amount": 15, "unit": "ml"}
+          ],
+          "prepTime": "15 min"
+        },
+        "dinner": {
+          "name": "Beef Stroganoff with Mashed Potatoes",
+          "cuisine": "Slavic",
+          "calories": 950,
+          "description": "Tender beef in creamy mushroom sauce over buttery mashed potatoes",
+          "ingredients": [
+            {"item": "Beef sirloin", "amount": 500, "unit": "g"},
+            {"item": "Cremini mushrooms", "amount": 300, "unit": "g"},
+            {"item": "Onion", "amount": 150, "unit": "g"},
+            {"item": "Sour cream", "amount": 200, "unit": "g"},
+            {"item": "Beef broth", "amount": 250, "unit": "ml"},
+            {"item": "Dijon mustard", "amount": 20, "unit": "g"},
+            {"item": "All-purpose flour", "amount": 30, "unit": "g"},
+            {"item": "Butter", "amount": 60, "unit": "g"},
+            {"item": "Potatoes", "amount": 800, "unit": "g"},
+            {"item": "Milk", "amount": 100, "unit": "ml"},
+            {"item": "Vegetable oil", "amount": 30, "unit": "ml"}
+          ],
+          "prepTime": "45 min",
+          "fancyLevel": "moderate"
+        }
+      }
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-02-24",
+      "meals": {
+        "breakfast": {
+          "name": "Korean Steamed Rice with Fried Egg",
+          "cuisine": "Asian",
+          "calories": 550,
+          "description": "Simple comfort food: steamed rice topped with crispy fried egg and sesame oil",
+          "ingredients": [
+            {"item": "Jasmine rice", "amount": 200, "unit": "g"},
+            {"item": "Eggs", "amount": 3, "unit": "large"},
+            {"item": "Sesame oil", "amount": 15, "unit": "ml"},
+            {"item": "Soy sauce", "amount": 20, "unit": "ml"},
+            {"item": "Green onions", "amount": 20, "unit": "g"},
+            {"item": "Sesame seeds", "amount": 10, "unit": "g"}
+          ],
+          "prepTime": "20 min"
+        },
+        "lunch": {
+          "name": "Ukrainian Borscht with Dark Rye Bread",
+          "cuisine": "Slavic",
+          "calories": 600,
+          "description": "Hearty beet soup with beef, cabbage, and potatoes, served with traditional bread",
+          "ingredients": [
+            {"item": "Beef bones/short ribs", "amount": 400, "unit": "g"},
+            {"item": "Beets", "amount": 300, "unit": "g"},
+            {"item": "Cabbage", "amount": 200, "unit": "g"},
+            {"item": "Potatoes", "amount": 200, "unit": "g"},
+            {"item": "Carrots", "amount": 100, "unit": "g"},
+            {"item": "Onion", "amount": 100, "unit": "g"},
+            {"item": "Tomato paste", "amount": 30, "unit": "g"},
+            {"item": "Beef broth", "amount": 1500, "unit": "ml"},
+            {"item": "Sour cream", "amount": 60, "unit": "g"},
+            {"item": "Fresh dill", "amount": 15, "unit": "g"},
+            {"item": "Dark rye bread", "amount": 120, "unit": "g"}
+          ],
+          "prepTime": "90 min"
+        },
+        "dinner": {
+          "name": "Thai Green Curry with Chicken",
+          "cuisine": "Asian",
+          "calories": 850,
+          "description": "Aromatic coconut curry with chicken, Thai eggplant, and basil",
+          "ingredients": [
+            {"item": "Chicken breast", "amount": 500, "unit": "g"},
+            {"item": "Thai green curry paste", "amount": 50, "unit": "g"},
+            {"item": "Coconut milk", "amount": 400, "unit": "ml"},
+            {"item": "Thai eggplant", "amount": 150, "unit": "g"},
+            {"item": "Snow peas", "amount": 100, "unit": "g"},
+            {"item": "Bamboo shoots", "amount": 100, "unit": "g"},
+            {"item": "Thai basil", "amount": 20, "unit": "g"},
+            {"item": "Fish sauce", "amount": 30, "unit": "ml"},
+            {"item": "Palm sugar", "amount": 20, "unit": "g"},
+            {"item": "Jasmine rice", "amount": 200, "unit": "g"}
+          ],
+          "prepTime": "40 min",
+          "fancyLevel": "moderate"
+        }
+      }
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-02-25",
+      "meals": {
+        "breakfast": {
+          "name": "Russian Syrniki (Cottage Cheese Pancakes)",
+          "cuisine": "Slavic",
+          "calories": 600,
+          "description": "Fluffy cottage cheese pancakes served with sour cream and fresh berries",
+          "ingredients": [
+            {"item": "Tvorg (cottage cheese)", "amount": 400, "unit": "g"},
+            {"item": "Eggs", "amount": 2, "unit": "large"},
+            {"item": "All-purpose flour", "amount": 80, "unit": "g"},
+            {"item": "Sugar", "amount": 40, "unit": "g"},
+            {"item": "Vanilla extract", "amount": 5, "unit": "ml"},
+            {"item": "Sour cream", "amount": 80, "unit": "g"},
+            {"item": "Fresh berries", "amount": 100, "unit": "g"},
+            {"item": "Vegetable oil", "amount": 30, "unit": "ml"}
+          ],
+          "prepTime": "25 min"
+        },
+        "lunch": {
+          "name": "Japanese Chicken Teriyaki Rice Bowl",
+          "cuisine": "Asian",
+          "calories": 700,
+          "description": "Glazed chicken teriyaki over steamed rice with steamed broccoli",
+          "ingredients": [
+            {"item": "Chicken thighs", "amount": 350, "unit": "g"},
+            {"item": "Jasmine rice", "amount": 200, "unit": "g"},
+            {"item": "Soy sauce", "amount": 60, "unit": "ml"},
+            {"item": "Mirin", "amount": 40, "unit": "ml"},
+            {"item": "Sake", "amount": 30, "unit": "ml"},
+            {"item": "Sugar", "amount": 30, "unit": "g"},
+            {"item": "Ginger", "amount": 15, "unit": "g"},
+            {"item": "Garlic", "amount": 10, "unit": "g"},
+            {"item": "Broccoli", "amount": 200, "unit": "g"},
+            {"item": "Sesame seeds", "amount": 10, "unit": "g"}
+          ],
+          "prepTime": "30 min"
+        },
+        "dinner": {
+          "name": "Pelmeni (Russian Dumplings) with Butter",
+          "cuisine": "Slavic",
+          "calories": 800,
+          "description": "Traditional meat-filled dumplings served with butter, vinegar, and sour cream",
+          "ingredients": [
+            {"item": "Pelmeni (frozen or homemade)", "amount": 600, "unit": "g"},
+            {"item": "Ground beef", "amount": 250, "unit": "g"},
+            {"item": "Ground pork", "amount": 250, "unit": "g"},
+            {"item": "Onion", "amount": 100, "unit": "g"},
+            {"item": "All-purpose flour", "amount": 300, "unit": "g"},
+            {"item": "Eggs", "amount": 1, "unit": "large"},
+            {"item": "Water", "amount": 100, "unit": "ml"},
+            {"item": "Butter", "amount": 50, "unit": "g"},
+            {"item": "Sour cream", "amount": 60, "unit": "g"},
+            {"item": "White vinegar", "amount": 15, "unit": "ml"}
+          ],
+          "prepTime": "60 min (if homemade)"
+        }
+      }
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-02-26",
+      "meals": {
+        "breakfast": {
+          "name": "Vietnamese Pho Bo (Beef Noodle Soup)",
+          "cuisine": "Asian",
+          "calories": 650,
+          "description": "Aromatic beef broth with rice noodles, herbs, and lime",
+          "ingredients": [
+            {"item": "Beef broth", "amount": 1000, "unit": "ml"},
+            {"item": "Rice noodles", "amount": 150, "unit": "g"},
+            {"item": "Beef sirloin (thinly sliced)", "amount": 200, "unit": "g"},
+            {"item": "Bean sprouts", "amount": 100, "unit": "g"},
+            {"item": "Thai basil", "amount": 15, "unit": "g"},
+            {"item": "Cilantro", "amount": 15, "unit": "g"},
+            {"item": "Lime", "amount": 1, "unit": "whole"},
+            {"item": "Hoisin sauce", "amount": 30, "unit": "ml"},
+            {"item": "Sriracha", "amount": 15, "unit": "ml"},
+            {"item": "Star anise", "amount": 2, "unit": "whole"},
+            {"item": "Cinnamon stick", "amount": 1, "unit": "whole"}
+          ],
+          "prepTime": "40 min"
+        },
+        "lunch": {
+          "name": "Russian Potato Vareniki with Onions",
+          "cuisine": "Slavic",
+          "calories": 650,
+          "description": "Potato-filled dumplings topped with caramelized onions and sour cream",
+          "ingredients": [
+            {"item": "All-purpose flour", "amount": 300, "unit": "g"},
+            {"item": "Eggs", "amount": 1, "unit": "large"},
+            {"item": "Water", "amount": 120, "unit": "ml"},
+            {"item": "Potatoes", "amount": 500, "unit": "g"},
+            {"item": "Onion", "amount": 200, "unit": "g"},
+            {"item": "Butter", "amount": 60, "unit": "g"},
+            {"item": "Sour cream", "amount": 80, "unit": "g"},
+            {"item": "Vegetable oil", "amount": 30, "unit": "ml"}
+          ],
+          "prepTime": "70 min"
+        },
+        "dinner": {
+          "name": "Korean Bibimbap",
+          "cuisine": "Asian",
+          "calories": 900,
+          "description": "Colorful mixed rice bowl with seasoned vegetables, beef, and fried egg",
+          "ingredients": [
+            {"item": "Jasmine rice", "amount": 200, "unit": "g"},
+            {"item": "Beef sirloin", "amount": 200, "unit": "g"},
+            {"item": "Spinach", "amount": 100, "unit": "g"},
+            {"item": "Bean sprouts", "amount": 100, "unit": "g"},
+            {"item": "Carrots", "amount": 80, "unit": "g"},
+            {"item": "Zucchini", "amount": 80, "unit": "g"},
+            {"item": "Shiitake mushrooms", "amount": 60, "unit": "g"},
+            {"item": "Eggs", "amount": 2, "unit": "large"},
+            {"item": "Gochujang (Korean chili paste)", "amount": 40, "unit": "g"},
+            {"item": "Sesame oil", "amount": 20, "unit": "ml"},
+            {"item": "Soy sauce", "amount": 30, "unit": "ml"},
+            {"item": "Garlic", "amount": 10, "unit": "g"},
+            {"item": "Sesame seeds", "amount": 15, "unit": "g"}
+          ],
+          "prepTime": "50 min",
+          "fancyLevel": "fancy"
+        }
+      }
+    },
+    {
+      "day": "Friday",
+      "date": "2026-02-27",
+      "meals": {
+        "breakfast": {
+          "name": "Russian Buckwheat Kasha with Butter",
+          "cuisine": "Slavic",
+          "calories": 550,
+          "description": "Nutty buckwheat porridge with butter and milk",
+          "ingredients": [
+            {"item": "Buckwheat groats", "amount": 200, "unit": "g"},
+            {"item": "Water", "amount": 400, "unit": "ml"},
+            {"item": "Milk", "amount": 100, "unit": "ml"},
+            {"item": "Butter", "amount": 40, "unit": "g"},
+            {"item": "Salt", "amount": 5, "unit": "g"}
+          ],
+          "prepTime": "20 min"
+        },
+        "lunch": {
+          "name": "Chinese Kung Pao Chicken",
+          "cuisine": "Asian",
+          "calories": 750,
+          "description": "Spicy stir-fried chicken with peanuts, vegetables, and chili peppers",
+          "ingredients": [
+            {"item": "Chicken breast", "amount": 400, "unit": "g"},
+            {"item": "Peanuts", "amount": 80, "unit": "g"},
+            {"item": "Dried red chilies", "amount": 15, "unit": "g"},
+            {"item": "Bell peppers", "amount": 150, "unit": "g"},
+            {"item": "Zucchini", "amount": 100, "unit": "g"},
+            {"item": "Garlic", "amount": 15, "unit": "g"},
+            {"item": "Ginger", "amount": 15, "unit": "g"},
+            {"item": "Soy sauce", "amount": 45, "unit": "ml"},
+            {"item": "Rice vinegar", "amount": 30, "unit": "ml"},
+            {"item": "Sugar", "amount": 20, "unit": "g"},
+            {"item": "Cornstarch", "amount": 20, "unit": "g"},
+            {"item": "Vegetable oil", "amount": 45, "unit": "ml"},
+            {"item": "Jasmine rice", "amount": 180, "unit": "g"}
+          ],
+          "prepTime": "35 min"
+        },
+        "dinner": {
+          "name": "Russian Beef Golubtsy (Cabbage Rolls)",
+          "cuisine": "Slavic",
+          "calories": 850,
+          "description": "Cabbage leaves stuffed with beef and rice in tomato sauce",
+          "ingredients": [
+            {"item": "Cabbage", "amount": 800, "unit": "g"},
+            {"item": "Ground beef", "amount": 400, "unit": "g"},
+            {"item": "Rice (uncooked)", "amount": 100, "unit": "g"},
+            {"item": "Onion", "amount": 150, "unit": "g"},
+            {"item": "Carrots", "amount": 100, "unit": "g"},
+            {"item": "Tomato sauce", "amount": 400, "unit": "ml"},
+            {"item": "Sour cream", "amount": 100, "unit": "g"},
+            {"item": "Beef broth", "amount": 200, "unit": "ml"},
+            {"item": "Vegetable oil", "amount": 30, "unit": "ml"}
+          ],
+          "prepTime": "90 min"
+        }
+      }
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-02-28",
+      "meals": {
+        "breakfast": {
+          "name": "Japanese Tamagoyaki with Rice",
+          "cuisine": "Asian",
+          "calories": 500,
+          "description": "Sweet rolled omelette with steamed rice",
+          "ingredients": [
+            {"item": "Eggs", "amount": 4, "unit": "large"},
+            {"item": "Sugar", "amount": 20, "unit": "g"},
+            {"item": "Mirin", "amount": 15, "unit": "ml"},
+            {"item": "Soy sauce", "amount": 10, "unit": "ml"},
+            {"item": "Jasmine rice", "amount": 180, "unit": "g"},
+            {"item": "Vegetable oil", "amount": 15, "unit": "ml"}
+          ],
+          "prepTime": "15 min"
+        },
+        "lunch": {
+          "name": "Russian Kotleti (Meat Patties) with Pasta",
+          "cuisine": "Slavic",
+          "calories": 800,
+          "description": "Juicy beef and pork patties with pasta in tomato sauce",
+          "ingredients": [
+            {"item": "Ground beef", "amount": 300, "unit": "g"},
+            {"item": "Ground pork", "amount": 200, "unit": "g"},
+            {"item": "Onion", "amount": 100, "unit": "g"},
+            {"item": "Bread", "amount": 60, "unit": "g"},
+            {"item": "Milk", "amount": 50, "unit": "ml"},
+            {"item": "Eggs", "amount": 1, "unit": "large"},
+            {"item": "All-purpose flour", "amount": 40, "unit": "g"},
+            {"item": "Pasta (penne or fusilli)", "amount": 250, "unit": "g"},
+            {"item": "Tomato sauce", "amount": 300, "unit": "ml"},
+            {"item": "Vegetable oil", "amount": 45, "unit": "ml"}
+          ],
+          "prepTime": "45 min"
+        },
+        "dinner": {
+          "name": "Thai Pad Thai with Shrimp",
+          "cuisine": "Asian",
+          "calories": 950,
+          "description": "Classic stir-fried rice noodles with shrimp, tofu, and peanuts",
+          "ingredients": [
+            {"item": "Rice noodles (wide)", "amount": 200, "unit": "g"},
+            {"item": "Shrimp", "amount": 250, "unit": "g"},
+            {"item": "Firm tofu", "amount": 100, "unit": "g"},
+            {"item": "Eggs", "amount": 2, "unit": "large"},
+            {"item": "Bean sprouts", "amount": 100, "unit": "g"},
+            {"item": "Green onions", "amount": 30, "unit": "g"},
+            {"item": "Peanuts", "amount": 60, "unit": "g"},
+            {"item": "Fish sauce", "amount": 45, "unit": "ml"},
+            {"item": "Tamarind paste", "amount": 30, "unit": "ml"},
+            {"item": "Palm sugar", "amount": 30, "unit": "g"},
+            {"item": "Lime", "amount": 1, "unit": "whole"},
+            {"item": "Vegetable oil", "amount": 45, "unit": "ml"}
+          ],
+          "prepTime": "30 min"
+        }
+      }
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-03-01",
+      "meals": {
+        "breakfast": {
+          "name": "Russian Olivier Salad",
+          "cuisine": "Slavic",
+          "calories": 600,
+          "description": "Traditional potato salad with peas, eggs, pickles, and bologna",
+          "ingredients": [
+            {"item": "Potatoes", "amount": 300, "unit": "g"},
+            {"item": "Carrots", "amount": 150, "unit": "g"},
+            {"item": "Eggs", "amount": 3, "unit": "large"},
+            {"item": "Pickles", "amount": 100, "unit": "g"},
+            {"item": "Green peas (canned)", "amount": 150, "unit": "g"},
+            {"item": "Bologna/ham", "amount": 200, "unit": "g"},
+            {"item": "Mayonnaise", "amount": 120, "unit": "g"},
+            {"item": "Green onions", "amount": 20, "unit": "g"}
+          ],
+          "prepTime": "40 min"
+        },
+        "lunch": {
+          "name": "Japanese Ramen with Pork",
+          "cuisine": "Asian",
+          "calories": 850,
+          "description": "Rich pork broth with ramen noodles, chashu pork, and soft-boiled egg",
+          "ingredients": [
+            {"item": "Ramen noodles", "amount": 200, "unit": "g"},
+            {"item": "Pork belly (chashu)", "amount": 200, "unit": "g"},
+            {"item": "Pork broth", "amount": 1000, "unit": "ml"},
+            {"item": "Soy sauce", "amount": 45, "unit": "ml"},
+            {"item": "Mirin", "amount": 30, "unit": "ml"},
+            {"item": "Eggs", "amount": 2, "unit": "large"},
+            {"item": "Green onions", "amount": 30, "unit": "g"},
+            {"item": "Nori seaweed", "amount": 2, "unit": "sheets"},
+            {"item": "Bamboo shoots", "amount": 50, "unit": "g"},
+            {"item": "Corn", "amount": 50, "unit": "g"}
+          ],
+          "prepTime": "60 min"
+        },
+        "dinner": {
+          "name": "Russian Chicken Kiev",
+          "cuisine": "Slavic",
+          "calories": 900,
+          "description": "Breaded chicken breast filled with garlic butter, served with mashed potatoes",
+          "ingredients": [
+            {"item": "Chicken breast", "amount": 4, "unit": "whole"},
+            {"item": "Butter", "amount": 100, "unit": "g"},
+            {"item": "Garlic", "amount": 20, "unit": "g"},
+            {"item": "Fresh dill", "amount": 20, "unit": "g"},
+            {"item": "Eggs", "amount": 2, "unit": "large"},
+            {"item": "All-purpose flour", "amount": 60, "unit": "g"},
+            {"item": "Breadcrumbs", "amount": 100, "unit": "g"},
+            {"item": "Potatoes", "amount": 600, "unit": "g"},
+            {"item": "Milk", "amount": 80, "unit": "ml"},
+            {"item": "Vegetable oil", "amount": 200, "unit": "ml"}
+          ],
+          "prepTime": "50 min",
+          "fancyLevel": "fancy"
+        }
+      }
+    }
+  ]
+}

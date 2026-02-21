@@ -1,0 +1,129 @@
+{
+  "generated": "2026-02-21T23:00:00Z",
+  "weekOf": "2026-02-22",
+  "categorizedGroceries": {
+    "Proteins": [
+      {"item": "Beef sirloin", "totalAmount": 900, "unit": "g", "meals": ["Beef Stroganoff", "Korean Bibimbap", "Vietnamese Pho Bo"]},
+      {"item": "Beef bones/short ribs", "totalAmount": 400, "unit": "g", "meals": ["Ukrainian Borscht"]},
+      {"item": "Ground beef", "totalAmount": 950, "unit": "g", "meals": ["Pelmeni", "Russian Golubtsy", "Kotleti"]},
+      {"item": "Ground pork", "totalAmount": 450, "unit": "g", "meals": ["Pelmeni", "Kotleti"]},
+      {"item": "Chicken breast", "totalAmount": 1650, "unit": "g", "meals": ["Thai Green Curry", "Chinese Kung Pao", "Russian Chicken Kiev"]},
+      {"item": "Chicken thighs", "totalAmount": 350, "unit": "g", "meals": ["Japanese Chicken Teriyaki"]},
+      {"item": "Pork belly (chashu)", "totalAmount": 200, "unit": "g", "meals": ["Japanese Ramen"]},
+      {"item": "Shrimp", "totalAmount": 250, "unit": "g", "meals": ["Thai Pad Thai"]},
+      {"item": "Bologna/ham", "totalAmount": 200, "unit": "g", "meals": ["Russian Olivier Salad"]}
+    ],
+    "Dairy & Eggs": [
+      {"item": "Eggs", "totalAmount": 28, "unit": "large", "meals": ["Blini", "Korean Rice w/ Egg", "Syrniki", "Pelmeni", "Vareniki", "Bibimbap", "Kotleti", "Pad Thai", "Olivier Salad", "Ramen", "Chicken Kiev", "Tamagoyaki"]},
+      {"item": "Milk (2%)", "totalAmount": 930, "unit": "ml", "meals": ["Blini", "Beef Stroganoff", "Kotleti", "Buckwheat Kasha", "Chicken Kiev"]},
+      {"item": "Sour cream", "totalAmount": 620, "unit": "g", "meals": ["Blini", "Syrniki", "Beef Stroganoff", "Borscht", "Pelmeni", "Vareniki", "Golubtsy"]},
+      {"item": "Butter", "totalAmount": 370, "unit": "g", "meals": ["Beef Stroganoff", "Vareniki", "Buckwheat Kasha", "Chicken Kiev"]},
+      {"item": "Cottage cheese (tvorg)", "totalAmount": 400, "unit": "g", "meals": ["Syrniki"]},
+      {"item": "Mayonnaise", "totalAmount": 120, "unit": "g", "meals": ["Olivier Salad"]}
+    ],
+    "Vegetables": [
+      {"item": "Potatoes", "totalAmount": 2600, "unit": "g", "meals": ["Beef Stroganoff", "Borscht", "Vareniki", "Olivier Salad", "Chicken Kiev"]},
+      {"item": "Onions", "totalAmount": 850, "unit": "g", "meals": ["Beef Stroganoff", "Borscht", "Pelmeni", "Vareniki", "Golubtsy", "Kotleti", "Pad Thai", "Ramen"]},
+      {"item": "Carrots", "totalAmount": 580, "unit": "g", "meals": ["Borscht", "Bibimbap", "Golubtsy", "Olivier Salad"]},
+      {"item": "Cabbage", "totalAmount": 1000, "unit": "g", "meals": ["Borscht", "Golubtsy"]},
+      {"item": "Beets", "totalAmount": 300, "unit": "g", "meals": ["Borscht"]},
+      {"item": "Garlic", "totalAmount": 70, "unit": "g", "meals": ["Teriyaki", "Kung Pao", "Bibimbap", "Chicken Kiev"]},
+      {"item": "Ginger", "totalAmount": 45, "unit": "g", "meals": ["Teriyaki", "Kung Pao"]},
+      {"item": "Green onions", "totalAmount": 150, "unit": "g", "meals": ["Miso Soup", "Korean Rice", "Pad Thai", "Ramen", "Olivier Salad"]},
+      {"item": "Broccoli", "totalAmount": 200, "unit": "g", "meals": ["Teriyaki"]},
+      {"item": "Bell peppers", "totalAmount": 150, "unit": "g", "meals": ["Kung Pao"]},
+      {"item": "Zucchini", "totalAmount": 180, "unit": "g", "meals": ["Kung Pao", "Bibimbap"]},
+      {"item": "Spinach", "totalAmount": 100, "unit": "g", "meals": ["Bibimbap"]},
+      {"item": "Bean sprouts", "totalAmount": 300, "unit": "g", "meals": ["Pho Bo", "Bibimbap", "Pad Thai"]},
+      {"item": "Thai eggplant", "totalAmount": 150, "unit": "g", "meals": ["Thai Green Curry"]},
+      {"item": "Snow peas", "totalAmount": 100, "unit": "g", "meals": ["Thai Green Curry"]},
+      {"item": "Bamboo shoots", "totalAmount": 150, "unit": "g", "meals": ["Thai Green Curry", "Ramen"]},
+      {"item": "Fresh dill", "totalAmount": 50, "unit": "g", "meals": ["Borscht", "Chicken Kiev"]},
+      {"item": "Thai basil", "totalAmount": 50, "unit": "g", "meals": ["Thai Green Curry", "Pho Bo"]},
+      {"item": "Cilantro", "totalAmount": 15, "unit": "g", "meals": ["Pho Bo"]},
+      {"item": "Fresh berries", "totalAmount": 100, "unit": "g", "meals": ["Syrniki"]},
+      {"item": "Corn", "totalAmount": 50, "unit": "g", "meals": ["Ramen"]},
+      {"item": "Pickles", "totalAmount": 100, "unit": "g", "meals": ["Olivier Salad"]}
+    ],
+    "Grains & Pasta": [
+      {"item": "Jasmine rice", "totalAmount": 1140, "unit": "g", "meals": ["Korean Rice", "Green Curry", "Teriyaki", "Kung Pao", "Tamagoyaki"]},
+      {"item": "Buckwheat groats", "totalAmount": 200, "unit": "g", "meals": ["Buckwheat Kasha"]},
+      {"item": "Pasta", "totalAmount": 250, "unit": "g", "meals": ["Kotleti"]},
+      {"item": "Rice noodles", "totalAmount": 150, "unit": "g", "meals": ["Pho Bo"]},
+      {"item": "Ramen noodles", "totalAmount": 200, "unit": "g", "meals": ["Ramen"]},
+      {"item": "Rice noodles (wide)", "totalAmount": 200, "unit": "g", "meals": ["Pad Thai"]},
+      {"item": "Bread (for Kotleti)", "totalAmount": 60, "unit": "g", "meals": ["Kotleti"]},
+      {"item": "Dark rye bread", "totalAmount": 120, "unit": "g", "meals": ["Borscht"]},
+      {"item": "Breadcrumbs", "totalAmount": 100, "unit": "g", "meals": ["Chicken Kiev"]}
+    ],
+    "Canned & Jarred": [
+      {"item": "Coconut milk", "totalAmount": 400, "unit": "ml", "meals": ["Thai Green Curry"]},
+      {"item": "Tomato sauce", "totalAmount": 700, "unit": "ml", "meals": ["Golubtsy", "Kotleti"]},
+      {"item": "Tomato paste", "totalAmount": 30, "unit": "g", "meals": ["Borscht"]},
+      {"item": "Green peas (canned)", "totalAmount": 150, "unit": "g", "meals": ["Olivier Salad"]},
+      {"item": "Beef broth", "totalAmount": 2950, "unit": "ml", "meals": ["Beef Stroganoff", "Borscht", "Pho Bo"]},
+      {"item": "Pork broth", "totalAmount": 1000, "unit": "ml", "meals": ["Ramen"]},
+      {"item": "Dashi stock", "totalAmount": 800, "unit": "ml", "meals": ["Miso Soup"]},
+      {"item": "Fish sauce", "totalAmount": 75, "unit": "ml", "meals": ["Thai Green Curry", "Pad Thai"]},
+      {"item": "Oyster sauce", "totalAmount": 0, "unit": "ml", "meals": []}
+    ],
+    "Asian Sauces & Condiments": [
+      {"item": "Soy sauce", "totalAmount": 285, "unit": "ml", "meals": ["Miso Soup", "Korean Rice", "Teriyaki", "Bibimbap", "Kung Pao", "Tamagoyaki", "Ramen"]},
+      {"item": "Mirin", "totalAmount": 85, "unit": "ml", "meals": ["Teriyaki", "Tamagoyaki", "Ramen"]},
+      {"item": "Sake", "totalAmount": 30, "unit": "ml", "meals": ["Teriyaki"]},
+      {"item": "Rice vinegar", "totalAmount": 30, "unit": "ml", "meals": ["Kung Pao"]},
+      {"item": "Sesame oil", "totalAmount": 50, "unit": "ml", "meals": ["Korean Rice", "Bibimbap"]},
+      {"item": "Thai green curry paste", "totalAmount": 50, "unit": "g", "meals": ["Thai Green Curry"]},
+      {"item": "Gochujang (Korean chili paste)", "totalAmount": 40, "unit": "g", "meals": ["Bibimbap"]},
+      {"item": "Tamarind paste", "totalAmount": 30, "unit": "ml", "meals": ["Pad Thai"]},
+      {"item": "Hoisin sauce", "totalAmount": 30, "unit": "ml", "meals": ["Pho Bo"]},
+      {"item": "Sriracha", "totalAmount": 15, "unit": "ml", "meals": ["Pho Bo"]},
+      {"item": "White vinegar", "totalAmount": 15, "unit": "ml", "meals": ["Pelmeni"]}
+    ],
+    "Herbs & Spices": [
+      {"item": "Salt", "totalAmount": 20, "unit": "g", "meals": ["Blini", "Buckwheat Kasha"]},
+      {"item": "Sugar", "totalAmount": 170, "unit": "g", "meals": ["Blini", "Syrniki", "Teriyaki", "Kung Pao", "Tamagoyaki"]},
+      {"item": "Palm sugar", "totalAmount": 50, "unit": "g", "meals": ["Thai Green Curry", "Pad Thai"]},
+      {"item": "Sesame seeds", "totalAmount": 35, "unit": "g", "meals": ["Korean Rice", "Teriyaki", "Bibimbap"]},
+      {"item": "Star anise", "totalAmount": 2, "unit": "whole", "meals": ["Pho Bo"]},
+      {"item": "Cinnamon stick", "totalAmount": 1, "unit": "whole", "meals": ["Pho Bo"]},
+      {"item": "Dried red chilies", "totalAmount": 15, "unit": "g", "meals": ["Kung Pao"]},
+      {"item": "Vanilla extract", "totalAmount": 5, "unit": "ml", "meals": ["Syrniki"]},
+      {"item": "Dijon mustard", "totalAmount": 20, "unit": "g", "meals": ["Beef Stroganoff"]}
+    ],
+    "Dried Goods & Nuts": [
+      {"item": "All-purpose flour", "totalAmount": 920, "unit": "g", "meals": ["Blini", "Beef Stroganoff", "Syrniki", "Pelmeni", "Vareniki", "Kotleti", "Chicken Kiev"]},
+      {"item": "Peanuts", "totalAmount": 140, "unit": "g", "meals": ["Kung Pao", "Pad Thai"]},
+      {"item": "Cornstarch", "totalAmount": 20, "unit": "g", "meals": ["Kung Pao"]},
+      {"item": "Wakame seaweed (dried)", "totalAmount": 10, "unit": "g", "meals": ["Miso Soup"]},
+      {"item": "Nori seaweed", "totalAmount": 2, "unit": "sheets", "meals": ["Ramen"]},
+      {"item": "Shiitake mushrooms (dried)", "totalAmount": 60, "unit": "g", "meals": ["Bibimbap"]},
+      {"item": "Cremini mushrooms (fresh)", "totalAmount": 300, "unit": "g", "meals": ["Beef Stroganoff"]},
+      {"item": "Bean sprouts", "totalAmount": 300, "unit": "g", "meals": ["Pho Bo", "Bibimbap", "Pad Thai"]}
+    ],
+    "Tofu & Plant Protein": [
+      {"item": "Silken tofu", "totalAmount": 200, "unit": "g", "meals": ["Miso Soup"]},
+      {"item": "Firm tofu", "totalAmount": 100, "unit": "g", "meals": ["Pad Thai"]}
+    ],
+    "Fruits": [
+      {"item": "Lime", "totalAmount": 2, "unit": "whole", "meals": ["Pho Bo", "Pad Thai"]},
+      {"item": "Berry jam", "totalAmount": 80, "unit": "g", "meals": ["Blini"]}
+    ],
+    "Fats & Oils": [
+      {"item": "Vegetable oil", "totalAmount": 540, "unit": "ml", "meals": ["Blini", "Beef Stroganoff", "Syrniki", "Vareniki", "Kung Pao", "Golubtsy", "Tamagoyaki", "Kotleti", "Pad Thai", "Chicken Kiev"]}
+    ],
+    "Miso & Fermented": [
+      {"item": "Miso paste (white)", "totalAmount": 60, "unit": "g", "meals": ["Miso Soup"]}
+    ],
+    "Specialty Items": [
+      {"item": "Rice (uncooked, for Golubtsy)", "totalAmount": 100, "unit": "g", "meals": ["Golubtsy"]},
+      {"item": "Pelmeni (frozen)", "totalAmount": 600, "unit": "g", "meals": ["Pelmeni"]}
+    ]
+  },
+  "summary": {
+    "totalItems": 82,
+    "categories": 13,
+    "estimatedCost": "$185-220",
+    "notes": "Some items like flour, rice, and oil will have leftovers for future weeks. Specialty Asian ingredients may require visit to Asian market."
+  }
+}
