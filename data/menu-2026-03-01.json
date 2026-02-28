@@ -1,0 +1,382 @@
+{
+  "generated": "2026-02-28T23:00:00Z",
+  "week": "March 1-7, 2026",
+  "targets": {
+    "lower": 3400,
+    "medium": 4000,
+    "higher": 4700
+  },
+  "balance": {
+    "slavic_pasta": 13,
+    "asian": 8,
+    "slavic_percentage": 61.9,
+    "asian_percentage": 38.1
+  },
+  "fancy_dinners": 2,
+  "days": [
+    {
+      "day": "Monday",
+      "date": "2026-03-02",
+      "meals": {
+        "breakfast": {
+          "name": "Syrniki (Cottage Cheese Pancakes)",
+          "cuisine": "Slavic",
+          "calories": 450,
+          "ingredients": [
+            {"item": "cottage cheese", "amount": 400, "unit": "g"},
+            {"item": "eggs", "amount": 2, "unit": "large"},
+            {"item": "flour", "amount": 80, "unit": "g"},
+            {"item": "sugar", "amount": 40, "unit": "g"},
+            {"item": "vanilla extract", "amount": 5, "unit": "ml"},
+            {"item": "sour cream", "amount": 100, "unit": "g"},
+            {"item": "oil", "amount": 30, "unit": "ml"}
+          ],
+          "instructions": "Mix cottage cheese, eggs, flour, sugar, and vanilla. Form patties, fry until golden. Serve with sour cream."
+        },
+        "lunch": {
+          "name": "Classic Borscht",
+          "cuisine": "Slavic",
+          "calories": 380,
+          "source": "natashaskitchen.com",
+          "ingredients": [
+            {"item": "beets", "amount": 450, "unit": "g"},
+            {"item": "chicken broth", "amount": 2, "unit": "L"},
+            {"item": "potatoes", "amount": 400, "unit": "g"},
+            {"item": "carrots", "amount": 200, "unit": "g"},
+            {"item": "onion", "amount": 150, "unit": "g"},
+            {"item": "celery", "amount": 100, "unit": "g"},
+            {"item": "cannellini beans", "amount": 400, "unit": "g"},
+            {"item": "ketchup", "amount": 60, "unit": "ml"},
+            {"item": "white vinegar", "amount": 45, "unit": "ml"},
+            {"item": "dill", "amount": 30, "unit": "g"},
+            {"item": "garlic", "amount": 10, "unit": "g"},
+            {"item": "olive oil", "amount": 60, "unit": "ml"}
+          ],
+          "instructions": "Sauté grated beets in oil. Add broth, potatoes, carrots. Cook until tender. Add sautéed onions, celery, ketchup. Add beans, vinegar, seasonings. Simmer 3 min."
+        },
+        "dinner": {
+          "name": "Chicken Pad Thai",
+          "cuisine": "Asian",
+          "calories": 650,
+          "source": "recipetineats.com",
+          "ingredients": [
+            {"item": "rice noodles", "amount": 250, "unit": "g"},
+            {"item": "chicken breast", "amount": 300, "unit": "g"},
+            {"item": "tamarind puree", "amount": 45, "unit": "ml"},
+            {"item": "fish sauce", "amount": 60, "unit": "ml"},
+            {"item": "oyster sauce", "amount": 45, "unit": "ml"},
+            {"item": "brown sugar", "amount": 90, "unit": "g"},
+            {"item": "eggs", "amount": 4, "unit": "large"},
+            {"item": "firm tofu", "amount": 150, "unit": "g"},
+            {"item": "bean sprouts", "amount": 300, "unit": "g"},
+            {"item": "garlic chives", "amount": 50, "unit": "g"},
+            {"item": "peanuts", "amount": 50, "unit": "g"},
+            {"item": "garlic", "amount": 10, "unit": "g"},
+            {"item": "vegetable oil", "amount": 45, "unit": "ml"}
+          ],
+          "instructions": "Soak noodles 5 min in hot water. Mix sauce. Stir-fry chicken, push aside, scramble eggs. Add noodles, sauce, tofu, sprouts. Toss until absorbed. Top with peanuts."
+        }
+      }
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-03-03",
+      "meals": {
+        "breakfast": {
+          "name": "Asian Scrambled Eggs with Rice",
+          "cuisine": "Asian",
+          "calories": 420,
+          "ingredients": [
+            {"item": "eggs", "amount": 4, "unit": "large"},
+            {"item": "rice", "amount": 200, "unit": "g"},
+            {"item": "soy sauce", "amount": 30, "unit": "ml"},
+            {"item": "sesame oil", "amount": 15, "unit": "ml"},
+            {"item": "green onions", "amount": 30, "unit": "g"},
+            {"item": "vegetable oil", "amount": 15, "unit": "ml"}
+          ],
+          "instructions": "Cook rice. Scramble eggs with soy sauce. Combine with rice, drizzle sesame oil, top with green onions."
+        },
+        "lunch": {
+          "name": "Pelmeni (Russian Meat Dumplings)",
+          "cuisine": "Slavic",
+          "calories": 520,
+          "ingredients": [
+            {"item": "ground beef", "amount": 300, "unit": "g"},
+            {"item": "ground pork", "amount": 200, "unit": "g"},
+            {"item": "flour", "amount": 300, "unit": "g"},
+            {"item": "eggs", "amount": 1, "unit": "large"},
+            {"item": "onion", "amount": 150, "unit": "g"},
+            {"item": "sour cream", "amount": 100, "unit": "g"},
+            {"item": "butter", "amount": 50, "unit": "g"},
+            {"item": "dill", "amount": 15, "unit": "g"}
+          ],
+          "instructions": "Make dough from flour, egg, water. Mix meats with onion. Form dumplings, boil 7-8 min. Serve with butter and sour cream."
+        },
+        "dinner": {
+          "name": "Beef Stroganoff",
+          "cuisine": "Slavic",
+          "calories": 467,
+          "source": "vikalinka.com",
+          "ingredients": [
+            {"item": "beef sirloin", "amount": 450, "unit": "g"},
+            {"item": "cremini mushrooms", "amount": 225, "unit": "g"},
+            {"item": "onion", "amount": 150, "unit": "g"},
+            {"item": "sour cream", "amount": 250, "unit": "ml"},
+            {"item": "beef stock", "amount": 125, "unit": "ml"},
+            {"item": "brandy", "amount": 60, "unit": "ml"},
+            {"item": "whole grain mustard", "amount": 15, "unit": "ml"},
+            {"item": "butter", "amount": 30, "unit": "g"},
+            {"item": "olive oil", "amount": 15, "unit": "ml"}
+          ],
+          "instructions": "Sauté mushrooms and onions, set aside. Sear beef strips. Deglaze with brandy. Add stock, mustard, return mushrooms. Stir in sour cream off heat."
+        }
+      }
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-03-04",
+      "meals": {
+        "breakfast": {
+          "name": "Buckwheat Kasha with Mushrooms",
+          "cuisine": "Slavic",
+          "calories": 380,
+          "ingredients": [
+            {"item": "buckwheat", "amount": 200, "unit": "g"},
+            {"item": "mushrooms", "amount": 150, "unit": "g"},
+            {"item": "onion", "amount": 100, "unit": "g"},
+            {"item": "butter", "amount": 40, "unit": "g"},
+            {"item": "eggs", "amount": 2, "unit": "large"}
+          ],
+          "instructions": "Cook buckwheat. Sauté mushrooms and onions in butter. Combine with buckwheat. Top with fried eggs."
+        },
+        "lunch": {
+          "name": "Fried Rice with Vegetables",
+          "cuisine": "Asian",
+          "calories": 480,
+          "ingredients": [
+            {"item": "rice", "amount": 300, "unit": "g"},
+            {"item": "eggs", "amount": 3, "unit": "large"},
+            {"item": "soy sauce", "amount": 45, "unit": "ml"},
+            {"item": "sesame oil", "amount": 15, "unit": "ml"},
+            {"item": "frozen peas and carrots", "amount": 200, "unit": "g"},
+            {"item": "green onions", "amount": 40, "unit": "g"},
+            {"item": "vegetable oil", "amount": 30, "unit": "ml"}
+          ],
+          "instructions": "Use day-old rice. Stir-fry vegetables, scramble eggs. Add rice, soy sauce, sesame oil. Toss until heated through."
+        },
+        "dinner": {
+          "name": "Chicken Kiev",
+          "cuisine": "Slavic",
+          "calories": 384,
+          "source": "natashaskitchen.com",
+          "fancy": true,
+          "ingredients": [
+            {"item": "chicken breast", "amount": 900, "unit": "g"},
+            {"item": "butter", "amount": 90, "unit": "g"},
+            {"item": "garlic", "amount": 15, "unit": "g"},
+            {"item": "parsley", "amount": 30, "unit": "g"},
+            {"item": "lemon juice", "amount": 15, "unit": "ml"},
+            {"item": "flour", "amount": 120, "unit": "g"},
+            {"item": "eggs", "amount": 2, "unit": "large"},
+            {"item": "panko breadcrumbs", "amount": 250, "unit": "g"},
+            {"item": "olive oil", "amount": 150, "unit": "ml"}
+          ],
+          "instructions": "Mix butter with garlic, parsley, lemon. Cut pocket in chicken, stuff with butter. Dredge in flour, egg, panko. Pan-fry 4 min per side."
+        }
+      }
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-03-05",
+      "meals": {
+        "breakfast": {
+          "name": "Congee (Rice Porridge)",
+          "cuisine": "Asian",
+          "calories": 320,
+          "ingredients": [
+            {"item": "rice", "amount": 150, "unit": "g"},
+            {"item": "chicken broth", "amount": 1, "unit": "L"},
+            {"item": "ginger", "amount": 20, "unit": "g"},
+            {"item": "green onions", "amount": 30, "unit": "g"},
+            {"item": "soy sauce", "amount": 30, "unit": "ml"},
+            {"item": "sesame oil", "amount": 10, "unit": "ml"}
+          ],
+          "instructions": "Simmer rice in broth with ginger until creamy (45 min). Top with green onions, soy sauce, sesame oil."
+        },
+        "lunch": {
+          "name": "Borscht (Leftover)",
+          "cuisine": "Slavic",
+          "calories": 380,
+          "ingredients": [],
+          "instructions": "Reheat Monday's borscht. Flavor improves overnight!"
+        },
+        "dinner": {
+          "name": "Spaghetti Bolognese",
+          "cuisine": "Slavic/Pasta",
+          "calories": 620,
+          "ingredients": [
+            {"item": "spaghetti", "amount": 400, "unit": "g"},
+            {"item": "ground beef", "amount": 400, "unit": "g"},
+            {"item": "canned tomatoes", "amount": 800, "unit": "g"},
+            {"item": "onion", "amount": 150, "unit": "g"},
+            {"item": "carrot", "amount": 100, "unit": "g"},
+            {"item": "celery", "amount": 100, "unit": "g"},
+            {"item": "garlic", "amount": 15, "unit": "g"},
+            {"item": "olive oil", "amount": 45, "unit": "ml"},
+            {"item": "parmesan", "amount": 50, "unit": "g"}
+          ],
+          "instructions": "Sauté mirepoix, add beef, brown. Add tomatoes, simmer 30 min. Toss with pasta, top with parmesan."
+        }
+      }
+    },
+    {
+      "day": "Friday",
+      "date": "2026-03-06",
+      "meals": {
+        "breakfast": {
+          "name": "Oladyi (Russian Pancakes)",
+          "cuisine": "Slavic",
+          "calories": 400,
+          "ingredients": [
+            {"item": "flour", "amount": 200, "unit": "g"},
+            {"item": "eggs", "amount": 2, "unit": "large"},
+            {"item": "milk", "amount": 250, "unit": "ml"},
+            {"item": "sugar", "amount": 40, "unit": "g"},
+            {"item": "sour cream", "amount": 100, "unit": "g"},
+            {"item": "jam", "amount": 60, "unit": "g"},
+            {"item": "vegetable oil", "amount": 30, "unit": "ml"}
+          ],
+          "instructions": "Mix batter, let rest 15 min. Fry small pancakes. Serve with sour cream and jam."
+        },
+        "lunch": {
+          "name": "Thai Green Curry",
+          "cuisine": "Asian",
+          "calories": 550,
+          "ingredients": [
+            {"item": "chicken breast", "amount": 350, "unit": "g"},
+            {"item": "coconut milk", "amount": 400, "unit": "ml"},
+            {"item": "green curry paste", "amount": 60, "unit": "g"},
+            {"item": "bamboo shoots", "amount": 150, "unit": "g"},
+            {"item": "bell pepper", "amount": 150, "unit": "g"},
+            {"item": "thai basil", "amount": 20, "unit": "g"},
+            {"item": "fish sauce", "amount": 30, "unit": "ml"},
+            {"item": "palm sugar", "amount": 20, "unit": "g"},
+            {"item": "jasmine rice", "amount": 200, "unit": "g"}
+          ],
+          "instructions": "Sauté curry paste in coconut cream. Add chicken, cook through. Add coconut milk, vegetables. Season with fish sauce and sugar. Serve over rice."
+        },
+        "dinner": {
+          "name": "Pierogi with Potato and Cheese",
+          "cuisine": "Slavic",
+          "calories": 480,
+          "source": "recipetineats.com",
+          "ingredients": [
+            {"item": "flour", "amount": 400, "unit": "g"},
+            {"item": "eggs", "amount": 1, "unit": "large"},
+            {"item": "sour cream", "amount": 200, "unit": "g"},
+            {"item": "potatoes", "amount": 500, "unit": "g"},
+            {"item": "cheddar cheese", "amount": 150, "unit": "g"},
+            {"item": "onion", "amount": 200, "unit": "g"},
+            {"item": "butter", "amount": 80, "unit": "g"}
+          ],
+          "instructions": "Make dough with flour, egg, sour cream. Mash potatoes with cheese. Form dumplings, boil 3 min. Sauté with butter and onions."
+        }
+      }
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-03-07",
+      "meals": {
+        "breakfast": {
+          "name": "Dim Sum Style Dumplings",
+          "cuisine": "Asian",
+          "calories": 380,
+          "ingredients": [
+            {"item": "dumpling wrappers", "amount": 500, "unit": "g"},
+            {"item": "ground pork", "amount": 250, "unit": "g"},
+            {"item": "cabbage", "amount": 150, "unit": "g"},
+            {"item": "ginger", "amount": 15, "unit": "g"},
+            {"item": "soy sauce", "amount": 30, "unit": "ml"},
+            {"item": "sesame oil", "amount": 15, "unit": "ml"},
+            {"item": "green onions", "amount": 30, "unit": "g"}
+          ],
+          "instructions": "Mix pork with cabbage, ginger, seasonings. Fill wrappers, pleat closed. Steam 8 min or pan-fry."
+        },
+        "lunch": {
+          "name": "Kotleti (Russian Meat Patties)",
+          "cuisine": "Slavic",
+          "calories": 420,
+          "ingredients": [
+            {"item": "ground beef", "amount": 350, "unit": "g"},
+            {"item": "ground pork", "amount": 150, "unit": "g"},
+            {"item": "onion", "amount": 150, "unit": "g"},
+            {"item": "bread", "amount": 60, "unit": "g"},
+            {"item": "milk", "amount": 100, "unit": "ml"},
+            {"item": "eggs", "amount": 1, "unit": "large"},
+            {"item": "vegetable oil", "amount": 45, "unit": "ml"}
+          ],
+          "instructions": "Soak bread in milk. Mix meats with onion, egg, bread. Form patties, fry until golden."
+        },
+        "dinner": {
+          "name": "Beef Stroganoff (Leftover)",
+          "cuisine": "Slavic",
+          "calories": 467,
+          "ingredients": [],
+          "instructions": "Reheat Tuesday's stroganoff. Serve over fresh mashed potatoes or rice."
+        }
+      }
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-03-08",
+      "meals": {
+        "breakfast": {
+          "name": "Blini with Caviar and Sour Cream",
+          "cuisine": "Slavic",
+          "calories": 450,
+          "fancy": true,
+          "ingredients": [
+            {"item": "flour", "amount": 150, "unit": "g"},
+            {"item": "buckwheat flour", "amount": 100, "unit": "g"},
+            {"item": "eggs", "amount": 3, "unit": "large"},
+            {"item": "milk", "amount": 300, "unit": "ml"},
+            {"item": "butter", "amount": 60, "unit": "g"},
+            {"item": "sour cream", "amount": 150, "unit": "g"},
+            {"item": "salmon roe", "amount": 50, "unit": "g"}
+          ],
+          "instructions": "Make thin crepe-like batter. Cook blini in butter. Top with sour cream and caviar."
+        },
+        "lunch": {
+          "name": "Tom Yum Soup",
+          "cuisine": "Asian",
+          "calories": 280,
+          "ingredients": [
+            {"item": "shrimp", "amount": 200, "unit": "g"},
+            {"item": "mushrooms", "amount": 150, "unit": "g"},
+            {"item": "lemongrass", "amount": 30, "unit": "g"},
+            {"item": "galangal", "amount": 20, "unit": "g"},
+            {"item": "kaffir lime leaves", "amount": 4, "unit": "leaves"},
+            {"item": "fish sauce", "amount": 45, "unit": "ml"},
+            {"item": "lime juice", "amount": 60, "unit": "ml"},
+            {"item": "chili paste", "amount": 30, "unit": "g"},
+            {"item": "coconut milk", "amount": 200, "unit": "ml"}
+          ],
+          "instructions": "Boil aromatics in broth. Add mushrooms, shrimp. Season with fish sauce, lime, chili. Add coconut milk."
+        },
+        "dinner": {
+          "name": "Pasta Carbonara",
+          "cuisine": "Slavic/Pasta",
+          "calories": 580,
+          "ingredients": [
+            {"item": "spaghetti", "amount": 400, "unit": "g"},
+            {"item": "guanciale or pancetta", "amount": 150, "unit": "g"},
+            {"item": "eggs", "amount": 4, "unit": "large"},
+            {"item": "pecorino romano", "amount": 100, "unit": "g"},
+            {"item": "black pepper", "amount": 5, "unit": "g"}
+          ],
+          "instructions": "Crisp guanciale. Mix eggs with cheese. Toss hot pasta with guanciale, add egg mixture off heat. Season with pepper."
+        }
+      }
+    }
+  ]
+}

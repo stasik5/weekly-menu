@@ -1,0 +1,187 @@
+{
+  "generated": "2026-02-28T23:00:00Z",
+  "week": "March 1-7, 2026",
+  "pantry": {
+    "Meat & Poultry": [
+      {"item": "chicken breast", "needed": 1550, "in_stock": 0, "to_buy": 1550, "unit": "g"},
+      {"item": "beef sirloin", "needed": 450, "in_stock": 0, "to_buy": 450, "unit": "g"},
+      {"item": "ground beef", "needed": 1150, "in_stock": 400, "to_buy": 750, "unit": "g"},
+      {"item": "ground pork", "needed": 600, "in_stock": 300, "to_buy": 300, "unit": "g"},
+      {"item": "shrimp", "needed": 200, "in_stock": 0, "to_buy": 200, "unit": "g"},
+      {"item": "guanciale/pancetta", "needed": 150, "in_stock": 0, "to_buy": 150, "unit": "g"}
+    ],
+    "Dairy & Eggs": [
+      {"item": "eggs", "needed": 30, "in_stock": 12, "to_buy": 18, "unit": "large"},
+      {"item": "sour cream", "needed": 800, "in_stock": 200, "to_buy": 600, "unit": "g"},
+      {"item": "butter", "needed": 320, "in_stock": 250, "to_buy": 70, "unit": "g"},
+      {"item": "cottage cheese", "needed": 400, "in_stock": 0, "to_buy": 400, "unit": "g"},
+      {"item": "cheddar cheese", "needed": 150, "in_stock": 100, "to_buy": 50, "unit": "g"},
+      {"item": "parmesan", "needed": 50, "in_stock": 50, "to_buy": 0, "unit": "g"},
+      {"item": "pecorino romano", "needed": 100, "in_stock": 0, "to_buy": 100, "unit": "g"},
+      {"item": "milk", "needed": 650, "in_stock": 500, "to_buy": 150, "unit": "ml"}
+    ],
+    "Vegetables": [
+      {"item": "beets", "needed": 450, "in_stock": 0, "to_buy": 450, "unit": "g"},
+      {"item": "potatoes", "needed": 900, "in_stock": 1000, "to_buy": 0, "unit": "g"},
+      {"item": "carrots", "needed": 300, "in_stock": 400, "to_buy": 0, "unit": "g"},
+      {"item": "onion", "needed": 900, "in_stock": 500, "to_buy": 400, "unit": "g"},
+      {"item": "celery", "needed": 200, "in_stock": 200, "to_buy": 0, "unit": "g"},
+      {"item": "garlic", "needed": 60, "in_stock": 50, "to_buy": 10, "unit": "g"},
+      {"item": "mushrooms", "needed": 525, "in_stock": 200, "to_buy": 325, "unit": "g"},
+      {"item": "ginger", "needed": 35, "in_stock": 30, "to_buy": 5, "unit": "g"},
+      {"item": "green onions", "needed": 130, "in_stock": 0, "to_buy": 130, "unit": "g"},
+      {"item": "frozen peas and carrots", "needed": 200, "in_stock": 400, "to_buy": 0, "unit": "g"},
+      {"item": "bell pepper", "needed": 150, "in_stock": 0, "to_buy": 150, "unit": "g"},
+      {"item": "cabbage", "needed": 150, "in_stock": 500, "to_buy": 0, "unit": "g"}
+    ],
+    "Herbs & Aromatics": [
+      {"item": "dill", "needed": 60, "in_stock": 0, "to_buy": 60, "unit": "g"},
+      {"item": "parsley", "needed": 30, "in_stock": 0, "to_buy": 30, "unit": "g"},
+      {"item": "thai basil", "needed": 20, "in_stock": 0, "to_buy": 20, "unit": "g"},
+      {"item": "lemongrass", "needed": 30, "in_stock": 0, "to_buy": 30, "unit": "g"},
+      {"item": "galangal", "needed": 20, "in_stock": 0, "to_buy": 20, "unit": "g"},
+      {"item": "kaffir lime leaves", "needed": 4, "in_stock": 0, "to_buy": 4, "unit": "leaves"},
+      {"item": "garlic chives", "needed": 50, "in_stock": 0, "to_buy": 50, "unit": "g"}
+    ],
+    "Grains & Pasta": [
+      {"item": "rice noodles", "needed": 250, "in_stock": 0, "to_buy": 250, "unit": "g"},
+      {"item": "rice", "needed": 350, "in_stock": 1000, "to_buy": 0, "unit": "g"},
+      {"item": "jasmine rice", "needed": 200, "in_stock": 0, "to_buy": 200, "unit": "g"},
+      {"item": "spaghetti", "needed": 800, "in_stock": 500, "to_buy": 300, "unit": "g"},
+      {"item": "buckwheat", "needed": 200, "in_stock": 500, "to_buy": 0, "unit": "g"},
+      {"item": "buckwheat flour", "needed": 100, "in_stock": 0, "to_buy": 100, "unit": "g"},
+      {"item": "flour", "needed": 1250, "in_stock": 1000, "to_buy": 250, "unit": "g"},
+      {"item": "panko breadcrumbs", "needed": 250, "in_stock": 0, "to_buy": 250, "unit": "g"},
+      {"item": "bread", "needed": 60, "in_stock": 0, "to_buy": 60, "unit": "g"},
+      {"item": "dumpling wrappers", "needed": 500, "in_stock": 0, "to_buy": 500, "unit": "g"}
+    ],
+    "Canned & Jarred": [
+      {"item": "canned tomatoes", "needed": 800, "in_stock": 800, "to_buy": 0, "unit": "g"},
+      {"item": "cannellini beans", "needed": 400, "in_stock": 0, "to_buy": 400, "unit": "g"},
+      {"item": "coconut milk", "needed": 600, "in_stock": 400, "to_buy": 200, "unit": "ml"},
+      {"item": "bamboo shoots", "needed": 150, "in_stock": 0, "to_buy": 150, "unit": "g"},
+      {"item": "tamarind puree", "needed": 45, "in_stock": 0, "to_buy": 45, "unit": "ml"},
+      {"item": "green curry paste", "needed": 60, "in_stock": 0, "to_buy": 60, "unit": "g"},
+      {"item": "chili paste", "needed": 30, "in_stock": 0, "to_buy": 30, "unit": "g"},
+      {"item": "tomato paste", "needed": 50, "in_stock": 100, "to_buy": 0, "unit": "g"}
+    ],
+    "Sauces & Condiments": [
+      {"item": "soy sauce", "needed": 135, "in_stock": 200, "to_buy": 0, "unit": "ml"},
+      {"item": "fish sauce", "needed": 165, "in_stock": 200, "to_buy": 0, "unit": "ml"},
+      {"item": "oyster sauce", "needed": 45, "in_stock": 0, "to_buy": 45, "unit": "ml"},
+      {"item": "ketchup", "needed": 60, "in_stock": 500, "to_buy": 0, "unit": "ml"},
+      {"item": "whole grain mustard", "needed": 15, "in_stock": 50, "to_buy": 0, "unit": "ml"},
+      {"item": "sesame oil", "needed": 70, "in_stock": 100, "to_buy": 0, "unit": "ml"},
+      {"item": "white vinegar", "needed": 45, "in_stock": 500, "to_buy": 0, "unit": "ml"},
+      {"item": "lime juice", "needed": 60, "in_stock": 0, "to_buy": 60, "unit": "ml"},
+      {"item": "lemon juice", "needed": 15, "in_stock": 50, "to_buy": 0, "unit": "ml"},
+      {"item": "vanilla extract", "needed": 5, "in_stock": 30, "to_buy": 0, "unit": "ml"}
+    ],
+    "Broths & Stocks": [
+      {"item": "chicken broth", "needed": 3000, "in_stock": 1000, "to_buy": 2000, "unit": "ml"},
+      {"item": "beef stock", "needed": 125, "in_stock": 500, "to_buy": 0, "unit": "ml"}
+    ],
+    "Oils & Fats": [
+      {"item": "olive oil", "needed": 390, "in_stock": 500, "to_buy": 0, "unit": "ml"},
+      {"item": "vegetable oil", "needed": 165, "in_stock": 500, "to_buy": 0, "unit": "ml"}
+    ],
+    "Nuts & Seeds": [
+      {"item": "peanuts", "needed": 50, "in_stock": 0, "to_buy": 50, "unit": "g"}
+    ],
+    "Spices & Sweeteners": [
+      {"item": "brown sugar", "needed": 130, "in_stock": 200, "to_buy": 0, "unit": "g"},
+      {"item": "sugar", "needed": 80, "in_stock": 500, "to_buy": 0, "unit": "g"},
+      {"item": "palm sugar", "needed": 20, "in_stock": 0, "to_buy": 20, "unit": "g"},
+      {"item": "black pepper", "needed": 5, "in_stock": 20, "to_buy": 0, "unit": "g"},
+      {"item": "bay leaves", "needed": 3, "in_stock": 10, "to_buy": 0, "unit": "leaves"},
+      {"item": "salt", "needed": 30, "in_stock": 500, "to_buy": 0, "unit": "g"}
+    ],
+    "Other": [
+      {"item": "bean sprouts", "needed": 300, "in_stock": 0, "to_buy": 300, "unit": "g"},
+      {"item": "firm tofu", "needed": 150, "in_stock": 0, "to_buy": 150, "unit": "g"},
+      {"item": "brandy", "needed": 60, "in_stock": 0, "to_buy": 60, "unit": "ml"},
+      {"item": "salmon roe", "needed": 50, "in_stock": 0, "to_buy": 50, "unit": "g"},
+      {"item": "jam", "needed": 60, "in_stock": 200, "to_buy": 0, "unit": "g"}
+    ]
+  },
+  "shopping_list_only": {
+    "Meat & Poultry": [
+      {"item": "chicken breast", "amount": 1550, "unit": "g"},
+      {"item": "beef sirloin", "amount": 450, "unit": "g"},
+      {"item": "ground beef", "amount": 750, "unit": "g"},
+      {"item": "ground pork", "amount": 300, "unit": "g"},
+      {"item": "shrimp", "amount": 200, "unit": "g"},
+      {"item": "guanciale/pancetta", "amount": 150, "unit": "g"}
+    ],
+    "Dairy & Eggs": [
+      {"item": "eggs", "amount": 18, "unit": "large"},
+      {"item": "sour cream", "amount": 600, "unit": "g"},
+      {"item": "butter", "amount": 70, "unit": "g"},
+      {"item": "cottage cheese", "amount": 400, "unit": "g"},
+      {"item": "cheddar cheese", "amount": 50, "unit": "g"},
+      {"item": "pecorino romano", "amount": 100, "unit": "g"},
+      {"item": "milk", "amount": 150, "unit": "ml"}
+    ],
+    "Vegetables": [
+      {"item": "beets", "amount": 450, "unit": "g"},
+      {"item": "onion", "amount": 400, "unit": "g"},
+      {"item": "garlic", "amount": 10, "unit": "g"},
+      {"item": "mushrooms", "amount": 325, "unit": "g"},
+      {"item": "ginger", "amount": 5, "unit": "g"},
+      {"item": "green onions", "amount": 130, "unit": "g"},
+      {"item": "bell pepper", "amount": 150, "unit": "g"}
+    ],
+    "Herbs & Aromatics": [
+      {"item": "dill", "amount": 60, "unit": "g"},
+      {"item": "parsley", "amount": 30, "unit": "g"},
+      {"item": "thai basil", "amount": 20, "unit": "g"},
+      {"item": "lemongrass", "amount": 30, "unit": "g"},
+      {"item": "galangal", "amount": 20, "unit": "g"},
+      {"item": "kaffir lime leaves", "amount": 4, "unit": "leaves"},
+      {"item": "garlic chives", "amount": 50, "unit": "g"}
+    ],
+    "Grains & Pasta": [
+      {"item": "rice noodles", "amount": 250, "unit": "g"},
+      {"item": "jasmine rice", "amount": 200, "unit": "g"},
+      {"item": "spaghetti", "amount": 300, "unit": "g"},
+      {"item": "buckwheat flour", "amount": 100, "unit": "g"},
+      {"item": "flour", "amount": 250, "unit": "g"},
+      {"item": "panko breadcrumbs", "amount": 250, "unit": "g"},
+      {"item": "bread", "amount": 60, "unit": "g"},
+      {"item": "dumpling wrappers", "amount": 500, "unit": "g"}
+    ],
+    "Canned & Jarred": [
+      {"item": "cannellini beans", "amount": 400, "unit": "g"},
+      {"item": "coconut milk", "amount": 200, "unit": "ml"},
+      {"item": "bamboo shoots", "amount": 150, "unit": "g"},
+      {"item": "tamarind puree", "amount": 45, "unit": "ml"},
+      {"item": "green curry paste", "amount": 60, "unit": "g"},
+      {"item": "chili paste", "amount": 30, "unit": "g"}
+    ],
+    "Sauces & Condiments": [
+      {"item": "oyster sauce", "amount": 45, "unit": "ml"},
+      {"item": "lime juice", "amount": 60, "unit": "ml"}
+    ],
+    "Broths & Stocks": [
+      {"item": "chicken broth", "amount": 2000, "unit": "ml"}
+    ],
+    "Nuts & Seeds": [
+      {"item": "peanuts", "amount": 50, "unit": "g"}
+    ],
+    "Spices & Sweeteners": [
+      {"item": "palm sugar", "amount": 20, "unit": "g"}
+    ],
+    "Other": [
+      {"item": "bean sprouts", "amount": 300, "unit": "g"},
+      {"item": "firm tofu", "amount": 150, "unit": "g"},
+      {"item": "brandy", "amount": 60, "unit": "ml"},
+      {"item": "salmon roe", "amount": 50, "unit": "g"}
+    ]
+  },
+  "summary": {
+    "total_items_in_pantry": 45,
+    "items_to_buy": 42,
+    "estimated_savings_eur": 65,
+    "estimated_shopping_cost_eur": 120
+  }
+}

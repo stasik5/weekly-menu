@@ -1,0 +1,112 @@
+{
+  "generated": "2026-02-28T23:00:00Z",
+  "week": "March 1-7, 2026",
+  "categories": {
+    "Meat & Poultry": [
+      {"item": "chicken breast", "amount": 1550, "unit": "g", "category": "Meat & Poultry"},
+      {"item": "beef sirloin", "amount": 450, "unit": "g", "category": "Meat & Poultry"},
+      {"item": "ground beef", "amount": 1150, "unit": "g", "category": "Meat & Poultry"},
+      {"item": "ground pork", "amount": 600, "unit": "g", "category": "Meat & Poultry"},
+      {"item": "shrimp", "amount": 200, "unit": "g", "category": "Meat & Poultry"},
+      {"item": "guanciale/pancetta", "amount": 150, "unit": "g", "category": "Meat & Poultry"}
+    ],
+    "Dairy & Eggs": [
+      {"item": "eggs", "amount": 30, "unit": "large", "category": "Dairy & Eggs"},
+      {"item": "sour cream", "amount": 800, "unit": "g", "category": "Dairy & Eggs"},
+      {"item": "butter", "amount": 320, "unit": "g", "category": "Dairy & Eggs"},
+      {"item": "cottage cheese", "amount": 400, "unit": "g", "category": "Dairy & Eggs"},
+      {"item": "cheddar cheese", "amount": 150, "unit": "g", "category": "Dairy & Eggs"},
+      {"item": "parmesan", "amount": 50, "unit": "g", "category": "Dairy & Eggs"},
+      {"item": "pecorino romano", "amount": 100, "unit": "g", "category": "Dairy & Eggs"},
+      {"item": "milk", "amount": 650, "unit": "ml", "category": "Dairy & Eggs"}
+    ],
+    "Vegetables": [
+      {"item": "beets", "amount": 450, "unit": "g", "category": "Vegetables"},
+      {"item": "potatoes", "amount": 900, "unit": "g", "category": "Vegetables"},
+      {"item": "carrots", "amount": 300, "unit": "g", "category": "Vegetables"},
+      {"item": "onion", "amount": 900, "unit": "g", "category": "Vegetables"},
+      {"item": "celery", "amount": 200, "unit": "g", "category": "Vegetables"},
+      {"item": "garlic", "amount": 60, "unit": "g", "category": "Vegetables"},
+      {"item": "mushrooms", "amount": 525, "unit": "g", "category": "Vegetables"},
+      {"item": "ginger", "amount": 35, "unit": "g", "category": "Vegetables"},
+      {"item": "green onions", "amount": 130, "unit": "g", "category": "Vegetables"},
+      {"item": "frozen peas and carrots", "amount": 200, "unit": "g", "category": "Vegetables"},
+      {"item": "bell pepper", "amount": 150, "unit": "g", "category": "Vegetables"},
+      {"item": "cabbage", "amount": 150, "unit": "g", "category": "Vegetables"}
+    ],
+    "Herbs & Aromatics": [
+      {"item": "dill", "amount": 60, "unit": "g", "category": "Herbs & Aromatics"},
+      {"item": "parsley", "amount": 30, "unit": "g", "category": "Herbs & Aromatics"},
+      {"item": "thai basil", "amount": 20, "unit": "g", "category": "Herbs & Aromatics"},
+      {"item": "lemongrass", "amount": 30, "unit": "g", "category": "Herbs & Aromatics"},
+      {"item": "galangal", "amount": 20, "unit": "g", "category": "Herbs & Aromatics"},
+      {"item": "kaffir lime leaves", "amount": 4, "unit": "leaves", "category": "Herbs & Aromatics"},
+      {"item": "garlic chives", "amount": 50, "unit": "g", "category": "Herbs & Aromatics"}
+    ],
+    "Grains & Pasta": [
+      {"item": "rice noodles", "amount": 250, "unit": "g", "category": "Grains & Pasta"},
+      {"item": "rice", "amount": 350, "unit": "g", "category": "Grains & Pasta"},
+      {"item": "jasmine rice", "amount": 200, "unit": "g", "category": "Grains & Pasta"},
+      {"item": "spaghetti", "amount": 800, "unit": "g", "category": "Grains & Pasta"},
+      {"item": "buckwheat", "amount": 200, "unit": "g", "category": "Grains & Pasta"},
+      {"item": "buckwheat flour", "amount": 100, "unit": "g", "category": "Grains & Pasta"},
+      {"item": "flour", "amount": 1250, "unit": "g", "category": "Grains & Pasta"},
+      {"item": "panko breadcrumbs", "amount": 250, "unit": "g", "category": "Grains & Pasta"},
+      {"item": "bread", "amount": 60, "unit": "g", "category": "Grains & Pasta"},
+      {"item": "dumpling wrappers", "amount": 500, "unit": "g", "category": "Grains & Pasta"}
+    ],
+    "Canned & Jarred": [
+      {"item": "canned tomatoes", "amount": 800, "unit": "g", "category": "Canned & Jarred"},
+      {"item": "cannellini beans", "amount": 400, "unit": "g", "category": "Canned & Jarred"},
+      {"item": "coconut milk", "amount": 600, "unit": "ml", "category": "Canned & Jarred"},
+      {"item": "bamboo shoots", "amount": 150, "unit": "g", "category": "Canned & Jarred"},
+      {"item": "tamarind puree", "amount": 45, "unit": "ml", "category": "Canned & Jarred"},
+      {"item": "green curry paste", "amount": 60, "unit": "g", "category": "Canned & Jarred"},
+      {"item": "chili paste", "amount": 30, "unit": "g", "category": "Canned & Jarred"},
+      {"item": "tomato paste", "amount": 50, "unit": "g", "category": "Canned & Jarred"}
+    ],
+    "Sauces & Condiments": [
+      {"item": "soy sauce", "amount": 135, "unit": "ml", "category": "Sauces & Condiments"},
+      {"item": "fish sauce", "amount": 165, "unit": "ml", "category": "Sauces & Condiments"},
+      {"item": "oyster sauce", "amount": 45, "unit": "ml", "category": "Sauces & Condiments"},
+      {"item": "ketchup", "amount": 60, "unit": "ml", "category": "Sauces & Condiments"},
+      {"item": "whole grain mustard", "amount": 15, "unit": "ml", "category": "Sauces & Condiments"},
+      {"item": "sesame oil", "amount": 70, "unit": "ml", "category": "Sauces & Condiments"},
+      {"item": "white vinegar", "amount": 45, "unit": "ml", "category": "Sauces & Condiments"},
+      {"item": "lime juice", "amount": 60, "unit": "ml", "category": "Sauces & Condiments"},
+      {"item": "lemon juice", "amount": 15, "unit": "ml", "category": "Sauces & Condiments"},
+      {"item": "vanilla extract", "amount": 5, "unit": "ml", "category": "Sauces & Condiments"}
+    ],
+    "Broths & Stocks": [
+      {"item": "chicken broth", "amount": 3000, "unit": "ml", "category": "Broths & Stocks"},
+      {"item": "beef stock", "amount": 125, "unit": "ml", "category": "Broths & Stocks"}
+    ],
+    "Oils & Fats": [
+      {"item": "olive oil", "amount": 390, "unit": "ml", "category": "Oils & Fats"},
+      {"item": "vegetable oil", "amount": 165, "unit": "ml", "category": "Oils & Fats"}
+    ],
+    "Nuts & Seeds": [
+      {"item": "peanuts", "amount": 50, "unit": "g", "category": "Nuts & Seeds"}
+    ],
+    "Spices & Sweeteners": [
+      {"item": "brown sugar", "amount": 130, "unit": "g", "category": "Spices & Sweeteners"},
+      {"item": "sugar", "amount": 80, "unit": "g", "category": "Spices & Sweeteners"},
+      {"item": "palm sugar", "amount": 20, "unit": "g", "category": "Spices & Sweeteners"},
+      {"item": "black pepper", "amount": 5, "unit": "g", "category": "Spices & Sweeteners"},
+      {"item": "bay leaves", "amount": 3, "unit": "leaves", "category": "Spices & Sweeteners"},
+      {"item": "salt", "amount": 30, "unit": "g", "category": "Spices & Sweeteners"}
+    ],
+    "Other": [
+      {"item": "bean sprouts", "amount": 300, "unit": "g", "category": "Other"},
+      {"item": "firm tofu", "amount": 150, "unit": "g", "category": "Other"},
+      {"item": "brandy", "amount": 60, "unit": "ml", "category": "Other"},
+      {"item": "salmon roe", "amount": 50, "unit": "g", "category": "Other"},
+      {"item": "jam", "amount": 60, "unit": "g", "category": "Other"}
+    ]
+  },
+  "summary": {
+    "total_items": 76,
+    "total_categories": 13,
+    "estimated_cost_eur": 185
+  }
+}
