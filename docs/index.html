@@ -1,1189 +1,766 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weekly Menu - March 1-7, 2026</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Еженедельное меню - 2026-W09</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        :root {
-            --bg-primary: #1a1a2e;
-            --bg-secondary: #16213e;
-            --bg-card: #0f3460;
-            --text-primary: #eaeaea;
-            --text-secondary: #a0a0a0;
-            --accent-slavic: #e94560;
-            --accent-asian: #00d9ff;
-            --accent-fancy: #ffd700;
-            --border-color: #2a2a4e;
-        }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #e8eaf0;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+      padding: 20px;
+      min-height: 100vh;
+    }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.6;
-            padding: 20px;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding: 20px;
-            background: var(--bg-secondary);
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
-        }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+    }
 
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            background: linear-gradient(135deg, var(--accent-slavic), var(--accent-asian));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
+    h1 {
+      color: #ffffff;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
 
-        .week-info {
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-        }
+    .week-label {
+      color: #cbd5e1;
+      font-size: 1.1em;
+    }
 
-        .stats {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 15px;
-            flex-wrap: wrap;
-        }
+    .section {
+      background: rgba(30, 41, 59, 0.8);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+    }
 
-        .stat {
-            text-align: center;
-        }
+    .section h2 {
+      color: #60a5fa;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #3b82f6;
+    }
 
-        .stat-value {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--accent-asian);
-        }
+    /* Meal Grid */
+    .meal-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
 
-        .stat-label {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-        }
+    .day-card {
+      background: rgba(30, 41, 59, 0.6);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(59, 130, 246, 0.2);
+    }
 
-        .controls {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
+    .day-header {
+      background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+      box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
+    }
 
-        .btn {
-            padding: 12px 24px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 1rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
+    .meals {
+      padding: 15px;
+    }
 
-        .btn-primary {
-            background: linear-gradient(135deg, var(--accent-slavic), var(--accent-asian));
-            color: white;
-        }
+    .meal {
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      position: relative;
+    }
 
-        .btn-secondary {
-            background: var(--bg-card);
-            color: var(--text-primary);
-            border: 1px solid var(--border-color);
-        }
+    .meal:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
 
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-        }
+    .meal:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+      background: rgba(59, 130, 246, 0.1);
+    }
 
-        .btn.active {
-            box-shadow: 0 0 15px var(--accent-asian);
-        }
+    .meal::after {
+      content: '📖';
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      font-size: 0.8em;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
 
-        .tabs {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
+    .meal:hover::after {
+      opacity: 1;
+    }
 
-        .tab {
-            padding: 10px 20px;
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
+    .meal-type {
+      font-size: 0.85em;
+      text-transform: uppercase;
+      color: #60a5fa;
+      margin-bottom: 5px;
+    }
 
-        .tab:hover, .tab.active {
-            background: var(--bg-card);
-            border-color: var(--accent-asian);
-        }
+    .meal-name {
+      font-weight: 600;
+      color: #f1f5f9;
+      margin-bottom: 5px;
+    }
 
-        .content-section {
-            display: none;
-        }
+    .meal-cuisine {
+      font-size: 0.85em;
+      color: #94a3b8;
+    }
 
-        .content-section.active {
-            display: block;
-        }
+    .meal-calories {
+      font-size: 0.85em;
+      color: #4ade80;
+    }
 
-        .menu-grid {
-            display: grid;
-            gap: 20px;
-        }
+    /* Grocery List */
+    .grocery-category {
+      margin-bottom: 25px;
+    }
 
-        .day-card {
-            background: var(--bg-secondary);
-            border-radius: 12px;
-            overflow: hidden;
-            border: 1px solid var(--border-color);
-        }
+    .grocery-category h3 {
+      color: #60a5fa;
+      margin-bottom: 15px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+    }
 
-        .day-header {
-            background: var(--bg-card);
-            padding: 15px 20px;
-            font-size: 1.3rem;
-            font-weight: bold;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    .grocery-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 10px;
+    }
 
-        .day-date {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            font-weight: normal;
-        }
+    .grocery-item {
+      display: flex;
+      align-items: baseline;
+      padding: 8px 12px;
+      background: rgba(15, 23, 42, 0.6);
+      border-radius: 4px;
+      border: 1px solid rgba(59, 130, 246, 0.2);
+    }
 
-        .meals-container {
-            padding: 15px;
-            display: grid;
-            gap: 15px;
-        }
+    .grocery-item input[type="checkbox"] {
+      margin-right: 10px;
+      cursor: pointer;
+    }
 
-        .meal {
-            background: var(--bg-card);
-            border-radius: 8px;
-            padding: 15px;
-            display: flex;
-            gap: 15px;
-            align-items: flex-start;
-        }
+    .grocery-item-name {
+      flex: 1;
+      color: #e8eaf0;
+    }
 
-        .meal-type {
-            writing-mode: vertical-rl;
-            text-orientation: mixed;
-            font-weight: bold;
-            font-size: 0.75rem;
-            padding: 10px 5px;
-            border-radius: 4px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+    .grocery-item-qty {
+      color: #94a3b8;
+      font-size: 0.9em;
+    }
 
-        .meal-type.breakfast { background: #4a5568; }
-        .meal-type.lunch { background: #2d3748; }
-        .meal-type.dinner { background: #1a202c; }
+    /* Virtual Pantry */
+    .pantry-section button {
+      background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9em;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
+      margin-bottom: 15px;
+    }
 
-        .meal-content {
-            flex: 1;
-        }
+    .pantry-section button:hover {
+      background: linear-gradient(135deg, #2563eb 0%, #60a5fa 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+    }
 
-        .meal-name {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 5px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+    .pantry-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 12px;
+    }
 
-        .cuisine-badge {
-            font-size: 0.7rem;
-            padding: 3px 8px;
-            border-radius: 12px;
-            font-weight: normal;
-        }
+    .pantry-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 15px;
+      background: rgba(15, 23, 42, 0.6);
+      border-radius: 6px;
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      transition: all 0.2s ease;
+    }
 
-        .cuisine-badge.slavic { background: var(--accent-slavic); }
-        .cuisine-badge.asian { background: var(--accent-asian); color: #000; }
-        .cuisine-badge.fancy { background: var(--accent-fancy); color: #000; }
+    .pantry-item:hover {
+      background: rgba(59, 130, 246, 0.1);
+      border-color: rgba(59, 130, 246, 0.4);
+    }
 
-        .meal-calories {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            margin-bottom: 8px;
-        }
+    .pantry-item .emoji {
+      font-size: 1.5em;
+    }
 
-        .meal-ingredients {
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-        }
+    .pantry-item .name {
+      flex: 1;
+      color: #e8eaf0;
+      font-weight: 500;
+      overflow: visible;
+      white-space: nowrap;
+      min-width: 0;
+    }
 
-        .meal-ingredients ul {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            list-style: none;
-        }
+    .pantry-item .amount {
+      font-weight: 600;
+      font-size: 0.95em;
+    }
 
-        .meal-ingredients li {
-            background: var(--bg-primary);
-            padding: 2px 8px;
-            border-radius: 4px;
-        }
+    .pantry-item .amount.low {
+      color: #ef4444;
+    }
 
-        .grocery-section {
-            background: var(--bg-secondary);
-            border-radius: 12px;
-            padding: 20px;
-            border: 1px solid var(--border-color);
-        }
+    .pantry-item .amount.medium {
+      color: #eab308;
+    }
 
-        .grocery-category {
-            margin-bottom: 25px;
-        }
+    .pantry-item .amount.high {
+      color: #4ade80;
+    }
 
-        .grocery-category h3 {
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-            padding-bottom: 5px;
-            border-bottom: 2px solid var(--accent-asian);
-            display: flex;
-            justify-content: space-between;
-        }
+    .daily-breakdown {
+      margin-top: 8px;
+      padding: 8px 12px;
+      background: rgba(15, 23, 42, 0.8);
+      border-radius: 4px;
+      border-left: 3px solid #3b82f6;
+      font-size: 0.85em;
+      color: #94a3b8;
+      grid-column: 1 / -1;
+    }
 
-        .grocery-items {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 8px;
-        }
+    .daily-breakdown.hidden {
+      display: none;
+    }
 
-        .grocery-item {
-            background: var(--bg-card);
-            padding: 8px 12px;
-            border-radius: 6px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 0.9rem;
-        }
+    /* Modal Popup */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(5px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
 
-        .grocery-item.in-stock {
-            opacity: 0.5;
-            text-decoration: line-through;
-        }
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
 
-        .item-amount {
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-        }
+    .modal-content {
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 16px;
+      padding: 30px;
+      max-width: 600px;
+      width: 90%;
+      max-height: 85vh;
+      overflow-y: auto;
+      position: relative;
+      transform: scale(0.9) translateY(20px);
+      transition: transform 0.3s ease;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    }
 
-        .pantry-toggle {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 20px;
-            justify-content: center;
-        }
+    .modal-overlay.active .modal-content {
+      transform: scale(1) translateY(0);
+    }
 
-        .switch {
-            position: relative;
-            width: 50px;
-            height: 26px;
-        }
+    .modal-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: rgba(239, 68, 68, 0.2);
+      border: 2px solid #ef4444;
+      color: #ef4444;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
 
-        .switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
+    .modal-close:hover {
+      background: #ef4444;
+      color: #ffffff;
+      transform: rotate(90deg);
+    }
 
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: var(--bg-card);
-            transition: 0.4s;
-            border-radius: 26px;
-        }
+    .modal-title {
+      font-size: 1.8em;
+      color: #f1f5f9;
+      margin-bottom: 5px;
+      margin-right: 40px;
+    }
 
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 20px;
-            width: 20px;
-            left: 3px;
-            bottom: 3px;
-            background-color: white;
-            transition: 0.4s;
-            border-radius: 50%;
-        }
+    .modal-cuisine {
+      color: #60a5fa;
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+    }
 
-        input:checked + .slider {
-            background-color: var(--accent-asian);
-        }
+    .modal-section {
+      margin-bottom: 25px;
+    }
 
-        input:checked + .slider:before {
-            transform: translateX(24px);
-        }
+    .modal-section h4 {
+      color: #60a5fa;
+      font-size: 1.1em;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
 
-        .summary-card {
-            background: var(--bg-card);
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
+    .modal-section ul,
+    .modal-section ol {
+      padding-left: 20px;
+    }
 
-        .summary-card h3 {
-            margin-bottom: 15px;
-            color: var(--accent-asian);
-        }
+    .modal-section li {
+      margin-bottom: 8px;
+      color: #cbd5e1;
+      line-height: 1.7;
+    }
 
-        .summary-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-        }
+    .modal-source {
+      text-align: center;
+      margin-top: 20px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(59, 130, 246, 0.2);
+    }
 
-        .summary-stat {
-            text-align: center;
-            padding: 15px;
-            background: var(--bg-primary);
-            border-radius: 8px;
-        }
+    .modal-source a {
+      color: #60a5fa;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 8px 16px;
+      background: rgba(59, 130, 246, 0.2);
+      border-radius: 20px;
+      transition: background 0.2s ease;
+    }
 
-        .summary-stat .value {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: var(--accent-asian);
-        }
+    .modal-source a:hover {
+      background: rgba(59, 130, 246, 0.4);
+    }
 
-        .summary-stat .label {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-        }
+    @media (max-width: 768px) {
+      .meal-grid {
+        grid-template-columns: 1fr;
+      }
 
-        @media (max-width: 768px) {
-            h1 { font-size: 1.8rem; }
-            .stats { gap: 15px; }
-            .meal { flex-direction: column; }
-            .meal-type { writing-mode: horizontal-tb; }
-            .grocery-items { grid-template-columns: 1fr; }
-        }
-    </style>
+      .grocery-items {
+        grid-template-columns: 1fr;
+      }
+
+      .modal-content {
+        padding: 20px;
+        width: 95%;
+        max-height: 90vh;
+      }
+
+      .modal-title {
+        font-size: 1.4em;
+      }
+
+      .modal-close {
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
     <header>
-        <h1>🍽️ Weekly Menu</h1>
-        <p class="week-info">March 1-7, 2026 | Stanislav (31M, 85kg) & Wife (26F, 63kg)</p>
-        <div class="stats">
-            <div class="stat">
-                <div class="stat-value">21</div>
-                <div class="stat-label">Meals</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value">62%</div>
-                <div class="stat-label">Slavic/Pasta</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value">38%</div>
-                <div class="stat-label">Asian</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value">2</div>
-                <div class="stat-label">Fancy Dinners</div>
-            </div>
-        </div>
+      <h1>🍽️ Еженедельное меню</h1>
+      <div class="week-label">2026-W09</div>
     </header>
 
-    <div class="controls">
-        <button class="btn btn-secondary" onclick="window.print()">🖨️ Print</button>
+    <!-- Pantry (shown first as main shopping reference) -->
+    
+    <!-- Shopping List Button -->
+    <section class="section" style="text-align: center; padding: 30px;">
+      <a href="shopping-list.html" class="shopping-list-btn" style="
+        display: inline-block;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 18px 40px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: 600;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        transition: all 0.3s ease;
+      ">
+        📋 Открыть список покупок
+      </a>
+      <p style="color: #94a3b8; margin-top: 15px; font-size: 0.9em;">
+        Интерактивный список с чекбоксами
+      </p>
+    </section>
+  
+
+    <!-- Meal Grid -->
+    <section class="section">
+      <h2>Блюда на неделю (Нажмите на любое блюдо для рецепта)</h2>
+      <div class="meal-grid">
+        
+          <div class="day-card">
+            <div class="day-header">Понедельник</div>
+            <div class="meals">
+              
+                  <div class="meal" data-day="Monday" data-meal="breakfast" onclick="openModal('Monday', 'breakfast')">
+                    <div class="meal-type">Завтрак</div>
+                    <div class="meal-name">Блины с сырной начинкой</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Monday" data-meal="snack" onclick="openModal('Monday', 'snack')">
+                    <div class="meal-type">Перекус</div>
+                    <div class="meal-name">Печенье с зелёным чаем</div>
+                    <div class="meal-cuisine">Азиатская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Monday" data-meal="dinner" onclick="openModal('Monday', 'dinner')">
+                    <div class="meal-type">Ужин</div>
+                    <div class="meal-name">Борщ со сметаной</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+            </div>
+          </div>
+        
+          <div class="day-card">
+            <div class="day-header">Вторник</div>
+            <div class="meals">
+              
+                  <div class="meal" data-day="Tuesday" data-meal="breakfast" onclick="openModal('Tuesday', 'breakfast')">
+                    <div class="meal-type">Завтрак</div>
+                    <div class="meal-name">Лапша с яйцом</div>
+                    <div class="meal-cuisine">Азиатская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Tuesday" data-meal="snack" onclick="openModal('Tuesday', 'snack')">
+                    <div class="meal-type">Перекус</div>
+                    <div class="meal-name">Жареный тофу кубиками</div>
+                    <div class="meal-cuisine">Азиатская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Tuesday" data-meal="dinner" onclick="openModal('Tuesday', 'dinner')">
+                    <div class="meal-type">Ужин</div>
+                    <div class="meal-name">Пад тай с креветками</div>
+                    <div class="meal-cuisine">Азиатская</div>
+                  </div>
+                
+            </div>
+          </div>
+        
+          <div class="day-card">
+            <div class="day-header">Среда</div>
+            <div class="meals">
+              
+                  <div class="meal" data-day="Wednesday" data-meal="breakfast" onclick="openModal('Wednesday', 'breakfast')">
+                    <div class="meal-type">Завтрак</div>
+                    <div class="meal-name">Каша с маслом и молоком</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Wednesday" data-meal="snack" onclick="openModal('Wednesday', 'snack')">
+                    <div class="meal-type">Перекус</div>
+                    <div class="meal-name">Дольки яблока с сыром</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Wednesday" data-meal="dinner" onclick="openModal('Wednesday', 'dinner')">
+                    <div class="meal-type">Ужин</div>
+                    <div class="meal-name">Шашлык с салатом</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+            </div>
+          </div>
+        
+          <div class="day-card">
+            <div class="day-header">Четверг</div>
+            <div class="meals">
+              
+                  <div class="meal" data-day="Thursday" data-meal="breakfast" onclick="openModal('Thursday', 'breakfast')">
+                    <div class="meal-type">Завтрак</div>
+                    <div class="meal-name">Сырники (творожные оладьи)</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Thursday" data-meal="snack" onclick="openModal('Thursday', 'snack')">
+                    <div class="meal-type">Перекус</div>
+                    <div class="meal-name">Банан с арахисовой пастой</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Thursday" data-meal="dinner" onclick="openModal('Thursday', 'dinner')">
+                    <div class="meal-type">Ужин</div>
+                    <div class="meal-name">Пельмени со сметаной</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+            </div>
+          </div>
+        
+          <div class="day-card">
+            <div class="day-header">Пятница</div>
+            <div class="meals">
+              
+                  <div class="meal" data-day="Friday" data-meal="breakfast" onclick="openModal('Friday', 'breakfast')">
+                    <div class="meal-type">Завтрак</div>
+                    <div class="meal-name">Яичница с овощами</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Friday" data-meal="snack" onclick="openModal('Friday', 'snack')">
+                    <div class="meal-type">Перекус</div>
+                    <div class="meal-name">Эдамаме с морской солью</div>
+                    <div class="meal-cuisine">Азиатская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Friday" data-meal="dinner" onclick="openModal('Friday', 'dinner')">
+                    <div class="meal-type">Ужин</div>
+                    <div class="meal-name">Куриный суп с овощами</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+            </div>
+          </div>
+        
+          <div class="day-card">
+            <div class="day-header">Суббота</div>
+            <div class="meals">
+              
+                  <div class="meal" data-day="Saturday" data-meal="breakfast" onclick="openModal('Saturday', 'breakfast')">
+                    <div class="meal-type">Завтрак</div>
+                    <div class="meal-name">Жареный рис с овощами</div>
+                    <div class="meal-cuisine">Азиатская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Saturday" data-meal="snack" onclick="openModal('Saturday', 'snack')">
+                    <div class="meal-type">Перекус</div>
+                    <div class="meal-name">Творог с зеленью</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Saturday" data-meal="dinner" onclick="openModal('Saturday', 'dinner')">
+                    <div class="meal-type">Ужин</div>
+                    <div class="meal-name">Голубцы с мясом</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+            </div>
+          </div>
+        
+          <div class="day-card">
+            <div class="day-header">Воскресенье</div>
+            <div class="meals">
+              
+                  <div class="meal" data-day="Sunday" data-meal="breakfast" onclick="openModal('Sunday', 'breakfast')">
+                    <div class="meal-type">Завтрак</div>
+                    <div class="meal-name">Гречневая каша с молоком и ягодами</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Sunday" data-meal="snack" onclick="openModal('Sunday', 'snack')">
+                    <div class="meal-type">Перекус</div>
+                    <div class="meal-name">Дольки манго</div>
+                    <div class="meal-cuisine">Азиатская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Sunday" data-meal="dinner" onclick="openModal('Sunday', 'dinner')">
+                    <div class="meal-type">Ужин</div>
+                    <div class="meal-name">Сычуаньский мапо тофу</div>
+                    <div class="meal-cuisine">Азиатская</div>
+                  </div>
+                
+            </div>
+          </div>
+        
+      </div>
+    </section>
+
+    <!-- Grocery List - Hidden (commented out, pantry is now the main reference) -->
+    <!--
+
+    <!-- Recipe Modal -->
+    <div class="modal-overlay" id="recipeModal">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <div class="modal-cuisine" id="modalCuisine"></div>
+
+        <div class="modal-section">
+          <h4>🥗 Ингредиенты</h4>
+          <ul id="modalIngredients"></ul>
+        </div>
+
+        <div class="modal-section">
+          <h4>👨‍🍳 Инструкции</h4>
+          <ol id="modalInstructions"></ol>
+        </div>
+
+        <div class="modal-source" id="modalSource"></div>
+      </div>
     </div>
+  </div>
 
-    <div class="tabs">
-        <div class="tab active" onclick="showSection('menu')">📅 Weekly Menu</div>
-        <div class="tab" onclick="showSection('grocery')">🛒 Grocery List</div>
-        <div class="tab" onclick="showSection('pantry')">🏠 Pantry</div>
-        <div class="tab" onclick="showSection('summary')">📊 Summary</div>
-    </div>
+  <script>
+    // Recipe data - embedded in the page
+    const recipesData = {"Monday-breakfast":{"title":"Блины с сырной начинкой","cuisine":"slavic","ingredients":[{"name":"Main ingredients vary by recipe"},{"name":"Seasonings"},{"name":"Cook according to recipe instructions"}],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Monday-snack":{"title":"Печенье с зелёным чаем","cuisine":"asian","ingredients":[{"name":"Main ingredients vary by recipe"},{"name":"Seasonings"},{"name":"Cook according to recipe instructions"}],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Monday-dinner":{"title":"Борщ со сметаной","cuisine":"slavic","ingredients":[{"name":"Main ingredients vary by recipe"},{"name":"Seasonings"},{"name":"Cook according to recipe instructions"}],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null},"Tuesday-breakfast":{"title":"Лапша с яйцом","cuisine":"asian","ingredients":[{"name":"Main ingredients vary by recipe"},{"name":"Seasonings"},{"name":"Cook according to recipe instructions"}],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Tuesday-snack":{"title":"Жареный тофу кубиками","cuisine":"asian","ingredients":[{"name":"Main ingredients vary by recipe"},{"name":"Seasonings"},{"name":"Cook according to recipe instructions"}],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Tuesday-dinner":{"title":"Пад тай с креветками","cuisine":"asian","ingredients":[{"name":"Main ingredients vary by recipe"},{"name":"Seasonings"},{"name":"Cook according to recipe instructions"}],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null},"Wednesday-breakfast":{"title":"Каша с маслом и молоком","cuisine":"slavic","ingredients":[{"name":"Main ingredients vary by recipe"},{"name":"Seasonings"},{"name":"Cook according to recipe instructions"}],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Wednesday-snack":{"title":"Дольки яблока с сыром","cuisine":"slavic","ingredients":[{"name":"Main ingredients vary by recipe"},{"name":"Seasonings"},{"name":"Cook according to recipe instructions"}],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Wednesday-dinner":{"title":"Шашлык с салатом","cuisine":"slavic","ingredients":[{"name":"Main ingredients vary by recipe"},{"name":"Seasonings"},{"name":"Cook according to recipe instructions"}],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null},"Thursday-breakfast":{"title":"Сырники (творожные оладьи)","cuisine":"slavic","ingredients":[{"name":"Main ingredients vary by recipe"},{"name":"Seasonings"},{"name":"Cook according to recipe instructions"}],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Thursday-snack":{"title":"Банан с арахисовой пастой","cuisine":"slavic","ingredients":[{"name":"Main ingredients vary by recipe"},{"name":"Seasonings"},{"name":"Cook according to recipe instructions"}],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Thursday-dinner":{"title":"Пельмени со сметаной","cuisine":"slavic","ingredients":[{"name":"Main ingredients vary by recipe"},{"name":"Seasonings"},{"name":"Cook according to recipe instructions"}],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null},"Friday-breakfast":{"title":"Яичница с овощами","cuisine":"slavic","ingredients":[{"name":"Main ingredients vary by recipe"},{"name":"Seasonings"},{"name":"Cook according to recipe instructions"}],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Friday-snack":{"title":"Эдамаме с морской солью","cuisine":"asian","ingredients":[{"name":"Main ingredients vary by recipe"},{"name":"Seasonings"},{"name":"Cook according to recipe instructions"}],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Friday-dinner":{"title":"Куриный суп с овощами","cuisine":"slavic","ingredients":[{"name":"Main ingredients vary by recipe"},{"name":"Seasonings"},{"name":"Cook according to recipe instructions"}],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null},"Saturday-breakfast":{"title":"Жареный рис с овощами","cuisine":"asian","ingredients":[{"name":"Main ingredients vary by recipe"},{"name":"Seasonings"},{"name":"Cook according to recipe instructions"}],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Saturday-snack":{"title":"Творог с зеленью","cuisine":"slavic","ingredients":[{"name":"Main ingredients vary by recipe"},{"name":"Seasonings"},{"name":"Cook according to recipe instructions"}],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Saturday-dinner":{"title":"Голубцы с мясом","cuisine":"slavic","ingredients":[{"name":"Main ingredients vary by recipe"},{"name":"Seasonings"},{"name":"Cook according to recipe instructions"}],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null},"Sunday-breakfast":{"title":"Гречневая каша с молоком и ягодами","cuisine":"slavic","ingredients":[{"name":"Main ingredients vary by recipe"},{"name":"Seasonings"},{"name":"Cook according to recipe instructions"}],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"fallback_template","url":null},"Sunday-snack":{"title":"Дольки манго","cuisine":"asian","ingredients":[{"name":"Main ingredients vary by recipe"},{"name":"Seasonings"},{"name":"Cook according to recipe instructions"}],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"fallback_template","url":null},"Sunday-dinner":{"title":"Сычуаньский мапо тофу","cuisine":"asian","ingredients":[{"name":"Main ingredients vary by recipe"},{"name":"Seasonings"},{"name":"Cook according to recipe instructions"}],"instructions":["Prepare ingredients according to standard cooking methods","Cook until done","Season to taste","Serve hot"],"nutrition":{"calories":2100,"protein":131,"carbs":215,"fat":79},"source":"fallback_template","url":null}};
 
-    <!-- Menu Section -->
-    <div id="menu" class="content-section active">
-        <div class="menu-grid">
-            <!-- Monday -->
-            <div class="day-card">
-                <div class="day-header">
-                    <span>Monday</span>
-                    <span class="day-date">March 2</span>
-                </div>
-                <div class="meals-container">
-                    <div class="meal">
-                        <div class="meal-type breakfast">Breakfast</div>
-                        <div class="meal-content">
-                            <div class="meal-name">
-                                Syrniki (Cottage Cheese Pancakes)
-                                <span class="cuisine-badge slavic">Slavic</span>
-                            </div>
-                            <div class="meal-calories">450 kcal</div>
-                            <div class="meal-ingredients">
-                                <ul>
-                                    <li>cottage cheese 400g</li>
-                                    <li>eggs 2</li>
-                                    <li>flour 80g</li>
-                                    <li>sugar 40g</li>
-                                    <li>sour cream</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="meal">
-                        <div class="meal-type lunch">Lunch</div>
-                        <div class="meal-content">
-                            <div class="meal-name">
-                                Classic Borscht
-                                <span class="cuisine-badge slavic">Slavic</span>
-                            </div>
-                            <div class="meal-calories">380 kcal • Source: natashaskitchen.com</div>
-                            <div class="meal-ingredients">
-                                <ul>
-                                    <li>beets 450g</li>
-                                    <li>chicken broth 2L</li>
-                                    <li>potatoes 400g</li>
-                                    <li>carrots</li>
-                                    <li>onion</li>
-                                    <li>beans</li>
-                                    <li>dill</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="meal">
-                        <div class="meal-type dinner">Dinner</div>
-                        <div class="meal-content">
-                            <div class="meal-name">
-                                Chicken Pad Thai
-                                <span class="cuisine-badge asian">Asian</span>
-                            </div>
-                            <div class="meal-calories">650 kcal • Source: recipetineats.com</div>
-                            <div class="meal-ingredients">
-                                <ul>
-                                    <li>rice noodles 250g</li>
-                                    <li>chicken 300g</li>
-                                    <li>tamarind</li>
-                                    <li>fish sauce</li>
-                                    <li>tofu</li>
-                                    <li>bean sprouts</li>
-                                    <li>peanuts</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    /**
+     * Open modal with recipe details
+     */
+    function openModal(day, mealType) {
+      const key = `${day}-${mealType}`;
+      const recipe = recipesData[key];
 
-            <!-- Tuesday -->
-            <div class="day-card">
-                <div class="day-header">
-                    <span>Tuesday</span>
-                    <span class="day-date">March 3</span>
-                </div>
-                <div class="meals-container">
-                    <div class="meal">
-                        <div class="meal-type breakfast">Breakfast</div>
-                        <div class="meal-content">
-                            <div class="meal-name">
-                                Asian Scrambled Eggs with Rice
-                                <span class="cuisine-badge asian">Asian</span>
-                            </div>
-                            <div class="meal-calories">420 kcal</div>
-                            <div class="meal-ingredients">
-                                <ul>
-                                    <li>eggs 4</li>
-                                    <li>rice 200g</li>
-                                    <li>soy sauce</li>
-                                    <li>sesame oil</li>
-                                    <li>green onions</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="meal">
-                        <div class="meal-type lunch">Lunch</div>
-                        <div class="meal-content">
-                            <div class="meal-name">
-                                Pelmeni (Russian Meat Dumplings)
-                                <span class="cuisine-badge slavic">Slavic</span>
-                            </div>
-                            <div class="meal-calories">520 kcal</div>
-                            <div class="meal-ingredients">
-                                <ul>
-                                    <li>ground beef 300g</li>
-                                    <li>ground pork 200g</li>
-                                    <li>flour 300g</li>
-                                    <li>onion</li>
-                                    <li>sour cream</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="meal">
-                        <div class="meal-type dinner">Dinner</div>
-                        <div class="meal-content">
-                            <div class="meal-name">
-                                Beef Stroganoff
-                                <span class="cuisine-badge slavic">Slavic</span>
-                            </div>
-                            <div class="meal-calories">467 kcal • Source: vikalinka.com</div>
-                            <div class="meal-ingredients">
-                                <ul>
-                                    <li>beef sirloin 450g</li>
-                                    <li>mushrooms 225g</li>
-                                    <li>sour cream 250ml</li>
-                                    <li>brandy</li>
-                                    <li>mustard</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      if (!recipe) return;
 
-            <!-- Wednesday -->
-            <div class="day-card">
-                <div class="day-header">
-                    <span>Wednesday</span>
-                    <span class="day-date">March 4</span>
-                </div>
-                <div class="meals-container">
-                    <div class="meal">
-                        <div class="meal-type breakfast">Breakfast</div>
-                        <div class="meal-content">
-                            <div class="meal-name">
-                                Buckwheat Kasha with Mushrooms
-                                <span class="cuisine-badge slavic">Slavic</span>
-                            </div>
-                            <div class="meal-calories">380 kcal</div>
-                            <div class="meal-ingredients">
-                                <ul>
-                                    <li>buckwheat 200g</li>
-                                    <li>mushrooms 150g</li>
-                                    <li>onion</li>
-                                    <li>butter</li>
-                                    <li>eggs 2</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="meal">
-                        <div class="meal-type lunch">Lunch</div>
-                        <div class="meal-content">
-                            <div class="meal-name">
-                                Fried Rice with Vegetables
-                                <span class="cuisine-badge asian">Asian</span>
-                            </div>
-                            <div class="meal-calories">480 kcal</div>
-                            <div class="meal-ingredients">
-                                <ul>
-                                    <li>rice 300g</li>
-                                    <li>eggs 3</li>
-                                    <li>soy sauce</li>
-                                    <li>peas & carrots</li>
-                                    <li>sesame oil</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="meal">
-                        <div class="meal-type dinner">Dinner</div>
-                        <div class="meal-content">
-                            <div class="meal-name">
-                                Chicken Kiev
-                                <span class="cuisine-badge fancy">Fancy</span>
-                                <span class="cuisine-badge slavic">Slavic</span>
-                            </div>
-                            <div class="meal-calories">384 kcal • Source: natashaskitchen.com</div>
-                            <div class="meal-ingredients">
-                                <ul>
-                                    <li>chicken breast 900g</li>
-                                    <li>butter 90g</li>
-                                    <li>garlic</li>
-                                    <li>parsley</li>
-                                    <li>panko</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      document.getElementById('modalTitle').textContent = recipe.title;
+      document.getElementById('modalCuisine').textContent = recipe.cuisine;
 
-            <!-- Thursday -->
-            <div class="day-card">
-                <div class="day-header">
-                    <span>Thursday</span>
-                    <span class="day-date">March 5</span>
-                </div>
-                <div class="meals-container">
-                    <div class="meal">
-                        <div class="meal-type breakfast">Breakfast</div>
-                        <div class="meal-content">
-                            <div class="meal-name">
-                                Congee (Rice Porridge)
-                                <span class="cuisine-badge asian">Asian</span>
-                            </div>
-                            <div class="meal-calories">320 kcal</div>
-                            <div class="meal-ingredients">
-                                <ul>
-                                    <li>rice 150g</li>
-                                    <li>chicken broth 1L</li>
-                                    <li>ginger</li>
-                                    <li>green onions</li>
-                                    <li>soy sauce</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="meal">
-                        <div class="meal-type lunch">Lunch</div>
-                        <div class="meal-content">
-                            <div class="meal-name">
-                                Borscht (Leftover)
-                                <span class="cuisine-badge slavic">Slavic</span>
-                            </div>
-                            <div class="meal-calories">380 kcal • Reheat Monday's batch</div>
-                            <div class="meal-ingredients">
-                                <ul>
-                                    <li>Leftover borscht</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="meal">
-                        <div class="meal-type dinner">Dinner</div>
-                        <div class="meal-content">
-                            <div class="meal-name">
-                                Spaghetti Bolognese
-                                <span class="cuisine-badge slavic">Pasta</span>
-                            </div>
-                            <div class="meal-calories">620 kcal</div>
-                            <div class="meal-ingredients">
-                                <ul>
-                                    <li>spaghetti 400g</li>
-                                    <li>ground beef 400g</li>
-                                    <li>canned tomatoes 800g</li>
-                                    <li>onion</li>
-                                    <li>parmesan</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      const ingredientsList = document.getElementById('modalIngredients');
+      ingredientsList.innerHTML = (recipe.ingredients || [])
+        .map(ing => {
+          // Handle both object format {name: "..."} and string format
+          const ingText = typeof ing === 'object' && ing.name ? ing.name : String(ing);
+          // Translate common fallback ingredients
+          const translations = {
+            'Main ingredients vary by recipe': 'Основные ингредиенты зависят от рецепта',
+            'Seasonings to taste': 'Специи по вкусу',
+            'Cook according to recipe instructions': 'Готовить согласно инструкции рецепта'
+          };
+          return `<li>${translations[ingText] || ingText}</li>`;
+        })
+        .join('');
 
-            <!-- Friday -->
-            <div class="day-card">
-                <div class="day-header">
-                    <span>Friday</span>
-                    <span class="day-date">March 6</span>
-                </div>
-                <div class="meals-container">
-                    <div class="meal">
-                        <div class="meal-type breakfast">Breakfast</div>
-                        <div class="meal-content">
-                            <div class="meal-name">
-                                Oladyi (Russian Pancakes)
-                                <span class="cuisine-badge slavic">Slavic</span>
-                            </div>
-                            <div class="meal-calories">400 kcal</div>
-                            <div class="meal-ingredients">
-                                <ul>
-                                    <li>flour 200g</li>
-                                    <li>eggs 2</li>
-                                    <li>milk 250ml</li>
-                                    <li>sour cream</li>
-                                    <li>jam</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="meal">
-                        <div class="meal-type lunch">Lunch</div>
-                        <div class="meal-content">
-                            <div class="meal-name">
-                                Thai Green Curry
-                                <span class="cuisine-badge asian">Asian</span>
-                            </div>
-                            <div class="meal-calories">550 kcal</div>
-                            <div class="meal-ingredients">
-                                <ul>
-                                    <li>chicken 350g</li>
-                                    <li>coconut milk 400ml</li>
-                                    <li>green curry paste</li>
-                                    <li>bamboo shoots</li>
-                                    <li>thai basil</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="meal">
-                        <div class="meal-type dinner">Dinner</div>
-                        <div class="meal-content">
-                            <div class="meal-name">
-                                Pierogi with Potato and Cheese
-                                <span class="cuisine-badge slavic">Slavic</span>
-                            </div>
-                            <div class="meal-calories">480 kcal • Source: recipetineats.com</div>
-                            <div class="meal-ingredients">
-                                <ul>
-                                    <li>flour 400g</li>
-                                    <li>potatoes 500g</li>
-                                    <li>cheddar 150g</li>
-                                    <li>onion</li>
-                                    <li>sour cream</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      const instructionsList = document.getElementById('modalInstructions');
+      instructionsList.innerHTML = (recipe.instructions || [])
+        .map((inst, i) => {
+          // Translate common fallback instructions
+          const translations = {
+            'Prepare ingredients according to standard cooking methods': 'Подготовьте ингредиенты стандартными методами готовки',
+            'Cook until done': 'Готовьте до готовности',
+            'Season to taste': 'Посолите и поперчите по вкусу',
+            'Serve hot': 'Подавайте горячим'
+          };
+          return `<li>${translations[inst] || inst}</li>`;
+        })
+        .join('');
 
-            <!-- Saturday -->
-            <div class="day-card">
-                <div class="day-header">
-                    <span>Saturday</span>
-                    <span class="day-date">March 7</span>
-                </div>
-                <div class="meals-container">
-                    <div class="meal">
-                        <div class="meal-type breakfast">Breakfast</div>
-                        <div class="meal-content">
-                            <div class="meal-name">
-                                Dim Sum Style Dumplings
-                                <span class="cuisine-badge asian">Asian</span>
-                            </div>
-                            <div class="meal-calories">380 kcal</div>
-                            <div class="meal-ingredients">
-                                <ul>
-                                    <li>dumpling wrappers</li>
-                                    <li>ground pork 250g</li>
-                                    <li>cabbage</li>
-                                    <li>ginger</li>
-                                    <li>soy sauce</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="meal">
-                        <div class="meal-type lunch">Lunch</div>
-                        <div class="meal-content">
-                            <div class="meal-name">
-                                Kotleti (Russian Meat Patties)
-                                <span class="cuisine-badge slavic">Slavic</span>
-                            </div>
-                            <div class="meal-calories">420 kcal</div>
-                            <div class="meal-ingredients">
-                                <ul>
-                                    <li>ground beef 350g</li>
-                                    <li>ground pork 150g</li>
-                                    <li>onion</li>
-                                    <li>bread</li>
-                                    <li>egg</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="meal">
-                        <div class="meal-type dinner">Dinner</div>
-                        <div class="meal-content">
-                            <div class="meal-name">
-                                Beef Stroganoff (Leftover)
-                                <span class="cuisine-badge slavic">Slavic</span>
-                            </div>
-                            <div class="meal-calories">467 kcal • Reheat Tuesday's batch</div>
-                            <div class="meal-ingredients">
-                                <ul>
-                                    <li>Leftover stroganoff</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      const sourceEl = document.getElementById('modalSource');
+      if (recipe.url) {
+        sourceEl.innerHTML = `<a href="${recipe.url}" target="_blank" rel="noopener noreferrer">🔗 Полный рецепт</a>`;
+      } else {
+        sourceEl.innerHTML = `<small>Источник: ${recipe.source}</small>`;
+      }
 
-            <!-- Sunday -->
-            <div class="day-card">
-                <div class="day-header">
-                    <span>Sunday</span>
-                    <span class="day-date">March 8</span>
-                </div>
-                <div class="meals-container">
-                    <div class="meal">
-                        <div class="meal-type breakfast">Breakfast</div>
-                        <div class="meal-content">
-                            <div class="meal-name">
-                                Blini with Caviar and Sour Cream
-                                <span class="cuisine-badge fancy">Fancy</span>
-                                <span class="cuisine-badge slavic">Slavic</span>
-                            </div>
-                            <div class="meal-calories">450 kcal</div>
-                            <div class="meal-ingredients">
-                                <ul>
-                                    <li>flour 150g</li>
-                                    <li>buckwheat flour 100g</li>
-                                    <li>eggs 3</li>
-                                    <li>salmon roe 50g</li>
-                                    <li>sour cream</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="meal">
-                        <div class="meal-type lunch">Lunch</div>
-                        <div class="meal-content">
-                            <div class="meal-name">
-                                Tom Yum Soup
-                                <span class="cuisine-badge asian">Asian</span>
-                            </div>
-                            <div class="meal-calories">280 kcal</div>
-                            <div class="meal-ingredients">
-                                <ul>
-                                    <li>shrimp 200g</li>
-                                    <li>mushrooms</li>
-                                    <li>lemongrass</li>
-                                    <li>galangal</li>
-                                    <li>coconut milk</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="meal">
-                        <div class="meal-type dinner">Dinner</div>
-                        <div class="meal-content">
-                            <div class="meal-name">
-                                Pasta Carbonara
-                                <span class="cuisine-badge slavic">Pasta</span>
-                            </div>
-                            <div class="meal-calories">580 kcal</div>
-                            <div class="meal-ingredients">
-                                <ul>
-                                    <li>spaghetti 400g</li>
-                                    <li>guanciale 150g</li>
-                                    <li>eggs 4</li>
-                                    <li>pecorino 100g</li>
-                                    <li>black pepper</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+      document.getElementById('recipeModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
 
-    <!-- Grocery Section -->
-    <div id="grocery" class="content-section">
-        <div class="pantry-toggle">
-            <span>Hide items already in pantry</span>
-            <label class="switch">
-                <input type="checkbox" id="pantryToggle" onchange="togglePantryItems()">
-                <span class="slider"></span>
-            </label>
-        </div>
+    /**
+     * Close modal
+     */
+    function closeModal() {
+      document.getElementById('recipeModal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
 
-        <div class="grocery-section">
-            <div class="grocery-category">
-                <h3>🥩 Meat & Poultry <span>6 items</span></h3>
-                <div class="grocery-items">
-                    <div class="grocery-item" data-in-stock="false"><span>Chicken breast</span><span class="item-amount">1550g</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Beef sirloin</span><span class="item-amount">450g</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Ground beef</span><span class="item-amount">750g (need)</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Ground pork</span><span class="item-amount">300g (need)</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Shrimp</span><span class="item-amount">200g</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Guanciale/Pancetta</span><span class="item-amount">150g</span></div>
-                </div>
-            </div>
+    /**
+     * Toggle daily breakdown in pantry
+     */
+    function toggleDaily() {
+      const breakdowns = document.querySelectorAll('.daily-breakdown');
+      const button = document.querySelector('#toggle-daily');
 
-            <div class="grocery-category">
-                <h3>🥛 Dairy & Eggs <span>7 items</span></h3>
-                <div class="grocery-items">
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Eggs</span><span class="item-amount">18 (need)</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Sour cream</span><span class="item-amount">600g (need)</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Butter</span><span class="item-amount">70g (need)</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Cottage cheese</span><span class="item-amount">400g</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Cheddar cheese</span><span class="item-amount">50g (need)</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Pecorino romano</span><span class="item-amount">100g</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Milk</span><span class="item-amount">150ml (need)</span></div>
-                </div>
-            </div>
+      breakdowns.forEach(el => el.classList.toggle('hidden'));
+      button.textContent = breakdowns[0] && breakdowns[0].classList.contains('hidden')
+        ? '[Показать по дням]'
+        : '[Скрыть по дням]';
+    }
 
-            <div class="grocery-category">
-                <h3>🥬 Vegetables <span>7 items to buy</span></h3>
-                <div class="grocery-items">
-                    <div class="grocery-item" data-in-stock="false"><span>Beets</span><span class="item-amount">450g</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Potatoes</span><span class="item-amount">✓ in stock</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Carrots</span><span class="item-amount">✓ in stock</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Onion</span><span class="item-amount">400g (need)</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Celery</span><span class="item-amount">✓ in stock</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Garlic</span><span class="item-amount">10g (need)</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Mushrooms</span><span class="item-amount">325g (need)</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Green onions</span><span class="item-amount">130g</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Frozen peas & carrots</span><span class="item-amount">✓ in stock</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Bell pepper</span><span class="item-amount">150g</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Cabbage</span><span class="item-amount">✓ in stock</span></div>
-                </div>
-            </div>
+    // Close on overlay click
+    document.getElementById('recipeModal').addEventListener('click', (e) => {
+      if (e.target.id === 'recipeModal') {
+        closeModal();
+      }
+    });
 
-            <div class="grocery-category">
-                <h3>🌿 Herbs & Aromatics <span>7 items</span></h3>
-                <div class="grocery-items">
-                    <div class="grocery-item" data-in-stock="false"><span>Dill</span><span class="item-amount">60g</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Parsley</span><span class="item-amount">30g</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Thai basil</span><span class="item-amount">20g</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Lemongrass</span><span class="item-amount">30g</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Galangal</span><span class="item-amount">20g</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Kaffir lime leaves</span><span class="item-amount">4 leaves</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Garlic chives</span><span class="item-amount">50g</span></div>
-                </div>
-            </div>
-
-            <div class="grocery-category">
-                <h3>🌾 Grains & Pasta <span>8 items to buy</span></h3>
-                <div class="grocery-items">
-                    <div class="grocery-item" data-in-stock="false"><span>Rice noodles</span><span class="item-amount">250g</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Rice</span><span class="item-amount">✓ in stock</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Jasmine rice</span><span class="item-amount">200g</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Spaghetti</span><span class="item-amount">300g (need)</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Buckwheat</span><span class="item-amount">✓ in stock</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Buckwheat flour</span><span class="item-amount">100g</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Flour</span><span class="item-amount">250g (need)</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Panko breadcrumbs</span><span class="item-amount">250g</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Bread</span><span class="item-amount">60g</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Dumpling wrappers</span><span class="item-amount">500g</span></div>
-                </div>
-            </div>
-
-            <div class="grocery-category">
-                <h3>🥫 Canned & Jarred <span>6 items to buy</span></h3>
-                <div class="grocery-items">
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Canned tomatoes</span><span class="item-amount">✓ in stock</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Cannellini beans</span><span class="item-amount">400g</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Coconut milk</span><span class="item-amount">200ml (need)</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Bamboo shoots</span><span class="item-amount">150g</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Tamarind puree</span><span class="item-amount">45ml</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Green curry paste</span><span class="item-amount">60g</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Chili paste</span><span class="item-amount">30g</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Tomato paste</span><span class="item-amount">✓ in stock</span></div>
-                </div>
-            </div>
-
-            <div class="grocery-category">
-                <h3>🧂 Sauces & Condiments <span>2 items to buy</span></h3>
-                <div class="grocery-items">
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Soy sauce</span><span class="item-amount">✓ in stock</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Fish sauce</span><span class="item-amount">✓ in stock</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Oyster sauce</span><span class="item-amount">45ml</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Ketchup</span><span class="item-amount">✓ in stock</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>Sesame oil</span><span class="item-amount">✓ in stock</span></div>
-                    <div class="grocery-item in-stock" data-in-stock="true"><span>White vinegar</span><span class="item-amount">✓ in stock</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Lime juice</span><span class="item-amount">60ml</span></div>
-                </div>
-            </div>
-
-            <div class="grocery-category">
-                <h3>🥜 Other <span>4 items</span></h3>
-                <div class="grocery-items">
-                    <div class="grocery-item" data-in-stock="false"><span>Peanuts</span><span class="item-amount">50g</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Bean sprouts</span><span class="item-amount">300g</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Firm tofu</span><span class="item-amount">150g</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Brandy</span><span class="item-amount">60ml</span></div>
-                    <div class="grocery-item" data-in-stock="false"><span>Salmon roe</span><span class="item-amount">50g</span></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Pantry Section -->
-    <div id="pantry" class="content-section">
-        <div class="summary-card">
-            <h3>🏠 Virtual Pantry Inventory</h3>
-            <p style="color: var(--text-secondary); margin-bottom: 20px;">Items currently in stock (toggle to see what you need to buy)</p>
-            <div class="summary-stats">
-                <div class="summary-stat">
-                    <div class="value">45</div>
-                    <div class="label">Items in Pantry</div>
-                </div>
-                <div class="summary-stat">
-                    <div class="value">42</div>
-                    <div class="label">Items to Buy</div>
-                </div>
-                <div class="summary-stat">
-                    <div class="value">€65</div>
-                    <div class="label">Savings from Pantry</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="grocery-section">
-            <h3 style="margin-bottom: 20px; color: var(--accent-asian);">✓ Well Stocked</h3>
-            <div class="grocery-items" style="margin-bottom: 30px;">
-                <div class="grocery-item"><span>Potatoes</span><span class="item-amount">1000g</span></div>
-                <div class="grocery-item"><span>Carrots</span><span class="item-amount">400g</span></div>
-                <div class="grocery-item"><span>Celery</span><span class="item-amount">200g</span></div>
-                <div class="grocery-item"><span>Cabbage</span><span class="item-amount">500g</span></div>
-                <div class="grocery-item"><span>Rice</span><span class="item-amount">1000g</span></div>
-                <div class="grocery-item"><span>Buckwheat</span><span class="item-amount">500g</span></div>
-                <div class="grocery-item"><span>Olive oil</span><span class="item-amount">500ml</span></div>
-                <div class="grocery-item"><span>Vegetable oil</span><span class="item-amount">500ml</span></div>
-                <div class="grocery-item"><span>Soy sauce</span><span class="item-amount">200ml</span></div>
-                <div class="grocery-item"><span>Fish sauce</span><span class="item-amount">200ml</span></div>
-                <div class="grocery-item"><span>Sesame oil</span><span class="item-amount">100ml</span></div>
-                <div class="grocery-item"><span>Chicken broth</span><span class="item-amount">1000ml</span></div>
-            </div>
-
-            <h3 style="margin-bottom: 20px; color: var(--accent-slavic);">⚠️ Partial Stock (Need to Buy More)</h3>
-            <div class="grocery-items">
-                <div class="grocery-item"><span>Ground beef</span><span class="item-amount">400g / need 750g more</span></div>
-                <div class="grocery-item"><span>Ground pork</span><span class="item-amount">300g / need 300g more</span></div>
-                <div class="grocery-item"><span>Eggs</span><span class="item-amount">12 / need 18 more</span></div>
-                <div class="grocery-item"><span>Sour cream</span><span class="item-amount">200g / need 600g more</span></div>
-                <div class="grocery-item"><span>Butter</span><span class="item-amount">250g / need 70g more</span></div>
-                <div class="grocery-item"><span>Flour</span><span class="item-amount">1000g / need 250g more</span></div>
-                <div class="grocery-item"><span>Spaghetti</span><span class="item-amount">500g / need 300g more</span></div>
-                <div class="grocery-item"><span>Coconut milk</span><span class="item-amount">400ml / need 200ml more</span></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Summary Section -->
-    <div id="summary" class="content-section">
-        <div class="summary-card">
-            <h3>📊 Week Summary</h3>
-            <div class="summary-stats">
-                <div class="summary-stat">
-                    <div class="value">21</div>
-                    <div class="label">Total Meals</div>
-                </div>
-                <div class="summary-stat">
-                    <div class="value">13</div>
-                    <div class="label">Slavic/Pasta</div>
-                </div>
-                <div class="summary-stat">
-                    <div class="value">8</div>
-                    <div class="label">Asian</div>
-                </div>
-                <div class="summary-stat">
-                    <div class="value">2</div>
-                    <div class="label">Fancy Dinners</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="summary-card">
-            <h3>💰 Cost Estimate</h3>
-            <div class="summary-stats">
-                <div class="summary-stat">
-                    <div class="value">€185</div>
-                    <div class="label">Full Grocery Cost</div>
-                </div>
-                <div class="summary-stat">
-                    <div class="value">€65</div>
-                    <div class="label">Pantry Savings</div>
-                </div>
-                <div class="summary-stat">
-                    <div class="value">€120</div>
-                    <div class="label">Shopping Trip</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="summary-card">
-            <h3>🍽️ Calorie Targets</h3>
-            <div class="summary-stats">
-                <div class="summary-stat">
-                    <div class="value">3400</div>
-                    <div class="label">Lower Target</div>
-                </div>
-                <div class="summary-stat">
-                    <div class="value">4000</div>
-                    <div class="label">Medium Target</div>
-                </div>
-                <div class="summary-stat">
-                    <div class="value">4700</div>
-                    <div class="label">Higher Target</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="summary-card">
-            <h3>📚 Recipe Sources</h3>
-            <ul style="list-style: none; color: var(--text-secondary);">
-                <li style="margin-bottom: 10px;">• <strong>Borscht:</strong> natashaskitchen.com</li>
-                <li style="margin-bottom: 10px;">• <strong>Chicken Kiev:</strong> natashaskitchen.com</li>
-                <li style="margin-bottom: 10px;">• <strong>Beef Stroganoff:</strong> vikalinka.com</li>
-                <li style="margin-bottom: 10px;">• <strong>Pad Thai:</strong> recipetineats.com</li>
-                <li style="margin-bottom: 10px;">• <strong>Pierogi:</strong> recipetineats.com</li>
-            </ul>
-        </div>
-    </div>
-
-    <footer style="text-align: center; margin-top: 40px; padding: 20px; color: var(--text-secondary); font-size: 0.9rem;">
-        Generated by Grocery Planner • March 1, 2026
-    </footer>
-
-    <script>
-        function showSection(sectionId) {
-            // Hide all sections
-            document.querySelectorAll('.content-section').forEach(section => {
-                section.classList.remove('active');
-            });
-
-            // Remove active from all tabs
-            document.querySelectorAll('.tab').forEach(tab => {
-                tab.classList.remove('active');
-            });
-
-            // Show selected section
-            document.getElementById(sectionId).classList.add('active');
-
-            // Add active to clicked tab
-            event.target.classList.add('active');
-        }
-
-        function togglePantryItems() {
-            const toggle = document.getElementById('pantryToggle');
-            const items = document.querySelectorAll('.grocery-item[data-in-stock="true"]');
-
-            items.forEach(item => {
-                if (toggle.checked) {
-                    item.style.display = 'none';
-                } else {
-                    item.style.display = 'flex';
-                }
-            });
-        }
-    </script>
+    // Close on ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+  </script>
 </body>
 </html>

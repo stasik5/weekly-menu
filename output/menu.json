@@ -1,24 +1,41 @@
 {
   "Monday": {
     "breakfast": {
-      "name": "Паровые булочки со свининой",
-      "cuisine": "asian",
+      "name": "Блины с сырной начинкой",
+      "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
-      "name": "Маринованный имбирь и дайкон",
+      "name": "Печенье с зелёным чаем",
       "cuisine": "asian",
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Пельмени со сметаной",
+      "name": "Борщ со сметаной",
       "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
   "Tuesday": {
     "breakfast": {
-      "name": "Блины с сырной начинкой",
+      "name": "Лапша с яйцом",
+      "cuisine": "asian",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Жареный тофу кубиками",
+      "cuisine": "asian",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Пад тай с креветками",
+      "cuisine": "asian",
+      "targetCalories": 2100
+    }
+  },
+  "Wednesday": {
+    "breakfast": {
+      "name": "Каша с маслом и молоком",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
@@ -28,15 +45,32 @@
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Паста карбонара",
+      "name": "Шашлык с салатом",
       "cuisine": "slavic",
       "targetCalories": 2100
     }
   },
-  "Wednesday": {
+  "Thursday": {
     "breakfast": {
-      "name": "Мисо-суп с тофу",
-      "cuisine": "asian",
+      "name": "Сырники (творожные оладьи)",
+      "cuisine": "slavic",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Банан с арахисовой пастой",
+      "cuisine": "slavic",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Пельмени со сметаной",
+      "cuisine": "slavic",
+      "targetCalories": 2100
+    }
+  },
+  "Friday": {
+    "breakfast": {
+      "name": "Яичница с овощами",
+      "cuisine": "slavic",
       "targetCalories": 1400
     },
     "snack": {
@@ -50,9 +84,26 @@
       "targetCalories": 2100
     }
   },
-  "Thursday": {
+  "Saturday": {
     "breakfast": {
-      "name": "Сырники (творожные оладьи)",
+      "name": "Жареный рис с овощами",
+      "cuisine": "asian",
+      "targetCalories": 1400
+    },
+    "snack": {
+      "name": "Творог с зеленью",
+      "cuisine": "slavic",
+      "targetCalories": 500
+    },
+    "dinner": {
+      "name": "Голубцы с мясом",
+      "cuisine": "slavic",
+      "targetCalories": 2100
+    }
+  },
+  "Sunday": {
+    "breakfast": {
+      "name": "Гречневая каша с молоком и ягодами",
       "cuisine": "slavic",
       "targetCalories": 1400
     },
@@ -62,59 +113,8 @@
       "targetCalories": 500
     },
     "dinner": {
-      "name": "Голубцы с мясом",
-      "cuisine": "slavic",
-      "targetCalories": 2100
-    }
-  },
-  "Friday": {
-    "breakfast": {
-      "name": "Овсянка с мёдом и орехами",
-      "cuisine": "slavic",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Йогурт с мёдом",
-      "cuisine": "slavic",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Куриный терияки с рисом",
+      "name": "Сычуаньский мапо тофу",
       "cuisine": "asian",
-      "targetCalories": 2100
-    }
-  },
-  "Saturday": {
-    "breakfast": {
-      "name": "Яичница с овощами",
-      "cuisine": "slavic",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Маринованные овощи",
-      "cuisine": "slavic",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Корейский бибимбап",
-      "cuisine": "asian",
-      "targetCalories": 2100
-    }
-  },
-  "Sunday": {
-    "breakfast": {
-      "name": "Каша с маслом и молоком",
-      "cuisine": "slavic",
-      "targetCalories": 1400
-    },
-    "snack": {
-      "name": "Чипсы из морской капусты",
-      "cuisine": "asian",
-      "targetCalories": 500
-    },
-    "dinner": {
-      "name": "Борщ со сметаной",
-      "cuisine": "slavic",
       "targetCalories": 2100
     }
   }
