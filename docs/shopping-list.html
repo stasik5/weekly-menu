@@ -3,23 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Список покупок — Неделя 8 (17-23 февраля 2026)</title>
+    <title>Список покупок — Неделя 09</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 20px;
             min-height: 100vh;
+            padding: 20px;
         }
-        
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -28,561 +20,679 @@
             padding: 40px;
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
         }
-        
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 3px solid #667eea;
-        }
-        
         h1 {
             font-size: 2.5em;
-            color: #667eea;
             margin-bottom: 10px;
+            color: #333;
+            text-align: center;
         }
-        
         .subtitle {
+            text-align: center;
             color: #666;
+            margin-bottom: 30px;
             font-style: italic;
-            font-size: 1.1em;
         }
-        
         .category {
             margin-bottom: 30px;
         }
-        
-        .category-header {
+        .category h2 {
             font-size: 1.5em;
-            color: #764ba2;
             margin-bottom: 15px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #f0f0f0;
+            border-bottom: 3px solid #667eea;
+            color: #333;
         }
-        
-        .items {
-            list-style: none;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 10px;
-        }
-        
         .item {
             display: flex;
             align-items: center;
-            padding: 8px 12px;
+            padding: 12px 15px;
+            margin-bottom: 8px;
             background: #f8f9fa;
-            border-radius: 8px;
-            transition: all 0.2s;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
         }
-        
         .item:hover {
             background: #e9ecef;
             transform: translateX(5px);
         }
-        
-        .checkbox {
-            width: 20px;
-            height: 20px;
-            border: 2px solid #667eea;
-            border-radius: 4px;
-            margin-right: 12px;
+        .item.checked {
+            opacity: 0.5;
+            text-decoration: line-through;
+        }
+        .item input[type="checkbox"] {
+            width: 22px;
+            height: 22px;
+            margin-right: 15px;
             cursor: pointer;
-            flex-shrink: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.2s;
+            accent-color: #667eea;
         }
-        
-        .checkbox.checked {
-            background: #667eea;
-            color: white;
-        }
-        
-        .checkbox.checked::after {
-            content: '✓';
-            color: white;
-            font-weight: bold;
-        }
-        
-        .item-text {
-            flex: 1;
-        }
-        
         .item-name {
             font-weight: 600;
             color: #333;
+            flex: 1;
         }
-        
-        .item-quantity {
+        .item-qty {
             color: #666;
             font-size: 0.9em;
-            margin-left: 8px;
+            margin-left: 10px;
         }
-        
         .stats {
             margin-top: 40px;
-            padding-top: 20px;
-            border-top: 3px solid #667eea;
-        }
-        
-        .stats h2 {
-            color: #667eea;
-            margin-bottom: 20px;
-        }
-        
-        .stats-table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        
-        .stats-table th,
-        .stats-table td {
-            padding: 10px;
-            text-align: left;
-            border-bottom: 1px solid #e9ecef;
-        }
-        
-        .stats-table th {
-            background: #667eea;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
             color: white;
-            font-weight: 600;
         }
-        
-        .stats-table tr:hover {
-            background: #f8f9fa;
+        .stats h2 {
+            margin-bottom: 15px;
         }
-        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        .stat-item {
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
         .tip {
-            margin-top: 30px;
+            margin-top: 20px;
             padding: 15px;
             background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            border-radius: 8px;
-        }
-        
-        .tip strong {
+            border-radius: 10px;
             color: #856404;
         }
-        
-        .footer {
-            margin-top: 40px;
-            text-align: center;
-            color: #999;
-            font-size: 0.9em;
+        .print-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease;
         }
-        
+        .print-btn:hover {
+            transform: scale(1.02);
+        }
         @media print {
-            body {
-                background: white;
-                padding: 0;
-            }
-            
-            .container {
-                box-shadow: none;
-                padding: 20px;
-            }
-            
-            .item:hover {
-                transform: none;
-            }
-        }
-        
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-            
-            .container {
-                padding: 20px;
-            }
-            
-            h1 {
-                font-size: 1.8em;
-            }
-            
-            .items {
-                grid-template-columns: 1fr;
-            }
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; padding: 20px; }
+            .print-btn { display: none; }
+            .item:hover { transform: none; background: #f8f9fa; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>📝 Список покупок</h1>
-            <p class="subtitle">Неделя 8 (17-23 февраля 2026) • Сгенерировано автоматически</p>
-        </header>
-
-        <div class="category">
-            <h2 class="category-header">🥬 Овощи</h2>
-            <ul class="items">
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Картофель</span><span class="item-quantity">— 7 шт</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Морковь</span><span class="item-quantity">— 7 шт</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Огурцы</span><span class="item-quantity">— 6 шт</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Помидоры</span><span class="item-quantity">— 5 шт</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Перец болгарский</span><span class="item-quantity">— 4 шт</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Свекла</span><span class="item-quantity">— 2 шт</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Капуста белокочанная</span><span class="item-quantity">— 300 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Спаржевая фасоль</span><span class="item-quantity">— 100 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Зеленый лук</span><span class="item-quantity">— 40 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Дайкон</span><span class="item-quantity">— 500 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Томатная паста</span><span class="item-quantity">— 4 ст.л.</span></div>
-                </li>
-            </ul>
-        </div>
-
-        <div class="category">
-            <h2 class="category-header">🥩 Мясо и птица</h2>
-            <ul class="items">
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Куриное филе</span><span class="item-quantity">— 800 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Свинина</span><span class="item-quantity">— 400 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Говядина</span><span class="item-quantity">— 200 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Говядина на кости</span><span class="item-quantity">— 500 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Фарш мясной</span><span class="item-quantity">— 500 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Бекон</span><span class="item-quantity">— 150 г</span></div>
-                </li>
-            </ul>
-        </div>
-
-        <div class="category">
-            <h2 class="category-header">🧀 Молочные продукты</h2>
-            <ul class="items">
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Молоко</span><span class="item-quantity">— 1.2 л</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Сметана</span><span class="item-quantity">— 450 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Творог</span><span class="item-quantity">— 400 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Сыр твердый</span><span class="item-quantity">— 300 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Сыр пармезан</span><span class="item-quantity">— 80 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Сыр мягкий</span><span class="item-quantity">— 100 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Сливки 20%</span><span class="item-quantity">— 100 мл</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Масло сливочное</span><span class="item-quantity">— 70 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Яйца</span><span class="item-quantity">— 12 шт</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Йогурт натуральный</span><span class="item-quantity">— 300 г</span></div>
-                </li>
-            </ul>
-        </div>
-
-        <div class="category">
-            <h2 class="category-header">🌾 Крупы и выпечка</h2>
-            <ul class="items">
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Рис</span><span class="item-quantity">— 550 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Спагетти</span><span class="item-quantity">— 300 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Хлопья овсяные</span><span class="item-quantity">— 100 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Крупа</span><span class="item-quantity">— 150 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Мука пшеничная</span><span class="item-quantity">— 500 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Сухие дрожжи</span><span class="item-quantity">— 7 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Крахмал</span><span class="item-quantity">— 1 ст.л.</span></div>
-                </li>
-            </ul>
-        </div>
-
-        <div class="category">
-            <h2 class="category-header">🍜 Азиатские продукты</h2>
-            <ul class="items">
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Тофу</span><span class="item-quantity">— 100 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Эдамаме</span><span class="item-quantity">— 300 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Ростки сои</span><span class="item-quantity">— 100 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Водоросли вакаме</span><span class="item-quantity">— 10 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Грибы шиитаке</span><span class="item-quantity">— 50 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Мисо паста</span><span class="item-quantity">— 2 ст.л.</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Даши</span><span class="item-quantity">— 1 ч.л.</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Соевый соус</span><span class="item-quantity">— 6 ст.л.</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Соус терияки</span><span class="item-quantity">— 100 мл</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Кунжут</span><span class="item-quantity">— ~5 ст.л.</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Кунжутное масло</span><span class="item-quantity">— 4 ст.л.</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Имбирь свежий</span><span class="item-quantity">— 60 г</span></div>
-                </li>
-            </ul>
-        </div>
-
-        <div class="category">
-            <h2 class="category-header">🌶️ Специи и приправы</h2>
-            <ul class="items">
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Лавровый лист</span><span class="item-quantity">— 4 шт</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Корица</span><span class="item-quantity">— 1 ч.л.</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Куркума</span><span class="item-quantity">— 1 ч.л.</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Морская соль</span><span class="item-quantity">— 1 ч.л.</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Зелень</span><span class="item-quantity">— 20 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Мята свежая</span><span class="item-quantity">— 10 г</span></div>
-                </li>
-            </ul>
-        </div>
-
-        <div class="category">
-            <h2 class="category-header">🥫 Масла и соусы</h2>
-            <ul class="items">
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Масло оливковое</span><span class="item-quantity">— 2 ст.л.</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Арахисовый соус</span><span class="item-quantity">— 50 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Соус барбекю</span><span class="item-quantity">— 100 г</span></div>
-                </li>
-            </ul>
-        </div>
-
-        <div class="category">
-            <h2 class="category-header">🍎 Фрукты и ягоды</h2>
-            <ul class="items">
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Яблоки</span><span class="item-quantity">— 2 шт</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Манго спелое</span><span class="item-quantity">— 2 шт</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Ягоды свежие или сушеные</span><span class="item-quantity">— 50 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Фрукты свежие</span><span class="item-quantity">— 100 г</span></div>
-                </li>
-            </ul>
-        </div>
-
-        <div class="category">
-            <h2 class="category-header">🥜 Орехи и другое</h2>
-            <ul class="items">
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Орехи грецкие</span><span class="item-quantity">— 60 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Орехи</span><span class="item-quantity">— 30 г</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Кокосовая стружка</span><span class="item-quantity">— 1 ст.л.</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Мед</span><span class="item-quantity">— ~2 ст.л.</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Лимонный сок</span><span class="item-quantity">— 1 ст.л.</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Лайм</span><span class="item-quantity">— 1 шт</span></div>
-                </li>
-                <li class="item">
-                    <div class="checkbox" onclick="this.classList.toggle('checked')"></div>
-                    <div class="item-text"><span class="item-name">Пельмени замороженные</span><span class="item-quantity">— 500 г</span></div>
-                </li>
-            </ul>
-        </div>
-
+        <h1>📝 Список покупок</h1>
+        <p class="subtitle">Неделя 09 • Сгенерировано автоматически</p>
+        
+        
+            <div class="category">
+                <h2>🥬 Овощи</h2>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">горошек зеленый</span>
+                        <span class="item-qty">100g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">зеленый лук</span>
+                        <span class="item-qty">20g + 30g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">капуста белокочанная</span>
+                        <span class="item-qty">300g + 1 кочан</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">картофель</span>
+                        <span class="item-qty">3 pcs + 4 pcs</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">лук репчатый</span>
+                        <span class="item-qty">2 pcs + 1 pcs</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">морковь</span>
+                        <span class="item-qty">2 pcs + 1 pcs</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">огурцы</span>
+                        <span class="item-qty">2 pcs</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">перец болгарский</span>
+                        <span class="item-qty">2 pcs + 1 pcs</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">помидоры</span>
+                        <span class="item-qty">3 pcs + 2 pcs</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">ростки фасоли</span>
+                        <span class="item-qty">100g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">свекла</span>
+                        <span class="item-qty">2 pcs</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">чеснок</span>
+                        <span class="item-qty">3 clovesа + 2 clovesа + 4 clovesа</span>
+                    </label>
+                
+            </div>
+          
+            <div class="category">
+                <h2>🥩 Мясо и рыба</h2>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">говядина на кости</span>
+                        <span class="item-qty">500g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">креветки</span>
+                        <span class="item-qty">300g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">куриное филе</span>
+                        <span class="item-qty">400g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">свинина</span>
+                        <span class="item-qty">500g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">свинина фарш</span>
+                        <span class="item-qty">200g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">фарш мясной</span>
+                        <span class="item-qty">500g</span>
+                    </label>
+                
+            </div>
+          
+            <div class="category">
+                <h2>🧀 Молочные продукты</h2>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">масло сливочное</span>
+                        <span class="item-qty">30g + 2 tbsp + 20g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">молоко</span>
+                        <span class="item-qty">400ml + 500ml</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">сметана</span>
+                        <span class="item-qty">для подачи + 2 tbsp + 200g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">сметана 20%</span>
+                        <span class="item-qty">100g + 150g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">сыр мягкий</span>
+                        <span class="item-qty">100g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">сыр твердый</span>
+                        <span class="item-qty">150g + 100g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">творог</span>
+                        <span class="item-qty">400g + 200g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">яйца</span>
+                        <span class="item-qty">2 pcs + 3 pcs</span>
+                    </label>
+                
+            </div>
+          
+            <div class="category">
+                <h2>🌾 Крупы и мучное</h2>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">гречка</span>
+                        <span class="item-qty">150g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">крупа</span>
+                        <span class="item-qty">150g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">лапша яичная</span>
+                        <span class="item-qty">200g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">мука</span>
+                        <span class="item-qty">5 tbsp</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">мука пшеничная</span>
+                        <span class="item-qty">200g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">пельмени замороженные</span>
+                        <span class="item-qty">500g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">рис</span>
+                        <span class="item-qty">200g + 150g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">рисовая лапша</span>
+                        <span class="item-qty">200g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">хлеб</span>
+                        <span class="item-qty">2 slicesа</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">хлеб ржаной</span>
+                        <span class="item-qty">2 slicesа</span>
+                    </label>
+                
+            </div>
+          
+            <div class="category">
+                <h2>🍜 Азиатские продукты</h2>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">имбирь</span>
+                        <span class="item-qty">2 tsp</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">кунжут</span>
+                        <span class="item-qty">1 tsp</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">кунжутное масло</span>
+                        <span class="item-qty">1 tbsp + 2 tbsp</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">паста чили</span>
+                        <span class="item-qty">2 tbsp</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">рыбный соус</span>
+                        <span class="item-qty">2 tbsp</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">соевый соус</span>
+                        <span class="item-qty">2 tbsp + 3 tbsp</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">тофу</span>
+                        <span class="item-qty">150g + 400g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">эдамаме замороженный</span>
+                        <span class="item-qty">300g</span>
+                    </label>
+                
+            </div>
+          
+            <div class="category">
+                <h2>🍎 Фрукты и ягоды</h2>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">бананы</span>
+                        <span class="item-qty">2 pcs</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">лайм</span>
+                        <span class="item-qty">1 pcs</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">манго спелое</span>
+                        <span class="item-qty">2 pcs</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">мята свежая</span>
+                        <span class="item-qty">10g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">яблоки</span>
+                        <span class="item-qty">2 pcs</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">ягоды свежие или сушеные</span>
+                        <span class="item-qty">50g</span>
+                    </label>
+                
+            </div>
+          
+            <div class="category">
+                <h2>🥜 Орехи и другое</h2>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">арахис</span>
+                        <span class="item-qty">50g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">арахисовая паста</span>
+                        <span class="item-qty">3 tbsp</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">зеленый чай</span>
+                        <span class="item-qty">2 пакетика</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">крахмал</span>
+                        <span class="item-qty">1 tbsp</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">мед</span>
+                        <span class="item-qty">2 tsp + 1 tsp + to taste + 2 tbsp</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">орехи грецкие</span>
+                        <span class="item-qty">30g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">печенье овсяное</span>
+                        <span class="item-qty">100g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">сахар</span>
+                        <span class="item-qty">1 tbsp + 2 tbsp + 2 tsp</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">томатная паста</span>
+                        <span class="item-qty">2 tbsp</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">уксус</span>
+                        <span class="item-qty">2 tbsp</span>
+                    </label>
+                
+            </div>
+          
+            <div class="category">
+                <h2>🌶️ Специи и масла</h2>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">зелень</span>
+                        <span class="item-qty">to taste + 30g + 20g</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">зелень по вкусу</span>
+                        
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">лавровый лист</span>
+                        <span class="item-qty">2 pcs</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">лимонный сок</span>
+                        <span class="item-qty">1 tbsp</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">масло растительное</span>
+                        <span class="item-qty">3 tbsp + 2 tbsp + для жарки</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">перец черный молотый по вкусу</span>
+                        
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">соль</span>
+                        <span class="item-qty">pinch + 0.5 tsp + 1 tsp</span>
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">соль по вкусу</span>
+                        
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">соль, перец по вкусу</span>
+                        
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">соль, перец, лавровый лист по вкусу</span>
+                        
+                    </label>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">черный перец по вкусу</span>
+                        
+                    </label>
+                
+            </div>
+          
+            <div class="category">
+                <h2>📦 Другое</h2>
+                
+                    <label class="item">
+                        <input type="checkbox" onchange="this.parentElement.classList.toggle('checked')">
+                        <span class="item-name">вода</span>
+                        <span class="item-qty">250ml + 1 л + 2 л + 200ml</span>
+                    </label>
+                
+            </div>
+          
+        
         <div class="stats">
             <h2>📊 Статистика</h2>
-            <table class="stats-table">
-                <thead>
-                    <tr>
-                        <th>Категория</th>
-                        <th>Количество товаров</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>🥬 Овощи</td><td>11</td></tr>
-                    <tr><td>🧀 Молочные продукты</td><td>10</td></tr>
-                    <tr><td>🍜 Азиатские продукты</td><td>13</td></tr>
-                    <tr><td>🌾 Крупы и выпечка</td><td>7</td></tr>
-                    <tr><td>🥜 Орехи и другое</td><td>7</td></tr>
-                    <tr><td>🥩 Мясо и птица</td><td>6</td></tr>
-                    <tr><td>🌶️ Специи</td><td>6</td></tr>
-                    <tr><td>🍎 Фрукты и ягоды</td><td>4</td></tr>
-                    <tr><td>🥫 Масла и соусы</td><td>3</td></tr>
-                    <tr style="font-weight: bold; background: #f0f0f0;"><td>Всего</td><td>~67 позиций</td></tr>
-                </tbody>
-            </table>
+            <div class="stats-grid">
+                
+                    <div class="stat-item">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Овощи</div>
+                    </div>
+                
+                    <div class="stat-item">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Мясо и рыба</div>
+                    </div>
+                
+                    <div class="stat-item">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Молочные продукты</div>
+                    </div>
+                
+                    <div class="stat-item">
+                        <div class="stat-number">10</div>
+                        <div class="stat-label">Крупы и мучное</div>
+                    </div>
+                
+                    <div class="stat-item">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Азиатские продукты</div>
+                    </div>
+                
+                    <div class="stat-item">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Фрукты и ягоды</div>
+                    </div>
+                
+                    <div class="stat-item">
+                        <div class="stat-number">10</div>
+                        <div class="stat-label">Орехи и другое</div>
+                    </div>
+                
+                    <div class="stat-item">
+                        <div class="stat-number">11</div>
+                        <div class="stat-label">Специи и масла</div>
+                    </div>
+                
+                    <div class="stat-item">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Другое</div>
+                    </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number">72</div>
+                    <div class="stat-label">Всего</div>
+                </div>
+            </div>
         </div>
-
+        
         <div class="tip">
-            <strong>💡 Совет:</strong> Многие специи и масла могут уже быть у вас дома. Проверьте запасы перед покупкой!
+            💡 <strong>Совет:</strong> Проверьте запасы дома перед покупкой! Многие специи и масла могут уже быть у вас.
         </div>
-
-        <div class="footer">
-            <p>Сгенерировано автоматически • Неделя 8 (17-23 февраля 2026)</p>
-        </div>
+        
+        <button class="print-btn" onclick="window.print()">🖨️ Распечатать список</button>
     </div>
-
+    
     <script>
-        // Save checkbox state to localStorage
-        document.querySelectorAll('.checkbox').forEach((checkbox, index) => {
-            const key = `shopping-list-${index}`;
-            
-            // Load saved state
-            if (localStorage.getItem(key) === 'checked') {
-                checkbox.classList.add('checked');
-            }
-            
-            // Save state on change
-            checkbox.addEventListener('click', () => {
-                if (checkbox.classList.contains('checked')) {
-                    localStorage.setItem(key, 'checked');
-                } else {
-                    localStorage.removeItem(key);
-                }
+        // Save checked state to localStorage
+        document.querySelectorAll('input[type="checkbox"]').forEach((cb, i) => {
+            const key = 'shopping-09-' + i;
+            cb.checked = localStorage.getItem(key) === 'true';
+            if (cb.checked) cb.parentElement.classList.add('checked');
+            cb.addEventListener('change', () => {
+                localStorage.setItem(key, cb.checked);
             });
         });
     </script>
