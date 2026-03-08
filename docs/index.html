@@ -21,7 +21,7 @@
     }
 
     .container {
-      max-width: 1400px;
+      max-width: 1200px;
       margin: 0 auto;
     }
 
@@ -45,31 +45,6 @@
       font-size: 1.1em;
     }
 
-    .stats {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 20px;
-      flex-wrap: wrap;
-    }
-
-    .stat {
-      background: rgba(255,255,255,0.1);
-      padding: 10px 20px;
-      border-radius: 8px;
-    }
-
-    .stat-label {
-      font-size: 0.9em;
-      color: #94a3b8;
-    }
-
-    .stat-value {
-      font-size: 1.3em;
-      font-weight: bold;
-      color: #60a5fa;
-    }
-
     .section {
       background: rgba(30, 41, 59, 0.8);
       backdrop-filter: blur(10px);
@@ -87,37 +62,10 @@
       border-bottom: 2px solid #3b82f6;
     }
 
-    /* Toggle Button */
-    .toggle-container {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .toggle-btn {
-      background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
-      color: white;
-      border: none;
-      padding: 15px 40px;
-      font-size: 1.1em;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
-    }
-
-    .toggle-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
-    }
-
-    .toggle-btn.active {
-      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-    }
-
-    /* Menu Grid */
-    .menu-grid {
+    /* Meal Grid */
+    .meal-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
     }
 
@@ -126,12 +74,6 @@
       border-radius: 8px;
       overflow: hidden;
       border: 1px solid rgba(59, 130, 246, 0.2);
-      transition: transform 0.3s ease;
-    }
-
-    .day-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
     }
 
     .day-header {
@@ -149,195 +91,343 @@
 
     .meal {
       margin-bottom: 15px;
-      padding: 12px;
-      border-radius: 6px;
-      background: rgba(15, 23, 42, 0.4);
-      border-left: 3px solid #3b82f6;
+      padding-bottom: 15px;
+      border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      position: relative;
     }
 
     .meal:last-child {
+      border-bottom: none;
       margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .meal:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+      background: rgba(59, 130, 246, 0.1);
+    }
+
+    .meal::after {
+      content: '📖';
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      font-size: 0.8em;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    .meal:hover::after {
+      opacity: 1;
     }
 
     .meal-type {
       font-size: 0.85em;
-      color: #94a3b8;
       text-transform: uppercase;
+      color: #60a5fa;
       margin-bottom: 5px;
     }
 
     .meal-name {
       font-weight: 600;
-      color: #e2e8f0;
+      color: #f1f5f9;
       margin-bottom: 5px;
     }
 
-    .meal-meta {
-      display: flex;
-      gap: 15px;
+    .meal-cuisine {
       font-size: 0.85em;
-      color: #64748b;
+      color: #94a3b8;
     }
 
-    .cuisine-tag {
-      display: inline-block;
-      padding: 2px 8px;
-      border-radius: 4px;
-      font-size: 0.75em;
-      font-weight: 600;
-    }
-
-    .cuisine-slavic {
-      background: rgba(59, 130, 246, 0.2);
-      color: #60a5fa;
-    }
-
-    .cuisine-asian {
-      background: rgba(16, 185, 129, 0.2);
-      color: #34d399;
+    .meal-calories {
+      font-size: 0.85em;
+      color: #4ade80;
     }
 
     /* Grocery List */
-    .grocery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+    .grocery-category {
+      margin-bottom: 25px;
     }
 
-    .category-card {
-      background: rgba(30, 41, 59, 0.6);
-      padding: 20px;
-      border-radius: 8px;
+    .grocery-category h3 {
+      color: #60a5fa;
+      margin-bottom: 15px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+    }
+
+    .grocery-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 10px;
+    }
+
+    .grocery-item {
+      display: flex;
+      align-items: baseline;
+      padding: 8px 12px;
+      background: rgba(15, 23, 42, 0.6);
+      border-radius: 4px;
       border: 1px solid rgba(59, 130, 246, 0.2);
     }
 
-    .category-title {
-      color: #60a5fa;
-      font-weight: 600;
-      margin-bottom: 15px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+    .grocery-item input[type="checkbox"] {
+      margin-right: 10px;
+      cursor: pointer;
     }
 
-    .ingredient-item {
-      display: flex;
-      justify-content: space-between;
-      padding: 8px 0;
-      border-bottom: 1px solid rgba(59, 130, 246, 0.1);
-      color: #cbd5e1;
-    }
-
-    .ingredient-item:last-child {
-      border-bottom: none;
-    }
-
-    .ingredient-name {
+    .grocery-item-name {
       flex: 1;
+      color: #e8eaf0;
     }
 
-    .ingredient-amount {
+    .grocery-item-qty {
       color: #94a3b8;
       font-size: 0.9em;
     }
 
-    /* Pantry View */
-    .pantry-view {
-      display: none;
-    }
-
-    .pantry-view.active {
-      display: block;
-    }
-
-    .menu-view.hidden {
-      display: none;
-    }
-
-    .pantry-status {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-    }
-
-    .status-badge {
-      padding: 8px 15px;
+    /* Virtual Pantry */
+    .pantry-section button {
+      background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+      color: white;
+      border: none;
+      padding: 10px 20px;
       border-radius: 6px;
+      cursor: pointer;
       font-size: 0.9em;
-      font-weight: 600;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
+      margin-bottom: 15px;
     }
 
-    .status-have {
-      background: rgba(16, 185, 129, 0.2);
-      color: #34d399;
+    .pantry-section button:hover {
+      background: linear-gradient(135deg, #2563eb 0%, #60a5fa 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
     }
 
-    .status-need {
-      background: rgba(239, 68, 68, 0.2);
-      color: #f87171;
+    .pantry-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 12px;
     }
 
     .pantry-item {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: 10px;
-      margin-bottom: 8px;
+      gap: 10px;
+      padding: 12px 15px;
+      background: rgba(15, 23, 42, 0.6);
       border-radius: 6px;
-      background: rgba(15, 23, 42, 0.4);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      transition: all 0.2s ease;
     }
 
-    .pantry-item.have {
-      border-left: 3px solid #10b981;
+    .pantry-item:hover {
+      background: rgba(59, 130, 246, 0.1);
+      border-color: rgba(59, 130, 246, 0.4);
     }
 
-    .pantry-item.need {
-      border-left: 3px solid #ef4444;
+    .pantry-item .emoji {
+      font-size: 1.5em;
     }
 
-    .pantry-item-name {
+    .pantry-item .name {
       flex: 1;
-      color: #e2e8f0;
+      color: #e8eaf0;
+      font-weight: 500;
+      overflow: visible;
+      white-space: nowrap;
+      min-width: 0;
     }
 
-    .pantry-stock {
-      color: #94a3b8;
+    .pantry-item .amount {
+      font-weight: 600;
+      font-size: 0.95em;
+    }
+
+    .pantry-item .amount.low {
+      color: #ef4444;
+    }
+
+    .pantry-item .amount.medium {
+      color: #eab308;
+    }
+
+    .pantry-item .amount.high {
+      color: #4ade80;
+    }
+
+    .daily-breakdown {
+      margin-top: 8px;
+      padding: 8px 12px;
+      background: rgba(15, 23, 42, 0.8);
+      border-radius: 4px;
+      border-left: 3px solid #3b82f6;
       font-size: 0.85em;
-      margin-left: 10px;
+      color: #94a3b8;
+      grid-column: 1 / -1;
     }
 
-    .pantry-status-icon {
-      margin-right: 10px;
-      font-size: 1.2em;
+    .daily-breakdown.hidden {
+      display: none;
     }
 
-    /* Footer */
-    footer {
+    /* Modal Popup */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(5px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-content {
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 16px;
+      padding: 30px;
+      max-width: 600px;
+      width: 90%;
+      max-height: 85vh;
+      overflow-y: auto;
+      position: relative;
+      transform: scale(0.9) translateY(20px);
+      transition: transform 0.3s ease;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-overlay.active .modal-content {
+      transform: scale(1) translateY(0);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: rgba(239, 68, 68, 0.2);
+      border: 2px solid #ef4444;
+      color: #ef4444;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    .modal-close:hover {
+      background: #ef4444;
+      color: #ffffff;
+      transform: rotate(90deg);
+    }
+
+    .modal-title {
+      font-size: 1.8em;
+      color: #f1f5f9;
+      margin-bottom: 5px;
+      margin-right: 40px;
+    }
+
+    .modal-cuisine {
+      color: #60a5fa;
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+    }
+
+    .modal-section {
+      margin-bottom: 25px;
+    }
+
+    .modal-section h4 {
+      color: #60a5fa;
+      font-size: 1.1em;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .modal-section ul,
+    .modal-section ol {
+      padding-left: 20px;
+    }
+
+    .modal-section li {
+      margin-bottom: 8px;
+      color: #cbd5e1;
+      line-height: 1.7;
+    }
+
+    .modal-source {
       text-align: center;
-      margin-top: 40px;
-      padding: 20px;
-      color: #64748b;
-      font-size: 0.9em;
+      margin-top: 20px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(59, 130, 246, 0.2);
     }
 
-    footer a {
+    .modal-source a {
       color: #60a5fa;
       text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 8px 16px;
+      background: rgba(59, 130, 246, 0.2);
+      border-radius: 20px;
+      transition: background 0.2s ease;
     }
 
-    footer a:hover {
-      text-decoration: underline;
+    .modal-source a:hover {
+      background: rgba(59, 130, 246, 0.4);
     }
 
-    /* Responsive */
     @media (max-width: 768px) {
-      .stats {
-        flex-direction: column;
-        align-items: center;
+      .meal-grid {
+        grid-template-columns: 1fr;
       }
 
-      .menu-grid, .grocery-grid {
+      .grocery-items {
         grid-template-columns: 1fr;
+      }
+
+      .modal-content {
+        padding: 20px;
+        width: 95%;
+        max-height: 90vh;
+      }
+
+      .modal-title {
+        font-size: 1.4em;
+      }
+
+      .modal-close {
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
       }
     }
   </style>
@@ -347,329 +437,330 @@
     <header>
       <h1>🍽️ Еженедельное меню</h1>
       <div class="week-label">March 8-14, 2026</div>
-      <div class="stats">
-        <div class="stat">
-          <div class="stat-label">Славянская кухня</div>
-          <div class="stat-value">62%</div>
-        </div>
-        <div class="stat">
-          <div class="stat-label">Азиатская кухня</div>
-          <div class="stat-value">38%</div>
-        </div>
-        <div class="stat">
-          <div class="stat-label">Калории</div>
-          <div class="stat-value">~4000</div>
-        </div>
-        <div class="stat">
-          <div class="stat-label">Блюд</div>
-          <div class="stat-value">21</div>
-        </div>
-      </div>
     </header>
 
-    <div class="toggle-container">
-      <button class="toggle-btn" onclick="toggleView()">🔄 Переключить на кладовую</button>
+    <!-- Pantry (shown first as main shopping reference) -->
+    
+    <!-- Shopping List Button -->
+    <section class="section" style="text-align: center; padding: 30px;">
+      <a href="shopping-list.html" class="shopping-list-btn" style="
+        display: inline-block;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 18px 40px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: 600;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        transition: all 0.3s ease;
+      ">
+        📋 Открыть список покупок
+      </a>
+      <p style="color: #94a3b8; margin-top: 15px; font-size: 0.9em;">
+        Интерактивный список с чекбоксами
+      </p>
+    </section>
+  
+
+    <!-- Meal Grid -->
+    <section class="section">
+      <h2>Блюда на неделю (Нажмите на любое блюдо для рецепта)</h2>
+      <div class="meal-grid">
+        
+          <div class="day-card">
+            <div class="day-header">Понедельник</div>
+            <div class="meals">
+              
+                  <div class="meal" data-day="Monday" data-meal="breakfast" onclick="openModal('Monday', 'breakfast')">
+                    <div class="meal-type">Завтрак</div>
+                    <div class="meal-name">Блины с сырной начинкой</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Monday" data-meal="snack" onclick="openModal('Monday', 'snack')">
+                    <div class="meal-type">Перекус</div>
+                    <div class="meal-name">Печенье с зелёным чаем</div>
+                    <div class="meal-cuisine">Азиатская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Monday" data-meal="dinner" onclick="openModal('Monday', 'dinner')">
+                    <div class="meal-type">Ужин</div>
+                    <div class="meal-name">Борщ со сметаной</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+            </div>
+          </div>
+        
+          <div class="day-card">
+            <div class="day-header">Вторник</div>
+            <div class="meals">
+              
+                  <div class="meal" data-day="Tuesday" data-meal="breakfast" onclick="openModal('Tuesday', 'breakfast')">
+                    <div class="meal-type">Завтрак</div>
+                    <div class="meal-name">Лапша с яйцом</div>
+                    <div class="meal-cuisine">Азиатская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Tuesday" data-meal="snack" onclick="openModal('Tuesday', 'snack')">
+                    <div class="meal-type">Перекус</div>
+                    <div class="meal-name">Жареный тофу кубиками</div>
+                    <div class="meal-cuisine">Азиатская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Tuesday" data-meal="dinner" onclick="openModal('Tuesday', 'dinner')">
+                    <div class="meal-type">Ужин</div>
+                    <div class="meal-name">Пад тай с креветками</div>
+                    <div class="meal-cuisine">Азиатская</div>
+                  </div>
+                
+            </div>
+          </div>
+        
+          <div class="day-card">
+            <div class="day-header">Среда</div>
+            <div class="meals">
+              
+                  <div class="meal" data-day="Wednesday" data-meal="breakfast" onclick="openModal('Wednesday', 'breakfast')">
+                    <div class="meal-type">Завтрак</div>
+                    <div class="meal-name">Каша с маслом и молоком</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Wednesday" data-meal="snack" onclick="openModal('Wednesday', 'snack')">
+                    <div class="meal-type">Перекус</div>
+                    <div class="meal-name">Дольки яблока с сыром</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Wednesday" data-meal="dinner" onclick="openModal('Wednesday', 'dinner')">
+                    <div class="meal-type">Ужин</div>
+                    <div class="meal-name">Шашлык с салатом</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+            </div>
+          </div>
+        
+          <div class="day-card">
+            <div class="day-header">Четверг</div>
+            <div class="meals">
+              
+                  <div class="meal" data-day="Thursday" data-meal="breakfast" onclick="openModal('Thursday', 'breakfast')">
+                    <div class="meal-type">Завтрак</div>
+                    <div class="meal-name">Сырники (творожные оладьи)</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Thursday" data-meal="snack" onclick="openModal('Thursday', 'snack')">
+                    <div class="meal-type">Перекус</div>
+                    <div class="meal-name">Банан с арахисовой пастой</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Thursday" data-meal="dinner" onclick="openModal('Thursday', 'dinner')">
+                    <div class="meal-type">Ужин</div>
+                    <div class="meal-name">Пельмени со сметаной</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+            </div>
+          </div>
+        
+          <div class="day-card">
+            <div class="day-header">Пятница</div>
+            <div class="meals">
+              
+                  <div class="meal" data-day="Friday" data-meal="breakfast" onclick="openModal('Friday', 'breakfast')">
+                    <div class="meal-type">Завтрак</div>
+                    <div class="meal-name">Яичница с овощами</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Friday" data-meal="snack" onclick="openModal('Friday', 'snack')">
+                    <div class="meal-type">Перекус</div>
+                    <div class="meal-name">Зелёный горошек с маслом</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Friday" data-meal="dinner" onclick="openModal('Friday', 'dinner')">
+                    <div class="meal-type">Ужин</div>
+                    <div class="meal-name">Куриный суп с овощами</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+            </div>
+          </div>
+        
+          <div class="day-card">
+            <div class="day-header">Суббота</div>
+            <div class="meals">
+              
+                  <div class="meal" data-day="Saturday" data-meal="breakfast" onclick="openModal('Saturday', 'breakfast')">
+                    <div class="meal-type">Завтрак</div>
+                    <div class="meal-name">Жареный рис с овощами</div>
+                    <div class="meal-cuisine">Азиатская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Saturday" data-meal="snack" onclick="openModal('Saturday', 'snack')">
+                    <div class="meal-type">Перекус</div>
+                    <div class="meal-name">Творог с зеленью</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Saturday" data-meal="dinner" onclick="openModal('Saturday', 'dinner')">
+                    <div class="meal-type">Ужин</div>
+                    <div class="meal-name">Голубцы с мясом</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+            </div>
+          </div>
+        
+          <div class="day-card">
+            <div class="day-header">Воскресенье</div>
+            <div class="meals">
+              
+                  <div class="meal" data-day="Sunday" data-meal="breakfast" onclick="openModal('Sunday', 'breakfast')">
+                    <div class="meal-type">Завтрак</div>
+                    <div class="meal-name">Гречневая каша с молоком и ягодами</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Sunday" data-meal="snack" onclick="openModal('Sunday', 'snack')">
+                    <div class="meal-type">Перекус</div>
+                    <div class="meal-name">Яблоки с мёдом и орехами</div>
+                    <div class="meal-cuisine">Славянская</div>
+                  </div>
+                
+                  <div class="meal" data-day="Sunday" data-meal="dinner" onclick="openModal('Sunday', 'dinner')">
+                    <div class="meal-type">Ужин</div>
+                    <div class="meal-name">Сычуаньский мапо тофу</div>
+                    <div class="meal-cuisine">Азиатская</div>
+                  </div>
+                
+            </div>
+          </div>
+        
+      </div>
+    </section>
+
+    <!-- Grocery List - Hidden (commented out, pantry is now the main reference) -->
+    <!--
+
+    <!-- Recipe Modal -->
+    <div class="modal-overlay" id="recipeModal">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <div class="modal-cuisine" id="modalCuisine"></div>
+
+        <div class="modal-section">
+          <h4>🥗 Ингредиенты</h4>
+          <ul id="modalIngredients"></ul>
+        </div>
+
+        <div class="modal-section">
+          <h4>👨‍🍳 Инструкции</h4>
+          <ol id="modalInstructions"></ol>
+        </div>
+
+        <div class="modal-source" id="modalSource"></div>
+      </div>
     </div>
-
-    <!-- Menu View -->
-    <div class="menu-view" id="menuView">
-      <section class="section">
-        <h2>📅 Понедельник - March 9</h2>
-        <div class="meals">
-          <div class="meal">
-            <div class="meal-type">🌅 Завтрак</div>
-            <div class="meal-name">Russian Blini with Sour Cream & Jam <span class="cuisine-tag cuisine-slavic">Slavic</span></div>
-            <div class="meal-meta"><span>🔥 650 kcal</span> <span>⏱️ 25 min</span></div>
-          </div>
-          <div class="meal">
-            <div class="meal-type">☀️ Обед</div>
-            <div class="meal-name">Classic Borscht with Beef <span class="cuisine-tag cuisine-slavic">Slavic</span></div>
-            <div class="meal-meta"><span>🔥 850 kcal</span> <span>⏱️ 90 min</span></div>
-          </div>
-          <div class="meal">
-            <div class="meal-type">🌙 Ужин</div>
-            <div class="meal-name">Beef Stroganoff with Egg Noodles <span class="cuisine-tag cuisine-slavic">Slavic</span></div>
-            <div class="meal-meta"><span>🔥 950 kcal</span> <span>⏱️ 35 min</span></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>📅 Вторник - March 10</h2>
-        <div class="meals">
-          <div class="meal">
-            <div class="meal-type">🌅 Завтрак</div>
-            <div class="meal-name">Thai Congee with Pork <span class="cuisine-tag cuisine-asian">Asian</span></div>
-            <div class="meal-meta"><span>🔥 550 kcal</span> <span>⏱️ 45 min</span></div>
-          </div>
-          <div class="meal">
-            <div class="meal-type">☀️ Обед</div>
-            <div class="meal-name">Pelmeni with Butter & Dill <span class="cuisine-tag cuisine-slavic">Slavic</span></div>
-            <div class="meal-meta"><span>🔥 750 kcal</span> <span>⏱️ 15 min</span></div>
-          </div>
-          <div class="meal">
-            <div class="meal-type">🌙 Ужин</div>
-            <div class="meal-name">Kung Pao Chicken <span class="cuisine-tag cuisine-asian">Asian</span></div>
-            <div class="meal-meta"><span>🔥 900 kcal</span> <span>⏱️ 30 min</span></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>📅 Среда - March 11</h2>
-        <div class="meals">
-          <div class="meal">
-            <div class="meal-type">🌅 Завтрак</div>
-            <div class="meal-name">Syrniki (Cottage Cheese Pancakes) <span class="cuisine-tag cuisine-slavic">Slavic</span></div>
-            <div class="meal-meta"><span>🔥 600 kcal</span> <span>⏱️ 25 min</span></div>
-          </div>
-          <div class="meal">
-            <div class="meal-type">☀️ Обед</div>
-            <div class="meal-name">Vegetable Fried Rice <span class="cuisine-tag cuisine-asian">Asian</span></div>
-            <div class="meal-meta"><span>🔥 700 kcal</span> <span>⏱️ 20 min</span></div>
-          </div>
-          <div class="meal">
-            <div class="meal-type">🌙 Ужин</div>
-            <div class="meal-name">Golubtsi (Stuffed Cabbage Rolls) <span class="cuisine-tag cuisine-slavic">Slavic</span></div>
-            <div class="meal-meta"><span>🔥 950 kcal</span> <span>⏱️ 90 min</span></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>📅 Четверг - March 12</h2>
-        <div class="meals">
-          <div class="meal">
-            <div class="meal-type">🌅 Завтрак</div>
-            <div class="meal-name">Dim Sum Dumplings <span class="cuisine-tag cuisine-asian">Asian</span></div>
-            <div class="meal-meta"><span>🔥 500 kcal</span> <span>⏱️ 10 min</span></div>
-          </div>
-          <div class="meal">
-            <div class="meal-type">☀️ Обед</div>
-            <div class="meal-name">Buckwheat with Mushrooms & Onions <span class="cuisine-tag cuisine-slavic">Slavic</span></div>
-            <div class="meal-meta"><span>🔥 700 kcal</span> <span>⏱️ 30 min</span></div>
-          </div>
-          <div class="meal">
-            <div class="meal-type">🌙 Ужин</div>
-            <div class="meal-name">Thai Green Curry with Chicken <span class="cuisine-tag cuisine-asian">Asian</span></div>
-            <div class="meal-meta"><span>🔥 950 kcal</span> <span>⏱️ 35 min</span></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>📅 Пятница - March 13</h2>
-        <div class="meals">
-          <div class="meal">
-            <div class="meal-type">🌅 Завтрак</div>
-            <div class="meal-name">Oatmeal Kasha with Honey & Berries <span class="cuisine-tag cuisine-slavic">Slavic</span></div>
-            <div class="meal-meta"><span>🔥 550 kcal</span> <span>⏱️ 15 min</span></div>
-          </div>
-          <div class="meal">
-            <div class="meal-type">☀️ Обед</div>
-            <div class="meal-name">Tom Yum Soup with Shrimp <span class="cuisine-tag cuisine-asian">Asian</span></div>
-            <div class="meal-meta"><span>🔥 650 kcal</span> <span>⏱️ 30 min</span></div>
-          </div>
-          <div class="meal">
-            <div class="meal-type">🌙 Ужин</div>
-            <div class="meal-name">Chicken Kiev <span class="cuisine-tag cuisine-slavic">Slavic</span></div>
-            <div class="meal-meta"><span>🔥 1000 kcal</span> <span>⏱️ 45 min</span></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>📅 Суббота - March 14</h2>
-        <div class="meals">
-          <div class="meal">
-            <div class="meal-type">🌅 Завтрак</div>
-            <div class="meal-name">Pad Thai with Shrimp <span class="cuisine-tag cuisine-asian">Asian</span></div>
-            <div class="meal-meta"><span>🔥 750 kcal</span> <span>⏱️ 25 min</span></div>
-          </div>
-          <div class="meal">
-            <div class="meal-type">☀️ Обед</div>
-            <div class="meal-name">Olivier Salad (Russian Potato Salad) <span class="cuisine-tag cuisine-slavic">Slavic</span></div>
-            <div class="meal-meta"><span>🔥 700 kcal</span> <span>⏱️ 40 min</span></div>
-          </div>
-          <div class="meal">
-            <div class="meal-type">🌙 Ужин</div>
-            <div class="meal-name">Kotleti (Russian Meat Patties) with Potatoes <span class="cuisine-tag cuisine-slavic">Slavic</span></div>
-            <div class="meal-meta"><span>🔥 950 kcal</span> <span>⏱️ 40 min</span></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>📅 Воскресенье - March 15</h2>
-        <div class="meals">
-          <div class="meal">
-            <div class="meal-type">🌅 Завтрак</div>
-            <div class="meal-name">Blini with Sweet Cheese Filling <span class="cuisine-tag cuisine-slavic">Slavic</span></div>
-            <div class="meal-meta"><span>🔥 700 kcal</span> <span>⏱️ 35 min</span></div>
-          </div>
-          <div class="meal">
-            <div class="meal-type">☀️ Обед</div>
-            <div class="meal-name">Pho Bo (Vietnamese Beef Noodle Soup) <span class="cuisine-tag cuisine-asian">Asian</span></div>
-            <div class="meal-meta"><span>🔥 800 kcal</span> <span>⏱️ 60 min</span></div>
-          </div>
-          <div class="meal">
-            <div class="meal-type">🌙 Ужин</div>
-            <div class="meal-name">Vareniki with Potato Filling <span class="cuisine-tag cuisine-slavic">Slavic</span></div>
-            <div class="meal-meta"><span>🔥 900 kcal</span> <span>⏱️ 60 min</span></div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- Pantry View -->
-    <div class="pantry-view" id="pantryView">
-      <section class="section">
-        <h2>🛒 Список покупок</h2>
-        <div class="pantry-status">
-          <span class="status-badge status-have">✅ В наличии: 24</span>
-          <span class="status-badge status-need">❌ Нужно купить: 50</span>
-        </div>
-
-        <div class="grocery-grid">
-          <div class="category-card">
-            <div class="category-title">🥩 Мясо и рыба</div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Beef brisket</span><span class="pantry-stock">400g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Beef sirloin</span><span class="pantry-stock">800g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Ground beef</span><span class="pantry-stock">900g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Ground pork</span><span class="pantry-stock">400g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Chicken breast</span><span class="pantry-stock">1100g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Chicken thighs</span><span class="pantry-stock">500g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Shrimp</span><span class="pantry-stock">500g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Bologna/ham</span><span class="pantry-stock">200g</span></div>
-          </div>
-
-          <div class="category-card">
-            <div class="category-title">🧀 Молочные продукты</div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Milk</span><span class="pantry-stock">1500ml</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Eggs</span><span class="pantry-stock">20 large</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Sour cream</span><span class="pantry-stock">810g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Cottage cheese</span><span class="pantry-stock">700g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Butter</span><span class="pantry-stock">295g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Mayonnaise</span><span class="pantry-stock">150g</span></div>
-          </div>
-
-          <div class="category-card">
-            <div class="category-title">🥬 Овощи</div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Cabbage</span><span class="pantry-stock">1200g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Beets</span><span class="pantry-stock">300g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Potatoes</span><span class="pantry-stock">1450g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Carrots</span><span class="pantry-stock">700g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Onion</span><span class="pantry-stock">9 medium</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Garlic</span><span class="pantry-stock">21 cloves</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Ginger</span><span class="pantry-stock">50g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Mushrooms</span><span class="pantry-stock">900g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Bell peppers</span><span class="pantry-stock">350g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Green onions</span><span class="pantry-stock">80g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Pickles</span><span class="pantry-stock">150g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Lemongrass</span><span class="pantry-stock">2 stalks</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Galangal</span><span class="pantry-stock">30g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Bean sprouts</span><span class="pantry-stock">200g</span></div>
-          </div>
-
-          <div class="category-card">
-            <div class="category-title">🌾 Зерновые</div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Jasmine rice</span><span class="pantry-stock">300g more</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Rice noodles</span><span class="pantry-stock">400g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Egg noodles</span><span class="pantry-stock">300g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Bread</span><span class="pantry-stock">80g</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">All-purpose flour</span><span class="pantry-stock">500g</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">Buckwheat</span><span class="pantry-stock">200g</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">Rolled oats</span><span class="pantry-stock">200g</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">Regular rice</span><span class="pantry-stock">300g</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">Breadcrumbs</span><span class="pantry-stock">150g</span></div>
-          </div>
-
-          <div class="category-card">
-            <div class="category-title">🥫 Бакалея</div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Fish sauce</span><span class="pantry-stock">5ml more</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Coconut milk</span><span class="pantry-stock">2 cans</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Beef broth</span><span class="pantry-stock">1600ml</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Chicken broth</span><span class="pantry-stock">300ml more</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">Vegetable oil</span><span class="pantry-stock">500ml</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">Sesame oil</span><span class="pantry-stock">100ml</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">Soy sauce</span><span class="pantry-stock">200ml</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">Rice vinegar</span><span class="pantry-stock">100ml</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">Tomato paste</span><span class="pantry-stock">1 tube</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">Sugar</span><span class="pantry-stock">500g</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">Salt</span><span class="pantry-stock">500g</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">Black pepper</span><span class="pantry-stock">50g</span></div>
-          </div>
-
-          <div class="category-card">
-            <div class="category-title">🍜 Соусы и специи</div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Green curry paste</span><span class="pantry-stock">3 tbsp</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Chili paste</span><span class="pantry-stock">2 tbsp</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Tamarind paste</span><span class="pantry-stock">2 tbsp</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Hoisin sauce</span><span class="pantry-stock">2 tbsp</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Lime leaves</span><span class="pantry-stock">4 leaves</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">Chili oil</span><span class="pantry-stock">50ml</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">Dried chilies</span><span class="pantry-stock">10 whole</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">Star anise</span><span class="pantry-stock">5 whole</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">Cinnamon stick</span><span class="pantry-stock">2 sticks</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">Vanilla sugar</span><span class="pantry-stock">2 packets</span></div>
-          </div>
-
-          <div class="category-card">
-            <div class="category-title">❄️ Замороженные</div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Frozen berries</span><span class="pantry-stock">100g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Pelmeni frozen</span><span class="pantry-stock">600g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Frozen dumplings</span><span class="pantry-stock">400g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Vareniki frozen</span><span class="pantry-stock">600g</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">Frozen peas</span><span class="pantry-stock">300g</span></div>
-          </div>
-
-          <div class="category-card">
-            <div class="category-title">🌿 Зелень и фрукты</div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Dill</span><span class="pantry-stock">90g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Thai basil</span><span class="pantry-stock">40g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Cilantro</span><span class="pantry-stock">20g</span></div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Lime</span><span class="pantry-stock">3 whole</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">Strawberry jam</span><span class="pantry-stock">100g</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">Honey</span><span class="pantry-stock">100g</span></div>
-          </div>
-
-          <div class="category-card">
-            <div class="category-title">🥜 Орехи</div>
-            <div class="pantry-item need"><span class="pantry-status-icon">❌</span><span class="pantry-item-name">Peanuts</span><span class="pantry-stock">30g more</span></div>
-            <div class="pantry-item have"><span class="pantry-status-icon">✅</span><span class="pantry-item-name">Walnuts</span><span class="pantry-stock">50g</span></div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <footer>
-      <p>Generated by OpenClaw Menu Generator</p>
-      <p>View on <a href="https://github.com/stasik5/weekly-menu" target="_blank">GitHub</a></p>
-      <p style="margin-top: 10px; color: #475569;">Estimated cost: €85-110</p>
-    </footer>
   </div>
 
   <script>
-    let showingPantry = false;
+    // Recipe data - embedded in the page
+    const recipesData = {"Monday-breakfast":{"title":"Блины с сырной начинкой","cuisine":"slavic","ingredients":[{"name":"мука пшеничная - 200 г"},{"name":"яйца - 2 шт"},{"name":"молоко - 400 мл"},{"name":"масло растительное - 3 ст.л."},{"name":"соль - щепотка"},{"name":"сахар - 1 ст.л."},{"name":"сыр твердый - 150 г"},{"name":"сыр мягкий - 100 г"},{"name":"зелень - по вкусу"}],"instructions":["Замесить тесто: муку, яйца, молоко, соль, сахар, 1 ст.л. масла","Тесто должно быть консистенции жидкой сметаны","Разогреть сковороду, смазать маслом","Испечь блины тонким слоем","Для начинки: натереть сыры на крупной терке","Добавить нарезанную зелень, перемешать","На каждый блин выложить начинку","Свернуть в трубочку или конвертом","Подавать теплыми"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"web_search","url":"https://food.ru/recipes/207783-blinchiki-s-syrom"},"Monday-snack":{"title":"Печенье с зелёным чаем","cuisine":"asian","ingredients":[{"name":"печенье овсяное - 100 г"},{"name":"зеленый чай - 2 пакетика"},{"name":"мед - 2 ч.л."}],"instructions":["Заварить зеленый чай","Выложить печенье на тарелку","Подавать с горячим чаем и медом"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"simple_snack","url":null},"Monday-dinner":{"title":"Борщ со сметаной","cuisine":"slavic","ingredients":[{"name":"говядина на кости - 500 г"},{"name":"свекла - 2 шт"},{"name":"капуста белокочанная - 300 г"},{"name":"картофель - 3 шт"},{"name":"морковь - 2 шт"},{"name":"лук репчатый - 2 шт"},{"name":"томатная паста - 2 ст.л."},{"name":"сметана 20% - 100 г"},{"name":"лимонный сок - 1 ст.л."},{"name":"соль, перец, лавровый лист по вкусу"}],"instructions":["Сварить мясной бульон 2-3 часа","Свеклу нарезать соломкой, сбрызнуть лимонным соком","Лук и морковь нарезать, обжарить с томатной пастой","Картофель и капусту нарезать","В бульон добавить картофель, варить 10 минут","Добавить капусту, варить 5 минут","Добавить зажарку и свеклу, варить 10 минут","Настаивать 15-20 минут перед подачей","Подавать со сметаной и зеленью"],"nutrition":{"calories":2100,"protein":79,"carbs":158,"fat":129},"source":"web_search","url":"https://eda.ru/recepty/supy/borshh-so-smetanoj-i-zelenju-38512"},"Tuesday-breakfast":{"title":"Лапша с яйцом","cuisine":"asian","ingredients":[{"name":"лапша яичная - 200 г"},{"name":"яйца - 3 шт"},{"name":"соевый соус - 2 ст.л."},{"name":"кунжутное масло - 1 ст.л."},{"name":"зеленый лук - 20 г"},{"name":"кунжут - 1 ч.л."}],"instructions":["Отварить лапшу согласно инструкции","Яйца взбить и обжарить как омлет","Нарезать омлет полосками","Смешать лапшу с омлетом","Добавить соевый соус и кунжутное масло","Посыпать зеленым луком и кунжутом"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"web_search","url":"https://www.povarenok.ru/recipes/show/156415/"},"Tuesday-snack":{"title":"Жареный тофу кубиками","cuisine":"asian","ingredients":[{"name":"тофу - 150 г"},{"name":"соевый соус - 2 ст.л."},{"name":"масло растительное - 2 ст.л."},{"name":"кунжут - 1 ч.л."}],"instructions":["Тофу нарезать кубиками 2x2 см","Обжарить на масле до золотистой корочки","Полить соевым соусом","Посыпать кунжутом"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"web_search","url":"https://www.edimdoma.ru/retsepty/52892-zharennyy-tofu"},"Tuesday-dinner":{"title":"Пад тай с креветками","cuisine":"asian","ingredients":[{"name":"рисовая лапша - 200 г"},{"name":"креветки - 300 г"},{"name":"яйца - 2 шт"},{"name":"ростки фасоли - 100 г"},{"name":"арахис - 50 г"},{"name":"лайм - 1 шт"},{"name":"соевый соус - 3 ст.л."},{"name":"рыбный соус - 2 ст.л."},{"name":"сахар - 2 ст.л."},{"name":"чеснок - 3 зубчика"}],"instructions":["Замочить лапшу в теплой воде на 30 минут","Смешать соевый соус, рыбный соус и сахар","Обжарить чеснок, добавить креветки","Отодвинуть креветки, взбить яйца на сковороде","Добавить лапшу и соус, перемешать","Добавить ростки фасоли","Подавать с арахисом и лаймом"],"nutrition":{"calories":2100,"protein":79,"carbs":158,"fat":129},"source":"web_search","url":"https://www.gastronom.ru/recipe/48978/pad-tay-s-krevetkami"},"Wednesday-breakfast":{"title":"Каша с маслом и молоком","cuisine":"slavic","ingredients":[{"name":"крупа - 150 г"},{"name":"молоко - 500 мл"},{"name":"вода - 250 мл"},{"name":"масло сливочное - 30 г"},{"name":"сахар - 2 ст.л."},{"name":"соль - 0.5 ч.л."}],"instructions":["Вскипятить воду, добавить соль","Всыпать крупу, варить на среднем огне 5 минут","Влить горячее молоко","Убавить огонь до минимума","Варить, постоянно помешивая, 10-15 минут","Добавить сахар, размешать","Снять с огня, добавить сливочное масло","Дать постоять под крышкой 5 минут"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"web_search","url":"https://food.ru/recipes/62155-ovsjanaja-kasha-na-moloke-so-slivochnym-maslom"},"Wednesday-snack":{"title":"Дольки яблока с сыром","cuisine":"slavic","ingredients":[{"name":"яблоки - 2 шт"},{"name":"сыр твердый - 100 г"},{"name":"орехи грецкие - 30 г"},{"name":"мед - 1 ч.л."}],"instructions":["Яблоки вымыть, нарезать дольками","Сыр нарезать ломтиками или кубиками","На тарелку выложить дольки яблока","Сверху положить ломтики сыра","Посыпать орехами","Полить медом по вкусу"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"web_search","url":"https://www.povarenok.ru/recipes/show/176716/"},"Wednesday-dinner":{"title":"Шашлык с салатом","cuisine":"slavic","ingredients":[{"name":"свинина - 500 г"},{"name":"лук репчатый - 2 шт"},{"name":"помидоры - 3 шт"},{"name":"огурцы - 2 шт"},{"name":"перец болгарский - 2 шт"},{"name":"зелень - 30 г"},{"name":"соль, перец по вкусу"},{"name":"уксус - 2 ст.л."},{"name":"масло растительное - 2 ст.л."}],"instructions":["Мясо нарезать кусками, замариновать с луком и уксусом","Жарить на гриле или сковороде до готовности","Овощи нарезать для салата","Заправить салат маслом и солью","Подавать шашлык с салатом и зеленью"],"nutrition":{"calories":2100,"protein":79,"carbs":158,"fat":129},"source":"web_search","url":"https://www.gastronom.ru/recipe/28258/shashlyk-iz-svininy"},"Thursday-breakfast":{"title":"Сырники (творожные оладьи)","cuisine":"slavic","ingredients":[{"name":"творог - 400 г"},{"name":"яйца - 2 шт"},{"name":"мука - 5 ст.л."},{"name":"сахар - 2 ч.л."},{"name":"соль - щепотка"},{"name":"масло растительное - для жарки"},{"name":"сметана - для подачи"},{"name":"мед - по вкусу"}],"instructions":["Творог протереть через сито или измельчить блендером","Добавить яйца, сахар, соль, перемешать","Постепенно добавить муку, замесить мягкое тесто","Сформировать котлетки, обвалять в муке","Разогреть сковороду с маслом","Жарить сырники 3-4 минуты с каждой стороны","Подавать со сметаной или медом"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"web_search","url":"https://www.gastronom.ru/recipe/4900/syrniki"},"Thursday-snack":{"title":"Банан с арахисовой пастой","cuisine":"slavic","ingredients":[{"name":"бананы - 2 шт"},{"name":"арахисовая паста - 3 ст.л."},{"name":"хлеб - 2 ломтика"}],"instructions":["Бананы нарезать кружочками","Хлеб намазать арахисовой пастой","Сверху выложить бананы","Подавать как бутерброды"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"simple_snack","url":null},"Thursday-dinner":{"title":"Пельмени со сметаной","cuisine":"slavic","ingredients":[{"name":"пельмени замороженные - 500 г"},{"name":"сметана 20% - 150 г"},{"name":"масло сливочное - 30 г"},{"name":"сыр твердый - 50 г"},{"name":"зелень - 20 г"},{"name":"черный перец по вкусу"},{"name":"соль по вкусу"}],"instructions":["Отварить пельмени в подсоленной воде до готовности (7-10 минут)","Откинуть на дуршлаг, дать стечь воде","На сковороде растопить сливочное масло","Выложить пельмени, добавить сметану","Тушить на среднем огне 3-5 минут","Посыпать тертым сыром и зеленью","Подавать горячими"],"nutrition":{"calories":2100,"protein":79,"carbs":158,"fat":129},"source":"web_search","url":"https://sp.lina.bz/blog/jarenye-pelmeni-so-smetanoi-na-skovorode/"},"Friday-breakfast":{"title":"Яичница с овощами","cuisine":"slavic","ingredients":[{"name":"яйца - 3 шт"},{"name":"помидоры - 2 шт"},{"name":"перец болгарский - 1 шт"},{"name":"лук репчатый - 1 шт"},{"name":"масло сливочное - 2 ст.л."},{"name":"соль по вкусу"},{"name":"перец черный молотый по вкусу"},{"name":"зелень по вкусу"}],"instructions":["Нарезать овощи: лук кубиками, перец и помидоры ломтиками","Разогреть сковороду с маслом","Обжарить лук до золотистого цвета (3-4 минуты)","Добавить перец, жарить 2-3 минуты","Добавить помидоры, тушить 2-3 минуты","Сделать углубления в овощах, разбить туда яйца","Жарить до готовности яиц (4-5 минут)","Посолить, поперчить, посыпать зеленью"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"web_search","url":"https://rightfood.net/ru/all-recipes/yaichnitsa-s-ovoshhami/"},"Friday-snack":{"title":"Зелёный горошек с маслом","cuisine":"slavic","ingredients":[{"name":"горошек зелёный замороженный - 300 г"},{"name":"масло сливочное - 30 г"},{"name":"соль - 1 ч.л."},{"name":"вода - 1 л"},{"name":"укроп свежий - 10 г"}],"instructions":["Довести воду до кипения, добавить соль","Добавить замороженный горошек в кипящую воду","Варить 5-7 минут на среднем огне до мягкости","Откинуть на дуршлаг, дать стечь воде","Переложить в миску, добавить сливочное масло","Посыпать нарезанным укропом","Подавать теплым"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"simple_snack","url":null},"Friday-dinner":{"title":"Куриный суп с овощами","cuisine":"slavic","ingredients":[{"name":"куриное филе - 400 г"},{"name":"картофель - 4 шт"},{"name":"морковь - 2 шт"},{"name":"лук репчатый - 1 шт"},{"name":"перец болгарский - 1 шт"},{"name":"вода - 2 л"},{"name":"масло растительное - 2 ст.л."},{"name":"соль по вкусу"},{"name":"перец черный молотый по вкусу"},{"name":"зелень по вкусу"},{"name":"лавровый лист - 2 шт"}],"instructions":["Куриное филе нарезать кубиками, залить водой, довести до кипения","Снять пену, варить 15 минут на медленном огне","Картофель нарезать кубиками, добавить в суп, варить 10 минут","Лук, морковь и перец нарезать, обжарить на масле 5 минут","Добавить обжаренные овощи в суп","Варить еще 10 минут до готовности картофеля","Добавить соль, перец, лавровый лист, зелень","Дать настояться 5 минут перед подачей"],"nutrition":{"calories":2100,"protein":79,"carbs":158,"fat":129},"source":"web_search","url":"https://povar.ru/recipes/legkii_kurinyi_sup_s_ovoshami-62883.html"},"Saturday-breakfast":{"title":"Жареный рис с овощами","cuisine":"asian","ingredients":[{"name":"рис - 200 г"},{"name":"яйца - 2 шт"},{"name":"морковь - 1 шт"},{"name":"горошек зеленый - 100 г"},{"name":"соевый соус - 3 ст.л."},{"name":"кунжутное масло - 2 ст.л."},{"name":"зеленый лук - 20 г"},{"name":"чеснок - 2 зубчика"}],"instructions":["Рис отварить и остудить","Морковь нарезать кубиками","Обжарить чеснок и морковь","Добавить яйца, быстро перемешать","Добавить рис и горошек","Влить соевый соус, перемешать","Подавать с зеленым луком"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"web_search","url":"https://www.gastronom.ru/recipe/38489/zharenyy-ris-s-ovoshchami"},"Saturday-snack":{"title":"Творог с зеленью","cuisine":"slavic","ingredients":[{"name":"творог - 200 г"},{"name":"сметана - 2 ст.л."},{"name":"зелень - 30 г"},{"name":"соль по вкусу"},{"name":"хлеб ржаной - 2 ломтика"}],"instructions":["Творог смешать со сметаной","Добавить нарезанную зелень и соль","Перемешать до однородности","Подавать с ржаным хлебом"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"simple_snack","url":null},"Saturday-dinner":{"title":"Голубцы с мясом","cuisine":"slavic","ingredients":[{"name":"капуста белокочанная - 1 кочан"},{"name":"фарш мясной - 500 г"},{"name":"рис - 150 г"},{"name":"лук репчатый - 2 шт"},{"name":"морковь - 2 шт"},{"name":"томатная паста - 2 ст.л."},{"name":"сметана - 200 г"},{"name":"масло растительное - 3 ст.л."},{"name":"соль, перец по вкусу"},{"name":"лавровый лист - 2 шт"}],"instructions":["Рис отварить до полуготовности","Капустные листья отделить и бланшировать 2-3 минуты","Лук и морковь нарезать, обжарить на масле","Смешать фарш, рис, половину овощей, соль и перец","Завернуть начинку в капустные листья","Выложить голубцы в кастрюлю","Залить соусом: сметана + томатная паста + вода","Тушить под крышкой 1 час на медленном огне","Подавать со сметаной"],"nutrition":{"calories":2100,"protein":79,"carbs":158,"fat":129},"source":"web_search","url":"https://www.gastronom.ru/recipe/548/golubcy-s-myasom-i-risom"},"Sunday-breakfast":{"title":"Гречневая каша с молоком и ягодами","cuisine":"slavic","ingredients":[{"name":"гречка - 150 г"},{"name":"молоко - 400 мл"},{"name":"вода - 200 мл"},{"name":"ягоды свежие или сушеные - 50 г"},{"name":"мед - 2 ст.л."},{"name":"масло сливочное - 20 г"},{"name":"соль - щепотка"}],"instructions":["Гречку промыть, залить водой, довести до кипения","Варить на медленном огне 15 минут","Добавить горячее молоко, перемешать","Добавить сливочное масло","Подавать с ягодами и медом"],"nutrition":{"calories":1400,"protein":53,"carbs":105,"fat":86},"source":"web_search","url":"https://eda.ru/recepty/zavtraki/grechnevaya-kasha-s-molokom-40821"},"Sunday-snack":{"title":"Яблоки с мёдом и орехами","cuisine":"slavic","ingredients":[{"name":"яблоки - 3 шт"},{"name":"мёд - 2 ст.л."},{"name":"орехи грецкие - 50 г"},{"name":"корица - 0.5 ч.л."}],"instructions":["Яблоки вымыть и обсушить","Нарезать яблоки дольками, удалить сердцевину","Выложить дольки на тарелку","Полить мёдом","Посыпать измельчёнными орехами","По желанию посыпать корицей","Подавать сразу"],"nutrition":{"calories":500,"protein":19,"carbs":38,"fat":31},"source":"simple_snack","url":null},"Sunday-dinner":{"title":"Сычуаньский мапо тофу","cuisine":"asian","ingredients":[{"name":"тофу - 400 г"},{"name":"свинина фарш - 200 г"},{"name":"соевый соус - 3 ст.л."},{"name":"паста чили - 2 ст.л."},{"name":"чеснок - 4 зубчика"},{"name":"имбирь - 2 ч.л."},{"name":"зеленый лук - 30 г"},{"name":"крахмал - 1 ст.л."},{"name":"масло растительное - 3 ст.л."},{"name":"рис - 200 г"}],"instructions":["Тофу нарезать кубиками 2x2 см","Рис отварить","Обжарить фарш с чесноком и имбирем","Добавить пасту чили и соевый соус","Добавить тофу, аккуратно перемешать","Развести крахмал в воде, добавить в соус","Тушить 5 минут до загустения","Подавать с рисом и зеленым луком"],"nutrition":{"calories":2100,"protein":79,"carbs":158,"fat":129},"source":"web_search","url":"https://www.gastronom.ru/recipe/51234/mapo-tofu"}};
 
-    function toggleView() {
-      showingPantry = !showingPantry;
-      const menuView = document.getElementById('menuView');
-      const pantryView = document.getElementById('pantryView');
-      const toggleBtn = document.querySelector('.toggle-btn');
+    /**
+     * Open modal with recipe details
+     */
+    function openModal(day, mealType) {
+      const key = `${day}-${mealType}`;
+      const recipe = recipesData[key];
 
-      if (showingPantry) {
-        menuView.classList.add('hidden');
-        pantryView.classList.add('active');
-        toggleBtn.textContent = '📅 Переключить на меню';
-        toggleBtn.classList.add('active');
+      if (!recipe) return;
+
+      document.getElementById('modalTitle').textContent = recipe.title;
+      document.getElementById('modalCuisine').textContent = recipe.cuisine;
+
+      const ingredientsList = document.getElementById('modalIngredients');
+      ingredientsList.innerHTML = (recipe.ingredients || [])
+        .map(ing => {
+          // Handle both object format {name: "..."} and string format
+          const ingText = typeof ing === 'object' && ing.name ? ing.name : String(ing);
+          // Translate common fallback ingredients
+          const translations = {
+            'Main ingredients vary by recipe': 'Основные ингредиенты зависят от рецепта',
+            'Seasonings to taste': 'Специи по вкусу',
+            'Cook according to recipe instructions': 'Готовить согласно инструкции рецепта'
+          };
+          return `<li>${translations[ingText] || ingText}</li>`;
+        })
+        .join('');
+
+      const instructionsList = document.getElementById('modalInstructions');
+      instructionsList.innerHTML = (recipe.instructions || [])
+        .map((inst, i) => {
+          // Translate common fallback instructions
+          const translations = {
+            'Prepare ingredients according to standard cooking methods': 'Подготовьте ингредиенты стандартными методами готовки',
+            'Cook until done': 'Готовьте до готовности',
+            'Season to taste': 'Посолите и поперчите по вкусу',
+            'Serve hot': 'Подавайте горячим'
+          };
+          return `<li>${translations[inst] || inst}</li>`;
+        })
+        .join('');
+
+      const sourceEl = document.getElementById('modalSource');
+      if (recipe.url) {
+        sourceEl.innerHTML = `<a href="${recipe.url}" target="_blank" rel="noopener noreferrer">🔗 Полный рецепт</a>`;
       } else {
-        menuView.classList.remove('hidden');
-        pantryView.classList.remove('active');
-        toggleBtn.textContent = '🔄 Переключить на кладовую';
-        toggleBtn.classList.remove('active');
+        sourceEl.innerHTML = `<small>Источник: ${recipe.source}</small>`;
       }
+
+      document.getElementById('recipeModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
     }
+
+    /**
+     * Close modal
+     */
+    function closeModal() {
+      document.getElementById('recipeModal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    /**
+     * Toggle daily breakdown in pantry
+     */
+    function toggleDaily() {
+      const breakdowns = document.querySelectorAll('.daily-breakdown');
+      const button = document.querySelector('#toggle-daily');
+
+      breakdowns.forEach(el => el.classList.toggle('hidden'));
+      button.textContent = breakdowns[0] && breakdowns[0].classList.contains('hidden')
+        ? '[Показать по дням]'
+        : '[Скрыть по дням]';
+    }
+
+    // Close on overlay click
+    document.getElementById('recipeModal').addEventListener('click', (e) => {
+      if (e.target.id === 'recipeModal') {
+        closeModal();
+      }
+    });
+
+    // Close on ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
   </script>
 </body>
 </html>

@@ -1,144 +1,569 @@
 {
-  "generated": "2026-03-08T00:00:00Z",
-  "week": "March 8-14, 2026",
-  "pantry": {
-    "grains": [
-      {"item": "all-purpose flour", "stock": 500, "unit": "g", "needed": 360, "have": true},
-      {"item": "jasmine rice", "stock": 300, "unit": "g", "needed": 600, "have": false},
-      {"item": "rice noodles", "stock": 0, "unit": "g", "needed": 400, "have": false},
-      {"item": "buckwheat", "stock": 200, "unit": "g", "needed": 200, "have": true},
-      {"item": "rolled oats", "stock": 200, "unit": "g", "needed": 150, "have": true},
-      {"item": "egg noodles", "stock": 0, "unit": "g", "needed": 300, "have": false},
-      {"item": "regular rice", "stock": 300, "unit": "g", "needed": 150, "have": true},
-      {"item": "breadcrumbs", "stock": 150, "unit": "g", "needed": 100, "have": true},
-      {"item": "bread", "stock": 0, "unit": "g", "needed": 80, "have": false}
-    ],
-    "pantry": [
-      {"item": "vegetable oil", "stock": 500, "unit": "ml", "needed": 260, "have": true},
-      {"item": "sesame oil", "stock": 100, "unit": "ml", "needed": 45, "have": true},
-      {"item": "soy sauce", "stock": 200, "unit": "ml", "needed": 195, "have": true},
-      {"item": "fish sauce", "stock": 100, "unit": "ml", "needed": 105, "have": false},
-      {"item": "rice vinegar", "stock": 100, "unit": "ml", "needed": 45, "have": true},
-      {"item": "tomato paste", "stock": 1, "unit": "tube", "needed": 5, "unit": "tbsp", "have": true},
-      {"item": "sugar", "stock": 500, "unit": "g", "needed": 120, "have": true},
-      {"item": "salt", "stock": 500, "unit": "g", "needed": 15, "have": true},
-      {"item": "black pepper", "stock": 50, "unit": "g", "needed": 3, "have": true},
-      {"item": "dried chilies", "stock": 10, "unit": "whole", "needed": 6, "have": true},
-      {"item": "star anise", "stock": 5, "unit": "whole", "needed": 3, "have": true},
-      {"item": "cinnamon stick", "stock": 2, "unit": "stick", "needed": 1, "have": true}
-    ],
-    "sauces": [
-      {"item": "green curry paste", "stock": 0, "unit": "tbsp", "needed": 3, "have": false},
-      {"item": "chili paste", "stock": 0, "unit": "tbsp", "needed": 2, "have": false},
-      {"item": "chili oil", "stock": 50, "unit": "ml", "needed": 5, "have": true},
-      {"item": "tamarind paste", "stock": 0, "unit": "tbsp", "needed": 2, "have": false},
-      {"item": "hoisin sauce", "stock": 0, "unit": "tbsp", "needed": 2, "have": false}
-    ],
-    "canned": [
-      {"item": "coconut milk", "stock": 1, "unit": "can", "needed": 600, "unit": "ml", "have": false},
-      {"item": "beef broth", "stock": 0, "unit": "ml", "needed": 1600, "have": false},
-      {"item": "chicken broth", "stock": 500, "unit": "ml", "needed": 800, "have": false},
-      {"item": "bamboo shoots", "stock": 1, "unit": "can", "needed": 150, "unit": "g", "have": true}
-    ],
-    "frozen": [
-      {"item": "frozen peas", "stock": 300, "unit": "g", "needed": 250, "have": true},
-      {"item": "frozen berries", "stock": 0, "unit": "g", "needed": 100, "have": false},
-      {"item": "pelmeni frozen", "stock": 0, "unit": "g", "needed": 600, "have": false},
-      {"item": "frozen dumplings", "stock": 0, "unit": "g", "needed": 400, "have": false},
-      {"item": "vareniki frozen", "stock": 0, "unit": "g", "needed": 600, "have": false}
-    ],
-    "spices": [
-      {"item": "vanilla sugar", "stock": 2, "unit": "packet", "needed": 2, "have": true},
-      {"item": "lime leaves", "stock": 0, "unit": "leaves", "needed": 4, "have": false}
-    ],
-    "nuts": [
-      {"item": "peanuts", "stock": 100, "unit": "g", "needed": 130, "have": false},
-      {"item": "walnuts", "stock": 50, "unit": "g", "needed": 30, "have": true}
-    ],
-    "condiments": [
-      {"item": "strawberry jam", "stock": 100, "unit": "g", "needed": 50, "have": true},
-      {"item": "honey", "stock": 100, "unit": "g", "needed": 40, "have": true}
-    ]
+  "авровый лист": {
+    "emoji": "📦",
+    "name": "авровый лист",
+    "normalizedName": "авровый лист",
+    "total": 4,
+    "unit": "шт",
+    "remaining": 4,
+    "dailyUsage": []
   },
-  "shoppingNeeded": {
-    "meat": [
-      "beef brisket (400g)",
-      "beef sirloin (800g)",
-      "ground beef (900g)",
-      "ground pork (400g)",
-      "chicken breast (1100g)",
-      "chicken thighs (500g)",
-      "shrimp (500g)",
-      "bologna/ham (200g)"
-    ],
-    "dairy": [
-      "milk (1500ml)",
-      "eggs (20 large)",
-      "sour cream (810g)",
-      "cottage cheese (700g)",
-      "butter (295g)",
-      "mayonnaise (150g)"
-    ],
-    "vegetables": [
-      "cabbage (1200g)",
-      "beets (300g)",
-      "potatoes (1450g)",
-      "carrots (700g)",
-      "onion (9 medium)",
-      "garlic (21 cloves)",
-      "ginger (50g)",
-      "mushrooms (900g)",
-      "bell peppers (350g)",
-      "green onions (80g)",
-      "pickles (150g)",
-      "lemongrass (2 stalks)",
-      "galangal (30g)",
-      "bean sprouts (200g)"
-    ],
-    "grains": [
-      "jasmine rice (300g more)",
-      "rice noodles (400g)",
-      "egg noodles (300g)",
-      "bread (80g)"
-    ],
-    "pantry": [
-      "fish sauce (5ml more)",
-      "coconut milk (2 cans)",
-      "beef broth (1600ml)",
-      "chicken broth (300ml more)"
-    ],
-    "sauces": [
-      "green curry paste",
-      "chili paste",
-      "tamarind paste",
-      "hoisin sauce"
-    ],
-    "frozen": [
-      "frozen berries (100g)",
-      "pelmeni frozen (600g)",
-      "frozen dumplings (400g)",
-      "vareniki frozen (600g)"
-    ],
-    "herbs": [
-      "dill (90g)",
-      "Thai basil (40g)",
-      "cilantro (20g)"
-    ],
-    "fruits": [
-      "lime (3 whole)"
-    ],
-    "nuts": [
-      "peanuts (30g more)"
-    ],
-    "specialty": [
-      "lime leaves (4 leaves)"
-    ]
+  "айм": {
+    "emoji": "📦",
+    "name": "айм",
+    "normalizedName": "айм",
+    "total": 1,
+    "unit": "шт",
+    "remaining": 1,
+    "dailyUsage": []
   },
-  "summary": {
-    "totalPantryItems": 41,
-    "itemsInStock": 24,
-    "itemsNeeded": 17,
-    "shoppingListCount": 50,
-    "estimatedCost": "€85-110"
+  "апша яичная": {
+    "emoji": "📦",
+    "name": "апша яичная",
+    "normalizedName": "апша яичная",
+    "total": 200,
+    "unit": "г",
+    "remaining": 200,
+    "dailyUsage": []
+  },
+  "арахис": {
+    "emoji": "📦",
+    "name": "арахис",
+    "normalizedName": "арахис",
+    "total": 50,
+    "unit": "г",
+    "remaining": 50,
+    "dailyUsage": []
+  },
+  "арахисовая паста": {
+    "emoji": "📦",
+    "name": "арахисовая паста",
+    "normalizedName": "арахисовая паста",
+    "total": 3,
+    "unit": "ст",
+    "remaining": 3,
+    "dailyUsage": []
+  },
+  "бананы": {
+    "emoji": "📦",
+    "name": "бананы",
+    "normalizedName": "бананы",
+    "total": 2,
+    "unit": "шт",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "вода": {
+    "emoji": "📦",
+    "name": "вода",
+    "normalizedName": "вода",
+    "total": 450,
+    "unit": "мл",
+    "remaining": 450,
+    "dailyUsage": []
+  },
+  "зеленый лук": {
+    "emoji": "📦",
+    "name": "зеленый лук",
+    "normalizedName": "зеленый лук",
+    "total": 70,
+    "unit": "г",
+    "remaining": 70,
+    "dailyUsage": []
+  },
+  "зелень": {
+    "emoji": "📦",
+    "name": "зелень",
+    "normalizedName": "зелень",
+    "total": 80,
+    "unit": "г",
+    "remaining": 80,
+    "dailyUsage": []
+  },
+  "имбирь": {
+    "emoji": "📦",
+    "name": "имбирь",
+    "normalizedName": "имбирь",
+    "total": 2,
+    "unit": "ч",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "имонный сок": {
+    "emoji": "📦",
+    "name": "имонный сок",
+    "normalizedName": "имонный сок",
+    "total": 1,
+    "unit": "ст",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "капуста белокочанная": {
+    "emoji": "📦",
+    "name": "капуста белокочанная",
+    "normalizedName": "капуста белокочанная",
+    "total": 300,
+    "unit": "г",
+    "remaining": 300,
+    "dailyUsage": []
+  },
+  "картофель": {
+    "emoji": "📦",
+    "name": "картофель",
+    "normalizedName": "картофель",
+    "total": 7,
+    "unit": "шт",
+    "remaining": 7,
+    "dailyUsage": []
+  },
+  "корица": {
+    "emoji": "📦",
+    "name": "корица",
+    "normalizedName": "корица",
+    "total": 0.5,
+    "unit": "ч",
+    "remaining": 0.5,
+    "dailyUsage": []
+  },
+  "крахмал": {
+    "emoji": "📦",
+    "name": "крахмал",
+    "normalizedName": "крахмал",
+    "total": 1,
+    "unit": "ст",
+    "remaining": 1,
+    "dailyUsage": []
+  },
+  "креветки": {
+    "emoji": "📦",
+    "name": "креветки",
+    "normalizedName": "креветки",
+    "total": 300,
+    "unit": "г",
+    "remaining": 300,
+    "dailyUsage": []
+  },
+  "крупа": {
+    "emoji": "📦",
+    "name": "крупа",
+    "normalizedName": "крупа",
+    "total": 150,
+    "unit": "г",
+    "remaining": 150,
+    "dailyUsage": []
+  },
+  "кунжут": {
+    "emoji": "📦",
+    "name": "кунжут",
+    "normalizedName": "кунжут",
+    "total": 2,
+    "unit": "ч",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "кунжутное масло": {
+    "emoji": "📦",
+    "name": "кунжутное масло",
+    "normalizedName": "кунжутное масло",
+    "total": 3,
+    "unit": "ст",
+    "remaining": 3,
+    "dailyUsage": []
+  },
+  "куриное филе": {
+    "emoji": "📦",
+    "name": "куриное филе",
+    "normalizedName": "куриное филе",
+    "total": 400,
+    "unit": "г",
+    "remaining": 400,
+    "dailyUsage": []
+  },
+  "масло растительное": {
+    "emoji": "📦",
+    "name": "масло растительное",
+    "normalizedName": "масло растительное",
+    "total": 15,
+    "unit": "ст",
+    "remaining": 15,
+    "dailyUsage": []
+  },
+  "масло сливочное": {
+    "emoji": "📦",
+    "name": "масло сливочное",
+    "normalizedName": "масло сливочное",
+    "total": 110,
+    "unit": "г",
+    "remaining": 110,
+    "dailyUsage": []
+  },
+  "мед": {
+    "emoji": "📦",
+    "name": "мед",
+    "normalizedName": "мед",
+    "total": 3,
+    "unit": "ч",
+    "remaining": 3,
+    "dailyUsage": []
+  },
+  "мёд": {
+    "emoji": "📦",
+    "name": "мёд",
+    "normalizedName": "мёд",
+    "total": 2,
+    "unit": "ст",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "молоко": {
+    "emoji": "📦",
+    "name": "молоко",
+    "normalizedName": "молоко",
+    "total": 1300,
+    "unit": "мл",
+    "remaining": 1300,
+    "dailyUsage": []
+  },
+  "морковь": {
+    "emoji": "📦",
+    "name": "морковь",
+    "normalizedName": "морковь",
+    "total": 7,
+    "unit": "шт",
+    "remaining": 7,
+    "dailyUsage": []
+  },
+  "мука": {
+    "emoji": "📦",
+    "name": "мука",
+    "normalizedName": "мука",
+    "total": 5,
+    "unit": "ст",
+    "remaining": 5,
+    "dailyUsage": []
+  },
+  "мука пшеничная": {
+    "emoji": "📦",
+    "name": "мука пшеничная",
+    "normalizedName": "мука пшеничная",
+    "total": 200,
+    "unit": "г",
+    "remaining": 200,
+    "dailyUsage": []
+  },
+  "овядина на кости": {
+    "emoji": "📦",
+    "name": "овядина на кости",
+    "normalizedName": "овядина на кости",
+    "total": 500,
+    "unit": "г",
+    "remaining": 500,
+    "dailyUsage": []
+  },
+  "огурцы": {
+    "emoji": "📦",
+    "name": "огурцы",
+    "normalizedName": "огурцы",
+    "total": 2,
+    "unit": "шт",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "орехи грецкие": {
+    "emoji": "📦",
+    "name": "орехи грецкие",
+    "normalizedName": "орехи грецкие",
+    "total": 80,
+    "unit": "г",
+    "remaining": 80,
+    "dailyUsage": []
+  },
+  "орошек зеленый": {
+    "emoji": "📦",
+    "name": "орошек зеленый",
+    "normalizedName": "орошек зеленый",
+    "total": 100,
+    "unit": "г",
+    "remaining": 100,
+    "dailyUsage": []
+  },
+  "орошек зелёный замороженный": {
+    "emoji": "📦",
+    "name": "орошек зелёный замороженный",
+    "normalizedName": "орошек зелёный замороженный",
+    "total": 300,
+    "unit": "г",
+    "remaining": 300,
+    "dailyUsage": []
+  },
+  "паста чили": {
+    "emoji": "📦",
+    "name": "паста чили",
+    "normalizedName": "паста чили",
+    "total": 2,
+    "unit": "ст",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "пельмени замороженные": {
+    "emoji": "📦",
+    "name": "пельмени замороженные",
+    "normalizedName": "пельмени замороженные",
+    "total": 500,
+    "unit": "г",
+    "remaining": 500,
+    "dailyUsage": []
+  },
+  "перец болгарский": {
+    "emoji": "📦",
+    "name": "перец болгарский",
+    "normalizedName": "перец болгарский",
+    "total": 4,
+    "unit": "шт",
+    "remaining": 4,
+    "dailyUsage": []
+  },
+  "печенье овсяное": {
+    "emoji": "📦",
+    "name": "печенье овсяное",
+    "normalizedName": "печенье овсяное",
+    "total": 100,
+    "unit": "г",
+    "remaining": 100,
+    "dailyUsage": []
+  },
+  "помидоры": {
+    "emoji": "📦",
+    "name": "помидоры",
+    "normalizedName": "помидоры",
+    "total": 5,
+    "unit": "шт",
+    "remaining": 5,
+    "dailyUsage": []
+  },
+  "речка": {
+    "emoji": "📦",
+    "name": "речка",
+    "normalizedName": "речка",
+    "total": 150,
+    "unit": "г",
+    "remaining": 150,
+    "dailyUsage": []
+  },
+  "рис": {
+    "emoji": "📦",
+    "name": "рис",
+    "normalizedName": "рис",
+    "total": 550,
+    "unit": "г",
+    "remaining": 550,
+    "dailyUsage": []
+  },
+  "рисовая лапша": {
+    "emoji": "📦",
+    "name": "рисовая лапша",
+    "normalizedName": "рисовая лапша",
+    "total": 200,
+    "unit": "г",
+    "remaining": 200,
+    "dailyUsage": []
+  },
+  "ростки фасоли": {
+    "emoji": "📦",
+    "name": "ростки фасоли",
+    "normalizedName": "ростки фасоли",
+    "total": 100,
+    "unit": "г",
+    "remaining": 100,
+    "dailyUsage": []
+  },
+  "рыбный соус": {
+    "emoji": "📦",
+    "name": "рыбный соус",
+    "normalizedName": "рыбный соус",
+    "total": 2,
+    "unit": "ст",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "сахар": {
+    "emoji": "📦",
+    "name": "сахар",
+    "normalizedName": "сахар",
+    "total": 5,
+    "unit": "ст",
+    "remaining": 5,
+    "dailyUsage": []
+  },
+  "свекла": {
+    "emoji": "📦",
+    "name": "свекла",
+    "normalizedName": "свекла",
+    "total": 2,
+    "unit": "шт",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "свинина": {
+    "emoji": "📦",
+    "name": "свинина",
+    "normalizedName": "свинина",
+    "total": 500,
+    "unit": "г",
+    "remaining": 500,
+    "dailyUsage": []
+  },
+  "свинина фарш": {
+    "emoji": "📦",
+    "name": "свинина фарш",
+    "normalizedName": "свинина фарш",
+    "total": 200,
+    "unit": "г",
+    "remaining": 200,
+    "dailyUsage": []
+  },
+  "сметана": {
+    "emoji": "📦",
+    "name": "сметана",
+    "normalizedName": "сметана",
+    "total": 2,
+    "unit": "ст",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "сметана 20%": {
+    "emoji": "📦",
+    "name": "сметана 20%",
+    "normalizedName": "сметана 20%",
+    "total": 250,
+    "unit": "г",
+    "remaining": 250,
+    "dailyUsage": []
+  },
+  "соевый соус": {
+    "emoji": "📦",
+    "name": "соевый соус",
+    "normalizedName": "соевый соус",
+    "total": 13,
+    "unit": "ст",
+    "remaining": 13,
+    "dailyUsage": []
+  },
+  "соль": {
+    "emoji": "📦",
+    "name": "соль",
+    "normalizedName": "соль",
+    "total": 1.5,
+    "unit": "ч",
+    "remaining": 1.5,
+    "dailyUsage": []
+  },
+  "сыр мягкий": {
+    "emoji": "📦",
+    "name": "сыр мягкий",
+    "normalizedName": "сыр мягкий",
+    "total": 100,
+    "unit": "г",
+    "remaining": 100,
+    "dailyUsage": []
+  },
+  "сыр твердый": {
+    "emoji": "📦",
+    "name": "сыр твердый",
+    "normalizedName": "сыр твердый",
+    "total": 300,
+    "unit": "г",
+    "remaining": 300,
+    "dailyUsage": []
+  },
+  "творог": {
+    "emoji": "📦",
+    "name": "творог",
+    "normalizedName": "творог",
+    "total": 600,
+    "unit": "г",
+    "remaining": 600,
+    "dailyUsage": []
+  },
+  "томатная паста": {
+    "emoji": "📦",
+    "name": "томатная паста",
+    "normalizedName": "томатная паста",
+    "total": 4,
+    "unit": "ст",
+    "remaining": 4,
+    "dailyUsage": []
+  },
+  "тофу": {
+    "emoji": "📦",
+    "name": "тофу",
+    "normalizedName": "тофу",
+    "total": 550,
+    "unit": "г",
+    "remaining": 550,
+    "dailyUsage": []
+  },
+  "ук репчатый": {
+    "emoji": "📦",
+    "name": "ук репчатый",
+    "normalizedName": "ук репчатый",
+    "total": 8,
+    "unit": "шт",
+    "remaining": 8,
+    "dailyUsage": []
+  },
+  "укроп свежий": {
+    "emoji": "📦",
+    "name": "укроп свежий",
+    "normalizedName": "укроп свежий",
+    "total": 10,
+    "unit": "г",
+    "remaining": 10,
+    "dailyUsage": []
+  },
+  "уксус": {
+    "emoji": "📦",
+    "name": "уксус",
+    "normalizedName": "уксус",
+    "total": 2,
+    "unit": "ст",
+    "remaining": 2,
+    "dailyUsage": []
+  },
+  "фарш мясной": {
+    "emoji": "📦",
+    "name": "фарш мясной",
+    "normalizedName": "фарш мясной",
+    "total": 500,
+    "unit": "г",
+    "remaining": 500,
+    "dailyUsage": []
+  },
+  "яблоки": {
+    "emoji": "📦",
+    "name": "яблоки",
+    "normalizedName": "яблоки",
+    "total": 5,
+    "unit": "шт",
+    "remaining": 5,
+    "dailyUsage": []
+  },
+  "ягоды свежие или сушеные": {
+    "emoji": "📦",
+    "name": "ягоды свежие или сушеные",
+    "normalizedName": "ягоды свежие или сушеные",
+    "total": 50,
+    "unit": "г",
+    "remaining": 50,
+    "dailyUsage": []
+  },
+  "яйца": {
+    "emoji": "📦",
+    "name": "яйца",
+    "normalizedName": "яйца",
+    "total": 14,
+    "unit": "шт",
+    "remaining": 14,
+    "dailyUsage": []
   }
 }
