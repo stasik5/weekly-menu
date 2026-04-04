@@ -1,0 +1,948 @@
+{
+  "weekOf": "2026-04-06",
+  "generated": "2026-04-04T23:06:17.396Z",
+  "categories": {
+    "Aromatics": [
+      {
+        "item": "onion",
+        "totalAmount": 17,
+        "unit": "pcs",
+        "usedIn": [
+          "Borscht (Beet Soup) (1 pcs)",
+          "Pelmeni (Meat Dumplings) (1 pcs)",
+          "Beef Stroganoff (2 pcs)",
+          "Kotleti with Mashed Potatoes (1 pcs)",
+          "Buckwheat Kasha with Mushrooms (1 pcs)",
+          "Pierogi (Potato and Cheese) (2 pcs)",
+          "Golubtsy (Stuffed Cabbage Rolls) (2 pcs)",
+          "Japanese Curry Rice (2 pcs)",
+          "Solyanka (Meat Soup) (2 pcs)",
+          "Shashlik (Georgian Kebab) (3 pcs)"
+        ]
+      },
+      {
+        "item": "garlic",
+        "totalAmount": 29,
+        "unit": "cloves",
+        "usedIn": [
+          "Borscht (Beet Soup) (2 cloves)",
+          "Pad Thai (3 cloves)",
+          "Congee (Rice Porridge) (2 cloves)",
+          "Pelmeni (Meat Dumplings) (2 cloves)",
+          "Chicken Kiev (3 cloves)",
+          "Beef Stroganoff (2 cloves)",
+          "Kotleti with Mashed Potatoes (2 cloves)",
+          "Teriyaki Salmon with Rice (2 cloves)",
+          "Bibimbap (Korean Rice Bowl) (3 cloves)",
+          "Tonkotsu Ramen (3 cloves)",
+          "Japanese Curry Rice (2 cloves)",
+          "Shashlik (Georgian Kebab) (3 cloves)"
+        ]
+      },
+      {
+        "item": "green onion",
+        "totalAmount": 17,
+        "unit": "stalks",
+        "usedIn": [
+          "Pad Thai (3 stalks)",
+          "Congee (Rice Porridge) (3 stalks)",
+          "Miso Soup with Rice (3 stalks)",
+          "Teriyaki Salmon with Rice (2 stalks)",
+          "Buckwheat Kasha with Mushrooms (2 stalks)",
+          "Tonkotsu Ramen (4 stalks)"
+        ]
+      },
+      {
+        "item": "ginger",
+        "totalAmount": 55,
+        "unit": "g",
+        "usedIn": [
+          "Congee (Rice Porridge) (20 g)",
+          "Teriyaki Salmon with Rice (10 g)",
+          "Tonkotsu Ramen (15 g)",
+          "Japanese Curry Rice (10 g)"
+        ]
+      },
+      {
+        "item": "lemongrass",
+        "totalAmount": 2,
+        "unit": "stalks",
+        "usedIn": [
+          "Tom Yum Goong (Spicy Shrimp Soup) (2 stalks)"
+        ]
+      },
+      {
+        "item": "galangal",
+        "totalAmount": 20,
+        "unit": "g",
+        "usedIn": [
+          "Tom Yum Goong (Spicy Shrimp Soup) (20 g)"
+        ]
+      },
+      {
+        "item": "onion (for serving)",
+        "totalAmount": 2,
+        "unit": "pcs",
+        "usedIn": [
+          "Shashlik (Georgian Kebab) (2 pcs)"
+        ]
+      }
+    ],
+    "Condiments & Sauces": [
+      {
+        "item": "sunflower oil",
+        "totalAmount": 190,
+        "unit": "ml",
+        "usedIn": [
+          "Borscht (Beet Soup) (30 ml)",
+          "Chicken Kiev (60 ml)",
+          "Oladi (Thick Russian Pancakes) (40 ml)",
+          "Kotleti with Mashed Potatoes (40 ml)",
+          "Blini (Russian Crepes) (20 ml)"
+        ]
+      },
+      {
+        "item": "fish sauce",
+        "totalAmount": 75,
+        "unit": "ml",
+        "usedIn": [
+          "Pad Thai (45 ml)",
+          "Tom Yum Goong (Spicy Shrimp Soup) (30 ml)"
+        ]
+      },
+      {
+        "item": "tamarind paste",
+        "totalAmount": 40,
+        "unit": "g",
+        "usedIn": [
+          "Pad Thai (40 g)"
+        ]
+      },
+      {
+        "item": "soy sauce",
+        "totalAmount": 190,
+        "unit": "ml",
+        "usedIn": [
+          "Pad Thai (15 ml)",
+          "Congee (Rice Porridge) (30 ml)",
+          "Miso Soup with Rice (10 ml)",
+          "Teriyaki Salmon with Rice (60 ml)",
+          "Bibimbap (Korean Rice Bowl) (30 ml)",
+          "Tonkotsu Ramen (45 ml)"
+        ]
+      },
+      {
+        "item": "vegetable oil",
+        "totalAmount": 70,
+        "unit": "ml",
+        "usedIn": [
+          "Pad Thai (30 ml)",
+          "Bibimbap (Korean Rice Bowl) (20 ml)",
+          "Japanese Curry Rice (20 ml)"
+        ]
+      },
+      {
+        "item": "sesame oil",
+        "totalAmount": 50,
+        "unit": "ml",
+        "usedIn": [
+          "Congee (Rice Porridge) (10 ml)",
+          "Teriyaki Salmon with Rice (10 ml)",
+          "Bibimbap (Korean Rice Bowl) (20 ml)",
+          "Tonkotsu Ramen (10 ml)"
+        ]
+      },
+      {
+        "item": "miso paste (white)",
+        "totalAmount": 60,
+        "unit": "g",
+        "usedIn": [
+          "Miso Soup with Rice (60 g)"
+        ]
+      },
+      {
+        "item": "dashi powder",
+        "totalAmount": 5,
+        "unit": "g",
+        "usedIn": [
+          "Miso Soup with Rice (5 g)"
+        ]
+      },
+      {
+        "item": "sesame seeds",
+        "totalAmount": 25,
+        "unit": "g",
+        "usedIn": [
+          "Miso Soup with Rice (5 g)",
+          "Teriyaki Salmon with Rice (10 g)",
+          "Bibimbap (Korean Rice Bowl) (10 g)"
+        ]
+      },
+      {
+        "item": "mirin",
+        "totalAmount": 70,
+        "unit": "ml",
+        "usedIn": [
+          "Teriyaki Salmon with Rice (40 ml)",
+          "Tonkotsu Ramen (30 ml)"
+        ]
+      },
+      {
+        "item": "gochujang paste",
+        "totalAmount": 60,
+        "unit": "g",
+        "usedIn": [
+          "Bibimbap (Korean Rice Bowl) (60 g)"
+        ]
+      },
+      {
+        "item": "Japanese curry roux",
+        "totalAmount": 100,
+        "unit": "g",
+        "usedIn": [
+          "Japanese Curry Rice (100 g)"
+        ]
+      }
+    ],
+    "Dairy & Eggs": [
+      {
+        "item": "cottage cheese (tvorog)",
+        "totalAmount": 700,
+        "unit": "g",
+        "usedIn": [
+          "Syrniki (Cottage Cheese Pancakes) (500 g)",
+          "Pierogi (Potato and Cheese) (200 g)"
+        ]
+      },
+      {
+        "item": "egg",
+        "totalAmount": 27,
+        "unit": "pcs",
+        "usedIn": [
+          "Syrniki (Cottage Cheese Pancakes) (2 pcs)",
+          "Pad Thai (2 pcs)",
+          "Congee (Rice Porridge) (2 pcs)",
+          "Pelmeni (Meat Dumplings) (1 pcs)",
+          "Chicken Kiev (2 pcs)",
+          "Oladi (Thick Russian Pancakes) (2 pcs)",
+          "Kotleti with Mashed Potatoes (1 pcs)",
+          "Buckwheat Kasha with Mushrooms (2 pcs)",
+          "Bibimbap (Korean Rice Bowl) (4 pcs)",
+          "Pierogi (Potato and Cheese) (1 pcs)",
+          "Blini (Russian Crepes) (3 pcs)",
+          "Tonkotsu Ramen (4 pcs)",
+          "Golubtsy (Stuffed Cabbage Rolls) (1 pcs)"
+        ]
+      },
+      {
+        "item": "butter",
+        "totalAmount": 390,
+        "unit": "g",
+        "usedIn": [
+          "Syrniki (Cottage Cheese Pancakes) (30 g)",
+          "Pelmeni (Meat Dumplings) (30 g)",
+          "Chicken Kiev (80 g)",
+          "Beef Stroganoff (40 g)",
+          "Kotleti with Mashed Potatoes (50 g)",
+          "Buckwheat Kasha with Mushrooms (40 g)",
+          "Pierogi (Potato and Cheese) (50 g)",
+          "Blini (Russian Crepes) (40 g)",
+          "Golubtsy (Stuffed Cabbage Rolls) (30 g)"
+        ]
+      },
+      {
+        "item": "sour cream",
+        "totalAmount": 1050,
+        "unit": "g",
+        "usedIn": [
+          "Syrniki (Cottage Cheese Pancakes) (100 g)",
+          "Borscht (Beet Soup) (100 g)",
+          "Pelmeni (Meat Dumplings) (100 g)",
+          "Oladi (Thick Russian Pancakes) (100 g)",
+          "Beef Stroganoff (200 g)",
+          "Pierogi (Potato and Cheese) (100 g)",
+          "Blini (Russian Crepes) (100 g)",
+          "Golubtsy (Stuffed Cabbage Rolls) (150 g)",
+          "Solyanka (Meat Soup) (100 g)"
+        ]
+      },
+      {
+        "item": "kefir",
+        "totalAmount": 400,
+        "unit": "ml",
+        "usedIn": [
+          "Oladi (Thick Russian Pancakes) (400 ml)"
+        ]
+      },
+      {
+        "item": "coconut milk",
+        "totalAmount": 200,
+        "unit": "ml",
+        "usedIn": [
+          "Tom Yum Goong (Spicy Shrimp Soup) (200 ml)"
+        ]
+      },
+      {
+        "item": "egg noodles",
+        "totalAmount": 300,
+        "unit": "g",
+        "usedIn": [
+          "Beef Stroganoff (300 g)"
+        ]
+      },
+      {
+        "item": "tofu (soft)",
+        "totalAmount": 200,
+        "unit": "g",
+        "usedIn": [
+          "Miso Soup with Rice (200 g)"
+        ]
+      },
+      {
+        "item": "milk",
+        "totalAmount": 550,
+        "unit": "ml",
+        "usedIn": [
+          "Kotleti with Mashed Potatoes (50 ml)",
+          "Blini (Russian Crepes) (500 ml)"
+        ]
+      },
+      {
+        "item": "milk (for mash)",
+        "totalAmount": 100,
+        "unit": "ml",
+        "usedIn": [
+          "Kotleti with Mashed Potatoes (100 ml)"
+        ]
+      }
+    ],
+    "Fresh Herbs": [
+      {
+        "item": "dill",
+        "totalAmount": 55,
+        "unit": "g",
+        "usedIn": [
+          "Borscht (Beet Soup) (15 g)",
+          "Chicken Kiev (15 g)",
+          "Beef Stroganoff (10 g)",
+          "Solyanka (Meat Soup) (15 g)"
+        ]
+      },
+      {
+        "item": "cilantro",
+        "totalAmount": 30,
+        "unit": "g",
+        "usedIn": [
+          "Tom Yum Goong (Spicy Shrimp Soup) (15 g)",
+          "Shashlik (Georgian Kebab) (15 g)"
+        ]
+      },
+      {
+        "item": "pickle (dill)",
+        "totalAmount": 3,
+        "unit": "pcs",
+        "usedIn": [
+          "Solyanka (Meat Soup) (3 pcs)"
+        ]
+      }
+    ],
+    "Fruits": [
+      {
+        "item": "lime",
+        "totalAmount": 4,
+        "unit": "pcs",
+        "usedIn": [
+          "Pad Thai (2 pcs)",
+          "Tom Yum Goong (Spicy Shrimp Soup) (2 pcs)"
+        ]
+      },
+      {
+        "item": "kaffir lime leaves",
+        "totalAmount": 4,
+        "unit": "pcs",
+        "usedIn": [
+          "Tom Yum Goong (Spicy Shrimp Soup) (4 pcs)"
+        ]
+      },
+      {
+        "item": "lemon",
+        "totalAmount": 2,
+        "unit": "pcs",
+        "usedIn": [
+          "Solyanka (Meat Soup) (1 pcs)",
+          "Shashlik (Georgian Kebab) (1 pcs)"
+        ]
+      },
+      {
+        "item": "pomegranate juice",
+        "totalAmount": 100,
+        "unit": "ml",
+        "usedIn": [
+          "Shashlik (Georgian Kebab) (100 ml)"
+        ]
+      }
+    ],
+    "Grains & Pasta": [
+      {
+        "item": "rice noodles (flat)",
+        "totalAmount": 250,
+        "unit": "g",
+        "usedIn": [
+          "Pad Thai (250 g)"
+        ]
+      },
+      {
+        "item": "rice (jasmine)",
+        "totalAmount": 1400,
+        "unit": "g",
+        "usedIn": [
+          "Congee (Rice Porridge) (200 g)",
+          "Miso Soup with Rice (300 g)",
+          "Teriyaki Salmon with Rice (300 g)",
+          "Bibimbap (Korean Rice Bowl) (300 g)",
+          "Japanese Curry Rice (300 g)"
+        ]
+      },
+      {
+        "item": "buckwheat (grechka)",
+        "totalAmount": 300,
+        "unit": "g",
+        "usedIn": [
+          "Buckwheat Kasha with Mushrooms (300 g)"
+        ]
+      },
+      {
+        "item": "rice vinegar",
+        "totalAmount": 15,
+        "unit": "ml",
+        "usedIn": [
+          "Bibimbap (Korean Rice Bowl) (15 ml)"
+        ]
+      },
+      {
+        "item": "ramen noodles (fresh)",
+        "totalAmount": 400,
+        "unit": "g",
+        "usedIn": [
+          "Tonkotsu Ramen (400 g)"
+        ]
+      },
+      {
+        "item": "rice",
+        "totalAmount": 100,
+        "unit": "g",
+        "usedIn": [
+          "Golubtsy (Stuffed Cabbage Rolls) (100 g)"
+        ]
+      }
+    ],
+    "Meat & Seafood": [
+      {
+        "item": "beef (bone-in short ribs)",
+        "totalAmount": 600,
+        "unit": "g",
+        "usedIn": [
+          "Borscht (Beet Soup) (600 g)"
+        ]
+      },
+      {
+        "item": "chicken breast",
+        "totalAmount": 304,
+        "unit": "pcs",
+        "usedIn": [
+          "Pad Thai (300 g)",
+          "Chicken Kiev (4 pcs)"
+        ]
+      },
+      {
+        "item": "chicken broth",
+        "totalAmount": 4,
+        "unit": "L",
+        "usedIn": [
+          "Congee (Rice Porridge) (1.5 L)",
+          "Tom Yum Goong (Spicy Shrimp Soup) (1 L)",
+          "Tonkotsu Ramen (1.5 L)"
+        ]
+      },
+      {
+        "item": "ground beef",
+        "totalAmount": 1200,
+        "unit": "g",
+        "usedIn": [
+          "Pelmeni (Meat Dumplings) (300 g)",
+          "Kotleti with Mashed Potatoes (500 g)",
+          "Golubtsy (Stuffed Cabbage Rolls) (400 g)"
+        ]
+      },
+      {
+        "item": "ground pork",
+        "totalAmount": 200,
+        "unit": "g",
+        "usedIn": [
+          "Pelmeni (Meat Dumplings) (200 g)"
+        ]
+      },
+      {
+        "item": "shrimp (large)",
+        "totalAmount": 400,
+        "unit": "g",
+        "usedIn": [
+          "Tom Yum Goong (Spicy Shrimp Soup) (400 g)"
+        ]
+      },
+      {
+        "item": "beef (sirloin)",
+        "totalAmount": 500,
+        "unit": "g",
+        "usedIn": [
+          "Beef Stroganoff (500 g)"
+        ]
+      },
+      {
+        "item": "beef broth",
+        "totalAmount": 200,
+        "unit": "ml",
+        "usedIn": [
+          "Beef Stroganoff (200 ml)"
+        ]
+      },
+      {
+        "item": "salmon fillet",
+        "totalAmount": 600,
+        "unit": "g",
+        "usedIn": [
+          "Teriyaki Salmon with Rice (600 g)"
+        ]
+      },
+      {
+        "item": "beef (ground or sliced)",
+        "totalAmount": 300,
+        "unit": "g",
+        "usedIn": [
+          "Bibimbap (Korean Rice Bowl) (300 g)"
+        ]
+      },
+      {
+        "item": "pork belly",
+        "totalAmount": 300,
+        "unit": "g",
+        "usedIn": [
+          "Tonkotsu Ramen (300 g)"
+        ]
+      },
+      {
+        "item": "chicken thigh",
+        "totalAmount": 400,
+        "unit": "g",
+        "usedIn": [
+          "Japanese Curry Rice (400 g)"
+        ]
+      },
+      {
+        "item": "beef (stewing)",
+        "totalAmount": 400,
+        "unit": "g",
+        "usedIn": [
+          "Solyanka (Meat Soup) (400 g)"
+        ]
+      },
+      {
+        "item": "smoked sausage (kolbasa)",
+        "totalAmount": 200,
+        "unit": "g",
+        "usedIn": [
+          "Solyanka (Meat Soup) (200 g)"
+        ]
+      },
+      {
+        "item": "ham",
+        "totalAmount": 150,
+        "unit": "g",
+        "usedIn": [
+          "Solyanka (Meat Soup) (150 g)"
+        ]
+      },
+      {
+        "item": "pork shoulder",
+        "totalAmount": 800,
+        "unit": "g",
+        "usedIn": [
+          "Shashlik (Georgian Kebab) (800 g)"
+        ]
+      }
+    ],
+    "Nuts & Specialty": [
+      {
+        "item": "peanuts (roasted)",
+        "totalAmount": 50,
+        "unit": "g",
+        "usedIn": [
+          "Pad Thai (50 g)"
+        ]
+      },
+      {
+        "item": "wakame seaweed",
+        "totalAmount": 10,
+        "unit": "g",
+        "usedIn": [
+          "Miso Soup with Rice (10 g)"
+        ]
+      },
+      {
+        "item": "nori sheets",
+        "totalAmount": 4,
+        "unit": "pcs",
+        "usedIn": [
+          "Tonkotsu Ramen (4 pcs)"
+        ]
+      },
+      {
+        "item": "olives",
+        "totalAmount": 50,
+        "unit": "g",
+        "usedIn": [
+          "Solyanka (Meat Soup) (50 g)"
+        ]
+      },
+      {
+        "item": "capers",
+        "totalAmount": 20,
+        "unit": "g",
+        "usedIn": [
+          "Solyanka (Meat Soup) (20 g)"
+        ]
+      }
+    ],
+    "Other": [
+      {
+        "item": "water",
+        "totalAmount": 2786.5,
+        "unit": "L",
+        "usedIn": [
+          "Borscht (Beet Soup) (3 L)",
+          "Congee (Rice Porridge) (500 ml)",
+          "Pelmeni (Meat Dumplings) (200 ml)",
+          "Miso Soup with Rice (1 L)",
+          "Buckwheat Kasha with Mushrooms (600 ml)",
+          "Pierogi (Potato and Cheese) (180 ml)",
+          "Golubtsy (Stuffed Cabbage Rolls) (500 ml)",
+          "Japanese Curry Rice (800 ml)",
+          "Solyanka (Meat Soup) (2.5 L)"
+        ]
+      },
+      {
+        "item": "mustard (Dijon)",
+        "totalAmount": 15,
+        "unit": "g",
+        "usedIn": [
+          "Beef Stroganoff (15 g)"
+        ]
+      },
+      {
+        "item": "bread (white, for soaking)",
+        "totalAmount": 80,
+        "unit": "g",
+        "usedIn": [
+          "Kotleti with Mashed Potatoes (80 g)"
+        ]
+      },
+      {
+        "item": "corn (canned)",
+        "totalAmount": 100,
+        "unit": "g",
+        "usedIn": [
+          "Tonkotsu Ramen (100 g)"
+        ]
+      },
+      {
+        "item": "pita bread (lavash)",
+        "totalAmount": 200,
+        "unit": "g",
+        "usedIn": [
+          "Shashlik (Georgian Kebab) (200 g)"
+        ]
+      }
+    ],
+    "Pantry - Baking": [
+      {
+        "item": "sugar",
+        "totalAmount": 190,
+        "unit": "g",
+        "usedIn": [
+          "Syrniki (Cottage Cheese Pancakes) (50 g)",
+          "Pad Thai (40 g)",
+          "Oladi (Thick Russian Pancakes) (40 g)",
+          "Teriyaki Salmon with Rice (30 g)",
+          "Blini (Russian Crepes) (30 g)"
+        ]
+      },
+      {
+        "item": "flour",
+        "totalAmount": 1410,
+        "unit": "g",
+        "usedIn": [
+          "Syrniki (Cottage Cheese Pancakes) (100 g)",
+          "Pelmeni (Meat Dumplings) (400 g)",
+          "Chicken Kiev (60 g)",
+          "Oladi (Thick Russian Pancakes) (250 g)",
+          "Beef Stroganoff (20 g)",
+          "Kotleti with Mashed Potatoes (30 g)",
+          "Pierogi (Potato and Cheese) (350 g)",
+          "Blini (Russian Crepes) (200 g)"
+        ]
+      },
+      {
+        "item": "vanilla sugar",
+        "totalAmount": 8,
+        "unit": "g",
+        "usedIn": [
+          "Syrniki (Cottage Cheese Pancakes) (8 g)"
+        ]
+      },
+      {
+        "item": "breadcrumbs",
+        "totalAmount": 100,
+        "unit": "g",
+        "usedIn": [
+          "Chicken Kiev (100 g)"
+        ]
+      },
+      {
+        "item": "baking soda",
+        "totalAmount": 5,
+        "unit": "g",
+        "usedIn": [
+          "Oladi (Thick Russian Pancakes) (5 g)"
+        ]
+      },
+      {
+        "item": "cornstarch",
+        "totalAmount": 5,
+        "unit": "g",
+        "usedIn": [
+          "Teriyaki Salmon with Rice (5 g)"
+        ]
+      }
+    ],
+    "Pantry - Other": [
+      {
+        "item": "white beans (canned)",
+        "totalAmount": 200,
+        "unit": "g",
+        "usedIn": [
+          "Borscht (Beet Soup) (200 g)"
+        ]
+      },
+      {
+        "item": "jam (any)",
+        "totalAmount": 100,
+        "unit": "g",
+        "usedIn": [
+          "Blini (Russian Crepes) (100 g)"
+        ]
+      }
+    ],
+    "Spices": [
+      {
+        "item": "salt",
+        "totalAmount": 48,
+        "unit": "g",
+        "usedIn": [
+          "Syrniki (Cottage Cheese Pancakes) (2 g)",
+          "Borscht (Beet Soup) (5 g)",
+          "Pelmeni (Meat Dumplings) (3 g)",
+          "Chicken Kiev (3 g)",
+          "Oladi (Thick Russian Pancakes) (2 g)",
+          "Beef Stroganoff (3 g)",
+          "Kotleti with Mashed Potatoes (5 g)",
+          "Buckwheat Kasha with Mushrooms (3 g)",
+          "Pierogi (Potato and Cheese) (5 g)",
+          "Blini (Russian Crepes) (2 g)",
+          "Golubtsy (Stuffed Cabbage Rolls) (5 g)",
+          "Solyanka (Meat Soup) (5 g)",
+          "Shashlik (Georgian Kebab) (5 g)"
+        ]
+      },
+      {
+        "item": "bay leaf",
+        "totalAmount": 4,
+        "unit": "pcs",
+        "usedIn": [
+          "Borscht (Beet Soup) (2 pcs)",
+          "Solyanka (Meat Soup) (2 pcs)"
+        ]
+      },
+      {
+        "item": "chili flakes",
+        "totalAmount": 3,
+        "unit": "g",
+        "usedIn": [
+          "Pad Thai (3 g)"
+        ]
+      },
+      {
+        "item": "black pepper",
+        "totalAmount": 15,
+        "unit": "g",
+        "usedIn": [
+          "Pelmeni (Meat Dumplings) (2 g)",
+          "Chicken Kiev (2 g)",
+          "Beef Stroganoff (2 g)",
+          "Kotleti with Mashed Potatoes (2 g)",
+          "Pierogi (Potato and Cheese) (2 g)",
+          "Golubtsy (Stuffed Cabbage Rolls) (2 g)",
+          "Shashlik (Georgian Kebab) (3 g)"
+        ]
+      },
+      {
+        "item": "chili paste (nam prik pao)",
+        "totalAmount": 30,
+        "unit": "g",
+        "usedIn": [
+          "Tom Yum Goong (Spicy Shrimp Soup) (30 g)"
+        ]
+      }
+    ],
+    "Vegetables": [
+      {
+        "item": "beet",
+        "totalAmount": 2,
+        "unit": "pcs",
+        "usedIn": [
+          "Borscht (Beet Soup) (2 pcs)"
+        ]
+      },
+      {
+        "item": "potato",
+        "totalAmount": 1209,
+        "unit": "pcs",
+        "usedIn": [
+          "Borscht (Beet Soup) (3 pcs)",
+          "Chicken Kiev (4 pcs)",
+          "Kotleti with Mashed Potatoes (800 g)",
+          "Pierogi (Potato and Cheese) (400 g)",
+          "Japanese Curry Rice (2 pcs)"
+        ]
+      },
+      {
+        "item": "carrot",
+        "totalAmount": 5,
+        "unit": "pcs",
+        "usedIn": [
+          "Borscht (Beet Soup) (1 pcs)",
+          "Bibimbap (Korean Rice Bowl) (1 pcs)",
+          "Golubtsy (Stuffed Cabbage Rolls) (1 pcs)",
+          "Japanese Curry Rice (2 pcs)"
+        ]
+      },
+      {
+        "item": "cabbage",
+        "totalAmount": 300,
+        "unit": "g",
+        "usedIn": [
+          "Borscht (Beet Soup) (300 g)"
+        ]
+      },
+      {
+        "item": "tomato paste",
+        "totalAmount": 140,
+        "unit": "g",
+        "usedIn": [
+          "Borscht (Beet Soup) (40 g)",
+          "Golubtsy (Stuffed Cabbage Rolls) (50 g)",
+          "Solyanka (Meat Soup) (50 g)"
+        ]
+      },
+      {
+        "item": "bean sprouts",
+        "totalAmount": 100,
+        "unit": "g",
+        "usedIn": [
+          "Pad Thai (100 g)"
+        ]
+      },
+      {
+        "item": "mushrooms (straw or oyster)",
+        "totalAmount": 200,
+        "unit": "g",
+        "usedIn": [
+          "Tom Yum Goong (Spicy Shrimp Soup) (200 g)"
+        ]
+      },
+      {
+        "item": "cherry tomatoes",
+        "totalAmount": 100,
+        "unit": "g",
+        "usedIn": [
+          "Tom Yum Goong (Spicy Shrimp Soup) (100 g)"
+        ]
+      },
+      {
+        "item": "mushrooms (button)",
+        "totalAmount": 450,
+        "unit": "g",
+        "usedIn": [
+          "Beef Stroganoff (250 g)",
+          "Buckwheat Kasha with Mushrooms (200 g)"
+        ]
+      },
+      {
+        "item": "broccoli",
+        "totalAmount": 300,
+        "unit": "g",
+        "usedIn": [
+          "Teriyaki Salmon with Rice (300 g)"
+        ]
+      },
+      {
+        "item": "spinach",
+        "totalAmount": 200,
+        "unit": "g",
+        "usedIn": [
+          "Bibimbap (Korean Rice Bowl) (200 g)"
+        ]
+      },
+      {
+        "item": "zucchini",
+        "totalAmount": 1,
+        "unit": "pcs",
+        "usedIn": [
+          "Bibimbap (Korean Rice Bowl) (1 pcs)"
+        ]
+      },
+      {
+        "item": "mushrooms (shiitake)",
+        "totalAmount": 100,
+        "unit": "g",
+        "usedIn": [
+          "Tonkotsu Ramen (100 g)"
+        ]
+      },
+      {
+        "item": "cabbage (large head)",
+        "totalAmount": 1,
+        "unit": "pcs",
+        "usedIn": [
+          "Golubtsy (Stuffed Cabbage Rolls) (1 pcs)"
+        ]
+      },
+      {
+        "item": "tomato",
+        "totalAmount": 2,
+        "unit": "pcs",
+        "usedIn": [
+          "Shashlik (Georgian Kebab) (2 pcs)"
+        ]
+      },
+      {
+        "item": "cucumber",
+        "totalAmount": 1,
+        "unit": "pcs",
+        "usedIn": [
+          "Shashlik (Georgian Kebab) (1 pcs)"
+        ]
+      }
+    ]
+  },
+  "totalUniqueItems": 97
+}

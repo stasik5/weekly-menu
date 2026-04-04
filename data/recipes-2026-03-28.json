@@ -1,0 +1,758 @@
+{
+  "Monday-breakfast": {
+    "recipeName": "Tvorog pancakes",
+    "source": "Fallback recipe",
+    "cuisine": "slavic",
+    "prepTime": "15-25 min",
+    "calories": 600,
+    "ingredients": [
+      {
+        "item": "flour",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "eggs",
+        "amount": 2,
+        "unit": "large"
+      },
+      {
+        "item": "milk",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "item": "butter",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "item": "sour cream",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Mix ingredients, cook on medium heat until golden. Serve with sour cream.",
+    "url": null
+  },
+  "Monday-lunch": {
+    "recipeName": "Buckwheat with mushrooms",
+    "source": "Fallback recipe",
+    "cuisine": "slavic",
+    "prepTime": "20-35 min",
+    "calories": 800,
+    "ingredients": [
+      {
+        "item": "potatoes",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "item": "beef",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "item": "carrots",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "item": "onion",
+        "amount": 1,
+        "unit": "medium"
+      },
+      {
+        "item": "cabbage",
+        "amount": 200,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook meat and vegetables together. Season to taste. Serve hot.",
+    "url": null
+  },
+  "Monday-dinner": {
+    "recipeName": "Beef Pho",
+    "source": "Fallback recipe",
+    "cuisine": "asian",
+    "prepTime": "30-60 min",
+    "calories": 900,
+    "ingredients": [
+      {
+        "item": "chicken",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "item": "rice",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "vegetables",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "coconut milk",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "item": "curry paste",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": "Marinate protein, cook with vegetables. Add sauce and serve over rice.",
+    "url": null
+  },
+  "Tuesday-breakfast": {
+    "recipeName": "Russian Blini",
+    "source": "Fallback recipe",
+    "cuisine": "slavic",
+    "prepTime": "15-25 min",
+    "calories": 600,
+    "ingredients": [
+      {
+        "item": "flour",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "eggs",
+        "amount": 2,
+        "unit": "large"
+      },
+      {
+        "item": "milk",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "item": "butter",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "item": "sour cream",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Mix ingredients, cook on medium heat until golden. Serve with sour cream.",
+    "url": null
+  },
+  "Tuesday-lunch": {
+    "recipeName": "Tom Yum Soup",
+    "source": "Fallback recipe",
+    "cuisine": "asian",
+    "prepTime": "20-35 min",
+    "calories": 800,
+    "ingredients": [
+      {
+        "item": "rice",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "vegetables",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "eggs",
+        "amount": 2,
+        "unit": "large"
+      },
+      {
+        "item": "soy sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "item": "sesame oil",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": "Cook rice, stir-fry vegetables and protein. Combine with sauce.",
+    "url": null
+  },
+  "Tuesday-dinner": {
+    "recipeName": "Beef Stroganoff",
+    "source": "Fallback recipe",
+    "cuisine": "slavic",
+    "prepTime": "30-60 min",
+    "calories": 900,
+    "ingredients": [
+      {
+        "item": "beef",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "item": "pasta",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "mushrooms",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "sour cream",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "item": "garlic",
+        "amount": 3,
+        "unit": "cloves"
+      }
+    ],
+    "instructions": "Brown meat, add vegetables and sauce. Simmer until tender. Serve with sides.",
+    "url": null
+  },
+  "Wednesday-breakfast": {
+    "recipeName": "Syrniki cottage cheese pancakes",
+    "source": "Fallback recipe",
+    "cuisine": "slavic",
+    "prepTime": "15-25 min",
+    "calories": 600,
+    "ingredients": [
+      {
+        "item": "flour",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "eggs",
+        "amount": 2,
+        "unit": "large"
+      },
+      {
+        "item": "milk",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "item": "butter",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "item": "sour cream",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Mix ingredients, cook on medium heat until golden. Serve with sour cream.",
+    "url": null
+  },
+  "Wednesday-lunch": {
+    "recipeName": "Golubtsi cabbage rolls",
+    "source": "Fallback recipe",
+    "cuisine": "slavic",
+    "prepTime": "20-35 min",
+    "calories": 800,
+    "ingredients": [
+      {
+        "item": "potatoes",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "item": "beef",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "item": "carrots",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "item": "onion",
+        "amount": 1,
+        "unit": "medium"
+      },
+      {
+        "item": "cabbage",
+        "amount": 200,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook meat and vegetables together. Season to taste. Serve hot.",
+    "url": null
+  },
+  "Wednesday-dinner": {
+    "recipeName": "Beef Borscht",
+    "source": "Fallback recipe",
+    "cuisine": "slavic",
+    "prepTime": "30-60 min",
+    "calories": 900,
+    "ingredients": [
+      {
+        "item": "beef",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "item": "pasta",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "mushrooms",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "sour cream",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "item": "garlic",
+        "amount": 3,
+        "unit": "cloves"
+      }
+    ],
+    "instructions": "Brown meat, add vegetables and sauce. Simmer until tender. Serve with sides.",
+    "url": null
+  },
+  "Thursday-breakfast": {
+    "recipeName": "Tvorog pancakes",
+    "source": "Fallback recipe",
+    "cuisine": "slavic",
+    "prepTime": "15-25 min",
+    "calories": 600,
+    "ingredients": [
+      {
+        "item": "flour",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "eggs",
+        "amount": 2,
+        "unit": "large"
+      },
+      {
+        "item": "milk",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "item": "butter",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "item": "sour cream",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Mix ingredients, cook on medium heat until golden. Serve with sour cream.",
+    "url": null
+  },
+  "Thursday-lunch": {
+    "recipeName": "Pelmeni",
+    "source": "Fallback recipe",
+    "cuisine": "slavic",
+    "prepTime": "20-35 min",
+    "calories": 800,
+    "ingredients": [
+      {
+        "item": "potatoes",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "item": "beef",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "item": "carrots",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "item": "onion",
+        "amount": 1,
+        "unit": "medium"
+      },
+      {
+        "item": "cabbage",
+        "amount": 200,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook meat and vegetables together. Season to taste. Serve hot.",
+    "url": null
+  },
+  "Thursday-dinner": {
+    "recipeName": "Beef Borscht",
+    "source": "Fallback recipe",
+    "cuisine": "slavic",
+    "prepTime": "30-60 min",
+    "calories": 900,
+    "ingredients": [
+      {
+        "item": "beef",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "item": "pasta",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "mushrooms",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "sour cream",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "item": "garlic",
+        "amount": 3,
+        "unit": "cloves"
+      }
+    ],
+    "instructions": "Brown meat, add vegetables and sauce. Simmer until tender. Serve with sides.",
+    "url": null
+  },
+  "Friday-breakfast": {
+    "recipeName": "Buckwheat porridge",
+    "source": "Fallback recipe",
+    "cuisine": "slavic",
+    "prepTime": "15-25 min",
+    "calories": 600,
+    "ingredients": [
+      {
+        "item": "flour",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "eggs",
+        "amount": 2,
+        "unit": "large"
+      },
+      {
+        "item": "milk",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "item": "butter",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "item": "sour cream",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Mix ingredients, cook on medium heat until golden. Serve with sour cream.",
+    "url": null
+  },
+  "Friday-lunch": {
+    "recipeName": "Chicken Kiev",
+    "source": "Fallback recipe",
+    "cuisine": "slavic",
+    "prepTime": "20-35 min",
+    "calories": 800,
+    "ingredients": [
+      {
+        "item": "potatoes",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "item": "beef",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "item": "carrots",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "item": "onion",
+        "amount": 1,
+        "unit": "medium"
+      },
+      {
+        "item": "cabbage",
+        "amount": 200,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Cook meat and vegetables together. Season to taste. Serve hot.",
+    "url": null
+  },
+  "Friday-dinner": {
+    "recipeName": "Beef Stroganoff",
+    "source": "Fallback recipe",
+    "cuisine": "slavic",
+    "prepTime": "30-60 min",
+    "calories": 900,
+    "ingredients": [
+      {
+        "item": "beef",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "item": "pasta",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "mushrooms",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "sour cream",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "item": "garlic",
+        "amount": 3,
+        "unit": "cloves"
+      }
+    ],
+    "instructions": "Brown meat, add vegetables and sauce. Simmer until tender. Serve with sides.",
+    "url": null
+  },
+  "Saturday-breakfast": {
+    "recipeName": "Japanese Miso Soup",
+    "source": "Fallback recipe",
+    "cuisine": "asian",
+    "prepTime": "15-25 min",
+    "calories": 600,
+    "ingredients": [
+      {
+        "item": "rice",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "item": "eggs",
+        "amount": 2,
+        "unit": "large"
+      },
+      {
+        "item": "soy sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "item": "vegetable oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "item": "green onions",
+        "amount": 30,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Stir-fry ingredients over high heat. Season with soy sauce. Serve immediately.",
+    "url": null
+  },
+  "Saturday-lunch": {
+    "recipeName": "Tom Yum Soup",
+    "source": "Fallback recipe",
+    "cuisine": "asian",
+    "prepTime": "20-35 min",
+    "calories": 800,
+    "ingredients": [
+      {
+        "item": "rice",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "vegetables",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "eggs",
+        "amount": 2,
+        "unit": "large"
+      },
+      {
+        "item": "soy sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "item": "sesame oil",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": "Cook rice, stir-fry vegetables and protein. Combine with sauce.",
+    "url": null
+  },
+  "Saturday-dinner": {
+    "recipeName": "Massaman Curry",
+    "source": "Fallback recipe",
+    "cuisine": "asian",
+    "prepTime": "30-60 min",
+    "calories": 900,
+    "ingredients": [
+      {
+        "item": "chicken",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "item": "rice",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "vegetables",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "coconut milk",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "item": "curry paste",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": "Marinate protein, cook with vegetables. Add sauce and serve over rice.",
+    "url": null
+  },
+  "Sunday-breakfast": {
+    "recipeName": "Japanese Miso Soup",
+    "source": "Fallback recipe",
+    "cuisine": "asian",
+    "prepTime": "15-25 min",
+    "calories": 600,
+    "ingredients": [
+      {
+        "item": "rice",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "item": "eggs",
+        "amount": 2,
+        "unit": "large"
+      },
+      {
+        "item": "soy sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "item": "vegetable oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "item": "green onions",
+        "amount": 30,
+        "unit": "g"
+      }
+    ],
+    "instructions": "Stir-fry ingredients over high heat. Season with soy sauce. Serve immediately.",
+    "url": null
+  },
+  "Sunday-lunch": {
+    "recipeName": "Pad Thai",
+    "source": "Fallback recipe",
+    "cuisine": "asian",
+    "prepTime": "20-35 min",
+    "calories": 800,
+    "ingredients": [
+      {
+        "item": "rice",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "vegetables",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "eggs",
+        "amount": 2,
+        "unit": "large"
+      },
+      {
+        "item": "soy sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "item": "sesame oil",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": "Cook rice, stir-fry vegetables and protein. Combine with sauce.",
+    "url": null
+  },
+  "Sunday-dinner": {
+    "recipeName": "Massaman Curry",
+    "source": "Fallback recipe",
+    "cuisine": "asian",
+    "prepTime": "30-60 min",
+    "calories": 900,
+    "ingredients": [
+      {
+        "item": "chicken",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "item": "rice",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "vegetables",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "item": "coconut milk",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "item": "curry paste",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": "Marinate protein, cook with vegetables. Add sauce and serve over rice.",
+    "url": null
+  }
+}

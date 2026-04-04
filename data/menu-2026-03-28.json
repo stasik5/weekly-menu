@@ -1,0 +1,245 @@
+{
+  "generated": "2026-03-28T23:04:37.130Z",
+  "week": "Mar 29 - Apr 4, 2026",
+  "cuisineBalance": {
+    "slavic": 13,
+    "asian": 8,
+    "slavicPercent": 62,
+    "asianPercent": 38
+  },
+  "nutritionProfile": "medium",
+  "targetCalories": 4000,
+  "days": [
+    {
+      "day": "Monday",
+      "date": "2026-03-29",
+      "meals": {
+        "breakfast": {
+          "name": "Tvorog pancakes",
+          "cuisine": "slavic",
+          "type": "breakfast",
+          "calories": 600,
+          "prepTime": "15-25 min",
+          "ingredients": [],
+          "instructions": []
+        },
+        "lunch": {
+          "name": "Buckwheat with mushrooms",
+          "cuisine": "slavic",
+          "type": "lunch",
+          "calories": 800,
+          "prepTime": "20-35 min",
+          "ingredients": [],
+          "instructions": []
+        },
+        "dinner": {
+          "name": "Beef Pho",
+          "cuisine": "asian",
+          "type": "dinner",
+          "calories": 900,
+          "prepTime": "30-60 min",
+          "ingredients": [],
+          "instructions": []
+        }
+      }
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-03-30",
+      "meals": {
+        "breakfast": {
+          "name": "Russian Blini",
+          "cuisine": "slavic",
+          "type": "breakfast",
+          "calories": 600,
+          "prepTime": "15-25 min",
+          "ingredients": [],
+          "instructions": []
+        },
+        "lunch": {
+          "name": "Tom Yum Soup",
+          "cuisine": "asian",
+          "type": "lunch",
+          "calories": 800,
+          "prepTime": "20-35 min",
+          "ingredients": [],
+          "instructions": []
+        },
+        "dinner": {
+          "name": "Beef Stroganoff",
+          "cuisine": "slavic",
+          "type": "dinner",
+          "calories": 900,
+          "prepTime": "30-60 min",
+          "ingredients": [],
+          "instructions": []
+        }
+      }
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-03-31",
+      "meals": {
+        "breakfast": {
+          "name": "Syrniki cottage cheese pancakes",
+          "cuisine": "slavic",
+          "type": "breakfast",
+          "calories": 600,
+          "prepTime": "15-25 min",
+          "ingredients": [],
+          "instructions": []
+        },
+        "lunch": {
+          "name": "Golubtsi cabbage rolls",
+          "cuisine": "slavic",
+          "type": "lunch",
+          "calories": 800,
+          "prepTime": "20-35 min",
+          "ingredients": [],
+          "instructions": []
+        },
+        "dinner": {
+          "name": "Beef Borscht",
+          "cuisine": "slavic",
+          "type": "dinner",
+          "calories": 900,
+          "prepTime": "30-60 min",
+          "ingredients": [],
+          "instructions": []
+        }
+      }
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-04-01",
+      "meals": {
+        "breakfast": {
+          "name": "Tvorog pancakes",
+          "cuisine": "slavic",
+          "type": "breakfast",
+          "calories": 600,
+          "prepTime": "15-25 min",
+          "ingredients": [],
+          "instructions": []
+        },
+        "lunch": {
+          "name": "Pelmeni",
+          "cuisine": "slavic",
+          "type": "lunch",
+          "calories": 800,
+          "prepTime": "20-35 min",
+          "ingredients": [],
+          "instructions": []
+        },
+        "dinner": {
+          "name": "Beef Borscht",
+          "cuisine": "slavic",
+          "type": "dinner",
+          "calories": 900,
+          "prepTime": "30-60 min",
+          "ingredients": [],
+          "instructions": []
+        }
+      }
+    },
+    {
+      "day": "Friday",
+      "date": "2026-04-02",
+      "meals": {
+        "breakfast": {
+          "name": "Buckwheat porridge",
+          "cuisine": "slavic",
+          "type": "breakfast",
+          "calories": 600,
+          "prepTime": "15-25 min",
+          "ingredients": [],
+          "instructions": []
+        },
+        "lunch": {
+          "name": "Chicken Kiev",
+          "cuisine": "slavic",
+          "type": "lunch",
+          "calories": 800,
+          "prepTime": "20-35 min",
+          "ingredients": [],
+          "instructions": []
+        },
+        "dinner": {
+          "name": "Beef Stroganoff",
+          "cuisine": "slavic",
+          "type": "dinner",
+          "calories": 900,
+          "prepTime": "30-60 min",
+          "ingredients": [],
+          "instructions": []
+        }
+      }
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-04-03",
+      "meals": {
+        "breakfast": {
+          "name": "Japanese Miso Soup",
+          "cuisine": "asian",
+          "type": "breakfast",
+          "calories": 600,
+          "prepTime": "15-25 min",
+          "ingredients": [],
+          "instructions": []
+        },
+        "lunch": {
+          "name": "Tom Yum Soup",
+          "cuisine": "asian",
+          "type": "lunch",
+          "calories": 800,
+          "prepTime": "20-35 min",
+          "ingredients": [],
+          "instructions": []
+        },
+        "dinner": {
+          "name": "Massaman Curry",
+          "cuisine": "asian",
+          "type": "dinner",
+          "calories": 900,
+          "prepTime": "30-60 min",
+          "ingredients": [],
+          "instructions": []
+        }
+      }
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-04-04",
+      "meals": {
+        "breakfast": {
+          "name": "Japanese Miso Soup",
+          "cuisine": "asian",
+          "type": "breakfast",
+          "calories": 600,
+          "prepTime": "15-25 min",
+          "ingredients": [],
+          "instructions": []
+        },
+        "lunch": {
+          "name": "Pad Thai",
+          "cuisine": "asian",
+          "type": "lunch",
+          "calories": 800,
+          "prepTime": "20-35 min",
+          "ingredients": [],
+          "instructions": []
+        },
+        "dinner": {
+          "name": "Massaman Curry",
+          "cuisine": "asian",
+          "type": "dinner",
+          "calories": 900,
+          "prepTime": "30-60 min",
+          "ingredients": [],
+          "instructions": []
+        }
+      }
+    }
+  ]
+}

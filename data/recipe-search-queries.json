@@ -1,0 +1,149 @@
+[
+  {
+    "day": "Monday",
+    "mealType": "breakfast",
+    "mealName": "Buckwheat porridge",
+    "query": "Buckwheat porridge ingredients recipe",
+    "cuisine": "slavic"
+  },
+  {
+    "day": "Monday",
+    "mealType": "lunch",
+    "mealName": "Spring rolls",
+    "query": "Spring rolls ingredients recipe",
+    "cuisine": "asian"
+  },
+  {
+    "day": "Monday",
+    "mealType": "dinner",
+    "mealName": "Kung pao chicken",
+    "query": "Kung pao chicken ingredients recipe",
+    "cuisine": "asian"
+  },
+  {
+    "day": "Tuesday",
+    "mealType": "breakfast",
+    "mealName": "Syrniki cottage cheese pancakes",
+    "query": "Syrniki cottage cheese pancakes ingredients recipe",
+    "cuisine": "slavic"
+  },
+  {
+    "day": "Tuesday",
+    "mealType": "lunch",
+    "mealName": "Chicken kiev",
+    "query": "Chicken kiev ingredients recipe",
+    "cuisine": "slavic"
+  },
+  {
+    "day": "Tuesday",
+    "mealType": "dinner",
+    "mealName": "Pelmeni",
+    "query": "Pelmeni ingredients recipe",
+    "cuisine": "slavic"
+  },
+  {
+    "day": "Wednesday",
+    "mealType": "breakfast",
+    "mealName": "Blini with sour cream",
+    "query": "Blini with sour cream ingredients recipe",
+    "cuisine": "slavic"
+  },
+  {
+    "day": "Wednesday",
+    "mealType": "lunch",
+    "mealName": "Russian salad",
+    "query": "Russian salad ingredients recipe",
+    "cuisine": "slavic"
+  },
+  {
+    "day": "Wednesday",
+    "mealType": "dinner",
+    "mealName": "Draniki potato pancakes",
+    "query": "Draniki potato pancakes ingredients recipe",
+    "cuisine": "slavic"
+  },
+  {
+    "day": "Thursday",
+    "mealType": "breakfast",
+    "mealName": "Blini with sour cream",
+    "query": "Blini with sour cream ingredients recipe",
+    "cuisine": "slavic"
+  },
+  {
+    "day": "Thursday",
+    "mealType": "lunch",
+    "mealName": "Spring rolls",
+    "query": "Spring rolls ingredients recipe",
+    "cuisine": "asian"
+  },
+  {
+    "day": "Thursday",
+    "mealType": "dinner",
+    "mealName": "Draniki potato pancakes",
+    "query": "Draniki potato pancakes ingredients recipe",
+    "cuisine": "slavic"
+  },
+  {
+    "day": "Friday",
+    "mealType": "breakfast",
+    "mealName": "Blini with sour cream",
+    "query": "Blini with sour cream ingredients recipe",
+    "cuisine": "slavic"
+  },
+  {
+    "day": "Friday",
+    "mealType": "lunch",
+    "mealName": "Beef stroganoff",
+    "query": "Beef stroganoff ingredients recipe",
+    "cuisine": "slavic"
+  },
+  {
+    "day": "Friday",
+    "mealType": "dinner",
+    "mealName": "Golubtsi",
+    "query": "Golubtsi ingredients recipe",
+    "cuisine": "slavic"
+  },
+  {
+    "day": "Saturday",
+    "mealType": "breakfast",
+    "mealName": "Syrniki cottage cheese pancakes",
+    "query": "Syrniki cottage cheese pancakes ingredients recipe",
+    "cuisine": "slavic"
+  },
+  {
+    "day": "Saturday",
+    "mealType": "lunch",
+    "mealName": "Spring rolls",
+    "query": "Spring rolls ingredients recipe",
+    "cuisine": "asian"
+  },
+  {
+    "day": "Saturday",
+    "mealType": "dinner",
+    "mealName": "Kung pao chicken",
+    "query": "Kung pao chicken ingredients recipe",
+    "cuisine": "asian"
+  },
+  {
+    "day": "Sunday",
+    "mealType": "breakfast",
+    "mealName": "Congee rice porridge",
+    "query": "Congee rice porridge ingredients recipe",
+    "cuisine": "asian"
+  },
+  {
+    "day": "Sunday",
+    "mealType": "lunch",
+    "mealName": "Pho noodle soup",
+    "query": "Pho noodle soup ingredients recipe",
+    "cuisine": "asian"
+  },
+  {
+    "day": "Sunday",
+    "mealType": "dinner",
+    "mealName": "Red curry",
+    "query": "Red curry ingredients recipe",
+    "cuisine": "asian"
+  }
+]

@@ -1,0 +1,22 @@
+🍽️ Weekly menu ready for Week 13!
+
+📦 View: https://stasik5.github.io/weekly-menu/
+📝 GitHub: https://github.com/stasik5/weekly-menu
+
+✅ Simplified 48 exotic ingredients to common alternatives:
+- тофу → творог
+- эдамаме → горох зеленый  
+- манго → яблоки
+- паста чили → чили или острый соус
+- рисовая лапша → лапша
+- лайм → лимон
+- креветки → курица или свинина
+- арахис → орехи грецкие
+- рыбный соус → соевый соус
+- ростки фасоли → кукуруза
+- семена подсолнечника → кунжут
+
+✅ All 21 recipes present (7 days × 3 meals)
+✅ Cuisine balance: 61.9% Slavic / 38.1% Asian
+✅ All ingredients now available in normal Lithuanian supermarkets
+✅ Essential Asian ingredients preserved (soy sauce, sesame oil, ginger)
