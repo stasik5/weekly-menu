@@ -1,0 +1,395 @@
+{
+  "generated": "2026-04-11T23:00:00Z",
+  "weekOf": "2026-04-13",
+  "source": "web_search + existing validated recipes",
+  "recipes": [
+    {
+      "id": "syrniki", "name": "Syrniki (Cottage Cheese Pancakes)", "cuisine": "slavic", "meal": "breakfast",
+      "prepTime": "15 min", "cookTime": "15 min", "servings": 4, "calories": 380,
+      "ingredients": [
+        {"item": "cottage cheese (tvorog)", "amount": 500, "unit": "g"},
+        {"item": "egg", "amount": 2, "unit": "pcs"},
+        {"item": "sugar", "amount": 50, "unit": "g"},
+        {"item": "flour", "amount": 100, "unit": "g"},
+        {"item": "vanilla sugar", "amount": 8, "unit": "g"},
+        {"item": "butter", "amount": 30, "unit": "g"},
+        {"item": "sour cream", "amount": 100, "unit": "g"},
+        {"item": "salt", "amount": 2, "unit": "g"}
+      ],
+      "instructions": "Mix cottage cheese with eggs, sugar, vanilla sugar, salt. Add flour gradually. Form patties, dust with flour. Fry in butter 3-4 min per side. Serve with sour cream."
+    },
+    {
+      "id": "borscht", "name": "Borscht (Beet Soup)", "cuisine": "slavic", "meal": "lunch",
+      "prepTime": "30 min", "cookTime": "90 min", "servings": 6, "calories": 450,
+      "ingredients": [
+        {"item": "beef (bone-in short ribs)", "amount": 600, "unit": "g"},
+        {"item": "beet", "amount": 2, "unit": "pcs"},
+        {"item": "potato", "amount": 3, "unit": "pcs"},
+        {"item": "carrot", "amount": 1, "unit": "pcs"},
+        {"item": "onion", "amount": 1, "unit": "pcs"},
+        {"item": "cabbage", "amount": 300, "unit": "g"},
+        {"item": "tomato paste", "amount": 40, "unit": "g"},
+        {"item": "white beans (canned)", "amount": 200, "unit": "g"},
+        {"item": "garlic", "amount": 2, "unit": "cloves"},
+        {"item": "sunflower oil", "amount": 30, "unit": "ml"},
+        {"item": "bay leaf", "amount": 2, "unit": "pcs"},
+        {"item": "sour cream", "amount": 100, "unit": "g"},
+        {"item": "dill", "amount": 15, "unit": "g"},
+        {"item": "salt", "amount": 5, "unit": "g"},
+        {"item": "water", "amount": 3, "unit": "L"}
+      ],
+      "instructions": "Boil beef in 3L water 1 hour. Sauté onion, carrot, add tomato paste and beets. Add potatoes to broth, cook 10 min. Add cabbage, vegetables, beans, bay leaf. Simmer 15 min. Add garlic and dill. Serve with sour cream."
+    },
+    {
+      "id": "pad-thai", "name": "Pad Thai", "cuisine": "asian", "meal": "dinner",
+      "prepTime": "20 min", "cookTime": "15 min", "servings": 4, "calories": 520,
+      "ingredients": [
+        {"item": "rice noodles (flat)", "amount": 250, "unit": "g"},
+        {"item": "chicken breast", "amount": 300, "unit": "g"},
+        {"item": "egg", "amount": 2, "unit": "pcs"},
+        {"item": "bean sprouts", "amount": 100, "unit": "g"},
+        {"item": "green onion", "amount": 3, "unit": "stalks"},
+        {"item": "peanuts (roasted)", "amount": 50, "unit": "g"},
+        {"item": "lime", "amount": 2, "unit": "pcs"},
+        {"item": "fish sauce", "amount": 45, "unit": "ml"},
+        {"item": "tamarind paste", "amount": 40, "unit": "g"},
+        {"item": "sugar", "amount": 40, "unit": "g"},
+        {"item": "soy sauce", "amount": 15, "unit": "ml"},
+        {"item": "garlic", "amount": 3, "unit": "cloves"},
+        {"item": "vegetable oil", "amount": 30, "unit": "ml"},
+        {"item": "chili flakes", "amount": 3, "unit": "g"}
+      ],
+      "instructions": "Soak noodles 20 min. Mix fish sauce, tamarind, sugar, soy sauce. Sauté garlic, add chicken 5 min. Scramble eggs. Add noodles and sauce, toss 3 min. Add sprouts and green onion. Serve with peanuts and lime."
+    },
+    {
+      "id": "congee", "name": "Congee (Rice Porridge)", "cuisine": "asian", "meal": "breakfast",
+      "prepTime": "5 min", "cookTime": "45 min", "servings": 4, "calories": 300,
+      "ingredients": [
+        {"item": "rice (jasmine)", "amount": 200, "unit": "g"},
+        {"item": "chicken broth", "amount": 1.5, "unit": "L"},
+        {"item": "ginger", "amount": 20, "unit": "g"},
+        {"item": "garlic", "amount": 2, "unit": "cloves"},
+        {"item": "soy sauce", "amount": 30, "unit": "ml"},
+        {"item": "sesame oil", "amount": 10, "unit": "ml"},
+        {"item": "green onion", "amount": 3, "unit": "stalks"},
+        {"item": "egg", "amount": 2, "unit": "pcs"},
+        {"item": "water", "amount": 500, "unit": "ml"}
+      ],
+      "instructions": "Boil rice with broth and water. Add ginger, simmer 40 min until creamy. Season with soy sauce and sesame oil. Top with green onion and soft-boiled egg."
+    },
+    {
+      "id": "kotleti-mash", "name": "Kotleti with Mashed Potatoes", "cuisine": "slavic", "meal": "lunch",
+      "prepTime": "20 min", "cookTime": "30 min", "servings": 4, "calories": 650,
+      "ingredients": [
+        {"item": "ground beef/pork mix", "amount": 500, "unit": "g"},
+        {"item": "onion", "amount": 1, "unit": "pcs"},
+        {"item": "bread (white)", "amount": 80, "unit": "g"},
+        {"item": "milk", "amount": 200, "unit": "ml"},
+        {"item": "egg", "amount": 1, "unit": "pcs"},
+        {"item": "garlic", "amount": 2, "unit": "cloves"},
+        {"item": "potato", "amount": 800, "unit": "g"},
+        {"item": "butter", "amount": 50, "unit": "g"},
+        {"item": "sunflower oil", "amount": 40, "unit": "ml"},
+        {"item": "salt", "amount": 5, "unit": "g"},
+        {"item": "black pepper", "amount": 2, "unit": "g"},
+        {"item": "dill", "amount": 10, "unit": "g"}
+      ],
+      "instructions": "Soak bread in milk. Mix meat with onion, garlic, bread, egg, salt, pepper. Form patties, fry 5-6 min per side. Boil potatoes 20 min, mash with butter and milk. Serve with dill."
+    },
+    {
+      "id": "chicken-kiev", "name": "Chicken Kiev", "cuisine": "slavic", "meal": "dinner",
+      "prepTime": "30 min", "cookTime": "25 min", "servings": 4, "calories": 580,
+      "ingredients": [
+        {"item": "chicken breast", "amount": 600, "unit": "g"},
+        {"item": "butter", "amount": 80, "unit": "g"},
+        {"item": "dill", "amount": 15, "unit": "g"},
+        {"item": "garlic", "amount": 3, "unit": "cloves"},
+        {"item": "egg", "amount": 2, "unit": "pcs"},
+        {"item": "flour", "amount": 60, "unit": "g"},
+        {"item": "breadcrumbs", "amount": 100, "unit": "g"},
+        {"item": "sunflower oil", "amount": 60, "unit": "ml"},
+        {"item": "salt", "amount": 3, "unit": "g"},
+        {"item": "black pepper", "amount": 2, "unit": "g"}
+      ],
+      "instructions": "Mix butter with garlic and dill, freeze. Butterfly and pound chicken. Roll butter inside. Bread in flour, egg, breadcrumbs. Fry 5-6 min, bake at 180C for 15 min."
+    },
+    {
+      "id": "oladi", "name": "Oladi (Thick Russian Pancakes)", "cuisine": "slavic", "meal": "breakfast",
+      "prepTime": "10 min", "cookTime": "15 min", "servings": 4, "calories": 350,
+      "ingredients": [
+        {"item": "kefir (or buttermilk)", "amount": 250, "unit": "ml"},
+        {"item": "egg", "amount": 1, "unit": "pcs"},
+        {"item": "sugar", "amount": 50, "unit": "g"},
+        {"item": "flour", "amount": 200, "unit": "g"},
+        {"item": "baking soda", "amount": 5, "unit": "g"},
+        {"item": "vanilla sugar", "amount": 8, "unit": "g"},
+        {"item": "sunflower oil", "amount": 30, "unit": "ml"},
+        {"item": "salt", "amount": 2, "unit": "g"},
+        {"item": "sour cream", "amount": 100, "unit": "g"}
+      ],
+      "instructions": "Whisk egg with sugar and salt. Add kefir. Sift in flour with baking soda. Stir (lumps ok). Fry tablespoons of batter in oil 2-3 min per side. Serve with sour cream and jam."
+    },
+    {
+      "id": "tom-yum", "name": "Tom Yum Goong (Spicy Shrimp Soup)", "cuisine": "asian", "meal": "lunch",
+      "prepTime": "15 min", "cookTime": "20 min", "servings": 4, "calories": 280,
+      "ingredients": [
+        {"item": "shrimp (large)", "amount": 400, "unit": "g"},
+        {"item": "chicken broth", "amount": 1, "unit": "L"},
+        {"item": "lemongrass", "amount": 2, "unit": "stalks"},
+        {"item": "galangal", "amount": 20, "unit": "g"},
+        {"item": "kaffir lime leaves", "amount": 4, "unit": "pcs"},
+        {"item": "mushrooms (straw or oyster)", "amount": 200, "unit": "g"},
+        {"item": "cherry tomato", "amount": 100, "unit": "g"},
+        {"item": "fish sauce", "amount": 45, "unit": "ml"},
+        {"item": "lime juice", "amount": 60, "unit": "ml"},
+        {"item": "chili paste (nam prik pao)", "amount": 30, "unit": "g"},
+        {"item": "cilantro", "amount": 15, "unit": "g"},
+        {"item": "bird's eye chili", "amount": 2, "unit": "pcs"}
+      ],
+      "instructions": "Boil broth with lemongrass, galangal, lime leaves. Add mushrooms and tomatoes 3 min. Add shrimp 3 min. Season with fish sauce, lime juice, chili paste. Garnish with cilantro."
+    },
+    {
+      "id": "beef-stroganoff", "name": "Beef Stroganoff", "cuisine": "slavic", "meal": "dinner",
+      "prepTime": "15 min", "cookTime": "25 min", "servings": 4, "calories": 620,
+      "ingredients": [
+        {"item": "beef (top sirloin)", "amount": 500, "unit": "g"},
+        {"item": "mushrooms (button)", "amount": 250, "unit": "g"},
+        {"item": "onion", "amount": 1, "unit": "pcs"},
+        {"item": "garlic", "amount": 3, "unit": "cloves"},
+        {"item": "beef broth", "amount": 350, "unit": "ml"},
+        {"item": "heavy cream", "amount": 120, "unit": "ml"},
+        {"item": "sour cream", "amount": 120, "unit": "g"},
+        {"item": "Dijon mustard", "amount": 15, "unit": "g"},
+        {"item": "Worcestershire sauce", "amount": 15, "unit": "ml"},
+        {"item": "flour", "amount": 30, "unit": "g"},
+        {"item": "butter", "amount": 40, "unit": "g"},
+        {"item": "egg noodles", "amount": 300, "unit": "g"},
+        {"item": "salt", "amount": 4, "unit": "g"},
+        {"item": "black pepper", "amount": 2, "unit": "g"},
+        {"item": "parsley", "amount": 10, "unit": "g"}
+      ],
+      "instructions": "Slice beef thin, sear in butter 1 min per side. Sauté onion 3 min, mushrooms 5 min. Add garlic, flour. Pour broth, cream, mustard, Worcestershire. Simmer 5 min. Return beef, add sour cream off heat. Serve over egg noodles."
+    },
+    {
+      "id": "miso-soup-rice", "name": "Miso Soup with Rice", "cuisine": "asian", "meal": "breakfast",
+      "prepTime": "5 min", "cookTime": "15 min", "servings": 4, "calories": 320,
+      "ingredients": [
+        {"item": "miso paste (white)", "amount": 60, "unit": "g"},
+        {"item": "dashi stock", "amount": 1, "unit": "L"},
+        {"item": "tofu (soft)", "amount": 200, "unit": "g"},
+        {"item": "wakame (dried seaweed)", "amount": 10, "unit": "g"},
+        {"item": "green onion", "amount": 3, "unit": "stalks"},
+        {"item": "rice (short grain)", "amount": 300, "unit": "g"},
+        {"item": "soy sauce", "amount": 10, "unit": "ml"},
+        {"item": "sesame oil", "amount": 5, "unit": "ml"}
+      ],
+      "instructions": "Cook rice. Simmer dashi with tofu and wakame. Dissolve miso off heat. Serve over rice with green onion and sesame oil."
+    },
+    {
+      "id": "pelmeni", "name": "Pelmeni (Meat Dumplings)", "cuisine": "slavic", "meal": "lunch",
+      "prepTime": "45 min", "cookTime": "10 min", "servings": 4, "calories": 520,
+      "ingredients": [
+        {"item": "ground beef/pork mix", "amount": 400, "unit": "g"},
+        {"item": "onion", "amount": 1, "unit": "pcs"},
+        {"item": "garlic", "amount": 2, "unit": "cloves"},
+        {"item": "flour", "amount": 300, "unit": "g"},
+        {"item": "egg", "amount": 1, "unit": "pcs"},
+        {"item": "water", "amount": 150, "unit": "ml"},
+        {"item": "sour cream", "amount": 100, "unit": "g"},
+        {"item": "butter", "amount": 30, "unit": "g"},
+        {"item": "salt", "amount": 5, "unit": "g"},
+        {"item": "black pepper", "amount": 2, "unit": "g"},
+        {"item": "dill", "amount": 10, "unit": "g"}
+      ],
+      "instructions": "Make dough from flour, egg, water, salt. Rest 20 min. Mix meat with onion, garlic, salt, pepper. Roll thin, cut circles, fill, pinch. Boil 7-8 min. Serve with sour cream, butter, dill."
+    },
+    {
+      "id": "chicken-katsu-curry", "name": "Chicken Katsu Curry", "cuisine": "asian", "meal": "dinner",
+      "prepTime": "20 min", "cookTime": "25 min", "servings": 4, "calories": 680,
+      "ingredients": [
+        {"item": "chicken breast", "amount": 500, "unit": "g"},
+        {"item": "flour", "amount": 60, "unit": "g"},
+        {"item": "egg", "amount": 2, "unit": "pcs"},
+        {"item": "breadcrumbs (panko)", "amount": 100, "unit": "g"},
+        {"item": "vegetable oil", "amount": 100, "unit": "ml"},
+        {"item": "onion", "amount": 1, "unit": "pcs"},
+        {"item": "carrot", "amount": 1, "unit": "pcs"},
+        {"item": "potato", "amount": 1, "unit": "pcs"},
+        {"item": "garlic", "amount": 2, "unit": "cloves"},
+        {"item": "ginger", "amount": 10, "unit": "g"},
+        {"item": "chicken broth", "amount": 500, "unit": "ml"},
+        {"item": "curry powder", "amount": 20, "unit": "g"},
+        {"item": "soy sauce", "amount": 15, "unit": "ml"},
+        {"item": "honey", "amount": 20, "unit": "g"},
+        {"item": "rice (short grain)", "amount": 300, "unit": "g"},
+        {"item": "salt", "amount": 3, "unit": "g"},
+        {"item": "black pepper", "amount": 2, "unit": "g"}
+      ],
+      "instructions": "Cook rice. Sauté onion, carrot, potato with garlic and ginger. Add curry powder, broth, soy sauce, honey. Simmer 15 min. Pound chicken, dredge in flour/egg/panko. Fry 5-6 min. Slice, serve over rice with curry sauce."
+    },
+    {
+      "id": "kasha-buckwheat", "name": "Buckwheat Kasha with Mushrooms", "cuisine": "slavic", "meal": "breakfast",
+      "prepTime": "10 min", "cookTime": "25 min", "servings": 4, "calories": 380,
+      "ingredients": [
+        {"item": "buckwheat (grechka)", "amount": 300, "unit": "g"},
+        {"item": "mushrooms (button)", "amount": 200, "unit": "g"},
+        {"item": "onion", "amount": 1, "unit": "pcs"},
+        {"item": "butter", "amount": 40, "unit": "g"},
+        {"item": "water", "amount": 600, "unit": "ml"},
+        {"item": "salt", "amount": 4, "unit": "g"},
+        {"item": "black pepper", "amount": 2, "unit": "g"},
+        {"item": "dill", "amount": 10, "unit": "g"}
+      ],
+      "instructions": "Sauté onion and mushrooms in butter 7 min. Add buckwheat, stir 1 min. Add water and salt. Simmer covered 15-18 min. Fluff, add pepper and dill."
+    },
+    {
+      "id": "kimchi-jjigae", "name": "Kimchi Jjigae (Kimchi Stew)", "cuisine": "asian", "meal": "lunch",
+      "prepTime": "10 min", "cookTime": "30 min", "servings": 4, "calories": 350,
+      "ingredients": [
+        {"item": "kimchi (aged)", "amount": 300, "unit": "g"},
+        {"item": "pork belly", "amount": 200, "unit": "g"},
+        {"item": "tofu (soft)", "amount": 300, "unit": "g"},
+        {"item": "onion", "amount": 1, "unit": "pcs"},
+        {"item": "mushrooms (shiitake)", "amount": 100, "unit": "g"},
+        {"item": "gochugaru (Korean chili flakes)", "amount": 15, "unit": "g"},
+        {"item": "gochujang (Korean chili paste)", "amount": 30, "unit": "g"},
+        {"item": "soy sauce", "amount": 15, "unit": "ml"},
+        {"item": "sesame oil", "amount": 10, "unit": "ml"},
+        {"item": "garlic", "amount": 3, "unit": "cloves"},
+        {"item": "green onion", "amount": 3, "unit": "stalks"},
+        {"item": "water", "amount": 750, "unit": "ml"},
+        {"item": "rice (short grain)", "amount": 300, "unit": "g"}
+      ],
+      "instructions": "Cook rice. Sauté pork with garlic and gochugaru 3 min. Add kimchi 5 min. Add water, gochujang, soy sauce, onion. Simmer 15 min. Add tofu and mushrooms 5 min. Finish with sesame oil and green onion. Serve with rice."
+    },
+    {
+      "id": "vareniki", "name": "Vareniki (Potato Dumplings)", "cuisine": "slavic", "meal": "dinner",
+      "prepTime": "40 min", "cookTime": "10 min", "servings": 4, "calories": 480,
+      "ingredients": [
+        {"item": "potato", "amount": 500, "unit": "g"},
+        {"item": "onion", "amount": 1, "unit": "pcs"},
+        {"item": "flour", "amount": 360, "unit": "g"},
+        {"item": "egg", "amount": 1, "unit": "pcs"},
+        {"item": "water", "amount": 150, "unit": "ml"},
+        {"item": "butter", "amount": 50, "unit": "g"},
+        {"item": "sour cream", "amount": 100, "unit": "g"},
+        {"item": "salt", "amount": 5, "unit": "g"},
+        {"item": "black pepper", "amount": 2, "unit": "g"},
+        {"item": "sunflower oil", "amount": 20, "unit": "ml"},
+        {"item": "dill", "amount": 10, "unit": "g"}
+      ],
+      "instructions": "Boil and mash potatoes. Sauté onion in butter, mix into potatoes with dill. Make dough from flour, egg, water, salt. Roll thin, cut circles, fill, pinch. Boil 3-4 min. Serve with sour cream."
+    },
+    {
+      "id": "blini", "name": "Blini (Russian Crepes)", "cuisine": "slavic", "meal": "breakfast",
+      "prepTime": "15 min", "cookTime": "20 min", "servings": 4, "calories": 340,
+      "ingredients": [
+        {"item": "milk", "amount": 500, "unit": "ml"},
+        {"item": "egg", "amount": 3, "unit": "pcs"},
+        {"item": "flour", "amount": 200, "unit": "g"},
+        {"item": "sugar", "amount": 30, "unit": "g"},
+        {"item": "butter", "amount": 40, "unit": "g"},
+        {"item": "sunflower oil", "amount": 20, "unit": "ml"},
+        {"item": "salt", "amount": 3, "unit": "g"},
+        {"item": "sour cream", "amount": 100, "unit": "g"},
+        {"item": "jam (berry)", "amount": 100, "unit": "g"}
+      ],
+      "instructions": "Whisk eggs, sugar, salt. Add milk, flour. Add melted butter. Rest 15 min. Pour thin layers into oiled pan, cook 1-2 min per side. Serve with sour cream and jam."
+    },
+    {
+      "id": "ramen", "name": "Tonkotsu Ramen", "cuisine": "asian", "meal": "lunch",
+      "prepTime": "10 min", "cookTime": "15 min", "servings": 4, "calories": 550,
+      "ingredients": [
+        {"item": "ramen noodles", "amount": 400, "unit": "g"},
+        {"item": "pork broth (or chicken broth)", "amount": 1.5, "unit": "L"},
+        {"item": "pork belly (sliced)", "amount": 200, "unit": "g"},
+        {"item": "egg", "amount": 4, "unit": "pcs"},
+        {"item": "soy sauce", "amount": 60, "unit": "ml"},
+        {"item": "mirin", "amount": 30, "unit": "ml"},
+        {"item": "sesame oil", "amount": 15, "unit": "ml"},
+        {"item": "garlic", "amount": 3, "unit": "cloves"},
+        {"item": "ginger", "amount": 15, "unit": "g"},
+        {"item": "green onion", "amount": 4, "unit": "stalks"},
+        {"item": "nori sheets", "amount": 4, "unit": "pcs"},
+        {"item": "bamboo shoots", "amount": 100, "unit": "g"},
+        {"item": "chili oil", "amount": 10, "unit": "ml"}
+      ],
+      "instructions": "Soft-boil eggs 6.5 min, marinate in soy/mirin. Sear pork belly. Heat broth with garlic and ginger. Cook noodles. Assemble bowls with broth, noodles, pork, egg, bamboo shoots, nori, green onion, chili oil."
+    },
+    {
+      "id": "shashlik", "name": "Shashlik (Georgian Kebab)", "cuisine": "slavic", "meal": "dinner",
+      "prepTime": "20 min + 4h marinating", "cookTime": "15 min", "servings": 4, "calories": 580,
+      "ingredients": [
+        {"item": "pork shoulder", "amount": 800, "unit": "g"},
+        {"item": "onion", "amount": 3, "unit": "pcs"},
+        {"item": "lemon", "amount": 1, "unit": "pcs"},
+        {"item": "garlic", "amount": 3, "unit": "cloves"},
+        {"item": "sunflower oil", "amount": 30, "unit": "ml"},
+        {"item": "black pepper", "amount": 3, "unit": "g"},
+        {"item": "salt", "amount": 5, "unit": "g"},
+        {"item": "vinegar", "amount": 30, "unit": "ml"},
+        {"item": "fresh herbs (cilantro, parsley)", "amount": 30, "unit": "g"}
+      ],
+      "instructions": "Cube pork 3cm. Marinate with onion, lemon juice, garlic, oil, vinegar, salt, pepper 4+ hours. Grill on skewers 12-15 min, turning. Serve with herbs and raw onion."
+    },
+    {
+      "id": "bibimbap", "name": "Bibimbap (Korean Rice Bowl)", "cuisine": "asian", "meal": "breakfast",
+      "prepTime": "20 min", "cookTime": "20 min", "servings": 4, "calories": 450,
+      "ingredients": [
+        {"item": "rice (short grain)", "amount": 400, "unit": "g"},
+        {"item": "beef (sirloin)", "amount": 200, "unit": "g"},
+        {"item": "spinach", "amount": 200, "unit": "g"},
+        {"item": "carrot", "amount": 1, "unit": "pcs"},
+        {"item": "zucchini", "amount": 1, "unit": "pcs"},
+        {"item": "bean sprouts", "amount": 150, "unit": "g"},
+        {"item": "egg", "amount": 4, "unit": "pcs"},
+        {"item": "gochujang", "amount": 60, "unit": "g"},
+        {"item": "soy sauce", "amount": 30, "unit": "ml"},
+        {"item": "sesame oil", "amount": 20, "unit": "ml"},
+        {"item": "garlic", "amount": 2, "unit": "cloves"},
+        {"item": "sesame seeds", "amount": 10, "unit": "g"},
+        {"item": "vegetable oil", "amount": 20, "unit": "ml"}
+      ],
+      "instructions": "Cook rice. Blanch spinach and bean sprouts. Julienne and sauté carrot and zucchini. Season and sauté beef. Fry eggs. Arrange rice topped with vegetables, beef, egg. Add gochujang and sesame seeds. Mix before eating."
+    },
+    {
+      "id": "solyanka", "name": "Solyanka (Meat Soup)", "cuisine": "slavic", "meal": "lunch",
+      "prepTime": "20 min", "cookTime": "40 min", "servings": 6, "calories": 420,
+      "ingredients": [
+        {"item": "mixed meats (sausage, ham, beef)", "amount": 500, "unit": "g"},
+        {"item": "pickles (dill)", "amount": 150, "unit": "g"},
+        {"item": "onion", "amount": 2, "unit": "pcs"},
+        {"item": "olives (canned)", "amount": 100, "unit": "g"},
+        {"item": "tomato paste", "amount": 50, "unit": "g"},
+        {"item": "capers", "amount": 30, "unit": "g"},
+        {"item": "lemon", "amount": 1, "unit": "pcs"},
+        {"item": "sour cream", "amount": 100, "unit": "g"},
+        {"item": "sunflower oil", "amount": 30, "unit": "ml"},
+        {"item": "bay leaf", "amount": 2, "unit": "pcs"},
+        {"item": "garlic", "amount": 2, "unit": "cloves"},
+        {"item": "water", "amount": 2, "unit": "L"},
+        {"item": "salt", "amount": 5, "unit": "g"},
+        {"item": "dill", "amount": 15, "unit": "g"}
+      ],
+      "instructions": "Dice meats. Sauté onion, add tomato paste. Add pickles with brine, water, meats, bay leaf. Simmer 25 min. Add olives, capers, garlic. Serve with lemon, sour cream, dill."
+    },
+    {
+      "id": "teriyaki-salmon", "name": "Teriyaki Salmon with Rice", "cuisine": "asian", "meal": "dinner",
+      "prepTime": "10 min", "cookTime": "15 min", "servings": 4, "calories": 520,
+      "ingredients": [
+        {"item": "salmon fillet", "amount": 600, "unit": "g"},
+        {"item": "soy sauce", "amount": 60, "unit": "ml"},
+        {"item": "mirin", "amount": 45, "unit": "ml"},
+        {"item": "honey", "amount": 30, "unit": "g"},
+        {"item": "ginger", "amount": 15, "unit": "g"},
+        {"item": "garlic", "amount": 2, "unit": "cloves"},
+        {"item": "sesame oil", "amount": 10, "unit": "ml"},
+        {"item": "rice (short grain)", "amount": 300, "unit": "g"},
+        {"item": "sesame seeds", "amount": 10, "unit": "g"},
+        {"item": "green onion", "amount": 3, "unit": "stalks"},
+        {"item": "vegetable oil", "amount": 15, "unit": "ml"}
+      ],
+      "instructions": "Cook rice. Mix soy sauce, mirin, honey, grated ginger and garlic for teriyaki. Sear salmon in oil skin-side down 4 min. Flip, add teriyaki sauce, cook 3 min until glazed. Serve over rice with sesame seeds and green onion."
+    }
+  ]
+}
