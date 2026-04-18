@@ -1,0 +1,69 @@
+{
+  "week": "2026-04-20",
+  "generated": "2026-04-18T23:00:00Z",
+  "target_calories": {"lower": 3400, "medium": 4000, "higher": 4700},
+  "cuisine_split": {"slavic_pasta": 13, "asian": 8, "ratio": "62/38"},
+  "days": [
+    {
+      "day": "Monday",
+      "meals": {
+        "breakfast": {"name": "Овсянка с ягодами и мёдом", "en": "Oatmeal with Berries & Honey", "cuisine": "slavic", "kcal": 450},
+        "lunch": {"name": "Борщ украинский", "en": "Ukrainian Borscht", "cuisine": "slavic", "kcal": 650},
+        "dinner": {"name": "Пельмени домашние", "en": "Homemade Pelmeni", "cuisine": "slavic", "kcal": 850}
+      }
+    },
+    {
+      "day": "Tuesday",
+      "meals": {
+        "breakfast": {"name": "Жареные яйца с хлебом и сыром", "en": "Fried Eggs with Bread & Cheese", "cuisine": "slavic", "kcal": 480},
+        "lunch": {"name": "Терияки курица с рисом", "en": "Teriyaki Chicken with Rice", "cuisine": "asian", "kcal": 700},
+        "dinner": {"name": "Котлеты домашние с пюре", "en": "Kotlety with Mashed Potatoes", "cuisine": "slavic", "kcal": 850}
+      }
+    },
+    {
+      "day": "Wednesday",
+      "meals": {
+        "breakfast": {"name": "Блинчики с творогом", "en": "Blini with Cottage Cheese", "cuisine": "slavic", "kcal": 500},
+        "lunch": {"name": "Пад Тай с курицей", "en": "Chicken Pad Thai", "cuisine": "asian", "kcal": 680},
+        "dinner": {"name": "Бефстроганов", "en": "Beef Stroganoff", "cuisine": "slavic", "kcal": 820}
+      }
+    },
+    {
+      "day": "Thursday",
+      "meals": {
+        "breakfast": {"name": "Рисовая каша на молоке", "en": "Rice Porridge with Milk", "cuisine": "slavic", "kcal": 420},
+        "lunch": {"name": "Мисо рамен", "en": "Miso Ramen", "cuisine": "asian", "kcal": 720},
+        "dinner": {"name": "Куриный суп с лапшой", "en": "Chicken Noodle Soup", "cuisine": "slavic", "kcal": 600}
+      }
+    },
+    {
+      "day": "Friday",
+      "meals": {
+        "breakfast": {"name": "Бутерброды с колбасой и сыром", "en": "Sandwiches with Sausage & Cheese", "cuisine": "slavic", "kcal": 450},
+        "lunch": {"name": "Карбонара", "en": "Pasta Carbonara", "cuisine": "pasta", "kcal": 780},
+        "dinner": {"name": "Тайский зелёный карри", "en": "Thai Green Curry", "cuisine": "asian", "kcal": 750}
+      }
+    },
+    {
+      "day": "Saturday",
+      "meals": {
+        "breakfast": {"name": "Сырники со сметаной", "en": "Syrniki with Sour Cream", "cuisine": "slavic", "kcal": 480},
+        "lunch": {"name": "Плов узбекский", "en": "Uzbek Plov", "cuisine": "slavic", "kcal": 820},
+        "dinner": {"name": "Корейский пибимпап", "en": "Korean Bibimbap", "cuisine": "asian", "kcal": 700}
+      }
+    },
+    {
+      "day": "Sunday",
+      "meals": {
+        "breakfast": {"name": "Яичница с помидорами и беконом", "en": "Scrambled Eggs with Tomatoes & Bacon", "cuisine": "slavic", "kcal": 520},
+        "lunch": {"name": "Голубцы в томатном соусе", "en": "Golubtsi in Tomato Sauce", "cuisine": "slavic", "kcal": 700},
+        "dinner": {"name": "Японское карри с рисом", "en": "Japanese Curry Rice", "cuisine": "asian", "kcal": 750}
+      }
+    }
+  ],
+  "chef_review": {
+    "cuisine_balance": {"slavic_pasta_pct": 62, "asian_pct": 38, "target": "60/40", "status": "PASS"},
+    "fancy_dinners": 0,
+    "notes": "Balanced menu with hearty Slavic comfort food and Asian variety. No fancy dinners - all practical home cooking."
+  }
+}

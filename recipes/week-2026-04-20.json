@@ -1,0 +1,394 @@
+{
+  "week": "2026-04-20",
+  "generated": "2026-04-18T23:00:00Z",
+  "target_calories": { "lower": 3400, "medium": 4000, "higher": 4700 },
+  "cuisine_split": { "slavic_pasta": 13, "asian": 8 },
+  "days": [
+    {
+      "day": "Monday",
+      "meals": [
+        {
+          "type": "breakfast",
+          "name": "Овсянка с ягодами и мёдом",
+          "name_en": "Oatmeal with Berries and Honey",
+          "cuisine": "slavic",
+          "calories": 450,
+          "ingredients": [
+            { "name": "Овсяные хлопья", "name_en": "Rolled oats", "amount": 150, "unit": "g" },
+            { "name": "Молоко", "name_en": "Milk", "amount": 300, "unit": "ml" },
+            { "name": "Черника замороженная", "name_en": "Frozen blueberries", "amount": 100, "unit": "g" },
+            { "name": "Мёд", "name_en": "Honey", "amount": 30, "unit": "g" },
+            { "name": "Сливочное масло", "name_en": "Butter", "amount": 15, "unit": "g" }
+          ],
+          "instructions": "Bring milk to a simmer, add oats, cook 5 min. Top with berries, honey, and butter."
+        },
+        {
+          "type": "lunch",
+          "name": "Борщ украинский",
+          "name_en": "Ukrainian Borscht",
+          "cuisine": "slavic",
+          "calories": 650,
+          "ingredients": [
+            { "name": "Говядина на кости", "name_en": "Beef bones", "amount": 500, "unit": "g" },
+            { "name": "Свёкла", "name_en": "Beets", "amount": 300, "unit": "g" },
+            { "name": "Картофель", "name_en": "Potatoes", "amount": 300, "unit": "g" },
+            { "name": "Капуста белокочанная", "name_en": "White cabbage", "amount": 250, "unit": "g" },
+            { "name": "Морковь", "name_en": "Carrots", "amount": 150, "unit": "g" },
+            { "name": "Лук репчатый", "name_en": "Onion", "amount": 150, "unit": "g" },
+            { "name": "Томатная паста", "name_en": "Tomato paste", "amount": 60, "unit": "g" },
+            { "name": "Чеснок", "name_en": "Garlic", "amount": 15, "unit": "g" },
+            { "name": "Укроп свежий", "name_en": "Fresh dill", "amount": 30, "unit": "g" },
+            { "name": "Сметана", "name_en": "Sour cream", "amount": 100, "unit": "g" },
+            { "name": "Лавровый лист", "name_en": "Bay leaf", "amount": 2, "unit": "pcs" },
+            { "name": "Уксус столовый", "name_en": "White vinegar", "amount": 15, "unit": "ml" }
+          ],
+          "instructions": "Boil beef bones 1.5h for broth. Sauté grated beets, carrots, onion with tomato paste. Add diced potatoes and shredded cabbage to broth. Add sautéed veggies. Season with garlic, dill, bay leaf, vinegar. Serve with sour cream."
+        },
+        {
+          "type": "dinner",
+          "name": "Пельмени домашние",
+          "name_en": "Homemade Pelmeni",
+          "cuisine": "slavic",
+          "calories": 850,
+          "ingredients": [
+            { "name": "Мука пшеничная", "name_en": "All-purpose flour", "amount": 400, "unit": "g" },
+            { "name": "Яйца куриные", "name_en": "Eggs", "amount": 2, "unit": "pcs" },
+            { "name": "Фарш свино-говяжий", "name_en": "Pork-beef mince", "amount": 500, "unit": "g" },
+            { "name": "Лук репчатый", "name_en": "Onion", "amount": 100, "unit": "g" },
+            { "name": "Вода", "name_en": "Water", "amount": 200, "unit": "ml" },
+            { "name": "Сметана", "name_en": "Sour cream", "amount": 80, "unit": "g" },
+            { "name": "Сливочное масло", "name_en": "Butter", "amount": 30, "unit": "g" }
+          ],
+          "instructions": "Make dough from flour, eggs, water, salt. Knead 10 min, rest 30 min. Mix mince with finely diced onion, salt, pepper. Roll dough thin, cut circles, fill with meat, fold and pinch. Boil 7-8 min until floating. Serve with sour cream and butter."
+        }
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "meals": [
+        {
+          "type": "breakfast",
+          "name": "Жареные яйца с хлебом и сыром",
+          "name_en": "Fried Eggs with Bread and Cheese",
+          "cuisine": "slavic",
+          "calories": 480,
+          "ingredients": [
+            { "name": "Яйца куриные", "name_en": "Eggs", "amount": 4, "unit": "pcs" },
+            { "name": "Хлеб белый", "name_en": "White bread", "amount": 100, "unit": "g" },
+            { "name": "Сыр российский", "name_en": "Russian cheese", "amount": 80, "unit": "g" },
+            { "name": "Сливочное масло", "name_en": "Butter", "amount": 20, "unit": "g" }
+          ],
+          "instructions": "Fry eggs sunny-side-up in butter. Toast bread, melt cheese on top. Serve together."
+        },
+        {
+          "type": "lunch",
+          "name": "Терияки курица с рисом",
+          "name_en": "Teriyaki Chicken with Rice",
+          "cuisine": "asian",
+          "calories": 700,
+          "ingredients": [
+            { "name": "Куриное филе", "name_en": "Chicken breast", "amount": 400, "unit": "g" },
+            { "name": "Рис", "name_en": "Rice", "amount": 250, "unit": "g" },
+            { "name": "Соевый соус", "name_en": "Soy sauce", "amount": 80, "unit": "ml" },
+            { "name": "Мёд", "name_en": "Honey", "amount": 40, "unit": "g" },
+            { "name": "Имбирь свежий", "name_en": "Fresh ginger", "amount": 20, "unit": "g" },
+            { "name": "Чеснок", "name_en": "Garlic", "amount": 10, "unit": "g" },
+            { "name": "Кунжутное масло", "name_en": "Sesame oil", "amount": 15, "unit": "ml" },
+            { "name": "Рисовый уксус", "name_en": "Rice vinegar", "amount": 15, "unit": "ml" },
+            { "name": "Крахмал кукурузный", "name_en": "Cornstarch", "amount": 10, "unit": "g" },
+            { "name": "Кунжут", "name_en": "Sesame seeds", "amount": 10, "unit": "g" }
+          ],
+          "instructions": "Cook rice. Mix soy sauce, honey, ginger, garlic, sesame oil, vinegar, and cornstarch for teriyaki sauce. Cut chicken into strips, pan-fry until golden. Pour sauce over, simmer 3 min until thick. Serve over rice, garnish with sesame seeds."
+        },
+        {
+          "type": "dinner",
+          "name": "Котлеты домашние с пюре",
+          "name_en": "Homemade Kotlety with Mashed Potatoes",
+          "cuisine": "slavic",
+          "calories": 850,
+          "ingredients": [
+            { "name": "Фарш свино-говяжий", "name_en": "Pork-beef mince", "amount": 500, "unit": "g" },
+            { "name": "Лук репчатый", "name_en": "Onion", "amount": 100, "unit": "g" },
+            { "name": "Хлеб белый", "name_en": "White bread", "amount": 80, "unit": "g" },
+            { "name": "Яйца куриные", "name_en": "Eggs", "amount": 1, "unit": "pcs" },
+            { "name": "Картофель", "name_en": "Potatoes", "amount": 600, "unit": "g" },
+            { "name": "Молоко", "name_en": "Milk", "amount": 100, "unit": "ml" },
+            { "name": "Сливочное масло", "name_en": "Butter", "amount": 40, "unit": "g" },
+            { "name": "Панировочные сухари", "name_en": "Breadcrumbs", "amount": 50, "unit": "g" },
+            { "name": "Масло растительное", "name_en": "Vegetable oil", "amount": 40, "unit": "ml" }
+          ],
+          "instructions": "Soak bread in water, squeeze. Mix mince with onion, egg, soaked bread, salt, pepper. Form patties, coat in breadcrumbs. Pan-fry 5 min each side. Boil potatoes, mash with milk and butter. Serve kotlety over mash."
+        }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "meals": [
+        {
+          "type": "breakfast",
+          "name": "Блинчики с творогом",
+          "name_en": "Blini with Cottage Cheese",
+          "cuisine": "slavic",
+          "calories": 500,
+          "ingredients": [
+            { "name": "Мука пшеничная", "name_en": "All-purpose flour", "amount": 150, "unit": "g" },
+            { "name": "Молоко", "name_en": "Milk", "amount": 300, "unit": "ml" },
+            { "name": "Яйца куриные", "name_en": "Eggs", "amount": 2, "unit": "pcs" },
+            { "name": "Творог", "name_en": "Cottage cheese", "amount": 200, "unit": "g" },
+            { "name": "Сахар", "name_en": "Sugar", "amount": 30, "unit": "g" },
+            { "name": "Сливочное масло", "name_en": "Butter", "amount": 20, "unit": "g" },
+            { "name": "Сметана", "name_en": "Sour cream", "amount": 50, "unit": "g" }
+          ],
+          "instructions": "Whisk flour, milk, eggs, sugar into thin batter. Fry thin blini in butter. Mix cottage cheese with sugar. Fill blini with cheese mixture, fold. Serve with sour cream."
+        },
+        {
+          "type": "lunch",
+          "name": "Пад Тай с курицей",
+          "name_en": "Chicken Pad Thai",
+          "cuisine": "asian",
+          "calories": 680,
+          "ingredients": [
+            { "name": "Рисовая лапша", "name_en": "Rice noodles", "amount": 200, "unit": "g" },
+            { "name": "Куриное филе", "name_en": "Chicken breast", "amount": 300, "unit": "g" },
+            { "name": "Яйца куриные", "name_en": "Eggs", "amount": 2, "unit": "pcs" },
+            { "name": "Арахис", "name_en": "Peanuts", "amount": 50, "unit": "g" },
+            { "name": "Соевый соус", "name_en": "Soy sauce", "amount": 30, "unit": "ml" },
+            { "name": "Рыбный соус", "name_en": "Fish sauce", "amount": 30, "unit": "ml" },
+            { "name": "Сок лайма", "name_en": "Lime juice", "amount": 30, "unit": "ml" },
+            { "name": "Сахар", "name_en": "Sugar", "amount": 30, "unit": "g" },
+            { "name": "Тамаринд паста", "name_en": "Tamarind paste", "amount": 30, "unit": "g" },
+            { "name": "Ростки бобов", "name_en": "Bean sprouts", "amount": 100, "unit": "g" },
+            { "name": "Зелёный лук", "name_en": "Green onions", "amount": 30, "unit": "g" },
+            { "name": "Масло растительное", "name_en": "Vegetable oil", "amount": 20, "unit": "ml" }
+          ],
+          "instructions": "Soak rice noodles 20 min. Make sauce: tamarind, fish sauce, soy sauce, lime juice, sugar. Stir-fry chicken strips, push aside, scramble eggs. Add noodles and sauce, toss. Top with peanuts, bean sprouts, green onions."
+        },
+        {
+          "type": "dinner",
+          "name": "Бефстроганов",
+          "name_en": "Beef Stroganoff",
+          "cuisine": "slavic",
+          "calories": 820,
+          "ingredients": [
+            { "name": "Говядина (вырезка)", "name_en": "Beef sirloin", "amount": 500, "unit": "g" },
+            { "name": "Шампиньоны", "name_en": "Mushrooms", "amount": 250, "unit": "g" },
+            { "name": "Лук репчатый", "name_en": "Onion", "amount": 150, "unit": "g" },
+            { "name": "Сметана", "name_en": "Sour cream", "amount": 200, "unit": "g" },
+            { "name": "Мука пшеничная", "name_en": "All-purpose flour", "amount": 20, "unit": "g" },
+            { "name": "Бульон говяжий", "name_en": "Beef broth", "amount": 200, "unit": "ml" },
+            { "name": "Горчица", "name_en": "Mustard", "amount": 15, "unit": "g" },
+            { "name": "Масло растительное", "name_en": "Vegetable oil", "amount": 30, "unit": "ml" },
+            { "name": "Рис", "name_en": "Rice", "amount": 200, "unit": "g" }
+          ],
+          "instructions": "Slice beef into strips, season. Sear in hot oil until browned. Sauté mushrooms and onion. Sprinkle flour, add broth, simmer. Return beef, add sour cream and mustard. Don't boil. Serve over rice."
+        }
+      ]
+    },
+    {
+      "day": "Thursday",
+      "meals": [
+        {
+          "type": "breakfast",
+          "name": "Рисовая каша на молоке",
+          "name_en": "Rice Porridge with Milk",
+          "cuisine": "slavic",
+          "calories": 420,
+          "ingredients": [
+            { "name": "Рис", "name_en": "Rice", "amount": 120, "unit": "g" },
+            { "name": "Молоко", "name_en": "Milk", "amount": 400, "unit": "ml" },
+            { "name": "Сахар", "name_en": "Sugar", "amount": 25, "unit": "g" },
+            { "name": "Сливочное масло", "name_en": "Butter", "amount": 20, "unit": "g" },
+            { "name": "Соль", "name_en": "Salt", "amount": 3, "unit": "g" }
+          ],
+          "instructions": "Rinse rice, add to boiling milk. Simmer on low 25 min stirring occasionally. Add sugar, salt, butter. Cover and let rest 10 min."
+        },
+        {
+          "type": "lunch",
+          "name": "Мисо рамен",
+          "name_en": "Miso Ramen",
+          "cuisine": "asian",
+          "calories": 720,
+          "ingredients": [
+            { "name": "Лапша рамен", "name_en": "Ramen noodles", "amount": 200, "unit": "g" },
+            { "name": "Куриный бульон", "name_en": "Chicken broth", "amount": 800, "unit": "ml" },
+            { "name": "Паста мисо", "name_en": "Miso paste", "amount": 60, "unit": "g" },
+            { "name": "Свинина (брюшко)", "name_en": "Pork belly", "amount": 200, "unit": "g" },
+            { "name": "Яйца куриные", "name_en": "Eggs", "amount": 2, "unit": "pcs" },
+            { "name": "Соевый соус", "name_en": "Soy sauce", "amount": 30, "unit": "ml" },
+            { "name": "Имбирь свежий", "name_en": "Fresh ginger", "amount": 15, "unit": "g" },
+            { "name": "Чеснок", "name_en": "Garlic", "amount": 10, "unit": "g" },
+            { "name": "Зелёный лук", "name_en": "Green onions", "amount": 30, "unit": "g" },
+            { "name": "Кукуруза консервированная", "name_en": "Canned corn", "amount": 80, "unit": "g" },
+            { "name": "Кунжутное масло", "name_en": "Sesame oil", "amount": 10, "unit": "ml" }
+          ],
+          "instructions": "Braise pork belly slices until crispy. Soft-boil eggs (6.5 min). Heat broth with ginger, garlic. Dissolve miso paste in broth. Cook ramen noodles separately. Assemble: noodles, broth, pork, halved egg, corn, green onions, sesame oil."
+        },
+        {
+          "type": "dinner",
+          "name": "Куриный суп с лапшой",
+          "name_en": "Chicken Noodle Soup",
+          "cuisine": "slavic",
+          "calories": 600,
+          "ingredients": [
+            { "name": "Курица целая", "name_en": "Whole chicken", "amount": 800, "unit": "g" },
+            { "name": "Лапша яичная", "name_en": "Egg noodles", "amount": 150, "unit": "g" },
+            { "name": "Картофель", "name_en": "Potatoes", "amount": 200, "unit": "g" },
+            { "name": "Морковь", "name_en": "Carrots", "amount": 100, "unit": "g" },
+            { "name": "Лук репчатый", "name_en": "Onion", "amount": 100, "unit": "g" },
+            { "name": "Укроп свежий", "name_en": "Fresh dill", "amount": 20, "unit": "g" },
+            { "name": "Лавровый лист", "name_en": "Bay leaf", "amount": 2, "unit": "pcs" }
+          ],
+          "instructions": "Boil whole chicken 1h for rich broth, skimming foam. Remove chicken, shred meat. Add diced potatoes, shredded carrot, diced onion to broth. Cook 15 min. Add noodles, cook 7 min. Return shredded chicken. Season with dill, bay leaf."
+        }
+      ]
+    },
+    {
+      "day": "Friday",
+      "meals": [
+        {
+          "type": "breakfast",
+          "name": "Бутерброды с колбасой и сыром",
+          "name_en": "Sandwiches with Sausage and Cheese",
+          "cuisine": "slavic",
+          "calories": 450,
+          "ingredients": [
+            { "name": "Хлеб белый", "name_en": "White bread", "amount": 120, "unit": "g" },
+            { "name": "Колбаса варёная", "name_en": "Bologna sausage", "amount": 100, "unit": "g" },
+            { "name": "Сыр российский", "name_en": "Russian cheese", "amount": 60, "unit": "g" },
+            { "name": "Сливочное масло", "name_en": "Butter", "amount": 20, "unit": "g" },
+            { "name": "Огурец свежий", "name_en": "Fresh cucumber", "amount": 80, "unit": "g" }
+          ],
+          "instructions": "Butter bread, layer sausage, cheese, cucumber slices. Can toast in oven until cheese melts."
+        },
+        {
+          "type": "lunch",
+          "name": "Карбонара",
+          "name_en": "Pasta Carbonara",
+          "cuisine": "pasta",
+          "calories": 780,
+          "ingredients": [
+            { "name": "Спагетти", "name_en": "Spaghetti", "amount": 300, "unit": "g" },
+            { "name": "Бекон/гуанчале", "name_en": "Bacon/guanciale", "amount": 200, "unit": "g" },
+            { "name": "Яйца куриные", "name_en": "Eggs", "amount": 3, "unit": "pcs" },
+            { "name": "Пармезан", "name_en": "Parmesan", "amount": 80, "unit": "g" },
+            { "name": "Чёрный перец", "name_en": "Black pepper", "amount": 3, "unit": "g" }
+          ],
+          "instructions": "Cook spaghetti al dente, reserve pasta water. Fry bacon until crispy. Whisk eggs with grated parmesan and pepper. Toss hot pasta with bacon, remove from heat, pour egg mixture over, toss vigorously adding pasta water to create creamy sauce. Do not scramble eggs."
+        },
+        {
+          "type": "dinner",
+          "name": "Тайский зелёный карри",
+          "name_en": "Thai Green Curry",
+          "cuisine": "asian",
+          "calories": 750,
+          "ingredients": [
+            { "name": "Куриные бёдра", "name_en": "Chicken thighs", "amount": 400, "unit": "g" },
+            { "name": "Кокосовое молоко", "name_en": "Coconut milk", "amount": 400, "unit": "ml" },
+            { "name": "Паста зелёного карри", "name_en": "Green curry paste", "amount": 50, "unit": "g" },
+            { "name": "Баклажан", "name_en": "Eggplant", "amount": 150, "unit": "g" },
+            { "name": "Перец болгарский", "name_en": "Bell pepper", "amount": 150, "unit": "g" },
+            { "name": "Стручковая фасоль", "name_en": "Green beans", "amount": 100, "unit": "g" },
+            { "name": "Рис", "name_en": "Rice", "amount": 200, "unit": "g" },
+            { "name": "Рыбный соус", "name_en": "Fish sauce", "amount": 20, "unit": "ml" },
+            { "name": "Сахар", "name_en": "Sugar", "amount": 10, "unit": "g" },
+            { "name": "Лайм", "name_en": "Lime", "amount": 1, "unit": "pcs" },
+            { "name": "Базилик тайский", "name_en": "Thai basil", "amount": 15, "unit": "g" },
+            { "name": "Масло растительное", "name_en": "Vegetable oil", "amount": 15, "unit": "ml" }
+          ],
+          "instructions": "Fry curry paste in oil 1 min. Add half coconut milk, stir until oil separates. Add chicken pieces, cook 5 min. Add rest of coconut milk, eggplant, pepper, beans. Simmer 15 min. Season with fish sauce, sugar, lime juice. Serve over rice with Thai basil."
+        }
+      ]
+    },
+    {
+      "day": "Saturday",
+      "meals": [
+        {
+          "type": "breakfast",
+          "name": "Сырники со сметаной",
+          "name_en": "Syrniki with Sour Cream",
+          "cuisine": "slavic",
+          "calories": 480,
+          "ingredients": [
+            { "name": "Творог", "name_en": "Cottage cheese", "amount": 300, "unit": "g" },
+            { "name": "Мука пшеничная", "name_en": "All-purpose flour", "amount": 60, "unit": "g" },
+            { "name": "Яйца куриные", "name_en": "Eggs", "amount": 1, "unit": "pcs" },
+            { "name": "Сахар", "name_en": "Sugar", "amount": 30, "unit": "g" },
+            { "name": "Сметана", "name_en": "Sour cream", "amount": 80, "unit": "g" },
+            { "name": "Масло растительное", "name_en": "Vegetable oil", "amount": 20, "unit": "ml" },
+            { "name": "Ванилин", "name_en": "Vanilla", "amount": 2, "unit": "g" }
+          ],
+          "instructions": "Mix cottage cheese, egg, sugar, flour, vanilla. Form patties. Fry in oil 3-4 min each side until golden. Serve with sour cream."
+        },
+        {
+          "type": "lunch",
+          "name": "Плов узбекский",
+          "name_en": "Uzbek Plov",
+          "cuisine": "slavic",
+          "calories": 820,
+          "ingredients": [
+            { "name": "Рис", "name_en": "Rice", "amount": 300, "unit": "g" },
+            { "name": "Баранина или говядина", "name_en": "Lamb or beef", "amount": 400, "unit": "g" },
+            { "name": "Морковь", "name_en": "Carrots", "amount": 300, "unit": "g" },
+            { "name": "Лук репчатый", "name_en": "Onion", "amount": 200, "unit": "g" },
+            { "name": "Масло растительное", "name_en": "Vegetable oil", "amount": 80, "unit": "ml" },
+            { "name": "Чеснок", "name_en": "Garlic", "amount": 20, "unit": "g" },
+            { "name": "Зира", "name_en": "Cumin seeds", "amount": 5, "unit": "g" },
+            { "name": "Барбарис", "name_en": "Barberries", "amount": 10, "unit": "g" }
+          ],
+          "instructions": "Heat oil in kazan/deep pan. Fry meat until browned. Add onion, cook 5 min. Add julienned carrots, spices. Cover with water, simmer 40 min (zirvak). Add soaked rice on top, don't stir. Add water 2cm above rice. Cook covered 25 min. Whole garlic head on top. Let rest 10 min, then mix."
+        },
+        {
+          "type": "dinner",
+          "name": "Корейский пибимпап",
+          "name_en": "Korean Bibimbap",
+          "cuisine": "asian",
+          "calories": 700,
+          "ingredients": [
+            { "name": "Рис", "name_en": "Rice", "amount": 200, "unit": "g" },
+            { "name": "Говядина (вырезка)", "name_en": "Beef sirloin", "amount": 200, "unit": "g" },
+            { "name": "Морковь", "name_en": "Carrots", "amount": 100, "unit": "g" },
+            { "name": "Шпинат", "name_en": "Spinach", "amount": 150, "unit": "g" },
+            { "name": "Ростки бобов", "name_en": "Bean sprouts", "amount": 150, "unit": "g" },
+            { "name": "Грибы шиитаке", "name_en": "Shiitake mushrooms", "amount": 80, "unit": "g" },
+            { "name": "Яйца куриные", "name_en": "Eggs", "amount": 2, "unit": "pcs" },
+            { "name": "Кочуджан", "name_en": "Gochujang paste", "amount": 40, "unit": "g" },
+            { "name": "Соевый соус", "name_en": "Soy sauce", "amount": 20, "unit": "ml" },
+            { "name": "Кунжутное масло", "name_en": "Sesame oil", "amount": 15, "unit": "ml" },
+            { "name": "Кунжут", "name_en": "Sesame seeds", "amount": 10, "unit": "g" }
+          ],
+          "instructions": "Cook rice. Sauté each vegetable separately with sesame oil. Marinate beef in soy sauce, sesame oil, garlic. Fry beef. Make gochujang sauce: paste + soy sauce + sesame oil + vinegar + sugar. Place rice in bowl, arrange veggies and beef on top. Top with fried egg. Serve with sauce to mix in."
+        }
+      ]
+    },
+    {
+      "day": "Sunday",
+      "meals": [
+        {
+          "type": "breakfast",
+          "name": "Яичница с помидорами и беконом",
+          "name_en": "Scrambled Eggs with Tomatoes and Bacon",
+          "cuisine": "slavic",
+          "calories": 520,
+          "ingredients": [
+            { "name": "Яйца куриные", "name_en": "Eggs", "amount": 4, "unit": "pcs" },
+            { "name": "Бекон", "name_en": "Bacon", "amount": 100, "unit": "g" },
+            { "name": "Помидоры", "name_en": "Tomatoes", "amount": 150, "unit": "g" },
+            { "name": "Хлеб белый", "name_en": "White bread", "amount": 80, "unit": "g" },
+            { "name": "Сливочное масло", "name_en": "Butter", "amount": 15, "unit": "g" }
+          ],
+          "instructions": "Fry bacon until crispy. Add diced tomatoes. Scramble eggs in same pan. Serve with toasted bread."
+        },
+        {
+          "type": "lunch",
+          "name": "Голубцы в томатном соусе",
+          "name_en": "Golubtsi (Cabbage Rolls) in Tomato Sauce",
+          "cuisine": "slavic",
+          "calories": 700,
+          "ingredients": [
+            { "name": "Капуста белокочанная", "name_en": "White cabbage", "amount": 800, "unit": "g" },
+            { "name": "Фарш свино-говяжий", "name_en": "Pork-beef mince", "amount": 400, "unit": "g" },
+            { "name": "Рис", "name_en": "Rice", "amount": 100, "unit": "g" },
+            { "name": "Лук репчатый", "name_en": "Onion", "amount": 100, "unit": "g" },
+            { "name": "Морковь", "name_en": "Carrots", "amount": 80, "unit": "g" },
+            { "name": "Томатная паста", "name_en": "Tomato paste", "amount": 60, "unit": "g" },
+            { "name":
