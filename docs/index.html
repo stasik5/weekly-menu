@@ -3,363 +3,710 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Weekly Menu & Grocery Planner</title>
+<title>Weekly Menu — May 3-9, 2026</title>
 <style>
 :root {
-  --bg: #0f0f0f;
-  --card: #1a1a1a;
-  --card-hover: #222;
-  --border: #333;
-  --text: #e0e0e0;
-  --text-dim: #888;
-  --accent-slavic: #c0392b;
-  --accent-asian: #e67e22;
-  --accent-green: #27ae60;
-  --accent-blue: #2980b9;
-  --danger: #e74c3c;
+  --bg: #0d1117;
+  --surface: #161b22;
+  --border: #30363d;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --slavic: #f0883e;
+  --asian: #3fb950;
+  --fancy: #bc8cff;
+  --danger: #f85149;
 }
 * { margin:0; padding:0; box-sizing:border-box; }
-body { background:var(--bg); color:var(--text); font-family:'Segoe UI',system-ui,sans-serif; line-height:1.6; padding:20px; max-width:1200px; margin:0 auto; }
-h1 { font-size:1.8em; margin-bottom:5px; }
-h2 { font-size:1.3em; margin:25px 0 10px; border-bottom:1px solid var(--border); padding-bottom:5px; }
-h3 { font-size:1.05em; margin:12px 0 6px; }
-.subtitle { color:var(--text-dim); font-size:.9em; margin-bottom:20px; }
-.badge { display:inline-block; padding:2px 8px; border-radius:10px; font-size:.75em; font-weight:600; }
-.badge-slavic { background:var(--accent-slavic); color:#fff; }
-.badge-asian { background:var(--accent-asian); color:#fff; }
-.badge-cal { background:#444; color:#ccc; margin-left:5px; }
-.day-card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px; margin-bottom:12px; }
-.day-title { font-size:1.15em; font-weight:700; margin-bottom:10px; display:flex; justify-content:space-between; align-items:center; }
-.meal { padding:8px 0; border-bottom:1px solid #252525; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+h1 { font-size: 1.8rem; margin-bottom: 0.3rem; }
+h2 { font-size: 1.3rem; margin: 1.5rem 0 0.8rem; color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+h3 { font-size: 1rem; color: var(--muted); margin-bottom: 0.5rem; }
+.meta { color: var(--muted); margin-bottom: 1.5rem; font-size: 0.9rem; }
+.balance-bar { display:flex; gap:0; height:8px; border-radius:4px; overflow:hidden; margin:0.5rem 0 1.5rem; }
+.balance-bar .slavic { background:var(--slavic); flex: 0 0 62%; }
+.balance-bar .asian { background:var(--asian); flex: 0 0 38%; }
+.balance-label { display:flex; justify-content:space-between; font-size:0.8rem; color:var(--muted); }
+
+/* Day card */
+.day-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.day-header {
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+.day-header:hover { background: rgba(88,166,255,0.05); }
+.day-header .day-name { font-weight: 600; font-size: 1.05rem; }
+.day-header .kcal { font-size: 0.85rem; color: var(--muted); }
+.day-header .arrow { transition: transform 0.2s; color: var(--muted); }
+.day-header .arrow.open { transform: rotate(180deg); }
+.day-body { display:none; padding: 0 1rem 1rem; }
+.day-body.open { display:block; }
+
+/* Meal row */
+.meal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: flex-start;
+}
 .meal:last-child { border-bottom:none; }
-.meal-header { display:flex; align-items:center; gap:8px; }
-.meal-type { font-size:.7em; text-transform:uppercase; letter-spacing:1px; color:var(--text-dim); min-width:70px; }
-.meal-name { font-weight:600; }
-.ingredients { font-size:.85em; color:#aaa; margin:4px 0 0 78px; }
-.cat-section { margin-bottom:15px; }
-.cat-title { font-weight:600; color:var(--accent-green); margin-bottom:5px; font-size:.95em; }
-.pantry-item, .grocery-item { display:flex; align-items:center; gap:8px; padding:4px 0; font-size:.9em; }
-.pantry-item input, .grocery-item input { accent-color:var(--accent-green); }
-.struck { text-decoration:line-through; color:#555; }
-.tabs { display:flex; gap:10px; margin-bottom:20px; }
-.tab { padding:8px 16px; border-radius:8px; cursor:pointer; background:var(--card); border:1px solid var(--border); }
-.tab.active { background:var(--accent-blue); color:#fff; border-color:var(--accent-blue); }
+.meal-tag {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  flex-shrink: 0;
+}
+.tag-breakfast { background: #1f6feb33; color: #58a6ff; }
+.tag-lunch { background: #23863633; color: #3fb950; }
+.tag-dinner { background: #8957e533; color: #bc8cff; }
+.tag-fancy { background: #8957e533; color: #bc8cff; }
+.tag-slavic { background: #f0883e22; color: #f0883e; }
+.tag-asian { background: #3fb95022; color: #3fb950; }
+.meal-info { flex:1; min-width:200px; }
+.meal-name { font-weight: 600; }
+.meal-desc { font-size: 0.85rem; color: var(--muted); margin-top: 0.15rem; }
+.meal-ingredients { font-size: 0.8rem; color: var(--muted); margin-top: 0.3rem; line-height: 1.5; }
+.meal-kcal { font-size: 0.85rem; color: var(--muted); white-space:nowrap; }
+
+/* Grocery list */
+.grocery-section { margin-bottom: 1.5rem; }
+.grocery-section h3 { color: var(--accent); font-size: 0.95rem; margin-bottom: 0.4rem; }
+.grocery-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
+  font-size: 0.9rem;
+}
+.grocery-item input[type=checkbox] {
+  accent-color: var(--accent);
+  width: 16px; height: 16px;
+}
+.grocery-item .qty { color: var(--muted); min-width: 80px; }
+.grocery-item.have { color: var(--muted); text-decoration: line-through; }
+
+/* Pantry */
+.pantry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+.pantry-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.pantry-item.in-stock { border-color: var(--asian); }
+.pantry-item.need-buy { border-color: var(--danger); }
+.pantry-item .status { font-size: 0.75rem; }
+.pantry-item.in-stock .status { color: var(--asian); }
+.pantry-item.need-buy .status { color: var(--danger); }
+
+/* Nav tabs */
+.tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+.tab {
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: var(--muted);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: all 0.15s;
+}
+.tab:hover { color: var(--text); }
+.tab.active { color: var(--accent); border-bottom-color: var(--accent); }
 .tab-content { display:none; }
 .tab-content.active { display:block; }
-.kcal-selector { display:flex; gap:8px; margin:10px 0 20px; }
-.kcal-btn { padding:6px 14px; border-radius:6px; cursor:pointer; background:var(--card); border:1px solid var(--border); color:var(--text); font-size:.85em; }
-.kcal-btn.active { background:var(--accent-blue); color:#fff; border-color:var(--accent-blue); }
-.summary-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin:15px 0; }
-.summary-card { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:12px; text-align:center; }
-.summary-card .num { font-size:1.5em; font-weight:700; }
-.print-btn { position:fixed; bottom:20px; right:20px; background:var(--accent-green); color:#fff; border:none; padding:12px 20px; border-radius:8px; cursor:pointer; font-size:.9em; }
-@media print { .print-btn,.tabs,.kcal-selector { display:none; } .day-card { break-inside:avoid; } }
+
+/* Stats */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.stat-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.8rem;
+  text-align: center;
+}
+.stat-box .num { font-size: 1.5rem; font-weight: 700; color: var(--accent); }
+.stat-box .label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; }
+
+@media (max-width: 600px) {
+  body { padding: 0.5rem; }
+  h1 { font-size: 1.4rem; }
+  .day-header { padding: 0.6rem 0.7rem; }
+  .day-body { padding: 0 0.7rem 0.7rem; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+}
 </style>
 </head>
 <body>
 
-<h1>🍽️ Weekly Menu & Grocery Planner</h1>
-<p class="subtitle">April 27 – May 3, 2026 · 60% Slavic/Pasta · 40% Asian</p>
+<h1>🍽️ Weekly Menu</h1>
+<p class="meta">May 3–9, 2026 · Stanislav (31M, 85kg) + Wife (26F, 63kg) · 3400–4700 kcal/day</p>
 
-<div class="summary-grid">
-  <div class="summary-card"><div class="num" style="color:var(--accent-slavic)">13</div>Slavic/Pasta Meals</div>
-  <div class="summary-card"><div class="num" style="color:var(--accent-asian)">8</div>Asian Meals</div>
-  <div class="summary-card"><div class="num">21</div>Total Meals</div>
-  <div class="summary-card"><div class="num" style="color:var(--accent-green)">~38</div>Grocery Items</div>
+<div class="stats">
+  <div class="stat-box"><div class="num">21</div><div class="label">Meals</div></div>
+  <div class="stat-box"><div class="num">13</div><div class="label">Slavic/Pasta</div></div>
+  <div class="stat-box"><div class="num">8</div><div class="label">Asian</div></div>
+  <div class="stat-box"><div class="num">1</div><div class="label">Fancy Dinner</div></div>
 </div>
 
+<div class="balance-bar"><div class="slavic"></div><div class="asian"></div></div>
+<div class="balance-label"><span style="color:var(--slavic)">🇷🇺 Slavic/Pasta 62%</span><span style="color:var(--asian)">🇹🇭🇯🇵🇰🇷 Asian 38%</span></div>
+
+<!-- Tabs -->
 <div class="tabs">
   <div class="tab active" onclick="showTab('menu')">📋 Menu</div>
-  <div class="tab" onclick="showTab('pantry')">🏠 Pantry</div>
   <div class="tab" onclick="showTab('grocery')">🛒 Grocery List</div>
+  <div class="tab" onclick="showTab('pantry')">🏠 Pantry</div>
 </div>
 
+<!-- MENU TAB -->
 <div id="tab-menu" class="tab-content active">
-
-<div class="kcal-selector">
-  <button class="kcal-btn" onclick="setKcal('low',this)">Lower (3400 kcal)</button>
-  <button class="kcal-btn active" onclick="setKcal('med',this)">Medium (4000 kcal)</button>
-  <button class="kcal-btn" onclick="setKcal('high',this)">Higher (4700 kcal)</button>
-</div>
 
 <!-- MONDAY -->
 <div class="day-card">
-  <div class="day-title">🟡 Monday<span class="badge badge-cal">~4000 kcal</span></div>
-  <div class="meal">
-    <div class="meal-header"><span class="meal-type">Breakfast</span><span class="badge badge-slavic">Slavic</span><span class="meal-name">Oatmeal with Berries & Honey</span></div>
-    <div class="ingredients">Oats 120g, milk 250ml, mixed berries 100g, honey 30g, butter 15g, walnuts 20g</div>
+  <div class="day-header" onclick="toggleDay(this)">
+    <span class="day-name">Monday, May 3</span>
+    <span class="kcal">~4100 kcal</span>
+    <span class="arrow">▼</span>
   </div>
-  <div class="meal">
-    <div class="meal-header"><span class="meal-type">Lunch</span><span class="badge badge-slavic">Slavic</span><span class="meal-name">Borscht with Sourdough Bread</span></div>
-    <div class="ingredients">Beef bones 400g, beets 300g, potatoes 250g, cabbage 300g, carrots 150g, onion 100g, tomato paste 40g, garlic 3 cloves, dill, sour cream 60g, bread 100g</div>
-  </div>
-  <div class="meal">
-    <div class="meal-header"><span class="meal-type">Dinner</span><span class="badge badge-asian">Asian</span><span class="meal-name">Teriyaki Chicken with Jasmine Rice</span></div>
-    <div class="ingredients">Chicken thighs 350g, soy sauce 60ml, mirin 40ml, sugar 20g, ginger 15g, garlic 2 cloves, rice 250g, sesame seeds, green onion</div>
+  <div class="day-body">
+    <div class="meal">
+      <span class="meal-tag tag-breakfast">Breakfast</span>
+      <span class="meal-tag tag-slavic">Slavic</span>
+      <div class="meal-info">
+        <div class="meal-name">Syrniki (Cottage Cheese Pancakes)</div>
+        <div class="meal-desc">Fluffy farmer's cheese pancakes pan-fried until golden, served with sour cream and berry jam</div>
+        <div class="meal-ingredients">500g tvorog (farmer's cheese) · 2 eggs · 3 tbsp flour · 2 tbsp sugar · 1 tsp vanilla · oil for frying · sour cream · jam</div>
+      </div>
+      <span class="meal-kcal">~650 kcal</span>
+    </div>
+    <div class="meal">
+      <span class="meal-tag tag-lunch">Lunch</span>
+      <span class="meal-tag tag-slavic">Slavic</span>
+      <div class="meal-info">
+        <div class="meal-name">Borscht with Smetana</div>
+        <div class="meal-desc">Classic Ukrainian beet soup with beef, cabbage, potatoes, carrots — served with a generous dollop of sour cream and rye bread</div>
+        <div class="meal-ingredients">500g beef ribs · 2 beets · 3 potatoes · 1/2 head cabbage · 2 carrots · 1 onion · 2 tbsp tomato paste · 3 cloves garlic · bay leaf · dill · sour cream · rye bread</div>
+      </div>
+      <span class="meal-kcal">~1550 kcal</span>
+    </div>
+    <div class="meal">
+      <span class="meal-tag tag-dinner">Dinner</span>
+      <span class="meal-tag tag-asian">Asian</span>
+      <div class="meal-info">
+        <div class="meal-name">Pad Thai with Shrimp</div>
+        <div class="meal-desc">Stir-fried rice noodles with shrimp, egg, bean sprouts, peanuts, and tamarind sauce</div>
+        <div class="meal-ingredients">200g rice noodles · 300g shrimp · 2 eggs · 100g bean sprouts · 3 tbsp tamarind paste · 2 tbsp fish sauce · 1 tbsp sugar · 50g peanuts · lime · green onion · garlic · vegetable oil</div>
+      </div>
+      <span class="meal-kcal">~1900 kcal</span>
+    </div>
   </div>
 </div>
 
 <!-- TUESDAY -->
 <div class="day-card">
-  <div class="day-title">🟢 Tuesday<span class="badge badge-cal">~4000 kcal</span></div>
-  <div class="meal">
-    <div class="meal-header"><span class="meal-type">Breakfast</span><span class="badge badge-slavic">Slavic</span><span class="meal-name">Fried Eggs with Toast & Cheese</span></div>
-    <div class="ingredients">Eggs 4 pcs, bread 80g, cheese 60g, butter 25g, tomato 100g, cucumber 100g</div>
+  <div class="day-header" onclick="toggleDay(this)">
+    <span class="day-name">Tuesday, May 4</span>
+    <span class="kcal">~4200 kcal</span>
+    <span class="arrow">▼</span>
   </div>
-  <div class="meal">
-    <div class="meal-header"><span class="meal-type">Lunch</span><span class="badge badge-asian">Asian</span><span class="meal-name">Pad Thai with Shrimp</span></div>
-    <div class="ingredients">Rice noodles 200g, shrimp 250g, bean sprouts 100g, egg 1pc, peanuts 40g, lime 1pc, fish sauce 30ml, tamarind paste 30g, sugar 15g, garlic 2 cloves, green onion</div>
-  </div>
-  <div class="meal">
-    <div class="meal-header"><span class="meal-type">Dinner</span><span class="badge badge-slavic">Slavic</span><span class="meal-name">Beef Stroganoff with Buckwheat</span></div>
-    <div class="ingredients">Beef sirloin 400g, mushrooms 200g, onion 120g, sour cream 150g, butter 30g, flour 20g, beef broth 200ml, buckwheat 200g, dill</div>
+  <div class="day-body">
+    <div class="meal">
+      <span class="meal-tag tag-breakfast">Breakfast</span>
+      <span class="meal-tag tag-asian">Asian</span>
+      <div class="meal-info">
+        <div class="meal-name">Miso Butter Ramen</div>
+        <div class="meal-desc">Quick miso broth ramen with butter, soft-boiled egg, bok choy, and scallions</div>
+        <div class="meal-ingredients">200g ramen noodles · 3 tbsp miso paste · 1 tbsp butter · 2 eggs · 1 baby bok choy · scallions · sesame oil · garlic · ginger</div>
+      </div>
+      <span class="meal-kcal">~700 kcal</span>
+    </div>
+    <div class="meal">
+      <span class="meal-tag tag-lunch">Lunch</span>
+      <span class="meal-tag tag-slavic">Slavic</span>
+      <div class="meal-info">
+        <div class="meal-name">Pelmeni (Meat Dumplings)</div>
+        <div class="meal-desc">Handmade Siberian dumplings stuffed with beef & pork, boiled and served with sour cream and dill</div>
+        <div class="meal-ingredients">400g flour · 1 egg · 150ml water · 300g ground beef · 200g ground pork · 1 onion · salt · pepper · sour cream · dill</div>
+      </div>
+      <span class="meal-kcal">~1600 kcal</span>
+    </div>
+    <div class="meal">
+      <span class="meal-tag tag-dinner">Dinner</span>
+      <span class="meal-tag tag-slavic">Slavic</span>
+      <div class="meal-info">
+        <div class="meal-name">Beef Stroganoff with Buckwheat</div>
+        <div class="meal-desc">Tender beef strips in creamy mushroom-sour cream sauce over boiled buckwheat (grechka)</div>
+        <div class="meal-ingredients">500g beef sirloin · 300g mushrooms · 1 onion · 200ml sour cream · 2 tbsp flour · 200ml beef broth · 2 tbsp butter · 300g buckwheat · parsley</div>
+      </div>
+      <span class="meal-kcal">~1900 kcal</span>
+    </div>
   </div>
 </div>
 
 <!-- WEDNESDAY -->
 <div class="day-card">
-  <div class="day-title">🔵 Wednesday<span class="badge badge-cal">~4000 kcal</span></div>
-  <div class="meal">
-    <div class="meal-header"><span class="meal-type">Breakfast</span><span class="badge badge-asian">Asian</span><span class="meal-name">Congee (Rice Porridge) with Soft-Boiled Egg</span></div>
-    <div class="ingredients">Rice 100g, chicken broth 600ml, ginger 10g, egg 2 pcs, soy sauce 15ml, green onion, sesame oil 5ml</div>
+  <div class="day-header" onclick="toggleDay(this)">
+    <span class="day-name">Wednesday, May 5</span>
+    <span class="kcal">~4300 kcal</span>
+    <span class="arrow">▼</span>
   </div>
-  <div class="meal">
-    <div class="meal-header"><span class="meal-type">Lunch</span><span class="badge badge-slavic">Slavic</span><span class="meal-name">Pelmeni (Meat Dumplings)</span></div>
-    <div class="ingredients">Pelmeni dough (flour 300g, egg 1pc, water 120ml), filling (ground beef 250g, ground pork 150g, onion 80g, garlic 2 cloves, salt, pepper), sour cream 80g, dill</div>
-  </div>
-  <div class="meal">
-    <div class="meal-header"><span class="meal-type">Dinner</span><span class="badge badge-asian">Asian</span><span class="meal-name">Kung Pao Chicken with Noodles</span></div>
-    <div class="ingredients">Chicken breast 350g, peanuts 50g, dried chilies 6 pcs, Sichuan peppercorns 5g, soy sauce 40ml, rice vinegar 20ml, sugar 15g, cornstarch 15g, egg noodles 200g, bell pepper 150g, zucchini 100g, garlic 3 cloves, ginger 10g</div>
+  <div class="day-body">
+    <div class="meal">
+      <span class="meal-tag tag-breakfast">Breakfast</span>
+      <span class="meal-tag tag-slavic">Slavic</span>
+      <div class="meal-info">
+        <div class="meal-name">Oatmeal with Banana & Honey</div>
+        <div class="meal-desc">Creamy rolled oats topped with sliced banana, walnuts, honey, and cinnamon</div>
+        <div class="meal-ingredients">150g rolled oats · 400ml milk · 2 bananas · 30g walnuts · 2 tbsp honey · 1 tsp cinnamon · butter</div>
+      </div>
+      <span class="meal-kcal">~750 kcal</span>
+    </div>
+    <div class="meal">
+      <span class="meal-tag tag-lunch">Lunch</span>
+      <span class="meal-tag tag-asian">Asian</span>
+      <div class="meal-info">
+        <div class="meal-name">Korean Bibimbap</div>
+        <div class="meal-desc">Mixed rice bowl with sautéed vegetables, seasoned beef, fried egg, and gochujang sauce</div>
+        <div class="meal-ingredients">300g rice · 200g beef · 150g spinach · 100g bean sprouts · 1 carrot · 1 zucchini · 2 eggs · 3 tbsp gochujang · sesame oil · garlic · soy sauce · sesame seeds</div>
+      </div>
+      <span class="meal-kcal">~1600 kcal</span>
+    </div>
+    <div class="meal">
+      <span class="meal-tag tag-dinner">Dinner</span>
+      <span class="meal-tag tag-slavic">Slavic</span>
+      <div class="meal-info">
+        <div class="meal-name">Chicken Kiev with Mashed Potatoes</div>
+        <div class="meal-desc">Breaded chicken breast rolled with garlic-herb butter, fried until golden, served with creamy mashed potatoes and cucumber salad</div>
+        <div class="meal-ingredients">2 chicken breasts · 60g butter · 2 cloves garlic · parsley · 2 eggs · 100g breadcrumbs · flour · 500g potatoes · 100ml milk · 50g butter (mash) · 1 cucumber · dill · sour cream</div>
+      </div>
+      <span class="meal-kcal">~1950 kcal</span>
+    </div>
   </div>
 </div>
 
 <!-- THURSDAY -->
 <div class="day-card">
-  <div class="day-title">🟠 Thursday<span class="badge badge-cal">~4000 kcal</span></div>
-  <div class="meal">
-    <div class="meal-header"><span class="meal-type">Breakfast</span><span class="badge badge-slavic">Slavic</span><span class="meal-name">Syrniki (Cottage Cheese Pancakes)</span></div>
-    <div class="ingredients">Tvorog/cottage cheese 300g, egg 1pc, flour 50g, sugar 25g, vanilla, sour cream 80g, berries 100g</div>
+  <div class="day-header" onclick="toggleDay(this)">
+    <span class="day-name">Thursday, May 6</span>
+    <span class="kcal">~3800 kcal</span>
+    <span class="arrow">▼</span>
   </div>
-  <div class="meal">
-    <div class="meal-header"><span class="meal-type">Lunch</span><span class="badge badge-slavic">Slavic</span><span class="meal-name">Chicken Soup with Noodles</span></div>
-    <div class="ingredients">Chicken whole leg 350g, egg noodles 80g, potatoes 200g, carrots 100g, onion 80g, dill, parsley, bay leaf</div>
-  </div>
-  <div class="meal">
-    <div class="meal-header"><span class="meal-type">Dinner</span><span class="badge badge-asian">Asian</span><span class="meal-name">Sweet & Sour Pork with Fried Rice</span></div>
-    <div class="ingredients">Pork tenderloin 350g, bell pepper 150g, pineapple 120g, cucumber 80g, soy sauce 20ml, rice vinegar 30ml, ketchup 40g, sugar 25g, cornstarch 20g, rice 200g, egg 2 pcs, green onion, garlic 2 cloves</div>
+  <div class="day-body">
+    <div class="meal">
+      <span class="meal-tag tag-breakfast">Breakfast</span>
+      <span class="meal-tag tag-slavic">Slavic</span>
+      <div class="meal-info">
+        <div class="meal-name">Blini with Smoked Salmon & Cream Cheese</div>
+        <div class="meal-desc">Thin Russian crepes topped with cream cheese, smoked salmon, capers, and fresh dill</div>
+        <div class="meal-ingredients">200g flour · 2 eggs · 300ml milk · 1 tbsp sugar · 100g smoked salmon · 100g cream cheese · capers · dill · butter for frying</div>
+      </div>
+      <span class="meal-kcal">~700 kcal</span>
+    </div>
+    <div class="meal">
+      <span class="meal-tag tag-lunch">Lunch</span>
+      <span class="meal-tag tag-asian">Asian</span>
+      <div class="meal-info">
+        <div class="meal-name">Thai Green Curry with Jasmine Rice</div>
+        <div class="meal-desc">Chicken simmered in coconut milk with green curry paste, Thai eggplant, bamboo shoots, and Thai basil</div>
+        <div class="meal-ingredients">400g chicken thighs · 400ml coconut milk · 3 tbsp green curry paste · 150g Thai eggplant · 100g bamboo shoots · fish sauce · palm sugar · Thai basil · 300g jasmine rice · lime</div>
+      </div>
+      <span class="meal-kcal">~1600 kcal</span>
+    </div>
+    <div class="meal">
+      <span class="meal-tag tag-dinner">Dinner</span>
+      <span class="meal-tag tag-slavic">Slavic</span>
+      <div class="meal-info">
+        <div class="meal-name">Pasta Carbonara</div>
+        <div class="meal-desc">Classic spaghetti carbonara with pancetta, egg yolk, parmesan, and black pepper</div>
+        <div class="meal-ingredients">400g spaghetti · 200g pancetta · 3 egg yolks · 100g parmesan · black pepper · garlic · olive oil</div>
+      </div>
+      <span class="meal-kcal">~1500 kcal</span>
+    </div>
   </div>
 </div>
 
 <!-- FRIDAY -->
 <div class="day-card">
-  <div class="day-title">🔴 Friday<span class="badge badge-cal">~4000 kcal</span></div>
-  <div class="meal">
-    <div class="meal-header"><span class="meal-type">Breakfast</span><span class="badge badge-asian">Asian</span><span class="meal-name">Japanese Tamagoyaki with Rice & Miso Soup</span></div>
-    <div class="ingredients">Eggs 3 pcs, sugar 5g, soy sauce 10ml, mirin 10ml, rice 150g, miso paste 30g, tofu 100g, wakame 5g, green onion</div>
+  <div class="day-header" onclick="toggleDay(this)">
+    <span class="day-name">Friday, May 7</span>
+    <span class="kcal">~4000 kcal</span>
+    <span class="arrow">▼</span>
   </div>
-  <div class="meal">
-    <div class="meal-header"><span class="meal-type">Lunch</span><span class="badge badge-slavic">Slavic</span><span class="meal-name">Golubtsi (Stuffed Cabbage Rolls)</span></div>
-    <div class="ingredients">Cabbage 1 head (~800g), ground beef 300g, rice 100g, onion 100g, carrots 100g, tomato sauce 200ml, sour cream 100g, dill</div>
-  </div>
-  <div class="meal">
-    <div class="meal-header"><span class="meal-type">Dinner</span><span class="badge badge-asian">Asian</span><span class="meal-name">Thai Green Curry with Jasmine Rice</span></div>
-    <div class="ingredients">Chicken thighs 350g, coconut milk 400ml, green curry paste 50g, Thai basil 20g, bamboo shoots 100g, bell pepper 100g, fish sauce 20ml, sugar 10g, rice 200g, lime 1pc</div>
+  <div class="day-body">
+    <div class="meal">
+      <span class="meal-tag tag-breakfast">Breakfast</span>
+      <span class="meal-tag tag-slavic">Slavic</span>
+      <div class="meal-info">
+        <div class="meal-name">Kasha (Buckwheat Porridge) with Eggs</div>
+        <div class="meal-desc">Toasted buckwheat boiled in milk, served with fried eggs and sautéed onions</div>
+        <div class="meal-ingredients">200g buckwheat · 400ml milk · 3 eggs · 1 onion · butter · salt</div>
+      </div>
+      <span class="meal-kcal">~650 kcal</span>
+    </div>
+    <div class="meal">
+      <span class="meal-tag tag-lunch">Lunch</span>
+      <span class="meal-tag tag-slavic">Slavic</span>
+      <div class="meal-info">
+        <div class="meal-name">Olivier Salad with Ham Sandwiches</div>
+        <div class="meal-desc">Russian potato salad with ham, pickles, peas, eggs, and mayo — served with dark bread sandwiches</div>
+        <div class="meal-ingredients">400g potatoes · 3 eggs · 200g ham · 3 pickles · 150g peas · 200g mayo · 2 carrots · dill · dark bread · mustard</div>
+      </div>
+      <span class="meal-kcal">~1600 kcal</span>
+    </div>
+    <div class="meal">
+      <span class="meal-tag tag-dinner">Dinner</span>
+      <span class="meal-tag tag-asian">Asian</span>
+      <div class="meal-info">
+        <div class="meal-name">Japanese Chicken Curry Rice</div>
+        <div class="meal-desc">Mild Japanese-style curry with chicken, potatoes, carrots, and onions over steamed rice</div>
+        <div class="meal-ingredients">400g chicken thighs · 300g potatoes · 2 carrots · 1 onion · 100g curry roux · 700ml water · 300g rice · garlic · ginger</div>
+      </div>
+      <span class="meal-kcal">~1750 kcal</span>
+    </div>
   </div>
 </div>
 
 <!-- SATURDAY -->
 <div class="day-card">
-  <div class="day-title">🟣 Saturday<span class="badge badge-cal">~4000 kcal</span></div>
-  <div class="meal">
-    <div class="meal-header"><span class="meal-type">Breakfast</span><span class="badge badge-slavic">Slavic</span><span class="meal-name">Blini (Russian Pancakes) with Smoked Salmon</span></div>
-    <div class="ingredients">Flour 200g, milk 400ml, eggs 2 pcs, sugar 20g, butter 30g, smoked salmon 150g, cream cheese 80g, dill, lemon 1pc</div>
+  <div class="day-header" onclick="toggleDay(this)">
+    <span class="day-name">Saturday, May 8</span>
+    <span class="kcal">~4600 kcal</span>
+    <span class="arrow">▼</span>
   </div>
-  <div class="meal">
-    <div class="meal-header"><span class="meal-type">Lunch</span><span class="badge badge-slavic">Slavic</span><span class="meal-name">Vareniki with Potato & Onion</span></div>
-    <div class="ingredients">Dough (flour 300g, egg 1pc, water 120ml), filling (potatoes 400g, onion 100g, butter 30g, salt, pepper), sour cream 100g, dill</div>
-  </div>
-  <div class="meal">
-    <div class="meal-header"><span class="meal-type">Dinner</span><span class="badge badge-asian">Asian</span><span class="meal-name">Korean Bibimbap</span></div>
-    <div class="ingredients">Rice 250g, beef sirloin 250g, spinach 100g, carrots 80g, zucchini 80g, bean sprouts 80g, eggs 2 pcs, gochujang 40g, sesame oil 15ml, soy sauce 20ml, garlic 2 cloves, sesame seeds</div>
+  <div class="day-body">
+    <div class="meal">
+      <span class="meal-tag tag-breakfast">Breakfast</span>
+      <span class="meal-tag tag-asian">Asian</span>
+      <div class="meal-info">
+        <div class="meal-name">Tamagoyaki & Rice with Miso Soup</div>
+        <div class="meal-desc">Japanese rolled omelette with steamed rice and a quick miso soup with tofu and wakame</div>
+        <div class="meal-ingredients">4 eggs · 1 tbsp mirin · 1 tbsp soy sauce · sugar · 200g rice · 2 tbsp miso paste · 150g tofu · wakame · scallions · dashi</div>
+      </div>
+      <span class="meal-kcal">~800 kcal</span>
+    </div>
+    <div class="meal">
+      <span class="meal-tag tag-lunch">Lunch</span>
+      <span class="meal-tag tag-slavic">Slavic</span>
+      <div class="meal-info">
+        <div class="meal-name">Solyanka Soup</div>
+        <div class="meal-desc">Hearty Russian soup with smoked sausage, pickles, olives, capers, and lemon — rich and tangy</div>
+        <div class="meal-ingredients">300g smoked sausage · 3 pickles · 2 potatoes · 1 onion · 2 carrots · olives · capers · 2 tbsp tomato paste · lemon · sour cream · dill</div>
+      </div>
+      <span class="meal-kcal">~1600 kcal</span>
+    </div>
+    <div class="meal">
+      <span class="meal-tag tag-dinner tag-fancy">Fancy Dinner</span>
+      <span class="meal-tag tag-asian">Asian</span>
+      <div class="meal-info">
+        <div class="meal-name">✨ Salmon Teriyaki with Udon & Edamame</div>
+        <div class="meal-desc">Glazed salmon fillet in homemade teriyaki sauce, stir-fried udon noodles with vegetables, and steamed edamame — the week's fancy dinner</div>
+        <div class="meal-ingredients">400g salmon fillet · 4 tbsp soy sauce · 2 tbsp mirin · 1 tbsp sake · 1 tbsp sugar · ginger · 300g udon noodles · 100g broccoli · 1 carrot · 1 bell pepper · 200g edamame · sesame seeds · sesame oil</div>
+      </div>
+      <span class="meal-kcal">~2200 kcal</span>
+    </div>
   </div>
 </div>
 
 <!-- SUNDAY -->
 <div class="day-card">
-  <div class="day-title">⚪ Sunday<span class="badge badge-cal">~4000 kcal</span></div>
-  <div class="meal">
-    <div class="meal-header"><span class="meal-type">Breakfast</span><span class="badge badge-slavic">Slavic</span><span class="meal-name">Kasha (Buckwheat Porridge) with Milk</span></div>
-    <div class="ingredients">Buckwheat 120g, milk 300ml, butter 20g, sugar 15g, berries 80g</div>
+  <div class="day-header" onclick="toggleDay(this)">
+    <span class="day-name">Sunday, May 9</span>
+    <span class="kcal">~3800 kcal</span>
+    <span class="arrow">▼</span>
   </div>
-  <div class="meal">
-    <div class="meal-header"><span class="meal-type">Lunch</span><span class="badge badge-asian">Asian</span><span class="meal-name">Pho Bo (Vietnamese Beef Noodle Soup)</span></div>
-    <div class="ingredients">Beef bones 500g, beef sirloin 200g, rice noodles 150g, star anise 3 pcs, cinnamon stick 1pc, ginger 30g, onion 100g, fish sauce 30ml, bean sprouts 80g, Thai basil, lime 1pc, hoisin sauce 30g</div>
-  </div>
-  <div class="meal">
-    <div class="meal-header"><span class="meal-type">Dinner</span><span class="badge badge-slavic">Slavic</span><span class="meal-name">Pork Schnitzel with Mashed Potatoes</span></div>
-    <div class="ingredients">Pork loin 400g, flour 40g, eggs 2 pcs, breadcrumbs 60g, potatoes 500g, butter 40g, milk 80ml, cucumber 150g, dill, sour cream 50g, lemon 1pc</div>
+  <div class="day-body">
+    <div class="meal">
+      <span class="meal-tag tag-breakfast">Breakfast</span>
+      <span class="meal-tag tag-slavic">Slavic</span>
+      <div class="meal-info">
+        <div class="meal-name">Cheese Arepas with Fried Eggs</div>
+        <div class="meal-desc">Corn flour arepas stuffed with cheese, topped with fried eggs and avocado</div>
+        <div class="meal-ingredients">200g corn flour · 100g cheese · 1 avocado · 3 eggs · butter · salt</div>
+      </div>
+      <span class="meal-kcal">~700 kcal</span>
+    </div>
+    <div class="meal">
+      <span class="meal-tag tag-lunch">Lunch</span>
+      <span class="meal-tag tag-slavic">Slavic</span>
+      <div class="meal-info">
+        <div class="meal-name">Golubtsi (Stuffed Cabbage Rolls)</div>
+        <div class="meal-desc">Cabbage leaves stuffed with rice and meat, slow-simmered in tomato sauce</div>
+        <div class="meal-ingredients">1 large cabbage · 300g ground pork · 200g rice · 1 onion · 1 carrot · 400g crushed tomatoes · 2 tbsp tomato paste · sour cream · dill</div>
+      </div>
+      <span class="meal-kcal">~1500 kcal</span>
+    </div>
+    <div class="meal">
+      <span class="meal-tag tag-dinner">Dinner</span>
+      <span class="meal-tag tag-asian">Asian</span>
+      <div class="meal-info">
+        <div class="meal-name">Sweet & Sour Pork with Fried Rice</div>
+        <div class="meal-desc">Crispy pork pieces in tangy sweet & sour sauce with peppers and pineapple, served with egg fried rice</div>
+        <div class="meal-ingredients">400g pork loin · 1 bell pepper · 1 onion · 100g pineapple · 3 tbsp vinegar · 2 tbsp sugar · 2 tbsp soy sauce · ketchup · cornstarch · 300g rice (day-old) · 2 eggs · green onion · garlic · ginger</div>
+      </div>
+      <span class="meal-kcal">~1600 kcal</span>
+    </div>
   </div>
 </div>
 
-</div><!-- end menu tab -->
+</div>
+
+<!-- GROCERY LIST TAB -->
+<div id="tab-grocery" class="tab-content">
+<p style="color:var(--muted);margin-bottom:1rem;font-size:0.9rem;">Check items as you shop. Total: 68 items.</p>
+
+<div class="grocery-section">
+<h3>🥩 Meat & Fish</h3>
+<div class="grocery-item"><input type="checkbox"><span class="qty">500g</span> beef ribs</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">500g</span> beef sirloin</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">300g</span> ground beef</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> ground pork</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">300g</span> ground pork</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">800g</span> chicken breasts</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">800g</span> chicken thighs</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">300g</span> shrimp (peeled)</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">400g</span> salmon fillet</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> pancetta</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">400g</span> pork loin</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> smoked salmon</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> ham</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">300g</span> smoked sausage</div>
+</div>
+
+<div class="grocery-section">
+<h3>🥬 Vegetables</h3>
+<div class="grocery-item"><input type="checkbox"><span class="qty">2 medium</span> beets</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1.5kg</span> potatoes</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1 large</span> cabbage</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1/2 head</span> cabbage (for borscht)</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">6</span> carrots</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">8</span> onions</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">3</span> cucumbers</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">2</span> bell peppers</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1</span> zucchini</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1</span> baby bok choy</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">150g</span> spinach</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">100g</span> bean sprouts</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">150g</span> Thai eggplant</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">100g</span> bamboo shoots</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">100g</span> broccoli</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">3</span> bananas</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1</span> avocado</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1</span> pineapple (chunk)</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">150g</span> mushrooms</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">150g</span> tofu</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1 head</span> garlic</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1 piece</span> ginger (50g)</div>
+</div>
+
+<div class="grocery-section">
+<h3>🥚 Dairy & Eggs</h3>
+<div class="grocery-item"><input type="checkbox"><span class="qty">18</span> eggs</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">500ml</span> milk</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">800ml</span> sour cream (smetana)</div>
+<div class="grocery-item"><input type="checkbox"><span class="checkbox"><span class="qty">100g</span> cream cheese</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">100g</span> parmesan</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> cheese (melting)</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">400ml</span> coconut milk</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">300g</span> butter</div>
+</div>
+
+<div class="grocery-section">
+<h3>🌾 Grains & Pasta</h3>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1.5kg</span> white rice</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> buckwheat</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">400g</span> spaghetti</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> rice noodles</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> ramen noodles</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">300g</span> udon noodles</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">800g</span> flour</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> corn flour</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">150g</span> rolled oats</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">100g</span> breadcrumbs</div>
+</div>
+
+<div class="grocery-section">
+<h3>🧂 Sauces & Spices</h3>
+<div class="grocery-item"><input type="checkbox"><span class="qty">3 tbsp</span> miso paste</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">3 tbsp</span> green curry paste</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">3 tbsp</span> gochujang</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">100g</span> curry roux</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">3 tbsp</span> tamarind paste</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">200ml</span> soy sauce</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">2 tbsp</span> fish sauce</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">3 tbsp</span> tomato paste</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">400g</span> crushed tomatoes</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1 tbsp</span> mirin</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1 tbsp</span> sake</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> mayonnaise</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1 tsp</span> vanilla extract</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1 tsp</span> cinnamon</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1 tbsp</span> sesame oil</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">3 tbsp</span> cornstarch</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">100ml</span> vegetable oil</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">100ml</span> olive oil</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1 tbsp</span> vinegar</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1 tbsp</span> ketchup</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1 tsp</span> black pepper</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1 pack</span> bay leaves</div>
+</div>
+
+<div class="grocery-section">
+<h3>🫘 Canned & Dry Goods</h3>
+<div class="grocery-item"><input type="checkbox"><span class="qty">150g</span> peas (canned or frozen)</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">3</span> pickles (jar)</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1 jar</span> olives</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1 jar</span> capers</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1 pack</span> wakame (dried seaweed)</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1 pack</span> dashi</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">50g</span> peanuts</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">30g</span> walnuts</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> sugar</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">3 tbsp</span> honey</div>
+</div>
+
+<div class="grocery-section">
+<h3>🌿 Fresh Herbs & Garnish</h3>
+<div class="grocery-item"><input type="checkbox"><span class="qty">2 bunches</span> dill</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1 bunch</span> parsley</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1 bunch</span> scallions</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1 bunch</span> Thai basil</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">2</span> lemons</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">2</span> limes</div>
+</div>
+
+<div class="grocery-section">
+<h3>🍞 Bread</h3>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1 loaf</span> rye bread</div>
+<div class="grocery-item"><input type="checkbox"><span class="qty">1 loaf</span> dark bread</div>
+</div>
+</div>
 
 <!-- PANTRY TAB -->
 <div id="tab-pantry" class="tab-content">
-  <h2>🏠 Virtual Pantry — Check what you already have</h2>
-  <p style="color:var(--text-dim);margin-bottom:15px;">Check items you already own. They'll be removed from the grocery list.</p>
+<p style="color:var(--muted);margin-bottom:1rem;font-size:0.9rem;">Click items to toggle stock status. Green = in stock, Red = need to buy.</p>
 
-  <div class="cat-section">
-    <div class="cat-title">🧂 Staples & Spices</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Salt</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Black pepper</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Sugar</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Flour (wheat)</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Soy sauce</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Vegetable oil</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Rice (jasmine)</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Buckwheat</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Breadcrumbs</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Cornstarch</div>
-  </div>
-
-  <div class="cat-section">
-    <div class="cat-title">🥫 Canned & Jarred</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Tomato paste</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Coconut milk (400ml can)</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Fish sauce</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Green curry paste</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Gochujang</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Miso paste</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Hoisin sauce</div>
-  </div>
-
-  <div class="cat-section">
-    <div class="cat-title">🌶️ Sauces & Liquids</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Rice vinegar</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Mirin</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Sesame oil</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Tamarind paste</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Ketchup</div>
-  </div>
-
-  <div class="cat-section">
-    <div class="cat-title">🍵 Dried Goods</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Rice noodles</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Egg noodles</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Wakame (dried seaweed)</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Dried chilies</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Star anise</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Sichuan peppercorns</div>
-    <div class="pantry-item"><input type="checkbox" onchange="togglePantry(this)"> Cinnamon stick</div>
-  </div>
+<div class="pantry-grid" id="pantry-grid">
+<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🧂 Salt</div><div class="status">✅ In stock</div></div>
+<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🧂 Black pepper</div><div class="status">✅ In stock</div></div>
+<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🍚 White rice</div><div class="status">✅ In stock</div></div>
+<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🌾 Flour</div><div class="status">✅ In stock</div></div>
+<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🧈 Butter</div><div class="status">✅ In stock</div></div>
+<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🫒 Vegetable oil</div><div class="status">✅ In stock</div></div>
+<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🫒 Olive oil</div><div class="status">✅ In stock</div></div>
+<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🧂 Soy sauce</div><div class="status">✅ In stock</div></div>
+<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🍬 Sugar</div><div class="status">✅ In stock</div></div>
+<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🍯 Honey</div><div class="status">✅ In stock</div></div>
+<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🥚 Eggs</div><div class="status">✅ In stock</div></div>
+<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🧄 Garlic</div><div class="status">✅ In stock</div></div>
+<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🧅 Onions</div><div class="status">✅ In stock</div></div>
+<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🥔 Potatoes</div><div class="status">✅ In stock</div></div>
+<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🥕 Carrots</div><div class="status">✅ In stock</div></div>
+<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🥛 Milk</div><div class="status">✅ In stock</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🐄 Sour cream</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🥩 Beef ribs</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🥩 Beef sirloin</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🐔 Chicken breasts</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🐔 Chicken thighs</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🦐 Shrimp</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🐟 Salmon</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🥓 Pancetta</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🐷 Ground beef</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🐷 Ground pork</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🧀 Parmesan</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🧀 Cream cheese</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🥥 Coconut milk</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🍜 Rice noodles</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🍜 Ramen noodles</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🍜 Udon noodles</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🟢 Green curry paste</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🟠 Gochujang</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🟤 Miso paste</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🟤 Tamarind paste</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🟤 Fish sauce</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🟤 Sesame oil</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🌿 Dill</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🌿 Parsley</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🌿 Thai basil</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🫛 Bean sprouts</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🫛 Bamboo shoots</div><div class="status">🔴 Need to buy</div></div>
+<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🌰 Buckwheat</div><div class="status">🔴 Need to buy</div></div>
 </div>
-
-<!-- GROCERY TAB -->
-<div id="tab-grocery" class="tab-content">
-  <h2>🛒 Grocery List</h2>
-  <p style="color:var(--text-dim);margin-bottom:15px;">Click items to mark as purchased. Items checked in Pantry are excluded.</p>
-
-  <div class="cat-section">
-    <div class="cat-title">🥩 Meat & Poultry</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Beef bones — 900g (for borscht + pho broth)</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Beef sirloin — 850g (stroganoff + bibimbap + pho)</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Ground beef — 550g (pelmeni + golubtsi)</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Ground pork — 150g (pelmeni filling)</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Chicken thighs — 700g (teriyaki + curry)</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Chicken breast — 350g (kung pao)</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Chicken whole leg — 350g (chicken soup)</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Pork tenderloin — 350g (sweet & sour)</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Pork loin — 400g (schnitzel)</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Shrimp — 250g (pad thai)</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Smoked salmon — 150g (blini)</div>
-  </div>
-
-  <div class="cat-section">
-    <div class="cat-title">🥬 Vegetables</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Beets — 300g</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Potatoes — 1.35kg</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Cabbage — 1 head (~1.1kg)</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Carrots — 560g</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Onions — 780g (7-8 medium)</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Garlic — 3 bulbs (~25 cloves total)</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Ginger — 65g (fresh root)</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Bell peppers — 400g (mix of colors)</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Zucchini — 180g</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Tomatoes — 100g</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Cucumber — 230g</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Spinach — 100g</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Bean sprouts — 260g</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Bamboo shoots — 100g (canned ok)</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Pineapple — 120g (fresh or canned)</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Green onion — 3 bunches</div>
-  </div>
-
-  <div class="cat-section">
-    <div class="cat-title">🥚 Dairy & Eggs</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Eggs — 22 pcs</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Milk — 1.5L</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Sour cream — 570g</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Butter — 200g</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Cream cheese — 80g</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Cheese (hard, for toast) — 60g</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Tvorog/cottage cheese — 300g</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Tofu — 100g (firm)</div>
-  </div>
-
-  <div class="cat-section">
-    <div class="cat-title">🌾 Grains & Pasta</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Rice noodles — 350g</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Egg noodles — 280g</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Oats — 120g</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Rice (jasmine) — 1.05kg</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Buckwheat — 320g</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Flour — 890g</div>
-  </div>
-
-  <div class="cat-section">
-    <div class="cat-title">🫘 Nuts & Seeds</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Peanuts — 90g (unsalted)</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Walnuts — 20g</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Sesame seeds — 1 packet</div>
-  </div>
-
-  <div class="cat-section">
-    <div class="cat-title">🍋 Fruits & Herbs</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Lemons — 2 pcs</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Limes — 3 pcs</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Mixed berries — 280g (fresh or frozen)</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Dill — 3 bunches</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Parsley — 1 bunch</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Thai basil — 2 bunches</div>
-  </div>
-
-  <div class="cat-section">
-    <div class="cat-title">🍞 Bread</div>
-    <div class="grocery-item"><input type="checkbox" onchange="toggleBought(this)"> Sourdough bread — 1 loaf</div>
-  </div>
 </div>
-
-<button class="print-btn" onclick="window.print()">🖨️ Print List</button>
 
 <script>
-function showTab(id){
-  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
-  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-  document.getElementById('tab-'+id).classList.add('active');
+function showTab(name) {
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
   event.target.classList.add('active');
 }
-function toggleBought(cb){
-  cb.parentElement.classList.toggle('struck',cb.checked);
+function toggleDay(header) {
+  const body = header.nextElementSibling;
+  const arrow = header.querySelector('.arrow');
+  body.classList.toggle('open');
+  arrow.classList.toggle('open');
 }
-function togglePantry(cb){
-  cb.parentElement.classList.toggle('struck',cb.checked);
+function togglePantry(el) {
+  if (el.classList.contains('in-stock')) {
+    el.classList.remove('in-stock');
+    el.classList.add('need-buy');
+    el.querySelector('.status').textContent = '🔴 Need to buy';
+  } else {
+    el.classList.remove('need-buy');
+    el.classList.add('in-stock');
+    el.querySelector('.status').textContent = '✅ In stock';
+  }
 }
-function setKcal(level,btn){
-  document.querySelectorAll('.kcal-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  const labels={low:'~3400 kcal',med:'~4000 kcal',high:'~4700 kcal'};
-  document.querySelectorAll('.badge-cal').forEach(b=>b.textContent=labels[level]);
-}
+// Auto-expand today
+const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+const today = days[new Date().getDay()];
+document.querySelectorAll('.day-header .day-name').forEach(el => {
+  if (el.textContent.startsWith(today)) {
+    const body = el.closest('.day-header').nextElementSibling;
+    body.classList.add('open');
+    el.closest('.day-header').querySelector('.arrow').classList.add('open');
+  }
+});
 </script>
 </body>
 </html>
