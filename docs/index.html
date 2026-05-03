@@ -1,712 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Weekly Menu — May 3-9, 2026</title>
+<title>Еженедельное меню | May 4 - May 10, 2026</title>
 <style>
-:root {
-  --bg: #0d1117;
-  --surface: #161b22;
-  --border: #30363d;
-  --text: #e6edf3;
-  --muted: #8b949e;
-  --accent: #58a6ff;
-  --slavic: #f0883e;
-  --asian: #3fb950;
-  --fancy: #bc8cff;
-  --danger: #f85149;
-}
-* { margin:0; padding:0; box-sizing:border-box; }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
-  padding: 1rem;
-  max-width: 900px;
-  margin: 0 auto;
-}
-h1 { font-size: 1.8rem; margin-bottom: 0.3rem; }
-h2 { font-size: 1.3rem; margin: 1.5rem 0 0.8rem; color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
-h3 { font-size: 1rem; color: var(--muted); margin-bottom: 0.5rem; }
-.meta { color: var(--muted); margin-bottom: 1.5rem; font-size: 0.9rem; }
-.balance-bar { display:flex; gap:0; height:8px; border-radius:4px; overflow:hidden; margin:0.5rem 0 1.5rem; }
-.balance-bar .slavic { background:var(--slavic); flex: 0 0 62%; }
-.balance-bar .asian { background:var(--asian); flex: 0 0 38%; }
-.balance-label { display:flex; justify-content:space-between; font-size:0.8rem; color:var(--muted); }
-
-/* Day card */
-.day-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  overflow: hidden;
-}
-.day-header {
-  padding: 0.8rem 1rem;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  user-select: none;
-}
-.day-header:hover { background: rgba(88,166,255,0.05); }
-.day-header .day-name { font-weight: 600; font-size: 1.05rem; }
-.day-header .kcal { font-size: 0.85rem; color: var(--muted); }
-.day-header .arrow { transition: transform 0.2s; color: var(--muted); }
-.day-header .arrow.open { transform: rotate(180deg); }
-.day-body { display:none; padding: 0 1rem 1rem; }
-.day-body.open { display:block; }
-
-/* Meal row */
-.meal {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  padding: 0.6rem 0;
-  border-bottom: 1px solid var(--border);
-  align-items: flex-start;
-}
-.meal:last-child { border-bottom:none; }
-.meal-tag {
-  font-size: 0.7rem;
-  padding: 0.15rem 0.5rem;
-  border-radius: 10px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  flex-shrink: 0;
-}
-.tag-breakfast { background: #1f6feb33; color: #58a6ff; }
-.tag-lunch { background: #23863633; color: #3fb950; }
-.tag-dinner { background: #8957e533; color: #bc8cff; }
-.tag-fancy { background: #8957e533; color: #bc8cff; }
-.tag-slavic { background: #f0883e22; color: #f0883e; }
-.tag-asian { background: #3fb95022; color: #3fb950; }
-.meal-info { flex:1; min-width:200px; }
-.meal-name { font-weight: 600; }
-.meal-desc { font-size: 0.85rem; color: var(--muted); margin-top: 0.15rem; }
-.meal-ingredients { font-size: 0.8rem; color: var(--muted); margin-top: 0.3rem; line-height: 1.5; }
-.meal-kcal { font-size: 0.85rem; color: var(--muted); white-space:nowrap; }
-
-/* Grocery list */
-.grocery-section { margin-bottom: 1.5rem; }
-.grocery-section h3 { color: var(--accent); font-size: 0.95rem; margin-bottom: 0.4rem; }
-.grocery-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.25rem 0;
-  font-size: 0.9rem;
-}
-.grocery-item input[type=checkbox] {
-  accent-color: var(--accent);
-  width: 16px; height: 16px;
-}
-.grocery-item .qty { color: var(--muted); min-width: 80px; }
-.grocery-item.have { color: var(--muted); text-decoration: line-through; }
-
-/* Pantry */
-.pantry-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 0.5rem;
-}
-.pantry-item {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 0.5rem 0.7rem;
-  font-size: 0.85rem;
-  cursor: pointer;
-  transition: all 0.15s;
-}
-.pantry-item.in-stock { border-color: var(--asian); }
-.pantry-item.need-buy { border-color: var(--danger); }
-.pantry-item .status { font-size: 0.75rem; }
-.pantry-item.in-stock .status { color: var(--asian); }
-.pantry-item.need-buy .status { color: var(--danger); }
-
-/* Nav tabs */
-.tabs {
-  display: flex;
-  gap: 0;
-  border-bottom: 2px solid var(--border);
-  margin-bottom: 1.5rem;
-}
-.tab {
-  padding: 0.6rem 1.2rem;
-  cursor: pointer;
-  font-size: 0.95rem;
-  color: var(--muted);
-  border-bottom: 2px solid transparent;
-  margin-bottom: -2px;
-  transition: all 0.15s;
-}
-.tab:hover { color: var(--text); }
-.tab.active { color: var(--accent); border-bottom-color: var(--accent); }
-.tab-content { display:none; }
-.tab-content.active { display:block; }
-
-/* Stats */
-.stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 0.8rem;
-  margin-bottom: 1.5rem;
-}
-.stat-box {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 0.8rem;
-  text-align: center;
-}
-.stat-box .num { font-size: 1.5rem; font-weight: 700; color: var(--accent); }
-.stat-box .label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; }
-
-@media (max-width: 600px) {
-  body { padding: 0.5rem; }
-  h1 { font-size: 1.4rem; }
-  .day-header { padding: 0.6rem 0.7rem; }
-  .day-body { padding: 0 0.7rem 0.7rem; }
-  .stats { grid-template-columns: repeat(2, 1fr); }
-}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#f5f5f0;color:#2c2c2c;line-height:1.6}
+.container{max-width:900px;margin:0 auto;padding:20px}
+h1{text-align:center;font-size:1.8em;padding:20px 0;color:#3a5a40;border-bottom:2px solid #3a5a40;margin-bottom:20px}
+.week-info{text-align:center;color:#666;margin-bottom:30px}
+.day{background:#fff;border-radius:12px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,0.06);overflow:hidden}
+.day-header{background:#3a5a40;color:#fff;padding:12px 20px;font-size:1.2em;font-weight:600}
+.meal{padding:15px 20px;border-bottom:1px solid #eee}
+.meal:last-child{border-bottom:none}
+.meal-header{display:flex;justify-content:space-between;align-items:center;cursor:pointer}
+.meal-type{font-size:0.8em;text-transform:uppercase;letter-spacing:1px;color:#888;font-weight:600}
+.meal-name{font-size:1.1em;font-weight:500}
+.cuisine-badge{font-size:0.75em;padding:3px 10px;border-radius:20px;font-weight:500}
+.cuisine-slavic{background:#e8f0e3;color:#3a5a40}
+.cuisine-asian{background:#fff3e0;color:#e65100}
+.meal-details{display:none;margin-top:12px;padding-top:12px;border-top:1px solid #eee}
+.meal-details.show{display:block}
+.ingredients{list-style:none;margin:8px 0}
+.ingredients li{padding:3px 0;font-size:0.95em}
+.ingredients li::before{content:"• ";color:#3a5a40}
+.instructions{margin-top:10px;padding:10px;background:#f9f9f6;border-radius:8px;font-size:0.95em}
+.calories{font-size:0.85em;color:#999}
+.grocery{background:#fff;border-radius:12px;padding:20px;margin-top:30px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.grocery h2{color:#3a5a40;margin-bottom:15px;font-size:1.3em}
+.grocery-cat{margin-bottom:15px}
+.grocery-cat h3{font-size:1em;color:#555;border-bottom:1px solid #eee;padding-bottom:5px;margin-bottom:8px}
+.grocery-item{display:flex;justify-content:space-between;padding:2px 0;font-size:0.95em}
+.toggle{background:none;border:none;font-size:1.2em;cursor:pointer;float:right}
+@media(max-width:600px){.container{padding:10px}.day-header{font-size:1em}.meal-name{font-size:1em}}
 </style>
 </head>
 <body>
-
-<h1>🍽️ Weekly Menu</h1>
-<p class="meta">May 3–9, 2026 · Stanislav (31M, 85kg) + Wife (26F, 63kg) · 3400–4700 kcal/day</p>
-
-<div class="stats">
-  <div class="stat-box"><div class="num">21</div><div class="label">Meals</div></div>
-  <div class="stat-box"><div class="num">13</div><div class="label">Slavic/Pasta</div></div>
-  <div class="stat-box"><div class="num">8</div><div class="label">Asian</div></div>
-  <div class="stat-box"><div class="num">1</div><div class="label">Fancy Dinner</div></div>
-</div>
-
-<div class="balance-bar"><div class="slavic"></div><div class="asian"></div></div>
-<div class="balance-label"><span style="color:var(--slavic)">🇷🇺 Slavic/Pasta 62%</span><span style="color:var(--asian)">🇹🇭🇯🇵🇰🇷 Asian 38%</span></div>
-
-<!-- Tabs -->
-<div class="tabs">
-  <div class="tab active" onclick="showTab('menu')">📋 Menu</div>
-  <div class="tab" onclick="showTab('grocery')">🛒 Grocery List</div>
-  <div class="tab" onclick="showTab('pantry')">🏠 Pantry</div>
-</div>
-
-<!-- MENU TAB -->
-<div id="tab-menu" class="tab-content active">
-
-<!-- MONDAY -->
-<div class="day-card">
-  <div class="day-header" onclick="toggleDay(this)">
-    <span class="day-name">Monday, May 3</span>
-    <span class="kcal">~4100 kcal</span>
-    <span class="arrow">▼</span>
-  </div>
-  <div class="day-body">
-    <div class="meal">
-      <span class="meal-tag tag-breakfast">Breakfast</span>
-      <span class="meal-tag tag-slavic">Slavic</span>
-      <div class="meal-info">
-        <div class="meal-name">Syrniki (Cottage Cheese Pancakes)</div>
-        <div class="meal-desc">Fluffy farmer's cheese pancakes pan-fried until golden, served with sour cream and berry jam</div>
-        <div class="meal-ingredients">500g tvorog (farmer's cheese) · 2 eggs · 3 tbsp flour · 2 tbsp sugar · 1 tsp vanilla · oil for frying · sour cream · jam</div>
+<div class="container">
+<h1>🍽️ Еженедельное меню</h1>
+<div class="week-info">May 4 - May 10, 2026</div>
+<div class="day"><div class="day-header">Понедельник</div><div class="meal">
+      <div class="meal-header" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div><span class="meal-type">Завтрак</span><div class="meal-name">Овсянка с яблоками и корицей</div>
+        <div class="calories">450 ккал</div></div>
+        <span class="cuisine-badge cuisine-slavic">Славянская</span>
       </div>
-      <span class="meal-kcal">~650 kcal</span>
-    </div>
-    <div class="meal">
-      <span class="meal-tag tag-lunch">Lunch</span>
-      <span class="meal-tag tag-slavic">Slavic</span>
-      <div class="meal-info">
-        <div class="meal-name">Borscht with Smetana</div>
-        <div class="meal-desc">Classic Ukrainian beet soup with beef, cabbage, potatoes, carrots — served with a generous dollop of sour cream and rye bread</div>
-        <div class="meal-ingredients">500g beef ribs · 2 beets · 3 potatoes · 1/2 head cabbage · 2 carrots · 1 onion · 2 tbsp tomato paste · 3 cloves garlic · bay leaf · dill · sour cream · rye bread</div>
+      <div class="meal-details">
+        <strong>Ингредиенты:</strong>
+        <ul class="ingredients"><li>Овсяные хлопья — 150 g</li><li>Молоко — 300 ml</li><li>Яблоко — 1 pcs</li><li>Мёд — 30 g</li><li>Корица — 3 g</li><li>Сливочное масло — 15 g</li></ul>
+        <div class="instructions">Bring milk to a simmer, add oats, cook 5 min. Dice apple, add to porridge. Top with honey, cinnamon, and butter.</div>
       </div>
-      <span class="meal-kcal">~1550 kcal</span>
-    </div>
-    <div class="meal">
-      <span class="meal-tag tag-dinner">Dinner</span>
-      <span class="meal-tag tag-asian">Asian</span>
-      <div class="meal-info">
-        <div class="meal-name">Pad Thai with Shrimp</div>
-        <div class="meal-desc">Stir-fried rice noodles with shrimp, egg, bean sprouts, peanuts, and tamarind sauce</div>
-        <div class="meal-ingredients">200g rice noodles · 300g shrimp · 2 eggs · 100g bean sprouts · 3 tbsp tamarind paste · 2 tbsp fish sauce · 1 tbsp sugar · 50g peanuts · lime · green onion · garlic · vegetable oil</div>
+    </div><div class="meal">
+      <div class="meal-header" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div><span class="meal-type">Обед</span><div class="meal-name">Борщ украинский</div>
+        <div class="calories">650 ккал</div></div>
+        <span class="cuisine-badge cuisine-slavic">Славянская</span>
       </div>
-      <span class="meal-kcal">~1900 kcal</span>
-    </div>
-  </div>
-</div>
-
-<!-- TUESDAY -->
-<div class="day-card">
-  <div class="day-header" onclick="toggleDay(this)">
-    <span class="day-name">Tuesday, May 4</span>
-    <span class="kcal">~4200 kcal</span>
-    <span class="arrow">▼</span>
-  </div>
-  <div class="day-body">
-    <div class="meal">
-      <span class="meal-tag tag-breakfast">Breakfast</span>
-      <span class="meal-tag tag-asian">Asian</span>
-      <div class="meal-info">
-        <div class="meal-name">Miso Butter Ramen</div>
-        <div class="meal-desc">Quick miso broth ramen with butter, soft-boiled egg, bok choy, and scallions</div>
-        <div class="meal-ingredients">200g ramen noodles · 3 tbsp miso paste · 1 tbsp butter · 2 eggs · 1 baby bok choy · scallions · sesame oil · garlic · ginger</div>
+      <div class="meal-details">
+        <strong>Ингредиенты:</strong>
+        <ul class="ingredients"><li>Говядина на кости — 500 g</li><li>Свёкла — 300 g</li><li>Картофель — 300 g</li><li>Капуста белокочанная — 250 g</li><li>Морковь — 150 g</li><li>Лук репчатый — 150 g</li><li>Томатная паста — 60 g</li><li>Чеснок — 15 g</li><li>Укроп свежий — 30 g</li><li>Сметана — 100 g</li><li>Лавровый лист — 2 pcs</li><li>Уксус столовый — 15 ml</li></ul>
+        <div class="instructions">Boil beef bones 1.5h for broth. Sauté grated beets, carrots, onion with tomato paste. Add diced potatoes and shredded cabbage to broth. Add sautéed veggies. Season with garlic, dill, bay leaf, vinegar. Serve with sour cream.</div>
       </div>
-      <span class="meal-kcal">~700 kcal</span>
-    </div>
-    <div class="meal">
-      <span class="meal-tag tag-lunch">Lunch</span>
-      <span class="meal-tag tag-slavic">Slavic</span>
-      <div class="meal-info">
-        <div class="meal-name">Pelmeni (Meat Dumplings)</div>
-        <div class="meal-desc">Handmade Siberian dumplings stuffed with beef & pork, boiled and served with sour cream and dill</div>
-        <div class="meal-ingredients">400g flour · 1 egg · 150ml water · 300g ground beef · 200g ground pork · 1 onion · salt · pepper · sour cream · dill</div>
+    </div><div class="meal">
+      <div class="meal-header" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div><span class="meal-type">Ужин</span><div class="meal-name">Пад Тай с курицей</div>
+        <div class="calories">800 ккал</div></div>
+        <span class="cuisine-badge cuisine-asian">Азиатская</span>
       </div>
-      <span class="meal-kcal">~1600 kcal</span>
-    </div>
-    <div class="meal">
-      <span class="meal-tag tag-dinner">Dinner</span>
-      <span class="meal-tag tag-slavic">Slavic</span>
-      <div class="meal-info">
-        <div class="meal-name">Beef Stroganoff with Buckwheat</div>
-        <div class="meal-desc">Tender beef strips in creamy mushroom-sour cream sauce over boiled buckwheat (grechka)</div>
-        <div class="meal-ingredients">500g beef sirloin · 300g mushrooms · 1 onion · 200ml sour cream · 2 tbsp flour · 200ml beef broth · 2 tbsp butter · 300g buckwheat · parsley</div>
+      <div class="meal-details">
+        <strong>Ингредиенты:</strong>
+        <ul class="ingredients"><li>Рисовая лапша — 250 g</li><li>Куриное филе — 300 g</li><li>Яйца куриные — 2 pcs</li><li>Арахис — 50 g</li><li>Соевый соус — 40 ml</li><li>Сок лимона — 30 ml</li><li>Сахар — 20 g</li><li>Чеснок — 10 g</li><li>Масло растительное — 30 ml</li><li>Зелёный лук — 30 g</li></ul>
+        <div class="instructions">Soak rice noodles 20 min. Stir-fry sliced chicken until golden. Push aside, scramble eggs. Add noodles, soy sauce, lemon juice, sugar. Toss everything. Top with crushed peanuts and green onion.</div>
       </div>
-      <span class="meal-kcal">~1900 kcal</span>
-    </div>
-  </div>
-</div>
-
-<!-- WEDNESDAY -->
-<div class="day-card">
-  <div class="day-header" onclick="toggleDay(this)">
-    <span class="day-name">Wednesday, May 5</span>
-    <span class="kcal">~4300 kcal</span>
-    <span class="arrow">▼</span>
-  </div>
-  <div class="day-body">
-    <div class="meal">
-      <span class="meal-tag tag-breakfast">Breakfast</span>
-      <span class="meal-tag tag-slavic">Slavic</span>
-      <div class="meal-info">
-        <div class="meal-name">Oatmeal with Banana & Honey</div>
-        <div class="meal-desc">Creamy rolled oats topped with sliced banana, walnuts, honey, and cinnamon</div>
-        <div class="meal-ingredients">150g rolled oats · 400ml milk · 2 bananas · 30g walnuts · 2 tbsp honey · 1 tsp cinnamon · butter</div>
+    </div></div><div class="day"><div class="day-header">Вторник</div><div class="meal">
+      <div class="meal-header" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div><span class="meal-type">Завтрак</span><div class="meal-name">Сырники с творогом</div>
+        <div class="calories">480 ккал</div></div>
+        <span class="cuisine-badge cuisine-slavic">Славянская</span>
       </div>
-      <span class="meal-kcal">~750 kcal</span>
-    </div>
-    <div class="meal">
-      <span class="meal-tag tag-lunch">Lunch</span>
-      <span class="meal-tag tag-asian">Asian</span>
-      <div class="meal-info">
-        <div class="meal-name">Korean Bibimbap</div>
-        <div class="meal-desc">Mixed rice bowl with sautéed vegetables, seasoned beef, fried egg, and gochujang sauce</div>
-        <div class="meal-ingredients">300g rice · 200g beef · 150g spinach · 100g bean sprouts · 1 carrot · 1 zucchini · 2 eggs · 3 tbsp gochujang · sesame oil · garlic · soy sauce · sesame seeds</div>
+      <div class="meal-details">
+        <strong>Ингредиенты:</strong>
+        <ul class="ingredients"><li>Творог — 400 g</li><li>Яйца куриные — 2 pcs</li><li>Мука пшеничная — 80 g</li><li>Сахар — 40 g</li><li>Сметана — 100 g</li><li>Масло растительное — 30 ml</li></ul>
+        <div class="instructions">Mix tvorog, eggs, sugar, flour into dough. Form small patties. Fry in oil until golden both sides. Serve with sour cream.</div>
       </div>
-      <span class="meal-kcal">~1600 kcal</span>
-    </div>
-    <div class="meal">
-      <span class="meal-tag tag-dinner">Dinner</span>
-      <span class="meal-tag tag-slavic">Slavic</span>
-      <div class="meal-info">
-        <div class="meal-name">Chicken Kiev with Mashed Potatoes</div>
-        <div class="meal-desc">Breaded chicken breast rolled with garlic-herb butter, fried until golden, served with creamy mashed potatoes and cucumber salad</div>
-        <div class="meal-ingredients">2 chicken breasts · 60g butter · 2 cloves garlic · parsley · 2 eggs · 100g breadcrumbs · flour · 500g potatoes · 100ml milk · 50g butter (mash) · 1 cucumber · dill · sour cream</div>
+    </div><div class="meal">
+      <div class="meal-header" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div><span class="meal-type">Обед</span><div class="meal-name">Жареный рис с овощами</div>
+        <div class="calories">620 ккал</div></div>
+        <span class="cuisine-badge cuisine-asian">Азиатская</span>
       </div>
-      <span class="meal-kcal">~1950 kcal</span>
-    </div>
-  </div>
-</div>
-
-<!-- THURSDAY -->
-<div class="day-card">
-  <div class="day-header" onclick="toggleDay(this)">
-    <span class="day-name">Thursday, May 6</span>
-    <span class="kcal">~3800 kcal</span>
-    <span class="arrow">▼</span>
-  </div>
-  <div class="day-body">
-    <div class="meal">
-      <span class="meal-tag tag-breakfast">Breakfast</span>
-      <span class="meal-tag tag-slavic">Slavic</span>
-      <div class="meal-info">
-        <div class="meal-name">Blini with Smoked Salmon & Cream Cheese</div>
-        <div class="meal-desc">Thin Russian crepes topped with cream cheese, smoked salmon, capers, and fresh dill</div>
-        <div class="meal-ingredients">200g flour · 2 eggs · 300ml milk · 1 tbsp sugar · 100g smoked salmon · 100g cream cheese · capers · dill · butter for frying</div>
+      <div class="meal-details">
+        <strong>Ингредиенты:</strong>
+        <ul class="ingredients"><li>Рис длиннозёрный — 300 g</li><li>Яйца куриные — 3 pcs</li><li>Морковь — 100 g</li><li>Горошек зелёный замороженный — 100 g</li><li>Соевый соус — 40 ml</li><li>Масло растительное — 30 ml</li><li>Чеснок — 10 g</li><li>Зелёный лук — 30 g</li></ul>
+        <div class="instructions">Cook rice, cool completely. Stir-fry diced carrots and peas. Push aside, scramble eggs. Add rice, soy sauce, toss on high heat. Garnish with green onion.</div>
       </div>
-      <span class="meal-kcal">~700 kcal</span>
-    </div>
-    <div class="meal">
-      <span class="meal-tag tag-lunch">Lunch</span>
-      <span class="meal-tag tag-asian">Asian</span>
-      <div class="meal-info">
-        <div class="meal-name">Thai Green Curry with Jasmine Rice</div>
-        <div class="meal-desc">Chicken simmered in coconut milk with green curry paste, Thai eggplant, bamboo shoots, and Thai basil</div>
-        <div class="meal-ingredients">400g chicken thighs · 400ml coconut milk · 3 tbsp green curry paste · 150g Thai eggplant · 100g bamboo shoots · fish sauce · palm sugar · Thai basil · 300g jasmine rice · lime</div>
+    </div><div class="meal">
+      <div class="meal-header" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div><span class="meal-type">Ужин</span><div class="meal-name">Котлеты с картофельным пюре</div>
+        <div class="calories">850 ккал</div></div>
+        <span class="cuisine-badge cuisine-slavic">Славянская</span>
       </div>
-      <span class="meal-kcal">~1600 kcal</span>
-    </div>
-    <div class="meal">
-      <span class="meal-tag tag-dinner">Dinner</span>
-      <span class="meal-tag tag-slavic">Slavic</span>
-      <div class="meal-info">
-        <div class="meal-name">Pasta Carbonara</div>
-        <div class="meal-desc">Classic spaghetti carbonara with pancetta, egg yolk, parmesan, and black pepper</div>
-        <div class="meal-ingredients">400g spaghetti · 200g pancetta · 3 egg yolks · 100g parmesan · black pepper · garlic · olive oil</div>
+      <div class="meal-details">
+        <strong>Ингредиенты:</strong>
+        <ul class="ingredients"><li>Фарш свино-говяжий — 500 g</li><li>Картофель — 600 g</li><li>Лук репчатый — 100 g</li><li>Яйца куриные — 1 pcs</li><li>Хлеб белый — 50 g</li><li>Молоко — 100 ml</li><li>Сливочное масло — 50 g</li><li>Масло растительное — 40 ml</li><li>Панировочные сухари — 50 g</li></ul>
+        <div class="instructions">Soak bread in milk. Mix mince with onion, egg, soaked bread, salt, pepper. Form cutlets, coat in breadcrumbs. Fry until golden. Boil potatoes, mash with butter and milk. Serve cutlets with mash.</div>
       </div>
-      <span class="meal-kcal">~1500 kcal</span>
-    </div>
-  </div>
-</div>
-
-<!-- FRIDAY -->
-<div class="day-card">
-  <div class="day-header" onclick="toggleDay(this)">
-    <span class="day-name">Friday, May 7</span>
-    <span class="kcal">~4000 kcal</span>
-    <span class="arrow">▼</span>
-  </div>
-  <div class="day-body">
-    <div class="meal">
-      <span class="meal-tag tag-breakfast">Breakfast</span>
-      <span class="meal-tag tag-slavic">Slavic</span>
-      <div class="meal-info">
-        <div class="meal-name">Kasha (Buckwheat Porridge) with Eggs</div>
-        <div class="meal-desc">Toasted buckwheat boiled in milk, served with fried eggs and sautéed onions</div>
-        <div class="meal-ingredients">200g buckwheat · 400ml milk · 3 eggs · 1 onion · butter · salt</div>
+    </div></div><div class="day"><div class="day-header">Среда</div><div class="meal">
+      <div class="meal-header" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div><span class="meal-type">Завтрак</span><div class="meal-name">Гречневая каша с маслом</div>
+        <div class="calories">420 ккал</div></div>
+        <span class="cuisine-badge cuisine-slavic">Славянская</span>
       </div>
-      <span class="meal-kcal">~650 kcal</span>
-    </div>
-    <div class="meal">
-      <span class="meal-tag tag-lunch">Lunch</span>
-      <span class="meal-tag tag-slavic">Slavic</span>
-      <div class="meal-info">
-        <div class="meal-name">Olivier Salad with Ham Sandwiches</div>
-        <div class="meal-desc">Russian potato salad with ham, pickles, peas, eggs, and mayo — served with dark bread sandwiches</div>
-        <div class="meal-ingredients">400g potatoes · 3 eggs · 200g ham · 3 pickles · 150g peas · 200g mayo · 2 carrots · dill · dark bread · mustard</div>
+      <div class="meal-details">
+        <strong>Ингредиенты:</strong>
+        <ul class="ingredients"><li>Гречка — 200 g</li><li>Вода — 400 ml</li><li>Сливочное масло — 30 g</li><li>Соль — 5 g</li></ul>
+        <div class="instructions">Rinse buckwheat, add to boiling salted water. Simmer covered 15-20 min until water absorbed. Add butter, fluff with fork.</div>
       </div>
-      <span class="meal-kcal">~1600 kcal</span>
-    </div>
-    <div class="meal">
-      <span class="meal-tag tag-dinner">Dinner</span>
-      <span class="meal-tag tag-asian">Asian</span>
-      <div class="meal-info">
-        <div class="meal-name">Japanese Chicken Curry Rice</div>
-        <div class="meal-desc">Mild Japanese-style curry with chicken, potatoes, carrots, and onions over steamed rice</div>
-        <div class="meal-ingredients">400g chicken thighs · 300g potatoes · 2 carrots · 1 onion · 100g curry roux · 700ml water · 300g rice · garlic · ginger</div>
+    </div><div class="meal">
+      <div class="meal-header" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div><span class="meal-type">Обед</span><div class="meal-name">Солянка мясная</div>
+        <div class="calories">700 ккал</div></div>
+        <span class="cuisine-badge cuisine-slavic">Славянская</span>
       </div>
-      <span class="meal-kcal">~1750 kcal</span>
-    </div>
-  </div>
-</div>
-
-<!-- SATURDAY -->
-<div class="day-card">
-  <div class="day-header" onclick="toggleDay(this)">
-    <span class="day-name">Saturday, May 8</span>
-    <span class="kcal">~4600 kcal</span>
-    <span class="arrow">▼</span>
-  </div>
-  <div class="day-body">
-    <div class="meal">
-      <span class="meal-tag tag-breakfast">Breakfast</span>
-      <span class="meal-tag tag-asian">Asian</span>
-      <div class="meal-info">
-        <div class="meal-name">Tamagoyaki & Rice with Miso Soup</div>
-        <div class="meal-desc">Japanese rolled omelette with steamed rice and a quick miso soup with tofu and wakame</div>
-        <div class="meal-ingredients">4 eggs · 1 tbsp mirin · 1 tbsp soy sauce · sugar · 200g rice · 2 tbsp miso paste · 150g tofu · wakame · scallions · dashi</div>
+      <div class="meal-details">
+        <strong>Ингредиенты:</strong>
+        <ul class="ingredients"><li>Говядина — 300 g</li><li>Колбаса варёная — 150 g</li><li>Картофель — 200 g</li><li>Маринованные огурцы — 150 g</li><li>Лук репчатый — 100 g</li><li>Морковь — 100 g</li><li>Томатная паста — 50 g</li><li>Оливки — 50 g</li><li>Лимон — 1 pcs</li><li>Сметана — 60 g</li></ul>
+        <div class="instructions">Boil beef for broth 1h. Dice and sauté onion, carrots, pickles with tomato paste. Add diced potatoes, meats, sautéed veggies to broth. Add olives. Serve with lemon wedge and sour cream.</div>
       </div>
-      <span class="meal-kcal">~800 kcal</span>
-    </div>
-    <div class="meal">
-      <span class="meal-tag tag-lunch">Lunch</span>
-      <span class="meal-tag tag-slavic">Slavic</span>
-      <div class="meal-info">
-        <div class="meal-name">Solyanka Soup</div>
-        <div class="meal-desc">Hearty Russian soup with smoked sausage, pickles, olives, capers, and lemon — rich and tangy</div>
-        <div class="meal-ingredients">300g smoked sausage · 3 pickles · 2 potatoes · 1 onion · 2 carrots · olives · capers · 2 tbsp tomato paste · lemon · sour cream · dill</div>
+    </div><div class="meal">
+      <div class="meal-header" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div><span class="meal-type">Ужин</span><div class="meal-name">Курица в кисло-сладком соусе</div>
+        <div class="calories">780 ккал</div></div>
+        <span class="cuisine-badge cuisine-asian">Азиатская</span>
       </div>
-      <span class="meal-kcal">~1600 kcal</span>
-    </div>
-    <div class="meal">
-      <span class="meal-tag tag-dinner tag-fancy">Fancy Dinner</span>
-      <span class="meal-tag tag-asian">Asian</span>
-      <div class="meal-info">
-        <div class="meal-name">✨ Salmon Teriyaki with Udon & Edamame</div>
-        <div class="meal-desc">Glazed salmon fillet in homemade teriyaki sauce, stir-fried udon noodles with vegetables, and steamed edamame — the week's fancy dinner</div>
-        <div class="meal-ingredients">400g salmon fillet · 4 tbsp soy sauce · 2 tbsp mirin · 1 tbsp sake · 1 tbsp sugar · ginger · 300g udon noodles · 100g broccoli · 1 carrot · 1 bell pepper · 200g edamame · sesame seeds · sesame oil</div>
+      <div class="meal-details">
+        <strong>Ингредиенты:</strong>
+        <ul class="ingredients"><li>Куриное филе — 400 g</li><li>Перец болгарский — 200 g</li><li>Морковь — 100 g</li><li>Ананас консервированный — 150 g</li><li>Соевый соус — 30 ml</li><li>Уксус столовый — 20 ml</li><li>Сахар — 30 g</li><li>Крахмал картофельный — 30 g</li><li>Масло растительное — 30 ml</li><li>Рис — 200 g</li></ul>
+        <div class="instructions">Cut chicken into pieces, coat in starch, fry until crispy. Stir-fry peppers and carrots. Mix soy sauce, vinegar, sugar, starch with water for sauce. Combine everything with pineapple chunks. Serve over rice.</div>
       </div>
-      <span class="meal-kcal">~2200 kcal</span>
-    </div>
-  </div>
-</div>
-
-<!-- SUNDAY -->
-<div class="day-card">
-  <div class="day-header" onclick="toggleDay(this)">
-    <span class="day-name">Sunday, May 9</span>
-    <span class="kcal">~3800 kcal</span>
-    <span class="arrow">▼</span>
-  </div>
-  <div class="day-body">
-    <div class="meal">
-      <span class="meal-tag tag-breakfast">Breakfast</span>
-      <span class="meal-tag tag-slavic">Slavic</span>
-      <div class="meal-info">
-        <div class="meal-name">Cheese Arepas with Fried Eggs</div>
-        <div class="meal-desc">Corn flour arepas stuffed with cheese, topped with fried eggs and avocado</div>
-        <div class="meal-ingredients">200g corn flour · 100g cheese · 1 avocado · 3 eggs · butter · salt</div>
+    </div></div><div class="day"><div class="day-header">Четверг</div><div class="meal">
+      <div class="meal-header" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div><span class="meal-type">Завтрак</span><div class="meal-name">Блины с вареньем</div>
+        <div class="calories">500 ккал</div></div>
+        <span class="cuisine-badge cuisine-slavic">Славянская</span>
       </div>
-      <span class="meal-kcal">~700 kcal</span>
-    </div>
-    <div class="meal">
-      <span class="meal-tag tag-lunch">Lunch</span>
-      <span class="meal-tag tag-slavic">Slavic</span>
-      <div class="meal-info">
-        <div class="meal-name">Golubtsi (Stuffed Cabbage Rolls)</div>
-        <div class="meal-desc">Cabbage leaves stuffed with rice and meat, slow-simmered in tomato sauce</div>
-        <div class="meal-ingredients">1 large cabbage · 300g ground pork · 200g rice · 1 onion · 1 carrot · 400g crushed tomatoes · 2 tbsp tomato paste · sour cream · dill</div>
+      <div class="meal-details">
+        <strong>Ингредиенты:</strong>
+        <ul class="ingredients"><li>Молоко — 500 ml</li><li>Мука пшеничная — 200 g</li><li>Яйца куриные — 2 pcs</li><li>Сахар — 30 g</li><li>Масло растительное — 30 ml</li><li>Варенье — 100 g</li><li>Сметана — 80 g</li></ul>
+        <div class="instructions">Whisk eggs with sugar, add milk, flour, oil. Rest 15 min. Pour thin layer on hot pan, flip when edges curl. Serve with jam and sour cream.</div>
       </div>
-      <span class="meal-kcal">~1500 kcal</span>
-    </div>
-    <div class="meal">
-      <span class="meal-tag tag-dinner">Dinner</span>
-      <span class="meal-tag tag-asian">Asian</span>
-      <div class="meal-info">
-        <div class="meal-name">Sweet & Sour Pork with Fried Rice</div>
-        <div class="meal-desc">Crispy pork pieces in tangy sweet & sour sauce with peppers and pineapple, served with egg fried rice</div>
-        <div class="meal-ingredients">400g pork loin · 1 bell pepper · 1 onion · 100g pineapple · 3 tbsp vinegar · 2 tbsp sugar · 2 tbsp soy sauce · ketchup · cornstarch · 300g rice (day-old) · 2 eggs · green onion · garlic · ginger</div>
+    </div><div class="meal">
+      <div class="meal-header" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div><span class="meal-type">Обед</span><div class="meal-name">Голубцы с рисом и мясом</div>
+        <div class="calories">720 ккал</div></div>
+        <span class="cuisine-badge cuisine-slavic">Славянская</span>
       </div>
-      <span class="meal-kcal">~1600 kcal</span>
-    </div>
-  </div>
-</div>
-
-</div>
-
-<!-- GROCERY LIST TAB -->
-<div id="tab-grocery" class="tab-content">
-<p style="color:var(--muted);margin-bottom:1rem;font-size:0.9rem;">Check items as you shop. Total: 68 items.</p>
-
-<div class="grocery-section">
-<h3>🥩 Meat & Fish</h3>
-<div class="grocery-item"><input type="checkbox"><span class="qty">500g</span> beef ribs</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">500g</span> beef sirloin</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">300g</span> ground beef</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> ground pork</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">300g</span> ground pork</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">800g</span> chicken breasts</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">800g</span> chicken thighs</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">300g</span> shrimp (peeled)</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">400g</span> salmon fillet</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> pancetta</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">400g</span> pork loin</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> smoked salmon</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> ham</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">300g</span> smoked sausage</div>
-</div>
-
-<div class="grocery-section">
-<h3>🥬 Vegetables</h3>
-<div class="grocery-item"><input type="checkbox"><span class="qty">2 medium</span> beets</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1.5kg</span> potatoes</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1 large</span> cabbage</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1/2 head</span> cabbage (for borscht)</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">6</span> carrots</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">8</span> onions</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">3</span> cucumbers</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">2</span> bell peppers</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1</span> zucchini</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1</span> baby bok choy</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">150g</span> spinach</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">100g</span> bean sprouts</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">150g</span> Thai eggplant</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">100g</span> bamboo shoots</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">100g</span> broccoli</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">3</span> bananas</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1</span> avocado</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1</span> pineapple (chunk)</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">150g</span> mushrooms</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">150g</span> tofu</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1 head</span> garlic</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1 piece</span> ginger (50g)</div>
-</div>
-
-<div class="grocery-section">
-<h3>🥚 Dairy & Eggs</h3>
-<div class="grocery-item"><input type="checkbox"><span class="qty">18</span> eggs</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">500ml</span> milk</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">800ml</span> sour cream (smetana)</div>
-<div class="grocery-item"><input type="checkbox"><span class="checkbox"><span class="qty">100g</span> cream cheese</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">100g</span> parmesan</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> cheese (melting)</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">400ml</span> coconut milk</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">300g</span> butter</div>
-</div>
-
-<div class="grocery-section">
-<h3>🌾 Grains & Pasta</h3>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1.5kg</span> white rice</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> buckwheat</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">400g</span> spaghetti</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> rice noodles</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> ramen noodles</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">300g</span> udon noodles</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">800g</span> flour</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> corn flour</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">150g</span> rolled oats</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">100g</span> breadcrumbs</div>
-</div>
-
-<div class="grocery-section">
-<h3>🧂 Sauces & Spices</h3>
-<div class="grocery-item"><input type="checkbox"><span class="qty">3 tbsp</span> miso paste</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">3 tbsp</span> green curry paste</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">3 tbsp</span> gochujang</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">100g</span> curry roux</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">3 tbsp</span> tamarind paste</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">200ml</span> soy sauce</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">2 tbsp</span> fish sauce</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">3 tbsp</span> tomato paste</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">400g</span> crushed tomatoes</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1 tbsp</span> mirin</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1 tbsp</span> sake</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> mayonnaise</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1 tsp</span> vanilla extract</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1 tsp</span> cinnamon</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1 tbsp</span> sesame oil</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">3 tbsp</span> cornstarch</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">100ml</span> vegetable oil</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">100ml</span> olive oil</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1 tbsp</span> vinegar</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1 tbsp</span> ketchup</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1 tsp</span> black pepper</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1 pack</span> bay leaves</div>
-</div>
-
-<div class="grocery-section">
-<h3>🫘 Canned & Dry Goods</h3>
-<div class="grocery-item"><input type="checkbox"><span class="qty">150g</span> peas (canned or frozen)</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">3</span> pickles (jar)</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1 jar</span> olives</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1 jar</span> capers</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1 pack</span> wakame (dried seaweed)</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1 pack</span> dashi</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">50g</span> peanuts</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">30g</span> walnuts</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">200g</span> sugar</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">3 tbsp</span> honey</div>
-</div>
-
-<div class="grocery-section">
-<h3>🌿 Fresh Herbs & Garnish</h3>
-<div class="grocery-item"><input type="checkbox"><span class="qty">2 bunches</span> dill</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1 bunch</span> parsley</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1 bunch</span> scallions</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1 bunch</span> Thai basil</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">2</span> lemons</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">2</span> limes</div>
-</div>
-
-<div class="grocery-section">
-<h3>🍞 Bread</h3>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1 loaf</span> rye bread</div>
-<div class="grocery-item"><input type="checkbox"><span class="qty">1 loaf</span> dark bread</div>
-</div>
-</div>
-
-<!-- PANTRY TAB -->
-<div id="tab-pantry" class="tab-content">
-<p style="color:var(--muted);margin-bottom:1rem;font-size:0.9rem;">Click items to toggle stock status. Green = in stock, Red = need to buy.</p>
-
-<div class="pantry-grid" id="pantry-grid">
-<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🧂 Salt</div><div class="status">✅ In stock</div></div>
-<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🧂 Black pepper</div><div class="status">✅ In stock</div></div>
-<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🍚 White rice</div><div class="status">✅ In stock</div></div>
-<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🌾 Flour</div><div class="status">✅ In stock</div></div>
-<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🧈 Butter</div><div class="status">✅ In stock</div></div>
-<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🫒 Vegetable oil</div><div class="status">✅ In stock</div></div>
-<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🫒 Olive oil</div><div class="status">✅ In stock</div></div>
-<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🧂 Soy sauce</div><div class="status">✅ In stock</div></div>
-<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🍬 Sugar</div><div class="status">✅ In stock</div></div>
-<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🍯 Honey</div><div class="status">✅ In stock</div></div>
-<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🥚 Eggs</div><div class="status">✅ In stock</div></div>
-<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🧄 Garlic</div><div class="status">✅ In stock</div></div>
-<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🧅 Onions</div><div class="status">✅ In stock</div></div>
-<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🥔 Potatoes</div><div class="status">✅ In stock</div></div>
-<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🥕 Carrots</div><div class="status">✅ In stock</div></div>
-<div class="pantry-item in-stock" onclick="togglePantry(this)"><div>🥛 Milk</div><div class="status">✅ In stock</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🐄 Sour cream</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🥩 Beef ribs</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🥩 Beef sirloin</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🐔 Chicken breasts</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🐔 Chicken thighs</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🦐 Shrimp</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🐟 Salmon</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🥓 Pancetta</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🐷 Ground beef</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🐷 Ground pork</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🧀 Parmesan</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🧀 Cream cheese</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🥥 Coconut milk</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🍜 Rice noodles</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🍜 Ramen noodles</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🍜 Udon noodles</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🟢 Green curry paste</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🟠 Gochujang</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🟤 Miso paste</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🟤 Tamarind paste</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🟤 Fish sauce</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🟤 Sesame oil</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🌿 Dill</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🌿 Parsley</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🌿 Thai basil</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🫛 Bean sprouts</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🫛 Bamboo shoots</div><div class="status">🔴 Need to buy</div></div>
-<div class="pantry-item need-buy" onclick="togglePantry(this)"><div>🌰 Buckwheat</div><div class="status">🔴 Need to buy</div></div>
-</div>
-</div>
-
-<script>
-function showTab(name) {
-  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-  document.getElementById('tab-' + name).classList.add('active');
-  event.target.classList.add('active');
-}
-function toggleDay(header) {
-  const body = header.nextElementSibling;
-  const arrow = header.querySelector('.arrow');
-  body.classList.toggle('open');
-  arrow.classList.toggle('open');
-}
-function togglePantry(el) {
-  if (el.classList.contains('in-stock')) {
-    el.classList.remove('in-stock');
-    el.classList.add('need-buy');
-    el.querySelector('.status').textContent = '🔴 Need to buy';
-  } else {
-    el.classList.remove('need-buy');
-    el.classList.add('in-stock');
-    el.querySelector('.status').textContent = '✅ In stock';
-  }
-}
-// Auto-expand today
-const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-const today = days[new Date().getDay()];
-document.querySelectorAll('.day-header .day-name').forEach(el => {
-  if (el.textContent.startsWith(today)) {
-    const body = el.closest('.day-header').nextElementSibling;
-    body.classList.add('open');
-    el.closest('.day-header').querySelector('.arrow').classList.add('open');
-  }
-});
-</script>
-</body>
-</html>
+      <div class="meal-details">
+        <strong>Ингредиенты:</strong>
+        <ul class="ingredients"><li>Капуста белокочанная — 1 pcs</li><li>Фарш свино-говяжий — 400 g</li><li>Рис — 150 g</li><li>Лук репчатый — 100 g</li><li>Морковь — 100 g</li><li>Томатная паста — 50 g</li><li>Сметана — 100 g</li></ul>
+        <div class="instructions">Boil cabbage head, separate leaves. Mix cooked rice, mince, diced onion, salt, pepper. Roll filling in leaves. Place in pot, cover with tomato-sour cream sauce. Simmer 1h.</div>
+      </div>
+    </div><div class="meal">
+      <div class="meal-header" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div><span class="meal-type">Ужин</span><div class="meal-name">Лапша удон с овощами и курицей</div>
+        <div class="calories">750 ккал</div></div>
+        <span class="cuisine-badge cuisine-asian">Азиатская</span>
+      </div>
+      <div class="meal-details">
+        <strong>Ингредиенты:</strong>
+        <ul class="ingredients"><li>Лапша удон — 250 g</li><li>Куриное филе — 300 g</li><li>Перец болгарский — 150 g</li><li>Морковь — 100 g</li><li>Капуста белокочанная — 150 g</li><li>Соевый соус — 50 ml</li><li>Масло растительное — 30 ml</li><li>Чеснок — 10 g</li><li>Зелёный лук — 30 g</li></ul>
+        <div class="instructions">Cook udon per package. Stir-fry sliced chicken until done. Add julienned peppers, carrots, cabbage. Add garlic, soy sauce. Toss in noodles. Garnish with green onion.</div>
+      </div>
+    </div></div><div class="day"><div class="day-header">Пятница</div><div class="meal">
+      <div class="meal-header" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div><span class="meal-type">Завтрак</span><div class="meal-name">Яичница с колбасой и хлебом</div>
+        <div class="calories">500 ккал</div></div>
+        <span class="cuisine-badge cuisine-slavic">Славянская</span>
+      </div>
+      <div class="meal-details">
+        <strong>Ингредиенты:</strong>
+        <ul class="ingredients"><li>Яйца куриные — 4 pcs</li><li>Колбаса варёная — 100 g</li><li>Хлеб белый — 100 g</li><li>Сливочное масло — 20 g</li><li>Масло растительное — 15 ml</li></ul>
+        <div class="instructions">Fry sausage slices in oil. Crack eggs over sausage, cook sunny-side up. Toast bread with butter. Serve together.</div>
+      </div>
+    </div><div class="meal">
+      <div class="meal-header" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div><span class="meal-type">Обед</span><div class="meal-name">Куриный суп с лапшой</div>
+        <div class="calories">550 ккал</div></div>
+        <span class="cuisine-badge cuisine-slavic">Славянская</span>
+      </div>
+      <div class="meal-details">
+        <strong>Ингредиенты:</strong>
+        <ul class="ingredients"><li>Курица (окорочок) — 400 g</li><li>Картофель — 200 g</li><li>Морковь — 100 g</li><li>Лук репчатый — 80 g</li><li>Лапша яичная — 100 g</li><li>Укроп свежий — 20 g</li><li>Лавровый лист — 2 pcs</li></ul>
+        <div class="instructions">Boil chicken 40 min for broth. Remove meat, dice. Add diced potatoes, carrots, onion to broth. Add noodles, cook 8 min. Return chicken, add dill and bay leaf.</div>
+      </div>
+    </div><div class="meal">
+      <div class="meal-header" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div><span class="meal-type">Ужин</span><div class="meal-name">Карри с курицей и рисом</div>
+        <div class="calories">820 ккал</div></div>
+        <span class="cuisine-badge cuisine-asian">Азиатская</span>
+      </div>
+      <div class="meal-details">
+        <strong>Ингредиенты:</strong>
+        <ul class="ingredients"><li>Куриное филе — 400 g</li><li>Рис — 250 g</li><li>Лук репчатый — 150 g</li><li>Морковь — 100 g</li><li>Чеснок — 10 g</li><li>Паста карри — 40 g</li><li>Кокосовое молоко — 200 ml</li><li>Масло растительное — 20 ml</li></ul>
+        <div class="instructions">Cook rice. Sauté onion, garlic, carrots. Add curry paste, stir. Add diced chicken, cook 5 min. Pour coconut milk, simmer 15 min. Serve over rice.</div>
+      </div>
+    </div></div><div class="day"><div class="day-header">Суббота</div><div class="meal">
+      <div class="meal-header" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div><span class="meal-type">Завтрак</span><div class="meal-name">Драники картофельные</div>
+        <div class="calories">520 ккал</div></div>
+        <span class="cuisine-badge cuisine-slavic">Славянская</span>
+      </div>
+      <div class="meal-details">
+        <strong>Ингредиенты:</strong>
+        <ul class="ingredients"><li>Картофель — 500 g</li><li>Лук репчатый — 50 g</li><li>Яйца куриные — 1 pcs</li><li>Мука пшеничная — 40 g</li><li>Масло растительное — 50 ml</li><li>Сметана — 100 g</li></ul>
+        <div class="instructions">Grate potatoes and onion, squeeze out liquid. Mix with egg, flour, salt. Fry spoonfuls in hot oil until golden both sides. Serve with sour cream.</div>
+      </div>
+    </div><div class="meal">
+      <div class="meal-header" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div><span class="meal-type">Обед</span><div class="meal-name">Бефстроганов с гречкой</div>
+        <div class="calories">880 ккал</div></div>
+        <span class="cuisine-badge cuisine-slavic">Славянская</span>
+      </div>
+      <div class="meal-details">
+        <strong>Ингредиенты:</strong>
+        <ul class="ingredients"><li>Говядина — 400 g</li><li>Лук репчатый — 150 g</li><li>Грибы шампиньоны — 200 g</li><li>Сметана — 150 g</li><li>Мука пшеничная — 20 g</li><li>Масло растительное — 30 ml</li><li>Гречка — 200 g</li></ul>
+        <div class="instructions">Cut beef into strips, fry until browned. Add sliced onion and mushrooms, cook 10 min. Stir in flour, add sour cream, simmer 10 min. Serve over boiled buckwheat.</div>
+      </div>
+    </div><div class="meal">
+      <div class="meal-header" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div><span class="meal-type">Ужин</span><div class="meal-name">Мисо суп с тофу</div>
+        <div class="calories">350 ккал</div></div>
+        <span class="cuisine-badge cuisine-asian">Азиатская</span>
+      </div>
+      <div class="meal-details">
+        <strong>Ингредиенты:</strong>
+        <ul class="ingredients"><li>Паста мисо — 40 g</li><li>Тофу — 200 g</li><li>Вода — 800 ml</li><li>Соевый соус — 15 ml</li><li>Зелёный лук — 30 g</li><li>Водоросли нори — 5 g</li><li>Рис — 150 g</li></ul>
+        <div class="instructions">Heat water, dissolve miso paste. Add cubed tofu, nori strips. Simmer 5 min (don't boil). Add soy sauce, green onion. Serve with steamed rice on the side.</div>
+      </div>
+    </div></div><div class="day"><div class="day-header">Воскресенье</div><div class="meal">
+      <div class="meal-header" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div><span class="meal-type">Завтрак</span><div class="meal-name">Рисовая каша на кокосовом молоке</div>
+        <div class="calories">460 ккал</div></div>
+        <span class="cuisine-badge cuisine-asian">Азиатская</span>
+      </div>
+      <div class="meal-details">
+        <strong>Ингредиенты:</strong>
+        <ul class="ingredients"><li>Рис — 150 g</li><li>Кокосовое молоко — 200 ml</li><li>Сахар — 30 g</li><li>Манго консервированное — 100 g</li><li>Кунжут — 10 g</li></ul>
+        <div class="instructions">Cook rice in water until soft. Add coconut milk and sugar, simmer 10 min until creamy. Top with mango pieces and sesame seeds.</div>
+      </div>
+    </div><div class="meal">
+      <div class="meal-header" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div><span class="meal-type">Обед</span><div class="meal-name">Плов узбекский</div>
+        <div class="calories">850 ккал</div></div>
+        <span class="cuisine-badge cuisine-slavic">Славянская</span>
+      </div>
+      <div class="meal-details">
+        <strong>Ингредиенты:</strong>
+        <ul class="ingredients"><li>Баранина или говядина — 500 g</li><li>Рис длиннозёрный — 400 g</li><li>Морковь — 300 g</li><li>Лук репчатый — 200 g</li><li>Масло растительное — 80 ml</li><li>Чеснок — 1 head</li><li>Зира — 5 g</li><li>Барбарис — 5 g</li></ul>
+        <div class="instructions">Heat oil, fry meat until browned. Add onion, julienned carrots. Add cumin, barberry. Add water to cover, simmer 40 min. Add rinsed rice, whole garlic head on top. Cook covered 25 min until rice done.</div>
+      </div>
+    </div><div class="meal">
+      <div class="meal-header" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div><span class="meal-type">Ужин</span><div class="meal-name">Жареная лапша с курицей и овощами</div>
+        <div class="calories">700 ккал</div></div>
+        <span class="cuisine-badge cuisine-asian">Азиатская</span>
+      </div>
+      <div class="meal-details">
+        <strong>Ингредиенты:</strong>
+        <ul class="ingredients"><li>Лапша яичная — 250 g</li><li>Куриное филе — 300 g</li><li>Перец болгарский — 150 g</li><li>Кабачок — 150 g</li><li>Соевый соус — 50 ml</li><li>Масло растительное — 30 ml</li><li>Чеснок — 10 g</li><li>Морковь — 80 g</li><li>Зелёный лук — 30 g</li></ul>
+        <div class="instructions">Cook noodles, drain. Stir-fry sliced chicken. Add julienned pepper, zucchini, carrots. Add garlic, soy sauce. Toss in noodles, heat through. Garnish with green onion.</div>
+      </div>
+    </div></div><div class="grocery"><h2>🛒 Список продуктов</h2><div class="grocery-cat"><h3>Meat & Poultry</h3><div class="grocery-item"><span>Говядина на кости</span><span>500 g</span></div><div class="grocery-item"><span>Куриное филе</span><span>1700 g</span></div><div class="grocery-item"><span>Фарш свино-говяжий</span><span>900 g</span></div><div class="grocery-item"><span>Говядина</span><span>700 g</span></div><div class="grocery-item"><span>Колбаса варёная</span><span>250 g</span></div><div class="grocery-item"><span>Курица (окорочок)</span><span>400 g</span></div><div class="grocery-item"><span>Баранина или говядина</span><span>500 g</span></div></div><div class="grocery-cat"><h3>Dairy & Eggs</h3><div class="grocery-item"><span>Молоко</span><span>900 ml</span></div><div class="grocery-item"><span>Сливочное масло</span><span>115 g</span></div><div class="grocery-item"><span>Сметана</span><span>690 g</span></div><div class="grocery-item"><span>Яйца куриные</span><span>15 pcs</span></div><div class="grocery-item"><span>Творог</span><span>400 g</span></div><div class="grocery-item"><span>Лапша яичная</span><span>350 g</span></div><div class="grocery-item"><span>Кокосовое молоко</span><span>400 ml</span></div></div><div class="grocery-cat"><h3>Vegetables</h3><div class="grocery-item"><span>Свёкла</span><span>300 g</span></div><div class="grocery-item"><span>Картофель</span><span>1800 g</span></div><div class="grocery-item"><span>Капуста белокочанная</span><span>401 g</span></div><div class="grocery-item"><span>Морковь</span><span>1230 g</span></div><div class="grocery-item"><span>Лук репчатый</span><span>1080 g</span></div><div class="grocery-item"><span>Томатная паста</span><span>160 g</span></div><div class="grocery-item"><span>Чеснок</span><span>66 g</span></div><div class="grocery-item"><span>Укроп свежий</span><span>50 g</span></div><div class="grocery-item"><span>Сок лимона</span><span>30 ml</span></div><div class="grocery-item"><span>Зелёный лук</span><span>150 g</span></div><div class="grocery-item"><span>Маринованные огурцы</span><span>150 g</span></div><div class="grocery-item"><span>Лимон</span><span>1 pcs</span></div><div class="grocery-item"><span>Перец болгарский</span><span>500 g</span></div><div class="grocery-item"><span>Крахмал картофельный</span><span>30 g</span></div><div class="grocery-item"><span>Грибы шампиньоны</span><span>200 g</span></div><div class="grocery-item"><span>Кабачок</span><span>150 g</span></div></div><div class="grocery-cat"><h3>Grains & Pasta</h3><div class="grocery-item"><span>Овсяные хлопья</span><span>150 g</span></div><div class="grocery-item"><span>Рисовая лапша</span><span>250 g</span></div><div class="grocery-item"><span>Мука пшеничная</span><span>340 g</span></div><div class="grocery-item"><span>Рис длиннозёрный</span><span>700 g</span></div><div class="grocery-item"><span>Хлеб белый</span><span>150 g</span></div><div class="grocery-item"><span>Панировочные сухари</span><span>50 g</span></div><div class="grocery-item"><span>Гречка</span><span>400 g</span></div><div class="grocery-item"><span>Рис</span><span>900 g</span></div><div class="grocery-item"><span>Лапша удон</span><span>250 g</span></div></div><div class="grocery-cat"><h3>Canned & Packaged</h3><div class="grocery-item"><span>Горошек зелёный замороженный</span><span>100 g</span></div><div class="grocery-item"><span>Оливки</span><span>50 g</span></div><div class="grocery-item"><span>Ананас консервированный</span><span>150 g</span></div><div class="grocery-item"><span>Манго консервированное</span><span>100 g</span></div></div><div class="grocery-cat"><h3>Pantry</h3><div class="grocery-item"><span>Мёд</span><span>30 g</span></div><div class="grocery-item"><span>Корица</span><span>3 g</span></div><div class="grocery-item"><span>Лавровый лист</span><span>4 pcs</span></div><div class="grocery-item"><span>Уксус столовый</span><span>35 ml</span></div><div class="grocery-item"><span>Арахис</span><span>50 g</span></div><div class="grocery-item"><span>Соевый соус</span><span>225 ml</span></div><div class="grocery-item"><span>Сахар</span><span>150 g</span></div><div class="grocery-item"><span>Масло растительное</span><span>445 ml</span></div><div class="grocery-item"><span>Соль</span><span>5 g</span></div><div class="grocery-item"><span>Варенье</span><span>100 g</span></div><div class="grocery-item"><span>Паста карри</span><span>40 g</span></div><div class="grocery-item"><span>Паста мисо</span><span>40 g</span></div><div class="grocery-item"><span>Водоросли нори</span><span>5 g</span></div><div class="grocery-item"><span>Кунжут</span><span>10 g</span></div><div class="grocery-item"><span>Зира</span><span>5 g</span></div><div class="grocery-item"><span>Барбарис</span><span>5 g</span></div></div><div class="grocery-cat"><h3>Other</h3><div class="grocery-item"><span>Яблоко</span><span>1 pcs</span></div><div class="grocery-item"><span>Вода</span><span>1200 ml</span></div><div class="grocery-item"><span>Тофу</span><span>200 g</span></div></div></div></div></body></html>
